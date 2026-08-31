@@ -168,7 +168,7 @@ function shell({ locale, page, copy, config, depth, title, description, body }) 
   <meta name="description" content="${esc(description)}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${css}">
 </head>
 <body>
@@ -231,7 +231,7 @@ function shops(copy, depth) {
   ];
   return items
     .map(
-      ([img, key]) => `<figure class="shop-card"><img src="${asset(depth, "illustrations/" + img)}" alt="${esc(t(copy, key))}"><p>${esc(t(copy, key))}</p></figure>`
+      ([img, key]) => `<figure class="photo-card"><img src="${asset(depth, "illustrations/" + img)}" alt="${esc(t(copy, key))}"><figcaption>${esc(t(copy, key))}</figcaption></figure>`
     )
     .join("");
 }
@@ -252,15 +252,15 @@ function compactSim(copy) {
 
 function homePage(locale, copy, config, depth) {
   return `
-  <section class="wrap hero">
-    <div class="hero-visual"><img src="${asset(depth, "illustrations/hero.jpg")}" alt=""></div>
-    <div>
+  <section class="hero-stage">
+    <img class="hero-bg" src="${asset(depth, "illustrations/hero.jpg")}" alt="">
+    <div class="hero-panel">
       <p class="kicker">${esc(t(copy, "home.kicker"))}</p>
       <h1>${esc(t(copy, "home.headline"))}</h1>
       <div class="lead">${paras(t(copy, "home.lead"))}</div>
       <div class="cta-row">
-        <a class="btn btn-ink" href="${href(locale, "simulator", depth)}">${esc(t(copy, "home.cta_sim"))}</a>
         <a class="btn btn-coral" href="${href(locale, "subscribe", depth)}">${esc(t(copy, "home.cta_sub"))}</a>
+        <a class="btn btn-ghost" href="${href(locale, "simulator", depth)}">${esc(t(copy, "home.cta_sim"))}</a>
       </div>
     </div>
   </section>
@@ -401,12 +401,14 @@ function howPage(copy, depth) {
     <div class="step-grid">
       ${steps
         .map(
-          ([img, title, body], i) => `<article class="step">
-        <img src="${asset(depth, "illustrations/" + img)}" alt="">
-        <div class="step-body">
-          <p class="step-num">${i + 1}</p>
-          <h3>${esc(t(copy, title))}</h3>
-          ${paras(t(copy, body))}
+          ([img, title, body], i) => `<article class="story-card">
+        <p class="story-tab">${i + 1} · ${esc(t(copy, title))}</p>
+        <div class="story-media">
+          <img src="${asset(depth, "illustrations/" + img)}" alt="">
+          <div class="story-copy">
+            <h3>${esc(t(copy, title))}</h3>
+            ${paras(t(copy, body))}
+          </div>
         </div>
       </article>`
         )
