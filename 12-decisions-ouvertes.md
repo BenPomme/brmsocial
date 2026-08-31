@@ -1,0 +1,38 @@
+# Décisions
+
+## Figées
+
+- Prix : 89 € avis, 119 € avis+WA (v2)
+- Humains PH seulement pour la prod
+- Trois rôles : operator / admin / client (WhatsApp)
+- Scope (villes, catégories, pays) : table + chat admin (agent `scope`). Pas en dur
+- Agents v1 = table dans `14-agents.md` seulement
+- 4–5★ : opérateur publie. 1–3★ : OK titulaire puis publie
+- Invitation gestionnaire, jamais le mot de passe resto
+- Bouton Publier, pas de copier-coller cible
+- Mail + un WhatsApp si WA est sur le site. Pas de Maps-only. Pas de papier
+- WhatsApp quotidien seulement s’il s’est passé quelque chose + lundi
+- Mémoire client = Postgres. Pas Elephant
+- Coder dans Grok Build. Bot ≠ runtime publication
+- Marge ≥ 30 % avant salaire fondateur
+- Fondateur hors file opérateur ; il a une console admin + agent Scope
+
+## À figer (1 ligne chacune, avant semaine 5)
+
+1. Engagement : mois par mois après le 1er mois, ou 3 mois fermes ?
+2. Résiliation : fin de période déjà payée, ou immédiat au BAJA ?
+3. Compte Google : un `reviews@` global ou un par vague de villes ?
+4. Plafond rattrapage : 20 avis, ou 30 jours glissants ?
+5. Délai silence 1★ : 24 h puis abandon, ou 48 h + 1 relance ?
+6. Paiement : Stripe seul, Bizum seul, les deux ?
+7. Template Meta premier contact : on tente, ou mail-only jusqu’à juriste ?
+8. Nom d’affichage WhatsApp et adresse gestionnaire exacte
+
+## Hors scope volontaire
+
+- iMessage / Linq
+- Instinct
+- Meerkat comme base de l’app
+- Publication TripAdvisor / TheFork en v1
+- Appels fondateur
+- Publicité payante

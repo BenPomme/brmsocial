@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BabyRock Social — nous répondons aux avis Google de votre commerce</title>
+  <meta name="description" content="Une personne de notre équipe répond aux avis Google de votre petit commerce. 89 € par mois, ou 748 € pour l’année. Nous sommes toujours joignables sur WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="../../fr/">BabyRock <span>Social</span></a>
+      <nav class="nav-links">
+    <a href="../../fr/simulateur/" aria-current="page">Simulateur</a>
+    <a href="../../fr/comment-ca-marche/">Comment ça marche</a>
+    <a href="../../fr/recherche/">La recherche</a>
+    <a href="../../fr/a-propos/">Qui nous sommes</a>
+    <a href="../../fr/compte/">Votre compte</a>
+  </nav>
+      <div class="header-actions">
+        <div class="lang"><a href="../../es/simulador/">ES</a><a href="../../ca/simulador/">CA</a><a href="../../fr/simulateur/" aria-current="true">FR</a><a href="../../en/simulator/">EN</a></div>
+        <a class="btn btn-coral" href="../../fr/s-abonner/">Commencer</a>
+        <button class="menu-toggle" type="button" data-menu aria-expanded="false" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <nav class="mobile-nav wrap" data-mobile-nav>
+      
+    <a href="../../fr/simulateur/" aria-current="page">Simulateur</a>
+    <a href="../../fr/comment-ca-marche/">Comment ça marche</a>
+    <a href="../../fr/recherche/">La recherche</a>
+    <a href="../../fr/a-propos/">Qui nous sommes</a>
+    <a href="../../fr/compte/">Votre compte</a>
+  
+      <a class="btn btn-wa" href="mailto:rosalia@babyrock.ai?subject=BabyRock%20Social&body=%C3%89crire%20%C3%A0%20Rosalia">WhatsApp</a>
+    </nav>
+  </header>
+  <main id="main">
+  <section class="wrap section">
+    <h1>Indiquez votre chiffre d’affaires. Nous montrons ce que répondre a valu dans la recherche, sur vos chiffres.</h1>
+    <div class="lead"><p>Deux colonnes. Celle de l’attendu est le chiffre que nous utiliserions nous-mêmes pour décider : un petit mouvement de la note, plus un peu de clientèle en plus parce que l’on voit que vous répondez. L’autre est le même chiffre d’affaires si vous gagniez une étoile entière, ce que l’étude de Harvard a mesuré.</p>
+<p>L’abonnement est retranché dans les deux colonnes, pour le forfait mensuel et pour le forfait annuel.</p></div>
+    <form class="sim-card" data-sim>
+      <label>Chiffre d’affaires mensuel du commerce, en euros
+        <input name="revenue" inputmode="numeric" placeholder="25000">
+      </label>
+      <div class="columns-2">
+        <label>Type de commerce (facultatif)
+          <select name="kind">
+            <option value="any">Commerce local</option>
+            <option value="restaurant">Restaurant</option>
+            <option value="bakery">Boulangerie</option>
+            <option value="salon">Salon</option>
+            <option value="florist">Fleuriste</option>
+            <option value="cafe">Café</option>
+            <option value="workshop">Atelier</option>
+          </select>
+        </label>
+        <label>Dans quelle mesure répondez-vous déjà ?
+          <select name="reply">
+            <option value="0.1">Presque jamais</option>
+            <option value="0.4">Certains avis</option>
+            <option value="0.75">La plupart</option>
+            <option value="1">Tous, déjà</option>
+          </select>
+        </label>
+      </div>
+      <p class="tiny" data-already hidden>Vous répondez déjà à presque tout. Le chiffre d’affaires en plus du fait que nous répondions à votre place est petit. Ici, le chiffre utile est le temps que vous récupérez.</p>
+      <div class="sim-cols">
+        <article class="sim-col">
+          <h3>Attendu</h3>
+          <p>Un mouvement de 0,15 étoile si vous ne répondez presque pas aujourd’hui, valorisé à 7 % du chiffre d’affaires par étoile entière, plus 2 % du chiffre d’affaires parce que les gens préfèrent un commerce qui répond. Si vous répondez déjà à tout, cette colonne passe à zéro : vous faites déjà le travail, et les 89 € sont alors seulement une façon de récupérer du temps.</p>
+          <p class="big" data-expected-gross>—</p>
+          <p class="tiny">par mois</p>
+          <p>Après 89 € / mois</p>
+          <p class="big" data-expected-month>—</p>
+          <p>Après 748 € / an (30 % de moins)</p>
+          <p class="big" data-expected-year>—</p>
+          <p>Retour après l’abonnement mensuel: <span data-expected-roi-month>—</span></p>
+          <p>Retour après l’abonnement annuel: <span data-expected-roi-year>—</span></p>
+        </article>
+        <article class="sim-col fullstar">
+          <h3>Si vous gagniez une étoile entière</h3>
+          <p>Harvard Business School, Michael Luca, 2011 : restaurants indépendants, une étoile de plus allait avec 5 à 9 % de chiffre d’affaires en plus. Nous montrons cette fourchette sur votre chiffre mensuel. Répondre n’est pas la seule chose qui peut faire bouger une étoile. C’est la partie que nous faisons, à chaque fois.</p>
+          <p class="big" data-full-gross>—</p>
+          <p class="tiny">par mois</p>
+          <p>Après 89 € / mois</p>
+          <p class="big" data-full-month>—</p>
+          <p>Après 748 € / an (30 % de moins)</p>
+          <p class="big" data-full-year>—</p>
+        </article>
+      </div>
+      <p>Même si la note ne bouge pas, vous n’écrivez plus jamais une réponse Google. C’est aussi cela, l’abonnement.</p>
+      <div class="cta-row">
+        <a class="btn btn-coral" href="../../fr/s-abonner/">Écrire à Rosalia pour commencer</a>
+        <a class="btn btn-ghost" href="../../fr/recherche/">Comment nous avons construit ces chiffres</a>
+      </div>
+    </form>
+  </section></main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="logo">BabyRock <span>Social</span></p>
+        <p>BabyRock Social répond aux avis Google des petits commerces. Une personne publie chaque réponse. Nous sommes toujours accessibles via WhatsApp.</p>
+        <p>Sant Cugat del Vallès</p>
+      </div>
+      <div>
+        <p><a href="../../fr/simulateur/">Simulateur</a></p>
+        <p><a href="../../fr/comment-ca-marche/">Comment ça marche</a></p>
+        <p><a href="../../fr/recherche/">La recherche</a></p>
+        <p><a href="../../fr/a-propos/">Qui nous sommes</a></p>
+      </div>
+      <div>
+        <p><a href="../../fr/s-abonner/">Commencer</a></p>
+        <p><a href="../../fr/compte/">Votre compte</a></p>
+        <p><a href="../../fr/confidentialite/">Confidentialité</a></p>
+        <p><a href="../../fr/conditions/">Conditions</a></p>
+        <p><a href="mailto:rosalia@babyrock.ai">rosalia@babyrock.ai</a></p>
+      </div>
+    </div>
+  </footer>
+  <a class="wa-fab" href="mailto:rosalia@babyrock.ai?subject=BabyRock%20Social&body=%C3%89crire%20%C3%A0%20Rosalia" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5A8.5 8.5 0 0 1 7.3 18.4L3 21l2.7-4.2A8.5 8.5 0 1 1 20 11.5zm-8.5 7a7 7 0 1 0-6.1-3.5l.3.5-1.6 2.5 2.6-1.5.5.3A7 7 0 0 0 11.5 18.5z"/></svg>
+  </a>
+  <script>window.BR_CONFIG = {"product":"BabyRock Social","domain":"www.babyrock.ai","email":"rosalia@babyrock.ai","whatsapp":"","reviewsManager":"reviews@babyrock.ai","city":"Sant Cugat del Vallès","legalName":"","vatId":"","priceMonth":89,"priceYear":748,"priceYearFull":1068,"yearDiscountPct":30,"currency":"EUR","vatNote":"Prices exclude VAT.","formula":{"lucaMid":0.07,"lucaLow":0.05,"lucaHigh":0.09,"starLiftIfSilent":0.15,"conversionIfSilent":0.02,"defaultRating":4.2,"defaultReplyRate":0.1}};</script>
+  <script src="../../js/site.js"></script>
+</body>
+</html>

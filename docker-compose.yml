@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: babyrock-proto-pg
+    environment:
+      POSTGRES_USER: babyrock
+      POSTGRES_PASSWORD: babyrock
+      POSTGRES_DB: babyrock
+    ports:
+      - "5433:5432"
+    volumes:
+      - babyrock_proto_pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U babyrock -d babyrock"]
+      interval: 3s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  babyrock_proto_pg:

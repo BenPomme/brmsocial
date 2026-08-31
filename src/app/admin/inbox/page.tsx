@@ -1,0 +1,168 @@
+"use client";
+
+import { FormEvent, useCallback, useEffect, useState } from "react";
+import { AppHeader, OutboundBanner, StatusBadge } from "@/components/Chrome";
+
+type Msg = { id: string; direction: string; body: string; createdAt: string };
+type Thread = {
+  id: string;
+  channel: string;
+  counterparty: string;
+  subject: string | null;
+  status: string;
+  lastMessageAt: string;
+  lead: { id: string; name: string; city: string | null } | null;
+  messages: Msg[];
+};
+
+export default function AdminInboxPage() {
+  const [email, setEmail] = useState("");
+  const [threads, setThreads] = useState<Thread[]>([]);
+  const [openId, setOpenId] = useState<string | null>(null);
+  const [busy, setBusy] = useState<string | null>(null);
+  const [notice, setNotice] = useState<string | null>(null);
+  const [simFrom, setSimFrom] = useState("");
+  const [simBody, setSimBody] = useState("OK");
+
+  const refresh = useCallback(async () => {
+    const [me, inbox] = await Promise.all([
+      fetch("/api/auth/me").then((r) => r.json()),
+      fetch("/api/admin/inbox").then((r) => r.json()),
+    ]);
+    setEmail(me.session?.email ?? "");
+    setThreads(inbox.threads ?? []);
+  }, []);
+
+  useEffect(() => {
+    refresh().catch((e) => setNotice(String(e)));
+  }, [refresh]);
+
+  async function sync() {
+    setBusy("sync");
+    const res = await fetch("/api/admin/inbox/sync", { method: "POST" });
+    const data = await res.json();
+    setBusy(null);
+    const r = data.sync?.result;
+    setNotice(
+      data.sync?.error
+        ? String(data.sync.error)
+        : `Zoho : ${r?.scanned ?? "?"} lus, ${r?.created ?? "?"} nouveaux.`,
+    );
+    await refresh();
+  }
+
+  async function sim(e: FormEvent) {
+    e.preventDefault();
+    setBusy("sim");
+    const res = await fetch("/api/admin/inbox/sim", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ channel: "whatsapp", from: simFrom, body: simBody }),
+    });
+    const data = await res.json();
+    setBusy(null);
+    setNotice(res.ok ? "WhatsApp simulé (Meta pas encore branché)." : data.error ?? "échec");
+    await refresh();
+  }
+
+  const open = threads.find((t) => t.id === openId) ?? threads[0] ?? null;
+
+  return (
+    <div className="min-h-screen">
+      <OutboundBanner />
+      <AppHeader role="admin" email={email} />
+      <main className="max-w-6xl mx-auto px-4 py-6 space-y-6">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <h1 className="font-display text-3xl">Inbox démarchage</h1>
+            <p className="text-sm text-muted mt-1">
+              Réponses des prospects à Rosalia (mail Zoho) et, plus tard, à notre WhatsApp. Pas la file
+              d’avis Google — ça c’est « File avis ».
+            </p>
+          </div>
+          <button
+            onClick={sync}
+            disabled={busy === "sync"}
+            className="rounded-lg bg-ink text-paper px-4 py-2 text-sm disabled:opacity-60"
+          >
+            {busy === "sync" ? "Lecture Zoho…" : "Récupérer les mails Zoho"}
+          </button>
+        </div>
+        {notice && <p className="text-sm bg-white/70 border border-line rounded-xl px-4 py-3">{notice}</p>}
+
+        <form onSubmit={sim} className="bg-white/70 border border-line rounded-2xl p-4 text-sm flex flex-wrap gap-2 items-end">
+          <label className="flex flex-col gap-1">
+            <span className="text-xs text-muted">Simuler un WhatsApp (avant Meta)</span>
+            <input
+              className="rounded-lg border border-line bg-paper px-3 py-2"
+              placeholder="34600111222"
+              value={simFrom}
+              onChange={(e) => setSimFrom(e.target.value)}
+            />
+          </label>
+          <label className="flex flex-col gap-1 grow">
+            <span className="text-xs text-muted">Message</span>
+            <input
+              className="rounded-lg border border-line bg-paper px-3 py-2"
+              value={simBody}
+              onChange={(e) => setSimBody(e.target.value)}
+            />
+          </label>
+          <button disabled={busy === "sim"} className="rounded-lg border border-line px-3 py-2">
+            Simuler
+          </button>
+        </form>
+
+        <div className="grid md:grid-cols-3 gap-4">
+          <ul className="border border-line rounded-2xl bg-white/70 overflow-auto max-h-[70vh]">
+            {threads.length === 0 && (
+              <li className="p-4 text-sm text-muted">Vide. Récupère Zoho, ou simule un WhatsApp.</li>
+            )}
+            {threads.map((t) => (
+              <li key={t.id}>
+                <button
+                  onClick={() => setOpenId(t.id)}
+                  className={`w-full text-left px-4 py-3 border-b border-line ${open?.id === t.id ? "bg-sand/60" : ""}`}
+                >
+                  <div className="flex items-center gap-2 text-xs">
+                    <StatusBadge status={t.channel} />
+                    <StatusBadge status={t.status} />
+                  </div>
+                  <div className="font-medium text-sm mt-1">{t.lead?.name ?? t.counterparty}</div>
+                  <div className="text-xs text-muted">{t.subject ?? t.counterparty}</div>
+                </button>
+              </li>
+            ))}
+          </ul>
+          <div className="md:col-span-2 border border-line rounded-2xl bg-white/70 p-4 min-h-[40vh]">
+            {!open && <p className="text-sm text-muted">Choisis une conversation.</p>}
+            {open && (
+              <>
+                <h2 className="font-display text-2xl">{open.lead?.name ?? open.counterparty}</h2>
+                <p className="text-xs text-muted mb-4">
+                  {open.channel} · {open.counterparty}
+                  {open.lead?.city ? ` · ${open.lead.city}` : ""}
+                </p>
+                <div className="space-y-3">
+                  {open.messages.map((m) => (
+                    <div
+                      key={m.id}
+                      className={`rounded-xl px-3 py-2 text-sm whitespace-pre-wrap ${
+                        m.direction === "in" ? "bg-sand/80" : "bg-moss/10"
+                      }`}
+                    >
+                      <div className="text-[10px] text-muted mb-1">
+                        {m.direction === "in" ? "eux" : "nous"} · {new Date(m.createdAt).toLocaleString()}
+                      </div>
+                      {m.body}
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+}

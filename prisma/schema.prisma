@@ -1,0 +1,260 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  role         String
+  passwordHash String   @map("password_hash")
+  active       Boolean  @default(true)
+  clientId     String?  @map("client_id")
+  client       Client?  @relation("ClientLogin", fields: [clientId], references: [id])
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  assignedClients Client[] @relation("OperatorClients")
+
+  @@map("users")
+}
+
+model Client {
+  id                        String   @id @default(uuid())
+  name                      String
+  city                      String?
+  country                   String?
+  googleLocationId          String?  @map("google_location_id")
+  placeId                   String?  @unique @map("place_id")
+  formattedAddress          String?  @map("formatted_address")
+  mapsUri                   String?  @map("maps_uri")
+  rating                    Float?
+  googleAccountEmailManager String?  @map("google_account_email_manager")
+  managerInviteStatus       String   @default("pending") @map("manager_invite_status")
+  emailPublic               String?  @map("email_public")
+  whatsappSite              String?  @map("whatsapp_site")
+  whatsappOwner             String?  @map("whatsapp_owner")
+  plan                      String   @default("avis_89")
+  status                    String   @default("lead")
+  stripeOrBizumRef          String?  @map("stripe_or_bizum_ref")
+  categoryId                String?  @map("category_id")
+  category                  ScopeCategory? @relation(fields: [categoryId], references: [id])
+  operatorId                String?  @map("operator_id")
+  operator                  User?    @relation("OperatorClients", fields: [operatorId], references: [id])
+  toneNotes                 String?  @map("tone_notes")
+  publishLive               Boolean  @default(false) @map("publish_live")
+  createdAt                 DateTime @default(now()) @map("created_at")
+
+  loginUsers User[]              @relation("ClientLogin")
+  avis       Avis[]
+  actions    Action[]
+  messages   MessageWhatsapp[]
+  lead       Lead?
+
+  @@map("clients")
+}
+
+model ScopeCity {
+  id      String  @id @default(uuid())
+  name    String
+  country String
+  active  Boolean @default(false)
+  source  String
+
+  @@unique([name, country])
+  @@map("scope_cities")
+}
+
+model ScopeCategory {
+  id         String  @id @default(uuid())
+  slug       String  @unique
+  label      String
+  active     Boolean @default(false)
+  placesType String  @map("places_type")
+  source     String  @default("admin")
+
+  clients Client[]
+
+  @@map("scope_categories")
+}
+
+model ScopeChange {
+  id         String   @id @default(uuid())
+  actor      String
+  rawMessage String   @map("raw_message")
+  reply      String?
+  diff       Json
+  status     String
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  @@map("scope_changes")
+}
+
+model Avis {
+  id               String    @id @default(uuid())
+  clientId         String    @map("client_id")
+  client           Client    @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  googleReviewId   String    @unique @map("google_review_id")
+  stars            Int
+  lang             String?
+  authorPublicName String?   @map("author_public_name")
+  body             String
+  reviewedAt       DateTime? @map("reviewed_at")
+  status           String
+  createdAt        DateTime  @default(now()) @map("created_at")
+
+  reponses Reponse[]
+  actions  Action[]
+  messages MessageWhatsapp[]
+
+  @@index([clientId, status])
+  @@map("avis")
+}
+
+model Reponse {
+  id              String   @id @default(uuid())
+  avisId          String   @map("avis_id")
+  avis            Avis     @relation(fields: [avisId], references: [id], onDelete: Cascade)
+  version         Int
+  draftModel      String?  @map("draft_model")
+  draftText       String?  @map("draft_text")
+  operatorText    String?  @map("operator_text")
+  sentToOwnerText String?  @map("sent_to_owner_text")
+  publishedText   String?  @map("published_text")
+  actor           String
+  createdAt       DateTime @default(now()) @map("created_at")
+
+  @@unique([avisId, version])
+  @@map("reponses")
+}
+
+model Action {
+  id        String   @id @default(uuid())
+  clientId  String   @map("client_id")
+  client    Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  avisId    String?  @map("avis_id")
+  avis      Avis?    @relation(fields: [avisId], references: [id], onDelete: SetNull)
+  type      String
+  actor     String
+  payload   Json
+  result    String
+  errorText String?  @map("error_text")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([clientId])
+  @@index([type])
+  @@map("actions")
+}
+
+model MessageWhatsapp {
+  id            String   @id @default(uuid())
+  clientId      String   @map("client_id")
+  client        Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  avisId        String?  @map("avis_id")
+  avis          Avis?    @relation(fields: [avisId], references: [id], onDelete: SetNull)
+  direction     String
+  body          String
+  providerMsgId String?  @map("provider_msg_id")
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  @@index([clientId, createdAt])
+  @@map("messages_whatsapp")
+}
+
+model Job {
+  id        String    @id @default(uuid())
+  kind      String
+  payload   Json
+  status    String
+  attempts  Int       @default(0)
+  runAfter  DateTime? @map("run_after")
+  lockedAt  DateTime? @map("locked_at")
+  errorText String?   @map("error_text")
+  result    Json?
+  createdAt DateTime  @default(now()) @map("created_at")
+  updatedAt DateTime  @updatedAt @map("updated_at")
+
+  @@index([status, kind])
+  @@map("jobs")
+}
+
+model Lead {
+  id               String    @id @default(uuid())
+  placeId          String    @unique @map("place_id")
+  name             String
+  city             String
+  country          String?
+  categorySlug     String?   @map("category_slug")
+  email            String?
+  waSite           String?   @map("wa_site")
+  mapsPhone        String?   @map("maps_phone")
+  websiteUri       String?   @map("website_uri")
+  formattedAddress String?   @map("formatted_address")
+  mapsUri          String?   @map("maps_uri")
+  rating           Float?
+  userRatingCount  Int?      @map("user_rating_count")
+  channelPlan      String    @default("skip") @map("channel_plan")
+  status           String    @default("new")
+  lastTouchAt      DateTime? @map("last_touch_at")
+  clientId         String?   @unique @map("client_id")
+  client           Client?   @relation(fields: [clientId], references: [id], onDelete: SetNull)
+  createdAt        DateTime  @default(now()) @map("created_at")
+
+  inspectAt          DateTime? @map("inspect_at")
+  inspectReviews6m   Int?      @map("inspect_reviews_6m")
+  inspectReplied6m   Int?      @map("inspect_replied_6m")
+  inspectUnreplied6m Int?      @map("inspect_unreplied_6m")
+  inspectVerdict     String?   @map("inspect_verdict")
+  inspectTruncated   Boolean?  @map("inspect_truncated")
+  inspectCostUsd     Float?    @map("inspect_cost_usd")
+  inspectError       String?   @map("inspect_error")
+  inspectSample      Json?     @map("inspect_sample")
+
+  outreachTo          String?   @map("outreach_to")
+  outreachSubject     String?   @map("outreach_subject")
+  outreachBody        String?   @map("outreach_body")
+  outreachComposedAt  DateTime? @map("outreach_composed_at")
+  outreachStatus      String?   @map("outreach_status")
+  outreachNote        String?   @map("outreach_note")
+
+  inboxThreads InboxThread[]
+
+  @@map("leads")
+}
+
+model InboxThread {
+  id            String   @id @default(uuid())
+  channel       String
+  kind          String   @default("outreach")
+  counterparty  String
+  subject       String?
+  status        String   @default("open")
+  leadId        String?  @map("lead_id")
+  lead          Lead?    @relation(fields: [leadId], references: [id], onDelete: SetNull)
+  clientId      String?  @map("client_id")
+  lastMessageAt DateTime @default(now()) @map("last_message_at")
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  messages InboxMessage[]
+
+  @@unique([channel, counterparty])
+  @@index([lastMessageAt])
+  @@map("inbox_threads")
+}
+
+model InboxMessage {
+  id         String      @id @default(uuid())
+  threadId   String      @map("thread_id")
+  thread     InboxThread @relation(fields: [threadId], references: [id], onDelete: Cascade)
+  direction  String
+  body       String
+  providerId String?     @unique @map("provider_id")
+  payload    Json?
+  createdAt  DateTime    @default(now()) @map("created_at")
+
+  @@index([threadId, createdAt])
+  @@map("inbox_messages")
+}

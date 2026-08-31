@@ -1,0 +1,37 @@
+---
+id: rosalia-es-v1
+from: rosalia@babyrock.ai
+from_name: Rosalia
+lang: es
+subject: Las reseñas de Google de {{restaurant}}
+---
+Hola:
+
+Me llamo Rosalia y trabajo en Babyrock Social, en Sant Cugat. Ayudamos a los restaurantes a responder a sus reseñas de Google sin que tengan que ocuparse de ello cada día.
+
+Esta mañana he consultado la ficha de {{restaurant}} y he visto que varias reseñas recientes todavía no tienen respuesta. Por ejemplo, la de {{author}}, publicada el {{date}} ({{stars}} ★):
+
+«{{excerpt}}»
+
+Responder a las reseñas demuestra a las personas que consultan su ficha que usted escucha y valora a sus clientes. Sin embargo, sabemos que encontrar tiempo para hacerlo no siempre es fácil.
+
+Nuestro servicio funciona de forma muy sencilla:
+
+Cada respuesta la publica una persona de nuestro equipo. Usamos inteligencia artificial solo para ser más rápidos (preparar un borrador y trabajar en el idioma de la reseña). No la usamos para publicar.
+
+- Para las reseñas de 4 o 5 estrellas, redactamos y publicamos directamente la respuesta.
+- Para las reseñas de 1, 2 o 3 estrellas, primero le enviamos una propuesta por WhatsApp, SMS o correo electrónico. Solo tiene que responder «OK» o cambiar algunas palabras, y nosotros la publicamos.
+
+El servicio cuesta 89 € al mes.
+
+Para empezar, solo tiene que darnos acceso a la ficha de Google de su restaurante y elegir dónde quiere recibir nuestros mensajes. Le ayudamos con la puesta en marcha y después nos ocupamos del resto.
+
+Si le interesa, responda simplemente «OK» a este correo, envíeme su número de WhatsApp, o escríbanos al nuestro: {{whatsapp}}
+
+Le explicaré los siguientes pasos.
+
+Si no le interesa, no hay ningún problema: dígamelo y no volveré a ponerme en contacto con usted.
+
+Rosalia
+Babyrock Social
+rosalia@babyrock.ai

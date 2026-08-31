@@ -1,0 +1,25 @@
+{
+  "product": "BabyRock Social",
+  "domain": "www.babyrock.ai",
+  "email": "rosalia@babyrock.ai",
+  "whatsapp": "",
+  "reviewsManager": "reviews@babyrock.ai",
+  "city": "Sant Cugat del Vallès",
+  "legalName": "",
+  "vatId": "",
+  "priceMonth": 89,
+  "priceYear": 748,
+  "priceYearFull": 1068,
+  "yearDiscountPct": 30,
+  "currency": "EUR",
+  "vatNote": "Prices exclude VAT.",
+  "formula": {
+    "lucaMid": 0.07,
+    "lucaLow": 0.05,
+    "lucaHigh": 0.09,
+    "starLiftIfSilent": 0.15,
+    "conversionIfSilent": 0.02,
+    "defaultRating": 4.2,
+    "defaultReplyRate": 0.1
+  }
+}
