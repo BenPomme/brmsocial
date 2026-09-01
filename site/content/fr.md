@@ -1,11 +1,11 @@
 ## meta.title
-BabyRock Social — nous répondons aux avis Google de votre commerce
+Réponses aux avis Google pour les petits commerces | BabyRock Social
 
 ## meta.description
-Une personne de notre équipe répond aux avis Google de votre petit commerce. 89 € par mois, ou 748 € pour l’année. Nous sommes toujours joignables sur WhatsApp.
+Des réponses soignées aux avis Google de votre commerce. L’IA nous aide à être efficaces ; une personne relit et publie chaque réponse. À partir de 89 € par mois.
 
 ## nav.simulator
-Simulateur
+Calculateur d’impact
 
 ## nav.how
 Comment ça marche
@@ -32,7 +32,7 @@ Fermer
 WhatsApp
 
 ## footer.tagline
-BabyRock Social répond aux avis Google des petits commerces. Une personne publie chaque réponse. Nous sommes toujours accessibles via WhatsApp.
+BabyRock Social gère les réponses aux avis Google des petits commerces. L’IA nous aide à aller vite ; une personne relit et publie chaque réponse. Parlez à l’équipe sur WhatsApp.
 
 ## footer.privacy
 Confidentialité
@@ -44,27 +44,27 @@ Conditions
 Sant Cugat del Vallès
 
 ## home.kicker
-Pour les petits commerces sur Google
+Gestion des avis Google pour les petits commerces
 
 ## home.headline
-Nous répondons aux avis Google de votre commerce, chaque mois, pour que les personnes qui vous cherchent voient que vous êtes attentif.
+Ne laissez plus aucun avis Google sans réponse.
 
 ## home.lead
-BabyRock Social est pour les restaurants, et aussi pour les boulangeries, les salons, les fleuristes, les cafés, les ateliers et les autres petits commerces qui vivent de leur fiche Google. Vous nous ajoutez comme gestionnaires. Nous ne demandons jamais le mot de passe. Une personne de notre équipe rédige et publie chaque réponse. Pour les avis 1, 2 et 3 étoiles, vous voyez d’abord le brouillon sur WhatsApp, et vous dites OK ou vous changez quelques mots.
+BabyRock Social prépare, relit et publie une réponse attentive à chaque nouvel avis sur votre fiche d’établissement Google. L’IA nous aide à rédiger efficacement. Une personne vérifie le ton, la pertinence et la qualité avant publication.
 
-Nous sommes toujours accessibles pour vous via WhatsApp. C’est comme cela que vous nous joignez pour un avis difficile, un changement de texte, une facture, ou pour arrêter.
+Pour les avis 1, 2 et 3 étoiles, nous vous envoyons d’abord la proposition sur WhatsApp. Vous l’approuvez ou vous nous dites quoi changer. Vous restez aux commandes, sans passer vos soirées à écrire des réponses. Vous pouvez vous concentrer sur le commerce.
 
 ## home.cta_sim
-Le voir avec vos chiffres
+Calculez l’impact attendu pour vous
 
 ## home.cta_sub
-Écrire à Rosalia
+Que l’on s’occupe de mes avis
 
 ## home.for_whom_title
-Si les gens vous trouvent sur Google, c’est pour vous
+Si les clients vous trouvent sur Google, ce service est pour vous
 
 ## home.for_whom_lead
-Nous avons commencé par les restaurants parce que c’est là que les avis sans réponse se voient en premier. Le travail est le même pour n’importe quel commerce indépendant : une personne répond, dans la langue de l’avis, y compris en catalan.
+Nous avons commencé par les restaurants, où un avis sans réponse peut décider de la table suivante. C’est vrai aussi pour n’importe quel commerce local indépendant. Nous répondons dans la langue du client dans la journée, y compris en espagnol, catalan, français et anglais, et nous veillons à ce que chaque texte sonne comme votre maison.
 
 ## home.shop_restaurant
 Restaurant
@@ -84,11 +84,20 @@ Café
 ## home.shop_workshop
 Atelier
 
+## home.shop_clinic
+Clinique
+
+## home.shop_physio
+Kinésithérapie
+
+## home.shop_club
+Club
+
 ## home.sim_title
-Ce que répondre peut valoir, dans votre cas
+Ce que des réponses régulières peuvent valoir pour votre commerce
 
 ## home.sim_lead
-Indiquez le chiffre d’affaires mensuel du commerce. Le calcul utilise des travaux publiés sur les notes et sur les commerces qui répondent. Il montre deux chiffres : un chiffre attendu, et le chiffre de Harvard pour une étoile entière en plus.
+La recherche a observé que les commerces qui commencent à répondre avec constance peuvent voir leur note s’améliorer. Combiné à l’étude de Harvard Business School sur les notes et le chiffre d’affaires, cela donne un impact attendu, fondé sur la recherche, d’environ 0,84 % du chiffre d’affaires mensuel, pour un commerce qui répond peu aujourd’hui.
 
 ## home.sim_label
 Chiffre d’affaires mensuel, en euros
@@ -97,108 +106,108 @@ Chiffre d’affaires mensuel, en euros
 25000
 
 ## home.sim_result_before
-Extra attendu par mois, après 89 €
+Impact attendu selon la recherche, après 89 €
 
 ## home.sim_result_after
-€ extra / mois après l’abonnement
+€ estimés par mois après l’abonnement
 
 ## home.sim_link
-Voir le calcul complet et le forfait annuel
+Voir le calcul et comparer les formules
 
 ## home.value_time_title
-Vos soirées, à nouveau
+Retrouvez vos soirées
 
 ## home.value_time
-La plupart des patrons ont l’intention de répondre, puis le font à minuit, ou pas du tout. Nous prenons ce travail. Vous continuez en cuisine, au salon, ou à ouvrir la boutique.
+La plupart des patrons veulent répondre à chaque avis. Puis le service s’emballe, le local demande de l’attention, et les réponses attendent minuit, ou ne s’écrivent jamais. Nous enlevons cette tâche de la liste, pour que vous fassiez ce que vous savez le mieux faire.
 
 ## home.value_trust_title
-Les gens voient que vous répondez
+Montrez aux clients futurs que vous les écoutez
 
 ## home.value_trust
-Une grande majorité des personnes dit choisir plus volontiers un commerce qui répond à ses avis. La réponse reste sur votre fiche. Les clients futurs la lisent, y compris les difficiles.
+Les réponses sont publiques. Quiconque compare des commerces locaux voit si vous remerciez, précisez et traitez les critiques avec professionnalisme. Google met en avant les réponses utiles et positives, parce qu’elles aident à se distinguer, et prévient l’auteur de l’avis quand vous répondez.
 
 ## home.value_rating_title
-La note bouge quand on répond
+La constance peut renforcer votre réputation en ligne
 
 ## home.value_rating
-Une étude de Harvard sur des restaurants indépendants a trouvé qu’une étoile de plus allait avec 5 à 9 % de chiffre d’affaires en plus. Répondre est l’une des choses qui font bouger une note, parce que c’est visible et que c’est régulier. Le simulateur met un chiffre dessus. La page recherche explique comment.
+Une étude publiée a trouvé que les hôtels qui ont commencé à répondre ont reçu 12 % d’avis en plus et ont gagné en moyenne 0,12 étoile. Une étude distincte de Harvard a trouvé qu’une étoile entière de plus valait 5 à 9 % de chiffre d’affaires en plus par mois pour des restaurants indépendants. Notre calculateur combine ces résultats sur vos chiffres.
 
 ## home.human_title
-Une personne publie chaque réponse
+L’IA nous rend plus rapides. Les personnes protègent la qualité.
 
 ## home.human
-Nous n’utilisons pas l’intelligence artificielle pour publier les réponses. Une personne de l’équipe le fait. Nous utilisons l’IA en arrière-plan pour préparer un brouillon plus vite et pour travailler dans la langue de l’avis — espagnol, catalan, français ou anglais. Le texte qui part sur Google a été lu par quelqu’un.
+Nous utilisons l’IA pour être plus efficaces. Elle nous aide à garder le prix et à préparer des premiers brouillons dans la langue de l’avis. Puis une personne de l’équipe vérifie les faits dont nous disposons, le ton, la pertinence et la formulation, corrige si besoin, et publie la réponse finale. Rien n’est publié tout seul.
 
 ## home.whatsapp_line
-Nous sommes toujours accessibles pour vous via WhatsApp. Rosalia est la personne à qui vous écrivez.
+Il faut expliquer ce qui s’est passé, changer le texte ou poser une question ? Parlez à Rosalia et à l’équipe sur WhatsApp. Pas besoin d’une autre application ni d’un autre site. Nous sommes avec vous, dans la poche.
 
 ## home.price_title
-Deux façons de payer
+Choisissez la formule qui vous convient
 
 ## home.price_month_name
 Mois par mois
 
 ## home.price_month_detail
-89 € chaque mois, hors TVA. Vous pouvez arrêter à la fin de la période déjà payée.
+89 € par mois, hors TVA. Si vous résiliez avant le prochain prélèvement, le service s’arrête à la fin du mois déjà payé.
 
 ## home.price_year_name
 Douze mois
 
 ## home.price_year_detail
-748 € pour l’année, hors TVA. C’est 30 % de moins que douze fois 89 €.
+748 € pour l’année, hors TVA : 30 % de moins que de payer mois par mois.
 
 ## home.price_year_save
-Vous gardez 320 €
+Économisez 320 €
 
 ## home.price_setup
-Il n’y a pas de frais de mise en service si vous ajoutez vous-même le gestionnaire Google. Le paiement ne se fait pas sur ce site. Vous écrivez à Rosalia, et elle envoie un lien de paiement.
+Pas de frais de mise en service si vous nous ajoutez vous-même à votre fiche d’établissement Google. On ne prélève rien sur ce site : Rosalia vous envoie un lien de paiement sécurisé.
 
 ## home.faq_title
-Questions que l’on nous pose
+Questions que nous posent les patrons
 
 ## home.faq_1_q
 Avez-vous besoin du mot de passe Google ?
 
 ## home.faq_1_a
-Non. Vous invitez reviews@babyrock.ai comme gestionnaire sur la fiche. Vous pouvez retirer cet accès quand vous voulez.
+Non. Vous invitez reviews@babyrock.ai comme gestionnaire de votre fiche d’établissement Google. Le mot de passe reste chez vous, et vous pouvez nous retirer l’accès quand vous voulez. C’est un clic.
 
 ## home.faq_2_q
 Que se passe-t-il avec un avis 1, 2 ou 3 étoiles ?
 
 ## home.faq_2_a
-Nous vous envoyons un brouillon sur WhatsApp. Vous répondez OK, ou vous renvoyez le texte que vous voulez. Nous publions cela. Nous ne publions pas une réponse à une note basse sans vous.
+Nous préparons et relisons une réponse, puis nous vous l’envoyons sur WhatsApp pour approbation. Répondez OK ou dites-nous quoi changer. Une personne de l’équipe l’envoie seulement après votre accord. Google relit les réponses avant qu’elles apparaissent en public, donc le moment final de publication est contrôlé par Google.
 
 ## home.faq_3_q
 Est-ce seulement pour les restaurants ?
 
 ## home.faq_3_a
-Non. Le restaurant est un exemple naturel parce qu’il vit sur Google. Le service est pour les petits commerces qui ont une fiche : boulangeries, salons, fleuristes, cafés, ateliers, et commerces du même ordre.
+Non. Le service est pour les commerces indépendants qui ont une fiche d’établissement Google : restaurants, bars, cliniques, boulangeries, salons, fleuristes, cafés, ateliers et d’autres encore.
 
 ## home.faq_4_q
 Dans quelles langues répondez-vous ?
 
 ## home.faq_4_a
-Nous répondons dans la langue de l’avis. Cela inclut l’espagnol, le catalan, le français et l’anglais.
+Nous répondons dans la langue de l’avis, y compris l’espagnol, le catalan, le français et l’anglais. Une personne vérifie la formulation finale avant publication.
 
 ## home.faq_5_q
-Peut-on joindre quelqu’un s’il y a un problème ?
+Peut-on parler à une personne s’il y a un problème ?
 
 ## home.faq_5_a
-Oui. Nous sommes toujours accessibles pour vous via WhatsApp. C’est le même canal que nous utilisons pour les avis difficiles.
+Oui. Vous parlez directement à Rosalia ou à la personne qui tient la conversation sur WhatsApp — le même canal que pour les avis délicats.
 
 ## home.faq_6_q
-Comment arrêter ?
+Comment résilier ?
 
 ## home.faq_6_a
-Écrivez BAJA ou « merci d’arrêter » à Rosalia sur WhatsApp. Le service continue jusqu’à la fin du mois ou de l’année déjà payée. Nous vous rappelons de retirer le gestionnaire Google.
+Écrivez BAJA ou « merci d’arrêter » à Rosalia sur WhatsApp. Nous confirmons, nous continuons jusqu’à la fin de la période déjà payée, et nous retirons notre accès gestionnaire à la fin du service.
 
 ## sim.headline
-Indiquez votre chiffre d’affaires. Nous montrons ce que répondre a valu dans la recherche, sur vos chiffres.
+Voyez l’impact fondé sur la recherche, sur vos chiffres.
 
 ## sim.lead
-Deux colonnes. Celle de l’attendu est le chiffre que nous utiliserions nous-mêmes pour décider : un petit mouvement de la note, plus un peu de clientèle en plus parce que l’on voit que vous répondez. L’autre est le même chiffre d’affaires si vous gagniez une étoile entière, ce que l’étude de Harvard a mesuré.
+Les commerces qui ont commencé à répondre avec constance ont gagné en moyenne 0,12 étoile dans une étude publiée. Harvard Business School a trouvé qu’une étoile entière de plus valait 5 à 9 % de chiffre d’affaires en plus pour des restaurants indépendants.
 
-L’abonnement est retranché dans les deux colonnes, pour le forfait mensuel et pour le forfait annuel.
+En combinant ces résultats, la fourchette fondée sur la recherche est 0,6–1,08 % du chiffre d’affaires mensuel, avec une estimation centrale de 0,84 %. Indiquez votre chiffre d’affaires pour voir cette estimation après l’abonnement BabyRock Social.
 
 ## sim.revenue
 Chiffre d’affaires mensuel du commerce, en euros
@@ -227,41 +236,50 @@ Café
 ## sim.kind_workshop
 Atelier
 
+## sim.kind_clinic
+Clinique
+
+## sim.kind_physio
+Kinésithérapie
+
+## sim.kind_club
+Club
+
 ## sim.rating
 Note Google actuelle (facultatif)
 
 ## sim.reply
-Dans quelle mesure répondez-vous déjà ?
+À quelle fréquence répondez-vous aujourd’hui ?
 
 ## sim.reply_never
-Presque jamais
+Peu ou jamais
 
 ## sim.reply_some
-Certains avis
+À certains avis
 
 ## sim.reply_most
-La plupart
+À la plupart
 
 ## sim.reply_all
-Tous, déjà
+À tous, déjà
 
 ## sim.expected_label
-Attendu
+Estimation fondée sur la recherche
 
 ## sim.expected_explain
-Un mouvement de 0,15 étoile si vous ne répondez presque pas aujourd’hui, valorisé à 7 % du chiffre d’affaires par étoile entière, plus 2 % du chiffre d’affaires parce que les gens préfèrent un commerce qui répond. Si vous répondez déjà à tout, cette colonne passe à zéro : vous faites déjà le travail, et les 89 € sont alors seulement une façon de récupérer du temps.
+Pour un commerce qui répond peu aujourd’hui, l’estimation centrale est 0,84 % du chiffre d’affaires mensuel. Elle applique l’amélioration observée de 0,12 étoile au milieu de la fourchette de Harvard (5–9 % par étoile entière). Si vous répondez déjà à une partie ou à la plupart, l’estimation baisse dans la même proportion.
 
 ## sim.fullstar_label
-Si vous gagniez une étoile entière
+Fourchette publiée
 
 ## sim.fullstar_explain
-Harvard Business School, Michael Luca, 2011 : restaurants indépendants, une étoile de plus allait avec 5 à 9 % de chiffre d’affaires en plus. Nous montrons cette fourchette sur votre chiffre mensuel. Répondre n’est pas la seule chose qui peut faire bouger une étoile. C’est la partie que nous faisons, à chaque fois.
+L’estimation basse utilise 0,12 × 5 % du chiffre d’affaires. La haute utilise 0,12 × 9 %. Cela donne une fourchette de 0,6–1,08 % du chiffre d’affaires mensuel, avant l’abonnement.
 
 ## sim.after_month
-Après 89 € / mois
+Après 89 €/mois
 
 ## sim.after_year
-Après 748 € / an (30 % de moins)
+Après 748 €/an — 30 % de moins
 
 ## sim.per_month
 par mois
@@ -270,141 +288,141 @@ par mois
 par an
 
 ## sim.roi_month
-Retour après l’abonnement mensuel
+Retour estimé après l’abonnement mensuel
 
 ## sim.roi_year
-Retour après l’abonnement annuel
+Retour estimé après l’abonnement annuel
 
 ## sim.time_line
-Même si la note ne bouge pas, vous n’écrivez plus jamais une réponse Google. C’est aussi cela, l’abonnement.
+L’estimation n’inclut pas la valeur du temps que vous récupérez en n’ayant plus à écrire une autre réponse Google de routine.
 
 ## sim.already_replying
-Vous répondez déjà à presque tout. Le chiffre d’affaires en plus du fait que nous répondions à votre place est petit. Ici, le chiffre utile est le temps que vous récupérez.
+Vous répondez déjà à presque tous les avis. Dans ce cas, la raison la plus solide d’utiliser BabyRock Social est le temps et la constance que vous gagnez. Pas une hausse attendue du fait de commencer à répondre.
 
 ## sim.cta
-Écrire à Rosalia pour commencer
+Que l’on s’occupe de mes avis
 
 ## sim.research_link
-Comment nous avons construit ces chiffres
+Voir les études derrière l’estimation
 
 ## sim.calculate
-Voir les chiffres
+Calculer l’impact attendu
 
 ## how.headline
-Comment le service marche, du premier WhatsApp à une semaine normale
+Du premier WhatsApp à chaque réponse publiée
 
 ## how.lead
-Il n’y a pas de formulaire de carte sur ce site. Vous nous écrivez. Rosalia envoie un lien de paiement. Ensuite vous ajoutez un gestionnaire sur Google, et nous commençons.
+Pas d’autre tableau de bord. Pas d’application à installer. Pas de mot de passe Google. Écrivez à Rosalia sur WhatsApp, choisissez la formule, ajoutez-nous comme gestionnaire de votre fiche d’établissement Google, et nous nous en occupons.
 
 ## how.step1_title
-Vous écrivez à Rosalia
+1. Parlez-nous de votre commerce
 
 ## how.step1
-WhatsApp ou un e-mail suffit. Donnez-lui le nom du commerce et la fiche Google. Elle répond aux questions, et elle envoie un lien de paiement pour le forfait mensuel (89 €) ou le forfait de douze mois (748 €, 30 % de moins).
+Envoyez à Rosalia le nom du commerce et la fiche Google par WhatsApp ou e-mail. Choisissez 89 € mois par mois ou 748 € pour douze mois. Elle répond aux questions et envoie un lien de paiement sécurisé.
 
 ## how.step2_title
-Vous ajoutez un gestionnaire, pas un mot de passe
+2. Ajoutez-nous comme gestionnaire, pas comme propriétaire
 
 ## how.step2
-Vous invitez reviews@babyrock.ai comme gestionnaire sur votre fiche Google. Nous ne vous demandons jamais le mot de passe du titulaire. Vous pouvez nous retirer quand vous voulez.
+Invitez reviews@babyrock.ai comme gestionnaire de votre fiche d’établissement Google. Nous ne demandons jamais le mot de passe du titulaire. Vous restez aux commandes et pouvez nous retirer l’accès quand vous voulez.
 
 ## how.step3_title
-Une personne répond
+3. Nous préparons, relisons et publions chaque réponse
 
 ## how.step3
-Pour les avis 4 et 5 étoiles, quelqu’un de l’équipe rédige et publie. Pour les avis 1, 2 et 3 étoiles, vous recevez un brouillon sur WhatsApp. Vous répondez OK, ou vous envoyez le texte que vous voulez. Nous publions cela.
+L’IA nous aide à rédiger. Une personne vérifie ensuite le ton, la pertinence et la qualité, corrige si besoin et publie. Pour les avis 1, 2 et 3 étoiles, vous approuvez le texte final sur WhatsApp d’abord.
 
 ## how.step4_title
-Nous vous écrivons quand cela compte
+4. Nous vous écrivons quand votre jugement est nécessaire
 
 ## how.step4
-S’il s’est passé quelque chose ce jour-là, nous vous prévenons. Le lundi, vous recevez un court récapitulatif. S’il ne s’est rien passé, nous restons silencieux. Entre-temps, nous sommes toujours accessibles via WhatsApp.
+Si un avis parle d’un problème, d’un désaccord ou d’un détail que vous seul pouvez confirmer, nous vous écrivons. Vous recevez aussi un court récapitulatif hebdomadaire. Quand votre attention n’est pas nécessaire, nous vous laissons tenir le commerce.
 
 ## how.ai_box
-Nous utilisons l’IA pour préparer des brouillons et pour travailler dans la langue de l’avis. Nous ne l’utilisons pas pour publier. Une personne lit le texte avant qu’il parte sur Google.
+L’IA est le point de départ et nous permet de ne pas décrocher. Une personne tranche, vérifie la qualité et publie à la main la réponse finale. Rien n’est publié tout seul.
 
 ## how.whatsapp
-Le même fil WhatsApp est la façon de nous joindre pour un changement de texte, une pause, une facture, ou pour arrêter.
+La même conversation WhatsApp sert à demander un changement de texte, expliquer ce qui s’est passé, demander une facture, mettre en pause ou résilier.
 
 ## research.headline
-D’où viennent les chiffres du simulateur
+La recherche derrière l’estimation d’impact
 
 ## research.lead
-Nous préférons montrer les études et le calcul plutôt qu’un chiffre rond de marketing. Le calculateur de ce site utilise deux colonnes : un attendu, et la fourchette de Harvard pour une étoile entière en plus. D’autres sociétés citent souvent 35 % de chiffre d’affaires en plus. Nous expliquons cette étude plus bas, et nous ne mettons pas 35 % dans le calculateur, parce qu’elle compare des commerces différents au lieu de mesurer ce que le fait de répondre provoque.
+Nous utilisons des résultats publiés pour une estimation centrale pratique : autour de 0,84 % du chiffre d’affaires mensuel pour un commerce qui passe de répondre peu à répondre toujours. Voici d’où vient ce chiffre.
 
 ## research.luca_title
-Harvard Business School, Michael Luca, 2011
+Harvard Business School — Michael Luca, 2011/2016
 
 ## research.luca
-L’article s’appelle « Reviews, Reputation, and Revenue: The Case of Yelp.com ». Luca a regardé des restaurants à Seattle et la façon dont Yelp affiche les étoiles. Restaurants indépendants : une étoile de plus allait avec 5 à 9 % de chiffre d’affaires en plus. La méthode utilise l’arrondi des étoiles affichées, ce qui est plus proche d’un vrai effet qu’un billet de blog. La limite, c’est que c’est Yelp, Seattle, et des restaurants. Nous l’utilisons quand même parce que c’est le chiffre sérieux sur les notes et le chiffre d’affaires, et parce qu’en Espagne et en France, la fiche que l’on ouvre est celle de Google. Nous appliquons les mêmes 5 à 9 % au chiffre d’affaires mensuel que vous tapez.
+« Reviews, Reputation, and Revenue: The Case of Yelp.com » a étudié des restaurants indépendants à Seattle. Une hausse d’une étoile de la note affichée sur Yelp a produit 5 à 9 % de chiffre d’affaires en plus. Dans l’estimation centrale, nous utilisons le milieu : 7 % par étoile entière.
 
 ## research.womply_title
-Womply, environ 200 000 petits commerces, 2019
+Marketing Science — Davide Proserpio et Georgios Zervas, 2017
 
 ## research.womply
-Les commerces qui répondaient à au moins environ 25 % de leurs avis encaisseaient environ 35 % de plus que la moyenne. L’échantillon est large et couvre beaucoup de commerces de proximité, pas seulement des restaurants. C’est une corrélation. Les commerces déjà bien tenus répondent plus et gagnent aussi plus. C’est pourquoi 35 % n’est pas une colonne de notre calculateur. C’est ici pour que vous voyiez le chiffre que d’autres sites utilisent, et pourquoi nous restons sur un attendu plus petit.
+« Online Reputation Management: Estimating the Impact of Management Responses on Consumer Reviews » a examiné des dizaines de milliers d’avis et de réponses d’hôtels sur TripAdvisor. Quand les hôtels ont commencé à répondre, ils ont reçu 12 % d’avis en plus et leur note a augmenté en moyenne de 0,12 étoile. C’est cette amélioration de 0,12 étoile que nous utilisons.
 
 ## research.bright_title
-Enquêtes consommateurs BrightLocal
+Conseils Google Business Profile
 
 ## research.bright
-Année après année, une grande majorité des personnes dit lire des avis avant de choisir un commerce local, et préférer un commerce qui répond. C’est ce qu’elles disent qu’elles feront, pas un euro de chiffre d’affaires mesuré. Nous l’utilisons comme raison d’inclure un petit effet de conversion (2 % du chiffre d’affaires dans la colonne attendue, si vous ne répondez presque pas aujourd’hui).
+Google recommande de répondre aux avis pour montrer que l’avis du client compte. Google dit aussi que les avis positifs et les réponses utiles peuvent aider à se distinguer, et que davantage d’avis et de notes positives peuvent soutenir le référencement local. C’est pourquoi des réponses régulières et soignées comptent au-delà de la personne qui a écrit l’avis.
 
 ## research.formula_title
-Ce que le calculateur fait vraiment
+Comment nous calculons l’impact attendu
 
 ## research.formula
-Vous tapez le chiffre d’affaires mensuel R. Vous pouvez indiquer dans quelle mesure vous répondez déjà.
+Indiquez le chiffre d’affaires mensuel R.
 
-Si vous ne répondez presque pas, nous prenons un mouvement de note de 0,15 étoile. Nous valorisons une étoile entière à 7 % du chiffre d’affaires (le milieu des 5 à 9 % de Luca). Ce canal de note est R × 0,15 × 0,07.
+Estimation basse = R × 0,12 × 5 % = R × 0,6 %.
 
-Nous ajoutons 2 % du chiffre d’affaires pour le fait que l’on voit que vous répondez. Ce canal de conversion est R × 0,02.
+Estimation centrale = R × 0,12 × 7 % = R × 0,84 %.
 
-L’extra attendu par mois est la somme des deux. Si vous répondez déjà à une partie, les deux canaux se réduisent. Si vous répondez déjà à tous, l’extra attendu du fait que nous répondions à votre place est à peu près zéro.
+Estimation haute = R × 0,12 × 9 % = R × 1,08 %.
 
-La colonne de l’étoile entière est simplement R × 5 % et R × 9 %. Nous retranchons ensuite 89 € pour le forfait mensuel, ou 748 € / 12 pour l’annuel, pour que vous voyiez le chiffre après notre abonnement.
+Nous retranchons ensuite 89 € pour la formule mensuelle, ou 748 € ÷ 12 pour l’annuelle. Si vous répondez déjà à une partie ou à la plupart, le calculateur réduit l’estimation parce qu’une partie du travail est déjà faite.
 
 ## research.what_we_use
-La colonne attendue est celle que nous utiliserions pour décider pour un commerce comme le vôtre. La colonne de l’étoile entière est la fourchette de Harvard, sur votre chiffre d’affaires, pour voir le haut de ce qu’une étoile de plus a valu. Si ce n’est pas utile, vous pouvez arrêter. Écrivez à Rosalia sur WhatsApp.
+L’estimation centrale est le chiffre que nous utiliserions pour juger le service : 0,84 % du chiffre d’affaires mensuel avant l’abonnement, plus la valeur du temps du patron. La recherche décrit des moyennes ; le résultat d’un commerce donné peut être plus haut ou plus bas.
 
 ## about.headline
-À qui vous écrivez
+Des personnes sont responsables de chaque réponse
 
 ## about.lead
-BabyRock Social est à Sant Cugat. Le visage public du service est Rosalia. Vous la joignez sur WhatsApp et par e-mail. Nous sommes toujours accessibles pour vous de cette façon.
+BabyRock Social est à Sant Cugat del Vallès, en Espagne. Rosalia est votre contact principal, et une personne de l’équipe répond de la qualité et de la publication de chaque texte.
 
 ## about.rosalia_role
-Rosalia — votre contact
+Rosalia — votre contact direct
 
 ## about.rosalia
-Rosalia est la personne à qui les patrons écrivent. C’est elle qui envoie le lien de paiement, qui répond quand un avis 2 étoiles a besoin de vos mots, et qui prend un BAJA si vous voulez arrêter. Si vous écrivez, c’est elle.
+Rosalia vous aide à démarrer, répond à vos questions et vous envoie les réponses délicates pour approbation. Si un avis 2 étoiles a besoin de contexte, une facture doit être renvoyée ou vous voulez résilier, cela se fait dans la même conversation WhatsApp.
 
 ## about.ben_role
 Benjamin Pommeraud — fondateur
 
 ## about.ben
-Benjamin a lancé BabyRock Social. Il a défini la façon de travailler : une personne publie chaque réponse, l’IA reste en arrière-plan pour que nous soyons rapides, et le patron reste sur WhatsApp plutôt que de se connecter à un autre outil. Il vit à Sant Cugat.
+Benjamin a créé BabyRock Social pour que les commerces indépendants aient la constance d’un service géré, sans un autre outil à apprendre. Avant l’IA, les logiciels oubliaient les petits et se concentraient sur les gros comptes. Aujourd’hui, l’IA permet aux petits commerces d’offrir la même qualité de service en ligne. Chez BabyRock, l’IA rend le travail efficace ; les personnes apportent le jugement, le contrôle qualité et la responsabilité.
 
 ## about.human_title
-La règle sur l’IA
+Notre règle sur l’IA
 
 ## about.human
-Nous n’utilisons pas l’intelligence artificielle pour publier les réponses. Une personne le fait. Nous utilisons l’IA pour être efficaces : préparer un brouillon, rester dans la langue de l’avis, et faire avancer la file. La phrase qui part sur votre fiche Google a été lue par quelqu’un de l’équipe.
+Nous utilisons l’IA pour la qualité, la constance et l’échelle. Elle nous aide à préparer un premier brouillon et à travailler dans plusieurs langues. Mais nous savons que nos clients sont des personnes qui tiennent des commerces pour des personnes. Et que la confiance compte. C’est pourquoi des personnes relisent le ton, la pertinence et la qualité, font les corrections, et publient la réponse finale. L’IA ne publie jamais une réponse toute seule.
 
 ## about.whatsapp
-Nous sommes toujours accessibles pour vous via WhatsApp. Ce n’est pas un robot. C’est Rosalia, ou la personne qui tient son fil.
+Nous ne voulons pas que vous installiez encore une application. Vous devez pouvoir nous écrire comme vous le feriez naturellement. Vous parlez directement à Rosalia ou à la personne qui tient la conversation sur WhatsApp.
 
 ## sub.headline
-Écrivez-nous. Rosalia envoie le lien de paiement.
+Que chaque nouvel avis Google soit traité, à partir de 89 € par mois.
 
 ## sub.lead
-Choisissez le forfait mensuel (89 €) ou le forfait de douze mois (748 €, 30 % de moins). Il n’y a pas de carte à saisir sur cette page. Vous envoyez le nom du commerce, et Rosalia répond avec le lien et les deux étapes pour ajouter le gestionnaire Google.
+Envoyez-nous le nom du commerce et la fiche Google. Rosalia répondra aux questions, vous aidera à choisir la formule mensuelle ou annuelle, et vous enverra le lien de paiement sécurisé. Ensuite, ajoutez-nous comme gestionnaire et nous commençons.
 
 ## sub.month
-89 € / mois, hors TVA
+89 €/mois, hors TVA
 
 ## sub.year
-748 € / an, hors TVA — 30 % de moins que de payer mois par mois
+748 €/an, hors TVA — économisez 30 %
 
 ## sub.form_name
 Nom du commerce
@@ -413,19 +431,19 @@ Nom du commerce
 Ville
 
 ## sub.form_listing
-Fiche Google (nom ou lien)
+Nom ou lien de la fiche Google
 
 ## sub.form_email
-Votre e-mail
+E-mail
 
 ## sub.form_wa
-Votre WhatsApp
+Numéro WhatsApp
 
 ## sub.form_revenue
-Chiffre d’affaires mensuel, si vous avez déjà utilisé le simulateur (facultatif)
+Chiffre d’affaires mensuel, si vous avez utilisé le calculateur (facultatif)
 
 ## sub.form_plan
-Forfait souhaité
+Formule souhaitée
 
 ## sub.plan_month
 Mois par mois — 89 €
@@ -434,64 +452,68 @@ Mois par mois — 89 €
 Douze mois — 748 €
 
 ## sub.cta_wa
-Ouvrir WhatsApp avec Rosalia
+Commencer sur WhatsApp
 
 ## sub.cta_email
-Lui envoyer un e-mail
+Écrire à Rosalia
 
 ## sub.after
-Elle répond sur WhatsApp. Une fois le lien payé, vous invitez reviews@babyrock.ai comme gestionnaire, et nous commençons sur les avis sans réponse.
+Après le paiement, vous invitez reviews@babyrock.ai comme gestionnaire de votre fiche d’établissement Google. Nous commençons alors par les avis sans réponse. Si vous bloquez à cette étape, écrivez-nous sur WhatsApp.
 
 ## account.headline
-Votre compte, les factures, et comment arrêter
+Le service, les factures et l’accès
 
 ## account.lead
-Il n’y a pas de login séparé sur cette première version du site. Les factures vont à l’e-mail que vous avez donné à Rosalia. Le reste — une copie de facture, un changement de carte plus tard, une pause, un arrêt — passe par le même fil WhatsApp. Nous sommes toujours accessibles pour vous de cette façon.
+Pas besoin d’un autre identifiant. Les factures vont à votre e-mail, et les demandes de service restent dans la conversation WhatsApp que vous avez déjà avec l’équipe.
 
 ## account.contacts_title
-Contacts
+Vos contacts
 
 ## account.contacts
-Rosalia — rosalia@babyrock.ai, et WhatsApp. C’est le même numéro que nous utilisons déjà avec vous pour les brouillons 1 à 3 étoiles. Vous pouvez y écrire pour tout, pas seulement pour les avis.
+Écrivez à Rosalia à rosalia@babyrock.ai ou utilisez la conversation WhatsApp déjà ouverte. Elle sert pour le contexte d’un avis, un changement de texte, les factures, une pause ou la résiliation.
 
 ## account.invoices_title
 Factures et historique de paiements
 
 ## account.invoices
-Chaque paiement produit une facture, envoyée à votre e-mail, avec TVA. Si vous avez besoin d’une copie, écrivez « facture » à Rosalia et elle la renvoie. Quand nous encaisserons par carte de façon automatique, cette page les listera. En attendant, l’e-mail est le registre.
+Chaque paiement produit une facture, avec TVA, envoyée à votre e-mail. Besoin d’une autre copie ? Écrivez « factura » ou « invoice » à Rosalia et elle la renvoie.
 
 ## account.pay_title
 Comment vous payez
 
 ## account.pay
-Rosalia envoie un lien de paiement pour le forfait que vous avez choisi. Mois par mois, 89 €. Douze mois, 748 €. Pas de frais de mise en service si vous avez ajouté vous-même le gestionnaire Google.
+Rosalia envoie un lien de paiement sécurisé pour la formule choisie : 89 € mois par mois ou 748 € pour douze mois. Pas de frais de mise en service si vous ajoutez vous-même le gestionnaire Google.
 
 ## account.cancel_title
 Comment résilier
 
 ## account.cancel
-Écrivez BAJA ou « merci d’arrêter » à Rosalia sur WhatsApp. Nous confirmons, nous arrêtons les nouvelles réponses à la fin de la période déjà payée, et nous vous rappelons de retirer reviews@babyrock.ai comme gestionnaire sur Google. Les réponses déjà en ligne restent.
+Écrivez BAJA ou « merci d’arrêter » à Rosalia sur WhatsApp. Nous confirmons, nous arrêtons les nouvelles réponses à la fin de la période payée, et nous retirons notre accès gestionnaire. Les réponses déjà publiées restent sur la fiche.
 
 ## account.listing_title
-Le gestionnaire Google
+L’accès à votre fiche d’établissement Google
 
 ## account.listing
-Vous avez invité reviews@babyrock.ai. Pour nous retirer : fiche d’établissement Google → Gestionnaires → retirer cette adresse. Faites-le après la résiliation si vous ne voulez plus que nous voyions les nouveaux avis.
+Vous avez invité reviews@babyrock.ai comme gestionnaire, pas comme propriétaire. Nous retirons l’accès à la fin du service. Vous pouvez aussi nous retirer à tout moment : ouvrez votre fiche d’établissement Google, allez dans Paramètres du profil d’établissement → Personnes et accès, sélectionnez reviews@babyrock.ai et choisissez Retirer la personne.
 
 ## account.cta_cancel
-WhatsApp à Rosalia pour résilier
+Écrire à Rosalia pour résilier
 
 ## privacy.headline
 Confidentialité
 
 ## privacy.body
-BabyRock Social répond aux avis Google des commerces qui nous embauchent. Nous sommes sous-traitants pour ce travail : le commerce reste responsable de sa fiche. Nous ne prenons pas le mot de passe Google du titulaire. Nous conservons les textes des avis et des réponses le temps nécessaire au service, à la comptabilité et à un éventuel litige, puis nous les supprimons. Nous utilisons WhatsApp pour vous parler. Nous ne vendons pas vos données. Pour demander ce que nous détenons, écrivez à rosalia@babyrock.ai.
+BabyRock Social traite le contenu des avis Google et les brouillons de réponse pour fournir le service aux commerces qui nous embauchent. Le commerce reste responsable de sa fiche d’établissement Google. Nous ne demandons jamais le mot de passe Google du titulaire.
+
+Nous utilisons des outils d’IA pour aider à préparer des brouillons. Une personne relit et, si besoin, corrige chaque réponse avant publication. Nous conservons les enregistrements d’avis et de service seulement le temps nécessaire pour fournir le service, tenir la comptabilité et gérer un litige. Nous utilisons WhatsApp pour vous parler et nous ne vendons pas vos données. Pour demander quelles informations nous détenons ou demander une correction ou une suppression, écrivez à rosalia@babyrock.ai.
 
 ## terms.headline
 Conditions
 
 ## terms.body
-Le service est la réponse aux avis Google d’une fiche, à 89 € par mois hors TVA, ou 748 € pour douze mois hors TVA. Vous ajoutez reviews@babyrock.ai comme gestionnaire. Les réponses 4 et 5 étoiles sont publiées par notre équipe. Les réponses 1, 2 et 3 étoiles sont publiées après votre OK ou votre reformulation sur WhatsApp. Vous pouvez arrêter à la fin de la période déjà payée en écrivant à Rosalia. Nous pouvons suspendre le service si un paiement échoue. Le droit espagnol et les tribunaux de Barcelone s’appliquent, sauf règle impérative de consommation contraire.
+BabyRock Social gère les réponses d’une fiche d’établissement Google à 89 € par mois hors TVA, ou 748 € pour douze mois hors TVA. En vous abonnant et en nous invitant comme gestionnaire, vous nous autorisez à rédiger, relire, envoyer, modifier et, si nécessaire, supprimer des réponses sur cette fiche. L’IA peut aider au premier brouillon ; une personne vérifie et envoie chaque réponse. Les réponses aux avis 4 et 5 étoiles peuvent être envoyées avec cette autorisation continue. Celles des avis 1, 2 et 3 étoiles sont envoyées seulement après que vous les avez approuvées ou modifiées sur WhatsApp. Google relit les réponses et contrôle le moment final de publication.
+
+Vous pouvez résilier à la fin de la période payée en écrivant à Rosalia. Quand le service s’arrête, nous retirons notre accès gestionnaire. Nous pouvons suspendre le service si un paiement échoue. Le droit espagnol et les tribunaux de Barcelone s’appliquent, sauf règle impérative de consommation contraire.
 
 ## privacy.link
 Confidentialité

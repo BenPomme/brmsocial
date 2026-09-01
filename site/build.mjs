@@ -228,6 +228,9 @@ function shops(copy, depth) {
     ["shop-florist.jpg", "home.shop_florist"],
     ["shop-cafe.jpg", "home.shop_cafe"],
     ["shop-workshop.jpg", "home.shop_workshop"],
+    ["shop-clinic.jpg", "home.shop_clinic"],
+    ["shop-physio.jpg", "home.shop_physio"],
+    ["shop-club.jpg", "home.shop_club"],
   ];
   return items
     .map(
@@ -253,7 +256,7 @@ function compactSim(copy) {
 function homePage(locale, copy, config, depth) {
   return `
   <section class="hero-stage">
-    <img class="hero-bg" src="${asset(depth, "illustrations/hero.jpg")}" alt="">
+    <img class="hero-bg" src="${asset(depth, "illustrations/hero.jpg")}" alt="${esc(t(copy, "home.headline"))}">
     <div class="hero-panel">
       <p class="kicker">${esc(t(copy, "home.kicker"))}</p>
       <h1>${esc(t(copy, "home.headline"))}</h1>
@@ -342,6 +345,9 @@ function simulatorPage(locale, copy, depth) {
             <option value="florist">${esc(t(copy, "sim.kind_florist"))}</option>
             <option value="cafe">${esc(t(copy, "sim.kind_cafe"))}</option>
             <option value="workshop">${esc(t(copy, "sim.kind_workshop"))}</option>
+            <option value="clinic">${esc(t(copy, "sim.kind_clinic"))}</option>
+            <option value="physio">${esc(t(copy, "sim.kind_physio"))}</option>
+            <option value="club">${esc(t(copy, "sim.kind_club"))}</option>
           </select>
         </label>
         <label>${esc(t(copy, "sim.reply"))}
@@ -576,8 +582,8 @@ write(
   `<!doctype html><meta charset="utf-8"><title>BabyRock Social</title>
 <script>
 const map = {es:"es",ca:"ca",fr:"fr",en:"en"};
-const lang = (navigator.languages || [navigator.language || "es"]).map(l => l.slice(0,2).toLowerCase());
-const hit = lang.find(l => map[l]) || "es";
+const lang = (navigator.languages || [navigator.language || "en"]).map(l => l.slice(0,2).toLowerCase());
+const hit = lang.find(l => map[l]) || "en";
 location.replace("./" + hit + "/");
 </script>
 <p><a href="./es/">Español</a> · <a href="./ca/">Català</a> · <a href="./fr/">Français</a> · <a href="./en/">English</a></p>`

@@ -1,11 +1,11 @@
 ## meta.title
-BabyRock Social — responem les ressenyes de Google del vostre negoci
+Respostes a ressenyes de Google per a petits comerços | BabyRock Social
 
 ## meta.description
-Una persona del nostre equip respon les ressenyes de Google del vostre petit comerç. 89 € al mes, o 748 € a l’any. Sempre som accessibles per WhatsApp.
+Respostes cuidades a les ressenyes de Google del vostre negoci. La IA ens ajuda a ser eficients; una persona revisa i publica cada resposta. Des de 89 € al mes.
 
 ## nav.simulator
-Simulador
+Calculadora d’impacte
 
 ## nav.how
 Com funciona
@@ -32,7 +32,7 @@ Tancar
 WhatsApp
 
 ## footer.tagline
-BabyRock Social respon les ressenyes de Google dels petits comerços. Una persona publica cada resposta. Sempre som accessibles per WhatsApp.
+BabyRock Social gestiona les respostes a les ressenyes de Google dels petits comerços. La IA ens ajuda a anar de pressa; una persona revisa i publica cada resposta. Parleu amb l’equip per WhatsApp.
 
 ## footer.privacy
 Privadesa
@@ -44,27 +44,27 @@ Condicions
 Sant Cugat del Vallès
 
 ## home.kicker
-Per a petits comerços a Google
+Gestió de ressenyes de Google per a petits comerços
 
 ## home.headline
-Responem les ressenyes de Google del vostre negoci, cada mes, perquè les persones que us busquen vegin que hi esteu al cas.
+No deixeu cap ressenya de Google sense resposta.
 
 ## home.lead
-BabyRock Social és per a restaurants, i també per a forns, perruqueries, floristeries, cafès, tallers i altres petits comerços que viuen de la fitxa de Google. Ens afegiu com a gestors. No us demanem mai la contrasenya. Una persona del nostre equip redacta i publica cada resposta. A les ressenyes d’1, 2 i 3 estrelles, veieu primer l’esborrany per WhatsApp i dieu OK o canvieu algunes paraules.
+BabyRock Social prepara, revisa i publica una resposta atenta a cada ressenya nova de la vostra fitxa d’empresa de Google. La IA ens ajuda a redactar amb eficiència. Una persona revisa el to, la pertinència i la qualitat abans de publicar.
 
-Sempre som accessibles per a vosaltres via WhatsApp. Així ens arribeu per a una ressenya difícil, un canvi de text, una factura o per deixar el servei.
+A les ressenyes d’1, 2 i 3 estrelles, us enviem primer la proposta per WhatsApp. L’aproveu o ens dieu què canviar. Continueu al capdavant, sense passar les nits escrivint respostes. Us podeu centrar a portar el negoci.
 
 ## home.cta_sim
-Veure-ho amb les vostres xifres
+Calculeu l’impacte esperat per a vosaltres
 
 ## home.cta_sub
-Escriure a la Rosalia
+Que s’ocupin de les meves ressenyes
 
 ## home.for_whom_title
-Si la gent us troba a Google, això és per a vosaltres
+Si els clients us troben a Google, aquest servei és per a vosaltres
 
 ## home.for_whom_lead
-Vam començar pels restaurants perquè és allà on les ressenyes sense resposta es noten primer. La feina és la mateixa per a qualsevol comerç independent: una persona respon, en la llengua de la ressenya, també en català.
+Vam començar pels restaurants, on una ressenya sense resposta pot decidir la taula següent. El mateix val per a qualsevol comerç local independent. Responem en la llengua del client en un dia, també en castellà, català, francès i anglès, i cuidem que cada text soni al vostre negoci.
 
 ## home.shop_restaurant
 Restaurant
@@ -84,11 +84,20 @@ Cafè
 ## home.shop_workshop
 Taller
 
+## home.shop_clinic
+Clínica
+
+## home.shop_physio
+Fisioteràpia
+
+## home.shop_club
+Club
+
 ## home.sim_title
-El que pot valer respondre, en el vostre cas
+El que poden valer les respostes constants per al vostre negoci
 
 ## home.sim_lead
-Escriviu la facturació mensual del negoci. El càlcul fa servir recerca publicada sobre les notes i sobre els comerços que responen. Mostra dues xifres: una d’esperada, i la xifra de Harvard per a una estrella sencera de més.
+La recerca ha vist que els negocis que comencen a respondre amb constància poden millorar la nota. Juntament amb l’estudi de Harvard Business School sobre notes i ingressos, això dóna un impacte esperat, basat en la recerca, d’al voltant del 0,84 % de la facturació mensual, per a un negoci que avui respon poc.
 
 ## home.sim_label
 Facturació mensual, en euros
@@ -97,114 +106,114 @@ Facturació mensual, en euros
 25000
 
 ## home.sim_result_before
-Extra esperat al mes, després de 89 €
+Impacte esperat segons la recerca, després de 89 €
 
 ## home.sim_result_after
-€ extra / mes després de la subscripció
+€ estimats al mes després de la subscripció
 
 ## home.sim_link
-Veure el càlcul complet i el pla anual
+Veure el càlcul i comparar plans
 
 ## home.value_time_title
-Els vespres, una altra vegada vostres
+Recupereu els vespres
 
 ## home.value_time
-La majoria de propietaris pensen respondre i ho fan a mitjanit, o no ho fan. Nosaltres agafem aquesta feina. Vosaltres continueu a la cuina, al saló o obrint la botiga.
+La majoria de propietaris volen respondre a cada ressenya. Després arriba el servei, cal atendre el local, i les respostes es queden per a mitjanit, o no s’escriuen. Nosaltres treiem aquesta tasca de la llista, perquè us ocupeu del que millor sabeu fer.
 
 ## home.value_trust_title
-La gent veu que hi responeu
+Mostreu als clients futurs que els escolteu
 
 ## home.value_trust
-Una gran majoria de persones diu que tria abans un comerç que respon a les ressenyes. La resposta queda a la fitxa. Els clients futurs la llegeixen, també les difícils.
+Les respostes són públiques. Qui compara comerços locals veu si agraïu, esclareu i tracteu les crítiques amb professionalitat. Google recomana primer les respostes útils i positives, perquè ajuden a distingir-se, i avisa l’autor de la ressenya quan hi responeu.
 
 ## home.value_rating_title
-La nota es mou quan se respon
+La constància pot reforçar la vostra reputació en línia
 
 ## home.value_rating
-Un estudi de Harvard sobre restaurants independents va trobar que una estrella de més anava amb un 5 a 9 % més d’ingressos. Respondre és una de les coses que mou la nota, perquè es veu i perquè és constant. El simulador hi posa un número. La pàgina de recerca explica com.
+Una recerca publicada va trobar que els hotels que van començar a respondre van rebre un 12 % més de ressenyes i van guanyar de mitjana 0,12 estrelles. Un estudi a part de Harvard va trobar que una estrella sencera de més valia un 5–9 % més d’ingressos al mes per a restaurants independents. La nostra calculadora combina aquests resultats sobre les vostres xifres.
 
 ## home.human_title
-Una persona publica cada resposta
+La IA ens fa més ràpids. Les persones protegeixen la qualitat.
 
 ## home.human
-No fem servir intel·ligència artificial per publicar les respostes. Ho fa una persona de l’equip. Fem servir la IA en segon pla per preparar un esborrany més de pressa i per treballar en la llengua de la ressenya — castellà, català, francès o anglès. El text que surt a Google l’ha llegit algú.
+Fem servir la IA per ser més eficients. Ens ajuda a mantenir el preu i a preparar primers esborranys en la llengua de la ressenya. Després una persona de l’equip comprova els fets que tenim, el to, la pertinència i la redacció, corregeix si cal, i publica la resposta final. Res no es publica sol.
 
 ## home.whatsapp_line
-Sempre som accessibles per a vosaltres via WhatsApp. La Rosalia és la persona a qui escriviu.
+Cal explicar el que va passar, canviar el text o fer una pregunta? Parleu amb la Rosalia i l’equip per WhatsApp. No cal una altra aplicació ni entrar en un web. Som amb vosaltres, a la butxaca.
 
 ## home.price_title
-Dues maneres de pagar
+Trieu el pla que us convingui
 
 ## home.price_month_name
 Mes a mes
 
 ## home.price_month_detail
-89 € cada mes, sense IVA. Podeu deixar-ho al final del període que ja heu pagat.
+89 € al mes, sense IVA. Si canceleu abans del cobrament següent, el servei acaba al final del mes ja pagat.
 
 ## home.price_year_name
 Dotze mesos
 
 ## home.price_year_detail
-748 € a l’any, sense IVA. És un 30 % menys que dotze vegades 89 €.
+748 € a l’any, sense IVA: un 30 % menys que pagar mes a mes.
 
 ## home.price_year_save
-Us estalvieu 320 €
+Estalvieu 320 €
 
 ## home.price_setup
-No hi ha quota d’alta si vosaltres mateixos afegiu el gestor de Google. El pagament no es fa en aquest web. Escriviu a la Rosalia i ella envia un enllaç de pagament.
+Sense quota d’alta si vosaltres mateixos ens afegiu a la fitxa d’empresa de Google. En aquest web no es cobra: la Rosalia us envia un enllaç de pagament segur.
 
 ## home.faq_title
-Preguntes que solen fer
+Preguntes que ens fan els propietaris
 
 ## home.faq_1_q
 Necessiteu la contrasenya de Google?
 
 ## home.faq_1_a
-No. Inviteu reviews@babyrock.ai com a gestor a la fitxa. Podeu treure aquest accés quan vulgueu.
+No. Inviteu reviews@babyrock.ai com a gestor de la vostra fitxa d’empresa de Google. La contrasenya es queda en el vostre poder, i ens podeu treure l’accés quan vulgueu. És un clic.
 
 ## home.faq_2_q
 Què passa amb una ressenya d’1, 2 o 3 estrelles?
 
 ## home.faq_2_a
-Us enviem un esborrany per WhatsApp. Responeu OK, o ens envieu el text que voleu. Publiquem això. No publiquem una resposta a una nota baixa sense vosaltres.
+Preparem i revisem una resposta, i us l’enviem per WhatsApp perquè l’aproveu. Contesteu OK o digueu-nos què canviar. Una persona de l’equip l’envia només després del vostre vistiplau. Google revisa les respostes abans que es vegin en públic, així que el moment final de publicació el controla Google.
 
 ## home.faq_3_q
 És només per a restaurants?
 
 ## home.faq_3_a
-No. El restaurant és un exemple natural perquè viu a Google. El servei és per a petits comerços amb fitxa: forns, perruqueries, floristeries, cafès, tallers i comerços semblants.
+No. El servei és per a negocis independents amb fitxa d’empresa de Google: restaurants, bars, clíniques, forns, perruqueries, floristeries, cafès, tallers i més.
 
 ## home.faq_4_q
 En quines llengües responeu?
 
 ## home.faq_4_a
-Responem en la llengua de la ressenya. Això inclou castellà, català, francès i anglès.
+Responem en la llengua de la ressenya, també en castellà, català, francès i anglès. Una persona comprova la redacció final abans de publicar-la.
 
 ## home.faq_5_q
-Hi ha algú si alguna cosa va malament?
+Podem parlar amb una persona si alguna cosa va malament?
 
 ## home.faq_5_a
-Sí. Sempre som accessibles per a vosaltres via WhatsApp. És el mateix canal que fem servir per a les ressenyes difícils.
+Sí. Parleu directament amb la Rosalia o amb qui cobreixi la conversa a WhatsApp: el mateix canal que fem servir per a les ressenyes delicades.
 
 ## home.faq_6_q
-Com es deixa el servei?
+Com es cancel·la?
 
 ## home.faq_6_a
-Escriviu BAJA o “vull parar” a la Rosalia per WhatsApp. El servei continua fins al final del mes o de l’any que ja heu pagat. Us recordem de treure el gestor de Google.
+Escriviu BAJA o «vull parar» a la Rosalia per WhatsApp. Confirmem, continuem fins al final del període que ja heu pagat, i treiem el nostre accés de gestor quan s’acaba el servei.
 
 ## sim.headline
-Escriviu la facturació. Mostrem el que ha valgut respondre en la recerca, amb les vostres xifres.
+Vegeu l’impacte basat en la recerca, amb les vostres xifres.
 
 ## sim.lead
-Dues columnes. L’esperada és la que faríem servir nosaltres per decidir: un moviment petit de la nota, més una mica de clientela extra perquè es veu que hi responeu. L’altra és la mateixa facturació si guanyéssiu una estrella sencera, que és el que va mesurar l’estudi de Harvard.
+Els negocis que van començar a respondre amb constància van guanyar de mitjana 0,12 estrelles en un estudi publicat. Harvard Business School va trobar que una estrella sencera de més valia un 5–9 % més d’ingressos per a restaurants independents.
 
-La subscripció es resta a les dues columnes, per al pla mensual i per a l’anual.
+Si es combinen aquests resultats, el rang basat en la recerca és el 0,6–1,08 % de la facturació mensual, amb una estimació central del 0,84 %. Introduïu la facturació per veure aquesta estimació després de la subscripció de BabyRock Social.
 
 ## sim.revenue
 Facturació mensual del negoci, en euros
 
 ## sim.kind
-Tipus de comerç (opcional)
+Tipus de negoci (opcional)
 
 ## sim.kind_any
 Comerç local
@@ -227,41 +236,50 @@ Cafè
 ## sim.kind_workshop
 Taller
 
+## sim.kind_clinic
+Clínica
+
+## sim.kind_physio
+Fisioteràpia
+
+## sim.kind_club
+Club
+
 ## sim.rating
 Nota actual a Google (opcional)
 
 ## sim.reply
-Quant hi responeu ja?
+Amb quina freqüència hi responeu avui?
 
 ## sim.reply_never
-Gairebé mai
+Poc o mai
 
 ## sim.reply_some
-Algunes ressenyes
+A algunes ressenyes
 
 ## sim.reply_most
-La majoria
+A la majoria
 
 ## sim.reply_all
-Totes, ja
+A totes, ja
 
 ## sim.expected_label
-Esperat
+Estimació basada en la recerca
 
 ## sim.expected_explain
-Un moviment de 0,15 estrelles si ara mateix gairebé no hi responeu, valorat al 7 % de la facturació per estrella sencera, més un 2 % de la facturació perquè la gent prefereix un comerç que respon. Si ja responeu a tot, aquesta columna se’n va a zero: la feina ja la feu, i els 89 € són aleshores només una manera de recuperar temps.
+Per a un negoci que avui respon poc, l’estimació central és el 0,84 % de la facturació mensual. Aplica la millora observada de 0,12 estrelles al punt mitjà del rang de Harvard (5–9 % per estrella sencera). Si ja responeu a una part o a la majoria, l’estimació baixa en la mateixa proporció.
 
 ## sim.fullstar_label
-Si guanyéssiu una estrella sencera
+Rang publicat
 
 ## sim.fullstar_explain
-Harvard Business School, Michael Luca, 2011: restaurants independents, una estrella de més anava amb un 5 a 9 % més d’ingressos. Mostrem aquest rang sobre la vostra xifra mensual. Respondre no és l’única cosa que pot moure una estrella. És la part que fem nosaltres, cada vegada.
+L’estimació baixa fa servir 0,12 × 5 % de la facturació. L’alta fa servir 0,12 × 9 %. Això dóna un rang del 0,6–1,08 % de la facturació mensual, abans de la subscripció.
 
 ## sim.after_month
-Després de 89 € / mes
+Després de 89 €/mes
 
 ## sim.after_year
-Després de 748 € / any (30 % menys)
+Després de 748 €/any — un 30 % menys
 
 ## sim.per_month
 al mes
@@ -270,141 +288,141 @@ al mes
 a l’any
 
 ## sim.roi_month
-Retorn després de la subscripció mensual
+Retorn estimat després de la subscripció mensual
 
 ## sim.roi_year
-Retorn després de la subscripció anual
+Retorn estimat després de la subscripció anual
 
 ## sim.time_line
-Encara que la nota no es mogui, no torneu a escriure cap altra resposta a Google. Això també és la subscripció.
+L’estimació no inclou el valor del temps que recupereu en no haver d’escriure cap altra resposta rutinària a Google.
 
 ## sim.already_replying
-Ja responeu gairebé a tot. L’ingrés extra pel fet que hi responguem nosaltres és petit. Aquí el que val és el temps que recupereu.
+Ja responeu gairebé a totes les ressenyes. En aquest cas, la raó més forta per fer servir BabyRock Social és el temps i la constància que ganyeu. No un augment esperat per començar a respondre.
 
 ## sim.cta
-Escriure a la Rosalia per començar
+Que s’ocupin de les meves ressenyes
 
 ## sim.research_link
-Com hem construït aquestes xifres
+Veure els estudis darrere de l’estimació
 
 ## sim.calculate
-Veure les xifres
+Calcular l’impacte esperat
 
 ## how.headline
-Com funciona el servei, del primer WhatsApp a una setmana normal
+Del primer WhatsApp a cada resposta publicada
 
 ## how.lead
-No hi ha un formulari de targeta en aquest web. Ens escriviu. La Rosalia envia un enllaç de pagament. Després afegiu un gestor a Google, i comencem.
+Sense un altre tauler. Sense aplicació per instal·lar. Sense contrasenya de Google. Escriviu a la Rosalia per WhatsApp, trieu el pla, afegiu-nos com a gestor de la fitxa d’empresa de Google, i ens n’ocupem.
 
 ## how.step1_title
-Escriviu a la Rosalia
+1. Expliqueu-nos el negoci
 
 ## how.step1
-WhatsApp o un correu n’hi ha prou. Digueu-li el nom del negoci i la fitxa de Google. Ella respon les preguntes i envia un enllaç de pagament per al pla mensual (89 €) o el de dotze mesos (748 €, un 30 % menys).
+Envieu a la Rosalia el nom del negoci i la fitxa de Google per WhatsApp o correu. Trieu 89 € mes a mes o 748 € per dotze mesos. Ella respon les preguntes i envia un enllaç de pagament segur.
 
 ## how.step2_title
-Afegiu un gestor, no una contrasenya
+2. Afegiu-nos com a gestor, no com a propietari
 
 ## how.step2
-Inviteu reviews@babyrock.ai com a gestor a la fitxa de Google. No us demanem mai la contrasenya del titular. Ens podeu treure quan vulgueu.
+Inviteu reviews@babyrock.ai com a gestor de la vostra fitxa d’empresa de Google. Mai no demanem la contrasenya del titular. Continueu al capdavant i ens podeu treure l’accés quan vulgueu.
 
 ## how.step3_title
-Una persona respon
+3. Preparem, revisem i publiquem cada resposta
 
 ## how.step3
-A les ressenyes de 4 i 5 estrelles, algú de l’equip redacta i publica. A les d’1, 2 i 3 estrelles, rebeu un esborrany per WhatsApp. Responeu OK, o envieu el text que voleu. Publiquem això.
+La IA ens ajuda a redactar. Després una persona revisa el to, la pertinència i la qualitat, corregeix si cal i publica. A les ressenyes d’1, 2 i 3 estrelles, aproveu el text final per WhatsApp primer.
 
 ## how.step4_title
-Us escrivim quan importa
+4. Us escrivim quan cal el vostre criteri
 
 ## how.step4
-Si aquell dia ha passat alguna cosa, us avisem. El dilluns rebeu un recapitulatiu curt. Si no ha passat res, ens estem callats. Entremig, sempre som accessibles per WhatsApp.
+Si una ressenya parla d’un problema, un desacord o un detall que només vosaltres podeu confirmar, us escrivim. També rebeu un recapitulatiu setmanal curt. Quan no cal la vostra atenció, us deixem portar el negoci.
 
 ## how.ai_box
-Fem servir IA per preparar esborranys i per treballar en la llengua de la ressenya. No la fem servir per publicar. Una persona llegeix el text abans que surti a Google.
+La IA és el punt de partida i ens permet no perdre el fil. Una persona decideix, comprova la qualitat i publica a mà la resposta final. Res no es publica sol.
 
 ## how.whatsapp
-El mateix fil de WhatsApp és com ens arribeu per a un canvi de text, una pausa, una factura o per parar.
+La mateixa conversa de WhatsApp serveix per demanar un canvi de text, explicar el que va passar, demanar una factura, pausar o cancel·lar.
 
 ## research.headline
-D’on surten les xifres del simulador
+La recerca darrere de l’estimació d’impacte
 
 ## research.lead
-Preferim mostrar els estudis i el compte abans que una xifra rodona de màrqueting. El calculador d’aquest web fa servir dues columnes: una d’esperada, i el rang de Harvard per a una estrella sencera de més. Altres empreses citen sovint un 35 % més d’ingressos. Expliquem aquest estudi més avall, i no posem el 35 % al calculador, perquè compara negocis diferents en lloc de mesurar el que causa el fet de respondre.
+Fem servir resultats publicats per a una estimació central pràctica: al voltant del 0,84 % de la facturació mensual per a un negoci que passa de respondre poc a respondre sempre. Aquí és d’on surt aquest número.
 
 ## research.luca_title
-Harvard Business School, Michael Luca, 2011
+Harvard Business School — Michael Luca, 2011/2016
 
 ## research.luca
-L’article es diu “Reviews, Reputation, and Revenue: The Case of Yelp.com.” Luca va mirar restaurants a Seattle i la manera com Yelp mostra les estrelles. Restaurants independents: una estrella de més anava amb un 5 a 9 % més d’ingressos. El mètode fa servir l’arrodoniment de les estrelles que es veuen, i per això és més a prop d’un efecte real que un article de blog. El límit és que és Yelp, Seattle i restaurants. El fem servir igualment perquè és la xifra seriosa sobre notes i ingressos, i perquè a Espanya i a França la fitxa que s’obre és la de Google. Apliquem el mateix 5 a 9 % a la facturació mensual que escriviu.
+«Reviews, Reputation, and Revenue: The Case of Yelp.com» va estudiar restaurants independents a Seattle. Un augment d’una estrella en la nota mostrada a Yelp va produir un 5–9 % més d’ingressos. En l’estimació central fem servir el punt mitjà: 7 % per estrella sencera.
 
 ## research.womply_title
-Womply, uns 200 000 petits comerços, 2019
+Marketing Science — Davide Proserpio i Georgios Zervas, 2017
 
 ## research.womply
-Els negocis que responien almenys a al voltant del 25 % de les ressenyes facturaven uns 35 % més que la mitjana. La mostra és gran i cobreix molts tipus de comerç local, no només restaurants. És una correlació. Els comerços que ja van bé responen més i també guanyen més. Per això el 35 % no és una columna del nostre calculador. És aquí perquè vegeu la xifra que fan servir altres webs, i per què nosaltres ens quedem amb un esperat més petit.
+«Online Reputation Management: Estimating the Impact of Management Responses on Consumer Reviews» va examinar desenes de milers de ressenyes i respostes d’hotels a TripAdvisor. Quan els hotels van començar a respondre, van rebre un 12 % més de ressenyes i la nota va pujar de mitjana 0,12 estrelles. Aquesta millora de 0,12 estrelles és la que fem servir.
 
 ## research.bright_title
-Enquestes a consumidors de BrightLocal
+Orientació de Google Business Profile
 
 ## research.bright
-Any rere any, una gran majoria de persones diu que llegeix ressenyes abans de triar un comerç local, i que prefereix un comerç que respon. Això és el que diuen que faran, no un euro mesurat d’ingressos. Ho fem servir com a raó per incloure un efecte petit de conversió (un 2 % de la facturació a la columna esperada, si ara mateix gairebé no hi responeu).
+Google recomana respondre a les ressenyes per mostrar que l’opinió del client importa. També diu que les ressenyes positives i les respostes útils poden ajudar a distingir-se, i que més ressenyes i notes positives poden donar suport al posicionament local. Per això les respostes constants i atentes importen més enllà de qui va escriure la ressenya.
 
 ## research.formula_title
-El que fa de veritat el calculador
+Com calculem l’impacte esperat
 
 ## research.formula
-Escriviu la facturació mensual R. Podeu afegir quant hi responeu ja.
+Introduïu la facturació mensual R.
 
-Si gairebé no hi responeu, agafem un moviment de nota de 0,15 estrelles. Valorem una estrella sencera al 7 % de la facturació (el mig del 5 a 9 % de Luca). Aquest canal de nota és R × 0,15 × 0,07.
+Estimació baixa = R × 0,12 × 5 % = R × 0,6 %.
 
-Afegim un 2 % de la facturació pel fet que es vegi que hi responeu. Aquest canal de conversió és R × 0,02.
+Estimació central = R × 0,12 × 7 % = R × 0,84 %.
 
-L’extra esperat al mes és la suma dels dos. Si ja responeu a una part, els dos canals es redueixen. Si ja responeu a totes, l’extra esperat pel fet que hi responguem nosaltres és gairebé zero.
+Estimació alta = R × 0,12 × 9 % = R × 1,08 %.
 
-La columna de l’estrella sencera és simplement R × 5 % i R × 9 %. Després restem 89 € per al pla mensual, o 748 € / 12 per a l’anual, perquè vegeu la xifra després de la nostra subscripció.
+Després restem 89 € per al pla mensual, o 748 € ÷ 12 per a l’anual. Si ja responeu a una part o a la majoria, la calculadora redueix l’estimació perquè una part de la feina ja es fa.
 
 ## research.what_we_use
-La columna esperada és la que faríem servir per decidir en un comerç com el vostre. La columna de l’estrella sencera és el rang de Harvard, sobre la vostra facturació, per veure el sostre del que ha valgut una estrella de més. Si no us serveix, ho podeu deixar. Escriviu a la Rosalia per WhatsApp.
+L’estimació central és la xifra que faríem servir per valorar el servei: 0,84 % de la facturació mensual abans de la subscripció, més el valor del temps del propietari. La recerca descriu mitjanes; el resultat d’un negoci concret pot ser més alt o més baix.
 
 ## about.headline
-A qui esteu escrivint
+Hi ha persones responsables de cada resposta
 
 ## about.lead
-BabyRock Social és a Sant Cugat. La cara pública del servei és la Rosalia. L’arribeu per WhatsApp i per correu. Sempre som accessibles per a vosaltres així.
+BabyRock Social és a Sant Cugat del Vallès, Espanya. La Rosalia és el vostre contacte principal, i una persona de l’equip respon de la qualitat i de la publicació de cada text.
 
 ## about.rosalia_role
-Rosalia — el vostre contacte
+Rosalia — el vostre contacte directe
 
 ## about.rosalia
-La Rosalia és la persona a qui escriuen els propietaris. Ella envia l’enllaç de pagament, respon quan una ressenya de 2 estrelles necessita les vostres paraules, i agafa un BAJA si voleu parar. Si hi escriviu, és ella.
+La Rosalia us ajuda a començar, respon les preguntes i us envia les respostes delicades perquè les aproveu. Si una ressenya de 2 estrelles necessita context, cal reenviar una factura o voleu cancel·lar, es fa a la mateixa conversa de WhatsApp.
 
 ## about.ben_role
 Benjamin Pommeraud — fundador
 
 ## about.ben
-Benjamin ha posat en marxa BabyRock Social. Ha definit la manera de treballar: una persona publica cada resposta, la IA es queda en segon pla perquè siguem ràpids, i el propietari es queda a WhatsApp en lloc d’entrar en una altra eina. Viu a Sant Cugat.
+Benjamin va crear BabyRock Social perquè els negocis independents tinguin la constància d’un servei gestionat, sense una altra eina per aprendre. Abans de la IA, el programari s’oblidava dels petits i es centrava en els comptes grans. Ara la IA permet als petits comerços donar la mateixa qualitat de servei en línia. A BabyRock, la IA fa la feina eficient; les persones aporten el criteri, el control de qualitat i la responsabilitat.
 
 ## about.human_title
-La regla sobre la IA
+La nostra regla sobre la IA
 
 ## about.human
-No fem servir intel·ligència artificial per publicar les respostes. Ho fa una persona. Fem servir la IA per ser eficients: preparar un esborrany, quedar-nos en la llengua de la ressenya i fer avançar la cua. La frase que surt a la vostra fitxa de Google l’ha llegida algú de l’equip.
+Fem servir la IA per a la qualitat, la constància i l’escala. Ens ajuda a preparar un primer esborrany i a treballar en diverses llengües. Però sabem que els nostres clients són persones que porten negocis per a persones. I que la confiança importa. Per això fem servir persones de veritat per comprovar el to, la pertinència i la qualitat, fer els canvis i publicar la resposta final. La IA no publica mai una resposta tota sola.
 
 ## about.whatsapp
-Sempre som accessibles per a vosaltres via WhatsApp. No és un robot. És la Rosalia, o la persona que cobreix el seu fil.
+No volem que instal·leu una altra aplicació. Heu de poder escriure’ns com ho faríeu de forma natural. Parleu directament amb la Rosalia o amb qui cobreixi la conversa a WhatsApp.
 
 ## sub.headline
-Escriviu-nos. La Rosalia envia l’enllaç de pagament.
+Que cada ressenya nova de Google quedi atesa, des de 89 € al mes.
 
 ## sub.lead
-Trieu el pla mensual (89 €) o el de dotze mesos (748 €, un 30 % menys). En aquesta pàgina no s’hi tecleja cap targeta. Envieu el nom del negoci, i la Rosalia respon amb l’enllaç i amb els dos passos per afegir el gestor de Google.
+Envieu-nos el nom del negoci i la fitxa de Google. La Rosalia respondrà les preguntes, us ajudarà a triar el pla mensual o anual, i us enviarà l’enllaç de pagament segur. Després ens afegiu com a gestor i comencem.
 
 ## sub.month
-89 € / mes, sense IVA
+89 €/mes, sense IVA
 
 ## sub.year
-748 € / any, sense IVA — un 30 % menys que pagar mes a mes
+748 €/any, sense IVA — estalvieu un 30 %
 
 ## sub.form_name
 Nom del negoci
@@ -413,19 +431,19 @@ Nom del negoci
 Ciutat
 
 ## sub.form_listing
-Fitxa de Google (nom o enllaç)
+Nom o enllaç de la fitxa de Google
 
 ## sub.form_email
-El vostre correu
+Correu
 
 ## sub.form_wa
-El vostre WhatsApp
+Número de WhatsApp
 
 ## sub.form_revenue
-Facturació mensual, si ja heu fet servir el simulador (opcional)
+Facturació mensual, si heu fet servir la calculadora (opcional)
 
 ## sub.form_plan
-Pla que preferiu
+Pla preferit
 
 ## sub.plan_month
 Mes a mes — 89 €
@@ -434,64 +452,68 @@ Mes a mes — 89 €
 Dotze mesos — 748 €
 
 ## sub.cta_wa
-Obrir WhatsApp amb la Rosalia
+Començar per WhatsApp
 
 ## sub.cta_email
-Enviar-li un correu
+Escriure a la Rosalia
 
 ## sub.after
-Ella respon per WhatsApp. Quan pagueu l’enllaç, inviteu reviews@babyrock.ai com a gestor, i comencem amb les ressenyes sense resposta.
+Després del pagament, inviteu reviews@babyrock.ai com a gestor de la fitxa d’empresa de Google. Aleshores comencem amb les ressenyes sense resposta. Si us encalleu en aquest pas, escriviu-nos per WhatsApp.
 
 ## account.headline
-El vostre compte, les factures i com parar
+El servei, les factures i l’accés
 
 ## account.lead
-En aquesta primera versió del web no hi ha un login a part. Les factures van al correu que vau donar a la Rosalia. La resta — una còpia d’una factura, un canvi de targeta més endavant, una pausa, una baixa — passa pel mateix fil de WhatsApp. Sempre som accessibles per a vosaltres així.
+No cal un altre inici de sessió. Les factures van al vostre correu, i les peticions de servei es queden a la conversa de WhatsApp que ja feu servir amb l’equip.
 
 ## account.contacts_title
-Contactes
+Els vostres contactes
 
 ## account.contacts
-Rosalia — rosalia@babyrock.ai, i WhatsApp. És el mateix número que ja fem servir amb vosaltres per als esborranys d’1 a 3 estrelles. Hi podeu escriure per a qualsevol cosa, no només per a ressenyes.
+Escriviu a la Rosalia a rosalia@babyrock.ai o feu servir la conversa de WhatsApp que ja teniu. Serveix per al context d’una ressenya, un canvi de text, factures, una pausa o la cancel·lació.
 
 ## account.invoices_title
 Factures i historial de pagaments
 
 ## account.invoices
-Cada pagament produeix una factura, enviada al vostre correu, amb IVA. Si necessiteu una còpia, escriviu “factura” a la Rosalia i us la reenvia. Quan cobrem amb targeta de forma automàtica, aquesta pàgina les llistarà. Fins aleshores, el correu és el registre.
+Cada pagament produeix una factura, amb IVA, enviada al vostre correu. Necessiteu una altra còpia? Escriviu «factura» o «invoice» a la Rosalia i us la reenvia.
 
 ## account.pay_title
 Com es paga
 
 ## account.pay
-La Rosalia envia un enllaç de pagament per al pla que hàgiu triat. Mes a mes són 89 €. Dotze mesos són 748 €. No hi ha quota d’alta si vosaltres mateixos vau afegir el gestor de Google.
+La Rosalia envia un enllaç de pagament segur per al pla triat: 89 € mes a mes o 748 € per dotze mesos. No hi ha quota d’alta si vosaltres mateixos afegiu el gestor de Google.
 
 ## account.cancel_title
-Com donar-se de baixa
+Com cancel·lar
 
 ## account.cancel
-Escriviu BAJA o “vull parar” a la Rosalia per WhatsApp. Confirmem, deixem de publicar al final del període que ja heu pagat, i us recordem de treure reviews@babyrock.ai com a gestor a Google. Les respostes que ja són a la fitxa es queden.
+Escriviu BAJA o «vull parar» a la Rosalia per WhatsApp. Confirmem, deixem de publicar al final del període pagat i treiem el nostre accés de gestor. Les respostes ja publicades es queden a la fitxa.
 
 ## account.listing_title
-El gestor de Google
+L’accés a la vostra fitxa d’empresa de Google
 
 ## account.listing
-Vau convidar reviews@babyrock.ai. Per treure’ns: Perfil d’empresa de Google → Gestors → treure aquesta adreça. Feu-ho després de la baixa si no voleu que veiem ressenyes noves.
+Vau convidar reviews@babyrock.ai com a gestor, no com a propietari. Treiem l’accés quan s’acaba el servei. També ens podeu treure en qualsevol moment: obriu la fitxa d’empresa de Google, aneu a Configuració del perfil d’empresa → Persones i accés, seleccioneu reviews@babyrock.ai i trieu Treure persona.
 
 ## account.cta_cancel
-WhatsApp a la Rosalia per donar-vos de baixa
+Escriure a la Rosalia per cancel·lar
 
 ## privacy.headline
 Privadesa
 
 ## privacy.body
-BabyRock Social respon les ressenyes de Google dels comerços que ens contracten. Som encarregats del tractament per a aquesta feina: el comerç continua sent responsable de la seva fitxa. No agafem la contrasenya de Google del titular. Conservem els textos de ressenyes i respostes el temps que cal per al servei, per a la comptabilitat i per a un eventual litigi, i després els esborrem. Fem servir WhatsApp per parlar amb vosaltres. No venem les vostres dades. Per preguntar què tenim, escriviu a rosalia@babyrock.ai.
+BabyRock Social tracta el contingut de les ressenyes de Google i els esborranys de resposta per prestar el servei als negocis que ens contracten. El negoci continua sent responsable de la seva fitxa d’empresa de Google. Mai no demanem la contrasenya de Google del titular.
+
+Fem servir eines d’IA per ajudar a preparar esborranys. Una persona revisa i, si cal, corregeix cada resposta abans de publicar-la. Conservem els registres de ressenyes i del servei només el temps necessari per prestar el servei, complir la comptabilitat i gestionar un litigi. Fem servir WhatsApp per parlar amb vosaltres i no venem les vostres dades. Per preguntar quina informació tenim o demanar una correcció o una supressió, escriviu a rosalia@babyrock.ai.
 
 ## terms.headline
 Condicions
 
 ## terms.body
-El servei és la resposta a les ressenyes de Google d’una fitxa, a 89 € al mes sense IVA, o 748 € per dotze mesos sense IVA. Afegiu reviews@babyrock.ai com a gestor. Les respostes a 4 i 5 estrelles les publica el nostre equip. Les d’1, 2 i 3 estrelles es publiquen després que dieu OK o reescriviu el text per WhatsApp. Podeu parar al final del període ja pagat escrivint a la Rosalia. Podem pausar el servei si un pagament falla. S’aplica la llei espanyola i els jutjats de Barcelona, llevat de norma imperativa de consum en un altre sentit.
+BabyRock Social gestiona les respostes d’una fitxa d’empresa de Google a 89 € al mes sense IVA, o 748 € per dotze mesos sense IVA. En subscriure-us i convidar-nos com a gestor, ens autoritzeu a redactar, revisar, enviar, editar i, si cal, esborrar respostes en aquesta fitxa. La IA pot ajudar amb el primer esborrany; una persona comprova i envia cada resposta. Les respostes a ressenyes de 4 i 5 estrelles es poden enviar amb aquesta autorització contínua. Les d’1, 2 i 3 estrelles s’envien només després que les aproveu o les canvieu per WhatsApp. Google revisa les respostes i controla el moment final de publicació.
+
+Podeu cancel·lar al final del període pagat escrivint a la Rosalia. Quan s’acaba el servei, treiem el nostre accés de gestor. Podem pausar el servei si un pagament falla. S’aplica la llei espanyola i els jutjats de Barcelona, llevat de norma imperativa de consum en un altre sentit.
 
 ## privacy.link
 Privadesa

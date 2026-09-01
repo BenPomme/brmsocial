@@ -1,11 +1,11 @@
 ## meta.title
-BabyRock Social — we answer your Google reviews
+Google Review Response Service For Small Businesses | BabyRock Social
 
 ## meta.description
-A person on our team answers the Google reviews of your small business. 89 € a month, or 748 € for the year. We are always reachable on WhatsApp.
+Thoughtful Google review replies for small businesses. AI helps us work efficiently; a human checks and publishes every response. From €89/month.
 
 ## nav.simulator
-Simulator
+Impact calculator
 
 ## nav.how
 How it works
@@ -32,7 +32,7 @@ Close
 WhatsApp
 
 ## footer.tagline
-BabyRock Social answers the Google reviews of small businesses. A person posts every reply. We are always accessible to you via WhatsApp.
+BabyRock Social manages Google review replies for small businesses. AI helps us work quickly; a human checks and publishes every response. Talk directly with our team on WhatsApp.
 
 ## footer.privacy
 Privacy
@@ -44,27 +44,27 @@ Terms
 Sant Cugat del Vallès
 
 ## home.kicker
-For small businesses on Google
+Google review management for small businesses
 
 ## home.headline
-We answer the Google reviews of your business, every month, so that people who look you up can see that you are paying attention.
+Never leave another Google review unanswered.
 
 ## home.lead
-BabyRock Social is for restaurants, and also for bakeries, salons, florists, cafés, workshops, and other small businesses that live on their Google listing. You add us as a manager. We never ask for your password. A person on our team writes and posts each reply. For 1, 2 and 3 star reviews, you see the draft on WhatsApp first, and you say OK or you change a few words.
+BabyRock Social prepares, checks and publishes a thoughtful reply to every new review on your Google Business Profile. AI helps us draft efficiently. A person reviews every response for tone, relevance and quality before publishing it.
 
-We are always accessible to you via WhatsApp. That is how you reach us for a difficult review, a change of wording, an invoice, or to stop.
+For 1, 2 and 3-star reviews, we send you the proposed reply on WhatsApp first. You approve it or tell us what to change. You stay in control without spending your evenings writing replies. You can focus on just running your business.
 
 ## home.cta_sim
-See it on your numbers
+Calculate the expected impact for you
 
 ## home.cta_sub
-Write to Rosalia
+Get my reviews handled
 
 ## home.for_whom_title
-If people find you on Google, this is for you
+If customers find you on Google, this service is for you
 
 ## home.for_whom_lead
-We started with restaurants because that is where unanswered reviews hurt first. The work is the same for any independent shop: a person answers, in the language of the review, including Catalan.
+We started with restaurants, where one unanswered review can influence the next table booking. The same is true for any independent local business. We reply in the customer’s language within a day, including Spanish, Catalan, French and English, and make sure every response sounds authentic to your business.
 
 ## home.shop_restaurant
 Restaurant
@@ -84,11 +84,20 @@ Café
 ## home.shop_workshop
 Workshop
 
+## home.shop_clinic
+Clinic
+
+## home.shop_physio
+Physio
+
+## home.shop_club
+Club
+
 ## home.sim_title
-What answering could be worth in your case
+What consistent review replies could be worth to your business
 
 ## home.sim_lead
-Type the monthly revenue of the business. The calculator uses published research on ratings and on businesses that answer their reviews. It shows two figures: an expected one, and the Harvard number for a full extra star.
+Research has found that businesses which start replying consistently can see an improvement in ratings. Combined with Harvard Business School research on ratings and revenue, that gives a research-based expected impact of about 0.84% of monthly revenue, for a business that currently replies rarely.
 
 ## home.sim_label
 Monthly revenue, in euros
@@ -97,108 +106,108 @@ Monthly revenue, in euros
 25000
 
 ## home.sim_result_before
-Expected extra per month, after 89 €
+Research-based expected impact after €89
 
 ## home.sim_result_after
-€ extra / month after the subscription
+€ estimated per month after the subscription
 
 ## home.sim_link
-See the full calculation and the yearly plan
+See the calculation and compare plans
 
 ## home.value_time_title
-Your evenings back
+Get your evenings back
 
 ## home.value_time
-Most owners mean to answer and then do it at midnight, or not at all. We take that work. You keep cooking, cutting hair, or opening the shop.
+Most owners intend to answer every review. Then service gets busy, the shop needs attention, and the replies wait until midnight, or never get written. We take that recurring task off your list, so you can focus on what you do best.
 
 ## home.value_trust_title
-People see that you answer
+Show future customers that you listen
 
 ## home.value_trust
-A large majority of people say they are more likely to choose a business that replies to its reviews. The reply sits on your listing. Future customers read it, including the difficult ones.
+Your replies are public. Every person comparing local businesses can see whether you acknowledge praise, answer questions and handle criticism professionally. Google recommends first the most helpful, positive replies because they can help a business stand out, and it notifies the reviewer when you respond.
 
 ## home.value_rating_title
-Ratings move when shops answer
+Consistency can strengthen your online reputation
 
 ## home.value_rating
-A Harvard study on independent restaurants found that a one-star increase went with 5 to 9 % more revenue. Answering is one of the things that moves a rating, because it is visible and it is consistent. The simulator puts a number on that. The research page explains how.
+Published research found that hotels which began responding received 12% more reviews and gained an average of 0.12 stars. A separate Harvard study found that a full extra star was worth 5–9% more revenue per month for independent restaurants. Our calculator combines those findings to show what consistent replies could mean on your numbers.
 
 ## home.human_title
-A person posts every reply
+AI makes us faster. Real people protect the quality.
 
 ## home.human
-We do not use AI to post the replies. A human on our team does that. We use AI in the background so that we can prepare a draft faster and work in the language of the review — Spanish, Catalan, French, or English. The text that goes on Google has been read by someone.
+We use AI to make us more efficient. AI helps us keep our prices low, while preparing first drafts efficiently and work in the language of the review. Then a person from our team checks the facts available to us, the tone, relevance and wording, edits where needed, and publishes the final reply. Nothing is posted automatically.
 
 ## home.whatsapp_line
-We are always accessible to you via WhatsApp. Rosalia is the person you write to.
+Need to explain what happened, change the wording or ask a question? Talk directly with Rosalia and our team on WhatsApp. No need to download an app or go to a website. We are with you, in your pocket.
 
 ## home.price_title
-Two ways to pay
+Choose the plan that suits you
 
 ## home.price_month_name
 Month to month
 
 ## home.price_month_detail
-89 € each month, excluding VAT. You can stop at the end of the period you have already paid.
+€89 per month, excluding VAT. Cancel before your next billing period and the service ends when the current paid month finishes.
 
 ## home.price_year_name
 Twelve months
 
 ## home.price_year_detail
-748 € for the year, excluding VAT. That is 30 % less than twelve times 89 €.
+€748 for the year, excluding VAT—30% less than paying month to month.
 
 ## home.price_year_save
-You keep 320 €
+Save €320
 
 ## home.price_setup
-There is no setup fee if you add the Google manager yourself. Payment is not taken on this site. You write to Rosalia, and she sends a payment link.
+No setup fee when you add us to your Google Business Profile yourself. You will not be charged on this website: Rosalia sends you a secure payment link.
 
 ## home.faq_title
-Questions owners usually ask
+Questions business owners ask us
 
 ## home.faq_1_q
 Do you need our Google password?
 
 ## home.faq_1_a
-No. You invite reviews@babyrock.ai as a manager on the listing. You can remove that access whenever you want.
+No. You invite reviews@babyrock.ai as a manager of your Google Business Profile. Your password stays private, and you can remove our access whenever you want. It is a one click process.
 
 ## home.faq_2_q
-What happens with a 1, 2 or 3 star review?
+What happens with a 1, 2 or 3-star review?
 
 ## home.faq_2_a
-We send you a draft on WhatsApp. You reply OK, or you send back the words you want. We publish that. We do not publish a low-star reply without you.
+We prepare and quality-check a reply, then send it to you on WhatsApp for approval. Reply OK or tell us what to change. A person on our team submits it only after your approval. Google reviews replies before they appear publicly, so final publication timing is controlled by Google.
 
 ## home.faq_3_q
 Is this only for restaurants?
 
 ## home.faq_3_a
-No. Restaurants are a natural example because they live on Google. The service is for small businesses with a listing: bakeries, salons, florists, cafés, workshops, and similar shops.
+No. The service is for independent businesses with a Google Business Profile: restaurants, bars, clinics, bakeries, salons, florists, cafés, workshops and more.
 
 ## home.faq_4_q
-Which languages do you answer in?
+Which languages do you reply in?
 
 ## home.faq_4_a
-We answer in the language of the review. That includes Spanish, Catalan, French, and English.
+We reply in the language of the review, including Spanish, Catalan, French and English. A person checks the final wording before it is published.
 
 ## home.faq_5_q
-Can we reach someone if something is wrong?
+Can we reach a real person if something is wrong?
 
 ## home.faq_5_a
-Yes. We are always accessible to you via WhatsApp. That is the same channel we use for the difficult reviews.
+Yes. You speak directly with Rosalia or the team member covering the conversation on WhatsApp—the same channel we use for sensitive reviews.
 
 ## home.faq_6_q
-How do we stop?
+How do we cancel?
 
 ## home.faq_6_a
-Write BAJA or “please stop” to Rosalia on WhatsApp. The service runs until the end of the month or year you have already paid. We remind you to remove the Google manager.
+Write BAJA or “please stop” to Rosalia on WhatsApp. We confirm your request, continue until the end of the period you have paid for, and remove our manager access when the service ends.
 
 ## sim.headline
-Type your revenue. We show what answering has been worth in the research, on your numbers.
+See the research-based impact on your numbers.
 
 ## sim.lead
-Two columns. The expected one is the figure we would use ourselves to decide: a small move in the rating, plus a little extra custom because people see that you reply. The other column is the same revenue if you gained a full star, which is what the Harvard study measured.
+Businesses that began replying consistently gained an average of 0.12 stars in a published study. Harvard Business School found that a full extra star was worth 5–9% more revenue for independent restaurants.
 
-The subscription is subtracted in both columns, for the monthly plan and for the yearly plan.
+Combine those findings and the research-based range is 0.6–1.08% of monthly revenue, with a central estimate of 0.84%. Enter your revenue to see that estimate after the BabyRock Social subscription.
 
 ## sim.revenue
 Monthly revenue of the business, in euros
@@ -227,41 +236,50 @@ Café
 ## sim.kind_workshop
 Workshop
 
+## sim.kind_clinic
+Clinic
+
+## sim.kind_physio
+Physio
+
+## sim.kind_club
+Club
+
 ## sim.rating
 Current Google rating (optional)
 
 ## sim.reply
-How much do you already reply?
+How often do you reply today?
 
 ## sim.reply_never
-Almost never
+Rarely or never
 
 ## sim.reply_some
-Some of the reviews
+To some reviews
 
 ## sim.reply_most
-Most of them
+To most reviews
 
 ## sim.reply_all
-All of them, already
+To every review already
 
 ## sim.expected_label
-Expected
+Research-based estimate
 
 ## sim.expected_explain
-A 0.15 star move if you currently reply to almost nothing, valued at 7 % of revenue per full star, plus 2 % of revenue because people prefer a shop that answers. If you already reply to everything, this column goes to zero: you already do the work, and the 89 € is then only a way to get your time back.
+For a business that rarely replies today, the central estimate is 0.84% of monthly revenue. That applies the observed 0.12-star improvement to the midpoint of Harvard’s 5–9% revenue range for a full star. If you already answer some or most reviews, the estimate reduces proportionally.
 
 ## sim.fullstar_label
-If you gained a full star
+Published range
 
 ## sim.fullstar_explain
-Harvard Business School, Michael Luca, 2011: independent restaurants, a one-star increase went with 5 to 9 % more revenue. We show that range on your monthly figure. Answering is not the only thing that can move a star. It is the part we do, every time.
+The lower estimate uses 0.12 × 5% of revenue. The upper estimate uses 0.12 × 9%. That produces a range of 0.6–1.08% of monthly revenue before the subscription.
 
 ## sim.after_month
-After 89 € / month
+After €89/month
 
 ## sim.after_year
-After 748 € / year (30 % less)
+After €748/year—30% less
 
 ## sim.per_month
 per month
@@ -270,228 +288,232 @@ per month
 per year
 
 ## sim.roi_month
-Return after the monthly subscription
+Estimated return after the monthly subscription
 
 ## sim.roi_year
-Return after the yearly subscription
+Estimated return after the annual subscription
 
 ## sim.time_line
-Even when the rating does not move, you never write another Google reply. That is also what the subscription is for.
+The estimate does not include the value of the time you get back by never having to write another routine Google reply.
 
 ## sim.already_replying
-You already answer almost everything. Extra revenue from us answering instead of you is small. The useful number here is the time you get back.
+You already answer almost every review. In that case, the strongest reason to use BabyRock Social is the time and consistency you gain. Not an expected increase from beginning to reply.
 
 ## sim.cta
-Write to Rosalia to start
+Get my reviews handled
 
 ## sim.research_link
-How we built these numbers
+See the studies behind the estimate
 
 ## sim.calculate
-See the numbers
+Calculate the expected impact
 
 ## how.headline
-How the service works, from the first WhatsApp to a normal week
+From your first WhatsApp message to us to every published reply
 
 ## how.lead
-There is no card form on this website. You write to us. Rosalia sends a payment link. After that, you add a manager on Google, and we start.
+No new dashboard. No app to install. No Google password to share. Write to Rosalia on WhatsApp, choose your plan, add us as a manager of your Google Business Profile, and we take it from there.
 
 ## how.step1_title
-You write to Rosalia
+1. Tell us about your business
 
 ## how.step1
-WhatsApp or email is enough. Tell her the name of the business and the Google listing. She answers questions, and she sends a payment link for the monthly plan (89 €) or the twelve-month plan (748 €, 30 % less).
+Send Rosalia your business name and Google listing by WhatsApp or email. Choose €89 month to month or €748 for twelve months. She answers your questions and sends a secure payment link.
 
 ## how.step2_title
-You add a manager, not a password
+2. Add us as a manager—not an owner
 
 ## how.step2
-You invite reviews@babyrock.ai as a manager on your Google listing. We never ask you to share the password of the owner. You can remove us whenever you want.
+Invite reviews@babyrock.ai as a manager of your Google Business Profile. We never ask for your owner password. You stay in control and can remove our access whenever you want.
 
 ## how.step3_title
-A person answers
+3. We prepare, check and publish each reply
 
 ## how.step3
-For 4 and 5 star reviews, someone on our team writes and posts the reply. For 1, 2 and 3 star reviews, you get a draft on WhatsApp. You reply OK, or you send the words you want. We publish that.
+AI helps us draft efficiently. A person then checks the reply for tone, relevance and quality, edits it where needed, and publishes it. For 1, 2 and 3-star reviews, you approve the final wording on WhatsApp first.
 
 ## how.step4_title
-You hear from us when it matters
+4. You hear from us when your input matters
 
 ## how.step4
-If something happened that day, we ping you. On Monday you get a short recap. If nothing happened, we stay quiet. We are always accessible to you via WhatsApp in between.
+If a review mentions a problem, dispute or detail only you can confirm, we message you. You also receive a short weekly recap. When nothing needs your attention, we let you run your business.
 
 ## how.ai_box
-We use AI to prepare drafts and to work in the language of the review. We do not use AI to post. A person reads the text before it goes on Google.
+AI is the starting point and allows us to stay on top of things. A person makes the judgment call, checks the quality and manually publishes the final reply. Nothing goes live automatically.
 
 ## how.whatsapp
-The same WhatsApp thread is how you reach us for a wording change, a pause, an invoice, or to stop.
+The same WhatsApp conversation is where you can request a wording change, explain what happened, ask for an invoice, pause the service or cancel.
 
 ## research.headline
-Where the simulator numbers come from
+The research behind our expected-impact estimate
 
 ## research.lead
-We would rather show the studies and the arithmetic than a round marketing figure. The calculator on this site uses two columns: an expected one, and the Harvard range for a full extra star. Other companies often quote a 35 % revenue gap. We explain that study below, and we do not put 35 % into the calculator, because it compares different businesses rather than measuring what answering causes.
+We use published findings to build a practical central estimate: around 0.84% of monthly revenue for a business moving from rarely replying to replying consistently. Here is exactly where that number comes from.
 
 ## research.luca_title
-Harvard Business School, Michael Luca, 2011
+Harvard Business School — Michael Luca, 2011/2016
 
 ## research.luca
-The paper is “Reviews, Reputation, and Revenue: The Case of Yelp.com.” Luca looked at restaurants in Seattle and at how Yelp displays stars. Independent restaurants: a one-star increase went with 5 to 9 % more revenue. The method uses the rounding of displayed stars, which is closer to a real effect than a blog post. The limit is that it is Yelp, Seattle, and restaurants. We still use it because it is the serious number on stars and revenue, and because in Spain and France it is Google that people actually open. We apply the same 5 to 9 % to the monthly revenue you type.
+“Reviews, Reputation, and Revenue: The Case of Yelp.com” studied independent restaurants in Seattle. A one-star increase in the displayed Yelp rating produced a 5–9% increase in revenue. We use the midpoint—7% per full star—in our central estimate.
 
 ## research.womply_title
-Womply, about 200 000 small businesses, 2019
+Marketing Science — Davide Proserpio and Georgios Zervas, 2017
 
 ## research.womply
-Businesses that replied to at least around 25 % of their reviews processed about 35 % more revenue than average. The sample is large and it covers many kinds of local shops, not only restaurants. It is a correlation. Shops that are already well run both answer more and earn more. That is why 35 % is not a column in our calculator. It is here so you can see the figure other sites use, and why we stay with a smaller expected number.
+“Online Reputation Management: Estimating the Impact of Management Responses on Consumer Reviews” examined tens of thousands of hotel reviews and responses on TripAdvisor. When hotels began responding, they received 12% more reviews and their ratings increased by an average of 0.12 stars. We use that 0.12-star improvement in our estimate.
 
 ## research.bright_title
-BrightLocal consumer surveys
+Google Business Profile guidance
 
 ## research.bright
-Year after year, a large majority of people say they read reviews before choosing a local business, and that they prefer a business that replies. That is what people say they will do, not a measured euro of revenue. We use it as the reason a small conversion effect (2 % of revenue in the expected column, if you currently reply to almost nothing) is a reasonable thing to include.
+Google recommends replying to reviews to show customers that their feedback matters. Google also says positive reviews and helpful replies can help a business stand out, while more reviews and positive ratings can support local ranking. That is why consistent, thoughtful replies matter beyond the person who wrote the original review.
 
 ## research.formula_title
-What the calculator actually does
+How we calculate the expected impact
 
 ## research.formula
-You type monthly revenue R. You can add how much you already reply.
+Enter monthly revenue R.
 
-If you almost never reply, we take a rating move of 0.15 stars. We value a full star at 7 % of revenue (the middle of Luca’s 5 to 9 %). That rating channel is R × 0.15 × 0.07.
+Lower research estimate = R × 0.12 × 5% = R × 0.6%.
 
-We add 2 % of revenue for the fact that people see you answer. That conversion channel is R × 0.02.
+Central research estimate = R × 0.12 × 7% = R × 0.84%.
 
-Expected extra per month = those two added together. If you already reply to some reviews, both channels shrink. If you already reply to all of them, expected extra from us doing the answering is about zero.
+Upper research estimate = R × 0.12 × 9% = R × 1.08%.
 
-The full-star column is simply R × 5 % and R × 9 %. We then subtract 89 € for the monthly plan, or 748 € / 12 for the yearly plan, so you see the figure after our subscription.
+We then subtract €89 for the monthly plan, or €748 ÷ 12 for the annual plan. If you already answer some or most reviews, the calculator reduces the estimate because part of the work is already being done.
 
 ## research.what_we_use
-The expected column is the one we would use to decide for a shop like yours. The full-star column is the Harvard range, on your revenue, so you can see the top of what a whole extra star has been worth. You can cancel if it is not useful. Write to Rosalia on WhatsApp.
+The central estimate is the figure we would use to evaluate the service: 0.84% of monthly revenue before the subscription, plus the value of the owner time saved. Research describes averages, so the result for an individual business can be higher or lower.
 
 ## about.headline
-Who you are writing to
+People are accountable for every reply
 
 ## about.lead
-BabyRock Social is based in Sant Cugat. The public face of the service is Rosalia. You reach her on WhatsApp and on email. We are always accessible to you that way.
+BabyRock Social is based in Sant Cugat del Valles, Spain. Rosalia is your main point of contact, and a person on our team is responsible for the quality and publication of every response.
 
 ## about.rosalia_role
-Rosalia — your contact
+Rosalia - your direct contact
 
 ## about.rosalia
-Rosalia is the person owners write to. She is the one who sends the payment link, who answers when a 2-star review needs your words, and who takes a BAJA if you want to stop. If you write, it is her.
+Rosalia helps you start, answers your questions and sends sensitive replies for your approval. If a 2-star review needs context, an invoice needs resending or you want to cancel, you can handle it in the same WhatsApp conversation.
 
 ## about.ben_role
 Benjamin Pommeraud — founder
 
 ## about.ben
-Benjamin started BabyRock Social. He built the way we work: a person posts every reply, AI stays in the background so that we can be fast, and the owner stays on WhatsApp instead of logging into another tool. He lives in Sant Cugat.
+Benjamin created BabyRock Social to give independent businesses the consistency of a managed service without another tool to learn. Before AI, small businesses were forgotten by software companies that were focusing on big accounts. Now, AI is enabling small businesses to provide the same quality of service online. At BabyRock, AI makes the work efficient; people provide the judgment, quality control and accountability.
 
 ## about.human_title
-The rule on AI
+Our rule for AI
 
 ## about.human
-We do not use AI to post the replies. A human does. We use AI to be efficient: to prepare a draft, to stay in the language of the review, and to keep the queue moving. The sentence that goes on your Google listing has been read by someone on the team.
+We use AI for quality, consistency and scale. AI helps us prepare a first draft and work efficiently across languages. But we know our customers are humans running businesses for humans. And that trust matters. So we use real people to check the tone, relevance and quality, make any edits, and publish the final response. AI never posts a reply by itself.
 
 ## about.whatsapp
-We are always accessible to you via WhatsApp. That is not a chatbot. It is Rosalia, or the person covering her thread.
+We don't want to have you install yet another app. You need to be able to reach out the us naturally. You talk directly with Rosalia or the team member covering the conversation on WhatsApp.
 
 ## sub.headline
-Write to us. Rosalia sends the payment link.
+Get every new Google review handled from €89 a month.
 
 ## sub.lead
-Choose the monthly plan (89 €) or the twelve-month plan (748 €, 30 % less). There is no card to type on this page. You send the name of the business, and Rosalia writes back with the link and with the two steps to add the Google manager.
+Send us your business name and Google listing. Rosalia will answer your questions, help you choose the monthly or annual plan, and send your secure payment link. Then add us as a manager and we begin.
 
 ## sub.month
-89 € / month, excluding VAT
+€89/month, excluding VAT
 
 ## sub.year
-748 € / year, excluding VAT — 30 % less than paying month by month
+€748/year, excluding VAT—save 30%
 
 ## sub.form_name
-Name of the business
+Business name
 
 ## sub.form_city
 City
 
 ## sub.form_listing
-Google listing (name or link)
+Google listing name or link
 
 ## sub.form_email
-Your email
+Email
 
 ## sub.form_wa
-Your WhatsApp
+WhatsApp number
 
 ## sub.form_revenue
-Monthly revenue, if you already ran the simulator (optional)
+Monthly revenue, if you used the calculator (optional)
 
 ## sub.form_plan
-Plan you prefer
+Preferred plan
 
 ## sub.plan_month
-Month to month — 89 €
+Month to month—€89
 
 ## sub.plan_year
-Twelve months — 748 €
+Twelve months—€748
 
 ## sub.cta_wa
-Open WhatsApp to Rosalia
+Start on WhatsApp
 
 ## sub.cta_email
-Send her an email
+Email Rosalia
 
 ## sub.after
-She answers on WhatsApp. After you pay the link, you invite reviews@babyrock.ai as manager, and we start on the un-answered reviews.
+After payment, you invite reviews@babyrock.ai as a manager of your Google Business Profile. We then begin with your unanswered reviews. If you are struggling in this phase, ping us on WhatsApp.
 
 ## account.headline
-Your account, invoices, and how to stop
+Your service, invoices and account access
 
 ## account.lead
-There is no separate login on this first version of the site. Invoices go to the email you gave Rosalia. Everything else — a copy of a bill, a change of card later, a pause, a stop — goes through the same WhatsApp thread. We are always accessible to you that way.
+You do not need another login. Invoices go to your email, and service requests stay in the WhatsApp conversation you already use with our team.
 
 ## account.contacts_title
-Contacts
+Your contacts
 
 ## account.contacts
-Rosalia — rosalia@babyrock.ai, and WhatsApp. That is the number we already use with you for the 1 to 3 star drafts. You can write there for anything, not only reviews.
+Email Rosalia at rosalia@babyrock.ai or use your existing WhatsApp conversation. Use it for review context, wording changes, invoices, pauses or cancellation.
 
 ## account.invoices_title
 Invoices and payment history
 
 ## account.invoices
-Each payment produces an invoice, sent to your email, with VAT. If you need a copy, write “factura” or “invoice” to Rosalia and she sends it again. When we take payments by card automatically, this page will list them. Until then, the email is the record.
+Each payment produces an invoice, including VAT, sent to your email. Need another copy? Write “factura” or “invoice” to Rosalia and she will resend it.
 
 ## account.pay_title
 How you pay
 
 ## account.pay
-Rosalia sends a payment link for the plan you chose. Month to month is 89 €. Twelve months is 748 €. There is no setup fee if you added the Google manager yourself.
+Rosalia sends a secure payment link for your chosen plan: €89 month to month or €748 for twelve months. There is no setup fee when you add the Google manager yourself.
 
 ## account.cancel_title
 How to cancel
 
 ## account.cancel
-Write BAJA or “please stop” to Rosalia on WhatsApp. We confirm, we stop new replies at the end of the period you have already paid, and we remind you to remove reviews@babyrock.ai as manager on Google. You keep the replies that are already on the listing.
+Write BAJA or “please stop” to Rosalia on WhatsApp. We confirm your request, stop new replies at the end of your paid period, and remove our manager access. Published replies remain on your listing.
 
 ## account.listing_title
-The Google manager
+Your Google Business Profile access
 
 ## account.listing
-You invited reviews@babyrock.ai. To remove us: Google Business Profile → Managers → remove that address. Do that after cancellation if you do not want us to see new reviews.
+You invited reviews@babyrock.ai as a manager—not an owner. We remove our access when the service ends. You can also remove us at any time: open your Google Business Profile, go to Business Profile settings → People and access, select reviews@babyrock.ai and choose Remove person.
 
 ## account.cta_cancel
-WhatsApp Rosalia to cancel
+Message Rosalia to cancel
 
 ## privacy.headline
 Privacy
 
 ## privacy.body
-BabyRock Social answers Google reviews for the businesses that hire us. We are a processor for that work: the shop remains responsible for its Google listing. We do not take the owner’s Google password. We keep the texts of reviews and replies for as long as we need them for the service, for accounting, and for a dispute, and then we delete them. We use WhatsApp to talk to you. We do not sell your data. To ask what we hold, write to rosalia@babyrock.ai.
+BabyRock Social processes Google review content and reply drafts to provide the service to businesses that hire us. The business remains responsible for its Google Business Profile. We never ask for the owner’s Google password.
+
+We use AI tools to help prepare reply drafts. A person reviews and, where needed, edits every response before publishing it. We retain review and service records only for as long as needed to deliver the service, meet accounting requirements and manage disputes. We use WhatsApp to communicate with you and do not sell your data. To ask what information we hold or request a correction or deletion, write to rosalia@babyrock.ai.
 
 ## terms.headline
 Terms
 
 ## terms.body
-The service is an answering of Google reviews for one listing, at 89 € per month excluding VAT, or 748 € for twelve months excluding VAT. You add reviews@babyrock.ai as manager. 4 and 5 star replies are posted by our team. 1, 2 and 3 star replies are posted after you OK or rewrite them on WhatsApp. You can stop at the end of the period already paid by writing to Rosalia. We can pause the service if a payment fails. Spanish law and the courts of Barcelona apply, unless a mandatory consumer rule says otherwise.
+BabyRock Social manages replies for one Google Business Profile at €89 per month excluding VAT, or €748 for twelve months excluding VAT. By subscribing and inviting BabyRock Social as a manager, you authorize us to draft, review, submit, edit and, when necessary, delete replies on that profile. AI may assist with the first draft; a person checks and submits every reply. Replies to 4 and 5-star reviews may be submitted under this ongoing authorization. Replies to 1, 2 and 3-star reviews are submitted only after you approve or revise them on WhatsApp. Google reviews replies and controls final publication timing.
+
+You can cancel at the end of the paid period by writing to Rosalia. When the service ends, we remove our manager access. We may pause the service if a payment fails. Spanish law and the courts of Barcelona apply, unless a mandatory consumer rule says otherwise.
 
 ## privacy.link
 Privacy

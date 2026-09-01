@@ -1,8 +1,8 @@
 <!doctype html><meta charset="utf-8"><title>BabyRock Social</title>
 <script>
 const map = {es:"es",ca:"ca",fr:"fr",en:"en"};
-const lang = (navigator.languages || [navigator.language || "es"]).map(l => l.slice(0,2).toLowerCase());
-const hit = lang.find(l => map[l]) || "es";
+const lang = (navigator.languages || [navigator.language || "en"]).map(l => l.slice(0,2).toLowerCase());
+const hit = lang.find(l => map[l]) || "en";
 location.replace("./" + hit + "/");
 </script>
 <p><a href="./es/">Español</a> · <a href="./ca/">Català</a> · <a href="./fr/">Français</a> · <a href="./en/">English</a></p>

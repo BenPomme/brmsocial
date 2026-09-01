@@ -5,7 +5,7 @@
     lucaMid: 0.07,
     lucaLow: 0.05,
     lucaHigh: 0.09,
-    starLiftIfSilent: 0.15,
+    starLiftIfSilent: 0.12,
     conversionIfSilent: 0.02,
     defaultReplyRate: 0.1,
   };
@@ -36,21 +36,22 @@
   function compute(revenue, replyRate) {
     const R = Number(revenue) || 0;
     const gap = Math.max(0, Math.min(1, 1 - replyRate));
-    const ratingChannel = R * F.starLiftIfSilent * gap * F.lucaMid;
-    const conversionChannel = R * F.conversionIfSilent * gap;
-    const expected = ratingChannel + conversionChannel;
+    const lift = (F.starLiftIfSilent || 0.12) * gap;
+    const expected = R * lift * (F.lucaMid || 0.07);
+    const rangeLow = R * lift * (F.lucaLow || 0.05);
+    const rangeHigh = R * lift * (F.lucaHigh || 0.09);
     return {
       R,
       gap,
       expected,
-      fullLow: R * F.lucaLow,
-      fullHigh: R * F.lucaHigh,
+      fullLow: rangeLow,
+      fullHigh: rangeHigh,
       netMonthExpected: expected - cfg.priceMonth,
       netYearExpected: expected * 12 - cfg.priceYear,
-      netMonthFullLow: R * F.lucaLow - cfg.priceMonth,
-      netMonthFullHigh: R * F.lucaHigh - cfg.priceMonth,
-      netYearFullLow: R * F.lucaLow * 12 - cfg.priceYear,
-      netYearFullHigh: R * F.lucaHigh * 12 - cfg.priceYear,
+      netMonthFullLow: rangeLow - cfg.priceMonth,
+      netMonthFullHigh: rangeHigh - cfg.priceMonth,
+      netYearFullLow: rangeLow * 12 - cfg.priceYear,
+      netYearFullHigh: rangeHigh * 12 - cfg.priceYear,
     };
   }
 

@@ -604,7 +604,7 @@ textarea {
     display: flex;
   }
   .shops {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .value-grid,
   .price-grid,
