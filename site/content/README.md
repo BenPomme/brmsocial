@@ -23,7 +23,7 @@ Do not invent new keys unless you also change `site/src/template.html` and `site
 In `config.json`:
 
 - `priceMonth` / `priceYear` / `yearDiscountPct` — what the pricing cards show, and what the simulator subtracts
-- `whatsapp` — digits with country code, no `+` (example: `34612345678`). If this is empty, the WhatsApp buttons fall back to email
+- `whatsapp` — digits with country code, no `+` (example: `34612345678`). If this is empty, the WhatsApp buttons fall back to email. **Never** the Meta test number `+1 555…`. Production WABA only. Inbound is handled by [brmsocialbackend](https://github.com/BenPomme/brmsocialbackend) (`/api/webhooks/whatsapp`).
 - `email` — Rosalia
 - `reviewsManager` — the Google manager address we ask owners to add
 - `formula` — the simulator. Change this only if the research page is also updated, because we show the same numbers in both places

@@ -179,6 +179,7 @@ function shell({ locale, page, copy, config, depth, title, description, body }) 
       <nav class="nav-links">${navHtml}</nav>
       <div class="header-actions">
         <div class="lang">${langSwitcher(locale, page, depth)}</div>
+        <a class="btn btn-wa" href="${wa}">${esc(t(copy, "nav.whatsapp"))}</a>
         <a class="btn btn-coral" href="${href(locale, "subscribe", depth)}">${esc(t(copy, "nav.subscribe"))}</a>
         <button class="menu-toggle" type="button" data-menu aria-expanded="false" aria-label="${esc(t(copy, "nav.menu"))}"><span></span><span></span><span></span></button>
       </div>
