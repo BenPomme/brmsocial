@@ -29,6 +29,9 @@ Domaine : babyrock.ai (boîtes mail + comptes Google gestionnaire).
 | `12-decisions-ouvertes.md` | Points à figer avant de coder plus loin |
 | `13-interfaces.md` | Opérateur / admin / client + agent Scope |
 | `14-agents.md` | Liste d’agents v1, figée |
+| `15-prototype.md` | Proto 3 interfaces (s’il est dans ce clone) |
+| `16-plan-affaires.md` | Plan d’affaires |
+| `17-seo-site-brm.md` | SEO / indexation de www.babyrock.ai |
 
 ## Comment reprendre ce dossier
 
@@ -39,30 +42,4 @@ Ne pas publier un avis 1★–3★ sans OK du titulaire.
 Ne pas utiliser une VM partagée pour les sessions Google des clients.
 Ne pas ajouter d’agent hors `14-agents.md`.
 Scope villes/catégories : console admin + agent Scope, jamais hardcodé.
-
-## Où coder : Grok Build vs Grok Bot
-
-**Coder le produit : Grok Build (desktop / CLI), pas Grok Bot.**
-
-Grok Build est fait pour écrire et modifier des fichiers, lancer des tests, sortir du code. Tu restes maître du repo local. Un abo SuperGrok (~30 $/mois) + clé API xAI suffit pour générer et itérer. Pas besoin de SuperGrok Heavy (300 $) pour ça.
-
-Grok Bot est un collègue sur **un** ordinateur cloud partagé : navigateur, terminal, routines. Tous tes bots voient les mêmes sessions. Inclus dans Cursor Pro+ (~60 $), SuperGrok Plus (~100 $), Ultra (~200 $), Heavy (~300 $). Usage hebdo inclus, ensuite facturé au token. Utile pour *essayer* Scout (ouvrir Maps, prendre des captures) à la main. Inutile et dangereux comme runtime de publication : 80 fiches Google sur une seule machine = mélange de cookies.
-
-Donc :
-
-- Repo + app + Postgres + UI opérateur + Playwright : **Grok Build** (ou Cursor / Claude Code si tu préfères, même principe).
-- Expérience ponctuelle démarchage : un Bot, un realm, **zéro** login client.
-- Prod publication : workers + profils Playwright isolés, pas le Bot.
-
-Abonnement recommandé au départ : SuperGrok 30 $ **ou** clé API seule + Grok Build. Ajouter Cursor Pro+ seulement si tu veux le Bot pour Scout. Ne pas prendre Heavy avant d’avoir mesuré que le forfait hebdo sature.
-
-## Repo cible
-
-Nom proposé : `babyrock` sous `BenPomme` (ou org dédiée).
-Langue de code : TypeScript (API + UI) + un worker Python ou TS pour Playwright.
-Base : Postgres.
-File : Postgres `jobs` ou Redis. Postgres seul au début.
-
-## Première commande pour la session suivante
-
-« Lis `/babyrock-spec/00-LIRE.md` et `11-ordre-de-build.md`. Implémente la semaine 1 : schéma Postgres + API brouillon d’avis + écran Publier/Éditer factice (pas encore Google). »
+SEO du site public : `17-seo-site-brm.md`, dans `site/build.mjs`, pas dans les workers avis.

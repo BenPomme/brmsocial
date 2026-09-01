@@ -1,8 +1,21 @@
 # Ordre de build
 
-Outil : **Grok Build desktop / CLI** sur le repo. Pas Grok Bot pour écrire l’app.
+Outil : **Grok Build desktop / CLI** sur le repo.
 
-## Semaine 1 — dossier mort sans Google
+## Site public (parallèle à l’usine)
+
+Voir `17-seo-site-brm.md`. À faire dans `site/build.mjs` + DNS, pas dans le worker avis.
+
+1. Canonical, hreflang, robots.txt, sitemap.xml, redirect `babyrock.ai` → `www`, redirect `/` HTTP (plus seulement JS).
+2. Open Graph + JSON-LD Organization / Service / FAQ.
+3. Alt + compression images + fonts.
+4. Search Console sur le domaine `babyrock.ai`.
+5. Fiche Google Business Profile BabyRock Social (Sant Cugat).
+6. Ensuite seulement : 1–3 pages métier × ville du scope actif.
+
+Critère 1 : `https://www.babyrock.ai/sitemap.xml` liste les 4 homepages ; GSC voit le canonical www.
+
+## Après proto — usine
 
 - Schema Postgres (`05-donnees.md`) y compris `users`, `scope_*`
 - Seed : 1 admin, 1 opérateur, 2 villes dont 1 inactive, 2 catégories, 3 clients, 10 avis (5★ et 2★)
@@ -13,7 +26,7 @@ Outil : **Grok Build desktop / CLI** sur le repo. Pas Grok Bot pour écrire l’
 
 Critère : l’opérateur publie un 5★ en base. L’admin coupe une ville. L’opérateur n’accède pas à `/admin`.
 
-## Semaine 2 — vrais brouillons
+## Brouillons
 
 - Worker `draft` → xAI Fast
 - Split modèle si stars≤3
@@ -22,16 +35,16 @@ Critère : l’opérateur publie un 5★ en base. L’admin coupe une ville. L�
 
 Critère : 20 avis réels collés à la main dans la base sortent des brouillons utilisables ES/FR/CA.
 
-## Semaine 3 — Google
+## Google
 
 - Compte gestionnaire babyrock.ai
-- Invitation sur 2–3 fiches test (restos amis)
+- Invitation sur 2–3 fiches test
 - Worker Playwright isolé
 - `fiche_morte` + retry
 
 Critère : Publier depuis l’UI apparaît sur Maps. Deux clients, zéro mélange de session.
 
-## Semaine 4 — WhatsApp canal A
+## WhatsApp canal A
 
 - BSP + numéro
 - Pings 1–3★, topo si activité, lundi
@@ -39,7 +52,7 @@ Critère : Publier depuis l’UI apparaît sur Maps. Deux clients, zéro mélang
 
 Critère : un 2★ fictif envoie le ping ; OK publie ; silence 24 h ne publie pas.
 
-## Semaine 5 — paiement + onboarding + chat Scope
+## Paiement + onboarding + chat Scope
 
 - Stripe ou Bizum
 - Parcours payé → consigne invitation → import 20 avis
@@ -47,7 +60,7 @@ Critère : un 2★ fictif envoie le ping ; OK publie ; silence 24 h ne publie pa
 
 Critère : un paiement test ouvre la file. Un message admin « active telle ville » écrit un `scope_changes` proposed puis applied.
 
-## Semaine 6 — démarchage v0
+## Démarchage v0
 
 - CSV 50 fiches dans les villes `scope_cities.active`
 - Mail + PDF
@@ -55,7 +68,7 @@ Critère : un paiement test ouvre la file. Un message admin « active telle vill
 
 Critère : 50 envois, mesure réponses. Pas de scale.
 
-## Semaine 7–8 — ops
+## Ops
 
 - Compte opérateur PH
 - Journal 10 % sample
@@ -64,6 +77,6 @@ Critère : 50 envois, mesure réponses. Pas de scale.
 
 Critère : 10 fiches test ou amies sans toi dans Slack/WhatsApp prod.
 
-## Interdit tant que la semaine N n’est pas verte
+## Interdit tant que le socle n’est pas vert
 
-N+1. Surtout pas Instinct, pas Elephant, pas le produit 119 €, pas Heavy.
+Instinct, Elephant, produit 119 €, Heavy, usine à pages ville×service, CrowdReply.
