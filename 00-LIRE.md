@@ -8,7 +8,18 @@ Fondateur : Benjamin Pommeraud. Temps fondateur = monter l’usine, pas la faire
 Opérateurs payés : Philippines uniquement.
 Domaine : babyrock.ai (boîtes mail + comptes Google gestionnaire).
 
-**Deux dépôts, ne pas les mélanger.** Le site public marketing est [github.com/BenPomme/brmsocial](https://github.com/BenPomme/brmsocial) (un autre agent). Ce dossier / proto local = l’usine (admin, opérateur, inbox, agents, APIs). Pas de landing `babyrock.ai`, pas de pages marketing ici. Le webhook WhatsApp pourra pointer vers l’hôte public plus tard ; on ne recopie pas le site dans ce repo.
+**Deux dépôts, ne pas les mélanger — ils devront se parler.**
+
+| Dépôt | Rôle |
+|---|---|
+| [BenPomme/brmsocial](https://github.com/BenPomme/brmsocial) | Site public marketing `www.babyrock.ai` (Pages). Un autre agent. |
+| [BenPomme/brmsocialbackend](https://github.com/BenPomme/brmsocialbackend) | Usine : admin, opérateur, inbox, agents, APIs, webhook WhatsApp. |
+
+Ce dossier local = l’usine. Pas de landing marketing ici. Le `git remote origin` de ce clone pointe encore vers **brmsocial** (le site) — à recabler vers **brmsocialbackend** avant tout push, sans y coller `docs/` / `site/`.
+
+Lien entre les deux, à brancher :
+- WhatsApp du site (`wa.me` vers le numéro Babyrock **de prod**, pas le 555 test) → Meta → webhook usine `/api/webhooks/whatsapp`.
+- S’abonner : le site pointe vers `/pay` sur l’usine (Checkout Stripe one-off). L’usine marque `clients.status = paye`. Le site n’encaisse pas.
 
 ## Fichiers
 
@@ -32,6 +43,14 @@ Domaine : babyrock.ai (boîtes mail + comptes Google gestionnaire).
 | `15-prototype.md` | Proto 3 interfaces (s’il est dans ce clone) |
 | `16-plan-affaires.md` | Plan d’affaires |
 | `17-seo-site-brm.md` | SEO / indexation de www.babyrock.ai |
+
+## Aujourd’hui (1er sept. 2026)
+
+1. WhatsApp usine — inbound réel OK, token System User, paiement Meta débloqué. **Inbox Rosalia** : brouillon script (OK/STOP/n°) sans LLM ; texte libre = Grok cheap ; envoi allowlist. Détail : `10-whatsapp-service.md`.
+2. **Site public** (`brmsocial`, pas ici) : bouton WhatsApp **actif** (`wa.me` vers le numéro Babyrock de prod — **pas** le 555 test). Tant que le WABA prod est bloqué `#2593030`, ne pas coller le 555 sur www.babyrock.ai.
+3. Recabler git : origin de l’usine → `brmsocialbackend` ; le site reste `brmsocial`. Les deux se parlent (bouton → webhook).
+4. Feedback copy mail Rosalia (`content/outreach/rosalia.es.txt`) — encore ouvert.
+5. Paiement : décision 6 figée. Clés Stripe **test** dans `.env`. Simuler : `/pay`, carte `4242`. Compte ES SL, KYC live encore ouvert. Versement = IBAN Revolut de la SL. Pas de Billing 0,7 %.
 
 ## Comment reprendre ce dossier
 

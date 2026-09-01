@@ -1,6 +1,14 @@
 import { xaiKey, xaiModel } from "./env";
 
-export async function xaiText(system: string, user: string): Promise<string | null> {
+function xaiFastModel() {
+  return process.env.XAI_FAST_MODEL?.trim() || "grok-4.3";
+}
+
+export async function xaiText(
+  system: string,
+  user: string,
+  opts?: { model?: string; maxTokens?: number; temperature?: number },
+): Promise<string | null> {
   const key = xaiKey();
   if (!key) return null;
   const res = await fetch("https://api.x.ai/v1/chat/completions", {
@@ -10,8 +18,9 @@ export async function xaiText(system: string, user: string): Promise<string | nu
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      model: xaiModel(),
-      temperature: 0.3,
+      model: opts?.model ?? xaiModel(),
+      temperature: opts?.temperature ?? 0.3,
+      max_tokens: opts?.maxTokens ?? 800,
       messages: [
         { role: "system", content: system },
         { role: "user", content: user },
@@ -26,6 +35,10 @@ export async function xaiText(system: string, user: string): Promise<string | nu
     choices?: { message?: { content?: string } }[];
   };
   return data.choices?.[0]?.message?.content?.trim() ?? null;
+}
+
+export async function xaiFastText(system: string, user: string): Promise<string | null> {
+  return xaiText(system, user, { model: xaiFastModel(), maxTokens: 220, temperature: 0.2 });
 }
 
 export async function xaiJson<T>(system: string, user: string): Promise<T | null> {

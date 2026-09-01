@@ -33,7 +33,7 @@ Plus tard : un flag `publish_4_5_auto` (off par défaut). Le code doit le permet
 | `inspect` | Inspecteur | Pour chaque fiche : **tous les avis des 6 derniers mois**, et si le titulaire a répondu (`owner_answer` vide ou non). Pas un plafond 50–80 : 6 mois, tout le flux de la période. | — |
 | `press` | Press | One-pager / lien (pas de PDF collé au 1er mail) | — |
 | `carrier` | Carrier | Prépare outreach + relances (j+3, j+7). **N’envoie rien** tant que le lot n’est pas validé. Journal : envoyé, ouvert si on l’a, réponse, relance, STOP/BAJA. | **Toi, par lots** (Admin → Lots). |
-| `inbox_sync` | Inbox | Tire les mails Rosalia (Zoho) et les WhatsApp entrants (webhook). Classe OK / STOP / texte. | Toi tu lis Admin → Inbox |
+| `inbox_sync` | Inbox | Tire les mails Rosalia (Zoho) et les WhatsApp entrants (webhook). Classe OK / STOP / n° / texte. Propose une réponse Rosalia : **script sans LLM** si OK/STOP/n° ; **Grok cheap** si texte dans la FAQ (prix, gestionnaire, paiement). Hors script → humain. | Toi tu **envoies** (allowlist). Opérateur si hors script. |
 
 Inspect : un resto à 12 avis / mois ≈ 70 avis sur 6 mois ; un gros flux, davantage. DataForSEO (ou équivalent) facture à l’avis. Le critère métier est **la fenêtre 6 mois**, pas un N magique.
 

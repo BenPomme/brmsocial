@@ -56,3 +56,43 @@ BABYROCK_WHATSAPP_DISPLAY=+34 6xx xxx xxx
 10. Relance l’app. Le mail Rosalia affichera le numéro. Un message test vers ce numéro doit apparaître dans **Admin → Inbox**.
 
 Sans URL publique, le webhook Meta ne peut pas appeler localhost. La simu Inbox suffit pour voir le flux avant ça.
+
+## État 1er sept. 2026
+
+Fait :
+
+- Appli Meta **Babyrock Social** (App ID `1032575959608719`), Business ID `1048266287813014`.
+- Use case : **Connect with customers through WhatsApp** seulement (pas Become a Partner).
+- Numéro **test Meta** `+1 555 653 1464` (Phone number ID `1208872582320300`, WABA `1761169211880501`). Pas le numéro client. Ne pas le mettre dans les mails resto.
+- `hello_world` reçu sur le téléphone perso de Benjamin (allowlist test, 5 destinataires max).
+- Route proto `GET/POST /api/webhooks/whatsapp` → `inbox_threads` / `inbox_messages`.
+- WABA abonnée à l’appli Babyrock Social (`POST .../subscribed_apps` = success).
+- Token Graph = **System User**, sans expiration (1er sept. 2026). Pas le jeton temporaire du dashboard.
+
+**Inbound réel OK (1er sept. 2026 ~16 h Madrid).** Un texto du perso de Benjamin vers le 555 de test est arrivé dans Admin → Inbox (`inbox_threads` / `inbox_messages`, `wamid.…`). Le bouton Test dashboard n’est pas un vrai WhatsApp.
+
+Le toggle UI `messages` = Unsubscribe peut mentir. Source de vérité : `GET /{WABA-ID}?fields=health_status` → entity APP. Tant que `additional_info` contient « not subscribed to the message webhook », les vrais messages ne partent pas. Après correction, ce champ est vide.
+
+Reste :
+
+- Ne pas mettre le 555 dans les mails resto **ni sur le site public**.
+- WABA production toujours bloqué `#2593030`. Rester sur le numéro test en interne.
+- `WHATSAPP_APP_SECRET` encore vide : pas de signature `X-Hub-Signature-256`. Avant expo publique.
+- Tunnel Cloudflare local : meurt avec la session. En prod, URL fixe sur **brmsocialbackend**.
+- **Site** (`brmsocial`) : bouton WhatsApp actif `wa.me` vers le numéro de prod, pas le 555. Branche le clic vers le même WABA que l’usine.
+
+## Réponses Rosalia (démarchage)
+
+Règle coût (`07-modeles-couts.md`) : pas de LLM si un script suffit.
+
+| Message du prospect | Réponse | Modèle |
+|---|---|---|
+| OK / vale / sí | Script : prochaines étapes (gestionnaire + 89 €) | aucun |
+| STOP / baja | Script : on arrête | aucun |
+| Un numéro | Script : on continue ici | aucun |
+| FAQ (prix, gestionnaire, paiement) | Brouillon court, vous | Grok cheap (`XAI_FAST_MODEL`, cap tokens) |
+| Hors script | « Je passe à un collègue » | humain |
+
+Admin → Inbox : brouillon éditable, **Régénérer**, **Envoyer WhatsApp**. Envoi Cloud API seulement si le numéro est dans `WHATSAPP_ALLOWLIST` (même idée que Zoho). `OUTBOUND_ENABLED` reste false pour les workers.
+
+OpenAPI Meta (`facebook/openapi` → `business-messaging-api_v23.0.yaml`) : `POST /{WABA-ID}/subscribed_apps`, `webhook_configuration.override_callback_uri`, payload `WebhookPayload`. Ça confirme le câblage, ça n’ajoute pas de troisième abonnement.

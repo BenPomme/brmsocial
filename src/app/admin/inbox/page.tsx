@@ -3,7 +3,7 @@
 import { FormEvent, useCallback, useEffect, useState } from "react";
 import { AppHeader, OutboundBanner, StatusBadge } from "@/components/Chrome";
 
-type Msg = { id: string; direction: string; body: string; createdAt: string };
+type Msg = { id: string; direction: string; body: string; createdAt: string; payload?: { source?: string; kind?: string } | null };
 type Thread = {
   id: string;
   channel: string;
@@ -23,6 +23,7 @@ export default function AdminInboxPage() {
   const [notice, setNotice] = useState<string | null>(null);
   const [simFrom, setSimFrom] = useState("");
   const [simBody, setSimBody] = useState("OK");
+  const [draftEdit, setDraftEdit] = useState("");
 
   const refresh = useCallback(async () => {
     const [me, inbox] = await Promise.all([
@@ -36,6 +37,11 @@ export default function AdminInboxPage() {
   useEffect(() => {
     refresh().catch((e) => setNotice(String(e)));
   }, [refresh]);
+
+  useEffect(() => {
+    const d = threads.find((t) => t.id === (openId ?? threads[0]?.id))?.messages.find((m) => m.direction === "draft");
+    if (d) setDraftEdit(d.body);
+  }, [threads, openId]);
 
   async function sync() {
     setBusy("sync");
@@ -61,11 +67,42 @@ export default function AdminInboxPage() {
     });
     const data = await res.json();
     setBusy(null);
-    setNotice(res.ok ? "WhatsApp simulé (Meta pas encore branché)." : data.error ?? "échec");
+    setNotice(res.ok ? "WhatsApp simulé (sans passer par Meta)." : data.error ?? "échec");
     await refresh();
   }
 
   const open = threads.find((t) => t.id === openId) ?? threads[0] ?? null;
+  const draft = open?.messages.find((m) => m.direction === "draft") ?? null;
+  const visible = open?.messages.filter((m) => m.direction !== "draft") ?? [];
+
+  async function propose() {
+    if (!open) return;
+    setBusy("propose");
+    const res = await fetch("/api/admin/inbox/reply", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ threadId: open.id, action: "propose" }),
+    });
+    const data = await res.json();
+    setBusy(null);
+    setNotice(res.ok ? `Brouillon Rosalia (${data.proposed?.source ?? "ok"}).` : data.error ?? "échec");
+    await refresh();
+  }
+
+  async function sendDraft() {
+    if (!open) return;
+    setBusy("send");
+    const res = await fetch("/api/admin/inbox/reply", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ threadId: open.id, action: "send", text: draftEdit || draft?.body }),
+    });
+    const data = await res.json();
+    setBusy(null);
+    setNotice(res.ok ? "WhatsApp envoyé (allowlist)." : data.error ?? "échec");
+    if (res.ok) setDraftEdit("");
+    await refresh();
+  }
 
   return (
     <div className="min-h-screen">
@@ -76,8 +113,8 @@ export default function AdminInboxPage() {
           <div>
             <h1 className="font-display text-3xl">Inbox démarchage</h1>
             <p className="text-sm text-muted mt-1">
-              Réponses des prospects à Rosalia (mail Zoho) et, plus tard, à notre WhatsApp. Pas la file
-              d’avis Google — ça c’est « File avis ».
+              Réponses des prospects à Rosalia (mail Zoho) et à notre WhatsApp (webhook Meta, ou
+              simu). Pas la file d’avis Google — ça c’est « File avis ».
             </p>
           </div>
           <button
@@ -92,7 +129,7 @@ export default function AdminInboxPage() {
 
         <form onSubmit={sim} className="bg-white/70 border border-line rounded-2xl p-4 text-sm flex flex-wrap gap-2 items-end">
           <label className="flex flex-col gap-1">
-            <span className="text-xs text-muted">Simuler un WhatsApp (avant Meta)</span>
+            <span className="text-xs text-muted">Simuler un WhatsApp (sans Meta)</span>
             <input
               className="rounded-lg border border-line bg-paper px-3 py-2"
               placeholder="34600111222"
@@ -144,7 +181,7 @@ export default function AdminInboxPage() {
                   {open.lead?.city ? ` · ${open.lead.city}` : ""}
                 </p>
                 <div className="space-y-3">
-                  {open.messages.map((m) => (
+                  {visible.map((m) => (
                     <div
                       key={m.id}
                       className={`rounded-xl px-3 py-2 text-sm whitespace-pre-wrap ${
@@ -158,6 +195,41 @@ export default function AdminInboxPage() {
                     </div>
                   ))}
                 </div>
+                {open.channel === "whatsapp" && (
+                  <div className="mt-4 border-t border-line pt-4 space-y-2">
+                    <p className="text-xs text-muted">
+                      Brouillon Rosalia
+                      {draft?.payload && typeof draft.payload === "object" && "source" in draft.payload
+                        ? ` · ${String((draft.payload as { source?: string }).source)}`
+                        : ""}
+                      . Script (OK / STOP / numéro) = zéro modèle. Texte libre = Grok cheap, hors script → humain.
+                    </p>
+                    <textarea
+                      className="w-full rounded-lg border border-line bg-paper px-3 py-2 text-sm min-h-[8rem]"
+                      value={draftEdit}
+                      onChange={(e) => setDraftEdit(e.target.value)}
+                      placeholder="Pas encore de brouillon. Simule un message, ou Régénère."
+                    />
+                    <div className="flex flex-wrap gap-2">
+                      <button
+                        type="button"
+                        onClick={propose}
+                        disabled={busy === "propose"}
+                        className="rounded-lg border border-line px-3 py-2 text-sm disabled:opacity-60"
+                      >
+                        {busy === "propose" ? "…" : "Régénérer"}
+                      </button>
+                      <button
+                        type="button"
+                        onClick={sendDraft}
+                        disabled={busy === "send" || !draftEdit.trim()}
+                        className="rounded-lg bg-ink text-paper px-3 py-2 text-sm disabled:opacity-60"
+                      >
+                        {busy === "send" ? "Envoi…" : "Envoyer WhatsApp"}
+                      </button>
+                    </div>
+                  </div>
+                )}
               </>
             )}
           </div>

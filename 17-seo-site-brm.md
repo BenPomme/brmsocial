@@ -4,6 +4,10 @@ Pas le SEO des fiches clients. Ici : que **www.babyrock.ai** soit trouvable et c
 
 Repo : [BenPomme/brmsocial](https://github.com/BenPomme/brmsocial). Pages dans `docs/` (GitHub Pages). Copy dans `site/content/{es,ca,fr,en}.md`. Rebuild : `node site/build.mjs`.
 
+L’usine (inbox, webhook, Stripe plus tard) est [BenPomme/brmsocialbackend](https://github.com/BenPomme/brmsocialbackend). Le site ne duplique pas l’admin. Il **pointe** : `wa.me` WhatsApp Babyrock, liens s’abonner / compte vers l’usine.
+
+**À faire dans brmsocial (pas ici)** : bouton WhatsApp **actif** sur toutes les langues (header ou sticky). `https://wa.me/<E164_PROD>` (chiffres seuls, sans +). Texte du type « Escríbenos ». **Pas** le numéro test Meta `+1 555…`. Tant que le WABA de prod n’existe pas, le bouton reste en attente — on ne colle pas le 555 sur www.babyrock.ai.
+
 État actuel (lu dans le repo) : titres et meta description existent ; FAQ en `<details>` ; 4 langues. **Absent** : `robots.txt`, `sitemap.xml`, canonical, hreflang, Open Graph, JSON-LD, alt sur le hero, apex `babyrock.ai` → www. La racine `docs/index.html` redirige en JavaScript : Google voit une coquille vide.
 
 On n’achète pas de PDF AEO, pas de CrowdReply, pas de paquets de backlinks.

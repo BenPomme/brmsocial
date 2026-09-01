@@ -8,30 +8,61 @@ export async function GET(req: Request) {
   const challenge = url.searchParams.get("hub.challenge");
   const expected = process.env.WHATSAPP_VERIFY_TOKEN?.trim();
   if (mode === "subscribe" && expected && token === expected && challenge) {
+    console.log("whatsapp webhook verify: ok");
     return new NextResponse(challenge, { status: 200, headers: { "Content-Type": "text/plain" } });
   }
+  console.warn("whatsapp webhook verify: rejected");
   return new NextResponse("forbidden", { status: 403 });
 }
+
+type WaMessage = {
+  id?: string;
+  from?: string;
+  from_user_id?: string;
+  type?: string;
+  text?: { body?: string };
+};
 
 export async function POST(req: Request) {
   try {
     const body = (await req.json()) as {
+      object?: string;
       entry?: Array<{
         changes?: Array<{
+          field?: string;
           value?: {
-            messages?: Array<{ id?: string; from?: string; type?: string; text?: { body?: string } }>;
+            messages?: WaMessage[];
+            statuses?: unknown[];
+            errors?: unknown[];
+            contacts?: Array<{ wa_id?: string }>;
           };
         }>;
       }>;
     };
-    const messages =
-      body.entry?.flatMap((e) => e.changes ?? []).flatMap((c) => c.value?.messages ?? []) ?? [];
+    const changes = body.entry?.flatMap((e) => e.changes ?? []) ?? [];
+    const messages = changes.flatMap((c) => c.value?.messages ?? []);
+    const statuses = changes.flatMap((c) => c.value?.statuses ?? []);
+    const errors = changes.flatMap((c) => c.value?.errors ?? []);
+    const waIds = changes.flatMap((c) => c.value?.contacts?.map((x) => x.wa_id) ?? []);
+    console.log("whatsapp webhook POST", {
+      object: body.object,
+      fields: changes.map((c) => c.field),
+      messages: messages.length,
+      statuses: statuses.length,
+      errors: errors.length,
+      from: messages.map((m) => m.from ?? m.from_user_id ?? null),
+      types: messages.map((m) => m.type),
+    });
     for (const m of messages) {
-      if (!m?.id || !m.from) continue;
+      const from = (m.from ?? m.from_user_id ?? waIds[0] ?? "").trim();
+      if (!m?.id || !from) {
+        console.warn("whatsapp webhook skip", { id: m?.id, keys: m ? Object.keys(m) : [] });
+        continue;
+      }
       const text = m.type === "text" ? m.text?.body ?? "" : `(${m.type ?? "message"})`;
       await ingestInbound({
         channel: "whatsapp",
-        counterparty: m.from,
+        counterparty: from,
         body: text || "(vide)",
         providerId: `wa-${m.id}`,
         payload: m,

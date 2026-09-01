@@ -22,6 +22,7 @@ export async function ingestInbound(opts: {
   direction?: "in" | "out";
 }) {
   const counterparty = opts.counterparty.trim().toLowerCase();
+  const direction = opts.direction ?? "in";
   const kind = classifyInbound(opts.body);
   const status = kind === "stop" ? "stop" : kind === "ok" ? "ok" : "needs_human";
 
@@ -53,7 +54,7 @@ export async function ingestInbound(opts: {
     },
     update: {
       lastMessageAt: new Date(),
-      status,
+      ...(direction === "in" ? { status } : {}),
       leadId: lead?.id ?? undefined,
       subject: opts.subject ?? undefined,
     },
@@ -62,12 +63,25 @@ export async function ingestInbound(opts: {
   const message = await prisma.inboxMessage.create({
     data: {
       threadId: thread.id,
-      direction: opts.direction ?? "in",
+      direction,
       body: opts.body,
       providerId: opts.providerId,
       payload: opts.payload as object | undefined,
     },
   });
 
+  if (createdInboundShouldDraft(opts.channel, direction)) {
+    try {
+      const { proposeRosaliaReply } = await import("./rosalia-reply");
+      await proposeRosaliaReply(thread.id);
+    } catch (e) {
+      console.warn("rosalia propose", e);
+    }
+  }
+
   return { created: true, messageId: message.id, threadId: thread.id, kind, leadId: lead?.id ?? null };
+}
+
+function createdInboundShouldDraft(channel: string, direction: string) {
+  return channel === "whatsapp" && direction === "in";
 }
