@@ -54,12 +54,24 @@ type Job = {
   result: unknown;
   createdAt: string;
 };
+type PaidClient = {
+  id: string;
+  name: string;
+  city: string | null;
+  status: string;
+  plan: string;
+  emailPublic: string | null;
+  stripeOrBizumRef: string | null;
+};
 
 export default function AdminPage() {
   const [email, setEmail] = useState("");
   const [placesOn, setPlacesOn] = useState(false);
   const [dfsOn, setDfsOn] = useState(false);
   const [xaiOn, setXaiOn] = useState(false);
+  const [stripeOn, setStripeOn] = useState(false);
+  const [stripeMode, setStripeMode] = useState<string>("off");
+  const [paid, setPaid] = useState<PaidClient[]>([]);
   const [cities, setCities] = useState<City[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
   const [changes, setChanges] = useState<Change[]>([]);
@@ -70,16 +82,20 @@ export default function AdminPage() {
   const [notice, setNotice] = useState<string | null>(null);
 
   const refresh = useCallback(async () => {
-    const [me, scope, pl, jb] = await Promise.all([
+    const [me, scope, pl, jb, bill] = await Promise.all([
       fetch("/api/auth/me").then((r) => r.json()),
       fetch("/api/admin/scope").then((r) => r.json()),
       fetch("/api/admin/places").then((r) => r.json()),
       fetch("/api/admin/jobs").then((r) => r.json()),
+      fetch("/api/admin/billing").then((r) => r.json()),
     ]);
     setEmail(me.session?.email ?? "");
     setPlacesOn(Boolean(me.flags?.placesKey));
     setDfsOn(Boolean(me.flags?.dataforseo));
     setXaiOn(Boolean(me.flags?.xaiKey));
+    setStripeOn(Boolean(me.flags?.stripe));
+    setStripeMode(typeof me.flags?.stripeMode === "string" ? me.flags.stripeMode : "off");
+    setPaid(bill.clients ?? []);
     setCities(scope.cities ?? []);
     setCategories(scope.categories ?? []);
     setChanges(scope.changes ?? []);
@@ -201,6 +217,9 @@ export default function AdminPage() {
           </span>
           <span className={`px-2 py-1 rounded-full ${xaiOn ? "bg-emerald-100 text-ok" : "bg-sand text-muted"}`}>
             xAI {xaiOn ? "on (Scope + brouillons)" : "off — parser / templates"}
+          </span>
+          <span className={`px-2 py-1 rounded-full ${stripeOn ? "bg-emerald-100 text-ok" : "bg-red-100 text-accent-dark"}`}>
+            Stripe {stripeOn ? stripeMode : "clé manquante"}
           </span>
         </div>
         {notice && (
@@ -325,6 +344,39 @@ export default function AdminPage() {
               </ul>
             </div>
           </div>
+        </section>
+
+        <section className="bg-white/70 border border-line rounded-2xl p-5 shadow-card">
+          <div className="flex flex-wrap items-baseline justify-between gap-3 mb-3">
+            <h2 className="font-display text-2xl">Paiement Stripe</h2>
+            <a href="/pay" className="text-sm underline decoration-line underline-offset-4">
+              Ouvrir le checkout test
+            </a>
+          </div>
+          <p className="text-sm text-muted mb-4">
+            One-off Checkout, pas Billing 0,7 %. Cartes test 4242. Le site public{" "}
+            <code>brmsocial</code> pointera ici plus tard (<code>/pay</code>). Versement : IBAN Revolut
+            de la SL, quand le KYC live sera vert.
+          </p>
+          {paid.length === 0 ? (
+            <p className="text-sm text-muted">Aucun paiement encore. La simu vendredi = un 4242 sur /pay.</p>
+          ) : (
+            <ul className="space-y-2 text-sm">
+              {paid.map((c) => (
+                <li key={c.id} className="flex flex-wrap items-center justify-between gap-2 border border-line rounded-xl px-3 py-2">
+                  <span>
+                    {c.name}
+                    {c.city ? <span className="text-muted"> · {c.city}</span> : null}
+                    {c.emailPublic ? <span className="text-muted"> · {c.emailPublic}</span> : null}
+                  </span>
+                  <span className="flex items-center gap-2">
+                    <StatusBadge status={c.status} />
+                    <span className="text-xs text-muted truncate max-w-[180px]">{c.stripeOrBizumRef ?? "—"}</span>
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
         </section>
 
         <section>

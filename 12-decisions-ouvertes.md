@@ -16,6 +16,7 @@
 - Coder dans Grok Build. Bot ≠ runtime publication
 - Marge ≥ 30 % avant salaire fondateur
 - Fondateur hors file opérateur ; il a une console admin + agent Scope
+- Paiement : Stripe (cartes EEE + SEPA Direct Debit). Bizum Stripe pour le 1er clic ES seulement, pas le récurrent. Pas de Billing 0,7 % tant que l’abo n’est pas dans le produit. Versement : IBAN Revolut de la SL. Site public (`brmsocial`) envoie vers `/pay` de l’usine (`brmsocialbackend`).
 
 ## À figer (1 ligne chacune, avant semaine 5)
 
@@ -24,7 +25,7 @@
 3. Compte Google : un `reviews@` global ou un par vague de villes ?
 4. Plafond rattrapage : 20 avis, ou 30 jours glissants ?
 5. Délai silence 1★ : 24 h puis abandon, ou 48 h + 1 relance ?
-6. Paiement : Stripe seul, Bizum seul, les deux ?
+6. ~~Paiement : Stripe seul, Bizum seul, les deux ?~~ figé ci-dessus
 7. Template Meta premier contact : on tente, ou mail-only jusqu’à juriste ?
 8. Nom d’affichage WhatsApp et adresse gestionnaire exacte
 

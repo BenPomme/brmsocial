@@ -49,6 +49,19 @@ npm run dev
 
 Postgres écoute sur **localhost:5433** (pas 5432, pour ne pas te marcher sur un Postgres déjà là).
 
+## Paiement Stripe (simu)
+
+Clés **test** dans `.env` (`STRIPE_SECRET_KEY=sk_test_…`). Pas de Billing 0,7 % : Checkout one-off 89 € / 748 €.
+
+1. `npm run dev`
+2. Admin → **Payer**, ou ouvre [http://localhost:3000/pay](http://localhost:3000/pay)
+3. Carte `4242 4242 4242 4242`, date future, CVC 123
+4. Retour `/pay/ok` : le client passe `paye`, ref Stripe stockée
+
+Le site public (`brmsocial`) n’encaisse pas : son bouton S’abonner pointera vers cette `/pay`. Versement live = IBAN Revolut de la SL, dans le Dashboard Stripe, pas dans l’app.
+
+Webhook (plus tard, pas bloquant pour la simu) : `STRIPE_WEBHOOK_SECRET` + `POST /api/webhooks/stripe`. En local le retour Checkout suffit.
+
 Au démarrage, le serveur imprime une checklist :
 
 - `GOOGLE_PLACES_API_KEY` — sans elle, login marche, Scout échoue clairement

@@ -20,6 +20,8 @@ export function printBootChecklist() {
     `  ZOHO_REFRESH_TOKEN      = ${mark(c.ZOHO_REFRESH_TOKEN, true)}`,
     `  XAI_API_KEY             = ${mark(c.XAI_API_KEY, true)}`,
     `  SESSION_SECRET          = ${mark(c.SESSION_SECRET)}`,
+    `  STRIPE_SECRET_KEY       = ${mark(c.STRIPE_SECRET_KEY)} (${c.stripeMode})`,
+    `  STRIPE_WEBHOOK_SECRET   = ${mark(c.STRIPE_WEBHOOK_SECRET, true)}`,
     `  XAI_MODEL               = ${c.XAI_MODEL}`,
     "",
     "  Refusing outbound workers:",
@@ -59,6 +61,11 @@ export function printBootChecklist() {
       "  No xAI API key (console.x.ai). SuperGrok chat quota cannot be used here. Drafts are templates.",
       "",
     );
+  }
+  if (!c.STRIPE_SECRET_KEY) {
+    lines.push("  No Stripe: /pay will 503. Add STRIPE_SECRET_KEY (test is enough to simulate).", "");
+  } else if (c.stripeMode === "test") {
+    lines.push("  Stripe test mode. Open /pay, card 4242. Not Billing 0.7 % — one-off Checkout.", "");
   }
   lines.push("============================================================");
   console.log(lines.join("\n"));

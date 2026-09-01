@@ -17,6 +17,7 @@ export function envChecklist() {
     OUTBOUND_ENABLED,
     outboundEnvTried: triedOutbound,
     XAI_MODEL: read("XAI_MODEL") ?? "grok-4.3",
+    XAI_FAST_MODEL: read("XAI_FAST_MODEL") ?? "grok-4.3",
     SCOUT_MAX_PLACES: Number(read("SCOUT_MAX_PLACES") ?? 10),
     SCOUT_MAX_DETAILS: Number(read("SCOUT_MAX_DETAILS") ?? 12),
     DATAFORSEO_LOGIN: Boolean(read("DATAFORSEO_LOGIN")),
@@ -24,6 +25,10 @@ export function envChecklist() {
     ZOHO_REFRESH_TOKEN: Boolean(read("ZOHO_REFRESH_TOKEN")),
     INSPECT_MAX_DEPTH: Number(read("INSPECT_MAX_DEPTH") ?? 150),
     INSPECT_WINDOW_MONTHS: Number(read("INSPECT_WINDOW_MONTHS") ?? 6),
+    STRIPE_SECRET_KEY: Boolean(read("STRIPE_SECRET_KEY")),
+    STRIPE_PUBLISHABLE_KEY: Boolean(read("STRIPE_PUBLISHABLE_KEY")),
+    STRIPE_WEBHOOK_SECRET: Boolean(read("STRIPE_WEBHOOK_SECRET")),
+    stripeMode: stripeMode(),
   };
 }
 
@@ -53,6 +58,11 @@ export function xaiModel() {
   return read("XAI_MODEL") ?? "grok-4.3";
 }
 
+/** Cheap model for FAQ / outreach close. Fast slugs retired May 2026 → grok-4.3 + max_tokens. */
+export function xaiFastModel() {
+  return read("XAI_FAST_MODEL") ?? "grok-4.3";
+}
+
 export function dataforseoLogin() {
   return read("DATAFORSEO_LOGIN");
 }
@@ -75,4 +85,31 @@ export function inspectWindowMonths() {
   const n = Number(read("INSPECT_WINDOW_MONTHS") ?? 6);
   if (!Number.isFinite(n) || n < 1) return 6;
   return Math.floor(n);
+}
+
+export function stripeSecretKey() {
+  return read("STRIPE_SECRET_KEY");
+}
+
+export function stripePublishableKey() {
+  return read("STRIPE_PUBLISHABLE_KEY");
+}
+
+export function stripeWebhookSecret() {
+  return read("STRIPE_WEBHOOK_SECRET");
+}
+
+export function stripeMode(): "test" | "live" | "off" {
+  const secret = stripeSecretKey();
+  if (!secret) return "off";
+  if (secret.startsWith("sk_live_")) return "live";
+  return "test";
+}
+
+export function appUrl() {
+  return read("APP_URL");
+}
+
+export function siteUrl() {
+  return read("SITE_URL") ?? "https://www.babyrock.ai";
 }

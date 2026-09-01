@@ -11,6 +11,12 @@ UUID en PK. Timestamps `timestamptz`.
 - email_public, whatsapp_site (nullable), whatsapp_owner
 - plan (`avis_89`|`avis_wa_119`), status (`lead`|`paye`|`actif`|`pause`|`resilie`)
 - stripe_or_bizum_ref
+- **Facturation B2B** (à coder mercredi 2 sept. — sans ça le resto ne déduit pas l’IVA) :
+  - `legal_name` (razón social, pas l’enseigne)
+  - `tax_id` (NIF/CIF ES, ou n° TVA intra-UE)
+  - `billing_email`
+  - `billing_line1`, `billing_postcode`, `billing_city`, `billing_country`
+  - `vat_mode` (`es_iva`|`eu_reverse`|`unknown`) — ES 21 % sur 89 HT jusqu’au freeze comptable ; FR B2B avec n° TVA = autoliquidation, pas l’OSS
 - category_id (FK scope_categories)
 - operator_id nullable
 - tone_notes (texte libre du titulaire : tutoiement, etc.)

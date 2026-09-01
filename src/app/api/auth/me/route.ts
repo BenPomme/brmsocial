@@ -12,6 +12,8 @@ export async function GET() {
       placesKey: env.GOOGLE_PLACES_API_KEY,
       dataforseo: env.DATAFORSEO_LOGIN && env.DATAFORSEO_PASSWORD,
       xaiKey: env.XAI_API_KEY,
+      stripe: env.STRIPE_SECRET_KEY,
+      stripeMode: env.stripeMode,
     },
   });
 }

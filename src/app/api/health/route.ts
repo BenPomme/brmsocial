@@ -13,6 +13,8 @@ export async function GET() {
       GOOGLE_PLACES_API_KEY: env.GOOGLE_PLACES_API_KEY,
       XAI_API_KEY: env.XAI_API_KEY,
       SESSION_SECRET: env.SESSION_SECRET,
+      STRIPE_SECRET_KEY: env.STRIPE_SECRET_KEY,
+      stripeMode: env.stripeMode,
     },
   });
 }

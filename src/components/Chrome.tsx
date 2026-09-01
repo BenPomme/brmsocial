@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 export function OutboundBanner() {
   return (
     <div className="bg-ink text-paper px-4 py-2 text-xs tracking-wide flex items-center justify-between gap-3">
-      <span>OUTBOUND_ENABLED=false — aucun mail, WhatsApp ou SMS ne quitte la machine.</span>
+      <span>OUTBOUND_ENABLED=false — SMTP / SMS off. Zoho et WhatsApp : allowlist seulement.</span>
       <span className="opacity-70">Publier = dry-run, sauf fiche à nous avec publish_live.</span>
     </div>
   );
@@ -42,6 +42,9 @@ export function AppHeader(props: {
             <Link href="/admin/lots" className="underline decoration-line underline-offset-4">
               Lots
             </Link>
+            <Link href="/pay" className="underline decoration-line underline-offset-4">
+              Payer
+            </Link>
             <Link href="/operator" className="underline decoration-line underline-offset-4">
               File avis
             </Link>
@@ -74,6 +77,11 @@ export function StatusBadge({ status }: { status: string }) {
     done: "bg-emerald-100 text-ok",
     fail: "bg-red-100 text-accent-dark",
     proto: "bg-sand text-ink",
+    lead: "bg-sand text-ink",
+    paye: "bg-emerald-100 text-ok",
+    actif: "bg-moss text-white",
+    pause: "bg-amber-100 text-warn",
+    resilie: "bg-neutral-300 text-ink",
   };
   return (
     <span className={`inline-flex px-2 py-0.5 rounded-full text-[11px] font-medium ${map[status] ?? "bg-sand"}`}>
