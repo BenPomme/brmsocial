@@ -52,7 +52,7 @@ Script visé : site (ou `/pay`) → fiche + **données fiscales** → Checkout 4
 
 ## Fait (mardi 1er sept.) — Stripe sandbox
 
-Checkout one-off `/pay` (89 € / 748 €), clés test, client `paye`, pas de Billing 0,7 %. Décision 6 figée. Versement live = IBAN Revolut de la SL, KYC encore ouvert.
+Checkout `/pay`, clés test, factura NIF. Catalogue **TTC** : 99 €/mes, 799 €/an. Sant Cugat : 1er mois 0 € + rattrapage 3 mois. Pas de Billing 0,7 %.
 
 ## Demain (mercredi 2 sept.) — même volume que mardi
 
@@ -68,6 +68,10 @@ Bloc principal = facture B2B. Un resto doit pouvoir **mettre la factura sur la s
 **Pas demain :** Billing 0,7 %, WABA prod (`#2593030`), numéro 555 sur www, publier sur une fiche Maps qui n’est pas à nous, Verifactu / facture électronique ES (comptable, après la démo).
 
 Jeudi 3 : répétition chrono du script, coller site → `/pay` (agent `brmsocial` si pas fait), GBP sur 1 fiche à toi si possible, file d’incidents. Vendredi 4 : démo.
+
+**Après vendredi — Rosalia qui apprend** (plan dans `10-whatsapp-service.md`) : tracer chaque tour (`rosalia_turns`), scripts en base par langue, écran d’occurrence, lien `/pay` dès OK, Head of Data propose, toi tu valides. Pas un nouvel agent. Pas de LLM pour « apprendre ».
+
+**Backlog — CRM (important).** Une **fiche unique** par prospect / client : identité, contacts, fiscal, Google, statut. Plus **l’historique des interactions séparé par canal** (mail Zoho ≠ WhatsApp ≠ plus tard SMS). On ne fusionne pas un texto dans un e-mail. Écran admin : ouvrir la fiche, voir la timeline par canal. Détail : `05-donnees.md`. Sans ça on n’optimise pas Rosalia et on ne briefe pas l’opérateur.
 
 ## Comment reprendre ce dossier
 

@@ -1,5 +1,5 @@
 import { prisma } from "../db";
-import { xaiText } from "../xai";
+import { xaiFastText, xaiText } from "../xai";
 import { xaiKey, xaiModel } from "../env";
 import { clampReviewReply, detectLang, firstName, pickDetail } from "../language";
 import { simDailyRecap, simPingLowStar } from "../sim-thread";
@@ -62,11 +62,14 @@ export async function draftOneAvis(avisId: string, opts?: { forceTemplate?: bool
 
   if (xaiKey() && !opts?.forceTemplate) {
     try {
-      text = await xaiText(
-        DRAFT_SYSTEM,
-        `Business: ${avis.client.name}\nCity: ${avis.client.city}\nTone notes: ${avis.client.toneNotes || "(none)"}\nStars: ${avis.stars}\nLanguage hint: ${lang}\nAuthor: ${avis.authorPublicName || "anon"}\nReview:\n${avis.body}`,
-      );
-      if (text) model = xaiModel();
+      const prompt = `Business: ${avis.client.name}\nCity: ${avis.client.city}\nTone notes: ${avis.client.toneNotes || "(none)"}\nStars: ${avis.stars}\nLanguage hint: ${lang}\nAuthor: ${avis.authorPublicName || "anon"}\nReview:\n${avis.body}`;
+      if (avis.stars >= 4) {
+        text = await xaiFastText(DRAFT_SYSTEM, prompt);
+        if (text) model = "fast";
+      } else {
+        text = await xaiText(DRAFT_SYSTEM, prompt, { maxTokens: 220, reasoning: "none" });
+        if (text) model = xaiModel();
+      }
     } catch (e) {
       console.warn("draft xAI failed, using template", e);
     }
@@ -129,9 +132,10 @@ export async function draftOneAvis(avisId: string, opts?: { forceTemplate?: bool
 }
 
 export async function draftMany(avisIds: string[]) {
+  const useLlm = process.env.XAI_DRAFT_REVIEWS === "true";
   const results = [];
   for (let i = 0; i < avisIds.length; i++) {
-    results.push(await draftOneAvis(avisIds[i], { forceTemplate: i >= 5 }));
+    results.push(await draftOneAvis(avisIds[i], { forceTemplate: !useLlm || i >= 5 }));
   }
   const clientIds = [
     ...new Set(

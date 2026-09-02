@@ -9,14 +9,15 @@ UUID en PK. Timestamps `timestamptz`.
 - google_location_id, google_account_email_manager
 - manager_invite_status (`pending`|`accepted`|`revoked`|`dead`)
 - email_public, whatsapp_site (nullable), whatsapp_owner
-- plan (`avis_89`|`avis_wa_119`), status (`lead`|`paye`|`actif`|`pause`|`resilie`)
+- plan (`avis_month`|`avis_year`), status (`lead`|`essai`|`paye`|`actif`|`pause`|`resilie`)
+- offer (`santcugat_trial`|null), trial_ends_at, catchup_months (3 pour Sant Cugat, sinon rattrapage 20 avis)
 - stripe_or_bizum_ref
-- **Facturation B2B** (à coder mercredi 2 sept. — sans ça le resto ne déduit pas l’IVA) :
+- **Facturation B2B** (collectée sur `/pay`, copiée sur le Customer Stripe) :
   - `legal_name` (razón social, pas l’enseigne)
   - `tax_id` (NIF/CIF ES, ou n° TVA intra-UE)
   - `billing_email`
   - `billing_line1`, `billing_postcode`, `billing_city`, `billing_country`
-  - `vat_mode` (`es_iva`|`eu_reverse`|`unknown`) — ES 21 % sur 89 HT jusqu’au freeze comptable ; FR B2B avec n° TVA = autoliquidation, pas l’OSS
+  - `vat_mode` (`es_iva`|`eu_reverse`|`unknown`) — ES 21 % sur 99 TTC (81,82 HT) ; FR B2B avec n° TVA = autoliquidation
 - category_id (FK scope_categories)
 - operator_id nullable
 - tone_notes (texte libre du titulaire : tutoiement, etc.)
@@ -75,6 +76,18 @@ UUID en PK. Timestamps `timestamptz`.
 - id, kind (`draft`|`publish`|`wa_out`|`outreach_mail`|`scout`)
 - payload jsonb, status (`queued`|`run`|`done`|`fail`)
 - attempts, run_after, locked_at
+
+## CRM (backlog — important)
+
+Aujourd’hui : `leads` + `clients` + `inbox_threads` (un fil par `channel` × `counterparty`). Ce n’est **pas** encore un CRM.
+
+À avoir :
+
+- **Fiche unique** (prospect ou client) : enseigne, ville, catégorie, contacts (email site, email perso, WA), fiscal (NIF, razón social), Google (`location_id`, gestor), statut, plan, opérateur.
+- **Historique des interactions par canal**, pas un seul blob : chaque événement a `channel` (`email` | `whatsapp` | `sms` | `admin`) + `direction` + `at` + `script_id` / sujet. Un WhatsApp ne devient pas un mail. Si les deux existent, deux timelines, une fiche.
+- Admin : page **Fiche** = identité + les fils côte à côte (ou onglets Mail / WhatsApp). Pas seulement Inbox à plat.
+
+Relié à `rosalia_turns` (apprentissage scripts) : la tour pointe vers la fiche + le canal.
 
 ## leads (démarchage)
 

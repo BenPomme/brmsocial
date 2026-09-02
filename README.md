@@ -51,7 +51,7 @@ Postgres écoute sur **localhost:5433** (pas 5432, pour ne pas te marcher sur un
 
 ## Paiement Stripe (simu)
 
-Clés **test** dans `.env` (`STRIPE_SECRET_KEY=sk_test_…`). Pas de Billing 0,7 % : Checkout one-off 89 € / 748 €.
+Clés **test** dans `.env`. Checkout one-off **99 € TTC / mes**, **799 € TTC / año** (factura HT + IVA 21 %). Sant Cugat : `/pay` → mes gratis. SKUs : `npm run stripe:skus`.
 
 1. `npm run dev`
 2. Admin → **Payer**, ou ouvre [http://localhost:3000/pay](http://localhost:3000/pay)

@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import { stripeSecretKey } from "@/lib/env";
-import { fulfillCheckoutSession } from "@/lib/pay";
-import { getStripe } from "@/lib/stripe";
+import { fulfillCheckoutSession, resolveInvoice, retrieveCheckout } from "@/lib/pay";
 
 export async function GET(req: Request) {
   if (!stripeSecretKey()) {
@@ -10,15 +9,19 @@ export async function GET(req: Request) {
   const sessionId = new URL(req.url).searchParams.get("session_id")?.trim();
   if (!sessionId) return NextResponse.json({ error: "session_id manquant" }, { status: 400 });
 
-  const session = await getStripe().checkout.sessions.retrieve(sessionId);
-  const result = await fulfillCheckoutSession(session);
-  return NextResponse.json({
-    paymentStatus: session.payment_status,
-    status: session.status,
-    amountTotal: session.amount_total,
-    currency: session.currency,
-    customerEmail: session.customer_details?.email ?? null,
-    livemode: session.livemode,
-    ...result,
-  });
+  try {
+    const session = await retrieveCheckout(sessionId);
+    const result = await fulfillCheckoutSession(session);
+    const invoice = result.ok ? result.invoice : await resolveInvoice(session);
+    return NextResponse.json({
+      ok: result.ok,
+      paymentStatus: session.payment_status,
+      amountTotal: session.amount_total,
+      invoice: { id: invoice.id, pdf: invoice.pdf, hosted: invoice.hosted },
+    });
+  } catch (e) {
+    const message = e instanceof Error ? e.message : "session";
+    console.warn("pay session", message);
+    return NextResponse.json({ error: message }, { status: 500 });
+  }
 }

@@ -17,7 +17,7 @@ export function envChecklist() {
     OUTBOUND_ENABLED,
     outboundEnvTried: triedOutbound,
     XAI_MODEL: read("XAI_MODEL") ?? "grok-4.3",
-    XAI_FAST_MODEL: read("XAI_FAST_MODEL") ?? "grok-4.3",
+    XAI_FAST_MODEL: read("XAI_FAST_MODEL") ?? "grok-4.20-0309-non-reasoning",
     SCOUT_MAX_PLACES: Number(read("SCOUT_MAX_PLACES") ?? 10),
     SCOUT_MAX_DETAILS: Number(read("SCOUT_MAX_DETAILS") ?? 12),
     DATAFORSEO_LOGIN: Boolean(read("DATAFORSEO_LOGIN")),
@@ -60,7 +60,7 @@ export function xaiModel() {
 
 /** Cheap model for FAQ / outreach close. Fast slugs retired May 2026 → grok-4.3 + max_tokens. */
 export function xaiFastModel() {
-  return read("XAI_FAST_MODEL") ?? "grok-4.3";
+  return read("XAI_FAST_MODEL") ?? "grok-4.20-0309-non-reasoning";
 }
 
 export function dataforseoLogin() {

@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
-import { stripeMode, stripeSecretKey } from "@/lib/env";
-import { createCheckoutSession, parsePayPlan, payCorsHeaders, str } from "@/lib/pay";
+import { createTrialSantCugat, payCorsHeaders, str } from "@/lib/pay";
 
 export async function OPTIONS(req: Request) {
   return new NextResponse(null, { status: 204, headers: payCorsHeaders(req) });
@@ -8,9 +7,6 @@ export async function OPTIONS(req: Request) {
 
 export async function POST(req: Request) {
   const headers = payCorsHeaders(req);
-  if (!stripeSecretKey()) {
-    return NextResponse.json({ error: "Stripe n’est pas configuré" }, { status: 503, headers });
-  }
   let body: Record<string, unknown> = {};
   try {
     body = (await req.json()) as Record<string, unknown>;
@@ -18,9 +14,7 @@ export async function POST(req: Request) {
     body = {};
   }
   try {
-    const session = await createCheckoutSession({
-      req,
-      plan: parsePayPlan(body.plan),
+    const trial = await createTrialSantCugat({
       clientId: str(body.clientId),
       name: str(body.name),
       email: str(body.email),
@@ -35,9 +29,9 @@ export async function POST(req: Request) {
       billingCity: str(body.billingCity) ?? str(body.city),
       billingCountry: str(body.billingCountry) ?? "ES",
     });
-    return NextResponse.json({ ...session, mode: stripeMode() }, { headers });
+    return NextResponse.json({ ok: true, ...trial }, { headers });
   } catch (e) {
-    const message = e instanceof Error ? e.message : "échec checkout";
+    const message = e instanceof Error ? e.message : "échec essai";
     return NextResponse.json({ error: message }, { status: 400, headers });
   }
 }

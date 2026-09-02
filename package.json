@@ -14,7 +14,8 @@
     "setup": "docker compose up -d && npx prisma db push && npx prisma db seed",
     "scout:city": "tsx scripts/scout-city.ts",
     "loop:santcugat": "tsx scripts/loop-santcugat.ts",
-    "compose:outreach": "tsx scripts/compose-outreach.ts"
+    "compose:outreach": "tsx scripts/compose-outreach.ts",
+    "stripe:skus": "tsx scripts/stripe-sync-skus.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"

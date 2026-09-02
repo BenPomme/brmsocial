@@ -33,6 +33,7 @@ Plus tard : lien magique `babyrock.ai/c/{token}` = liste avis + OK / texte sur 1
 - **Scope** : villes on/off, catégories on/off, pays. C’est la source que Scout lit. Rien n’est en dur dans le code (« restaurant » / « Barcelona » = seed démo seulement).
 - **Chat scope** : tu écris en français à un **agent Scope**. Il propose un diff (`Valencia on`, `category=florist on`, `Girona off`). Rien ne part en Scout tant que tu n’as pas cliqué **Appliquer**. L’agent ne prospecte pas, ne maille pas, ne publie pas.
 - **Clients** : statut, plan, fiche Google, opérateur assigné.
+- **CRM (backlog)** : une fiche par prospect/client + historique **par canal** (mail / WhatsApp séparés). Voir `05-donnees.md`.
 - **File globale** : backlog, `fiche_morte`, coût xAI jour.
 - **Leads / campagnes** : ce que Scout a sorti dans le scope actuel.
 - **Ops** : comptes opérateurs, charge.

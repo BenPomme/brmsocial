@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { stripeWebhookSecret } from "@/lib/env";
-import { fulfillCheckoutSession } from "@/lib/pay";
+import { fulfillCheckoutSession, retrieveCheckout } from "@/lib/pay";
 import { getStripe } from "@/lib/stripe";
 
 export const runtime = "nodejs";
@@ -27,7 +27,7 @@ export async function POST(req: Request) {
     if (event.type === "checkout.session.completed" || event.type === "checkout.session.async_payment_succeeded") {
       const id = (event.data.object as { id?: string }).id;
       if (!id) return NextResponse.json({ error: "session id manquant" }, { status: 400 });
-      const session = await getStripe().checkout.sessions.retrieve(id);
+      const session = await retrieveCheckout(id);
       const result = await fulfillCheckoutSession(session);
       console.log("stripe webhook", event.type, result);
     } else if (event.type === "checkout.session.async_payment_failed") {

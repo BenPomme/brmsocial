@@ -79,6 +79,7 @@ export function StatusBadge({ status }: { status: string }) {
     proto: "bg-sand text-ink",
     lead: "bg-sand text-ink",
     paye: "bg-emerald-100 text-ok",
+    essai: "bg-amber-100 text-warn",
     actif: "bg-moss text-white",
     pause: "bg-amber-100 text-warn",
     resilie: "bg-neutral-300 text-ink",

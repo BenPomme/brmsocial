@@ -4,11 +4,16 @@
 
 Abonnement mensuel : on répond aux avis Google du commerce.
 
-Prix :
+Prix **TTC** (ce que le resto paie). Factura = HT + IVA 21 % ES.
 
-- Avis seulement : **89 € / mois**
-- Avis + WhatsApp (v2) : **119 € / mois**
+- Avis Google : **99 € TTC / mois** (81,82 € HT + 17,18 € IVA)
+- Douze mois : **799 € TTC / an** (660,33 € HT + 138,67 € IVA) — ~33 % vs 12 × 99
+- **Sant Cugat del Vallès** : 1er mois **0 €**, on rattrape les avis sans réponse des **3 mois** précédents, puis 99 € TTC / mois. Pas un abonnement Stripe auto : le 2e mois = lien de paiement.
 - Mise en service : **0 €** si le client ajoute le gestionnaire Google lui-même
+
+France B2B avec n° TVA : autoliquidation, le client paie le HT (81,82 / 660,33).
+
+WhatsApp **vers le titulaire** (brouillons 1–3★, topo du jour) est déjà dans cette offre. Ce n’est pas un produit à part.
 
 Inclus v1 :
 
@@ -29,11 +34,10 @@ Non inclus :
 - Appel du fondateur
 - Copier-coller manuel par le VA comme process cible (le bouton Publier écrit dans Google)
 
-## V2 (après 40+ clients avis)
+## V2 (plus tard, pas vendu maintenant)
 
-Bouton WhatsApp + fil qui répond horaires / menu / 3 prochains créneaux (Google Calendar OAuth).
-Le reste est transféré au commerce.
-Pas d’écriture WhatsApp à froid vers les *clients du resto* sans base légale.
+**Autre produit.** Un bouton WhatsApp sur la fiche du resto pour *ses clients* (horaires, menu, 3 prochains créneaux Calendar). Pas le WhatsApp Rosalia ↔ titulaire, déjà en v1.
+Après ~40 clients avis. Pas d’écriture à froid vers les clients du resto sans base légale. Pas de SKU sur `/pay`.
 
 ## Promesse dite au resto
 

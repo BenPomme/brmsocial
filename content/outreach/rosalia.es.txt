@@ -1,5 +1,6 @@
 ---
 id: rosalia-es-v1
+frozen: 2026-09-02
 from: rosalia@babyrock.ai
 from_name: Rosalia
 lang: es

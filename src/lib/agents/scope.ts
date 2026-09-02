@@ -6,7 +6,7 @@ import {
   fold,
   type CategoryDef,
 } from "../categories";
-import { xaiJson, xaiText } from "../xai";
+import { xaiJson } from "../xai";
 import { xaiKey } from "../env";
 
 export type ScopeDiffItemCity = {
@@ -222,15 +222,23 @@ export async function proposeScope(rawMessage: string): Promise<{
   proposal: ScopeProposal;
   usedModel: string;
 }> {
-  let proposal: ScopeProposal | null = null;
+  let proposal: ScopeProposal | null = parseWithRegex(rawMessage);
   let usedModel = "regex";
-  try {
-    proposal = await parseWithXai(rawMessage);
-    if (proposal) usedModel = "xai";
-  } catch (e) {
-    console.warn("scope xAI failed, falling back to regex", e);
+  const regexEmpty =
+    proposal.diff.cities.length === 0 &&
+    proposal.diff.categories.length === 0 &&
+    !proposal.clarification;
+  if (process.env.XAI_SCOPE === "true" && regexEmpty) {
+    try {
+      const llm = await parseWithXai(rawMessage);
+      if (llm) {
+        proposal = llm;
+        usedModel = "xai";
+      }
+    } catch (e) {
+      console.warn("scope xAI failed, keeping regex", e);
+    }
   }
-  if (!proposal) proposal = parseWithRegex(rawMessage);
 
   const status = proposal.clarification && proposal.diff.cities.length + proposal.diff.categories.length === 0
     ? "proposed"
@@ -337,11 +345,5 @@ export async function toggleCategory(id: string, active: boolean) {
 }
 
 export async function maybeAskXaiHealth() {
-  if (!xaiKey()) return false;
-  try {
-    await xaiText("Reply with ok", "ok");
-    return true;
-  } catch {
-    return false;
-  }
+  return Boolean(xaiKey());
 }

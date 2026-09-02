@@ -7,5 +7,6 @@ out
 .DS_Store
 next-env.d.ts
 tsconfig.tsbuildinfo
+.tunnel-url
 /sessions
 site/assets/portraits/*-source.*

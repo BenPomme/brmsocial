@@ -13,8 +13,8 @@ Pas de LLM quand Google fournit déjà la note.
 | Langue | Fast ou détecteur local | Fast si doute |
 | Brouillon 4★/5★ | **Grok 4.1 Fast** 0,20 / 0,50 $ / M tokens | Volume |
 | Brouillon 1★–3★ | Grok 4.3 (~1,25 / 2,50 $) | Plus de jugement |
-| Mail / 1er WhatsApp démarchage | Fast | Template + 3 faits extraits |
-| FAQ close | Fast + script | Hors script → pas un modèle frontier, un humain |
+| Mail / 1er WhatsApp démarchage | **Aucun** | Script / template. Pas de LLM. |
+| FAQ close | **Script d’abord** | Liste de réponses préécrites. LLM cheap **sans raisonnement** (`grok-4.20-0309-non-reasoning`) seulement si aucun script ne match. Hors script → humain. **Pas grok-4.3/4.6** (le raisonnement est facturé en tokens de sortie). |
 | Scout « est-ce un resto indépendant » | Règles d’abord (chaîne, hôtel) puis Fast |
 | Computer use Maps | Bot ou Playwright **sans** Heavy | Budget job plafonné |
 

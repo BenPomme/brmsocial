@@ -61,7 +61,14 @@ type PaidClient = {
   status: string;
   plan: string;
   emailPublic: string | null;
+  legalName: string | null;
+  taxId: string | null;
+  vatMode: string | null;
   stripeOrBizumRef: string | null;
+  stripeInvoiceId: string | null;
+  offer: string | null;
+  trialEndsAt: string | null;
+  catchupMonths: number | null;
 };
 
 export default function AdminPage() {
@@ -354,9 +361,8 @@ export default function AdminPage() {
             </a>
           </div>
           <p className="text-sm text-muted mb-4">
-            One-off Checkout, pas Billing 0,7 %. Cartes test 4242. Le site public{" "}
-            <code>brmsocial</code> pointera ici plus tard (<code>/pay</code>). Versement : IBAN Revolut
-            de la SL, quand le KYC live sera vert.
+            Catalogue TTC : 99 € / mes, 799 € / año. Sant Cugat : 1er mois 0 € + rattrapage 3 mois,
+            puis 99 €. Factura HT + IVA 21 %. Pas Billing 0,7 %.
           </p>
           {paid.length === 0 ? (
             <p className="text-sm text-muted">Aucun paiement encore. La simu vendredi = un 4242 sur /pay.</p>
@@ -365,9 +371,9 @@ export default function AdminPage() {
               {paid.map((c) => (
                 <li key={c.id} className="flex flex-wrap items-center justify-between gap-2 border border-line rounded-xl px-3 py-2">
                   <span>
-                    {c.name}
-                    {c.city ? <span className="text-muted"> · {c.city}</span> : null}
-                    {c.emailPublic ? <span className="text-muted"> · {c.emailPublic}</span> : null}
+                    {c.legalName ?? c.name}
+                    {c.taxId ? <span className="text-muted"> · {c.taxId}</span> : null}
+                    {c.vatMode ? <span className="text-muted"> · {c.vatMode}</span> : null}
                   </span>
                   <span className="flex items-center gap-2">
                     <StatusBadge status={c.status} />

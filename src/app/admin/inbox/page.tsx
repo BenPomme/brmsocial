@@ -202,7 +202,7 @@ export default function AdminInboxPage() {
                       {draft?.payload && typeof draft.payload === "object" && "source" in draft.payload
                         ? ` · ${String((draft.payload as { source?: string }).source)}`
                         : ""}
-                      . Script (OK / STOP / numéro) = zéro modèle. Texte libre = Grok cheap, hors script → humain.
+                      . Fil natif : allowlist = envoi auto. Script OK/STOP/n° sans modèle. FAQ = Grok sans raisonnement. Hors script → humain.
                     </p>
                     <textarea
                       className="w-full rounded-lg border border-line bg-paper px-3 py-2 text-sm min-h-[8rem]"

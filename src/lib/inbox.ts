@@ -6,7 +6,15 @@ export function classifyInbound(body: string): InboundKind {
   const t = body.replace(/\s+/g, " ").trim();
   if (!t) return "text";
   if (/\b(baja|stop|unsubscribe|no me interesa|no,?\s*gracias|no gracias)\b/i.test(t)) return "stop";
-  if (/^\s*(ok|vale|de acuerdo|sí|si)\b/i.test(t)) return "ok";
+  if (
+    /\b(pago|pagar|bizum|stripe|tarjeta|enlace|link|env[ií]a(?:\s*lo|\s*me)?|m[aá]nda(?:\s*me|\s*lo)?)\b/i.test(
+      t,
+    ) ||
+    /\b(do it|send it|send the link)\b/i.test(t)
+  ) {
+    return "ok";
+  }
+  if (/^\s*(ok|vale|de acuerdo|sí|si|yes)\b/i.test(t)) return "ok";
   const digits = t.replace(/[^\d+]/g, "");
   if (/^\+?\d{9,15}$/.test(digits) && digits.replace(/\D/g, "").length >= 9) return "phone";
   return "text";
@@ -72,8 +80,8 @@ export async function ingestInbound(opts: {
 
   if (createdInboundShouldDraft(opts.channel, direction)) {
     try {
-      const { proposeRosaliaReply } = await import("./rosalia-reply");
-      await proposeRosaliaReply(thread.id);
+      const { proposeAndMaybeSend } = await import("./rosalia-reply");
+      await proposeAndMaybeSend(thread.id);
     } catch (e) {
       console.warn("rosalia propose", e);
     }
@@ -83,5 +91,5 @@ export async function ingestInbound(opts: {
 }
 
 function createdInboundShouldDraft(channel: string, direction: string) {
-  return channel === "whatsapp" && direction === "in";
+  return direction === "in" && (channel === "whatsapp" || channel === "email");
 }
