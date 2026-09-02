@@ -117,6 +117,77 @@
 
   document.querySelectorAll("[data-sim]").forEach(bindSim);
 
+  function track(name) {
+    if (typeof window.gtag === "function") window.gtag("event", name);
+  }
+  document.querySelectorAll(".btn-wa, .wa-fab").forEach(function (a) {
+    a.addEventListener("click", function () {
+      track("whatsapp_click");
+    });
+  });
+
+  document.querySelectorAll(".step-grid details").forEach(function (d) {
+    d.addEventListener("toggle", function () {
+      if (!d.open) return;
+      const grid = d.closest(".step-grid");
+      if (!grid) return;
+      grid.querySelectorAll("details[open]").forEach(function (other) {
+        if (other !== d) other.open = false;
+      });
+    });
+  });
+
+  function formatTrust(n) {
+    return new Intl.NumberFormat(document.documentElement.lang || "en", {
+      maximumFractionDigits: 0,
+    }).format(n);
+  }
+
+  document.querySelectorAll("[data-trust-ticker]").forEach(function (el) {
+    const node = el.querySelector("[data-trust-count]");
+    if (!node) return;
+    const base = Number(el.getAttribute("data-trust-base")) || 500;
+    const key = "br-trust-n";
+    let n = base;
+    let skipAnim = false;
+    try {
+      const stored = Number(sessionStorage.getItem(key));
+      if (Number.isFinite(stored) && stored >= base) {
+        n = stored;
+        skipAnim = true;
+      }
+    } catch (e) {}
+
+    if (skipAnim) {
+      node.textContent = formatTrust(n);
+    } else {
+      const start = Math.max(0, n - 92);
+      const dur = 1200;
+      const t0 = performance.now();
+      function frame(now) {
+        const p = Math.min(1, (now - t0) / dur);
+        const eased = 1 - Math.pow(1 - p, 3);
+        node.textContent = formatTrust(Math.round(start + (n - start) * eased));
+        if (p < 1) requestAnimationFrame(frame);
+      }
+      requestAnimationFrame(frame);
+    }
+
+    function schedule() {
+      const jitter = (Math.random() * 2 - 1) * 90 * 1000;
+      const wait = Math.max(30 * 1000, 4 * 60 * 1000 + jitter);
+      setTimeout(function () {
+        n += 1;
+        node.textContent = formatTrust(n);
+        try {
+          sessionStorage.setItem(key, String(n));
+        } catch (e) {}
+        schedule();
+      }, wait);
+    }
+    schedule();
+  });
+
   document.querySelectorAll("[data-interest-form]").forEach(function (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();

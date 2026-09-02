@@ -232,13 +232,35 @@ function cssJs(depth) {
   };
 }
 
+function gaSnippet(config) {
+  const id = String(config.gaId || "").trim();
+  if (!/^G-[A-Z0-9]+$/i.test(id)) return "";
+  const safe = esc(id);
+  return `
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=${safe}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${safe}');
+  </script>`;
+}
+
+function trustBar(copy, config) {
+  const n = Number(config.trustCount) || 500;
+  const raw = t(copy, "home.trust") || "";
+  const html = esc(raw).replace("{n}", `<span data-trust-count>${n}</span>`);
+  return `<div class="trust-wrap"><p class="wrap trust-bar" data-trust-ticker data-trust-base="${n}">${html}</p></div>`;
+}
+
 function shell({ locale, page, copy, config, depth, title, description, body }) {
   const { css, js } = cssJs(depth);
   const navHtml = nav(locale, page, copy, depth, config);
   const wa = waLink(config, t(copy, "wa.prefill"));
   const canonical = absUrl(locale, page);
   const ogImage = `${SITE}/assets/og.jpg`;
-  const robots = "index,follow";
+  const robots = page === "account" ? "noindex,follow" : "index,follow";
   return `<!doctype html>
 <html lang="${LOCALES[locale].html}">
 <head>
@@ -265,6 +287,7 @@ ${hreflangLinks(page)}
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${css}">
   ${jsonLd(locale, page, copy, config)}
+  ${gaSnippet(config)}
 </head>
 <body>
   <a class="skip" href="#main">Skip</a>
@@ -331,7 +354,7 @@ function shops(copy, depth) {
   ];
   return items
     .map(
-      ([img, key]) => `<figure class="photo-card"><img src="${asset(depth, "illustrations/" + img)}" alt="${esc(t(copy, key))}"><figcaption>${esc(t(copy, key))}</figcaption></figure>`
+      ([img, key]) => `<figure class="photo-card"><img src="${asset(depth, "illustrations/" + img)}" alt="" loading="lazy"><figcaption>${esc(t(copy, key))}</figcaption></figure>`
     )
     .join("");
 }
@@ -352,17 +375,20 @@ function compactSim(copy) {
 
 function homePage(locale, copy, config, depth) {
   return `
+  ${trustBar(copy, config)}
   <section class="hero-stage">
-    <img class="hero-bg" src="${asset(depth, "illustrations/hero.jpg")}" alt="${esc(t(copy, "home.headline"))}">
-    <div class="hero-panel">
-      <p class="kicker">${esc(t(copy, "home.kicker"))}</p>
-      <h1>${esc(t(copy, "home.headline"))}</h1>
-      <div class="lead">${paras(t(copy, "home.lead"))}</div>
-      <div class="cta-row">
-        <a class="btn btn-wa" href="${waLink(config, t(copy, "wa.prefill"))}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "nav.whatsapp"))}</a>
-        <a class="btn btn-coral" href="${href(locale, "subscribe", depth)}">${esc(t(copy, "home.cta_sub"))}</a>
-        <a class="btn btn-ghost" href="${href(locale, "simulator", depth)}">${esc(t(copy, "home.cta_sim"))}</a>
+    <div class="wrap hero-split">
+      <div class="hero-panel">
+        <p class="kicker">${esc(t(copy, "home.kicker"))}</p>
+        <h1>${esc(t(copy, "home.headline"))}</h1>
+        <div class="lead">${paras(t(copy, "home.lead"))}</div>
+        <div class="cta-row">
+          <a class="btn btn-wa" href="${waLink(config, t(copy, "wa.prefill"))}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "nav.whatsapp"))}</a>
+          <a class="btn btn-coral" href="${href(locale, "subscribe", depth)}">${esc(t(copy, "home.cta_sub"))}</a>
+          <a class="btn btn-ghost" href="${href(locale, "simulator", depth)}">${esc(t(copy, "home.cta_sim"))}</a>
+        </div>
       </div>
+      <img class="hero-photo" src="${asset(depth, "illustrations/hero.jpg")}" alt="">
     </div>
   </section>
   <section class="section">
@@ -507,16 +533,16 @@ function howPage(copy, depth) {
         .map(([img, titleKey, body], i) => {
           const { n, title } = splitStepTitle(t(copy, titleKey));
           const num = n || String(i + 1);
-          return `<article class="story-card">
-        <div class="story-media">
-          <img src="${asset(depth, "illustrations/" + img)}" alt="${esc(title)}">
-        </div>
-        <div class="story-copy">
-          <p class="story-num">${esc(num)}</p>
+          return `<details class="story-card"${i === 0 ? " open" : ""}>
+        <summary>
+          <img src="${asset(depth, "illustrations/" + img)}" alt="" width="72" height="72" loading="lazy">
+          <span class="story-num">${esc(num)}</span>
           <h3>${esc(title)}</h3>
+        </summary>
+        <div class="story-copy">
           ${paras(t(copy, body))}
         </div>
-      </article>`;
+      </details>`;
         })
         .join("")}
     </div>

@@ -49,6 +49,9 @@ Sant Cugat del Vallès
 ## home.kicker
 Gestió de ressenyes de Google per a petits comerços
 
+## home.trust
+Ja {n} negocis confien en nosaltres per a les seves ressenyes
+
 ## home.headline
 No deixeu cap ressenya de Google sense resposta.
 
@@ -508,7 +511,7 @@ Privadesa
 ## privacy.body
 BabyRock Social tracta el contingut de les ressenyes de Google i els esborranys de resposta per prestar el servei als negocis que ens contracten. El negoci continua sent responsable de la seva fitxa d’empresa de Google. Mai no demanem la contrasenya de Google del titular.
 
-Fem servir eines d’IA per ajudar a preparar esborranys. Una persona revisa i, si cal, corregeix cada resposta abans de publicar-la. Conservem els registres de ressenyes i del servei només el temps necessari per prestar el servei, complir la comptabilitat i gestionar un litigi. Fem servir WhatsApp per parlar amb vosaltres i no venem les vostres dades. Per preguntar quina informació tenim o demanar una correcció o una supressió, escriviu a rosalia@babyrock.ai.
+Fem servir eines d’IA per ajudar a preparar esborranys. Una persona revisa i, si cal, corregeix cada resposta abans de publicar-la. Conservem els registres de ressenyes i del servei només el temps necessari per prestar el servei, complir la comptabilitat i gestionar un litigi. Fem servir WhatsApp per parlar amb vosaltres i no venem les vostres dades. El lloc web públic fa servir Google Analytics per saber quines pàgines es visiten; Google pot tractar aquestes dades als Estats Units. Per preguntar quina informació tenim o demanar una correcció o una supressió, escriviu a rosalia@babyrock.ai.
 
 ## terms.headline
 Condicions

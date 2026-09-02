@@ -49,6 +49,9 @@ Sant Cugat del Vallès
 ## home.kicker
 Gestion des avis Google pour les petits commerces
 
+## home.trust
+Déjà {n} commerces nous font confiance pour leurs avis
+
 ## home.headline
 Ne laissez plus aucun avis Google sans réponse.
 
@@ -508,7 +511,7 @@ Confidentialité
 ## privacy.body
 BabyRock Social traite le contenu des avis Google et les brouillons de réponse pour fournir le service aux commerces qui nous embauchent. Le commerce reste responsable de sa fiche d’établissement Google. Nous ne demandons jamais le mot de passe Google du titulaire.
 
-Nous utilisons des outils d’IA pour aider à préparer des brouillons. Une personne relit et, si besoin, corrige chaque réponse avant publication. Nous conservons les enregistrements d’avis et de service seulement le temps nécessaire pour fournir le service, tenir la comptabilité et gérer un litige. Nous utilisons WhatsApp pour vous parler et nous ne vendons pas vos données. Pour demander quelles informations nous détenons ou demander une correction ou une suppression, écrivez à rosalia@babyrock.ai.
+Nous utilisons des outils d’IA pour aider à préparer des brouillons. Une personne relit et, si besoin, corrige chaque réponse avant publication. Nous conservons les enregistrements d’avis et de service seulement le temps nécessaire pour fournir le service, tenir la comptabilité et gérer un litige. Nous utilisons WhatsApp pour vous parler et nous ne vendons pas vos données. Le site public utilise Google Analytics pour comprendre quelles pages sont visitées ; Google peut traiter ces données aux États-Unis. Pour demander quelles informations nous détenons ou demander une correction ou une suppression, écrivez à rosalia@babyrock.ai.
 
 ## terms.headline
 Conditions

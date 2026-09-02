@@ -49,6 +49,9 @@ Sant Cugat del Vallès
 ## home.kicker
 Google review management for small businesses
 
+## home.trust
+Already {n} businesses trust us with their reviews
+
 ## home.headline
 Never leave another Google review unanswered.
 
@@ -508,7 +511,7 @@ Privacy
 ## privacy.body
 BabyRock Social processes Google review content and reply drafts to provide the service to businesses that hire us. The business remains responsible for its Google Business Profile. We never ask for the owner’s Google password.
 
-We use AI tools to help prepare reply drafts. A person reviews and, where needed, edits every response before publishing it. We retain review and service records only for as long as needed to deliver the service, meet accounting requirements and manage disputes. We use WhatsApp to communicate with you and do not sell your data. To ask what information we hold or request a correction or deletion, write to rosalia@babyrock.ai.
+We use AI tools to help prepare reply drafts. A person reviews and, where needed, edits every response before publishing it. We retain review and service records only for as long as needed to deliver the service, meet accounting requirements and manage disputes. We use WhatsApp to communicate with you and do not sell your data. The public website uses Google Analytics to understand which pages people visit; Google may process that data in the United States. To ask what information we hold or request a correction or deletion, write to rosalia@babyrock.ai.
 
 ## terms.headline
 Terms

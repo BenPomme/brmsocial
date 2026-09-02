@@ -49,6 +49,9 @@ Sant Cugat del Vallès
 ## home.kicker
 Gestión de reseñas de Google para pequeños comercios
 
+## home.trust
+Ya {n} negocios confían en nosotros para sus reseñas
+
 ## home.headline
 No deje ninguna reseña de Google sin respuesta.
 
@@ -508,7 +511,7 @@ Privacidad
 ## privacy.body
 BabyRock Social trata el contenido de las reseñas de Google y los borradores de respuesta para prestar el servicio a los negocios que nos contratan. El negocio sigue siendo responsable de su ficha de empresa de Google. Nunca pedimos la contraseña de Google del titular.
 
-Usamos herramientas de IA para ayudar a preparar borradores. Una persona revisa y, si hace falta, corrige cada respuesta antes de publicarla. Conservamos los registros de reseñas y del servicio solo el tiempo necesario para prestar el servicio, cumplir la contabilidad y gestionar un litigio. Usamos WhatsApp para hablar con usted y no vendemos sus datos. Para preguntar qué información tenemos o pedir una corrección o una supresión, escriba a rosalia@babyrock.ai.
+Usamos herramientas de IA para ayudar a preparar borradores. Una persona revisa y, si hace falta, corrige cada respuesta antes de publicarla. Conservamos los registros de reseñas y del servicio solo el tiempo necesario para prestar el servicio, cumplir la contabilidad y gestionar un litigio. Usamos WhatsApp para hablar con usted y no vendemos sus datos. El sitio web público usa Google Analytics para saber qué páginas se visitan; Google puede tratar esos datos en Estados Unidos. Para preguntar qué información tenemos o pedir una corrección o una supresión, escriba a rosalia@babyrock.ai.
 
 ## terms.headline
 Condiciones
