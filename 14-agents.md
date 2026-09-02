@@ -35,6 +35,8 @@ Plus tard : un flag `publish_4_5_auto` (off par défaut). Le code doit le permet
 | `carrier` | Carrier | Prépare outreach + relances (j+3, j+7). **N’envoie rien** tant que le lot n’est pas validé. Journal : envoyé, ouvert si on l’a, réponse, relance, STOP/BAJA. | **Toi, par lots** (Admin → Lots). |
 | `inbox_sync` | Inbox | Tire les mails Rosalia (Zoho) et les WhatsApp entrants (webhook). Classe OK / STOP / n° / texte. Propose une réponse Rosalia : **script sans LLM** si OK/STOP/n° ; **Grok cheap** si texte dans la FAQ (prix, gestionnaire, paiement). Hors script → humain. | Toi tu **envoies** (allowlist). Opérateur si hors script. |
 
+**Suite (pas un 15e agent)** : `inbox_sync` gagne un volet parallèle — scripts riches **es / ca / en / fr**, détection de langue du prospect, fallback NL cheap qui répond vraiment (sans recopier). Head of Data mesure. Pas de nouvel id.
+
 Inspect : un resto à 12 avis / mois ≈ 70 avis sur 6 mois ; un gros flux, davantage. DataForSEO (ou équivalent) facture à l’avis. Le critère métier est **la fenêtre 6 mois**, pas un N magique.
 
 ## Pilotage

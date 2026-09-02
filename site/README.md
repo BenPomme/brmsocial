@@ -27,7 +27,7 @@ npx --yes serve docs
 
 ## WhatsApp number
 
-Put Rosalia’s number in `content/config.json` as `whatsapp`, digits only with country code (example `34612345678`). If it is empty, the WhatsApp buttons fall back to email.
+`content/config.json` → `whatsapp` is digits only, country code, no `+`. Header, footer and the green floating button on every page open `wa.me` to Rosalia (no form). Until the Spanish production number is live, this is the Meta test number; only allowlisted phones can actually message it.
 
 ## Portraits
 

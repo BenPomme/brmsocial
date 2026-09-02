@@ -31,6 +31,9 @@ Close
 ## nav.whatsapp
 WhatsApp
 
+## wa.prefill
+Hi Rosalia, I want to know more about Babyrock Social.
+
 ## footer.tagline
 BabyRock Social manages Google review replies for small businesses. AI helps us work quickly; a human checks and publishes every response. Talk directly with our team on WhatsApp.
 

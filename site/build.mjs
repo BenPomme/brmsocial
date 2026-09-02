@@ -138,9 +138,14 @@ function nav(locale, page, copy, depth, config) {
 }
 
 function waLink(config, text) {
-  const msg = encodeURIComponent(text || "BabyRock Social");
-  if (config.whatsapp) return `https://wa.me/${config.whatsapp}?text=${msg}`;
+  const msg = encodeURIComponent(text || "Hola Rosalia");
+  const digits = String(config.whatsapp || "").replace(/\D/g, "");
+  if (digits) return `https://wa.me/${digits}?text=${msg}`;
   return `mailto:${config.email}?subject=${encodeURIComponent("BabyRock Social")}&body=${msg}`;
+}
+
+function waIcon() {
+  return `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>`;
 }
 
 function asset(depth, path) {
@@ -158,7 +163,7 @@ function cssJs(depth) {
 function shell({ locale, page, copy, config, depth, title, description, body }) {
   const { css, js } = cssJs(depth);
   const navHtml = nav(locale, page, copy, depth, config);
-  const wa = waLink(config, t(copy, "home.cta_sub"));
+  const wa = waLink(config, t(copy, "wa.prefill"));
   return `<!doctype html>
 <html lang="${LOCALES[locale].html}">
 <head>
@@ -179,14 +184,14 @@ function shell({ locale, page, copy, config, depth, title, description, body }) 
       <nav class="nav-links">${navHtml}</nav>
       <div class="header-actions">
         <div class="lang">${langSwitcher(locale, page, depth)}</div>
-        <a class="btn btn-wa" href="${wa}">${esc(t(copy, "nav.whatsapp"))}</a>
+        <a class="btn btn-wa" href="${wa}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "nav.whatsapp"))}</a>
         <a class="btn btn-coral" href="${href(locale, "subscribe", depth)}">${esc(t(copy, "nav.subscribe"))}</a>
         <button class="menu-toggle" type="button" data-menu aria-expanded="false" aria-label="${esc(t(copy, "nav.menu"))}"><span></span><span></span><span></span></button>
       </div>
     </div>
     <nav class="mobile-nav wrap" data-mobile-nav>
       ${navHtml}
-      <a class="btn btn-wa" href="${wa}">${esc(t(copy, "nav.whatsapp"))}</a>
+      <a class="btn btn-wa" href="${wa}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "nav.whatsapp"))}</a>
     </nav>
   </header>
   <main id="main">${body}</main>
@@ -208,12 +213,13 @@ function shell({ locale, page, copy, config, depth, title, description, body }) 
         <p><a href="${href(locale, "account", depth)}">${esc(t(copy, "nav.account"))}</a></p>
         <p><a href="${href(locale, "privacy", depth)}">${esc(t(copy, "footer.privacy"))}</a></p>
         <p><a href="${href(locale, "terms", depth)}">${esc(t(copy, "footer.terms"))}</a></p>
+        <p><a href="${wa}" target="_blank" rel="noopener">${esc(t(copy, "nav.whatsapp"))} · Rosalia</a></p>
         <p><a href="mailto:${esc(config.email)}">${esc(config.email)}</a></p>
       </div>
     </div>
   </footer>
-  <a class="wa-fab" href="${wa}" aria-label="${esc(t(copy, "nav.whatsapp"))}">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5A8.5 8.5 0 0 1 7.3 18.4L3 21l2.7-4.2A8.5 8.5 0 1 1 20 11.5zm-8.5 7a7 7 0 1 0-6.1-3.5l.3.5-1.6 2.5 2.6-1.5.5.3A7 7 0 0 0 11.5 18.5z"/></svg>
+  <a class="wa-fab" href="${wa}" target="_blank" rel="noopener" aria-label="${esc(t(copy, "nav.whatsapp"))} Rosalia">
+    ${waIcon()}
   </a>
   <script>window.BR_CONFIG = ${JSON.stringify(config)};</script>
   <script src="${js}"></script>
@@ -472,7 +478,10 @@ function subscribePage(locale, copy, config, depth) {
       <article class="price-card"><h3>${esc(t(copy, "home.price_month_name"))}</h3><p class="amount">${esc(config.priceMonth)} €</p><p>${esc(t(copy, "sub.month"))}</p></article>
       <article class="price-card featured"><h3>${esc(t(copy, "home.price_year_name"))}</h3><p class="amount">${esc(config.priceYear)} €</p><p>${esc(t(copy, "sub.year"))}</p></article>
     </div>
-    <form class="sim-card form-grid" data-interest-form data-wa="${esc(config.whatsapp || "")}" data-mail="${esc(config.email)}" style="margin-top:1.5rem">
+    <p class="cta-row" style="margin:1.25rem 0 0">
+      <a class="btn btn-wa" href="${waLink(config, t(copy, "wa.prefill"))}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "sub.cta_wa"))}</a>
+    </p>
+    <form class="sim-card form-grid" data-interest-form data-wa="" data-mail="${esc(config.email)}" style="margin-top:1.5rem">
       <label>${esc(t(copy, "sub.form_name"))}<input name="business" required></label>
       <label>${esc(t(copy, "sub.form_city"))}<input name="city"></label>
       <label>${esc(t(copy, "sub.form_listing"))}<input name="listing"></label>
@@ -486,7 +495,6 @@ function subscribePage(locale, copy, config, depth) {
         </select>
       </label>
       <div class="cta-row">
-        <button class="btn btn-wa" name="channel" value="wa" type="submit">${esc(t(copy, "sub.cta_wa"))}</button>
         <button class="btn btn-ghost" name="channel" value="email" type="submit">${esc(t(copy, "sub.cta_email"))}</button>
       </div>
     </form>

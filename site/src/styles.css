@@ -158,14 +158,25 @@ textarea {
   font-weight: 600;
   font-size: 0.92rem;
 }
-.btn-coral,
-.btn-wa {
+.btn-coral {
   background: var(--accent);
   color: #fff;
 }
-.btn-coral:hover,
-.btn-wa:hover {
+.btn-coral:hover {
   background: var(--accent-dark);
+}
+.btn-wa {
+  background: #25d366;
+  color: #fff;
+  gap: 0.45rem;
+}
+.btn-wa:hover {
+  background: #1ebe57;
+}
+.btn-wa svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex: 0 0 auto;
 }
 .btn-ink {
   background: var(--ink);
@@ -548,19 +559,22 @@ textarea {
   right: 1rem;
   bottom: 1rem;
   z-index: 50;
-  width: 3.4rem;
-  height: 3.4rem;
+  width: 3.6rem;
+  height: 3.6rem;
   border-radius: 50%;
-  background: var(--accent);
+  background: #25d366;
   color: #fff;
   display: grid;
   place-items: center;
-  box-shadow: var(--shadow);
+  box-shadow: 0 10px 28px rgba(37, 211, 102, 0.45);
   text-decoration: none;
 }
+.wa-fab:hover {
+  background: #1ebe57;
+}
 .wa-fab svg {
-  width: 1.55rem;
-  height: 1.55rem;
+  width: 1.7rem;
+  height: 1.7rem;
   fill: currentColor;
 }
 

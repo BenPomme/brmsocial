@@ -138,8 +138,22 @@ PAY`,
 Si quiere empezar: PAY`,
   },
   {
+    id: "lang_en",
+    re: /\b(speak english|in english|i don'?t speak spanish|can you speak)\b/i,
+    reply: `Yes — we can talk here in English. We also reply to each Google review in its own language (Spanish, Catalan, French, English).
+
+PAY`,
+  },
+  {
+    id: "price_en",
+    re: /\b(what('?s| is) the price|how much (does it )?(cost|is it))\b/i,
+    reply: `89 € per month, month to month (no 3-month lock-in). We publish 4–5★; 1–3★ you say OK or edit the text.
+
+PAY`,
+  },
+  {
     id: "lang",
-    re: /\b(idioma|llengua|catal[aà]|catalán|franc[eé]s|english|en qu[eé] idioma)\b/i,
+    re: /\b(idioma|llengua|catal[aà]|catalán|franc[eé]s|en qu[eé] idioma)\b/i,
     reply: `Respondemos en el idioma de cada reseña (castellano, catalán, francés, inglés…).`,
   },
   {
@@ -206,6 +220,8 @@ const FAQ_ALREADY: Record<string, RegExp> = {
   price: /sin permanencia de 3 meses/,
   manager: /añadir reviews@babyrock\.ai como gestor/,
   how: /Usted nos da acceso de gestor|Se lo resumo: nos añade como gestor|Muy simple: nos da acceso de gestor/,
+  lang_en: /we can talk here in English/,
+  price_en: /89 € per month, month to month/,
 };
 
 function alreadySentFaq(id: string | undefined, outbound: string[]) {

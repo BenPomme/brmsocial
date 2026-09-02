@@ -8,5 +8,6 @@ out
 next-env.d.ts
 tsconfig.tsbuildinfo
 .tunnel-url
+.factory-logs/
 /sessions
 site/assets/portraits/*-source.*

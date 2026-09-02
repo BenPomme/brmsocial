@@ -31,6 +31,9 @@ Tancar
 ## nav.whatsapp
 WhatsApp
 
+## wa.prefill
+Hola Rosalia, vull saber més de Babyrock Social.
+
 ## footer.tagline
 BabyRock Social gestiona les respostes a les ressenyes de Google dels petits comerços. La IA ens ajuda a anar de pressa; una persona revisa i publica cada resposta. Parleu amb l’equip per WhatsApp.
 
