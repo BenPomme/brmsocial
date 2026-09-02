@@ -222,21 +222,35 @@ textarea {
 }
 
 .trust-wrap {
-  border-bottom: 1px solid var(--line);
+  background: var(--ink);
+  color: #fff;
 }
 .trust-bar {
   margin: 0 auto;
-  padding: 0.55rem 0;
+  padding: 0.85rem 0.75rem 0.95rem;
   text-align: center;
-  font-size: 0.9rem;
-  color: var(--muted);
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.35;
+  text-wrap: balance;
 }
 .trust-bar [data-trust-count] {
+  display: inline-block;
   font-family: var(--display);
   font-weight: 600;
-  font-size: 1.12rem;
-  color: var(--ink);
+  font-size: clamp(1.85rem, 5vw, 2.75rem);
+  color: #fff;
+  letter-spacing: -0.04em;
+  line-height: 1;
   font-variant-numeric: tabular-nums;
+  padding: 0 0.12em;
+  vertical-align: -0.08em;
+}
+@media (max-width: 759px) {
+  .trust-bar {
+    max-width: 22rem;
+    padding: 0.8rem 1rem 0.95rem;
+  }
 }
 
 .hero-stage {
