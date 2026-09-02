@@ -43,8 +43,23 @@ Privacy
 ## footer.terms
 Terms
 
+## footer.cookies
+Cookies
+
 ## footer.city
 Sant Cugat del Vallès
+
+## cookies.title
+Cookies
+
+## cookies.body
+We use Google Analytics to understand which pages people visit. You can accept or refuse.
+
+## cookies.accept
+Accept
+
+## cookies.refuse
+Refuse
 
 ## home.kicker
 Google review management for small businesses
@@ -112,7 +127,7 @@ Monthly revenue, in euros
 25000
 
 ## home.sim_result_before
-Research-based expected impact after €89
+Up to, after €89/month
 
 ## home.sim_result_after
 € estimated per month after the subscription
@@ -208,12 +223,13 @@ How do we cancel?
 Write BAJA or “please stop” to Rosalia on WhatsApp. We confirm your request, continue until the end of the period you have paid for, and remove our manager access when the service ends.
 
 ## sim.headline
-See the research-based impact on your numbers.
+Expected impact on your revenue
 
 ## sim.lead
-Businesses that began replying consistently gained an average of 0.12 stars in a published study. Harvard Business School found that a full extra star was worth 5–9% more revenue for independent restaurants.
+Enter your monthly revenue.
 
-Combine those findings and the research-based range is 0.6–1.08% of monthly revenue, with a central estimate of 0.84%. Enter your revenue to see that estimate after the BabyRock Social subscription.
+## sim.range_label
+Up to
 
 ## sim.revenue
 Monthly revenue of the business, in euros
@@ -315,7 +331,7 @@ See the studies behind the estimate
 Calculate the expected impact
 
 ## how.headline
-From your first WhatsApp message to us to every published reply
+Getting Started with BabyRock
 
 ## how.lead
 No new dashboard. No app to install. No Google password to share. Write to Rosalia on WhatsApp, choose your plan, add us as a manager of your Google Business Profile, and we take it from there.
@@ -410,7 +426,7 @@ Benjamin Pommeraud — founder
 Benjamin created BabyRock Social to give independent businesses the consistency of a managed service without another tool to learn. Before AI, small businesses were forgotten by software companies that were focusing on big accounts. Now, AI is enabling small businesses to provide the same quality of service online. At BabyRock, AI makes the work efficient; people provide the judgment, quality control and accountability.
 
 ## about.human_title
-Our rule for AI
+Humans first, AI second, always
 
 ## about.human
 We use AI for quality, consistency and scale. AI helps us prepare a first draft and work efficiently across languages. But we know our customers are humans running businesses for humans. And that trust matters. So we use real people to check the tone, relevance and quality, make any edits, and publish the final response. AI never posts a reply by itself.

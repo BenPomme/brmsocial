@@ -238,13 +238,32 @@ function gaSnippet(config) {
   const safe = esc(id);
   return `
   <link rel="preconnect" href="https://www.googletagmanager.com">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=${safe}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      wait_for_update: 500
+    });
     gtag('js', new Date());
     gtag('config', '${safe}');
-  </script>`;
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=${safe}"></script>`;
+}
+
+function consentBanner(copy, locale, depth) {
+  return `<div class="cookie-banner" data-cookie-banner hidden>
+    <h2>${esc(t(copy, "cookies.title"))}</h2>
+    <p>${esc(t(copy, "cookies.body"))} <a href="${href(locale, "privacy", depth)}">${esc(t(copy, "footer.privacy"))}</a>.</p>
+    <div class="cookie-actions">
+      <button type="button" class="btn btn-coral" data-cookie-accept>${esc(t(copy, "cookies.accept"))}</button>
+      <button type="button" class="btn btn-ghost" data-cookie-refuse>${esc(t(copy, "cookies.refuse"))}</button>
+    </div>
+  </div>`;
 }
 
 function trustBar(copy, config) {
@@ -326,11 +345,13 @@ ${hreflangLinks(page)}
         <p><a href="${href(locale, "account", depth)}">${esc(t(copy, "nav.account"))}</a></p>
         <p><a href="${href(locale, "privacy", depth)}">${esc(t(copy, "footer.privacy"))}</a></p>
         <p><a href="${href(locale, "terms", depth)}">${esc(t(copy, "footer.terms"))}</a></p>
+        <p><a href="${href(locale, "privacy", depth)}" data-cookie-open>${esc(t(copy, "footer.cookies"))}</a></p>
         <p><a href="${wa}" target="_blank" rel="noopener">${esc(t(copy, "nav.whatsapp"))} · Rosalia</a></p>
         <p><a href="mailto:${esc(config.email)}">${esc(config.email)}</a></p>
       </div>
     </div>
   </footer>
+  ${consentBanner(copy, locale, depth)}
   <a class="wa-fab" href="${wa}" target="_blank" rel="noopener" aria-label="${esc(t(copy, "nav.whatsapp"))} Rosalia">
     ${waIcon()}
   </a>
@@ -364,7 +385,7 @@ function compactSim(copy) {
     <h2>${esc(t(copy, "home.sim_title"))}</h2>
     ${paras(t(copy, "home.sim_lead"))}
     <label for="rev">${esc(t(copy, "home.sim_label"))}</label>
-    <input id="rev" name="revenue" inputmode="numeric" placeholder="${esc(t(copy, "home.sim_placeholder"))}">
+    <input id="rev" name="revenue" inputmode="numeric" placeholder="${esc(t(copy, "home.sim_placeholder"))}" value="${esc(t(copy, "home.sim_placeholder"))}">
     <input type="hidden" name="reply" value="0.1">
     <div class="sim-result" data-compact-result>
       <span>${esc(t(copy, "home.sim_result_before"))}</span>
@@ -413,7 +434,7 @@ function homePage(locale, copy, config, depth) {
   <section class="section">
     <div class="wrap human">
       <figure class="portrait"><img src="${asset(depth, "portraits/rosalia.jpg")}" alt="Rosalia"></figure>
-      <div>
+      <div class="human-copy">
         <h2>${esc(t(copy, "home.human_title"))}</h2>
         ${paras(t(copy, "home.human"))}
         ${paras(t(copy, "home.whatsapp_line"))}
@@ -457,7 +478,7 @@ function simulatorPage(locale, copy, depth) {
     <div class="lead">${paras(t(copy, "sim.lead"))}</div>
     <form class="sim-card" data-sim>
       <label>${esc(t(copy, "sim.revenue"))}
-        <input name="revenue" inputmode="numeric" placeholder="${esc(t(copy, "home.sim_placeholder"))}">
+        <input name="revenue" inputmode="numeric" placeholder="${esc(t(copy, "home.sim_placeholder"))}" value="${esc(t(copy, "home.sim_placeholder"))}">
       </label>
       <div class="columns-2">
         <label>${esc(t(copy, "sim.kind"))}
@@ -483,32 +504,21 @@ function simulatorPage(locale, copy, depth) {
           </select>
         </label>
       </div>
-      <p class="tiny" data-already hidden>${esc(t(copy, "sim.already_replying"))}</p>
-      <div class="sim-cols">
-        <article class="sim-col">
-          <h3>${esc(t(copy, "sim.expected_label"))}</h3>
-          ${paras(t(copy, "sim.expected_explain"))}
-          <p class="big" data-expected-gross>—</p>
-          <p class="tiny">${esc(t(copy, "sim.per_month"))}</p>
-          <p>${esc(t(copy, "sim.after_month"))}</p>
-          <p class="big" data-expected-month>—</p>
-          <p>${esc(t(copy, "sim.after_year"))}</p>
-          <p class="big" data-expected-year>—</p>
-          <p>${esc(t(copy, "sim.roi_month"))}: <span data-expected-roi-month>—</span></p>
-          <p>${esc(t(copy, "sim.roi_year"))}: <span data-expected-roi-year>—</span></p>
-        </article>
-        <article class="sim-col fullstar">
-          <h3>${esc(t(copy, "sim.fullstar_label"))}</h3>
-          ${paras(t(copy, "sim.fullstar_explain"))}
-          <p class="big" data-full-gross>—</p>
-          <p class="tiny">${esc(t(copy, "sim.per_month"))}</p>
-          <p>${esc(t(copy, "sim.after_month"))}</p>
-          <p class="big" data-full-month>—</p>
-          <p>${esc(t(copy, "sim.after_year"))}</p>
-          <p class="big" data-full-year>—</p>
-        </article>
+      <div class="sim-hero">
+        <p class="sim-kicker">${esc(t(copy, "sim.range_label"))}</p>
+        <p class="sim-hero-num" data-full-high>—</p>
+        <p class="tiny">${esc(t(copy, "sim.per_month"))}</p>
+        <div class="sim-after">
+          <div>
+            <p class="tiny">${esc(t(copy, "sim.after_month"))}</p>
+            <p class="big" data-full-month>—</p>
+          </div>
+          <div>
+            <p class="tiny">${esc(t(copy, "sim.after_year"))}</p>
+            <p class="big" data-full-year>—</p>
+          </div>
+        </div>
       </div>
-      ${paras(t(copy, "sim.time_line"))}
       <div class="cta-row">
         <a class="btn btn-coral" href="${href(locale, "subscribe", depth)}">${esc(t(copy, "sim.cta"))}</a>
         <a class="btn btn-ghost" href="${href(locale, "research", depth)}">${esc(t(copy, "sim.research_link"))}</a>

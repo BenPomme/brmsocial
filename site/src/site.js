@@ -19,6 +19,46 @@
     });
   }
 
+  const CONSENT_KEY = "br-consent";
+  const banner = document.querySelector("[data-cookie-banner]");
+  function setConsent(granted) {
+    const state = granted ? "granted" : "denied";
+    try {
+      localStorage.setItem(CONSENT_KEY, state);
+    } catch (e) {}
+    if (typeof window.gtag === "function") {
+      window.gtag("consent", "update", {
+        analytics_storage: state,
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+      });
+    }
+  }
+  let choice = null;
+  try {
+    choice = localStorage.getItem(CONSENT_KEY);
+  } catch (e) {}
+  if (choice === "granted") setConsent(true);
+  else if (choice === "denied") setConsent(false);
+  if (banner) {
+    if (!choice) banner.hidden = false;
+    function closeBanner(granted) {
+      setConsent(granted);
+      banner.hidden = true;
+    }
+    const accept = banner.querySelector("[data-cookie-accept]");
+    const refuse = banner.querySelector("[data-cookie-refuse]");
+    if (accept) accept.addEventListener("click", function () { closeBanner(true); });
+    if (refuse) refuse.addEventListener("click", function () { closeBanner(false); });
+  }
+  document.querySelectorAll("[data-cookie-open]").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (banner) banner.hidden = false;
+    });
+  });
+
   function money(n) {
     if (!isFinite(n)) return "—";
     const abs = Math.abs(n);
@@ -26,11 +66,6 @@
       maximumFractionDigits: 0,
     }).format(Math.round(abs));
     return (n < 0 ? "−" : "") + formatted + " €";
-  }
-
-  function pct(n) {
-    if (!isFinite(n)) return "—";
-    return Math.round(n * 100) + " %";
   }
 
   function compute(revenue, replyRate) {
@@ -62,7 +97,7 @@
       strong.textContent = "—";
       return;
     }
-    strong.textContent = money(result.netMonthExpected);
+    strong.textContent = money(result.netMonthFullHigh);
   }
 
   function fillFull(root, result) {
@@ -70,26 +105,15 @@
       const n = root.querySelector(sel);
       if (n) n.textContent = val;
     };
-    if (!result.R) return;
-    set("[data-expected-gross]", money(result.expected));
-    set("[data-expected-month]", money(result.netMonthExpected));
-    set("[data-expected-year]", money(result.netYearExpected));
-    set("[data-expected-roi-month]", pct(result.netMonthExpected / cfg.priceMonth));
-    set("[data-expected-roi-year]", pct(result.netYearExpected / cfg.priceYear));
-    set(
-      "[data-full-gross]",
-      money(result.fullLow) + " – " + money(result.fullHigh)
-    );
-    set(
-      "[data-full-month]",
-      money(result.netMonthFullLow) + " – " + money(result.netMonthFullHigh)
-    );
-    set(
-      "[data-full-year]",
-      money(result.netYearFullLow) + " – " + money(result.netYearFullHigh)
-    );
-    const already = root.querySelector("[data-already]");
-    if (already) already.hidden = result.gap > 0.05;
+    if (!result.R) {
+      set("[data-full-high]", "—");
+      set("[data-full-month]", "—");
+      set("[data-full-year]", "—");
+      return;
+    }
+    set("[data-full-high]", money(result.fullHigh));
+    set("[data-full-month]", money(result.netMonthFullHigh));
+    set("[data-full-year]", money(result.netYearFullHigh));
   }
 
   function bindSim(form) {

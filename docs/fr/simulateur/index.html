@@ -29,6 +29,22 @@
   <link rel="stylesheet" href="../../css/site.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Organization","LocalBusiness"],"name":"BabyRock Social","url":"https://www.babyrock.ai/","email":"rosalia@babyrock.ai","image":"https://www.babyrock.ai/assets/og.jpg","address":{"@type":"PostalAddress","addressLocality":"Sant Cugat del Vallès","addressCountry":"ES"}}]}</script>
   
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      wait_for_update: 500
+    });
+    gtag('js', new Date());
+    gtag('config', 'G-252L7M2L2P');
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-252L7M2L2P"></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip</a>
@@ -62,12 +78,11 @@
   </header>
   <main id="main">
   <section class="wrap section">
-    <h1>Voyez l’impact fondé sur la recherche, sur vos chiffres.</h1>
-    <div class="lead"><p>Les commerces qui ont commencé à répondre avec constance ont gagné en moyenne 0,12 étoile dans une étude publiée. Harvard Business School a trouvé qu’une étoile entière de plus valait 5 à 9 % de chiffre d’affaires en plus pour des restaurants indépendants.</p>
-<p>En combinant ces résultats, la fourchette fondée sur la recherche est 0,6–1,08 % du chiffre d’affaires mensuel, avec une estimation centrale de 0,84 %. Indiquez votre chiffre d’affaires pour voir cette estimation après l’abonnement BabyRock Social.</p></div>
+    <h1>Impact attendu sur votre chiffre d’affaires</h1>
+    <div class="lead"><p>Indiquez votre chiffre d’affaires mensuel.</p></div>
     <form class="sim-card" data-sim>
       <label>Chiffre d’affaires mensuel du commerce, en euros
-        <input name="revenue" inputmode="numeric" placeholder="25000">
+        <input name="revenue" inputmode="numeric" placeholder="25000" value="25000">
       </label>
       <div class="columns-2">
         <label>Type de commerce (facultatif)
@@ -93,32 +108,21 @@
           </select>
         </label>
       </div>
-      <p class="tiny" data-already hidden>Vous répondez déjà à presque tous les avis. Dans ce cas, la raison la plus solide d’utiliser BabyRock Social est le temps et la constance que vous gagnez. Pas une hausse attendue du fait de commencer à répondre.</p>
-      <div class="sim-cols">
-        <article class="sim-col">
-          <h3>Estimation fondée sur la recherche</h3>
-          <p>Pour un commerce qui répond peu aujourd’hui, l’estimation centrale est 0,84 % du chiffre d’affaires mensuel. Elle applique l’amélioration observée de 0,12 étoile au milieu de la fourchette de Harvard (5–9 % par étoile entière). Si vous répondez déjà à une partie ou à la plupart, l’estimation baisse dans la même proportion.</p>
-          <p class="big" data-expected-gross>—</p>
-          <p class="tiny">par mois</p>
-          <p>Après 89 €/mois</p>
-          <p class="big" data-expected-month>—</p>
-          <p>Après 748 €/an — 30 % de moins</p>
-          <p class="big" data-expected-year>—</p>
-          <p>Retour estimé après l’abonnement mensuel: <span data-expected-roi-month>—</span></p>
-          <p>Retour estimé après l’abonnement annuel: <span data-expected-roi-year>—</span></p>
-        </article>
-        <article class="sim-col fullstar">
-          <h3>Fourchette publiée</h3>
-          <p>L’estimation basse utilise 0,12 × 5 % du chiffre d’affaires. La haute utilise 0,12 × 9 %. Cela donne une fourchette de 0,6–1,08 % du chiffre d’affaires mensuel, avant l’abonnement.</p>
-          <p class="big" data-full-gross>—</p>
-          <p class="tiny">par mois</p>
-          <p>Après 89 €/mois</p>
-          <p class="big" data-full-month>—</p>
-          <p>Après 748 €/an — 30 % de moins</p>
-          <p class="big" data-full-year>—</p>
-        </article>
+      <div class="sim-hero">
+        <p class="sim-kicker">Jusqu’à</p>
+        <p class="sim-hero-num" data-full-high>—</p>
+        <p class="tiny">par mois</p>
+        <div class="sim-after">
+          <div>
+            <p class="tiny">Après 89 €/mois</p>
+            <p class="big" data-full-month>—</p>
+          </div>
+          <div>
+            <p class="tiny">Après 748 €/an — 30 % de moins</p>
+            <p class="big" data-full-year>—</p>
+          </div>
+        </div>
       </div>
-      <p>L’estimation n’inclut pas la valeur du temps que vous récupérez en n’ayant plus à écrire une autre réponse Google de routine.</p>
       <div class="cta-row">
         <a class="btn btn-coral" href="../../fr/s-abonner/">Que l’on s’occupe de mes avis</a>
         <a class="btn btn-ghost" href="../../fr/recherche/">Voir les études derrière l’estimation</a>
@@ -143,15 +147,24 @@
         <p><a href="../../fr/compte/">Votre compte</a></p>
         <p><a href="../../fr/confidentialite/">Confidentialité</a></p>
         <p><a href="../../fr/conditions/">Conditions</a></p>
+        <p><a href="../../fr/confidentialite/" data-cookie-open>Cookies</a></p>
         <p><a href="https://wa.me/15556531464?text=Bonjour%20Rosalia%2C%20je%20voudrais%20en%20savoir%20plus%20sur%20Babyrock%20Social." target="_blank" rel="noopener">WhatsApp · Rosalia</a></p>
         <p><a href="mailto:rosalia@babyrock.ai">rosalia@babyrock.ai</a></p>
       </div>
     </div>
   </footer>
+  <div class="cookie-banner" data-cookie-banner hidden>
+    <h2>Cookies</h2>
+    <p>Nous utilisons Google Analytics pour comprendre quelles pages sont visitées. Vous pouvez accepter ou refuser. <a href="../../fr/confidentialite/">Confidentialité</a>.</p>
+    <div class="cookie-actions">
+      <button type="button" class="btn btn-coral" data-cookie-accept>Accepter</button>
+      <button type="button" class="btn btn-ghost" data-cookie-refuse>Refuser</button>
+    </div>
+  </div>
   <a class="wa-fab" href="https://wa.me/15556531464?text=Bonjour%20Rosalia%2C%20je%20voudrais%20en%20savoir%20plus%20sur%20Babyrock%20Social." target="_blank" rel="noopener" aria-label="WhatsApp Rosalia">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
-  <script>window.BR_CONFIG = {"product":"BabyRock Social","domain":"www.babyrock.ai","email":"rosalia@babyrock.ai","whatsapp":"15556531464","factory":"https://github.com/BenPomme/brmsocialbackend","reviewsManager":"reviews@babyrock.ai","city":"Sant Cugat del Vallès","legalName":"","vatId":"","priceMonth":89,"priceYear":748,"priceYearFull":1068,"yearDiscountPct":30,"currency":"EUR","vatNote":"Prices exclude VAT.","gaId":"","trustCount":500,"formula":{"lucaMid":0.07,"lucaLow":0.05,"lucaHigh":0.09,"starLiftIfSilent":0.12,"conversionIfSilent":0,"defaultRating":4.2,"defaultReplyRate":0.1}};</script>
+  <script>window.BR_CONFIG = {"product":"BabyRock Social","domain":"www.babyrock.ai","email":"rosalia@babyrock.ai","whatsapp":"15556531464","factory":"https://github.com/BenPomme/brmsocialbackend","reviewsManager":"reviews@babyrock.ai","city":"Sant Cugat del Vallès","legalName":"","vatId":"","priceMonth":89,"priceYear":748,"priceYearFull":1068,"yearDiscountPct":30,"currency":"EUR","vatNote":"Prices exclude VAT.","gaId":"G-252L7M2L2P","trustCount":500,"formula":{"lucaMid":0.07,"lucaLow":0.05,"lucaHigh":0.09,"starLiftIfSilent":0.12,"conversionIfSilent":0,"defaultRating":4.2,"defaultReplyRate":0.1}};</script>
   <script src="../../js/site.js"></script>
 </body>
 </html>

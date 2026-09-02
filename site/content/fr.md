@@ -43,8 +43,23 @@ Confidentialité
 ## footer.terms
 Conditions
 
+## footer.cookies
+Cookies
+
 ## footer.city
 Sant Cugat del Vallès
+
+## cookies.title
+Cookies
+
+## cookies.body
+Nous utilisons Google Analytics pour comprendre quelles pages sont visitées. Vous pouvez accepter ou refuser.
+
+## cookies.accept
+Accepter
+
+## cookies.refuse
+Refuser
 
 ## home.kicker
 Gestion des avis Google pour les petits commerces
@@ -112,7 +127,7 @@ Chiffre d’affaires mensuel, en euros
 25000
 
 ## home.sim_result_before
-Impact attendu selon la recherche, après 89 €
+Jusqu’à, après 89 € / mois
 
 ## home.sim_result_after
 € estimés par mois après l’abonnement
@@ -208,12 +223,13 @@ Comment résilier ?
 Écrivez BAJA ou « merci d’arrêter » à Rosalia sur WhatsApp. Nous confirmons, nous continuons jusqu’à la fin de la période déjà payée, et nous retirons notre accès gestionnaire à la fin du service.
 
 ## sim.headline
-Voyez l’impact fondé sur la recherche, sur vos chiffres.
+Impact attendu sur votre chiffre d’affaires
 
 ## sim.lead
-Les commerces qui ont commencé à répondre avec constance ont gagné en moyenne 0,12 étoile dans une étude publiée. Harvard Business School a trouvé qu’une étoile entière de plus valait 5 à 9 % de chiffre d’affaires en plus pour des restaurants indépendants.
+Indiquez votre chiffre d’affaires mensuel.
 
-En combinant ces résultats, la fourchette fondée sur la recherche est 0,6–1,08 % du chiffre d’affaires mensuel, avec une estimation centrale de 0,84 %. Indiquez votre chiffre d’affaires pour voir cette estimation après l’abonnement BabyRock Social.
+## sim.range_label
+Jusqu’à
 
 ## sim.revenue
 Chiffre d’affaires mensuel du commerce, en euros
@@ -315,7 +331,7 @@ Voir les études derrière l’estimation
 Calculer l’impact attendu
 
 ## how.headline
-Du premier WhatsApp à chaque réponse publiée
+Premiers pas avec BabyRock
 
 ## how.lead
 Pas d’autre tableau de bord. Pas d’application à installer. Pas de mot de passe Google. Écrivez à Rosalia sur WhatsApp, choisissez la formule, ajoutez-nous comme gestionnaire de votre fiche d’établissement Google, et nous nous en occupons.
@@ -410,7 +426,7 @@ Benjamin Pommeraud — fondateur
 Benjamin a créé BabyRock Social pour que les commerces indépendants aient la constance d’un service géré, sans un autre outil à apprendre. Avant l’IA, les logiciels oubliaient les petits et se concentraient sur les gros comptes. Aujourd’hui, l’IA permet aux petits commerces d’offrir la même qualité de service en ligne. Chez BabyRock, l’IA rend le travail efficace ; les personnes apportent le jugement, le contrôle qualité et la responsabilité.
 
 ## about.human_title
-Notre règle sur l’IA
+Les humains d’abord, l’IA ensuite, toujours
 
 ## about.human
 Nous utilisons l’IA pour la qualité, la constance et l’échelle. Elle nous aide à préparer un premier brouillon et à travailler dans plusieurs langues. Mais nous savons que nos clients sont des personnes qui tiennent des commerces pour des personnes. Et que la confiance compte. C’est pourquoi des personnes relisent le ton, la pertinence et la qualité, font les corrections, et publient la réponse finale. L’IA ne publie jamais une réponse toute seule.

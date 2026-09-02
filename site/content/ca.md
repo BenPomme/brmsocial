@@ -43,8 +43,23 @@ Privadesa
 ## footer.terms
 Condicions
 
+## footer.cookies
+Cookies
+
 ## footer.city
 Sant Cugat del Vallès
+
+## cookies.title
+Cookies
+
+## cookies.body
+Fem servir Google Analytics per saber quines pàgines es visiten. Pot acceptar o rebutjar.
+
+## cookies.accept
+Acceptar
+
+## cookies.refuse
+Rebutjar
 
 ## home.kicker
 Gestió de ressenyes de Google per a petits comerços
@@ -112,7 +127,7 @@ Facturació mensual, en euros
 25000
 
 ## home.sim_result_before
-Impacte esperat segons la recerca, després de 89 €
+Fins a, després de 89 € al mes
 
 ## home.sim_result_after
 € estimats al mes després de la subscripció
@@ -208,12 +223,13 @@ Com es cancel·la?
 Escriviu BAJA o «vull parar» a la Rosalia per WhatsApp. Confirmem, continuem fins al final del període que ja heu pagat, i treiem el nostre accés de gestor quan s’acaba el servei.
 
 ## sim.headline
-Vegeu l’impacte basat en la recerca, amb les vostres xifres.
+Impacte esperat en la seva facturació
 
 ## sim.lead
-Els negocis que van començar a respondre amb constància van guanyar de mitjana 0,12 estrelles en un estudi publicat. Harvard Business School va trobar que una estrella sencera de més valia un 5–9 % més d’ingressos per a restaurants independents.
+Introdueixi la facturació mensual.
 
-Si es combinen aquests resultats, el rang basat en la recerca és el 0,6–1,08 % de la facturació mensual, amb una estimació central del 0,84 %. Introduïu la facturació per veure aquesta estimació després de la subscripció de BabyRock Social.
+## sim.range_label
+Fins a
 
 ## sim.revenue
 Facturació mensual del negoci, en euros
@@ -315,7 +331,7 @@ Veure els estudis darrere de l’estimació
 Calcular l’impacte esperat
 
 ## how.headline
-Del primer WhatsApp a cada resposta publicada
+Primers passos amb BabyRock
 
 ## how.lead
 Sense un altre tauler. Sense aplicació per instal·lar. Sense contrasenya de Google. Escriviu a la Rosalia per WhatsApp, trieu el pla, afegiu-nos com a gestor de la fitxa d’empresa de Google, i ens n’ocupem.
@@ -410,7 +426,7 @@ Benjamin Pommeraud — fundador
 Benjamin va crear BabyRock Social perquè els negocis independents tinguin la constància d’un servei gestionat, sense una altra eina per aprendre. Abans de la IA, el programari s’oblidava dels petits i es centrava en els comptes grans. Ara la IA permet als petits comerços donar la mateixa qualitat de servei en línia. A BabyRock, la IA fa la feina eficient; les persones aporten el criteri, el control de qualitat i la responsabilitat.
 
 ## about.human_title
-La nostra regla sobre la IA
+Les persones primer, la IA després, sempre
 
 ## about.human
 Fem servir la IA per a la qualitat, la constància i l’escala. Ens ajuda a preparar un primer esborrany i a treballar en diverses llengües. Però sabem que els nostres clients són persones que porten negocis per a persones. I que la confiança importa. Per això fem servir persones de veritat per comprovar el to, la pertinència i la qualitat, fer els canvis i publicar la resposta final. La IA no publica mai una resposta tota sola.

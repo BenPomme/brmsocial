@@ -43,8 +43,23 @@ Privacidad
 ## footer.terms
 Condiciones
 
+## footer.cookies
+Cookies
+
 ## footer.city
 Sant Cugat del Vallès
+
+## cookies.title
+Cookies
+
+## cookies.body
+Usamos Google Analytics para saber qué páginas se visitan. Puede aceptar o rechazar.
+
+## cookies.accept
+Aceptar
+
+## cookies.refuse
+Rechazar
 
 ## home.kicker
 Gestión de reseñas de Google para pequeños comercios
@@ -112,7 +127,7 @@ Facturación mensual, en euros
 25000
 
 ## home.sim_result_before
-Impacto esperado según la investigación, después de 89 €
+Hasta, después de 89 € al mes
 
 ## home.sim_result_after
 € estimados al mes después de la suscripción
@@ -208,12 +223,13 @@ Sí. Habla directamente con Rosalia o con quien cubra la conversación en WhatsA
 Escriba BAJA o «quiero parar» a Rosalia por WhatsApp. Confirmamos, seguimos hasta el final del periodo que ya ha pagado, y quitamos nuestro acceso de gestor cuando termina el servicio.
 
 ## sim.headline
-Vea el impacto basado en la investigación, con sus cifras.
+Impacto esperado en su facturación
 
 ## sim.lead
-Los negocios que empezaron a responder con constancia ganaron de media 0,12 estrellas en un estudio publicado. Harvard Business School encontró que una estrella entera de más valía un 5–9 % más de ingresos para restaurantes independientes.
+Introduzca la facturación mensual.
 
-Si se combinan esos hallazgos, el rango basado en la investigación es el 0,6–1,08 % de la facturación mensual, con una estimación central del 0,84 %. Introduzca su facturación para ver esa estimación después de la suscripción de BabyRock Social.
+## sim.range_label
+Hasta
 
 ## sim.revenue
 Facturación mensual del negocio, en euros
@@ -315,7 +331,7 @@ Ver los estudios detrás de la estimación
 Calcular el impacto esperado
 
 ## how.headline
-Del primer WhatsApp a cada respuesta publicada
+Primeros pasos con BabyRock
 
 ## how.lead
 Sin otro panel. Sin aplicación que instalar. Sin contraseña de Google. Escriba a Rosalia por WhatsApp, elija el plan, añádanos como gestor de su ficha de empresa de Google, y nos ocupamos.
@@ -410,7 +426,7 @@ Benjamin Pommeraud — fundador
 Benjamin creó BabyRock Social para que los negocios independientes tengan la constancia de un servicio gestionado, sin otra herramienta que aprender. Antes de la IA, el software se olvidaba de los pequeños y se centraba en las cuentas grandes. Ahora la IA permite a los pequeños comercios dar la misma calidad de servicio online. En BabyRock, la IA hace el trabajo eficiente; las personas aportan el criterio, el control de calidad y la responsabilidad.
 
 ## about.human_title
-Nuestra regla sobre la IA
+Las personas primero, la IA después, siempre
 
 ## about.human
 Usamos la IA para la calidad, la constancia y la escala. Nos ayuda a preparar un primer borrador y a trabajar en varios idiomas. Pero sabemos que nuestros clientes son personas que llevan negocios para personas. Y que la confianza importa. Por eso usamos personas de verdad para comprobar el tono, la pertinencia y la calidad, hacer los cambios y publicar la respuesta final. La IA no publica nunca una respuesta por sí sola.
