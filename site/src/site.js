@@ -149,29 +149,21 @@
     const base = Number(el.getAttribute("data-trust-base")) || 500;
     const key = "br-trust-n";
     let n = base;
-    let skipAnim = false;
     try {
       const stored = Number(sessionStorage.getItem(key));
-      if (Number.isFinite(stored) && stored >= base) {
-        n = stored;
-        skipAnim = true;
-      }
+      if (Number.isFinite(stored) && stored >= base) n = stored;
     } catch (e) {}
 
-    if (skipAnim) {
-      node.textContent = formatTrust(n);
-    } else {
-      const start = 0;
-      const dur = 3000;
-      const t0 = performance.now();
-      function frame(now) {
-        const p = Math.min(1, (now - t0) / dur);
-        const eased = 1 - Math.pow(1 - p, 3);
-        node.textContent = formatTrust(Math.round(start + (n - start) * eased));
-        if (p < 1) requestAnimationFrame(frame);
-      }
-      requestAnimationFrame(frame);
+    const start = 0;
+    const dur = 3000;
+    const t0 = performance.now();
+    function frame(now) {
+      const p = Math.min(1, (now - t0) / dur);
+      const eased = 1 - Math.pow(1 - p, 3);
+      node.textContent = formatTrust(Math.round(start + (n - start) * eased));
+      if (p < 1) requestAnimationFrame(frame);
     }
+    requestAnimationFrame(frame);
 
     function schedule() {
       const jitter = (Math.random() * 2 - 1) * 90 * 1000;
