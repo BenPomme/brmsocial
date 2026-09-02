@@ -161,8 +161,8 @@
     if (skipAnim) {
       node.textContent = formatTrust(n);
     } else {
-      const start = Math.max(0, n - 92);
-      const dur = 1200;
+      const start = 0;
+      const dur = 3000;
       const t0 = performance.now();
       function frame(now) {
         const p = Math.min(1, (now - t0) / dur);
