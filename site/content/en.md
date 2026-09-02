@@ -121,19 +121,19 @@ See the calculation and compare plans
 Get your evenings back
 
 ## home.value_time
-Most owners intend to answer every review. Then service gets busy, the shop needs attention, and the replies wait until midnight, or never get written. We take that recurring task off your list, so you can focus on what you do best.
+Most owners mean to reply. Then the evening goes. We take that task.
 
 ## home.value_trust_title
 Show future customers that you listen
 
 ## home.value_trust
-Your replies are public. Every person comparing local businesses can see whether you acknowledge praise, answer questions and handle criticism professionally. Google recommends first the most helpful, positive replies because they can help a business stand out, and it notifies the reviewer when you respond.
+Replies are public. Future customers can see that you answer.
 
 ## home.value_rating_title
 Consistency can strengthen your online reputation
 
 ## home.value_rating
-Published research found that hotels which began responding received 12% more reviews and gained an average of 0.12 stars. A separate Harvard study found that a full extra star was worth 5–9% more revenue per month for independent restaurants. Our calculator combines those findings to show what consistent replies could mean on your numbers.
+Research found a 0.12-star lift when businesses started responding. The calculator uses that, with Harvard’s work on ratings and revenue.
 
 ## home.human_title
 AI makes us faster. Real people protect the quality.

@@ -121,19 +121,19 @@ Veure el càlcul i comparar plans
 Recupereu els vespres
 
 ## home.value_time
-La majoria de propietaris volen respondre a cada ressenya. Després arriba el servei, cal atendre el local, i les respostes es queden per a mitjanit, o no s’escriuen. Nosaltres treiem aquesta tasca de la llista, perquè us ocupeu del que millor sabeu fer.
+La majoria de propietaris volen respondre. Després es fa de nit. Nosaltres agafem aquesta tasca.
 
 ## home.value_trust_title
 Mostreu als clients futurs que els escolteu
 
 ## home.value_trust
-Les respostes són públiques. Qui compara comerços locals veu si agraïu, esclareu i tracteu les crítiques amb professionalitat. Google recomana primer les respostes útils i positives, perquè ajuden a distingir-se, i avisa l’autor de la ressenya quan hi responeu.
+Les respostes són públiques. Els clients futurs veuen que hi responeu.
 
 ## home.value_rating_title
 La constància pot reforçar la vostra reputació en línia
 
 ## home.value_rating
-Una recerca publicada va trobar que els hotels que van començar a respondre van rebre un 12 % més de ressenyes i van guanyar de mitjana 0,12 estrelles. Un estudi a part de Harvard va trobar que una estrella sencera de més valia un 5–9 % més d’ingressos al mes per a restaurants independents. La nostra calculadora combina aquests resultats sobre les vostres xifres.
+La recerca va trobar una pujada de 0,12 estrelles quan els negocis van començar a respondre. La calculadora fa servir això, amb el treball de Harvard sobre notes i ingressos.
 
 ## home.human_title
 La IA ens fa més ràpids. Les persones protegeixen la qualitat.

@@ -108,10 +108,75 @@ function t(copy, key) {
   return copy[key] ?? "";
 }
 
+const SITE = "https://www.babyrock.ai";
+
 function href(locale, page, depth) {
   const slug = LOCALES[locale].slugs[page];
   const prefix = "../".repeat(depth);
   return slug ? `${prefix}${locale}/${slug}/` : `${prefix}${locale}/`;
+}
+
+function absUrl(locale, page) {
+  const slug = LOCALES[locale].slugs[page];
+  return slug ? `${SITE}/${locale}/${slug}/` : `${SITE}/${locale}/`;
+}
+
+function hreflangLinks(page) {
+  const tags = Object.keys(LOCALES).map(
+    (code) => `  <link rel="alternate" hreflang="${LOCALES[code].html}" href="${absUrl(code, page)}">`
+  );
+  tags.push(`  <link rel="alternate" hreflang="x-default" href="${absUrl("en", page)}">`);
+  return tags.join("\n");
+}
+
+function jsonLd(locale, page, copy, config) {
+  const org = {
+    "@type": ["Organization", "LocalBusiness"],
+    name: "BabyRock Social",
+    url: SITE + "/",
+    email: config.email,
+    image: `${SITE}/assets/og.jpg`,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Sant Cugat del Vallès",
+      addressCountry: "ES",
+    },
+  };
+  const graph = [org];
+  if (page === "home") {
+    graph.push({
+      "@type": "Service",
+      name: "BabyRock Social",
+      description: t(copy, "meta.description"),
+      provider: { "@id": SITE + "/#org" },
+      areaServed: ["ES", "FR"],
+      offers: [
+        { "@type": "Offer", price: String(config.priceMonth), priceCurrency: "EUR", unitText: "MONTH" },
+        { "@type": "Offer", price: String(config.priceYear), priceCurrency: "EUR", unitText: "YEAR" },
+      ],
+    });
+    graph.push({
+      "@type": "FAQPage",
+      mainEntity: [1, 2, 3, 4, 5, 6].map((i) => ({
+        "@type": "Question",
+        name: t(copy, `home.faq_${i}_q`),
+        acceptedAnswer: { "@type": "Answer", text: t(copy, `home.faq_${i}_a`) },
+      })),
+    });
+  }
+  if (page === "subscribe") {
+    graph.push({
+      "@type": "Offer",
+      name: "BabyRock Social",
+      price: String(config.priceMonth),
+      priceCurrency: "EUR",
+      url: absUrl(locale, "subscribe"),
+    });
+  }
+  return `<script type="application/ld+json">${JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": graph,
+  })}</script>`;
 }
 
 function langSwitcher(locale, page, depth) {
@@ -164,6 +229,9 @@ function shell({ locale, page, copy, config, depth, title, description, body }) 
   const { css, js } = cssJs(depth);
   const navHtml = nav(locale, page, copy, depth, config);
   const wa = waLink(config, t(copy, "wa.prefill"));
+  const canonical = absUrl(locale, page);
+  const ogImage = `${SITE}/assets/og.jpg`;
+  const robots = "index,follow";
   return `<!doctype html>
 <html lang="${LOCALES[locale].html}">
 <head>
@@ -171,10 +239,25 @@ function shell({ locale, page, copy, config, depth, title, description, body }) 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
+  <meta name="robots" content="${robots}">
+  <link rel="canonical" href="${canonical}">
+${hreflangLinks(page)}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BabyRock Social">
+  <meta property="og:title" content="${esc(title)}">
+  <meta property="og:description" content="${esc(description)}">
+  <meta property="og:url" content="${canonical}">
+  <meta property="og:image" content="${ogImage}">
+  <meta property="og:locale" content="${locale === "en" ? "en_GB" : locale === "ca" ? "ca_ES" : locale === "fr" ? "fr_FR" : "es_ES"}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${esc(title)}">
+  <meta name="twitter:description" content="${esc(description)}">
+  <meta name="twitter:image" content="${ogImage}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${css}">
+  ${jsonLd(locale, page, copy, config)}
 </head>
 <body>
   <a class="skip" href="#main">Skip</a>
@@ -269,6 +352,7 @@ function homePage(locale, copy, config, depth) {
       <h1>${esc(t(copy, "home.headline"))}</h1>
       <div class="lead">${paras(t(copy, "home.lead"))}</div>
       <div class="cta-row">
+        <a class="btn btn-wa" href="${waLink(config, t(copy, "wa.prefill"))}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "nav.whatsapp"))}</a>
         <a class="btn btn-coral" href="${href(locale, "subscribe", depth)}">${esc(t(copy, "home.cta_sub"))}</a>
         <a class="btn btn-ghost" href="${href(locale, "simulator", depth)}">${esc(t(copy, "home.cta_sim"))}</a>
       </div>
@@ -417,7 +501,7 @@ function howPage(copy, depth) {
           ([img, title, body], i) => `<article class="story-card">
         <p class="story-tab">${i + 1} · ${esc(t(copy, title))}</p>
         <div class="story-media">
-          <img src="${asset(depth, "illustrations/" + img)}" alt="">
+          <img src="${asset(depth, "illustrations/" + img)}" alt="${esc(t(copy, title))}">
           <div class="story-copy">
             <h3>${esc(t(copy, title))}</h3>
             ${paras(t(copy, body))}
@@ -555,6 +639,18 @@ if (existsSync(assetDir)) {
 }
 writeFileSync(join(outDir, "CNAME"), "www.babyrock.ai\n");
 writeFileSync(join(outDir, ".nojekyll"), "");
+writeFileSync(
+  join(outDir, "robots.txt"),
+  `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`
+);
+const indexable = ["home", "simulator", "how", "research", "about", "subscribe", "privacy", "terms"];
+const sitemapUrls = Object.keys(LOCALES).flatMap((locale) =>
+  indexable.map((page) => `  <url><loc>${absUrl(locale, page)}</loc></url>`)
+);
+writeFileSync(
+  join(outDir, "sitemap.xml"),
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapUrls.join("\n")}\n</urlset>\n`
+);
 
 for (const locale of Object.keys(LOCALES)) {
   const copy = parseMd(readFileSync(join(contentDir, `${locale}.md`), "utf8"));
@@ -588,14 +684,30 @@ for (const locale of Object.keys(LOCALES)) {
 
 write(
   join(outDir, "index.html"),
-  `<!doctype html><meta charset="utf-8"><title>BabyRock Social</title>
+  `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BabyRock Social</title>
+  <meta name="description" content="Thoughtful Google review replies for small businesses. From €89/month.">
+  <link rel="canonical" href="${SITE}/en/">
+  <link rel="alternate" hreflang="en" href="${SITE}/en/">
+  <link rel="alternate" hreflang="es" href="${SITE}/es/">
+  <link rel="alternate" hreflang="ca" href="${SITE}/ca/">
+  <link rel="alternate" hreflang="fr" href="${SITE}/fr/">
+  <link rel="alternate" hreflang="x-default" href="${SITE}/en/">
+  <meta http-equiv="refresh" content="0;url=/en/">
+</head>
+<body>
+  <p><a href="/en/">English</a> · <a href="/es/">Español</a> · <a href="/ca/">Català</a> · <a href="/fr/">Français</a></p>
 <script>
 const map = {es:"es",ca:"ca",fr:"fr",en:"en"};
 const lang = (navigator.languages || [navigator.language || "en"]).map(l => l.slice(0,2).toLowerCase());
 const hit = lang.find(l => map[l]) || "en";
 location.replace("./" + hit + "/");
 </script>
-<p><a href="./es/">Español</a> · <a href="./ca/">Català</a> · <a href="./fr/">Français</a> · <a href="./en/">English</a></p>`
+</body>
+</html>`
 );
 
 console.log("Built static site into docs/");

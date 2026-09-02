@@ -6,6 +6,8 @@
   --tab: #dcc9a3;
   --accent: #3c9a4e;
   --accent-dark: #2d7a3c;
+  --wa: #25d366;
+  --wa-dark: #1ebe57;
   --line: rgba(22, 20, 18, 0.12);
   --shadow: 0 30px 80px rgba(22, 20, 18, 0.18);
   --radius: 1.65rem;
@@ -221,30 +223,35 @@ textarea {
 
 .hero-stage {
   position: relative;
-  min-height: 88vh;
+  min-height: 78vh;
   display: grid;
   align-items: end;
-  padding: 1rem 0 2rem;
+  padding: 0 0 2rem;
 }
 .hero-bg {
   position: absolute;
-  inset: 0 0.75rem auto;
-  height: 58vh;
-  width: calc(100% - 1.5rem);
-  margin-inline: auto;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: var(--radius-lg);
+}
+.hero-stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(20, 16, 12, 0.45) 0%, rgba(20, 16, 12, 0.12) 48%, transparent 70%);
+  pointer-events: none;
 }
 .hero-panel {
   position: relative;
   z-index: 1;
-  margin: 42vh auto 0;
-  width: min(52rem, calc(100% - 1.5rem));
-  background: var(--panel);
-  border-radius: var(--radius-lg);
-  padding: 1.5rem 1.35rem 1.7rem;
-  box-shadow: var(--shadow);
-  border: 1px solid rgba(22, 20, 18, 0.06);
+  margin: 0 auto;
+  width: min(44rem, calc(100% - 1.5rem));
+  background: color-mix(in srgb, var(--panel) 94%, transparent);
+  backdrop-filter: blur(10px);
+  border-radius: 1.25rem;
+  padding: 1.25rem 1.2rem 1.35rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .kicker {
@@ -300,22 +307,22 @@ h3 {
 
 .shops {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.85rem;
-  margin-top: 1.4rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.55rem;
+  margin-top: 1.2rem;
 }
 .shop-card,
 .photo-card {
   margin: 0;
   position: relative;
-  border-radius: 1.25rem;
+  border-radius: 0.7rem;
   overflow: hidden;
   background: #111;
 }
 .shop-card img,
 .photo-card img {
   width: 100%;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1;
   object-fit: cover;
   display: block;
 }
@@ -326,10 +333,10 @@ h3 {
   right: 0;
   bottom: 0;
   margin: 0;
-  padding: 2.2rem 0.85rem 0.85rem;
-  background: linear-gradient(transparent, rgba(10, 8, 6, 0.82));
+  padding: 1.4rem 0.55rem 0.45rem;
+  background: linear-gradient(transparent, rgba(10, 8, 6, 0.72));
   color: #fff;
-  font-size: 0.92rem;
+  font-size: 0.78rem;
   font-weight: 600;
 }
 
@@ -385,10 +392,16 @@ textarea {
   gap: 1rem;
 }
 .value-card {
-  background: var(--panel);
-  border-radius: var(--radius);
-  padding: 1.3rem;
-  border: 1px solid var(--line);
+  background: transparent;
+  border-radius: 0;
+  padding: 0 0 0.2rem;
+  border: 0;
+  border-top: 2px solid var(--ink);
+  padding-top: 0.9rem;
+}
+.value-card p {
+  color: var(--muted);
+  margin: 0;
 }
 
 .human {
@@ -475,7 +488,7 @@ textarea {
 .story-media img,
 .step img {
   width: 100%;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
 }
 .story-copy,
@@ -595,19 +608,19 @@ textarea {
     display: flex;
   }
   .hero-stage {
-    min-height: 100vh;
+    min-height: 88vh;
     align-items: center;
-    padding: 5.5rem 0 3rem;
+    padding: 5rem 0 3rem;
   }
   .hero-bg {
-    inset: 1rem;
-    height: auto;
-    width: auto;
-    border-radius: 2rem;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
   }
   .hero-panel {
     margin: 0 auto;
-    padding: 2.4rem 2.6rem 2.6rem;
+    padding: 1.8rem 2.1rem 2rem;
     text-align: center;
   }
   .hero-panel .lead,
@@ -620,7 +633,9 @@ textarea {
   .shops {
     grid-template-columns: repeat(3, 1fr);
   }
-  .value-grid,
+  .value-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   .price-grid,
   .columns-2,
   .sim-cols,

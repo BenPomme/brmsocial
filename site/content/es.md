@@ -121,19 +121,19 @@ Ver el cálculo y comparar planes
 Recupere las noches
 
 ## home.value_time
-La mayoría de los dueños quieren responder a cada reseña. Luego llega el servicio, hay que atender el local, y las respuestas se quedan para medianoche, o no se escriben. Nosotros quitamos esa tarea de la lista, para que usted se ocupe de lo que mejor sabe hacer.
+La mayoría de los dueños quieren responder. Luego se hace de noche. Nosotros cogemos esa tarea.
 
 ## home.value_trust_title
 Muestre a los clientes futuros que les escucha
 
 ## home.value_trust
-Las respuestas son públicas. Quien compara comercios locales ve si usted agradece, aclara y trata las críticas con profesionalidad. Google recomienda primero las respuestas útiles y positivas, porque ayudan a distinguirse, y avisa al autor de la reseña cuando usted responde.
+Las respuestas son públicas. Los clientes futuros ven que usted responde.
 
 ## home.value_rating_title
 La constancia puede reforzar su reputación online
 
 ## home.value_rating
-Una investigación publicada encontró que los hoteles que empezaron a responder recibieron un 12 % más de reseñas y ganaron de media 0,12 estrellas. Un estudio aparte de Harvard encontró que una estrella entera de más valía un 5–9 % más de ingresos al mes para restaurantes independientes. Nuestra calculadora combina esos hallazgos sobre sus cifras.
+La investigación encontró una subida de 0,12 estrellas cuando los negocios empezaron a responder. La calculadora usa eso, junto con el trabajo de Harvard sobre notas e ingresos.
 
 ## home.human_title
 La IA nos hace más rápidos. Las personas protegen la calidad.

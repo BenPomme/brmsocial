@@ -121,19 +121,19 @@ Voir le calcul et comparer les formules
 Retrouvez vos soirées
 
 ## home.value_time
-La plupart des patrons veulent répondre à chaque avis. Puis le service s’emballe, le local demande de l’attention, et les réponses attendent minuit, ou ne s’écrivent jamais. Nous enlevons cette tâche de la liste, pour que vous fassiez ce que vous savez le mieux faire.
+La plupart des patrons veulent répondre. Puis la soirée passe. Nous prenons cette tâche.
 
 ## home.value_trust_title
 Montrez aux clients futurs que vous les écoutez
 
 ## home.value_trust
-Les réponses sont publiques. Quiconque compare des commerces locaux voit si vous remerciez, précisez et traitez les critiques avec professionnalisme. Google met en avant les réponses utiles et positives, parce qu’elles aident à se distinguer, et prévient l’auteur de l’avis quand vous répondez.
+Les réponses sont publiques. Les clients futurs voient que vous répondez.
 
 ## home.value_rating_title
 La constance peut renforcer votre réputation en ligne
 
 ## home.value_rating
-Une étude publiée a trouvé que les hôtels qui ont commencé à répondre ont reçu 12 % d’avis en plus et ont gagné en moyenne 0,12 étoile. Une étude distincte de Harvard a trouvé qu’une étoile entière de plus valait 5 à 9 % de chiffre d’affaires en plus par mois pour des restaurants indépendants. Notre calculateur combine ces résultats sur vos chiffres.
+La recherche a trouvé une hausse de 0,12 étoile lorsque les commerces ont commencé à répondre. Le calculateur s’appuie là-dessus, avec le travail de Harvard sur les notes et le chiffre d’affaires.
 
 ## home.human_title
 L’IA nous rend plus rapides. Les personnes protègent la qualité.
