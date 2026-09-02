@@ -463,54 +463,51 @@ textarea {
   color: var(--muted);
 }
 
-.step,
+.step-grid {
+  grid-template-columns: 1fr;
+  gap: 1.15rem;
+}
 .story-card {
   background: var(--panel);
   border-radius: 1.4rem;
   overflow: hidden;
   border: 1px solid rgba(22, 20, 18, 0.08);
   box-shadow: 0 16px 40px rgba(22, 20, 18, 0.06);
+  display: grid;
+  grid-template-columns: 1fr;
 }
-.story-tab,
-.step-num {
-  background: var(--tab);
-  margin: 0;
-  padding: 0.7rem 1rem;
-  text-align: center;
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
+.story-media {
+  overflow: hidden;
+  background: #111;
 }
-.story-media,
-.step {
-  position: relative;
-}
-.story-media img,
-.step img {
+.story-media img {
   width: 100%;
+  height: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
+  object-position: center 28%;
 }
-.story-copy,
-.step-body {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 2.4rem 1.05rem 1.1rem;
-  background: linear-gradient(transparent, rgba(8, 6, 4, 0.88));
-  color: #fff;
+.story-copy {
+  padding: 1.15rem 1.2rem 1.35rem;
 }
-.story-copy p,
-.step-body p {
-  color: rgba(255, 255, 255, 0.88);
-  margin: 0.35rem 0 0;
-  font-size: 0.95rem;
+.story-num {
+  font-family: var(--display);
+  font-size: 1.85rem;
+  line-height: 1;
+  margin: 0 0 0.3rem;
+  color: var(--accent-dark);
+  letter-spacing: -0.04em;
 }
-.story-copy h3,
-.step-body h3 {
-  color: #fff;
+.story-copy h3 {
+  color: var(--ink);
+  margin: 0 0 0.45rem;
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+  letter-spacing: -0.03em;
+}
+.story-copy p {
+  color: var(--muted);
   margin: 0;
+  font-size: 0.98rem;
 }
 
 .note {
@@ -642,8 +639,28 @@ textarea {
   .team-grid {
     grid-template-columns: 1fr 1fr;
   }
-  .step-grid {
-    grid-template-columns: 1fr 1fr;
+  .story-card {
+    grid-template-columns: 20rem 1fr;
+    align-items: stretch;
+  }
+  .story-card:nth-child(even) {
+    grid-template-columns: 1fr 20rem;
+  }
+  .story-card:nth-child(even) .story-media {
+    order: 2;
+  }
+  .story-media {
+    min-height: 16.5rem;
+  }
+  .story-media img {
+    aspect-ratio: auto;
+    min-height: 16.5rem;
+  }
+  .story-copy {
+    padding: 1.5rem 1.7rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .human {
     grid-template-columns: 0.78fr 1.22fr;
@@ -654,9 +671,6 @@ textarea {
 }
 
 @media (min-width: 1100px) {
-  .step-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
   .hero-panel {
     max-width: 54rem;
   }

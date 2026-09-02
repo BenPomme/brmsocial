@@ -108,6 +108,13 @@ function t(copy, key) {
   return copy[key] ?? "";
 }
 
+function splitStepTitle(raw) {
+  const s = String(raw || "").trim();
+  const m = s.match(/^(\d+)\.\s*(.+)$/);
+  if (m) return { n: m[1], title: m[2] };
+  return { n: "", title: s };
+}
+
 const SITE = "https://www.babyrock.ai";
 
 function href(locale, page, depth) {
@@ -497,18 +504,20 @@ function howPage(copy, depth) {
     <div class="lead">${paras(t(copy, "how.lead"))}</div>
     <div class="step-grid">
       ${steps
-        .map(
-          ([img, title, body], i) => `<article class="story-card">
-        <p class="story-tab">${i + 1} · ${esc(t(copy, title))}</p>
+        .map(([img, titleKey, body], i) => {
+          const { n, title } = splitStepTitle(t(copy, titleKey));
+          const num = n || String(i + 1);
+          return `<article class="story-card">
         <div class="story-media">
-          <img src="${asset(depth, "illustrations/" + img)}" alt="${esc(t(copy, title))}">
-          <div class="story-copy">
-            <h3>${esc(t(copy, title))}</h3>
-            ${paras(t(copy, body))}
-          </div>
+          <img src="${asset(depth, "illustrations/" + img)}" alt="${esc(title)}">
         </div>
-      </article>`
-        )
+        <div class="story-copy">
+          <p class="story-num">${esc(num)}</p>
+          <h3>${esc(title)}</h3>
+          ${paras(t(copy, body))}
+        </div>
+      </article>`;
+        })
         .join("")}
     </div>
     <div class="note" style="margin-top:1.5rem">${paras(t(copy, "how.ai_box"))}${paras(t(copy, "how.whatsapp"))}</div>
