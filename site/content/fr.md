@@ -2,7 +2,7 @@
 Réponses aux avis Google pour les petits commerces | BabyRock Social
 
 ## meta.description
-Des réponses soignées aux avis Google de votre commerce. L’IA nous aide à être efficaces ; une personne relit et publie chaque réponse. À partir de 89 € par mois.
+Des réponses soignées aux avis Google de votre commerce. L’IA nous aide à être efficaces ; une personne relit et publie chaque réponse. À partir de 99 € par mois.
 
 ## nav.simulator
 Calculateur d’impact
@@ -18,6 +18,12 @@ Qui nous sommes
 
 ## nav.subscribe
 Commencer
+
+## nav.services
+Produits
+
+## nav.guides
+Guides
 
 ## nav.account
 Votre compte
@@ -81,6 +87,61 @@ Calculez l’impact attendu pour vous
 ## home.cta_sub
 Que l’on s’occupe de mes avis
 
+## guides.headline
+Guides pour le commerce
+
+## guides.lead
+Textes courts, à imprimer ou à faire suivre. Ce n’est pas l’abonnement BabyRock Social : ce sont des gestes que vous pouvez faire. Chaque chiffre dit d’où il vient.
+
+## guides.sources
+Sources
+
+## home.products_title
+Deux produits, deux métiers distincts
+
+## home.products_lead
+Vous pouvez prendre BabyRock Social aujourd’hui : les réponses à vos avis Google. BabyRock Direct, le WhatsApp de votre commerce, vient ensuite. Pas d’autre application.
+
+## product.social_name
+BabyRock Social
+
+## product.social_status
+Disponible maintenant
+
+## product.social_body
+Quelqu’un laisse un avis sur votre fiche Google. Nous préparons une réponse dans la langue de l’avis. Les avis 4 et 5 étoiles partent après une relecture de notre côté. Les avis 1, 2 et 3 étoiles, vous les voyez sur WhatsApp. Vous dites oui, ou vous changez le texte. Ensuite seulement la réponse est publiée.
+
+Vous n’envoyez pas votre mot de passe Google. Vous ajoutez une adresse BabyRock en gestionnaire de la fiche.
+
+## product.social_price_note
+99 € par mois, TTC. Ou 799 € par an.
+
+## product.social_cta
+Je veux BabyRock Social
+
+## product.direct_name
+BabyRock Direct
+
+## product.direct_status
+Bientôt
+
+## product.direct_body
+Le numéro que vos clients voient, c’est le vôtre. Un client écrit « une table samedi 21 h ». Si nous avons l’info, nous répondons. Si nous ne l’avons pas, nous vous prévenons, et vous répondez dans l’appli, comme aujourd’hui.
+
+Premier usage : la réservation, le rappel, et après une visite connue, la demande d’avis Google sur le même fil. Nous n’envoyons pas de messages à des inconnus.
+
+## product.direct_cta
+Prévenez-moi quand c’est prêt
+
+## product.direct_prefill
+Bonjour Rosalia, je suis intéressé par BabyRock Direct quand ce sera prêt.
+
+## products.headline
+BabyRock Social et BabyRock Direct
+
+## products.lead
+Social répond aux avis Google. Direct fait tourner le WhatsApp de votre commerce. Aujourd’hui on ne vend que Social. Direct est là pour que vous voyiez la suite, pas pour le payer.
+
 ## home.for_whom_title
 Si les clients vous trouvent sur Google, ce service est pour vous
 
@@ -127,7 +188,7 @@ Chiffre d’affaires mensuel, en euros
 25000
 
 ## home.sim_result_before
-Jusqu’à, après 89 € / mois
+Jusqu’à, après 99 € / mois
 
 ## home.sim_result_after
 € estimés par mois après l’abonnement
@@ -163,22 +224,22 @@ Nous utilisons l’IA pour être plus efficaces. Elle nous aide à garder le pri
 Il faut expliquer ce qui s’est passé, changer le texte ou poser une question ? Parlez à Rosalia et à l’équipe sur WhatsApp. Pas besoin d’une autre application ni d’un autre site. Nous sommes avec vous, dans la poche.
 
 ## home.price_title
-Choisissez la formule qui vous convient
+BabyRock Social — les formules
 
 ## home.price_month_name
 Mois par mois
 
 ## home.price_month_detail
-89 € par mois, hors TVA. Si vous résiliez avant le prochain prélèvement, le service s’arrête à la fin du mois déjà payé.
+99 € par mois, TTC. Si vous résiliez avant le prochain prélèvement, le service s’arrête à la fin du mois déjà payé.
 
 ## home.price_year_name
 Douze mois
 
 ## home.price_year_detail
-748 € pour l’année, hors TVA : 30 % de moins que de payer mois par mois.
+799 € pour l’année, TTC : 33 % de moins que de payer mois par mois.
 
 ## home.price_year_save
-Économisez 320 €
+Économisez 389 €
 
 ## home.price_setup
 Pas de frais de mise en service si vous nous ajoutez vous-même à votre fiche d’établissement Google. On ne prélève rien sur ce site : Rosalia vous envoie un lien de paiement sécurisé.
@@ -221,6 +282,12 @@ Comment résilier ?
 
 ## home.faq_6_a
 Écrivez BAJA ou « merci d’arrêter » à Rosalia sur WhatsApp. Nous confirmons, nous continuons jusqu’à la fin de la période déjà payée, et nous retirons notre accès gestionnaire à la fin du service.
+
+## home.faq_7_q
+Vous gérez aussi le WhatsApp de mon commerce ?
+
+## home.faq_7_a
+Pas encore. C’est BabyRock Direct, un autre produit, plus tard : le numéro de vos clients, pas le nôtre. Aujourd’hui le WhatsApp que nous utilisons est le fil entre vous et BabyRock Social, pour les avis délicats et le récap.
 
 ## sim.headline
 Impact attendu sur votre chiffre d’affaires
@@ -298,10 +365,10 @@ Fourchette publiée
 L’estimation basse utilise 0,12 × 5 % du chiffre d’affaires. La haute utilise 0,12 × 9 %. Cela donne une fourchette de 0,6–1,08 % du chiffre d’affaires mensuel, avant l’abonnement.
 
 ## sim.after_month
-Après 89 €/mois
+Après 99 €/mois
 
 ## sim.after_year
-Après 748 €/an — 30 % de moins
+Après 799 €/an — 33 % de moins
 
 ## sim.per_month
 par mois
@@ -340,7 +407,7 @@ Pas d’autre tableau de bord. Pas d’application à installer. Pas de mot de p
 1. Parlez-nous de votre commerce
 
 ## how.step1
-Envoyez à Rosalia le nom du commerce et la fiche Google par WhatsApp ou e-mail. Choisissez 89 € mois par mois ou 748 € pour douze mois. Elle répond aux questions et envoie un lien de paiement sécurisé.
+Envoyez à Rosalia le nom du commerce et la fiche Google par WhatsApp ou e-mail. Choisissez 99 € mois par mois ou 799 € pour douze mois. Elle répond aux questions et envoie un lien de paiement sécurisé.
 
 ## how.step2_title
 2. Ajoutez-nous comme gestionnaire, pas comme propriétaire
@@ -402,7 +469,7 @@ Estimation centrale = R × 0,12 × 7 % = R × 0,84 %.
 
 Estimation haute = R × 0,12 × 9 % = R × 1,08 %.
 
-Nous retranchons ensuite 89 € pour la formule mensuelle, ou 748 € ÷ 12 pour l’annuelle. Si vous répondez déjà à une partie ou à la plupart, le calculateur réduit l’estimation parce qu’une partie du travail est déjà faite.
+Nous retranchons ensuite 99 € pour la formule mensuelle, ou 799 € ÷ 12 pour l’annuelle. Si vous répondez déjà à une partie ou à la plupart, le calculateur réduit l’estimation parce qu’une partie du travail est déjà faite.
 
 ## research.what_we_use
 L’estimation centrale est le chiffre que nous utiliserions pour juger le service : 0,84 % du chiffre d’affaires mensuel avant l’abonnement, plus la valeur du temps du patron. La recherche décrit des moyennes ; le résultat d’un commerce donné peut être plus haut ou plus bas.
@@ -435,16 +502,16 @@ Nous utilisons l’IA pour la qualité, la constance et l’échelle. Elle nous 
 Nous ne voulons pas que vous installiez encore une application. Vous devez pouvoir nous écrire comme vous le feriez naturellement. Vous parlez directement à Rosalia ou à la personne qui tient la conversation sur WhatsApp.
 
 ## sub.headline
-Que chaque nouvel avis Google soit traité, à partir de 89 € par mois.
+Que chaque nouvel avis Google soit traité, à partir de 99 € par mois.
 
 ## sub.lead
 Envoyez-nous le nom du commerce et la fiche Google. Rosalia répondra aux questions, vous aidera à choisir la formule mensuelle ou annuelle, et vous enverra le lien de paiement sécurisé. Ensuite, ajoutez-nous comme gestionnaire et nous commençons.
 
 ## sub.month
-89 €/mois, hors TVA
+99 €/mois, TTC
 
 ## sub.year
-748 €/an, hors TVA — économisez 30 %
+799 €/an, TTC — économisez 33 %
 
 ## sub.form_name
 Nom du commerce
@@ -468,10 +535,10 @@ Chiffre d’affaires mensuel, si vous avez utilisé le calculateur (facultatif)
 Formule souhaitée
 
 ## sub.plan_month
-Mois par mois — 89 €
+Mois par mois — 99 €
 
 ## sub.plan_year
-Douze mois — 748 €
+Douze mois — 799 €
 
 ## sub.cta_wa
 Commencer sur WhatsApp
@@ -504,7 +571,7 @@ Chaque paiement produit une facture, avec TVA, envoyée à votre e-mail. Besoin 
 Comment vous payez
 
 ## account.pay
-Rosalia envoie un lien de paiement sécurisé pour la formule choisie : 89 € mois par mois ou 748 € pour douze mois. Pas de frais de mise en service si vous ajoutez vous-même le gestionnaire Google.
+Rosalia envoie un lien de paiement sécurisé pour la formule choisie : 99 € mois par mois ou 799 € pour douze mois. Pas de frais de mise en service si vous ajoutez vous-même le gestionnaire Google.
 
 ## account.cancel_title
 Comment résilier
@@ -533,7 +600,7 @@ Nous utilisons des outils d’IA pour aider à préparer des brouillons. Une per
 Conditions
 
 ## terms.body
-BabyRock Social gère les réponses d’une fiche d’établissement Google à 89 € par mois hors TVA, ou 748 € pour douze mois hors TVA. En vous abonnant et en nous invitant comme gestionnaire, vous nous autorisez à rédiger, relire, envoyer, modifier et, si nécessaire, supprimer des réponses sur cette fiche. L’IA peut aider au premier brouillon ; une personne vérifie et envoie chaque réponse. Les réponses aux avis 4 et 5 étoiles peuvent être envoyées avec cette autorisation continue. Celles des avis 1, 2 et 3 étoiles sont envoyées seulement après que vous les avez approuvées ou modifiées sur WhatsApp. Google relit les réponses et contrôle le moment final de publication.
+BabyRock Social gère les réponses d’une fiche d’établissement Google à 99 € par mois TTC, ou 799 € pour douze mois TTC. En vous abonnant et en nous invitant comme gestionnaire, vous nous autorisez à rédiger, relire, envoyer, modifier et, si nécessaire, supprimer des réponses sur cette fiche. L’IA peut aider au premier brouillon ; une personne vérifie et envoie chaque réponse. Les réponses aux avis 4 et 5 étoiles peuvent être envoyées avec cette autorisation continue. Celles des avis 1, 2 et 3 étoiles sont envoyées seulement après que vous les avez approuvées ou modifiées sur WhatsApp. Google relit les réponses et contrôle le moment final de publication.
 
 Vous pouvez résilier à la fin de la période payée en écrivant à Rosalia. Quand le service s’arrête, nous retirons notre accès gestionnaire. Nous pouvons suspendre le service si un paiement échoue. Le droit espagnol et les tribunaux de Barcelone s’appliquent, sauf règle impérative de consommation contraire.
 

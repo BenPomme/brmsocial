@@ -16,7 +16,9 @@ Each block starts with a heading of the form `## key.name`.
 
 The text under the heading is what appears on the site, until the next `##`. Use full sentences. A blank line starts a new paragraph.
 
-Do not invent new keys unless you also change `site/src/template.html` and `site/build.mjs`. If you only want to change what we say, stay inside the existing keys.
+Do not invent new keys unless you also change `site/build.mjs`. If you only want to change what we say, stay inside the existing keys.
+
+Two products: **BabyRock Social** (live, review replies) and **BabyRock Direct** (coming soon, shop WhatsApp). Checkout copy and prices are Social only.
 
 ## Edit numbers
 

@@ -2,7 +2,7 @@
 Google Review Response Service For Small Businesses | BabyRock Social
 
 ## meta.description
-Thoughtful Google review replies for small businesses. AI helps us work efficiently; a human checks and publishes every response. From €89/month.
+Thoughtful Google review replies for small businesses. AI helps us work efficiently; a human checks and publishes every response. From €99/month.
 
 ## nav.simulator
 Impact calculator
@@ -18,6 +18,12 @@ Who we are
 
 ## nav.subscribe
 Start
+
+## nav.services
+Products
+
+## nav.guides
+Guides
 
 ## nav.account
 Your account
@@ -81,6 +87,61 @@ Calculate the expected impact for you
 ## home.cta_sub
 Get my reviews handled
 
+## guides.headline
+Guides for the shop
+
+## guides.lead
+Short pieces to print or forward. They are not the BabyRock Social service: they are habits you can apply yourself. Each one says where the number comes from.
+
+## guides.sources
+Sources
+
+## home.products_title
+Two products, two different jobs
+
+## home.products_lead
+You can buy BabyRock Social today: replies to your Google reviews. BabyRock Direct, the WhatsApp of your shop, comes later. You do not need another app.
+
+## product.social_name
+BabyRock Social
+
+## product.social_status
+Available now
+
+## product.social_body
+Someone leaves a review on your Google listing. We prepare a reply in the language of the review. 4 and 5-star replies go out after we proofread them. 1, 2 and 3-star reviews come to you on WhatsApp. You say yes, or you change the text. Only then is the reply published.
+
+You do not send us your Google password. You add a BabyRock address as a manager of the listing.
+
+## product.social_price_note
+€99 a month, including VAT. Or €799 a year.
+
+## product.social_cta
+I want BabyRock Social
+
+## product.direct_name
+BabyRock Direct
+
+## product.direct_status
+Coming soon
+
+## product.direct_body
+The number your customers see stays yours. A customer writes “a table Saturday at 9pm”. If we have the fact, we answer. If we do not, we tell the shop, and you reply in the same app as today.
+
+First use: booking, a reminder, and after a known visit, a Google review ask on the same thread. We do not message strangers.
+
+## product.direct_cta
+Tell me when it is ready
+
+## product.direct_prefill
+Hi Rosalia, I am interested in BabyRock Direct when it is ready.
+
+## products.headline
+BabyRock Social and BabyRock Direct
+
+## products.lead
+Social replies to Google reviews. Direct runs your shop’s WhatsApp. Today you can only buy Social. Direct is here so you can see what is coming, not so you can pay for it.
+
 ## home.for_whom_title
 If customers find you on Google, this service is for you
 
@@ -127,7 +188,7 @@ Monthly revenue, in euros
 25000
 
 ## home.sim_result_before
-Up to, after €89/month
+Up to, after €99/month
 
 ## home.sim_result_after
 € estimated per month after the subscription
@@ -163,22 +224,22 @@ We use AI to make us more efficient. AI helps us keep our prices low, while prep
 Need to explain what happened, change the wording or ask a question? Talk directly with Rosalia and our team on WhatsApp. No need to download an app or go to a website. We are with you, in your pocket.
 
 ## home.price_title
-Choose the plan that suits you
+BabyRock Social — the plans
 
 ## home.price_month_name
 Month to month
 
 ## home.price_month_detail
-€89 per month, excluding VAT. Cancel before your next billing period and the service ends when the current paid month finishes.
+€99 per month, including VAT. Cancel before your next billing period and the service ends when the current paid month finishes.
 
 ## home.price_year_name
 Twelve months
 
 ## home.price_year_detail
-€748 for the year, excluding VAT—30% less than paying month to month.
+€799 for the year, including VAT—33% less than paying month to month.
 
 ## home.price_year_save
-Save €320
+Save €389
 
 ## home.price_setup
 No setup fee when you add us to your Google Business Profile yourself. You will not be charged on this website: Rosalia sends you a secure payment link.
@@ -221,6 +282,12 @@ How do we cancel?
 
 ## home.faq_6_a
 Write BAJA or “please stop” to Rosalia on WhatsApp. We confirm your request, continue until the end of the period you have paid for, and remove our manager access when the service ends.
+
+## home.faq_7_q
+Do you also run my shop’s WhatsApp?
+
+## home.faq_7_a
+Not yet. That is BabyRock Direct, a different product, coming later: your customers’ number, not ours. Today the WhatsApp we use is the thread between you and BabyRock Social, for sensitive reviews and the recap.
 
 ## sim.headline
 Expected impact on your revenue
@@ -298,10 +365,10 @@ Published range
 The lower estimate uses 0.12 × 5% of revenue. The upper estimate uses 0.12 × 9%. That produces a range of 0.6–1.08% of monthly revenue before the subscription.
 
 ## sim.after_month
-After €89/month
+After €99/month
 
 ## sim.after_year
-After €748/year—30% less
+After €799/year—33% less
 
 ## sim.per_month
 per month
@@ -340,7 +407,7 @@ No new dashboard. No app to install. No Google password to share. Write to Rosal
 1. Tell us about your business
 
 ## how.step1
-Send Rosalia your business name and Google listing by WhatsApp or email. Choose €89 month to month or €748 for twelve months. She answers your questions and sends a secure payment link.
+Send Rosalia your business name and Google listing by WhatsApp or email. Choose €99 month to month or €799 for twelve months. She answers your questions and sends a secure payment link.
 
 ## how.step2_title
 2. Add us as a manager—not an owner
@@ -402,7 +469,7 @@ Central research estimate = R × 0.12 × 7% = R × 0.84%.
 
 Upper research estimate = R × 0.12 × 9% = R × 1.08%.
 
-We then subtract €89 for the monthly plan, or €748 ÷ 12 for the annual plan. If you already answer some or most reviews, the calculator reduces the estimate because part of the work is already being done.
+We then subtract €99 for the monthly plan, or €799 ÷ 12 for the annual plan. If you already answer some or most reviews, the calculator reduces the estimate because part of the work is already being done.
 
 ## research.what_we_use
 The central estimate is the figure we would use to evaluate the service: 0.84% of monthly revenue before the subscription, plus the value of the owner time saved. Research describes averages, so the result for an individual business can be higher or lower.
@@ -435,16 +502,16 @@ We use AI for quality, consistency and scale. AI helps us prepare a first draft 
 We don't want to have you install yet another app. You need to be able to reach out the us naturally. You talk directly with Rosalia or the team member covering the conversation on WhatsApp.
 
 ## sub.headline
-Get every new Google review handled from €89 a month.
+Get every new Google review handled from €99 a month.
 
 ## sub.lead
 Send us your business name and Google listing. Rosalia will answer your questions, help you choose the monthly or annual plan, and send your secure payment link. Then add us as a manager and we begin.
 
 ## sub.month
-€89/month, excluding VAT
+€99/month, including VAT
 
 ## sub.year
-€748/year, excluding VAT—save 30%
+€799/year, including VAT—save 33%
 
 ## sub.form_name
 Business name
@@ -468,10 +535,10 @@ Monthly revenue, if you used the calculator (optional)
 Preferred plan
 
 ## sub.plan_month
-Month to month—€89
+Month to month—€99
 
 ## sub.plan_year
-Twelve months—€748
+Twelve months—€799
 
 ## sub.cta_wa
 Start on WhatsApp
@@ -504,7 +571,7 @@ Each payment produces an invoice, including VAT, sent to your email. Need anothe
 How you pay
 
 ## account.pay
-Rosalia sends a secure payment link for your chosen plan: €89 month to month or €748 for twelve months. There is no setup fee when you add the Google manager yourself.
+Rosalia sends a secure payment link for your chosen plan: €99 month to month or €799 for twelve months. There is no setup fee when you add the Google manager yourself.
 
 ## account.cancel_title
 How to cancel
@@ -533,7 +600,7 @@ We use AI tools to help prepare reply drafts. A person reviews and, where needed
 Terms
 
 ## terms.body
-BabyRock Social manages replies for one Google Business Profile at €89 per month excluding VAT, or €748 for twelve months excluding VAT. By subscribing and inviting BabyRock Social as a manager, you authorize us to draft, review, submit, edit and, when necessary, delete replies on that profile. AI may assist with the first draft; a person checks and submits every reply. Replies to 4 and 5-star reviews may be submitted under this ongoing authorization. Replies to 1, 2 and 3-star reviews are submitted only after you approve or revise them on WhatsApp. Google reviews replies and controls final publication timing.
+BabyRock Social manages replies for one Google Business Profile at €99 per month including VAT, or €799 for twelve months including VAT. By subscribing and inviting BabyRock Social as a manager, you authorize us to draft, review, submit, edit and, when necessary, delete replies on that profile. AI may assist with the first draft; a person checks and submits every reply. Replies to 4 and 5-star reviews may be submitted under this ongoing authorization. Replies to 1, 2 and 3-star reviews are submitted only after you approve or revise them on WhatsApp. Google reviews replies and controls final publication timing.
 
 You can cancel at the end of the paid period by writing to Rosalia. When the service ends, we remove our manager access. We may pause the service if a payment fails. Spanish law and the courts of Barcelona apply, unless a mandatory consumer rule says otherwise.
 

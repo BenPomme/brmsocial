@@ -451,6 +451,129 @@ textarea {
   flex: 1;
 }
 
+.guide-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+.guide-card a {
+  display: block;
+  text-decoration: none;
+  background: var(--panel);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  height: 100%;
+}
+.guide-card img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+.guide-card h3 {
+  margin: 0.85rem 1rem 0.35rem;
+  font-family: var(--display);
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
+}
+.guide-card p {
+  margin: 0 1rem 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.guide-hero {
+  margin: 1.2rem 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.guide-hero img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+.impact-box {
+  background: var(--ink);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 1.2rem 1.3rem;
+  margin: 0 0 1.4rem;
+}
+.impact-box p {
+  margin: 0.35rem 0 0;
+  max-width: 40rem;
+}
+.impact-box .tiny {
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin: 0;
+}
+.sources {
+  max-width: 42rem;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+.sources a {
+  text-underline-offset: 0.15em;
+}
+.guide-article .lead p {
+  max-width: 40rem;
+}
+
+.product-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.1rem;
+}
+.product-card {
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 1.45rem;
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.product-card.live {
+  border-color: var(--ink);
+}
+.product-card.soon {
+  opacity: 0.96;
+}
+.product-status {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+}
+.product-card.soon .product-status {
+  color: var(--muted);
+}
+.product-card h3 {
+  margin: 0.15rem 0 0.2rem;
+  font-family: var(--display);
+  font-size: 1.85rem;
+  letter-spacing: -0.03em;
+}
+.product-card .tiny {
+  color: var(--muted);
+  margin: 0;
+}
+.product-card .cta-row {
+  margin-top: auto;
+  padding-top: 0.85rem;
+}
+.product-card .amount {
+  font-family: var(--display);
+  font-size: 2.2rem;
+  letter-spacing: -0.04em;
+  margin: 0.35rem 0 0;
+}
+
 .price-card {
   background: var(--panel);
   border-radius: var(--radius);
@@ -765,6 +888,8 @@ textarea {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .price-grid,
+  .product-grid,
+  .guide-grid,
   .columns-2,
   .sim-cols,
   .team-grid {

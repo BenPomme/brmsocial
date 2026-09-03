@@ -2,7 +2,7 @@
 Respuestas a reseñas de Google para pequeños comercios | BabyRock Social
 
 ## meta.description
-Respuestas cuidadosas a las reseñas de Google de su negocio. La IA nos ayuda a ser eficientes; una persona revisa y publica cada respuesta. Desde 89 € al mes.
+Respuestas cuidadosas a las reseñas de Google de su negocio. La IA nos ayuda a ser eficientes; una persona revisa y publica cada respuesta. Desde 99 € al mes.
 
 ## nav.simulator
 Calculadora de impacto
@@ -18,6 +18,12 @@ Quiénes somos
 
 ## nav.subscribe
 Empezar
+
+## nav.services
+Productos
+
+## nav.guides
+Guías
 
 ## nav.account
 Su cuenta
@@ -81,6 +87,61 @@ Calcule el impacto esperado para usted
 ## home.cta_sub
 Que se ocupen de mis reseñas
 
+## guides.headline
+Guías para el comercio
+
+## guides.lead
+Textos cortos, para imprimir o reenviar. No son el servicio BabyRock Social: son hábitos que puede aplicar usted. Cada pieza cita de dónde sale el número.
+
+## guides.sources
+Fuentes
+
+## home.products_title
+Dos productos, dos trabajos distintos
+
+## home.products_lead
+Hoy puede contratar BabyRock Social: las respuestas a sus reseñas de Google. BabyRock Direct, el WhatsApp de su comercio, llegará después. No hace falta otra aplicación.
+
+## product.social_name
+BabyRock Social
+
+## product.social_status
+Disponible ahora
+
+## product.social_body
+Alguien deja una reseña en su ficha de Google. Preparamos una respuesta en el idioma de la reseña. Las de 4 y 5 estrellas salen después de una relectura nuestra. Las de 1, 2 y 3 estrellas las ve usted por WhatsApp. Dice que sí, o cambia el texto. Solo entonces se publica.
+
+No nos da la contraseña de Google. Añade una dirección BabyRock como gestor de la ficha.
+
+## product.social_price_note
+99 € al mes, IVA incluido. O 799 € al año.
+
+## product.social_cta
+Quiero BabyRock Social
+
+## product.direct_name
+BabyRock Direct
+
+## product.direct_status
+Próximamente
+
+## product.direct_body
+El número que ven sus clientes sigue siendo el suyo. Un cliente escribe «una mesa el sábado a las 21 h». Si tenemos el dato, respondemos. Si no, avisamos al comercio y usted responde en la misma aplicación de siempre.
+
+Primero: reservas, recordatorio, y después de una visita conocida, una petición de reseña Google en el mismo hilo. No enviamos mensajes a desconocidos.
+
+## product.direct_cta
+Avisadme cuando esté listo
+
+## product.direct_prefill
+Hola Rosalia, me interesa BabyRock Direct cuando esté listo.
+
+## products.headline
+BabyRock Social y BabyRock Direct
+
+## products.lead
+Social responde a las reseñas de Google. Direct lleva el WhatsApp de su comercio. Hoy solo se contrata Social. Direct se muestra para que sepa lo que viene, no para pagarlo.
+
 ## home.for_whom_title
 Si los clientes le encuentran en Google, este servicio es para usted
 
@@ -127,7 +188,7 @@ Facturación mensual, en euros
 25000
 
 ## home.sim_result_before
-Hasta, después de 89 € al mes
+Hasta, después de 99 € al mes
 
 ## home.sim_result_after
 € estimados al mes después de la suscripción
@@ -163,22 +224,22 @@ Usamos la IA para ser más eficientes. Nos ayuda a mantener el precio y a prepar
 ¿Hay que explicar lo que pasó, cambiar el texto o hacer una pregunta? Hable con Rosalia y el equipo por WhatsApp. No hace falta otra aplicación ni entrar en una web. Estamos con usted, en el bolsillo.
 
 ## home.price_title
-Elija el plan que le convenga
+BabyRock Social — las fórmulas
 
 ## home.price_month_name
 Mes a mes
 
 ## home.price_month_detail
-89 € al mes, sin IVA. Si cancela antes del siguiente cobro, el servicio termina al final del mes ya pagado.
+99 € al mes, IVA incluido. Si cancela antes del siguiente cobro, el servicio termina al final del mes ya pagado.
 
 ## home.price_year_name
 Doce meses
 
 ## home.price_year_detail
-748 € al año, sin IVA: un 30 % menos que pagar mes a mes.
+799 € al año, IVA incluido: un 33 % menos que pagar mes a mes.
 
 ## home.price_year_save
-Ahorre 320 €
+Ahorre 389 €
 
 ## home.price_setup
 Sin cuota de alta si usted mismo nos añade a su ficha de empresa de Google. En esta web no se cobra: Rosalia le envía un enlace de pago seguro.
@@ -221,6 +282,12 @@ Sí. Habla directamente con Rosalia o con quien cubra la conversación en WhatsA
 
 ## home.faq_6_a
 Escriba BAJA o «quiero parar» a Rosalia por WhatsApp. Confirmamos, seguimos hasta el final del periodo que ya ha pagado, y quitamos nuestro acceso de gestor cuando termina el servicio.
+
+## home.faq_7_q
+¿También llevan el WhatsApp de mi comercio?
+
+## home.faq_7_a
+Todavía no. Eso es BabyRock Direct, otro producto, que llegará más adelante: el número de sus clientes, no el nuestro. Hoy el WhatsApp que usamos es el hilo entre usted y BabyRock Social, para las reseñas delicadas y el recap.
 
 ## sim.headline
 Impacto esperado en su facturación
@@ -298,10 +365,10 @@ Rango publicado
 La estimación baja usa 0,12 × 5 % de la facturación. La alta usa 0,12 × 9 %. Eso da un rango del 0,6–1,08 % de la facturación mensual, antes de la suscripción.
 
 ## sim.after_month
-Después de 89 €/mes
+Después de 99 €/mes
 
 ## sim.after_year
-Después de 748 €/año — un 30 % menos
+Después de 799 €/año — un 33 % menos
 
 ## sim.per_month
 al mes
@@ -340,7 +407,7 @@ Sin otro panel. Sin aplicación que instalar. Sin contraseña de Google. Escriba
 1. Cuéntenos su negocio
 
 ## how.step1
-Envíe a Rosalia el nombre del negocio y la ficha de Google por WhatsApp o correo. Elija 89 € mes a mes o 748 € por doce meses. Ella responde a las preguntas y envía un enlace de pago seguro.
+Envíe a Rosalia el nombre del negocio y la ficha de Google por WhatsApp o correo. Elija 99 € mes a mes o 799 € por doce meses. Ella responde a las preguntas y envía un enlace de pago seguro.
 
 ## how.step2_title
 2. Añádanos como gestor, no como propietario
@@ -402,7 +469,7 @@ Estimación central = R × 0,12 × 7 % = R × 0,84 %.
 
 Estimación alta = R × 0,12 × 9 % = R × 1,08 %.
 
-Luego restamos 89 € para el plan mensual, o 748 € ÷ 12 para el anual. Si usted ya responde a una parte o a la mayoría, la calculadora reduce la estimación porque una parte del trabajo ya se hace.
+Luego restamos 99 € para el plan mensual, o 799 € ÷ 12 para el anual. Si usted ya responde a una parte o a la mayoría, la calculadora reduce la estimación porque una parte del trabajo ya se hace.
 
 ## research.what_we_use
 La estimación central es la cifra que usaríamos para valorar el servicio: 0,84 % de la facturación mensual antes de la suscripción, más el valor del tiempo del dueño. La investigación describe medias; el resultado de un negocio concreto puede ser más alto o más bajo.
@@ -435,16 +502,16 @@ Usamos la IA para la calidad, la constancia y la escala. Nos ayuda a preparar un
 No queremos que instale otra aplicación. Tiene que poder escribirnos como lo haría de forma natural. Habla directamente con Rosalia o con quien cubra la conversación en WhatsApp.
 
 ## sub.headline
-Que cada reseña nueva de Google quede atendida, desde 89 € al mes.
+Que cada reseña nueva de Google quede atendida, desde 99 € al mes.
 
 ## sub.lead
 Envíenos el nombre del negocio y la ficha de Google. Rosalia responderá a las preguntas, le ayudará a elegir el plan mensual o anual, y le enviará el enlace de pago seguro. Luego nos añade como gestor y empezamos.
 
 ## sub.month
-89 €/mes, sin IVA
+99 €/mes, IVA incluido
 
 ## sub.year
-748 €/año, sin IVA — ahorre un 30 %
+799 €/año, IVA incluido — ahorre un 33 %
 
 ## sub.form_name
 Nombre del negocio
@@ -468,10 +535,10 @@ Facturación mensual, si usó la calculadora (opcional)
 Plan preferido
 
 ## sub.plan_month
-Mes a mes — 89 €
+Mes a mes — 99 €
 
 ## sub.plan_year
-Doce meses — 748 €
+Doce meses — 799 €
 
 ## sub.cta_wa
 Empezar por WhatsApp
@@ -504,7 +571,7 @@ Cada pago produce una factura, con IVA, enviada a su correo. ¿Necesita otra cop
 Cómo se paga
 
 ## account.pay
-Rosalia envía un enlace de pago seguro para el plan elegido: 89 € mes a mes o 748 € por doce meses. No hay cuota de alta si usted mismo añade el gestor de Google.
+Rosalia envía un enlace de pago seguro para el plan elegido: 99 € mes a mes o 799 € por doce meses. No hay cuota de alta si usted mismo añade el gestor de Google.
 
 ## account.cancel_title
 Cómo cancelar
@@ -533,7 +600,7 @@ Usamos herramientas de IA para ayudar a preparar borradores. Una persona revisa 
 Condiciones
 
 ## terms.body
-BabyRock Social gestiona las respuestas de una ficha de empresa de Google a 89 € al mes sin IVA, o 748 € por doce meses sin IVA. Al suscribirse e invitarnos como gestor, nos autoriza a redactar, revisar, enviar, editar y, si hace falta, borrar respuestas en esa ficha. La IA puede ayudar con el primer borrador; una persona comprueba y envía cada respuesta. Las respuestas a reseñas de 4 y 5 estrellas pueden enviarse con esta autorización continua. Las de 1, 2 y 3 estrellas se envían solo después de que usted las apruebe o las cambie por WhatsApp. Google revisa las respuestas y controla el momento final de publicación.
+BabyRock Social gestiona las respuestas de una ficha de empresa de Google a 99 € al mes IVA incluido, o 799 € por doce meses IVA incluido. Al suscribirse e invitarnos como gestor, nos autoriza a redactar, revisar, enviar, editar y, si hace falta, borrar respuestas en esa ficha. La IA puede ayudar con el primer borrador; una persona comprueba y envía cada respuesta. Las respuestas a reseñas de 4 y 5 estrellas pueden enviarse con esta autorización continua. Las de 1, 2 y 3 estrellas se envían solo después de que usted las apruebe o las cambie por WhatsApp. Google revisa las respuestas y controla el momento final de publicación.
 
 Puede cancelar al final del periodo pagado escribiendo a Rosalia. Cuando termina el servicio, quitamos nuestro acceso de gestor. Podemos pausar el servicio si un pago falla. Se aplica la ley española y los juzgados de Barcelona, salvo norma imperativa de consumo en otro sentido.
 

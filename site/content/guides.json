@@ -1,0 +1,54 @@
+{
+  "guides": [
+    {
+      "id": "reply",
+      "img": "guide-reply.jpg",
+      "slugs": {
+        "es": "responder-todas-las-resenas",
+        "ca": "respondre-totes-les-ressenyes",
+        "fr": "repondre-a-tous-les-avis",
+        "en": "reply-to-every-review"
+      }
+    },
+    {
+      "id": "ask",
+      "img": "guide-ask.jpg",
+      "slugs": {
+        "es": "pedir-resenas-sin-romper-las-reglas",
+        "ca": "demanar-ressenyes-sense-trencar-les-regles",
+        "fr": "demander-des-avis-sans-tricher",
+        "en": "ask-for-reviews-without-breaking-the-rules"
+      }
+    },
+    {
+      "id": "qr",
+      "img": "guide-qr.jpg",
+      "slugs": {
+        "es": "codigo-qr-para-resenas-de-google",
+        "ca": "codi-qr-per-a-ressenyes-de-google",
+        "fr": "qr-code-avis-google",
+        "en": "google-review-qr-code"
+      }
+    },
+    {
+      "id": "when",
+      "img": "guide-when.jpg",
+      "slugs": {
+        "es": "cuando-pedir-una-resena",
+        "ca": "quan-demanar-una-ressenya",
+        "fr": "quand-demander-un-avis",
+        "en": "when-to-ask-for-a-review"
+      }
+    },
+    {
+      "id": "volume",
+      "img": "guide-volume.jpg",
+      "slugs": {
+        "es": "por-que-cuenta-el-numero-de-resenas",
+        "ca": "per-que-compta-el-nombre-de-ressenyes",
+        "fr": "pourquoi-le-nombre-davis-compte",
+        "en": "why-review-count-matters"
+      }
+    }
+  ]
+}

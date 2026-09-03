@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 
 const root = dirname(fileURLToPath(import.meta.url));
 const contentDir = join(root, "content");
+const GUIDES = JSON.parse(readFileSync(join(contentDir, "guides.json"), "utf8")).guides;
 const srcDir = join(root, "src");
 const assetDir = join(root, "assets");
 const outDir = join(root, "..", "docs");
@@ -19,6 +20,8 @@ const LOCALES = {
       how: "como-funciona",
       research: "investigacion",
       about: "nosotros",
+      services: "servicios",
+      guides: "guias",
       subscribe: "suscribirse",
       account: "cuenta",
       privacy: "privacidad",
@@ -34,6 +37,8 @@ const LOCALES = {
       how: "com-funciona",
       research: "recerca",
       about: "nosaltres",
+      services: "serveis",
+      guides: "guies",
       subscribe: "subscriure",
       account: "compte",
       privacy: "privadesa",
@@ -49,6 +54,8 @@ const LOCALES = {
       how: "comment-ca-marche",
       research: "recherche",
       about: "a-propos",
+      services: "services",
+      guides: "guides",
       subscribe: "s-abonner",
       account: "compte",
       privacy: "confidentialite",
@@ -64,6 +71,8 @@ const LOCALES = {
       how: "how-it-works",
       research: "research",
       about: "about",
+      services: "services",
+      guides: "guides",
       subscribe: "subscribe",
       account: "account",
       privacy: "privacy",
@@ -139,7 +148,7 @@ function hreflangLinks(page) {
 function jsonLd(locale, page, copy, config) {
   const org = {
     "@type": ["Organization", "LocalBusiness"],
-    name: "BabyRock Social",
+    name: "BabyRock",
     url: SITE + "/",
     email: config.email,
     image: `${SITE}/assets/og.jpg`,
@@ -164,7 +173,7 @@ function jsonLd(locale, page, copy, config) {
     });
     graph.push({
       "@type": "FAQPage",
-      mainEntity: [1, 2, 3, 4, 5, 6].map((i) => ({
+      mainEntity: [1, 2, 3, 4, 5, 6, 7].map((i) => ({
         "@type": "Question",
         name: t(copy, `home.faq_${i}_q`),
         acceptedAnswer: { "@type": "Answer", text: t(copy, `home.faq_${i}_a`) },
@@ -186,11 +195,12 @@ function jsonLd(locale, page, copy, config) {
   })}</script>`;
 }
 
-function langSwitcher(locale, page, depth) {
+function langSwitcher(locale, page, depth, hrefFor) {
   return Object.keys(LOCALES)
     .map((code) => {
       const current = code === locale ? ' aria-current="true"' : "";
-      return `<a href="${href(code, page, depth)}"${current}>${LOCALES[code].name}</a>`;
+      const url = hrefFor ? hrefFor(code, depth) : href(code, page, depth);
+      return `<a href="${url}"${current}>${LOCALES[code].name}</a>`;
     })
     .join("");
 }
@@ -201,6 +211,8 @@ function nav(locale, page, copy, depth, config) {
     return `<a href="${href(locale, slugKey, depth)}"${current}>${esc(t(copy, key))}</a>`;
   };
   return `
+    ${item("nav.services", "services")}
+    ${item("nav.guides", "guides")}
     ${item("nav.simulator", "simulator")}
     ${item("nav.how", "how")}
     ${item("nav.research", "research")}
@@ -273,7 +285,7 @@ function trustBar(copy, config) {
   return `<div class="trust-wrap"><p class="wrap trust-bar" data-trust-ticker data-trust-base="${n}">${html}</p></div>`;
 }
 
-function shell({ locale, page, copy, config, depth, title, description, body }) {
+function shell({ locale, page, copy, config, depth, title, description, body, langHref }) {
   const { css, js } = cssJs(depth);
   const navHtml = nav(locale, page, copy, depth, config);
   const wa = waLink(config, t(copy, "wa.prefill"));
@@ -312,10 +324,10 @@ ${hreflangLinks(page)}
   <a class="skip" href="#main">Skip</a>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="logo" href="${href(locale, "home", depth)}">BabyRock <span>Social</span></a>
+      <a class="logo" href="${href(locale, "home", depth)}">BabyRock</a>
       <nav class="nav-links">${navHtml}</nav>
       <div class="header-actions">
-        <div class="lang">${langSwitcher(locale, page, depth)}</div>
+        <div class="lang">${langSwitcher(locale, page, depth, langHref)}</div>
         <a class="btn btn-wa" href="${wa}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "nav.whatsapp"))}</a>
         <a class="btn btn-coral" href="${href(locale, "subscribe", depth)}">${esc(t(copy, "nav.subscribe"))}</a>
         <button class="menu-toggle" type="button" data-menu aria-expanded="false" aria-label="${esc(t(copy, "nav.menu"))}"><span></span><span></span><span></span></button>
@@ -330,11 +342,13 @@ ${hreflangLinks(page)}
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
-        <p class="logo">BabyRock <span>Social</span></p>
+        <p class="logo">BabyRock</p>
         ${paras(t(copy, "footer.tagline"))}
         <p>${esc(t(copy, "footer.city"))}</p>
       </div>
       <div>
+        <p><a href="${href(locale, "services", depth)}">${esc(t(copy, "nav.services"))}</a></p>
+        <p><a href="${href(locale, "guides", depth)}">${esc(t(copy, "nav.guides"))}</a></p>
         <p><a href="${href(locale, "simulator", depth)}">${esc(t(copy, "nav.simulator"))}</a></p>
         <p><a href="${href(locale, "how", depth)}">${esc(t(copy, "nav.how"))}</a></p>
         <p><a href="${href(locale, "research", depth)}">${esc(t(copy, "nav.research"))}</a></p>
@@ -380,6 +394,27 @@ function shops(copy, depth) {
     .join("");
 }
 
+function productCards(locale, copy, config, depth) {
+  const socialCta = href(locale, "subscribe", depth);
+  const directCta = waLink(config, t(copy, "product.direct_prefill"));
+  return `<div class="product-grid">
+    <article class="product-card live">
+      <p class="product-status">${esc(t(copy, "product.social_status"))}</p>
+      <h3>${esc(t(copy, "product.social_name"))}</h3>
+      ${paras(t(copy, "product.social_body"))}
+      <p class="amount">${esc(config.priceMonth)} €</p>
+      <p class="tiny">${esc(t(copy, "product.social_price_note"))}</p>
+      <p class="cta-row"><a class="btn btn-coral" href="${socialCta}">${esc(t(copy, "product.social_cta"))}</a></p>
+    </article>
+    <article class="product-card soon">
+      <p class="product-status">${esc(t(copy, "product.direct_status"))}</p>
+      <h3>${esc(t(copy, "product.direct_name"))}</h3>
+      ${paras(t(copy, "product.direct_body"))}
+      <p class="cta-row"><a class="btn btn-ghost" href="${directCta}" target="_blank" rel="noopener">${esc(t(copy, "product.direct_cta"))}</a></p>
+    </article>
+  </div>`;
+}
+
 function compactSim(copy) {
   return `<form class="sim-card" data-sim>
     <h2>${esc(t(copy, "home.sim_title"))}</h2>
@@ -410,6 +445,14 @@ function homePage(locale, copy, config, depth) {
         </div>
       </div>
       <img class="hero-photo" src="${asset(depth, "illustrations/hero.jpg")}" alt="">
+    </div>
+  </section>
+  <section class="section" id="productos">
+    <div class="wrap">
+      <h2>${esc(t(copy, "home.products_title"))}</h2>
+      ${paras(t(copy, "home.products_lead"))}
+      ${productCards(locale, copy, config, depth)}
+      <p style="margin-top:1rem"><a href="${href(locale, "services", depth)}">${esc(t(copy, "nav.services"))}</a></p>
     </div>
   </section>
   <section class="section">
@@ -462,7 +505,7 @@ function homePage(locale, copy, config, depth) {
   <section class="section">
     <div class="wrap faq">
       <h2>${esc(t(copy, "home.faq_title"))}</h2>
-      ${[1, 2, 3, 4, 5, 6]
+      ${[1, 2, 3, 4, 5, 6, 7]
         .map(
           (i) => `<details><summary>${esc(t(copy, "home.faq_" + i + "_q"))}</summary>${paras(t(copy, "home.faq_" + i + "_a"))}</details>`
         )
@@ -598,11 +641,95 @@ function aboutPage(copy, depth) {
   </section>`;
 }
 
+function readGuide(locale, id) {
+  const p = join(contentDir, "guides", locale, `${id}.md`);
+  const fb = join(contentDir, "guides", "es", `${id}.md`);
+  return parseMd(readFileSync(existsSync(p) ? p : fb, "utf8"));
+}
+
+function guideHref(locale, id, depth) {
+  const prefix = "../".repeat(depth);
+  const index = LOCALES[locale].slugs.guides;
+  const slug = GUIDES.find((g) => g.id === id).slugs[locale];
+  return `${prefix}${locale}/${index}/${slug}/`;
+}
+
+function absGuideUrl(locale, id) {
+  const index = LOCALES[locale].slugs.guides;
+  const slug = GUIDES.find((g) => g.id === id).slugs[locale];
+  return `${SITE}/${locale}/${index}/${slug}/`;
+}
+
+function sourceList(raw) {
+  return `<ul class="sources">${String(raw || "")
+    .split(/\n/)
+    .map((line) => line.replace(/^\s*-\s*/, "").trim())
+    .filter(Boolean)
+    .map((line) => {
+      const m = line.match(/^\[(.+)\]\((https?:\/\/[^)]+)\)\s*(.*)$/);
+      if (!m) return `<li>${esc(line)}</li>`;
+      const rest = m[3] ? ` ${esc(m[3])}` : "";
+      return `<li><a href="${esc(m[2])}" rel="noopener" target="_blank">${esc(m[1])}</a>${rest}</li>`;
+    })
+    .join("")}</ul>`;
+}
+
+function guidesIndexPage(locale, copy, config, depth) {
+  const cards = GUIDES.map((g) => {
+    const gcopy = readGuide(locale, g.id);
+    return `<article class="guide-card"><a href="${guideHref(locale, g.id, depth)}">
+      <img src="${asset(depth, "illustrations/" + g.img)}" alt="" loading="lazy">
+      <h3>${esc(gcopy.title)}</h3>
+      <p>${esc(gcopy.dek)}</p>
+    </a></article>`;
+  }).join("");
+  return `
+  <section class="wrap section">
+    <h1>${esc(t(copy, "guides.headline"))}</h1>
+    <div class="lead">${paras(t(copy, "guides.lead"))}</div>
+    <div class="guide-grid">${cards}</div>
+  </section>`;
+}
+
+function guideArticlePage(locale, copy, config, depth, id) {
+  const g = GUIDES.find((x) => x.id === id);
+  const gcopy = readGuide(locale, id);
+  const wa = waLink(config, gcopy.wa_prefill);
+  return `
+  <article class="wrap section guide-article">
+    <p class="kicker"><a href="${href(locale, "guides", depth)}">${esc(t(copy, "nav.guides"))}</a></p>
+    <h1>${esc(gcopy.title)}</h1>
+    <div class="lead">${paras(gcopy.dek)}</div>
+    <figure class="guide-hero"><img src="${asset(depth, "illustrations/" + g.img)}" alt=""></figure>
+    <aside class="impact-box">
+      <p class="tiny">${esc(gcopy.impact_label)}</p>
+      ${paras(gcopy.impact)}
+    </aside>
+    ${paras(gcopy.body)}
+    <h2>${esc(t(copy, "guides.sources"))}</h2>
+    ${sourceList(gcopy.sources)}
+    <p class="cta-row" style="margin-top:1.5rem">
+      <a class="btn btn-wa" href="${wa}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "nav.whatsapp"))} Rosalia</a>
+      <a class="btn btn-coral" href="${href(locale, "subscribe", depth)}">${esc(t(copy, "home.cta_sub"))}</a>
+    </p>
+  </article>`;
+}
+
+function servicesPage(locale, copy, config, depth) {
+  return `
+  <section class="wrap section">
+    <h1>${esc(t(copy, "products.headline"))}</h1>
+    <div class="lead">${paras(t(copy, "products.lead"))}</div>
+    ${productCards(locale, copy, config, depth)}
+  </section>`;
+}
+
 function subscribePage(locale, copy, config, depth) {
   return `
   <section class="wrap section">
     <h1>${esc(t(copy, "sub.headline"))}</h1>
     <div class="lead">${paras(t(copy, "sub.lead"))}</div>
+    <p class="note">${esc(t(copy, "product.social_name"))} — ${esc(t(copy, "product.social_status"))}. ${esc(t(copy, "product.direct_name"))}: ${esc(t(copy, "product.direct_status"))}.</p>
     <div class="price-grid">
       <article class="price-card"><h3>${esc(t(copy, "home.price_month_name"))}</h3><p class="amount">${esc(config.priceMonth)} €</p><p>${esc(t(copy, "sub.month"))}</p></article>
       <article class="price-card featured"><h3>${esc(t(copy, "home.price_year_name"))}</h3><p class="amount">${esc(config.priceYear)} €</p><p>${esc(t(copy, "sub.year"))}</p></article>
@@ -688,10 +815,11 @@ writeFileSync(
   join(outDir, "robots.txt"),
   `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`
 );
-const indexable = ["home", "simulator", "how", "research", "about", "subscribe", "privacy", "terms"];
-const sitemapUrls = Object.keys(LOCALES).flatMap((locale) =>
-  indexable.map((page) => `  <url><loc>${absUrl(locale, page)}</loc></url>`)
-);
+const indexable = ["home", "services", "guides", "simulator", "how", "research", "about", "subscribe", "privacy", "terms"];
+const sitemapUrls = Object.keys(LOCALES).flatMap((locale) => [
+  ...indexable.map((page) => `  <url><loc>${absUrl(locale, page)}</loc></url>`),
+  ...GUIDES.map((g) => `  <url><loc>${absGuideUrl(locale, g.id)}</loc></url>`),
+]);
 writeFileSync(
   join(outDir, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapUrls.join("\n")}\n</urlset>\n`
@@ -701,6 +829,8 @@ for (const locale of Object.keys(LOCALES)) {
   const copy = parseMd(readFileSync(join(contentDir, `${locale}.md`), "utf8"));
   const pages = {
     home: { depth: 1, body: homePage(locale, copy, config, 1) },
+    services: { depth: 2, body: servicesPage(locale, copy, config, 2) },
+    guides: { depth: 2, body: guidesIndexPage(locale, copy, config, 2) },
     simulator: { depth: 2, body: simulatorPage(locale, copy, 2) },
     how: { depth: 2, body: howPage(copy, 2) },
     research: { depth: 2, body: researchPage(copy) },
@@ -719,9 +849,28 @@ for (const locale of Object.keys(LOCALES)) {
         copy,
         config,
         depth: meta.depth,
-        title: t(copy, "meta.title"),
-        description: t(copy, "meta.description"),
+        title: page === "services" ? `${t(copy, "products.headline")} | BabyRock` : t(copy, "meta.title"),
+        description: page === "services" ? t(copy, "products.lead") : t(copy, "meta.description"),
         body: meta.body,
+      })
+    );
+  }
+  for (const g of GUIDES) {
+    const gcopy = readGuide(locale, g.id);
+    const slug = g.slugs[locale];
+    const index = LOCALES[locale].slugs.guides;
+    write(
+      join(outDir, locale, index, slug, "index.html"),
+      shell({
+        locale,
+        page: "guides",
+        copy,
+        config,
+        depth: 3,
+        title: `${gcopy.title} | BabyRock`,
+        description: gcopy.dek,
+        body: guideArticlePage(locale, copy, config, 3, g.id),
+        langHref: (code) => guideHref(code, g.id, 3),
       })
     );
   }
@@ -734,7 +883,7 @@ write(
 <head>
   <meta charset="utf-8">
   <title>BabyRock Social</title>
-  <meta name="description" content="Thoughtful Google review replies for small businesses. From €89/month.">
+  <meta name="description" content="Thoughtful Google review replies for small businesses. From €99/month.">
   <link rel="canonical" href="${SITE}/en/">
   <link rel="alternate" hreflang="en" href="${SITE}/en/">
   <link rel="alternate" hreflang="es" href="${SITE}/es/">

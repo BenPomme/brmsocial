@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.babyrock.ai/es/</loc></url>
+  <url><loc>https://www.babyrock.ai/es/servicios/</loc></url>
+  <url><loc>https://www.babyrock.ai/es/guias/</loc></url>
   <url><loc>https://www.babyrock.ai/es/simulador/</loc></url>
   <url><loc>https://www.babyrock.ai/es/como-funciona/</loc></url>
   <url><loc>https://www.babyrock.ai/es/investigacion/</loc></url>
@@ -8,7 +10,14 @@
   <url><loc>https://www.babyrock.ai/es/suscribirse/</loc></url>
   <url><loc>https://www.babyrock.ai/es/privacidad/</loc></url>
   <url><loc>https://www.babyrock.ai/es/condiciones/</loc></url>
+  <url><loc>https://www.babyrock.ai/es/guias/responder-todas-las-resenas/</loc></url>
+  <url><loc>https://www.babyrock.ai/es/guias/pedir-resenas-sin-romper-las-reglas/</loc></url>
+  <url><loc>https://www.babyrock.ai/es/guias/codigo-qr-para-resenas-de-google/</loc></url>
+  <url><loc>https://www.babyrock.ai/es/guias/cuando-pedir-una-resena/</loc></url>
+  <url><loc>https://www.babyrock.ai/es/guias/por-que-cuenta-el-numero-de-resenas/</loc></url>
   <url><loc>https://www.babyrock.ai/ca/</loc></url>
+  <url><loc>https://www.babyrock.ai/ca/serveis/</loc></url>
+  <url><loc>https://www.babyrock.ai/ca/guies/</loc></url>
   <url><loc>https://www.babyrock.ai/ca/simulador/</loc></url>
   <url><loc>https://www.babyrock.ai/ca/com-funciona/</loc></url>
   <url><loc>https://www.babyrock.ai/ca/recerca/</loc></url>
@@ -16,7 +25,14 @@
   <url><loc>https://www.babyrock.ai/ca/subscriure/</loc></url>
   <url><loc>https://www.babyrock.ai/ca/privadesa/</loc></url>
   <url><loc>https://www.babyrock.ai/ca/condicions/</loc></url>
+  <url><loc>https://www.babyrock.ai/ca/guies/respondre-totes-les-ressenyes/</loc></url>
+  <url><loc>https://www.babyrock.ai/ca/guies/demanar-ressenyes-sense-trencar-les-regles/</loc></url>
+  <url><loc>https://www.babyrock.ai/ca/guies/codi-qr-per-a-ressenyes-de-google/</loc></url>
+  <url><loc>https://www.babyrock.ai/ca/guies/quan-demanar-una-ressenya/</loc></url>
+  <url><loc>https://www.babyrock.ai/ca/guies/per-que-compta-el-nombre-de-ressenyes/</loc></url>
   <url><loc>https://www.babyrock.ai/fr/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/services/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/guides/</loc></url>
   <url><loc>https://www.babyrock.ai/fr/simulateur/</loc></url>
   <url><loc>https://www.babyrock.ai/fr/comment-ca-marche/</loc></url>
   <url><loc>https://www.babyrock.ai/fr/recherche/</loc></url>
@@ -24,7 +40,14 @@
   <url><loc>https://www.babyrock.ai/fr/s-abonner/</loc></url>
   <url><loc>https://www.babyrock.ai/fr/confidentialite/</loc></url>
   <url><loc>https://www.babyrock.ai/fr/conditions/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/guides/repondre-a-tous-les-avis/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/guides/demander-des-avis-sans-tricher/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/guides/qr-code-avis-google/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/guides/quand-demander-un-avis/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/guides/pourquoi-le-nombre-davis-compte/</loc></url>
   <url><loc>https://www.babyrock.ai/en/</loc></url>
+  <url><loc>https://www.babyrock.ai/en/services/</loc></url>
+  <url><loc>https://www.babyrock.ai/en/guides/</loc></url>
   <url><loc>https://www.babyrock.ai/en/simulator/</loc></url>
   <url><loc>https://www.babyrock.ai/en/how-it-works/</loc></url>
   <url><loc>https://www.babyrock.ai/en/research/</loc></url>
@@ -32,4 +55,9 @@
   <url><loc>https://www.babyrock.ai/en/subscribe/</loc></url>
   <url><loc>https://www.babyrock.ai/en/privacy/</loc></url>
   <url><loc>https://www.babyrock.ai/en/terms/</loc></url>
+  <url><loc>https://www.babyrock.ai/en/guides/reply-to-every-review/</loc></url>
+  <url><loc>https://www.babyrock.ai/en/guides/ask-for-reviews-without-breaking-the-rules/</loc></url>
+  <url><loc>https://www.babyrock.ai/en/guides/google-review-qr-code/</loc></url>
+  <url><loc>https://www.babyrock.ai/en/guides/when-to-ask-for-a-review/</loc></url>
+  <url><loc>https://www.babyrock.ai/en/guides/why-review-count-matters/</loc></url>
 </urlset>
