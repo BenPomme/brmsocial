@@ -1,28 +1,30 @@
 ## title
-Cuándo pedir una reseña
+Cuándo pedir una reseña de Google
 
 ## dek
-El mismo día o el siguiente. Más tarde, la visita se olvida. Pedirlo en la puerta con prisa suele salir peor que un QR en el ticket.
+Pida mientras la visita sigue reciente: el mismo día o el siguiente, en el ticket o en un mensaje que ya envíe. No insista en las estrellas mientras siguen comiendo o en la silla.
 
 ## impact_label
-Impacto estimado
+Por qué importa
 
 ## impact
-En la encuesta BrightLocal 2025, **el 48 % de los clientes de comida y bebida esperan que les pidan la reseña el mismo día o al día siguiente**. El 96 % se dice dispuesto a escribir una si se la piden de forma razonable.
+En la encuesta local de BrightLocal de 2025, cerca de la mitad de los clientes de comida y bebida dijeron que esperan la petición el mismo día o al día siguiente. Casi todos dijeron que se plantearían escribir una reseña si la petición es razonable. Esperar semanas suele significar que ya han olvidado la visita.
 
 ## body
-El momento bueno es cuando la visita ya terminó: la cuenta, el SMS de «está listo», el día después de un corte. No en la mesa mientras aún comen, y no tres semanas más tarde.
+La ventana útil es después de pagar y salir, o al llevarse el ticket. Las sugerencias de Google son un QR en el recibo, un correo de agradecimiento o el final de un chat que ya tenga con ellos.
 
-Pídalo una vez. El mismo texto para todos. Sin «si te ha gustado».
+Una frase en la puerta, con prisa, se olvida y se convierte fácil en presión. Google no quiere que se exija ni se empuje a nadie a poner una nota mientras sigue en el local. Un código que pueden escanear después hace el trabajo sin el empujón.
 
-Si el servicio fue un desastre, pida igual el enlace de Google, o no pida nada a nadie ese día. Lo que no puede hacer es pedir solo a las mesas contentas.
+Pida una vez. Use la misma frase con todos. No diga «si le ha gustado». Esa frase ya es un filtro, aunque no lo pretendiera.
 
-Un QR en el ticket trabaja cuando usted ya no está. Un recado oral en la puerta se olvida. Combine: una frase al cobrar y el código en el papel.
+Si el servicio fue un desastre, puede dejar el enlace de Google en el ticket, o no pedir nada ese día. Lo que no puede hacer es ir solo a las mesas contentas.
+
+En la mayoría de comercios funciona un par simple: una frase tranquila al pagar, y el QR ya impreso en el papel. Deciden en la parada del bus, no bajo su mirada.
 
 ## sources
-- [BrightLocal Local Consumer Review Survey 2025](https://www.brightlocal.com/research/local-consumer-review-survey-2025/)
+- [Encuesta local de reseñas BrightLocal 2025](https://www.brightlocal.com/research/local-consumer-review-survey-2025/)
 - [Google — enlace o QR de reseña](https://support.google.com/business/answer/16816815)
-- [Política de Google sobre cómo se piden las reseñas](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google — cómo se pueden pedir reseñas](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill
-Hola Rosalia, he leído la guía de cuándo pedir una reseña.
+Hola Rosalia, he leído la guía sobre cuándo pedir una reseña.

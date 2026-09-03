@@ -88,10 +88,10 @@ Calculate the expected impact for you
 Get my reviews handled
 
 ## guides.headline
-Guides for the shop
+Guides for your Google reviews
 
 ## guides.lead
-Short pieces to print or forward. They are not the BabyRock Social service: they are habits you can apply yourself. Each one says where the number comes from.
+Practical habits you can use in the shop this week: how to reply, how to ask, and how to stay inside Google’s rules. They work if you do it yourself. The sources are at the bottom of each piece.
 
 ## guides.sources
 Sources

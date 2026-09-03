@@ -88,10 +88,10 @@ Calcule el impacto esperado para usted
 Que se ocupen de mis reseñas
 
 ## guides.headline
-Guías para el comercio
+Guías para sus reseñas de Google
 
 ## guides.lead
-Textos cortos, para imprimir o reenviar. No son el servicio BabyRock Social: son hábitos que puede aplicar usted. Cada pieza cita de dónde sale el número.
+Hábitos prácticos para el comercio esta semana: cómo responder, cómo pedir y cómo quedarse dentro de las normas de Google. Valen si lo hace usted. Las fuentes están al final de cada pieza.
 
 ## guides.sources
 Fuentes

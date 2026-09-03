@@ -88,10 +88,10 @@ Calculez l’impact attendu pour vous
 Que l’on s’occupe de mes avis
 
 ## guides.headline
-Guides pour le commerce
+Guides pour vos avis Google
 
 ## guides.lead
-Textes courts, à imprimer ou à faire suivre. Ce n’est pas l’abonnement BabyRock Social : ce sont des gestes que vous pouvez faire. Chaque chiffre dit d’où il vient.
+Des habitudes concrètes pour le commerce cette semaine : comment répondre, comment demander, et comment rester dans les règles de Google. Elles marchent si vous le faites vous-même. Les sources sont en bas de chaque texte.
 
 ## guides.sources
 Sources

@@ -1,28 +1,30 @@
 ## title
-Pourquoi le nombre d’avis compte, pas seulement la note
+Pourquoi le nombre d’avis Google compte, pas seulement les étoiles
 
 ## dek
-Une fiche avec 40 avis récents et un 4,5 convainc plus qu’un 4,9 avec huit opinions de 2019. Google et les clients regardent les deux.
+Une fiche avec des dizaines d’avis récents et un 4,5 convainc souvent plus qu’un 4,9 avec huit opinions de 2019. Les clients et Google regardent si la page est vivante.
 
 ## impact_label
-Impact estimé
+Pourquoi c’est important
 
 ## impact
-Dans l’étude SOCi, **tous les 10 avis Google supplémentaires se sont associés à +2,8 % de conversion de la fiche**. Répondre à tous, plutôt que de ne pas répondre, s’est associé à **+16,4 %** de cette conversion. Ce sont de grandes corrélations ; ne les additionnez pas n’importe comment et ne les vendez pas comme un contrat.
+La moyenne d’étoiles bouge lentement. Le compte, et la date du dernier avis, se voient en une seconde. Les indépendants vivent de cela plus que les chaînes. Une étude de prestataire sur des millions d’avis Google (SOCi) a trouvé que les fiches avec plus d’avis convertissaient aussi plus de ceux qui les voyaient. Prenez-le comme une corrélation, pas comme un contrat.
 
 ## body
-La note bouge lentement. Le nombre et la date du dernier avis se voient en une seconde. Un indépendant vit de cela plus qu’une chaîne.
+Vous ne choisissez pas qui écrit. Vous choisissez si la fiche a l’air à jour.
 
-Vous ne contrôlez pas qui écrit. Vous contrôlez si vous répondez, et si vous demandez de façon propre (QR, même phrase pour tout le monde).
+Répondez à ce qui est déjà là. Cette habitude, à elle seule, est associée dans la recherche à plus d’avis ensuite, parce qu’on voit que quelqu’un est à la maison.
 
-Plus d’avis ne remplacent pas un meilleur plat. Ils évitent qu’une seule 2★ de 2024 soit la seule chose récente sur la fiche.
+Demandez de nouveaux avis de façon équitable : le même QR, la même phrase, pas de cadeau. Le volume qui ne vient que des clients 5 étoiles est le volume que Google ne veut pas.
 
-BabyRock Social s’occupe des réponses. Le volume vient de ceux qui visitent et de ceux à qui vous le demandez. Les deux leviers ne sont pas le même produit.
+Un seul avis 2 étoiles du mois dernier, seul comme seul texte récent, fait plus de mal que la même note sur une page qui a aussi celles de cette semaine. Plus d’avis ne sauveront pas une mauvaise assiette. Ils empêcheront qu’un mauvais après-midi soit toute l’histoire qu’un inconnu lit.
+
+Regardez votre fiche comme un nouveau client : date du dernier avis, dernière réponse, mélange des notes. Si le dernier mot public date de l’année dernière, c’est le travail de cette semaine.
 
 ## sources
-- [SOCi — répondre et le volume d’avis, conversion de la fiche](https://www.soci.ai/blog/google-review-response-study/)
-- [Luca, HBS — les indépendants, pas les chaînes](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
+- [SOCi — volume d’avis et conversion de la fiche](https://www.soci.ai/blog/google-review-response-study/)
+- [Luca, Harvard Business School — indépendants et notes](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
 - [Proserpio et Zervas — plus d’avis quand il y a des réponses](https://doi.org/10.1287/mksc.2017.1043)
 
 ## wa_prefill
-Bonjour Rosalia, j’ai lu le guide sur le nombre d’avis.
+Bonjour Rosalia, j’ai lu le guide sur l’importance du nombre d’avis.

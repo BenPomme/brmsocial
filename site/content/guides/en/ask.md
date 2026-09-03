@@ -1,27 +1,31 @@
 ## title
-How to ask for reviews without breaking Google’s rules
+How to ask for Google reviews without breaking the rules
 
 ## dek
-You may ask everyone, equally, for a genuine review. You may not filter the good ones, pay for stars, or lean on people in the shop.
+You may invite every customer, in the same way, to leave a genuine review. You may not pay for stars, filter the happy ones onto Google, or lean on people while they are still in the chair.
 
 ## impact_label
-Estimated impact
+Why it matters
 
 ## impact
-Asking does not raise the rating by magic. It raises **volume**. In a hotel study, starting to manage reputation went with **12 % more reviews**. Recent volume shows on the listing. A funnel that only sends 5-star guests to Google is exactly what Google forbids.
+Google will remove reviews that were bought, gambled, or steered. A listing that only ever collects 5-star traffic also looks odd to the next customer. Fair asking raises volume. Volume is what makes the listing look alive.
 
 ## body
-Allowed: the same Google link or QR for everyone, no reward, no “leave us a 5.” A line at the end of the visit is enough.
+The legal, simple version is one sentence and one link, used with everyone.
 
-Forbidden: an in-house 1–5 survey that only opens Google after a 4 or 5. A coffee for a review. A sign that asks for five stars. Staff quotas. Asking them to name an employee.
+Google lets you create a review link and a QR code from your Business Profile, on a computer. You can put that code on the receipt, on a card at the counter, or at the end of a thank-you message you already send. The customer opens Google and writes if they want to.
 
-If it went badly, that person may still go to Google. Private feedback is fine. Hiding the public link is not.
+What you must not do is offer a coffee, a discount, or a prize in exchange for a review, or for taking a bad one down. You must not run an in-house 1-to-5 survey that only opens Google after a 4 or a 5. You must not put up a sign that asks for five stars. You must not give staff a quota, or ask people to name an employee in the text.
 
-BabyRock Social replies to reviews that already exist. It does not message your customers to ask for more. That, if it comes, is another product. Until then you can ask by hand, fairly.
+Google also says not to pressure someone for a rating while they are still on the premises. A printed QR they can use later is different from hovering at the table.
+
+If the visit went badly, that person may still go to Google. You can take the complaint in private. Hiding the public link from them is the filter Google forbids.
+
+Use the same wording on a quiet Tuesday and on Saturday night. “If you have a moment, here is our Google page” is enough. “If you enjoyed it, leave us a 5” is not.
 
 ## sources
-- [Google policy on fake reviews, incentives and selective solicitation](https://support.google.com/contributionpolicy/answer/7400114)
-- [Create a review link or QR](https://support.google.com/business/answer/16816815)
+- [Google — fake reviews, incentives and selective asking](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google — create a review link or QR code](https://support.google.com/business/answer/16816815)
 - [Proserpio and Zervas — more reviews when the business replies](https://doi.org/10.1287/mksc.2017.1043)
 
 ## wa_prefill

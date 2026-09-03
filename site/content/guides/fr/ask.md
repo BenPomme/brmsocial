@@ -1,28 +1,32 @@
 ## title
-Comment demander des avis sans enfreindre les règles de Google
+Comment demander des avis Google sans casser les règles
 
 ## dek
-Vous pouvez demander un vrai avis, à tout le monde de la même façon. Vous ne pouvez pas filtrer les bons, ni payer pour des étoiles, ni faire pression dans le commerce.
+Vous pouvez inviter tous les clients, de la même façon, à laisser un avis sincère. Vous ne pouvez pas payer des étoiles, n’envoyer vers Google que les contents, ni insister pendant qu’ils sont encore dans le fauteuil.
 
 ## impact_label
-Impact estimé
+Pourquoi c’est important
 
 ## impact
-Demander des avis ne fait pas monter la note comme par magie. Cela fait monter le **volume**. Dans une étude sur des hôtels, commencer à gérer la réputation s’est associé à **12 % d’avis en plus**. Davantage d’avis récents pèsent sur la fiche. Un entonnoir « seulement si c’était un 5 » est exactement ce que Google interdit.
+Google retire les avis achetés, orientés ou truqués. Une fiche qui ne collecte que du 5 étoiles paraît aussi bizarre au client suivant. Une demande équitable fait monter le volume. Le volume, c’est ce qui donne l’impression que la fiche est vivante.
 
 ## body
-Ce qui est permis : le même lien ou code QR Google pour tout le monde, sans récompense, sans dire « laissez-nous un 5 ». Un « si vous voulez, votre avis sur Google nous aide » à la fin d’une visite suffit.
+La version légale et simple, c’est une phrase et un lien, identiques pour tout le monde.
 
-Ce qui est interdit : un sondage interne de 1 à 5 qui n’envoie vers Google que ceux qui ont mis 4 ou 5. Un café en échange d’un avis. Une affiche qui demande cinq étoiles. Des quotas au personnel. Demander de nommer un employé.
+Google vous laisse créer un lien d’avis et un QR code depuis la fiche, sur un ordinateur. Vous pouvez mettre ce code sur le ticket, sur une carte au comptoir, ou à la fin d’un message de remerciement que vous envoyez déjà. Le client ouvre Google et écrit s’il veut.
 
-Si quelque chose s’est mal passé, laissez aussi cette personne aller sur Google. Si elle préfère parler en privé, elle peut, mais ne cachez pas le lien public.
+Ce qu’il ne faut pas faire : offrir un café, une remise ou un cadeau en échange d’un avis, ou pour faire retirer un avis négatif. Il ne faut pas non plus une enquête interne de 1 à 5 qui n’ouvre Google qu’après un 4 ou un 5. Ni une affiche qui demande cinq étoiles. Ni un quota pour le personnel, ni demander qu’on cite un employé dans le texte.
 
-BabyRock Social répond aux avis qui existent déjà. Il n’envoie pas de messages à vos clients pour en demander davantage. Cela, s’il arrive, est un autre produit. En attendant, vous pouvez les demander à la main, à égalité.
+Google dit aussi de ne pas presser quelqu’un pour une note tant qu’il est encore sur place. Un QR imprimé qu’on peut utiliser plus tard n’est pas la même chose qu’insister à table.
+
+Si la visite s’est mal passée, cette personne peut quand même aller sur Google. Vous pouvez prendre la plainte en privé. Lui cacher le lien public, c’est le filtre que Google interdit.
+
+Servez-vous du même texte un mardi calme et un samedi soir. « Si vous avez un moment, voici notre page Google » suffit. « Si vous avez aimé, laissez-nous un 5 » ne suffit pas, et n’est pas permis.
 
 ## sources
-- [Politique de Google sur les faux avis, les incitations et la demande sélective](https://support.google.com/contributionpolicy/answer/7400114)
-- [Comment créer un lien ou un QR d’avis](https://support.google.com/business/answer/16816815)
+- [Google — faux avis, incitations et demandes sélectives](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google — créer un lien ou un QR d’avis](https://support.google.com/business/answer/16816815)
 - [Proserpio et Zervas — plus d’avis quand le commerce répond](https://doi.org/10.1287/mksc.2017.1043)
 
 ## wa_prefill
-Bonjour Rosalia, j’ai lu le guide pour demander des avis sans enfreindre les règles.
+Bonjour Rosalia, j’ai lu le guide pour demander des avis sans casser les règles.

@@ -1,28 +1,30 @@
 ## title
-Quan demanar una ressenya
+Quan demanar una ressenya de Google
 
 ## dek
-El mateix dia o el següent. Més tard, la visita s’oblida. Demanar-ho a la porta amb pressa sol sortir pitjor que un QR al tiquet.
+Demani mentre la visita encara és recent: el mateix dia o l’endemà, al tiquet o en un missatge que ja enviï. No insisteixi en les estrelles mentre encara mengen o són a la cadira.
 
 ## impact_label
-Impacte estimat
+Per què importa
 
 ## impact
-A l’enquesta BrightLocal 2025, **el 48 % dels clients de menjar i beure esperen que els demanin la ressenya el mateix dia o al dia següent**. El 96 % es diu disposat a escriure’n una si els la demanen de forma raonable.
+A l’enquesta local de BrightLocal del 2025, prop de la meitat dels clients de menjar i beure van dir que esperen la petició el mateix dia o l’endemà. Gairebé tots van dir que es plantejarien escriure una ressenya si la petició és raonable. Esperar setmanes sol voler dir que ja han oblidat la visita.
 
 ## body
-El moment bo és quan la visita ja s’ha acabat: el compte, l’SMS de «està a punt», el dia després d’un tall. No a taula mentre encara mengen, i no tres setmanes més tard.
+La finestra útil és després de pagar i sortir, o en emportar-se el tiquet. Els suggeriments de Google són un QR al rebut, un correu d’agraïment o el final d’un xat que ja tingui amb ells.
 
-Demaneu-ho una vegada. El mateix text per a tothom. Sense «si t’ha agradat».
+Una frase a la porta, amb pressa, s’oblida i es converteix fàcil en pressió. Google no vol que s’exigeixi ni s’empenyi ningú a posar una nota mentre encara és al local. Un codi que poden escanejar després fa la feina sense l’empenta.
 
-Si el servei ha estat un desastre, demaneu igualment l’enllaç de Google, o no demaneu res a ningú aquell dia. El que no podeu fer és demanar només a les taules contentes.
+Demani una vegada. Faci servir la mateixa frase amb tothom. No digui «si li ha agradat». Aquesta frase ja és un filtre, encara que no ho pretengués.
 
-Un QR al tiquet funciona quan vosaltres ja no hi sou. Un missatge oral a la porta s’oblida. Combineu: una frase en cobrar i el codi al paper.
+Si el servei va ser un desastre, pot deixar l’enllaç de Google al tiquet, o no demanar res aquell dia. El que no pot fer és anar només a les taules contentes.
+
+A la majoria de comerços funciona un parell simple: una frase tranquil·la en pagar, i el QR ja imprès al paper. Decideixen a la parada del bus, no sota la seva mirada.
 
 ## sources
-- [BrightLocal Local Consumer Review Survey 2025](https://www.brightlocal.com/research/local-consumer-review-survey-2025/)
+- [Enquesta local de ressenyes BrightLocal 2025](https://www.brightlocal.com/research/local-consumer-review-survey-2025/)
 - [Google — enllaç o QR de ressenya](https://support.google.com/business/answer/16816815)
-- [Política de Google sobre com es demanen les ressenyes](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google — com es poden demanar ressenyes](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill
-Hola Rosalia, he llegit la guia de quan demanar una ressenya.
+Hola Rosalia, he llegit la guia sobre quan demanar una ressenya.

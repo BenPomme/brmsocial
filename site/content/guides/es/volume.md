@@ -1,28 +1,30 @@
 ## title
-Por qué cuenta el número de reseñas, no solo la nota
+Por qué cuenta el número de reseñas de Google, no solo las estrellas
 
 ## dek
-Una ficha con 40 reseñas recientes y un 4,5 convence más que un 4,9 con ocho opiniones de 2019. Google y los clientes miran las dos cosas.
+Una ficha con decenas de reseñas recientes y un 4,5 suele convencer más que un 4,9 con ocho opiniones de 2019. Los clientes y Google miran si la página está viva.
 
 ## impact_label
-Impacto estimado
+Por qué importa
 
 ## impact
-En el estudio SOCi, **cada 10 reseñas de Google adicionales se asociaron con un +2,8 % de conversión de la ficha**. Responder a todas, frente a no responder, se asoció con un **+16,4 %** de esa conversión. Son correlaciones grandes; no las sume a lo loco ni las venda como contrato.
+La media de estrellas se mueve despacio. El recuento, y la fecha de la última reseña, se ven en un segundo. Los independientes viven de eso más que las cadenas. Un estudio de proveedor sobre millones de reseñas de Google (SOCi) encontró que las fichas con más reseñas también convertían a más de quienes las veían. Tómelo como una correlación, no como un contrato.
 
 ## body
-La nota se mueve despacio. El recuento y la fecha de la última reseña se ven en un segundo. Un independiente vive de eso más que una cadena.
+Usted no elige quién escribe. Sí elige si la ficha parece actual.
 
-Usted no controla quién escribe. Controla si responde, y si pide de forma limpia (QR, misma frase para todos).
+Responda lo que ya está ahí. Ese hábito, por sí solo, se asocia en la investigación con más reseñas después, porque se ve que hay alguien al otro lado.
 
-Más reseñas no sustituyen un plato mejor. Sí evitan que una sola 2★ de 2024 sea lo único reciente en la ficha.
+Pida reseñas nuevas con equidad: el mismo QR, la misma frase, sin premio. El volumen que solo sale de clientes de 5 estrellas es el volumen que Google no quiere.
 
-BabyRock Social se ocupa de las respuestas. El volumen lo pone quien visita y a quien se lo piden ustedes. Las dos palancas no son el mismo producto.
+Una sola reseña de 2 estrellas del mes pasado, sola como único texto reciente, hace más daño que la misma nota en una página que también tiene las de esta semana. Más reseñas no salvan un mal plato. Sí evitan que una mala tarde sea toda la historia que lee un desconocido.
+
+Mire su ficha como la miraría un cliente nuevo: fecha de la última reseña, última respuesta, mezcla de notas. Si la última palabra pública es del año pasado, ese es el trabajo de esta semana.
 
 ## sources
-- [SOCi — responder y el volumen de reseñas, conversión de la ficha](https://www.soci.ai/blog/google-review-response-study/)
-- [Luca, HBS — independientes, no cadenas](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
+- [SOCi — volumen de reseñas y conversión de la ficha](https://www.soci.ai/blog/google-review-response-study/)
+- [Luca, Harvard Business School — independientes y notas](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
 - [Proserpio y Zervas — más reseñas cuando hay respuestas](https://doi.org/10.1287/mksc.2017.1043)
 
 ## wa_prefill
-Hola Rosalia, he leído la guía sobre el número de reseñas.
+Hola Rosalia, he leído la guía sobre por qué cuenta el número de reseñas.

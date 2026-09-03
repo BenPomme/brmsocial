@@ -1,28 +1,30 @@
 ## title
-When to ask for a review
+When to ask for a Google review
 
 ## dek
-The same day or the next. Later, the visit fades. Asking in the doorway in a rush usually does worse than a QR on the ticket.
+Ask while the visit is still in mind: the same day or the next, on the ticket or in a message you already send. Do not hover for stars while they are still eating or in the chair.
 
 ## impact_label
-Estimated impact
+Why it matters
 
 ## impact
-In BrightLocal’s 2025 survey, **48 % of food and drink customers expect the review ask the same day or the next day**. 96 % say they are open to writing one if asked reasonably.
+In BrightLocal’s 2025 local review survey, about half of food and drink customers said they expect the ask the same day or the next day. Almost all said they would consider writing a review if the ask was reasonable. Waiting weeks usually means they have forgotten the visit.
 
 ## body
-The right moment is after the visit: the bill, the “it’s ready” text, the day after a haircut. Not while they are still eating, and not three weeks later.
+The useful window is after they have paid and left, or as they take the ticket. Google’s own suggestions are a QR on the receipt, a thank-you email, or the end of a chat you already have with them.
 
-Ask once. The same wording for everyone. No “if you enjoyed it.”
+A spoken line at the door, in a rush, is easy to forget and easy to turn into pressure. Google does not want merchants to require or lean on people for a rating while they are still on the premises. A code they can scan later does the job without the lean.
 
-If the service was a disaster, still share the Google link, or ask nobody that day. What you cannot do is ask only the happy tables.
+Ask once. Use the same sentence for everyone. Do not say “if you enjoyed it.” That sentence is a filter, even if you did not mean it that way.
 
-A QR on the ticket works when you have already turned away. A spoken line at the door is forgotten. Combine them: one sentence at payment and the code on the paper.
+If the service was a disaster, you can still leave the Google link on the ticket, or you can ask nobody that day. What you cannot do is walk only the happy tables.
+
+A simple pairing works in most shops: one quiet sentence at payment, and the QR already printed on the paper. They decide at the bus stop, not under your eye.
 
 ## sources
 - [BrightLocal Local Consumer Review Survey 2025](https://www.brightlocal.com/research/local-consumer-review-survey-2025/)
 - [Google — review link or QR](https://support.google.com/business/answer/16816815)
-- [Google policy on how reviews may be requested](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google — how reviews may be requested](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill
 Hi Rosalia, I read the guide on when to ask for a review.

@@ -88,10 +88,10 @@ Calculeu l’impacte esperat per a vosaltres
 Que s’ocupin de les meves ressenyes
 
 ## guides.headline
-Guies per al comerç
+Guies per a les seves ressenyes de Google
 
 ## guides.lead
-Textos curts, per imprimir o reenviar. No són el servei BabyRock Social: són hàbits que podeu aplicar vosaltres. Cada xifra diu d’on surt.
+Hàbits pràctics per al comerç aquesta setmana: com respondre, com demanar i com quedar-se dins de les normes de Google. Valen si ho fa vostè. Les fonts són al final de cada peça.
 
 ## guides.sources
 Fonts

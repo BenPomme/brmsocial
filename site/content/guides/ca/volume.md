@@ -1,28 +1,30 @@
 ## title
-Per què compta el nombre de ressenyes, no només la nota
+Per què compta el nombre de ressenyes de Google, no només les estrelles
 
 ## dek
-Una fitxa amb 40 ressenyes recents i un 4,5 convenç més que un 4,9 amb vuit opinions del 2019. Google i els clients miren les dues coses.
+Una fitxa amb desenes de ressenyes recents i un 4,5 sovint convenç més que un 4,9 amb vuit opinions del 2019. Els clients i Google miren si la pàgina és viva.
 
 ## impact_label
-Impacte estimat
+Per què importa
 
 ## impact
-En l’estudi SOCi, **cada 10 ressenyes de Google addicionals es van associar amb un +2,8 % de conversió de la fitxa**. Respondre a totes, enfront de no respondre, es va associar amb un **+16,4 %** d’aquesta conversió. Són correlacions grans; no les sumeu a la babalà ni les vengueu com a contracte.
+La mitjana d’estrelles es mou a poc a poc. El recompte, i la data de l’última ressenya, es veuen en un segon. Els independents viuen d’això més que les cadenes. Un estudi de proveïdor sobre milions de ressenyes de Google (SOCi) va trobar que les fitxes amb més ressenyes també convertien més de qui les veia. Prengui-ho com una correlació, no com un contracte.
 
 ## body
-La nota es mou a poc a poc. El recompte i la data de l’última ressenya es veuen en un segon. Un independent viu d’això més que una cadena.
+Vostè no tria qui escriu. Sí que tria si la fitxa sembla actual.
 
-Vosaltres no controleu qui escriu. Controleu si responeu, i si demaneu de forma neta (QR, la mateixa frase per a tothom).
+Respongui el que ja hi ha. Aquest hàbit, tot sol, s’associa en la recerca amb més ressenyes després, perquè es veu que hi ha algú a l’altra banda.
 
-Més ressenyes no substitueixen un plat millor. Sí que eviten que una sola 2★ del 2024 sigui l’únic recent a la fitxa.
+Demani ressenyes noves amb equitat: el mateix QR, la mateixa frase, sense premi. El volum que només surt de clients de 5 estrelles és el volum que Google no vol.
 
-BabyRock Social s’ocupa de les respostes. El volum el posa qui visita i a qui ho demaneu vosaltres. Les dues palanques no són el mateix producte.
+Una sola ressenya de 2 estrelles del mes passat, sola com a únic text recent, fa més mal que la mateixa nota en una pàgina que també té les d’aquesta setmana. Més ressenyes no salven un mal plat. Sí que eviten que una mala tarda sigui tota la història que llegeix un desconegut.
+
+Miri la fitxa com la miraria un client nou: data de l’última ressenya, última resposta, barreja de notes. Si l’última paraula pública és de l’any passat, aquesta és la feina d’aquesta setmana.
 
 ## sources
-- [SOCi — respondre i el volum de ressenyes, conversió de la fitxa](https://www.soci.ai/blog/google-review-response-study/)
-- [Luca, HBS — independents, no cadenes](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
+- [SOCi — volum de ressenyes i conversió de la fitxa](https://www.soci.ai/blog/google-review-response-study/)
+- [Luca, Harvard Business School — independents i notes](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
 - [Proserpio i Zervas — més ressenyes quan hi ha respostes](https://doi.org/10.1287/mksc.2017.1043)
 
 ## wa_prefill
-Hola Rosalia, he llegit la guia sobre el nombre de ressenyes.
+Hola Rosalia, he llegit la guia sobre per què compta el nombre de ressenyes.

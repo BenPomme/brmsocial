@@ -1,28 +1,32 @@
 ## title
-Cómo pedir reseñas sin romper las reglas de Google
+Cómo pedir reseñas de Google sin romper las normas
 
 ## dek
-Puede pedir una reseña de verdad, a todo el mundo por igual. No puede filtrar las buenas, ni pagar por estrellas, ni presionar en el local.
+Puede invitar a todos los clientes, del mismo modo, a dejar una reseña sincera. No puede pagar estrellas, filtrar a los contentos hacia Google ni presionar a nadie mientras sigue en la silla.
 
 ## impact_label
-Impacto estimado
+Por qué importa
 
 ## impact
-Pedir reseñas no sube la nota por arte de magia. Sube el **volumen**. En un estudio de hoteles, empezar a gestionar la reputación se asoció con un **12 % más de reseñas**. Más reseñas recientes pesan en la ficha. Un embudo «solo si fue un 5» es exactamente lo que Google prohíbe.
+Google quita las reseñas compradas, amañadas o dirigidas. Una ficha que solo recoge tráfico de 5 estrellas también resulta rara al siguiente cliente. Pedir con equidad sube el volumen. El volumen es lo que hace que la ficha parezca viva.
 
 ## body
-Lo permitido: el mismo enlace o código QR de Google para todos, sin recompensa, sin decir «déjame un 5». Un «si quiere, su opinión en Google nos ayuda» al final de una visita es suficiente.
+La versión legal y simple es una frase y un enlace, iguales para todos.
 
-Lo prohibido: una encuesta interna de 1 a 5 que solo envía a Google a quien puso 4 o 5. Un café a cambio de una reseña. Un cartel que pide cinco estrellas. Cuotas al personal. Pedir que nombren a un empleado.
+Google le deja crear un enlace de reseña y un código QR desde el perfil de empresa, en un ordenador. Puede poner ese código en el ticket, en una tarjeta del mostrador o al final de un mensaje de agradecimiento que ya envíe. El cliente abre Google y escribe si quiere.
 
-Si algo salió mal, deje que esa persona también pueda ir a Google. Si prefiere hablar en privado, puede, pero no esconda el enlace público.
+Lo que no debe hacer es ofrecer un café, un descuento o un premio a cambio de una reseña, o a cambio de bajar una mala. No debe montar una encuesta interna del 1 al 5 que solo abre Google después de un 4 o un 5. No debe colgar un cartel que pida cinco estrellas. No debe dar cupos al personal ni pedir que nombren a un empleado en el texto.
 
-BabyRock Social responde a las reseñas que ya existen. No le envía mensajes a sus clientes para pedir más. Eso, si llega, es otro producto. Mientras tanto, usted puede pedirlas a mano, en igualdad.
+Google también dice que no se presione a nadie para una nota mientras sigue en el local. Un QR impreso que puede usar después no es lo mismo que insistir en la mesa.
+
+Si la visita fue mal, esa persona igual puede ir a Google. Puede recoger la queja en privado. Esconderle el enlace público es el filtro que Google prohíbe.
+
+Use el mismo texto un martes flojo y un sábado por la noche. «Si tiene un momento, aquí está nuestra página de Google» basta. «Si le ha gustado, déjenos un 5» no.
 
 ## sources
-- [Política de Google sobre reseñas falsas, incentivos y solicitud selectiva](https://support.google.com/contributionpolicy/answer/7400114)
-- [Cómo crear un enlace o un QR de reseña](https://support.google.com/business/answer/16816815)
+- [Google — reseñas falsas, incentivos y peticiones selectivas](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google — crear un enlace o un QR de reseña](https://support.google.com/business/answer/16816815)
 - [Proserpio y Zervas — más reseñas cuando el negocio responde](https://doi.org/10.1287/mksc.2017.1043)
 
 ## wa_prefill
-Hola Rosalia, he leído la guía para pedir reseñas sin romper las reglas.
+Hola Rosalia, he leído la guía sobre pedir reseñas sin romper las normas.

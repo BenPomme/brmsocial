@@ -1,28 +1,32 @@
 ## title
-Com demanar ressenyes sense trencar les regles de Google
+Com demanar ressenyes de Google sense trencar les normes
 
 ## dek
-Podeu demanar una ressenya de veritat, a tothom per igual. No podeu filtrar les bones, ni pagar per estrelles, ni pressionar al local.
+Pot convidar tots els clients, de la mateixa manera, a deixar una ressenya sincera. No pot pagar estrelles, filtrar els contents cap a Google ni pressionar ningú mentre encara és a la cadira.
 
 ## impact_label
-Impacte estimat
+Per què importa
 
 ## impact
-Demanar ressenyes no puja la nota per art de màgia. Puja el **volum**. En un estudi d’hotels, començar a gestionar la reputació es va associar amb un **12 % més de ressenyes**. Més ressenyes recents pesen a la fitxa. Un embut «només si va ser un 5» és exactament el que Google prohibeix.
+Google treu les ressenyes comprades, manipulades o dirigides. Una fitxa que només recull trànsit de 5 estrelles també resulta estranya al client següent. Demanar amb equitat puja el volum. El volum és el que fa que la fitxa sembli viva.
 
 ## body
-El permès: el mateix enllaç o codi QR de Google per a tothom, sense recompensa, sense dir «deixa’m un 5». Un «si vol, la seva opinió a Google ens ajuda» al final d’una visita és suficient.
+La versió legal i simple és una frase i un enllaç, iguals per a tothom.
 
-El prohibit: una enquesta interna d’1 a 5 que només envia a Google a qui ha posat 4 o 5. Un cafè a canvi d’una ressenya. Un cartell que demana cinc estrelles. Quotes al personal. Demanar que anomenin un empleat.
+Google li deixa crear un enllaç de ressenya i un codi QR des del perfil d’empresa, en un ordinador. Pot posar aquest codi al tiquet, en una targeta del taulell o al final d’un missatge d’agraïment que ja enviï. El client obre Google i escriu si vol.
 
-Si alguna cosa ha sortit malament, deixeu que aquesta persona també pugui anar a Google. Si prefereix parlar en privat, pot, però no amagueu l’enllaç públic.
+El que no ha de fer és oferir un cafè, un descompte o un premi a canvi d’una ressenya, o a canvi d’abaixar-ne una de dolenta. No ha de muntar una enquesta interna de l’1 al 5 que només obre Google després d’un 4 o un 5. No ha de penjar un cartell que demani cinc estrelles. No ha de donar quotes al personal ni demanar que anomenin un empleat en el text.
 
-BabyRock Social respon a les ressenyes que ja existeixen. No envia missatges als vostres clients per demanar-ne més. Això, si arriba, és un altre producte. Mentrestant, les podeu demanar a mà, en igualtat.
+Google també diu que no es pressioni ningú per una nota mentre encara és al local. Un QR imprès que pot fer servir després no és el mateix que insistir a la taula.
+
+Si la visita va anar malament, aquesta persona igualment pot anar a Google. Pot recollir la queixa en privat. Amagar-li l’enllaç públic és el filtre que Google prohibeix.
+
+Faci servir el mateix text un dimarts fluix i un dissabte a la nit. «Si té un moment, aquí té la nostra pàgina de Google» n’hi ha prou. «Si li ha agradat, deixi’ns un 5» no.
 
 ## sources
-- [Política de Google sobre ressenyes falses, incentius i sol·licitud selectiva](https://support.google.com/contributionpolicy/answer/7400114)
-- [Com crear un enllaç o un QR de ressenya](https://support.google.com/business/answer/16816815)
+- [Google — ressenyes falses, incentius i peticions selectives](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google — crear un enllaç o un QR de ressenya](https://support.google.com/business/answer/16816815)
 - [Proserpio i Zervas — més ressenyes quan el negoci respon](https://doi.org/10.1287/mksc.2017.1043)
 
 ## wa_prefill
-Hola Rosalia, he llegit la guia per demanar ressenyes sense trencar les regles.
+Hola Rosalia, he llegit la guia sobre demanar ressenyes sense trencar les normes.

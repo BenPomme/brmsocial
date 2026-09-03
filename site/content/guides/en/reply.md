@@ -1,28 +1,32 @@
 ## title
-Reply to every Google review
+How to reply to every Google review
 
 ## dek
-You do not need a speech. You need to keep doing it. Future customers look at whether you answer, not only at the stars.
+An unanswered review stays on your listing. The next person who searches for you will see it. This guide is the weekly habit: short, genuine replies, in the language of the review.
 
 ## impact_label
-Estimated impact
+Why it matters
 
 ## impact
-If you barely reply today, our calculator’s central estimate is **about 0.84 % of monthly revenue** once you reply to everything. It is 0.12 stars (hotels that start responding) × 7 % per full star (independent restaurants on Yelp). It is not a guarantee.
+Google says a reply shows customers that their feedback matters. Research on hotels found that businesses which started responding also saw their ratings improve, on average by 0.12 stars. That is not a promise for your shop. It is a reason not to leave the thread empty.
 
 ## body
-An unanswered review stays on the listing. The next customer sees it. A reply does not erase a low score. It shows someone is in charge.
+Open your Google Business Profile on a computer, go to Read reviews, and answer what is waiting. You need a verified profile. Google reads every reply before it goes public, usually within minutes, sometimes longer.
 
-Keep it short. One detail that is actually in the review, in the customer’s language, and nothing invented (staff names, freebies, health claims).
+Keep the reply short. Mention one thing the person actually wrote. Write in their language. Do not invent a waiter’s name, a free dessert, or a medical claim you cannot stand behind.
 
-4 and 5-star reviews can go out the same day. 1, 2 and 3-star reviews should be ones you have seen. That is the job BabyRock Social does if you hire us. This article is the habit, with or without us.
+Reply to the 5-star notes as well as the 2-star ones. People can see when a listing only answers praise. Google wants the reply to be genuine, not a paste that could sit under any review.
 
-Reply to all of them, not only the good ones. People notice the filter. Google also wants replies to be genuine, not unattended automation.
+For a low score, wait until you know what happened. A calm sentence that you will look into it is better than a defence written in the rush of service. The person who wrote the review gets a notification. They can still edit their text after they read you.
+
+If a review breaks Google’s rules, flag it in the profile. Do not pick a public fight.
+
+Do this on a fixed rhythm so it does not depend on memory: once a day if volume is high, a few times a week if it is not. The point is that nothing sits unanswered for a fortnight.
 
 ## sources
-- [Luca, Harvard Business School — one Yelp star and independent restaurant revenue](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
-- [Proserpio and Zervas, Marketing Science 2017 — +0.12 stars when hotels start responding](https://doi.org/10.1287/mksc.2017.1043)
-- [Google — reply to reviews](https://support.google.com/business/answer/3474050)
+- [Google — manage and reply to reviews](https://support.google.com/business/answer/3474050)
+- [Proserpio and Zervas, Marketing Science 2017 — ratings when hotels start responding](https://doi.org/10.1287/mksc.2017.1043)
+- [Google’s policies for user contributions](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill
-Hi Rosalia, I read the guide on replying to every review. I want BabyRock Social.
+Hi Rosalia, I read the guide on replying to every Google review.

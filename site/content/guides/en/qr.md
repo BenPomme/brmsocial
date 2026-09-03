@@ -1,28 +1,30 @@
 ## title
-A QR code to your Google listing
+How to put a Google review QR code on your tickets
 
 ## dek
-Google itself offers a short link or a QR on the receipt. You do not need a phone list or messages to strangers.
+Google will give you a short link and a QR code for your listing. Print it. You do not need a phone list or messages to people you barely know.
 
 ## impact_label
-Estimated impact
+Why it matters
 
 ## impact
-There is no magic euro per scan. What is measured: **about 10 extra Google reviews went with +2.8 % more listing conversion** (SOCi, millions of reviews). A QR at the till is the cleanest way to ask for that volume, if people use it.
+Google itself suggests putting the code on receipts, in a thank-you email, or on a card in the shop. There is no magic euro per scan. What you get, if people use it, is more genuine reviews over time, from people who were actually there.
 
 ## body
-In your Google Business Profile you can create a review link and a QR. Print it on the ticket, the counter, a card. The customer scans, lands on Google, writes if they want.
+Sit at a computer (the QR cannot be created in the Google app on a phone) and open your Business Profile. Go to Read reviews, then Get more reviews. Copy the link, or right-click the QR and save the image.
 
-Do not point the QR at your own page that first asks “how many stars?” and only then opens Google. That is filtering.
+Print it small on the ticket, on the bag, or on a card by the till. One code for the whole business is enough. Do not make a new campaign every week.
 
-You do not need WhatsApp for this. Paper holds no personal data. If BabyRock Direct later asks for a review in a booking thread, it will be another channel with the same rule: the Google link for everyone.
+The customer scans, lands on Google, and writes if they want. Do not point the QR at a page of yours that first asks “how many stars?” and only then opens Google. That is the same filter as a gated survey.
 
-Use the same QR on Saturday night and on Tuesday at noon.
+You do not need WhatsApp for this. Paper does not store a phone number. Use the same QR at lunch and at closing.
+
+If you already send a thank-you by email or message after a booking, you may add the same link there. That is Google’s own list: receipts, thank-you emails, the end of a chat, a printed code in the shop.
 
 ## sources
 - [Google — create a review link or QR code](https://support.google.com/business/answer/16816815)
-- [SOCi — extra reviews and listing conversion](https://www.soci.ai/blog/google-review-response-study/)
-- [Google policy: no incentives, no selective asks](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google — no incentives, no selective asks](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google — tips to get more reviews](https://support.google.com/business/answer/3474122)
 
 ## wa_prefill
 Hi Rosalia, I read the Google review QR guide.

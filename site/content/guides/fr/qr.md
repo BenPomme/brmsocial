@@ -1,28 +1,30 @@
 ## title
-Un code QR vers votre fiche Google
+Comment mettre un QR code d’avis Google sur vos tickets
 
 ## dek
-Google lui-même propose un lien court ou un QR sur le ticket. Pas besoin d’une liste de téléphones ni d’un message à des inconnus.
+Google vous donne un lien court et un QR code pour votre fiche. Imprimez-le. Vous n’avez pas besoin d’une liste de téléphones ni de messages à des gens que vous connaissez à peine.
 
 ## impact_label
-Impact estimé
+Pourquoi c’est important
 
 ## impact
-Il n’y a pas d’euro magique par scan. Ce qui est mesuré : **environ 10 avis Google de plus se sont associés à +2,8 % de conversion de la fiche** (étude SOCi sur des millions d’avis). Un QR en caisse est la façon la plus propre de demander ce volume, si les gens l’utilisent.
+Google lui-même suggère de mettre le code sur les tickets, dans un e-mail de remerciement, ou sur une carte dans le commerce. Il n’y a pas d’euro magique par scan. Ce que vous obtenez, si les gens s’en servent, ce sont plus d’avis sincères avec le temps, de personnes qui étaient vraiment là.
 
 ## body
-Dans la fiche d’établissement Google, vous pouvez créer un lien d’avis et un QR. Imprimez-le sur le ticket, au comptoir, sur une carte. Le client scanne, arrive sur Google, écrit s’il veut.
+Asseyez-vous devant un ordinateur (le QR ne se crée pas dans l’application Google du téléphone) et ouvrez votre fiche d’établissement. Allez à Lire les avis, puis Obtenir plus d’avis. Copiez le lien, ou faites un clic droit sur le QR et enregistrez l’image.
 
-Ne pointez pas le QR vers une page à vous qui demande d’abord « combien d’étoiles ? » et n’ouvre Google qu’ensuite. C’est filtrer.
+Imprimez-le petit sur le ticket, sur le sac, ou sur une carte près de la caisse. Un code pour tout le commerce suffit. Ne lancez pas une nouvelle campagne chaque semaine.
 
-Pas besoin de WhatsApp non plus pour cela. Le papier ne demande pas de données personnelles. Si plus tard BabyRock Direct demande l’avis dans le même fil qu’une réservation, ce sera un autre canal, avec les mêmes règles : le lien Google pour tout le monde.
+Le client scanne, arrive sur Google, et écrit s’il veut. Ne pointez pas le QR vers une page à vous qui demande d’abord « combien d’étoiles ? » et n’ouvre Google qu’ensuite. C’est le même filtre qu’une enquête piégée.
 
-Imprimez le même QR pour le samedi soir et pour le mardi à midi.
+Vous n’avez pas besoin de WhatsApp pour cela. Le papier ne stocke pas de numéro. Servez-vous du même QR à midi et à la fermeture.
+
+Si vous envoyez déjà un remerciement par e-mail ou message après une réservation, vous pouvez y ajouter le même lien. C’est la liste de Google : tickets, e-mails de remerciement, fin d’un chat, code imprimé dans le local.
 
 ## sources
-- [Google — créer un lien ou un code QR pour les avis](https://support.google.com/business/answer/16816815)
-- [SOCi — avis en plus et conversion de la fiche](https://www.soci.ai/blog/google-review-response-study/)
-- [Politique de Google : sans incitations ni demande sélective](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google — créer un lien ou un QR d’avis](https://support.google.com/business/answer/16816815)
+- [Google — pas d’incitations, pas de demandes sélectives](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google — conseils pour obtenir plus d’avis](https://support.google.com/business/answer/3474122)
 
 ## wa_prefill
-Bonjour Rosalia, j’ai lu le guide du code QR Google.
+Bonjour Rosalia, j’ai lu le guide du QR code d’avis Google.
