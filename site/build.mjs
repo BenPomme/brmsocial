@@ -399,6 +399,7 @@ function productCards(locale, copy, config, depth) {
   const directCta = waLink(config, t(copy, "product.direct_prefill"));
   return `<div class="product-grid">
     <article class="product-card live">
+      <img class="product-logo" src="${asset(depth, "logos/social-icon.svg")}" alt="" width="72" height="72">
       <p class="product-status">${esc(t(copy, "product.social_status"))}</p>
       <h3>${esc(t(copy, "product.social_name"))}</h3>
       ${paras(t(copy, "product.social_body"))}
@@ -407,6 +408,7 @@ function productCards(locale, copy, config, depth) {
       <p class="cta-row"><a class="btn btn-coral" href="${socialCta}">${esc(t(copy, "product.social_cta"))}</a></p>
     </article>
     <article class="product-card soon">
+      <img class="product-logo" src="${asset(depth, "logos/direct-icon.svg")}" alt="" width="72" height="72">
       <p class="product-status">${esc(t(copy, "product.direct_status"))}</p>
       <h3>${esc(t(copy, "product.direct_name"))}</h3>
       ${paras(t(copy, "product.direct_body"))}
