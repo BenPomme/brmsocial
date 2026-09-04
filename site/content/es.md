@@ -71,24 +71,28 @@ Aceptar
 Rechazar
 
 ## home.kicker
-Gestión de reseñas de Google para pequeños comercios
+Relación digital con el cliente para pequeños comercios
 
 ## home.trust
 Ya {n} negocios confían en nosotros para sus reseñas
 
 ## home.headline
-No deje ninguna reseña de Google sin respuesta.
+Si sus clientes le encuentran en internet, necesita BabyRock.
 
 ## home.lead
-BabyRock Social prepara una respuesta a cada reseña nueva de su ficha de empresa de Google. Una persona del equipo comprueba la calidad y la autenticidad, y después la publica.
+BabyRock le ayuda a sacar el máximo de su presencia en internet, empezando por Google Maps WhatsApp.
 
-En las reseñas de 1, 2 y 3 estrellas, le enviamos primero el borrador por WhatsApp. Usted lo aprueba o nos dice qué cambiar. Sigue al mando, y no pasa la noche escribiendo respuestas.
+Tratar con los clientes es esencial para generar confianza y reputación, y para hacer crecer los ingresos. Pero lleva tiempo.
+
+BabyRock Social le ayuda a responder a cada reseña nueva en su perfil de Google. Una persona de nuestro equipo comprueba la calidad y la autenticidad, y después la publica por usted, en su nombre.
+
+BabyRock Direct le ayuda a usar WhatsApp para construir relaciones directas y duraderas con sus clientes y a mejorar la eficiencia del negocio. Desde coger reservas, reducir las inasistencias, tomar pedidos sin pagar comisión o pedir reseñas, vamos con usted en el camino de crecer.
 
 ## home.cta_sim
 Vea lo que podría ganar
 
 ## home.cta_sub
-Que se ocupen de mis reseñas
+Envíenos un correo
 
 ## guides.headline
 Guías para sus reseñas de Google

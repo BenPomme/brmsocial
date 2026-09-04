@@ -71,24 +71,28 @@ Accepter
 Refuser
 
 ## home.kicker
-Gestion des avis Google pour les petits commerces
+Relation client digitale pour les petits commerces
 
 ## home.trust
 Déjà {n} commerces nous font confiance pour leurs avis
 
 ## home.headline
-Ne laissez plus aucun avis Google sans réponse.
+Si vos clients vous trouvent en ligne, vous avez besoin de BabyRock.
 
 ## home.lead
-BabyRock Social prépare une réponse à chaque nouvel avis sur votre fiche d’établissement Google. Une personne de l’équipe vérifie la qualité et l’authenticité, puis la publie.
+BabyRock vous aide à tirer le meilleur de votre présence en ligne, en commençant par Google Maps WhatsApp.
 
-Pour les avis 1, 2 et 3 étoiles, nous vous envoyons d’abord le brouillon sur WhatsApp. Vous l’approuvez ou vous nous dites quoi changer. Vous restez aux commandes, et vous ne passez pas la soirée à écrire des réponses.
+Échanger avec les clients est essentiel pour construire la confiance et la réputation, et pour faire croître le chiffre d’affaires. Mais cela prend du temps.
+
+BabyRock Social vous aide à répondre à chaque nouvel avis sur votre profil Google. Une personne de notre équipe vérifie la qualité et l’authenticité, puis le publie pour vous, en votre nom.
+
+BabyRock Direct vous aide à utiliser WhatsApp pour construire des relations directes et durables avec vos clients et à améliorer l’efficacité du commerce. Prendre des réservations, réduire les absences, prendre des commandes sans payer de commission, ou demander des avis : nous sommes avec vous pour grandir.
 
 ## home.cta_sim
 Voir ce que vous pourriez gagner
 
 ## home.cta_sub
-Que l’on s’occupe de mes avis
+Envoyez-nous un e-mail
 
 ## guides.headline
 Guides pour vos avis Google

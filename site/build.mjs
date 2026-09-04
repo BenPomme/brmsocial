@@ -295,6 +295,12 @@ function nav(locale, page, copy, depth, config) {
   `;
 }
 
+function mailLink(config, subject) {
+  const email = String(config.email || "").trim();
+  const sub = encodeURIComponent(subject || "BabyRock Social");
+  return `mailto:${email}?subject=${sub}`;
+}
+
 function waLink(config, text) {
   const msg = encodeURIComponent(text || "Hola Rosalia");
   const digits = String(config.whatsapp || "").replace(/\D/g, "");
@@ -567,7 +573,7 @@ function homePage(locale, copy, config, depth) {
         <div class="lead">${paras(t(copy, "home.lead"))}</div>
         <div class="cta-row">
           <a class="btn btn-wa" href="${waLink(config, t(copy, "wa.prefill"))}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "nav.whatsapp"))}</a>
-          <a class="btn btn-coral" href="${href(locale, "subscribe", depth)}">${esc(t(copy, "home.cta_sub"))}</a>
+          <a class="btn btn-coral" href="${mailLink(config)}">${esc(t(copy, "home.cta_sub"))}</a>
           <a class="btn btn-ghost" href="${href(locale, "simulator", depth)}">${esc(t(copy, "home.cta_sim"))}</a>
         </div>
       </div>
@@ -834,7 +840,7 @@ function guideArticlePage(locale, copy, config, depth, id) {
     ${sourceList(gcopy.sources)}
     <p class="cta-row" style="margin-top:1.5rem">
       <a class="btn btn-wa" href="${wa}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "nav.whatsapp"))} Rosalia</a>
-      <a class="btn btn-coral" href="${href(locale, "subscribe", depth)}">${esc(t(copy, "home.cta_sub"))}</a>
+      <a class="btn btn-coral" href="${mailLink(config)}">${esc(t(copy, "home.cta_sub"))}</a>
     </p>
   </article>`;
 }

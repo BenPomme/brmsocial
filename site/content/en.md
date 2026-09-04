@@ -71,24 +71,28 @@ Accept
 Refuse
 
 ## home.kicker
-Google review management for small businesses
+Digital customer engagement for small businesses
 
 ## home.trust
 Already {n} businesses trust us with their reviews
 
 ## home.headline
-Never leave another Google review unanswered.
+If your customers find you online, you need BabyRock.
 
 ## home.lead
-BabyRock Social prepares a reply to every new review on your Google Business Profile. A person on our team checks for quality and authenticity, then publishes it.
+BabyRock helps you make the best of your online presence, starting with Google Maps WhatsApp.
 
-For 1, 2 and 3-star reviews, we send you the draft on WhatsApp first. You approve it or tell us what to change. You stay in control, and you do not spend the evening writing replies.
+Engaging with customers is essential to build trust and reputation, and to grow revenues. But it is time consuming.
+
+BabyRock Social helps you reply to every new review on your Google Profile. A human on our team checks for quality and authenticity, then publishes it for you, in your name.
+
+BabyRock Direct helps you use WhatsApp to build lasting direct relationships with your customers and improve your business efficiency. From taking bookings, reducing no-shows, taking orders without paying a commission, or asking for reviews, we’re with you on your journey to grow.
 
 ## home.cta_sim
 See what you could make
 
 ## home.cta_sub
-Get my reviews handled
+Send us an email
 
 ## guides.headline
 Guides for your Google reviews

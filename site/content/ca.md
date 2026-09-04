@@ -71,24 +71,28 @@ Acceptar
 Rebutjar
 
 ## home.kicker
-Gestió de ressenyes de Google per a petits comerços
+Relació digital amb el client per a petits comerços
 
 ## home.trust
 Ja {n} negocis confien en nosaltres per a les seves ressenyes
 
 ## home.headline
-No deixeu cap ressenya de Google sense resposta.
+Si els vostres clients us troben en línia, necessiteu BabyRock.
 
 ## home.lead
-BabyRock Social prepara una resposta a cada ressenya nova de la vostra fitxa d’empresa de Google. Una persona de l’equip comprova la qualitat i l’autenticitat, i després la publica.
+BabyRock us ajuda a treure el màxim de la vostra presència en línia, començant per Google Maps WhatsApp.
 
-A les ressenyes d’1, 2 i 3 estrelles, us enviem primer l’esborrany per WhatsApp. L’aproveu o ens dieu què canviar. Continueu al capdavant, i no passeu el vespre escrivint respostes.
+Tractar amb els clients és essencial per generar confiança i reputació, i per fer créixer els ingressos. Però porta temps.
+
+BabyRock Social us ajuda a respondre a cada ressenya nova al vostre perfil de Google. Una persona del nostre equip comprova la qualitat i l’autenticitat, i després la publica per vosaltres, en el vostre nom.
+
+BabyRock Direct us ajuda a fer servir WhatsApp per construir relacions directes i duradores amb els vostres clients i a millorar l’eficiència del negoci. Des de prendre reserves, reduir les inassistències, prendre comandes sense pagar comissió o demanar ressenyes, anem amb vosaltres en el camí de créixer.
 
 ## home.cta_sim
 Vegeu el que podríeu guanyar
 
 ## home.cta_sub
-Que s’ocupin de les meves ressenyes
+Envieu-nos un correu
 
 ## guides.headline
 Guies per a les vostres ressenyes de Google
