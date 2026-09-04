@@ -657,8 +657,13 @@ textarea {
 .sources a {
   text-underline-offset: 0.15em;
 }
+.guide-article .lead {
+  text-align: center;
+}
 .guide-article .lead p {
   max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 .guide-article h2 {
   margin: 1.6rem 0 0.55rem;
