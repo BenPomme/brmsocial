@@ -11,7 +11,7 @@ import { isAllowlisted, sendZohoMail } from "./zoho-mail";
 import { classifyInbound } from "./classify-inbound";
 import { hasScript } from "./rosalia/copy";
 import { decideRosalia, decisionFromScript, shouldSendNow } from "./rosalia/decide";
-import { coerceRoute, isRoutable, parseRoute, routePrompt } from "./rosalia/route";
+import { coerceRoute, isRoutable, nextOnboard, parseTurn, repeats, talkPrompt } from "./rosalia/route";
 import type { ConvoLang, RosaliaEvent, ThreadPhase, OnboardingStep } from "./rosalia/types";
 
 export { wantsPayLink } from "./rosalia/decide";
@@ -164,7 +164,6 @@ export async function proposeRosaliaReply(threadId: string, eventOverride?: Rosa
   };
   const alreadyStopped = asPhase(thread.phase) === "stopped";
   const hard =
-    alreadyStopped ||
     event.type !== "inbound_text" ||
     classifyInbound(event.text) === "stop" ||
     process.env.ROSALIA_LLM === "false";
@@ -181,32 +180,50 @@ export async function proposeRosaliaReply(threadId: string, eventOverride?: Rosa
       .filter((m) => m.direction !== "draft")
       .slice(-8)
       .map((m) => `${m.direction === "in" ? "ellos" : "rosalia"}: ${m.body}`);
+    const quote = quoteFor({ city, inbound: event.text });
     try {
       const raw = await xaiText(
-        routePrompt({
+        talkPrompt({
           lang: rememberedLang ?? "es",
           phase: asPhase(thread.phase),
           step: asStep(thread.onboardingStep),
-          monthLabel: quoteFor({ city, inbound: event.text }).monthLabel,
-          managerEmail: quoteFor({ city, inbound: event.text }).managerEmail,
+          monthLabel: quote.monthLabel,
+          managerEmail: quote.managerEmail,
+          payUrl: link,
+          lastOut: allOutbound.at(-1) ?? null,
         }),
         `History:\n${historyLines.join("\n") || "(empty)"}\n\nInbound:\n${event.text}`,
-        { model: xaiFastModel(), maxTokens: 80, temperature: 0, reasoning: "none" },
+        { model: xaiFastModel(), maxTokens: 280, temperature: 0.2, reasoning: "none" },
       );
-      const parsed = parseRoute(raw ?? "");
+      const parsed = parseTurn(raw ?? "");
       const route = coerceRoute(
-        parsed?.route ?? "",
+        parsed?.route ?? "human",
         asStep(thread.onboardingStep),
         event.text,
         asPhase(thread.phase),
       );
-      console.log("rosalia route", { inbound: event.text.slice(0, 80), raw: (raw ?? "").slice(0, 80), route });
+      console.log("rosalia route", { inbound: event.text.slice(0, 80), raw: (raw ?? "").slice(0, 120), route });
+      const spoken = parsed?.reply ?? "";
       if (route === "human" || !isRoutable(route) || !hasScript(route)) {
-        decided = decisionFromScript("fallback", decideOpts);
-        replySource = "off_script";
+        if (spoken && !repeats(spoken, allOutbound)) {
+          decided = {
+            ...decisionFromScript("fallback", decideOpts),
+            body: spoken.slice(0, 700),
+            source: "template",
+            status: "ok",
+            faqId: "llm_reply",
+          };
+          replySource = "llm";
+        } else {
+          decided = decisionFromScript("fallback", decideOpts);
+          replySource = "off_script";
+        }
       } else {
         decided = decisionFromScript(route, decideOpts);
         replySource = "llm";
+        if (spoken && !repeats(spoken, allOutbound)) {
+          decided = { ...decided, body: spoken.slice(0, 700), source: "template", status: "ok" };
+        }
       }
     } catch (e) {
       console.warn("rosalia route", e);
@@ -216,6 +233,22 @@ export async function proposeRosaliaReply(threadId: string, eventOverride?: Rosa
   if (!decided) {
     decided = decideRosalia(decideOpts);
     replySource = decided.source;
+  }
+  if (repeats(decided.body, allOutbound)) {
+    const bump = nextOnboard(asStep(thread.onboardingStep) ?? decided.onboardingStep);
+    if (bump !== "human" && hasScript(bump)) {
+      const alt = decisionFromScript(bump, decideOpts);
+      if (!repeats(alt.body, allOutbound)) {
+        decided = alt;
+        replySource = "llm";
+      } else {
+        decided = decisionFromScript("fallback", decideOpts);
+        replySource = "off_script";
+      }
+    } else {
+      decided = decisionFromScript("fallback", decideOpts);
+      replySource = "off_script";
+    }
   }
   const body = decided.body;
 

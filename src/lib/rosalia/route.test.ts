@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { classifyInbound } from "../classify-inbound";
-import { coerceRoute } from "./route";
+import { coerceRoute, repeats } from "./route";
 
 /** Prod 16:43: model said hello; coerceRoute sent onboard_wait. */
 test("hello? anyone? on wait_google is not rewritten to onboard_wait", () => {
@@ -19,4 +19,11 @@ test("Stop sending this is a stop", () => {
 
 test("stopped phase does not coerce into onboard_wait", () => {
   assert.equal(coerceRoute("hello", "wait_google", "hello? anyone?", "stopped"), "human");
+});
+
+test("repeats blocks sending the same WhatsApp twice", () => {
+  const blob =
+    "Step 3: invite reviews@babyrock.ai (paste the email exactly). Not your password. Reply YES when it’s pasted.";
+  assert.equal(repeats(blob, [blob]), true);
+  assert.equal(repeats("Something else entirely about hours.", [blob]), false);
 });
