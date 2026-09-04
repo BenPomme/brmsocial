@@ -49,6 +49,56 @@
         "fr": "pourquoi-le-nombre-davis-compte",
         "en": "why-review-count-matters"
       }
+    },
+    {
+      "id": "remove",
+      "img": "guide-remove.jpg",
+      "slugs": {
+        "es": "como-eliminar-una-resena-de-google",
+        "ca": "com-eliminar-una-ressenya-de-google",
+        "fr": "comment-supprimer-un-avis-google",
+        "en": "how-to-remove-a-google-review"
+      }
+    },
+    {
+      "id": "verify",
+      "img": "guide-verify.jpg",
+      "slugs": {
+        "es": "como-verificar-google-business-profile",
+        "ca": "com-verificar-el-perfil-dempresa-de-google",
+        "fr": "comment-verifier-fiche-etablissement-google",
+        "en": "how-to-verify-google-business-profile"
+      }
+    },
+    {
+      "id": "examples",
+      "img": "guide-examples.jpg",
+      "slugs": {
+        "es": "ejemplos-respuesta-resenas-google",
+        "ca": "exemples-resposta-ressenyes-google",
+        "fr": "exemples-reponses-avis-google",
+        "en": "google-review-response-examples"
+      }
+    },
+    {
+      "id": "negative",
+      "img": "guide-negative.jpg",
+      "slugs": {
+        "es": "como-responder-resenas-negativas-google",
+        "ca": "com-respondre-ressenyes-negatives-google",
+        "fr": "comment-repondre-avis-negatifs-google",
+        "en": "how-to-respond-to-negative-google-reviews"
+      }
+    },
+    {
+      "id": "seo",
+      "img": "guide-seo.jpg",
+      "slugs": {
+        "es": "ayudan-las-resenas-google-al-posicionamiento",
+        "ca": "les-ressenyes-google-ajuden-al-posicionament",
+        "fr": "les-avis-google-aident-ils-au-referencement",
+        "en": "do-google-reviews-help-seo"
+      }
     }
   ]
 }

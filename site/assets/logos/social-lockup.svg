@@ -1,17 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" fill="none" role="img" aria-label="BabyRock Social">
-  <g transform="translate(8,6) scale(0.85)">
-    <path d="M22 78c0-18 10-34 26-42 6-3 12-5 18-5 10 0 18 3 26 10 12 10 18 26 18 42 0 6-1 12-4 18H26c-3-6-4-12-4-18z" fill="#161412"/>
-    <path d="M26 96h76c2 0 4 2 4 4v2H22v-2c0-2 2-4 4-4z" fill="#161412"/>
-    <path d="M48 52h32c6 0 10 4 10 10v12c0 6-4 10-10 10H62l-10 10v-10h-4c-6 0-10-4-10-10V62c0-6 4-10 10-10z" fill="#f4efe6"/>
-    <g fill="#3c9a4e">
-      <path d="M40 28l1.6 3.4 3.4 1.6-3.4 1.6L40 38l-1.6-3.4L35 33l3.4-1.6L40 28z"/>
-      <path d="M56 18l2.2 4.6 4.6 2.2-4.6 2.2L56 32l-2.2-4.6L49 25l4.6-2.2L56 18z"/>
-      <path d="M74 22l1.8 3.8 3.8 1.8-3.8 1.8L74 34l-1.8-3.8L68.4 28l3.8-1.8L74 22z"/>
-      <path d="M88 30l1.4 3 3 1.4-3 1.4L88 39l-1.4-3L83.6 34.6l3-1.4L88 30z"/>
-      <path d="M64 8l1.5 3.2 3.2 1.5-3.2 1.5L64 17.4l-1.5-3.2L59.3 12.7l3.2-1.5L64 8z"/>
-    </g>
-  </g>
-  <text x="130" y="72" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700" letter-spacing="3.2" fill="#161412">BABYROCK</text>
-  <rect x="318" y="48" width="3" height="28" rx="1.5" fill="#3c9a4e"/>
-  <text x="334" y="72" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="500" letter-spacing="2.4" fill="#161412">SOCIAL</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 120" role="img" aria-label="BabyRock Social">
+  <rect x="3" y="18" width="634" height="84" rx="42" fill="none" stroke="#161412" stroke-width="3.5"/>
+  <text x="248" y="74" text-anchor="end" fill="#161412" font-family="Inter, Arial, Helvetica, sans-serif" font-weight="800" font-size="32" letter-spacing="0.12em">BABYROCK</text>
+  <circle cx="278" cy="60" r="7" fill="#3c9a4e"/>
+  <text x="308" y="74" fill="#161412" font-family="Inter, Arial, Helvetica, sans-serif" font-weight="500" font-size="32" letter-spacing="0.22em">SOCIAL</text>
 </svg>

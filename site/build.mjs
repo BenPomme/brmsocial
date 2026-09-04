@@ -137,11 +137,12 @@ function absUrl(locale, page) {
   return slug ? `${SITE}/${locale}/${slug}/` : `${SITE}/${locale}/`;
 }
 
-function hreflangLinks(page) {
+function hreflangLinks(page, absHrefFor) {
+  const url = (code) => (absHrefFor ? absHrefFor(code) : absUrl(code, page));
   const tags = Object.keys(LOCALES).map(
-    (code) => `  <link rel="alternate" hreflang="${LOCALES[code].html}" href="${absUrl(code, page)}">`
+    (code) => `  <link rel="alternate" hreflang="${LOCALES[code].html}" href="${url(code)}">`
   );
-  tags.push(`  <link rel="alternate" hreflang="x-default" href="${absUrl("en", page)}">`);
+  tags.push(`  <link rel="alternate" hreflang="x-default" href="${url("en")}">`);
   return tags.join("\n");
 }
 
@@ -285,11 +286,11 @@ function trustBar(copy, config) {
   return `<div class="trust-wrap"><p class="wrap trust-bar" data-trust-ticker data-trust-base="${n}">${html}</p></div>`;
 }
 
-function shell({ locale, page, copy, config, depth, title, description, body, langHref }) {
+function shell({ locale, page, copy, config, depth, title, description, body, langHref, canonicalUrl, hreflangAbs }) {
   const { css, js } = cssJs(depth);
   const navHtml = nav(locale, page, copy, depth, config);
   const wa = waLink(config, t(copy, "wa.prefill"));
-  const canonical = absUrl(locale, page);
+  const canonical = canonicalUrl || absUrl(locale, page);
   const ogImage = `${SITE}/assets/og.jpg`;
   const robots = page === "account" ? "noindex,follow" : "index,follow";
   return `<!doctype html>
@@ -301,7 +302,7 @@ function shell({ locale, page, copy, config, depth, title, description, body, la
   <meta name="description" content="${esc(description)}">
   <meta name="robots" content="${robots}">
   <link rel="canonical" href="${canonical}">
-${hreflangLinks(page)}
+${hreflangLinks(page, hreflangAbs)}
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="BabyRock Social">
   <meta property="og:title" content="${esc(title)}">
@@ -873,6 +874,8 @@ for (const locale of Object.keys(LOCALES)) {
         description: gcopy.dek,
         body: guideArticlePage(locale, copy, config, 3, g.id),
         langHref: (code) => guideHref(code, g.id, 3),
+        canonicalUrl: absGuideUrl(locale, g.id),
+        hreflangAbs: (code) => absGuideUrl(code, g.id),
       })
     );
   }
