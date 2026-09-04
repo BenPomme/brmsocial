@@ -113,6 +113,22 @@ function paras(s) {
     .join("\n");
 }
 
+function homeLead(s) {
+  return String(s || "")
+    .split(/\n\s*\n/)
+    .filter(Boolean)
+    .map((p) => {
+      const lines = p.split("\n");
+      const hm = lines[0].match(/^##\s+(.+)$/);
+      if (hm) {
+        const rest = lines.slice(1).join("\n").trim();
+        return `<h2 class="lead-product">${esc(hm[1])}</h2>${rest ? `<p>${esc(rest).replaceAll("\n", "<br>")}</p>` : ""}`;
+      }
+      return `<p>${esc(p).replaceAll("\n", "<br>")}</p>`;
+    })
+    .join("\n");
+}
+
 function inlineLinks(locale, s) {
   return esc(s)
     .replaceAll("\n", "<br>")
@@ -569,8 +585,8 @@ function homePage(locale, copy, config, depth) {
     <div class="wrap hero-split">
       <div class="hero-panel">
         <p class="kicker">${esc(t(copy, "home.kicker"))}</p>
-        <h1>${esc(t(copy, "home.headline"))}</h1>
-        <div class="lead">${paras(t(copy, "home.lead"))}</div>
+        <h1 class="hero-title${locale === "fr" ? " hero-title-compact" : ""}">${esc(t(copy, "home.headline"))}</h1>
+        <div class="lead">${homeLead(t(copy, "home.lead"))}</div>
         <div class="cta-row">
           <a class="btn btn-wa" href="${waLink(config, t(copy, "wa.prefill"))}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "nav.whatsapp"))}</a>
           <a class="btn btn-coral" href="${mailLink(config)}">${esc(t(copy, "home.cta_sub"))}</a>

@@ -320,6 +320,16 @@ h3 {
   font-size: 1.05rem;
   color: var(--muted);
 }
+.hero-panel .hero-title-compact {
+  font-size: clamp(1.55rem, 3.6vw, 2.55rem);
+}
+.hero-panel .lead-product {
+  font-family: var(--display);
+  font-size: 1.35rem;
+  color: var(--ink);
+  letter-spacing: -0.03em;
+  margin: 1.15rem 0 0.35rem;
+}
 .cta-row {
   display: flex;
   flex-wrap: wrap;

@@ -80,13 +80,19 @@ Déjà {n} commerces nous font confiance pour leurs avis
 Si vos clients vous trouvent en ligne, vous avez besoin de BabyRock.
 
 ## home.lead
-BabyRock vous aide à tirer le meilleur de votre présence en ligne, en commençant par Google Maps WhatsApp.
+Vos clients sont sur Google Maps et WhatsApp Business. BabyRock vous aide à mieux échanger avec eux.
 
-Échanger avec les clients est essentiel pour construire la confiance et la réputation, et pour faire croître le chiffre d’affaires. Mais cela prend du temps.
+Chaque échange compte : il renforce la confiance, développe votre réputation et contribue à la croissance de votre activité. Mais répondre à tous vos clients, au bon moment et avec le bon ton, demande du temps.
 
-BabyRock Social vous aide à répondre à chaque nouvel avis sur votre profil Google. Une personne de notre équipe vérifie la qualité et l’authenticité, puis le publie pour vous, en votre nom.
+## BabyRock Social
 
-BabyRock Direct vous aide à utiliser WhatsApp pour construire des relations directes et durables avec vos clients et à améliorer l’efficacité du commerce. Prendre des réservations, réduire les absences, prendre des commandes sans payer de commission, ou demander des avis : nous sommes avec vous pour grandir.
+Ne laissez plus aucun nouvel avis Google sans réponse. Nous préparons une réponse adaptée, puis une personne de notre équipe en vérifie le ton, la pertinence et la qualité avant de la publier en votre nom. Rien n’est publié automatiquement.
+
+## BabyRock Direct
+
+Faites de WhatsApp Business un canal direct avec vos clients. Gérez vos réservations, envoyez des rappels pour limiter les rendez-vous manqués, recevez des commandes sans commission d’intermédiaire et invitez vos clients à laisser un avis.
+
+Moins de temps passé à gérer les échanges. Plus de temps pour vos clients et votre activité.
 
 ## home.cta_sim
 Voir ce que vous pourriez gagner
