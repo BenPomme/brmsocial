@@ -490,29 +490,6 @@ function shops(copy, depth) {
     .join("");
 }
 
-function productCards(locale, copy, config, depth) {
-  const socialCta = href(locale, "subscribe", depth);
-  const directCta = waLink(config, t(copy, "product.direct_prefill"));
-  return `<div class="product-grid">
-    <article class="product-card live">
-      <img class="product-logo" src="${asset(depth, "logos/social-icon.svg")}" alt="" width="72" height="72">
-      <p class="product-status">${esc(t(copy, "product.social_status"))}</p>
-      <h3>${esc(t(copy, "product.social_name"))}</h3>
-      ${paras(t(copy, "product.social_body"))}
-      <p class="amount">${esc(config.priceMonth)} €</p>
-      <p class="tiny">${esc(t(copy, "product.social_price_note"))}</p>
-      <p class="cta-row"><a class="btn btn-coral" href="${socialCta}">${esc(t(copy, "product.social_cta"))}</a></p>
-    </article>
-    <article class="product-card soon">
-      <img class="product-logo" src="${asset(depth, "logos/direct-icon.svg")}" alt="" width="72" height="72">
-      <p class="product-status">${esc(t(copy, "product.direct_status"))}</p>
-      <h3>${esc(t(copy, "product.direct_name"))}</h3>
-      ${paras(t(copy, "product.direct_body"))}
-      <p class="cta-row"><a class="btn btn-ghost" href="${directCta}" target="_blank" rel="noopener">${esc(t(copy, "product.direct_cta"))}</a></p>
-    </article>
-  </div>`;
-}
-
 const KIND_ORDER = ["restaurant", "cafe", "bakery", "salon", "florist", "workshop", "clinic", "physio", "club"];
 
 function pctLabel(n) {
@@ -600,7 +577,7 @@ function homePage(locale, copy, config, depth) {
     <div class="wrap">
       <h2>${esc(t(copy, "home.products_title"))}</h2>
       ${paras(t(copy, "home.products_lead"))}
-      ${productCards(locale, copy, config, depth)}
+      ${compareProducts(locale, copy, config, depth)}
       <p style="margin-top:1rem"><a href="${href(locale, "services", depth)}">${esc(t(copy, "nav.services"))}</a></p>
     </div>
   </section>
