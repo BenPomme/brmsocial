@@ -165,7 +165,7 @@ async function main() {
   });
   if (pub2.status !== 200) throw new Error(`2★ after OK should publish, got ${pub2.status} ${JSON.stringify(pub2.json)}`);
 
-  const { refuseOutbound } = await import("../src/lib/outbound.ts");
+  const { refuseOutbound } = await import("../src/lib/outbound");
   let outboundError = "";
   try {
     refuseOutbound("wa_out");

@@ -13,6 +13,75 @@ export function firstName(author: string | null | undefined) {
   return cleaned.split(/\s+/)[0] ?? "";
 }
 
+const NOT_A_PERSON_NAME = new Set([
+  "hola",
+  "hello",
+  "hi",
+  "hey",
+  "buenas",
+  "ok",
+  "vale",
+  "si",
+  "sí",
+  "yes",
+  "no",
+  "gracias",
+  "thanks",
+  "merci",
+  "rosalia",
+  "rosalía",
+  "babyrock",
+  "whatsapp",
+  "google",
+  "don",
+  "sr",
+  "sra",
+  "mr",
+  "mrs",
+  "dr",
+  "el",
+  "la",
+  "un",
+  "una",
+  "yo",
+  "tu",
+  "you",
+  "me",
+  "mi",
+  "my",
+  "bar",
+  "restaurante",
+  "restaurant",
+  "cafe",
+  "café",
+  "hotel",
+  "tienda",
+  "shop",
+]);
+
+/** First token of a WhatsApp profile / “me llamo X”. Empty if it doesn’t look like a given name. */
+export function personFirstName(raw: string | null | undefined) {
+  if (!raw) return "";
+  const token =
+    raw
+      .trim()
+      .split(/\s+/)[0]
+      ?.replace(/^[^A-Za-zÀ-ÿ]+|[^A-Za-zÀ-ÿ'’-]+$/g, "") ?? "";
+  if (token.length < 2 || token.length > 24) return "";
+  if (NOT_A_PERSON_NAME.has(token.toLowerCase())) return "";
+  if (!/^[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ'’-]*$/.test(token)) return "";
+  return token.charAt(0).toUpperCase() + token.slice(1);
+}
+
+export function extractSpokenName(text: string) {
+  const t = text ?? "";
+  const named =
+    t.match(
+      /\b(?:me llamo|me dic|em dic|je m['’]appelle|my name is|i am called)\s+([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ'’-]{1,23})\b/i,
+    ) ?? t.match(/^\s*hola[,.\s]+(?:soy|sóc|je suis)\s+([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ'’-]{1,23})\b/i);
+  return personFirstName(named?.[1] ?? "");
+}
+
 export function pickDetail(body: string) {
   const compact = body.replace(/\s+/g, " ").trim();
   if (!compact) return "votre visite";
