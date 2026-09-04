@@ -585,7 +585,7 @@ function homePage(locale, copy, config, depth) {
     <div class="wrap hero-split">
       <div class="hero-panel">
         <p class="kicker">${esc(t(copy, "home.kicker"))}</p>
-        <h1 class="hero-title${locale === "fr" ? " hero-title-compact" : ""}">${esc(t(copy, "home.headline"))}</h1>
+        <h1 class="hero-title">${esc(t(copy, "home.headline"))}</h1>
         <div class="lead">${homeLead(t(copy, "home.lead"))}</div>
         <div class="cta-row">
           <a class="btn btn-wa" href="${waLink(config, t(copy, "wa.prefill"))}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "nav.whatsapp"))}</a>

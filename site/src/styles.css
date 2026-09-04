@@ -323,10 +323,6 @@ h3 {
 .hero-panel .hero-title {
   margin: 0 0 0.7rem;
 }
-.hero-panel .hero-title-compact {
-  font-size: clamp(1.3rem, 2vw, 1.75rem);
-  line-height: 1.18;
-}
 .hero-panel .lead {
   font-size: 0.92rem;
   line-height: 1.4;
@@ -697,10 +693,10 @@ textarea {
 
 .products-title {
   font-size: clamp(1.55rem, 3.2vw, 2.35rem);
-  max-width: 40rem;
+  max-width: none;
 }
 .products-lead {
-  max-width: 42rem;
+  max-width: none;
   font-size: 0.98rem;
   line-height: 1.45;
 }
@@ -808,7 +804,7 @@ textarea {
   margin: 1.1rem 0 0;
 }
 .compare-offer {
-  max-width: 44rem;
+  max-width: none;
 }
 
 .product-grid {
