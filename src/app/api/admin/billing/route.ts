@@ -8,10 +8,14 @@ export async function GET() {
   if (isResponse(session)) return session;
   const clients = await prisma.client.findMany({
     where: {
-      OR: [{ stripeOrBizumRef: { not: null } }, { status: { in: ["paye", "actif", "essai"] } }],
+      OR: [
+        { stripeOrBizumRef: { not: null } },
+        { status: { in: ["lead", "paye", "paid", "actif", "essai"] } },
+        { billingEmail: { not: null } },
+      ],
     },
     orderBy: { createdAt: "desc" },
-    take: 40,
+    take: 80,
     select: {
       id: true,
       name: true,
@@ -19,6 +23,8 @@ export async function GET() {
       status: true,
       plan: true,
       emailPublic: true,
+      billingEmail: true,
+      whatsappOwner: true,
       legalName: true,
       taxId: true,
       vatMode: true,

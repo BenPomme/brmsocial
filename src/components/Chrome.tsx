@@ -45,8 +45,8 @@ export function AppHeader(props: {
             <Link href="/admin/lots" className="underline decoration-line underline-offset-4">
               Lots
             </Link>
-            <Link href="/pay" className="underline decoration-line underline-offset-4">
-              Payer
+            <Link href="/admin/accounts" className="underline decoration-line underline-offset-4">
+              Paid accounts
             </Link>
             <Link href="/operator" className="underline decoration-line underline-offset-4">
               File avis

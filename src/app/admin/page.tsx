@@ -398,9 +398,9 @@ export default function AdminPage() {
 
         <section className="bg-white/70 border border-line rounded-2xl p-5 shadow-card">
           <div className="flex flex-wrap items-baseline justify-between gap-3 mb-3">
-            <h2 className="font-display text-2xl">Paiement Stripe</h2>
-            <a href="/pay" className="text-sm underline decoration-line underline-offset-4">
-              Ouvrir le checkout test
+            <h2 className="font-display text-2xl">Paid accounts</h2>
+            <a href="/admin/accounts" className="text-sm underline decoration-line underline-offset-4">
+              Open list
             </a>
           </div>
           <p className="text-sm text-muted mb-4">

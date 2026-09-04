@@ -14,6 +14,9 @@ export async function POST(req: Request) {
     body = {};
   }
   try {
+    if (body.acceptedTerms !== true) {
+      return NextResponse.json({ error: "Debe aceptar las condiciones" }, { status: 400, headers });
+    }
     const trial = await createTrialSantCugat({
       clientId: str(body.clientId),
       name: str(body.name),

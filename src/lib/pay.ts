@@ -31,7 +31,17 @@ export function originFromRequest(req: Request) {
 export function payCorsHeaders(req: Request) {
   const origin = req.headers.get("origin") ?? "";
   const allowed = new Set(
-    [siteUrl(), appUrl(), "http://localhost:3000", "http://localhost:3001", "https://www.babyrock.ai", "https://babyrock.ai"]
+    [
+      siteUrl(),
+      appUrl(),
+      process.env.PAY_PUBLIC_URL,
+      "http://localhost:3000",
+      "http://localhost:3001",
+      "https://www.babyrock.ai",
+      "https://babyrock.ai",
+      "https://pay.babyrock.ai",
+      "https://app.babyrock.ai",
+    ]
       .filter(Boolean)
       .map((u) => u!.replace(/\/$/, "")),
   );
@@ -383,10 +393,15 @@ async function ensureStripeCustomer(client: {
 }
 
 export async function createTrialSantCugat(opts: BillingInput) {
-  if (!opts.legalName?.trim()) throw new Error("Falta la razón social");
-  if (!opts.taxId?.trim()) throw new Error("Falta el NIF/CIF");
-  if (!opts.billingLine1?.trim()) throw new Error("Falta la dirección fiscal");
-  if (!(opts.billingEmail ?? opts.email)?.trim()) throw new Error("Falta el correo de facturación");
+  if (!(opts.billingEmail ?? opts.email)?.trim()) throw new Error("Falta el correo");
+  if (!(opts.name ?? opts.legalName)?.trim()) throw new Error("Falta el nombre del comercio");
+  const wa = (opts.whatsapp ?? "").replace(/\D/g, "");
+  if (wa.length < 9) throw new Error("Falta el WhatsApp");
+  if (opts.taxId || opts.legalName) {
+    if (!opts.legalName?.trim()) throw new Error("Falta la razón social");
+    if (!opts.taxId?.trim()) throw new Error("Falta el NIF/CIF");
+    if (!opts.billingLine1?.trim()) throw new Error("Falta la dirección fiscal");
+  }
   const city = opts.billingCity ?? opts.city;
   if (!isSantCugat(city)) {
     throw new Error("El mes gratis solo vale para Sant Cugat del Vallès");
@@ -440,10 +455,15 @@ export async function createCheckoutSession(opts: BillingInput & { req: Request;
   if (opts.plan === "trial_santcugat") {
     throw new Error("El mes gratis no pasa por Stripe. Use /api/pay/trial");
   }
-  if (!opts.legalName?.trim()) throw new Error("Falta la razón social");
-  if (!opts.taxId?.trim()) throw new Error("Falta el NIF/CIF");
-  if (!opts.billingLine1?.trim()) throw new Error("Falta la dirección fiscal");
-  if (!(opts.billingEmail ?? opts.email)?.trim()) throw new Error("Falta el correo de facturación");
+  if (!(opts.billingEmail ?? opts.email)?.trim()) throw new Error("Falta el correo");
+  if (!(opts.name ?? opts.legalName)?.trim()) throw new Error("Falta el nombre del comercio");
+  const wa = (opts.whatsapp ?? "").replace(/\D/g, "");
+  if (wa.length < 9) throw new Error("Falta el WhatsApp");
+  if (opts.taxId || opts.legalName) {
+    if (!opts.legalName?.trim()) throw new Error("Falta la razón social");
+    if (!opts.taxId?.trim()) throw new Error("Falta el NIF/CIF");
+    if (!opts.billingLine1?.trim()) throw new Error("Falta la dirección fiscal");
+  }
 
   const sku = skuForPlan(opts.plan);
   const client = await resolvePayClient(opts);
@@ -487,7 +507,7 @@ export async function createCheckoutSession(opts: BillingInput & { req: Request;
     locale: "es",
     customer: customerId,
     customer_update: { name: "auto", address: "auto" },
-    billing_address_collection: "required",
+    billing_address_collection: opts.taxId || opts.legalName ? "auto" : "required",
     client_reference_id: client.id,
     metadata: {
       clientId: client.id,
@@ -511,7 +531,7 @@ export async function createCheckoutSession(opts: BillingInput & { req: Request;
       },
     },
     success_url: `${origin}/pay/ok?session_id={CHECKOUT_SESSION_ID}`,
-    cancel_url: `${origin}/pay?canceled=1`,
+    cancel_url: `${origin}/pay?canceled=1&client=${client.id}`,
   });
 
   await prisma.action.create({
