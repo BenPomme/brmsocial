@@ -11,7 +11,7 @@ Por qué importa
 El siguiente cliente suele leer su respuesta con más atención que la queja original. Una contestación serena y concreta muestra que hay alguien al cargo. Una defensa larga confirma la pelea.
 
 ## body
-No escriba en plena hora de servicio. Lea la reseña dos veces. Mire la agenda, el ticket, el turno. Si aún no lo sabe, dígalo, y dé una forma de localizarle.
+Cuando tenga que responder a una reseña negativa de Google, no escriba en plena hora de servicio. Lea la reseña dos veces. Mire la agenda, el ticket, el turno. Si aún no lo sabe, dígalo, y dé una forma de localizarle.
 
 ## ¿Hay que responder a las reseñas negativas de Google?
 

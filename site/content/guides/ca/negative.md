@@ -11,7 +11,7 @@ Per què importa
 El client següent sol llegir la seva resposta amb més atenció que la queixa original. Una contestació serena i concreta mostra que hi ha algú al capdavant. Una defensa llarga confirma la baralla.
 
 ## body
-No escrigui en plena hora de servei. Llegeixi la ressenya dues vegades. Miri l’agenda, el tiquet, el torn. Si encara no ho sap, digui-ho, i doni una manera de localitzar-lo.
+Quan hagi de respondre a una ressenya negativa de Google, no escrigui en plena hora de servei. Llegeixi la ressenya dues vegades. Miri l’agenda, el tiquet, el torn. Si encara no ho sap, digui-ho, i doni una manera de localitzar-lo.
 
 ## Cal respondre a les ressenyes negatives de Google?
 

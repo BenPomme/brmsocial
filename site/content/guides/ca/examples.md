@@ -11,7 +11,7 @@ Per què importa
 Google diu als negocis que una resposta útil mostra que està atent. El client següent sovint llegeix les paraules del titular abans que les estrelles. Un bloc copiat que valdria per a qualsevol fitxa fa el contrari.
 
 ## body
-Escrigui en l’idioma de la ressenya. Anomeni una cosa que hagin dit de veritat. Vagi curt. Google continua revisant cada resposta abans de publicar-la.
+Escrigui en l’idioma de la ressenya. Anomeni una cosa que hagin dit de veritat. Vagi curt. Aquests exemples de resposta a ressenyes de Google només serveixen si canvia el detall; Google continua revisant cada resposta abans de publicar-la.
 
 ## Exemples de resposta a ressenyes de 5 estrelles
 

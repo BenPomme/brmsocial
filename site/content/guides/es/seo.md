@@ -17,7 +17,9 @@ Sí, las reseñas de Google ayudan al SEO local y a Maps más que a un resultado
 
 Afectan primero al pack de Maps y a la ficha local. Un 4,6 con doscientas notas recientes no se lee igual que un 5,0 con seis notas de 2019. Eso puede cambiar quién recibe el clic. No es lo mismo que posicionar un artículo en google.com.
 
-¿Ayudan más reseñas de Google al SEO? La frescura y una mezcla real de notas hacen que la ficha parezca actual. Meter «mejor fontanero Barcelona» en el nombre del negocio va contra las normas y puede suspender el perfil.
+## ¿Ayudan más reseñas de Google al SEO?
+
+La frescura y una mezcla real de notas hacen que la ficha parezca actual. Meter «mejor fontanero Barcelona» en el nombre del negocio va contra las normas y puede suspender el perfil.
 
 ## ¿Ayuda responder a las reseñas de Google al SEO?
 

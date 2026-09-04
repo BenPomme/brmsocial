@@ -11,7 +11,7 @@ Why it matters
 Google will not let you edit hours, photos, or replies until the profile is verified. That is the whole point of the step. Without it, customers can still write. You cannot answer.
 
 ## body
-Search Google for your business name and city, while signed in. If the listing exists and says Claim this business, claim it. If it does not exist, add it. Then choose Get verified. Google picks the method. You cannot switch it for fun.
+Search Google for your business name and city, while signed in, to open the Google Business Profile. If the listing exists and says Claim this business, claim it. If it does not exist, add it. Then choose Get verified. Google picks the method. You cannot switch it for fun.
 
 ## How do you know if the profile is verified?
 
@@ -19,7 +19,7 @@ You are verified when you can edit the listing and a Reply button sits under the
 
 ## Phone, video, or postcard
 
-The usual options are a phone call or SMS to the business number, an email, a live video call from the shop, or a postcard with a code. Video is often the fastest when it is offered: you stand at the door, show the sign, the street, and something only the owner would have (till, keys, kitchen). If they offer video, use it. Postcard can take up to two weeks. Do not change the name or address while the card is in the post, or the code dies.
+The usual options are a phone call or SMS to the business number (that is how you verify a Google Business Profile without video), an email, a live video call from the shop, or a postcard with a code. Video is often the fastest when it is offered: you stand at the door, show the sign, the street, and something only the owner would have (till, keys, kitchen). If they offer video, use it. If they offer phone, take the phone path. Postcard can take up to two weeks. Do not change the name or address while the card is in the post, or the code dies.
 
 After you send the proof, Google can take up to five business days. Sometimes it is instant if the website is already in Search Console.
 

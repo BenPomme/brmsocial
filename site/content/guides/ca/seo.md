@@ -17,7 +17,9 @@ Sí, les ressenyes de Google ajuden al SEO local i a Maps més que a un resultat
 
 Afecten primer el pack de Maps i la fitxa local. Un 4,6 amb dues-centes notes recents no es llegeix igual que un 5,0 amb sis notes del 2019. Això pot canviar qui rep el clic. No és el mateix que posicionar un article a google.com.
 
-Les ressenyes de Google n’ajuden més, al SEO? La frescor i una barreja real de notes fan que la fitxa sembli actual. Ficar «millor lampista Barcelona» al nom del negoci va contra les normes i pot suspendre el perfil.
+## Ajuden més ressenyes de Google al SEO?
+
+La frescor i una barreja real de notes fan que la fitxa sembli actual. Ficar «millor lampista Barcelona» al nom del negoci va contra les normes i pot suspendre el perfil.
 
 ## Respondre a les ressenyes de Google ajuda al SEO?
 

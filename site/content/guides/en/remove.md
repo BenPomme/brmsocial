@@ -11,7 +11,11 @@ Why it matters
 Google says it does not step into a conflict between a business and a customer. A review comes down only if it breaks the rules: spam, fake engagement, incentives, conflict of interest, or prohibited content. Disagreeing with the score is not enough.
 
 ## body
-You cannot delete a customer’s Google review from your listing. Only the person who wrote it, or Google after a report, can take it down. If the text describes a real visit, even unfairly, reporting it will not work. Reply once, in public, then go back to work.
+You cannot remove a customer’s Google review from your listing. Only the person who wrote it, or Google after a report, can take it down. If the text describes a real visit, even unfairly, reporting it will not work. Reply once, in public, then go back to work.
+
+## Can you remove a Google review from your business?
+
+No. Google does not give you a delete button on other people’s reviews. The listing is not a wall you moderate. If the visit happened, even unfairly, the review stays. If you think it breaks the rules, you report it. That is the whole owner path.
 
 ## Can you remove a Google review you wrote?
 

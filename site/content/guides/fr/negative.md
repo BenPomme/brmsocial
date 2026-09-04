@@ -11,7 +11,13 @@ Pourquoi c’est important
 Le client suivant lit souvent votre réponse plus attentivement que la plainte. Une réponse calme et précise montre que quelqu’un tient la maison. Une longue défense confirme la bagarre.
 
 ## body
-N’écrivez pas en plein service. Lisez l’avis deux fois. Vérifiez l’agenda, le ticket, le tour. Si vous ne savez pas encore, dites-le, et donnez un moyen de vous joindre.
+Quand il faut répondre à un avis Google négatif, n’écrivez pas en plein service. Lisez l’avis deux fois. Vérifiez l’agenda, le ticket, le tour. Si vous ne savez pas encore, dites-le, et donnez un moyen de vous joindre.
+
+## Faut-il répondre aux avis Google négatifs ?
+
+Oui. Un 1 étoile sans réponse reste sur la fiche. Google prévient la personne quand vous répondez. Elle peut encore modifier son texte. Certaines le font. Ce n’est pas le but. Le but, c’est que le prochain inconnu voie un commerce qui répond.
+
+## Comment répondre à un mauvais avis Google
 
 Une réponse utile a quatre courtes parties. Remerciez-les d’avoir écrit. Nommez le problème précis avec leurs mots (l’attente, l’addition, la coupe). Dites que vous allez regarder, ou que vous l’avez déjà fait. Passez l’étape suivante à un téléphone, un e-mail ou le comptoir, avec un vrai nom.
 
@@ -19,11 +25,15 @@ Exemple :
 
 « Bonjour Pau, merci d’avoir écrit. Vous avez raison, l’attente de vendredi était trop longue. Ce n’est pas ce que nous voulons pour une première visite. Appelez le commerce et demandez Marta pour qu’on arrange ça. »
 
-À ne pas faire : contredire le client en public avec « nos registres montrent ». Ne blâmez pas le personnel par son nom. N’offrez pas une remise dans la réponse comme prix pour changer les étoiles. Google interdit déjà de payer pour modifier un avis.
+D’autres modèles, y compris 5 étoiles et mixtes, sont dans les [exemples de réponses aux avis Google]([[examples]]).
+
+## À ne pas faire
+
+Ne contredisez pas le client en public avec « nos registres montrent ». Ne blâmez pas le personnel par son nom. N’offrez pas une remise dans la réponse comme prix pour changer les étoiles. Google interdit déjà de payer pour modifier un avis.
 
 Si l’avis est faux, signalez-le, et gardez quand même la ligne publique courte et civile. S’il est vrai, réparez la chose dans le commerce. La fiche ne sauvera pas une erreur répétée.
 
-Répondez dans la journée si vous pouvez. Google prévient la personne. Elle peut encore modifier son texte après vous avoir lu. Certaines le font. Ce n’est pas le but. Le but, c’est que le prochain inconnu voie un commerce qui répond.
+Répondez dans la journée si vous pouvez.
 
 ## sources
 - [Google: gérer et répondre aux avis](https://support.google.com/business/answer/3474050)

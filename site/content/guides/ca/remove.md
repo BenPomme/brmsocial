@@ -11,7 +11,11 @@ Per què importa
 Google diu que no es fica en un conflicte entre un negoci i un client. Una ressenya només cau si trenca les normes: brossa, interaccions falses, incentius, conflicte d’interès o contingut prohibit. Estar en desacord amb la nota no basta.
 
 ## body
-Vostè no pot esborrar la ressenya d’un client a la fitxa. Només qui la va escriure, o Google després d’una denúncia, la pot treure. Si el text descriu una visita real, encara que sigui injusta, denunciar-la no servirà. Respongui una vegada, en públic, i torni a la feina.
+Vostè no pot eliminar la ressenya d’un client a la fitxa. Només qui la va escriure, o Google després d’una denúncia, la pot treure. Si el text descriu una visita real, encara que sigui injusta, denunciar-la no servirà. Respongui una vegada, en públic, i torni a la feina.
+
+## Es pot eliminar una ressenya de Google del seu negoci?
+
+No. Google no li dona un botó d’esborrar sobre les ressenyes dels altres. La fitxa no és un mur que vostè modera. Si la visita va existir, encara que sigui injusta, la ressenya es queda. Si creu que trenca les normes, la denuncia. Aquest és tot el camí del titular.
 
 ## Es pot eliminar una ressenya de Google que vostè va escriure?
 

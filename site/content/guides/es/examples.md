@@ -11,7 +11,7 @@ Por qué importa
 Google dice a los negocios que una respuesta útil muestra que está atento. El siguiente cliente a menudo lee las palabras del titular antes que las estrellas. Un bloque copiado que valdría para cualquier ficha hace lo contrario.
 
 ## body
-Escriba en el idioma de la reseña. Nombre una cosa que hayan dicho de verdad. Vaya corto. Google sigue revisando cada respuesta antes de publicarla.
+Escriba en el idioma de la reseña. Nombre una cosa que hayan dicho de verdad. Vaya corto. Estos ejemplos de respuesta a reseñas de Google solo sirven si cambia el detalle; Google sigue revisando cada respuesta antes de publicarla.
 
 ## Ejemplos de respuesta a reseñas de 5 estrellas
 

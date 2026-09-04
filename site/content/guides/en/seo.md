@@ -17,7 +17,9 @@ Yes, Google reviews help local SEO and Maps more than they help a classic blue-l
 
 They affect the Maps pack and the local listing first. A 4.6 with two hundred recent notes reads differently from a 5.0 with six notes from 2019. That can change who gets the click. It is not the same as ranking a blog post on google.com.
 
-Do more Google reviews help SEO? Recency and a real mix of scores help the listing look current. Stuffing the business name with “best plumber Barcelona” is against the rules and can get the profile suspended.
+## Do more Google reviews help SEO?
+
+Recency and a real mix of scores help the listing look current. Stuffing the business name with “best plumber Barcelona” is against the rules and can get the profile suspended.
 
 ## Does responding to Google reviews help SEO?
 

@@ -11,7 +11,7 @@ Why it matters
 The next customer often reads your reply more carefully than the original complaint. A calm, specific answer shows someone is in charge. A long defence confirms the fight.
 
 ## body
-Do not type in the rush of service. Read the review twice. Check the diary, the ticket, the shift. If you do not know yet, say so, and give a way to reach you.
+When you need to respond to a negative Google review, do not type in the rush of service. Read the review twice. Check the diary, the ticket, the shift. If you do not know yet, say so, and give a way to reach you.
 
 ## Should you respond to negative Google reviews?
 

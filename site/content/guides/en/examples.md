@@ -11,7 +11,7 @@ Why it matters
 Google tells businesses that a helpful reply shows you are paying attention. The next customer often reads the owner’s words before they read the original stars. A copy-paste block that could sit under any listing does the opposite.
 
 ## body
-Write in the language of the review. Name one thing they actually said. Keep it short. Google still checks every reply before it goes live.
+Write in the language of the review. Name one thing they actually said. Keep it short. These Google review response examples only work if you change the detail; Google still checks every reply before it goes live.
 
 ## 5-star Google review response examples
 

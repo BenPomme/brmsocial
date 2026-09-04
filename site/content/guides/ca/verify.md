@@ -11,7 +11,7 @@ Per què importa
 Google no li deixa editar horari, fotos ni respostes fins que el perfil està verificat. Aquest és el sentit del pas. Sense ell, els clients poden escriure. Vostè no pot respondre.
 
 ## body
-Cerqui a Google el nom del negoci i la ciutat, amb la sessió iniciada. Si la fitxa existeix i diu Reclamar aquest negoci, reclami-la. Si no existeix, afegeixi-la. Després premi Verificar. Google tria el mètode. No es canvia per gust.
+Cerqui a Google el nom del negoci i la ciutat, amb la sessió iniciada, per obrir el Google Business Profile. Si la fitxa existeix i diu Reclamar aquest negoci, reclami-la. Si no existeix, afegeixi-la. Després premi Verificar. Google tria el mètode. No es canvia per gust.
 
 ## Com se sap si la fitxa està verificada?
 
@@ -19,7 +19,7 @@ Està verificada quan pot editar la fitxa i hi ha un botó Respondre sota les re
 
 ## Telèfon, vídeo o postal
 
-Les opcions habituals són una trucada o un SMS al telèfon del negoci, un correu, una videotrucada en directe des del local, o una postal amb un codi. El vídeo sol ser el més ràpid quan l’ofereixen: es posa a la porta, ensenya el rètol, el carrer i alguna cosa que només tindria el titular (caixa, claus, cuina). Si ofereixen vídeo, faci-lo servir. La postal pot tardar fins a dues setmanes. No canviï el nom ni l’adreça mentre el sobre és de camí, o el codi deixa de valer.
+Les opcions habituals són una trucada o un SMS al telèfon del negoci (així es verifica el Google Business Profile sense vídeo), un correu, una videotrucada en directe des del local, o una postal amb un codi. El vídeo sol ser el més ràpid quan l’ofereixen: es posa a la porta, ensenya el rètol, el carrer i alguna cosa que només tindria el titular (caixa, claus, cuina). Si ofereixen vídeo, faci-lo servir. Si ofereixen telèfon, agafi el telèfon. La postal pot tardar fins a dues setmanes. No canviï el nom ni l’adreça mentre el sobre és de camí, o el codi deixa de valer.
 
 Després d’enviar la prova, Google pot tardar fins a cinc dies laborables. De vegades és immediat si el lloc web ja és a Search Console.
 

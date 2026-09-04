@@ -170,7 +170,7 @@ function hreflangLinks(page, absHrefFor) {
   return tags.join("\n");
 }
 
-function jsonLd(locale, page, copy, config) {
+function jsonLd(locale, page, copy, config, extraGraph) {
   const org = {
     "@type": ["Organization", "LocalBusiness"],
     name: "BabyRock",
@@ -214,10 +214,59 @@ function jsonLd(locale, page, copy, config) {
       url: absUrl(locale, "subscribe"),
     });
   }
+  if (extraGraph && extraGraph.length) graph.push(...extraGraph);
   return `<script type="application/ld+json">${JSON.stringify({
     "@context": "https://schema.org",
     "@graph": graph,
   })}</script>`;
+}
+
+function guideExtraLd(locale, g, gcopy) {
+  const url = absGuideUrl(locale, g.id);
+  const extra = [
+    {
+      "@type": "Article",
+      headline: gcopy.title,
+      description: gcopy.dek,
+      mainEntityOfPage: url,
+      url,
+      inLanguage: LOCALES[locale].html,
+      image: `${SITE}/assets/illustrations/${g.img}`,
+      author: { "@type": "Organization", name: "BabyRock Social" },
+      publisher: {
+        "@type": "Organization",
+        name: "BabyRock Social",
+        logo: { "@type": "ImageObject", url: `${SITE}/assets/og.jpg` },
+      },
+    },
+  ];
+  const faq = [];
+  const blocks = String(gcopy.body || "").split(/\n\s*\n/);
+  const stripMd = (s) =>
+    String(s || "")
+      .replace(/\[([^\]]+)\]\(\[\[[^\]]+\]\]\)/g, "$1")
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+      .replace(/\s+/g, " ")
+      .trim();
+  for (let i = 0; i < blocks.length; i++) {
+    const lines = blocks[i].split("\n");
+    const hm = lines[0] && lines[0].match(/^##\s+(.+)$/);
+    if (!hm) continue;
+    const q = hm[1].trim();
+    if (!q.includes("?")) continue;
+    let a = stripMd(lines.slice(1).join(" "));
+    if (!a && i + 1 < blocks.length && !/^##\s+/.test(blocks[i + 1])) {
+      a = stripMd(blocks[i + 1]);
+    }
+    if (!a) continue;
+    faq.push({
+      "@type": "Question",
+      name: q,
+      acceptedAnswer: { "@type": "Answer", text: a },
+    });
+  }
+  if (faq.length) extra.push({ "@type": "FAQPage", mainEntity: faq });
+  return extra;
 }
 
 function langSwitcher(locale, page, depth, hrefFor) {
@@ -310,7 +359,7 @@ function trustBar(copy, config) {
   return `<div class="trust-wrap"><p class="wrap trust-bar" data-trust-ticker data-trust-base="${n}">${html}</p></div>`;
 }
 
-function shell({ locale, page, copy, config, depth, title, description, body, langHref, canonicalUrl, hreflangAbs }) {
+function shell({ locale, page, copy, config, depth, title, description, body, langHref, canonicalUrl, hreflangAbs, extraGraph, ogType }) {
   const { css, js } = cssJs(depth);
   const navHtml = nav(locale, page, copy, depth, config);
   const wa = waLink(config, t(copy, "wa.prefill"));
@@ -327,7 +376,7 @@ function shell({ locale, page, copy, config, depth, title, description, body, la
   <meta name="robots" content="${robots}">
   <link rel="canonical" href="${canonical}">
 ${hreflangLinks(page, hreflangAbs)}
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="${esc(ogType || "website")}">
   <meta property="og:site_name" content="BabyRock Social">
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
@@ -342,7 +391,7 @@ ${hreflangLinks(page, hreflangAbs)}
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${css}">
-  ${jsonLd(locale, page, copy, config)}
+  ${jsonLd(locale, page, copy, config, extraGraph)}
   ${gaSnippet(config)}
 </head>
 <body>
@@ -948,6 +997,8 @@ for (const locale of Object.keys(LOCALES)) {
         langHref: (code) => guideHref(code, g.id, 3),
         canonicalUrl: absGuideUrl(locale, g.id),
         hreflangAbs: (code) => absGuideUrl(code, g.id),
+        extraGraph: guideExtraLd(locale, g, gcopy),
+        ogType: "article",
       })
     );
   }

@@ -11,7 +11,7 @@ Por qué importa
 Google no le deja editar horario, fotos ni respuestas hasta que el perfil está verificado. Ese es el sentido del paso. Sin él, los clientes pueden escribir. Usted no puede responder.
 
 ## body
-Busque en Google el nombre del negocio y la ciudad, con la sesión iniciada. Si la ficha existe y dice Reclamar este negocio, reclámela. Si no existe, añádala. Luego pulse Verificar. Google elige el método. No se cambia por gusto.
+Busque en Google el nombre del negocio y la ciudad, con la sesión iniciada, para abrir el Google Business Profile. Si la ficha existe y dice Reclamar este negocio, reclámela. Si no existe, añádala. Luego pulse Verificar. Google elige el método. No se cambia por gusto.
 
 ## ¿Cómo saber si la ficha está verificada?
 
@@ -19,7 +19,7 @@ Está verificada cuando puede editar la ficha y hay un botón Responder bajo las
 
 ## Teléfono, vídeo o postal
 
-Las opciones habituales son una llamada o un SMS al teléfono del negocio, un correo, una videollamada en directo desde el local, o una postal con un código. El vídeo suele ser lo más rápido cuando lo ofrecen: se pone en la puerta, enseña el letrero, la calle y algo que solo tendría el titular (caja, llaves, cocina). Si ofrecen vídeo, úselo. La postal puede tardar hasta dos semanas. No cambie el nombre ni la dirección mientras el sobre está de camino, o el código deja de valer.
+Las opciones habituales son una llamada o un SMS al teléfono del negocio (así se verifica el Google Business Profile sin vídeo), un correo, una videollamada en directo desde el local, o una postal con un código. El vídeo suele ser lo más rápido cuando lo ofrecen: se pone en la puerta, enseña el letrero, la calle y algo que solo tendría el titular (caja, llaves, cocina). Si ofrecen vídeo, úselo. Si ofrecen teléfono, tome el teléfono. La postal puede tardar hasta dos semanas. No cambie el nombre ni la dirección mientras el sobre está de camino, o el código deja de valer.
 
 Después de enviar la prueba, Google puede tardar hasta cinco días laborables. A veces es inmediato si el sitio web ya está en Search Console.
 

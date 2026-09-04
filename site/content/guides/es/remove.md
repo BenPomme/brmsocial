@@ -11,7 +11,11 @@ Por qué importa
 Google dice que no se mete en un conflicto entre un negocio y un cliente. Una reseña solo cae si rompe las normas: spam, interacciones falsas, incentivos, conflicto de interés o contenido prohibido. Estar en desacuerdo con la nota no basta.
 
 ## body
-Usted no puede borrar la reseña de un cliente en su ficha. Solo quien la escribió, o Google tras una denuncia, puede quitarla. Si el texto describe una visita real, aunque sea injusta, denunciarla no servirá. Responda una vez, en público, y vuelva al trabajo.
+Usted no puede eliminar la reseña de un cliente en su ficha. Solo quien la escribió, o Google tras una denuncia, puede quitarla. Si el texto describe una visita real, aunque sea injusta, denunciarla no servirá. Responda una vez, en público, y vuelva al trabajo.
+
+## ¿Se puede eliminar una reseña de Google de su negocio?
+
+No. Google no le da un botón de borrar sobre las reseñas de otros. La ficha no es un muro que usted modera. Si la visita existió, aunque sea injusta, la reseña se queda. Si cree que rompe las normas, la denuncia. Ese es todo el camino del titular.
 
 ## ¿Se puede eliminar una reseña de Google que usted escribió?
 
