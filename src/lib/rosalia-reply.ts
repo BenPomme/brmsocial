@@ -193,37 +193,43 @@ export async function proposeRosaliaReply(threadId: string, eventOverride?: Rosa
           lastOut: allOutbound.at(-1) ?? null,
         }),
         `History:\n${historyLines.join("\n") || "(empty)"}\n\nInbound:\n${event.text}`,
-        { model: xaiFastModel(), maxTokens: 280, temperature: 0.2, reasoning: "none" },
+        { model: xaiFastModel(), maxTokens: 280, temperature: 0.4, reasoning: "none" },
       );
-      const parsed = parseTurn(raw ?? "");
+      let parsed = parseTurn(raw ?? "");
+      if (!parsed?.reply || repeats(parsed.reply, allOutbound)) {
+        const retry = await xaiText(
+          talkPrompt({
+            lang: rememberedLang ?? "es",
+            phase: asPhase(thread.phase),
+            step: asStep(thread.onboardingStep),
+            monthLabel: quote.monthLabel,
+            managerEmail: quote.managerEmail,
+            payUrl: link,
+            lastOut: allOutbound.at(-1) ?? null,
+          }),
+          `History:\n${historyLines.join("\n") || "(empty)"}\n\nInbound:\n${event.text}\n\nWrite a NEW WhatsApp reply. reply must not be empty.`,
+          { model: xaiFastModel(), maxTokens: 280, temperature: 0.4, reasoning: "none" },
+        );
+        parsed = parseTurn(retry ?? "") ?? parsed;
+      }
       const route = coerceRoute(
         parsed?.route ?? "human",
         asStep(thread.onboardingStep),
         event.text,
         asPhase(thread.phase),
       );
+      const spoken = (parsed?.reply ?? "").trim();
       console.log("rosalia route", { inbound: event.text.slice(0, 80), raw: (raw ?? "").slice(0, 120), route });
-      const spoken = parsed?.reply ?? "";
-      if (route === "human" || !isRoutable(route) || !hasScript(route)) {
-        if (spoken && !repeats(spoken, allOutbound)) {
-          decided = {
-            ...decisionFromScript("fallback", decideOpts),
-            body: spoken.slice(0, 700),
-            source: "template",
-            status: "ok",
-            faqId: "llm_reply",
-          };
-          replySource = "llm";
-        } else {
-          decided = decisionFromScript("fallback", decideOpts);
-          replySource = "off_script";
-        }
-      } else {
-        decided = decisionFromScript(route, decideOpts);
+      const base = decisionFromScript(
+        route === "human" || !isRoutable(route) || !hasScript(route) ? "fallback" : route,
+        decideOpts,
+      );
+      if (spoken && !repeats(spoken, allOutbound)) {
+        decided = { ...base, body: spoken.slice(0, 700), source: "template", status: "ok", faqId: route || "llm_reply" };
         replySource = "llm";
-        if (spoken && !repeats(spoken, allOutbound)) {
-          decided = { ...decided, body: spoken.slice(0, 700), source: "template", status: "ok" };
-        }
+      } else {
+        decided = { ...base, source: "off_script", status: "needs_human" };
+        replySource = "off_script";
       }
     } catch (e) {
       console.warn("rosalia route", e);
