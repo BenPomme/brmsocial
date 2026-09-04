@@ -10,14 +10,23 @@ const NEXT: Record<string, string> = {
 };
 
 /** If the model re-picks the step we just sent, bump forward unless they asked about that step. */
-export function coerceRoute(route: string, step: OnboardingStep | null, inbound: string): string {
+export function coerceRoute(
+  route: string,
+  step: OnboardingStep | null,
+  inbound: string,
+  phase?: ThreadPhase,
+): string {
+  if (phase === "stopped") return "human";
   if (!step || step === "done") return route;
+  if (route === "human" || route === "stop" || route === "fallback" || route === "baja_active") {
+    return route;
+  }
+  if (!route.startsWith("onboard_")) return route;
   const next = NEXT[step] ?? "human";
-  if (route !== "human" && !route.startsWith("onboard_")) return next;
   const cur = onboardCopyId(step);
   const askingThis =
     /\b(email|maps|people|password|reviews@|gestor|lápiz|pencil|invite)\b/i.test(inbound);
-  if (route === cur && !askingThis) return next;
+  if (route === cur && !askingThis) return next === cur ? "human" : next;
   return route;
 }
 

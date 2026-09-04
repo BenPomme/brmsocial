@@ -162,7 +162,9 @@ export async function proposeRosaliaReply(threadId: string, eventOverride?: Rosa
     payUrl: link,
     pendingLowStar: pendingLow,
   };
+  const alreadyStopped = asPhase(thread.phase) === "stopped";
   const hard =
+    alreadyStopped ||
     event.type !== "inbound_text" ||
     classifyInbound(event.text) === "stop" ||
     process.env.ROSALIA_LLM === "false";
@@ -170,7 +172,10 @@ export async function proposeRosaliaReply(threadId: string, eventOverride?: Rosa
   let decided = hard ? decideRosalia(decideOpts) : null;
   let replySource: "template" | "llm" | "off_script" = decided?.source ?? "off_script";
 
-  if (!hard && event.type === "inbound_text") {
+  if (alreadyStopped && event.type === "inbound_text" && classifyInbound(event.text) !== "stop") {
+    decided = decisionFromScript("fallback", decideOpts);
+    replySource = "off_script";
+  } else if (!hard && event.type === "inbound_text") {
     const session = sessionSlice(thread.messages);
     const historyLines = session
       .filter((m) => m.direction !== "draft")
@@ -189,7 +194,12 @@ export async function proposeRosaliaReply(threadId: string, eventOverride?: Rosa
         { model: xaiFastModel(), maxTokens: 80, temperature: 0, reasoning: "none" },
       );
       const parsed = parseRoute(raw ?? "");
-      const route = coerceRoute(parsed?.route ?? "", asStep(thread.onboardingStep), event.text);
+      const route = coerceRoute(
+        parsed?.route ?? "",
+        asStep(thread.onboardingStep),
+        event.text,
+        asPhase(thread.phase),
+      );
       console.log("rosalia route", { inbound: event.text.slice(0, 80), raw: (raw ?? "").slice(0, 80), route });
       if (route === "human" || !isRoutable(route) || !hasScript(route)) {
         decided = decisionFromScript("fallback", decideOpts);

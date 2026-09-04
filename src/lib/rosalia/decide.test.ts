@@ -374,7 +374,7 @@ test("LLM route JSON picks a script id", () => {
 test("coerceRoute does not resend the current onboard step", () => {
   assert.equal(coerceRoute("onboard_email", "email", "Ah ok and?"), "onboard_role");
   assert.equal(coerceRoute("onboard_email", "email", "Tutu"), "onboard_role");
-  assert.equal(coerceRoute("hello", "email", "test"), "onboard_role");
+  assert.equal(coerceRoute("hello", "email", "test"), "hello");
   assert.equal(coerceRoute("onboard_email", "email", "what's the email to invite?"), "onboard_email");
 });
 
