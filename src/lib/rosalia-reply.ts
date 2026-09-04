@@ -1,5 +1,4 @@
 import "server-only";
-import { readFileSync } from "node:fs";
 import { handleClientReply } from "./client-reply";
 import { ingestInbound } from "./inbox";
 import { resolveQuoteCity } from "./catalog";
@@ -22,15 +21,8 @@ function isLocalHost(url: string) {
 }
 
 export function payUrl(opts?: { wa?: string | null; city?: string | null }) {
-  let tunnel = "";
-  try {
-    tunnel = readFileSync(".tunnel-url", "utf8").trim();
-  } catch {
-    tunnel = "";
-  }
   const candidates = [
     process.env.PAY_PUBLIC_URL,
-    tunnel,
     process.env.APP_URL,
     process.env.SITE_URL,
     "http://localhost:3001",
