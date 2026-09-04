@@ -24,6 +24,8 @@ export type PlaceHit = {
   primaryType: string | null;
   businessStatus: string | null;
   types: string[];
+  nationalPhone?: string | null;
+  internationalPhone?: string | null;
 };
 
 export type PlaceReview = {
@@ -33,6 +35,10 @@ export type PlaceReview = {
   languageCode: string | null;
   author: string | null;
   publishTime: string | null;
+};
+
+export type PlaceHours = {
+  weekdayDescriptions: string[];
 };
 
 function requireKey() {
@@ -72,60 +78,79 @@ export async function searchText(opts: {
   languageCode?: string;
   pageSize?: number;
 }): Promise<PlaceHit[]> {
-  const pageSize = Math.min(Math.max(opts.pageSize ?? 10, 1), 20);
-  const body: Record<string, unknown> = {
-    textQuery: opts.textQuery,
-    pageSize,
-    strictTypeFiltering: Boolean(opts.includedType),
-  };
-  if (opts.includedType) body.includedType = opts.includedType;
-  if (opts.regionCode) body.regionCode = opts.regionCode.toLowerCase();
-  if (opts.languageCode) body.languageCode = opts.languageCode;
+  const want = Math.min(Math.max(opts.pageSize ?? 20, 1), 80);
+  const fieldMask = [
+    "places.id",
+    "places.displayName",
+    "places.formattedAddress",
+    "places.googleMapsUri",
+    "places.websiteUri",
+    "places.rating",
+    "places.userRatingCount",
+    "places.primaryType",
+    "places.businessStatus",
+    "places.types",
+    "places.nationalPhoneNumber",
+    "places.internationalPhoneNumber",
+    "nextPageToken",
+  ].join(",");
+  const out: PlaceHit[] = [];
+  let pageToken: string | undefined;
+  while (out.length < want) {
+    const body: Record<string, unknown> = {
+      textQuery: opts.textQuery,
+      pageSize: Math.min(20, want - out.length),
+      strictTypeFiltering: Boolean(opts.includedType),
+    };
+    if (opts.includedType) body.includedType = opts.includedType;
+    if (opts.regionCode) body.regionCode = opts.regionCode.toLowerCase();
+    if (opts.languageCode) body.languageCode = opts.languageCode;
+    if (pageToken) body.pageToken = pageToken;
 
-  const data = await placesFetch(
-    `${PLACES_BASE}/places:searchText`,
-    { method: "POST", body: JSON.stringify(body) },
-    [
-      "places.id",
-      "places.displayName",
-      "places.formattedAddress",
-      "places.googleMapsUri",
-      "places.websiteUri",
-      "places.rating",
-      "places.userRatingCount",
-      "places.primaryType",
-      "places.businessStatus",
-      "places.types",
-    ].join(","),
-  );
+    const data = await placesFetch(
+      `${PLACES_BASE}/places:searchText`,
+      { method: "POST", body: JSON.stringify(body) },
+      fieldMask,
+    );
 
-  const places = (data.places ?? []) as Array<{
-    id?: string;
-    displayName?: { text?: string };
-    formattedAddress?: string;
-    googleMapsUri?: string;
-    websiteUri?: string;
-    rating?: number;
-    userRatingCount?: number;
-    primaryType?: string;
-    businessStatus?: string;
-    types?: string[];
-  }>;
+    const places = (data.places ?? []) as Array<{
+      id?: string;
+      displayName?: { text?: string };
+      formattedAddress?: string;
+      googleMapsUri?: string;
+      websiteUri?: string;
+      rating?: number;
+      userRatingCount?: number;
+      primaryType?: string;
+      businessStatus?: string;
+      types?: string[];
+      nationalPhoneNumber?: string;
+      internationalPhoneNumber?: string;
+    }>;
 
-  return places
-    .filter((p) => p.id)
-    .map((p) => ({
-      id: p.id as string,
-      name: p.displayName?.text ?? p.id ?? "unknown",
-      formattedAddress: p.formattedAddress ?? null,
-      mapsUri: p.googleMapsUri ?? null,
-      websiteUri: p.websiteUri ?? null,
-      rating: typeof p.rating === "number" ? p.rating : null,
-      userRatingCount: typeof p.userRatingCount === "number" ? p.userRatingCount : null,
-      primaryType: p.primaryType ?? null,
-      businessStatus: p.businessStatus ?? null,
-      types: p.types ?? [],
-    }));
+    const chunk = places
+      .filter((p) => p.id)
+      .map((p) => ({
+        id: p.id as string,
+        name: p.displayName?.text ?? p.id ?? "unknown",
+        formattedAddress: p.formattedAddress ?? null,
+        mapsUri: p.googleMapsUri ?? null,
+        websiteUri: p.websiteUri ?? null,
+        rating: typeof p.rating === "number" ? p.rating : null,
+        userRatingCount: typeof p.userRatingCount === "number" ? p.userRatingCount : null,
+        primaryType: p.primaryType ?? null,
+        businessStatus: p.businessStatus ?? null,
+        types: p.types ?? [],
+        nationalPhone: p.nationalPhoneNumber ?? null,
+        internationalPhone: p.internationalPhoneNumber ?? null,
+      }));
+    if (chunk.length === 0) break;
+    out.push(...chunk);
+    pageToken = typeof data.nextPageToken === "string" ? data.nextPageToken : undefined;
+    if (!pageToken) break;
+  }
+  const seen = new Set<string>();
+  return out.filter((p) => (seen.has(p.id) ? false : (seen.add(p.id), true))).slice(0, want);
 }
 
 export async function placeDetails(placeId: string): Promise<{
@@ -139,11 +164,14 @@ export async function placeDetails(placeId: string): Promise<{
   businessStatus: string | null;
   primaryType: string | null;
   reviews: PlaceReview[];
+  nationalPhone: string | null;
+  internationalPhone: string | null;
+  hours: PlaceHours | null;
 }> {
   const data = await placesFetch(
     `${PLACES_BASE}/places/${encodeURIComponent(placeId)}`,
     { method: "GET" },
-    "id,displayName,formattedAddress,googleMapsUri,websiteUri,rating,userRatingCount,businessStatus,primaryType,reviews",
+    "id,displayName,formattedAddress,googleMapsUri,websiteUri,rating,userRatingCount,businessStatus,primaryType,reviews,nationalPhoneNumber,internationalPhoneNumber,regularOpeningHours",
   );
 
   const reviewsRaw = (data.reviews ?? []) as Array<{
@@ -172,6 +200,12 @@ export async function placeDetails(placeId: string): Promise<{
     })
     .filter((x): x is PlaceReview => x !== null);
 
+  const weekdayDescriptions = Array.isArray(data.regularOpeningHours?.weekdayDescriptions)
+    ? (data.regularOpeningHours.weekdayDescriptions as unknown[]).filter(
+        (x): x is string => typeof x === "string",
+      )
+    : [];
+
   return {
     id: data.id ?? placeId,
     name: data.displayName?.text ?? placeId,
@@ -183,5 +217,8 @@ export async function placeDetails(placeId: string): Promise<{
     businessStatus: data.businessStatus ?? null,
     primaryType: data.primaryType ?? null,
     reviews,
+    nationalPhone: data.nationalPhoneNumber ?? null,
+    internationalPhone: data.internationalPhoneNumber ?? null,
+    hours: weekdayDescriptions.length ? { weekdayDescriptions } : null,
   };
 }
