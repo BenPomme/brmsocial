@@ -65,6 +65,20 @@ function mentionsInviteSent(text: string) {
   );
 }
 
+function wantsManagerHow(text: string, lastOut?: string | null) {
+  if (
+    /\b(how do i add|how (do i|can i|to) add|add you as manager|don['’]?t know how|no s[eé] c[oó]mo)\b/i.test(
+      text,
+    )
+  ) {
+    return true;
+  }
+  return (
+    /\b(how|c[oó]mo|com es fa)\b/i.test(text) &&
+    /reviews@babyrock\.ai|gestor|Google manager/i.test(lastOut ?? "")
+  );
+}
+
 const FAQ: { id: string; re: RegExp }[] = [
   {
     id: "pay",
@@ -236,23 +250,6 @@ function outreachFaq(
   const pitched = alreadyPitched(input.outboundBodies, quote.monthLabel);
   const sentPay = alreadySentPayLink(input.outboundBodies, input.payUrl);
   const phase: ThreadPhase = sentPay || pitched ? "awaiting_pay" : input.phase === "outreach" ? "outreach" : input.phase;
-
-  const askingHow =
-    /\b(how|c[oó]mo|com es fa|pas à pas)\b/i.test(text) &&
-    !wantsPayLink(text) &&
-    /reviews@babyrock\.ai|gestor|Google manager|manager in your Google/i.test(input.outboundBodies.at(-1) ?? "");
-  if (askingHow) {
-    return base(input, quote, lang, {
-      kind: "text",
-      source: "template",
-      faqId: "manager",
-      body: fill("manager", lang, input, quote),
-      status: "needs_human",
-      phase,
-      onboardingStep: input.onboardingStep,
-      applyClientReply: null,
-    });
-  }
 
   if (wantsPayLink(text) || kind === "ok") {
     const body = pitched ? fill("pay", lang, input, quote) : fill("ok", lang, input, quote);
@@ -500,6 +497,13 @@ export function decideRosalia(input: DecideInput): RosaliaDecision {
   }
 
   if (input.phase === "onboarding") {
+    return continueOnboarding(input, quote, lang, text);
+  }
+
+  if (
+    (input.phase === "outreach" || input.phase === "awaiting_pay") &&
+    wantsManagerHow(text, lastOut)
+  ) {
     return continueOnboarding(input, quote, lang, text);
   }
 

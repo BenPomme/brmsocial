@@ -304,10 +304,35 @@ test("Yes but how I don’t know how stays English and explains the gestor", () 
     [{ type: "inbound_text", text: "Yes but how I don’t know how" }],
   );
   assert.equal(last.lang, "en");
-  assert.equal(last.faqId, "manager");
+  assert.equal(last.faqId, "onboard_maps");
+  assert.equal(last.phase, "onboarding");
   assert.equal(/Perfecto|Pago 89|Para empezar/.test(last.body), false);
-  assert.match(last.body, /reviews@babyrock\.ai/);
-  assert.match(last.body, /manager|click|password/i);
+  assert.match(last.body, /Google Maps/i);
+});
+
+test("manager how-to does not repeat the same FAQ", () => {
+  const lastOut =
+    "We never ask for your password. In Google: add reviews@babyrock.ai as a manager (not owner). I’ll walk you through it. Payment is the other step: The payment link is in the message above.";
+  const first = decideRosalia({
+    ...seed({
+      preferredLang: "en",
+      phase: "awaiting_pay",
+      outboundBodies: [lastOut],
+    }),
+    event: { type: "inbound_text", text: "how do I add you as manager?" },
+  });
+  assert.equal(first.faqId, "onboard_maps");
+  const second = decideRosalia({
+    ...seed({
+      preferredLang: "en",
+      phase: "onboarding",
+      onboardingStep: "maps",
+      outboundBodies: [lastOut, first.body],
+    }),
+    event: { type: "inbound_text", text: "yes i don't know how to add you as manager" },
+  });
+  assert.equal(second.faqId, "onboard_maps");
+  assert.equal(/Payment is the other step/.test(second.body), false);
 });
 
 test("bare yes still sends the pay link", () => {
