@@ -15,7 +15,7 @@ export function classifyInbound(body: string): InboundKind {
   ) {
     return "ok";
   }
-  if (/^\s*(ok|vale|de acuerdo|sí|si|yes)\b/i.test(t)) return "ok";
+  if (/^\s*(ok|vale|de acuerdo|sí|si|yes)[\s!.]*$/i.test(t)) return "ok";
   const digits = t.replace(/[^\d+]/g, "");
   if (/^\+?\d{9,15}$/.test(digits) && digits.replace(/\D/g, "").length >= 9) return "phone";
   return "text";

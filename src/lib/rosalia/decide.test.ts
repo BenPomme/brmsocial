@@ -291,6 +291,31 @@ test("12 BAJA, factura, edit published reply", () => {
   assert.equal(edit.faqId, "edit_published");
 });
 
+test("Yes but how I don’t know how stays English and explains the gestor", () => {
+  const lastOut =
+    "Hi BenP. Great! Next, add reviews@babyrock.ai as a manager in your Google Business Profile (no password needed). We'll then set up your 89€/month review replies. Any questions?";
+  const { last } = run(
+    {
+      preferredLang: "en",
+      firstName: "Ben",
+      outboundBodies: [lastOut],
+      phase: "awaiting_pay",
+    },
+    [{ type: "inbound_text", text: "Yes but how I don’t know how" }],
+  );
+  assert.equal(last.lang, "en");
+  assert.equal(last.faqId, "manager");
+  assert.equal(/Perfecto|Pago 89|Para empezar/.test(last.body), false);
+  assert.match(last.body, /reviews@babyrock\.ai/);
+  assert.match(last.body, /manager|click|password/i);
+});
+
+test("bare yes still sends the pay link", () => {
+  const { last } = run({ preferredLang: "en" }, [{ type: "inbound_text", text: "Yes" }]);
+  assert.equal(last.faqId, "pay");
+  assert.match(last.body, /\/pay/);
+});
+
 test("language switch is explicit only", () => {
   const { decisions } = run({ preferredLang: "es" }, [
     { type: "inbound_text", text: "vale" },

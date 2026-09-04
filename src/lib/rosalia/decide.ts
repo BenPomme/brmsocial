@@ -86,7 +86,7 @@ const FAQ: { id: string; re: RegExp }[] = [
   { id: "price", re: /\b(precio|preu|price|cuesta|coste|cost|tarif|euros?|€|how much)\b/i },
   {
     id: "manager",
-    re: /\b(gestor|manager|invitaci[oó]n|acceso|contrase[nñ]a|password|google my business|perfil de empresa|c[oó]mo (te |os |le )?a[nñ]ad|how do i add|add you|no s[eé] qu[eè] [eé]s)\b/i,
+    re: /\b(gestor|manager|invitaci[oó]n|acceso|contrase[nñ]a|password|google my business|perfil de empresa|c[oó]mo (te |os |le )?a[nñ]ad|how do i( add)?|add you|don['’]?t know how|no s[eé] (qu[eè] [eé]s|c[oó]mo)|no s[eé] c[oó]mo)\b/i,
   },
   { id: "how", re: /\b(c[oó]mo funciona|com funciona|how (does )?it work|qu[eé] hac[eé]is|que ofrec[eé]n)\b/i },
   {
@@ -236,6 +236,23 @@ function outreachFaq(
   const pitched = alreadyPitched(input.outboundBodies, quote.monthLabel);
   const sentPay = alreadySentPayLink(input.outboundBodies, input.payUrl);
   const phase: ThreadPhase = sentPay || pitched ? "awaiting_pay" : input.phase === "outreach" ? "outreach" : input.phase;
+
+  const askingHow =
+    /\b(how|c[oó]mo|com es fa|pas à pas)\b/i.test(text) &&
+    !wantsPayLink(text) &&
+    /reviews@babyrock\.ai|gestor|Google manager|manager in your Google/i.test(input.outboundBodies.at(-1) ?? "");
+  if (askingHow) {
+    return base(input, quote, lang, {
+      kind: "text",
+      source: "template",
+      faqId: "manager",
+      body: fill("manager", lang, input, quote),
+      status: "needs_human",
+      phase,
+      onboardingStep: input.onboardingStep,
+      applyClientReply: null,
+    });
+  }
 
   if (wantsPayLink(text) || kind === "ok") {
     const body = pitched ? fill("pay", lang, input, quote) : fill("ok", lang, input, quote);
