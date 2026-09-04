@@ -148,10 +148,92 @@ Prévenez-moi quand c’est prêt
 Bonjour Rosalia, je suis intéressé par BabyRock Direct quand ce sera prêt.
 
 ## products.headline
-BabyRock Social et BabyRock Direct
+Construisez la confiance sur Google aujourd’hui. Construisez des relations clients directes sur WhatsApp ensuite.
 
 ## products.lead
-BabyRock Social répond à vos avis Google. BabyRock Direct vous aide à opérer votre propre WhatsApp for Business et à augmenter vos revenus.
+BabyRock Social s’occupe des réponses à vos avis Google, vous fait gagner du temps et montre aux clients suivants que vous écoutez. Chaque réponse est relue par une personne, et vous validez chaque réponse sensible.
+
+BabyRock Direct, bientôt, aidera vos clients à réserver et à recevoir des messages de suivi via le numéro WhatsApp de votre commerce.
+
+Avec Social, WhatsApp vous relie à BabyRock. Avec Direct, il relie vos clients à votre commerce.
+
+## product.social_tag
+Gagnez du temps et ne laissez plus aucun avis Google sans réponse.
+
+## product.social_price_unit
+TTC / mois
+
+## product.social_price_detail
+Ou 799 € pour 12 mois. Économisez 389 €. Prix TTC en Espagne. Pas de frais d’installation si vous nous ajoutez comme gestionnaire.
+
+## products.social_cta
+Démarrer BabyRock Social
+
+## product.social_f1_title
+Chaque nouvel avis, traité
+
+## product.social_f1
+Nous rattrapons aussi jusqu’à 20 de vos avis sans réponse les plus récents à l’inscription.
+
+## product.social_f2_title
+La bonne langue, avec un dernier contrôle humain
+
+## product.social_f2
+L’IA aide à préparer chaque réponse en espagnol, catalan, français ou anglais, selon la langue de l’avis. Une personne vérifie le ton, la pertinence et la qualité avant de l’envoyer à Google. Rien n’est publié automatiquement.
+
+## product.social_f3_title
+Vous validez chaque réponse sensible
+
+## product.social_f3
+Pour les avis 1, 2 et 3 étoiles, nous vous envoyons le brouillon sur WhatsApp. Approuvez-le ou changez le texte ; nous l’envoyons seulement quand vous dites oui.
+
+## product.social_f4_title
+Pas de mot de passe Google. Pas de nouveau tableau de bord.
+
+## product.social_f4
+Ajoutez BabyRock comme gestionnaire de votre fiche d’établissement Google. Vous restez titulaire et pouvez retirer l’accès à tout moment. Questions, changements, factures, pauses et résiliations restent sur WhatsApp.
+
+## product.social_f5_title
+Gardez un œil sur votre fiche Google
+
+## product.social_f5
+Recevez une alerte le jour même si des informations importantes du commerce changent, plus un récapitulatif lundi de vos avis et de l’activité Google disponible.
+
+## product.direct_tag
+Faites de votre numéro WhatsApp Business un canal de réservation et de suivi client.
+
+## products.direct_cta
+Prévenez-moi quand Direct sera prêt
+
+## product.direct_f1_title
+La relation client reste la vôtre
+
+## product.direct_f1
+Les clients écrivent au numéro WhatsApp de votre commerce, pas à un numéro BabyRock partagé.
+
+## product.direct_f2_title
+Passez de la conversation à une réservation confirmée
+
+## product.direct_f2
+Prenez des réservations selon les disponibilités que vous fixez, avec votre agenda actuel s’il est connecté.
+
+## product.direct_f3_title
+Aidez à réduire les rendez-vous manqués
+
+## product.direct_f3
+Envoyez des rappels à temps pour les réservations confirmées via Direct et simplifiez les annulations.
+
+## product.direct_f4_title
+Demandez un avis au bon moment
+
+## product.direct_f4
+Un seul suivi après une visite confirmée, sans incitation et sans filtrer qui peut laisser un avis.
+
+## product.direct_later
+Plus tard sur la feuille de route, pas inclus au lancement : commandes WhatsApp sans commission de marketplace, le chat de la fiche d’établissement Google et des points d’entrée QR imprimés.
+
+## products.offer
+Offre de lancement à Sant Cugat : le premier mois est offert, avec des réponses à jusqu’à 20 avis sans réponse des trois mois précédents. Ensuite 99 € / mois, TTC en Espagne. Le deuxième mois n’est pas prélevé tout seul : vous recevez un lien de paiement si vous choisissez de continuer.
 
 ## home.for_whom_title
 Si les clients vous trouvent sur Google, ce service est pour vous

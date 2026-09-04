@@ -142,10 +142,92 @@ Aviseu-me quan estigui a punt
 Hola Rosalia, m’interessa BabyRock Direct quan estigui a punt.
 
 ## products.headline
-BabyRock Social i BabyRock Direct
+Construïu confiança a Google avui. Construïu relacions directes amb els clients al WhatsApp després.
 
 ## products.lead
-BabyRock Social respon a les vostres ressenyes de Google. BabyRock Direct us ajuda a operar el vostre WhatsApp for Business i a augmentar els ingressos.
+BabyRock Social s’ocupa de les respostes a les vostres ressenyes de Google, us estalvia temps i mostra als clients següents que escolteu. Cada resposta la revisa una persona, i vosaltres aproveu cada resposta sensible.
+
+BabyRock Direct, pròximament, ajudarà els clients a reservar i a rebre missatges de seguiment a través del número de WhatsApp del vostre comerç.
+
+Amb Social, el WhatsApp us connecta amb BabyRock. Amb Direct, connecta els vostres clients amb el vostre negoci.
+
+## product.social_tag
+Estalvieu temps i no deixeu cap ressenya de Google sense resposta.
+
+## product.social_price_unit
+IVA incl. / mes
+
+## product.social_price_detail
+O 799 € per 12 mesos. Estalvieu 389 €. Preus amb IVA espanyol. Sense cost d’alta si ens afegiu com a gestors.
+
+## products.social_cta
+Començar BabyRock Social
+
+## product.social_f1_title
+Cada ressenya nova, atesa
+
+## product.social_f1
+També posem al dia fins a 20 de les vostres ressenyes sense resposta més recents quan us apunteu.
+
+## product.social_f2_title
+La llengua correcta, amb un darrer control humà
+
+## product.social_f2
+La IA ajuda a preparar cada resposta en castellà, català, francès o anglès, segons la llengua de la ressenya. Una persona comprova el to, la pertinència i la qualitat abans d’enviar-la a Google. Res no es publica automàticament.
+
+## product.social_f3_title
+Aproveu cada resposta sensible
+
+## product.social_f3
+A les ressenyes d’1, 2 i 3 estrelles, us enviem l’esborrany per WhatsApp. Aproveu-lo o canvieu el text; l’enviem només quan dieu que sí.
+
+## product.social_f4_title
+Sense contrasenya de Google. Sense un tauler nou.
+
+## product.social_f4
+Afegiu BabyRock com a gestor del vostre Google Business Profile. Continueu sent els titulars i podeu treure l’accés quan vulgueu. Preguntes, canvis, factures, pauses i baixes es queden al WhatsApp.
+
+## product.social_f5_title
+Al cas del vostre perfil de Google
+
+## product.social_f5
+Rebeu avisos el mateix dia si canvien dades importants del comerç, més un recapitulatiu breu els dilluns de les ressenyes i de l’activitat de Google disponible.
+
+## product.direct_tag
+Convertiu el vostre número de WhatsApp Business en un canal de reserves i seguiment.
+
+## products.direct_cta
+Aviseu-me quan Direct estigui a punt
+
+## product.direct_f1_title
+La relació amb el client continua sent vostra
+
+## product.direct_f1
+Els clients escriuen al número de WhatsApp del vostre comerç, no a un número compartit de BabyRock.
+
+## product.direct_f2_title
+Passeu de la conversa a una reserva confirmada
+
+## product.direct_f2
+Preneu reserves segons la disponibilitat que fixeu, amb l’agenda actual si està connectada.
+
+## product.direct_f3_title
+Ajudeu a reduir les cites perdudes
+
+## product.direct_f3
+Envieu recordatoris a temps per a les reserves confirmades amb Direct i faciliteu les cancel·lacions.
+
+## product.direct_f4_title
+Demaneu ressenyes en el moment adequat
+
+## product.direct_f4
+Un sol seguiment després d’una visita confirmada, sense incentius i sense filtrar qui pot deixar ressenya.
+
+## product.direct_later
+Més endavant a la fulla de ruta, no inclòs en el llançament: comandes per WhatsApp sense comissió de marketplace, el xat de Google Business Profile i punts d’entrada amb QR imprès.
+
+## products.offer
+Oferta de llançament a Sant Cugat: el primer mes és de franc, amb respostes a fins a 20 ressenyes sense resposta dels tres mesos anteriors. Després 99 € al mes, IVA espanyol inclòs. El segon mes no es cobra sol: rebeu un enllaç de pagament si voleu continuar.
 
 ## home.for_whom_title
 Si els clients us troben a Google, aquest servei és per a vosaltres

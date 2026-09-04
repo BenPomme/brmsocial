@@ -142,10 +142,92 @@ Tell me when it is ready
 Hi Rosalia, I am interested in BabyRock Direct when it is ready.
 
 ## products.headline
-BabyRock Social and BabyRock Direct
+Build trust on Google today. Build direct customer relationships on WhatsApp next.
 
 ## products.lead
-BabyRock Social replies to your Google reviews. BabyRock Direct helps you operate your own WhatsApp for Business and increase your revenues.
+BabyRock Social takes care of your Google review replies, saving you time and showing future customers that you listen. Every reply is checked by a person, and you approve every sensitive response.
+
+BabyRock Direct, coming soon, will help customers book and receive follow-up messages through your business’s own WhatsApp number.
+
+With Social, WhatsApp connects you with BabyRock. With Direct, it connects your customers with your business.
+
+## product.social_tag
+Save time and never leave another Google review unanswered.
+
+## product.social_price_unit
+VAT incl. / month
+
+## product.social_price_detail
+Or €799 for 12 months. Save €389. Prices include Spanish VAT. No setup fee when you add us as a manager yourself.
+
+## products.social_cta
+Start BabyRock Social
+
+## product.social_f1_title
+Every new review, handled
+
+## product.social_f1
+We also catch up on up to 20 of your most recent unanswered reviews when you join.
+
+## product.social_f2_title
+The right language, with a human final check
+
+## product.social_f2
+AI helps prepare each reply in Spanish, Catalan, French or English, matching the language of the review. A person checks the tone, relevance and quality before submitting it to Google. Nothing is published automatically.
+
+## product.social_f3_title
+You approve every sensitive reply
+
+## product.social_f3
+For 1, 2 and 3-star reviews, we send the draft to you on WhatsApp. Approve it or change the wording; we submit it only after you say yes.
+
+## product.social_f4_title
+No Google password. No new dashboard.
+
+## product.social_f4
+Add BabyRock as a manager of your Google Business Profile. You remain the owner and can remove our access at any time. Questions, changes, invoices, pauses and cancellations stay in WhatsApp.
+
+## product.social_f5_title
+Stay on top of your Google profile
+
+## product.social_f5
+Receive same-day alerts when important business details change, plus a concise Monday recap of your reviews and available Google activity.
+
+## product.direct_tag
+Turn your own WhatsApp Business number into a booking and customer follow-up channel.
+
+## products.direct_cta
+Tell me when Direct is ready
+
+## product.direct_f1_title
+Keep the customer relationship yours
+
+## product.direct_f1
+Customers message your business’s own WhatsApp number, not a shared BabyRock number.
+
+## product.direct_f2_title
+Turn conversations into confirmed bookings
+
+## product.direct_f2
+Take bookings from the availability you set, using your existing calendar where connected.
+
+## product.direct_f3_title
+Help reduce missed appointments
+
+## product.direct_f3
+Send timely reminders for bookings confirmed through Direct and make cancellations easier.
+
+## product.direct_f4_title
+Ask for reviews at the right moment
+
+## product.direct_f4
+Send one follow-up after a confirmed visit, with no incentives and no review gating.
+
+## product.direct_later
+Later on the roadmap, not included at launch: WhatsApp orders without marketplace commission, Google Business Profile chat and printed QR entry points.
+
+## products.offer
+Sant Cugat launch offer: your first month is free, including replies to up to 20 unanswered reviews from the previous three months. Then €99/month, including Spanish VAT. The second month is not charged automatically: you receive a payment link if you choose to continue.
 
 ## home.for_whom_title
 If customers find you on Google, this service is for you

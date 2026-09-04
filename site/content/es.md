@@ -142,10 +142,92 @@ Avíseme cuando esté listo
 Hola Rosalia, me interesa BabyRock Direct cuando esté listo.
 
 ## products.headline
-BabyRock Social y BabyRock Direct
+Construya confianza en Google hoy. Construya relaciones directas con sus clientes en WhatsApp después.
 
 ## products.lead
-BabyRock Social responde a sus reseñas de Google. BabyRock Direct le ayuda a gestionar su propio WhatsApp for Business y a aumentar sus ingresos.
+BabyRock Social se ocupa de las respuestas a sus reseñas de Google, le ahorra tiempo y muestra a los próximos clientes que usted escucha. Cada respuesta la revisa una persona, y usted aprueba cada respuesta sensible.
+
+BabyRock Direct, próximamente, ayudará a los clientes a reservar y a recibir mensajes de seguimiento a través del propio número de WhatsApp de su comercio.
+
+Con Social, WhatsApp le conecta con BabyRock. Con Direct, conecta a sus clientes con su negocio.
+
+## product.social_tag
+Ahorre tiempo y no deje ninguna reseña de Google sin respuesta.
+
+## product.social_price_unit
+IVA incl. / mes
+
+## product.social_price_detail
+O 799 € por 12 meses. Ahorre 389 €. Precios con IVA español. Sin coste de alta si nos añade usted como gestor.
+
+## products.social_cta
+Empezar BabyRock Social
+
+## product.social_f1_title
+Cada reseña nueva, atendida
+
+## product.social_f1
+También ponemos al día hasta 20 de sus reseñas sin respuesta más recientes cuando se apunta.
+
+## product.social_f2_title
+El idioma correcto, con un último control humano
+
+## product.social_f2
+La IA ayuda a preparar cada respuesta en español, catalán, francés o inglés, según el idioma de la reseña. Una persona comprueba el tono, la pertinencia y la calidad antes de enviarla a Google. Nada se publica automáticamente.
+
+## product.social_f3_title
+Usted aprueba cada respuesta sensible
+
+## product.social_f3
+En las reseñas de 1, 2 y 3 estrellas, le enviamos el borrador por WhatsApp. Apruébelo o cambie el texto; lo enviamos solo cuando usted dice que sí.
+
+## product.social_f4_title
+Sin contraseña de Google. Sin un panel nuevo.
+
+## product.social_f4
+Añada a BabyRock como gestor de su Google Business Profile. Sigue siendo el titular y puede quitar el acceso cuando quiera. Preguntas, cambios, facturas, pausas y bajas se quedan en WhatsApp.
+
+## product.social_f5_title
+Al tanto de su perfil de Google
+
+## product.social_f5
+Reciba avisos el mismo día si cambian datos importantes del comercio, más un recapitulativo breve los lunes de sus reseñas y de la actividad de Google disponible.
+
+## product.direct_tag
+Convierta su propio número de WhatsApp Business en un canal de reservas y seguimiento.
+
+## products.direct_cta
+Avíseme cuando Direct esté listo
+
+## product.direct_f1_title
+La relación con el cliente sigue siendo suya
+
+## product.direct_f1
+Los clientes escriben al número de WhatsApp de su comercio, no a un número compartido de BabyRock.
+
+## product.direct_f2_title
+Pase de la conversación a una reserva confirmada
+
+## product.direct_f2
+Tome reservas según la disponibilidad que usted fije, con su agenda actual si está conectada.
+
+## product.direct_f3_title
+Ayude a reducir las citas perdidas
+
+## product.direct_f3
+Envíe recordatorios a tiempo para las reservas confirmadas con Direct y facilite las cancelaciones.
+
+## product.direct_f4_title
+Pida reseñas en el momento adecuado
+
+## product.direct_f4
+Un solo seguimiento después de una visita confirmada, sin incentivos y sin filtrar quién puede dejar reseña.
+
+## product.direct_later
+Más adelante en la hoja de ruta, no incluido al lanzar: pedidos por WhatsApp sin comisión de marketplace, el chat de Google Business Profile y puntos de entrada con QR impreso.
+
+## products.offer
+Oferta de lanzamiento en Sant Cugat: el primer mes es gratis, con respuestas a hasta 20 reseñas sin respuesta de los tres meses anteriores. Luego 99 € al mes, IVA español incluido. El segundo mes no se cobra solo: recibe un enlace de pago si quiere continuar.
 
 ## home.for_whom_title
 Si los clientes le encuentran en Google, este servicio es para usted

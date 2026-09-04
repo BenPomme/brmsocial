@@ -861,12 +861,54 @@ function guideArticlePage(locale, copy, config, depth, id) {
   </article>`;
 }
 
+function checkIcon(soon) {
+  const c = soon ? "#6a645c" : "#3c9a4e";
+  return `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9" stroke="${c}" stroke-width="1.6"/><path d="M6 10.2l2.3 2.3L14 7.6" stroke="${c}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+}
+
+function featureItems(copy, prefix, n, soon) {
+  return Array.from({ length: n }, (_, i) => {
+    const k = `${prefix}_f${i + 1}`;
+    return `<li>${checkIcon(soon)}<div><strong>${esc(t(copy, `${k}_title`))}</strong><span>${esc(t(copy, k))}</span></div></li>`;
+  }).join("");
+}
+
+function compareProducts(locale, copy, config, depth) {
+  const socialCta = href(locale, "subscribe", depth);
+  const directCta = waLink(config, t(copy, "product.direct_prefill"));
+  return `<div class="compare">
+    <article class="compare-card live">
+      <div class="compare-head">
+        <img src="${asset(depth, "logos/social-icon.svg")}" alt="" width="52" height="52">
+        <h2 class="compare-name">${esc(t(copy, "product.social_name"))} <em>${esc(t(copy, "product.social_status"))}</em></h2>
+      </div>
+      <p class="compare-tag">${esc(t(copy, "product.social_tag"))}</p>
+      <p class="compare-price">${esc(config.priceMonth)} € <small>${esc(t(copy, "product.social_price_unit"))}</small></p>
+      <p class="compare-price-note">${esc(t(copy, "product.social_price_detail"))}</p>
+      <a class="btn btn-coral compare-cta" href="${socialCta}">${esc(t(copy, "products.social_cta"))}</a>
+      <ul class="compare-features">${featureItems(copy, "product.social", 5, false)}</ul>
+    </article>
+    <article class="compare-card soon">
+      <div class="compare-head">
+        <img src="${asset(depth, "logos/direct-icon.svg")}" alt="" width="52" height="52">
+        <h2 class="compare-name">${esc(t(copy, "product.direct_name"))} <em>${esc(t(copy, "product.direct_status"))}</em></h2>
+      </div>
+      <p class="compare-tag">${esc(t(copy, "product.direct_tag"))}</p>
+      <a class="btn btn-ghost compare-cta" href="${directCta}" target="_blank" rel="noopener">${esc(t(copy, "products.direct_cta"))}</a>
+      <ul class="compare-features">${featureItems(copy, "product.direct", 4, true)}</ul>
+      <p class="compare-later">${esc(t(copy, "product.direct_later"))}</p>
+    </article>
+  </div>
+  <p class="compare-offer">${esc(t(copy, "products.offer"))}</p>`;
+}
+
 function servicesPage(locale, copy, config, depth) {
   return `
-  <section class="wrap section">
-    <h1>${esc(t(copy, "products.headline"))}</h1>
-    <div class="lead">${paras(t(copy, "products.lead"))}</div>
-    ${productCards(locale, copy, config, depth)}
+  <section class="wrap section products-page">
+    <p class="kicker">${esc(t(copy, "nav.services"))}</p>
+    <h1 class="products-title">${esc(t(copy, "products.headline"))}</h1>
+    <div class="lead products-lead">${paras(t(copy, "products.lead"))}</div>
+    ${compareProducts(locale, copy, config, depth)}
   </section>`;
 }
 
@@ -995,8 +1037,8 @@ for (const locale of Object.keys(LOCALES)) {
         copy,
         config,
         depth: meta.depth,
-        title: page === "services" ? `${t(copy, "products.headline")} | BabyRock` : t(copy, "meta.title"),
-        description: page === "services" ? t(copy, "products.lead") : t(copy, "meta.description"),
+        title: page === "services" ? `${t(copy, "product.social_name")} · ${t(copy, "product.direct_name")} | BabyRock` : t(copy, "meta.title"),
+        description: page === "services" ? t(copy, "products.lead").split(/\n\s*\n/)[0] : t(copy, "meta.description"),
         body: meta.body,
       })
     );
