@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { decideRosalia, decisionFromScript, shouldSendNow, wantsPayLink } from "./decide";
-import { parseRoute } from "./route";
+import { coerceRoute, parseRoute } from "./route";
 import type { DecideInput, RosaliaDecision, RosaliaEvent, ThreadPhase, OnboardingStep, ConvoLang } from "./types";
 
 const PAY = "https://app.babyrock.ai/pay";
@@ -369,6 +369,13 @@ test("I paid is not treated as send me the pay link", () => {
 test("LLM route JSON picks a script id", () => {
   assert.deepEqual(parseRoute('{"route":"onboard_email"}'), { route: "onboard_email" });
   assert.equal(parseRoute("nope"), null);
+});
+
+test("coerceRoute does not resend the current onboard step", () => {
+  assert.equal(coerceRoute("onboard_email", "email", "Ah ok and?"), "onboard_role");
+  assert.equal(coerceRoute("onboard_email", "email", "Tutu"), "onboard_role");
+  assert.equal(coerceRoute("hello", "email", "test"), "onboard_role");
+  assert.equal(coerceRoute("onboard_email", "email", "what's the email to invite?"), "onboard_email");
 });
 
 test("decisionFromScript applies onboard_email and stays in English", () => {

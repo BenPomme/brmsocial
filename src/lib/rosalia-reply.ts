@@ -11,7 +11,7 @@ import { isAllowlisted, sendZohoMail } from "./zoho-mail";
 import { classifyInbound } from "./classify-inbound";
 import { hasScript } from "./rosalia/copy";
 import { decideRosalia, decisionFromScript, shouldSendNow } from "./rosalia/decide";
-import { isRoutable, parseRoute, routePrompt } from "./rosalia/route";
+import { coerceRoute, isRoutable, parseRoute, routePrompt } from "./rosalia/route";
 import type { ConvoLang, RosaliaEvent, ThreadPhase, OnboardingStep } from "./rosalia/types";
 
 export { wantsPayLink } from "./rosalia/decide";
@@ -189,7 +189,8 @@ export async function proposeRosaliaReply(threadId: string, eventOverride?: Rosa
         { model: xaiFastModel(), maxTokens: 80, temperature: 0, reasoning: "none" },
       );
       const parsed = parseRoute(raw ?? "");
-      const route = parsed?.route ?? "";
+      const route = coerceRoute(parsed?.route ?? "", asStep(thread.onboardingStep), event.text);
+      console.log("rosalia route", { inbound: event.text.slice(0, 80), raw: (raw ?? "").slice(0, 80), route });
       if (route === "human" || !isRoutable(route) || !hasScript(route)) {
         decided = decisionFromScript("fallback", decideOpts);
         replySource = "off_script";
