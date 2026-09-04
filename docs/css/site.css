@@ -258,19 +258,26 @@ textarea {
 }
 .hero-split {
   display: grid;
-  gap: 1rem;
-  align-items: center;
+  gap: 1.1rem;
+  align-items: stretch;
+}
+.hero-visual {
+  margin: 0;
+  min-height: 16.5rem;
+  overflow: hidden;
+  border-radius: 1.25rem;
 }
 .hero-photo {
   width: 100%;
-  height: 9rem;
+  height: 16.5rem;
   object-fit: cover;
-  border-radius: 1rem;
+  object-position: 50% 30%;
+  border-radius: inherit;
 }
 .hero-panel {
   margin: 0;
   width: auto;
-  max-width: 40rem;
+  max-width: none;
   background: transparent;
   padding: 0;
   border: 0;
@@ -867,22 +874,29 @@ textarea {
   }
   .hero-stage {
     min-height: 0;
-    padding: 1.5rem 0 0.4rem;
+    padding: 1.6rem 0 0.5rem;
   }
   .hero-split {
-    grid-template-columns: minmax(0, 1fr) 16rem;
-    gap: 1.6rem;
-    align-items: center;
+    grid-template-columns: minmax(22rem, 1.05fr) minmax(20rem, 0.95fr);
+    gap: 2rem;
+    align-items: stretch;
+  }
+  .hero-visual {
+    min-height: 28rem;
+    height: 100%;
+    border-radius: 1.4rem;
   }
   .hero-photo {
-    width: 16rem;
-    height: 16rem;
+    width: 100%;
+    height: 100%;
+    min-height: 28rem;
   }
   .hero-panel {
     margin: 0;
-    padding: 0;
+    padding: 0.4rem 0;
     text-align: left;
     width: auto;
+    max-width: none;
   }
   .hero-panel .cta-row {
     display: flex;
@@ -918,5 +932,13 @@ textarea {
 @media (min-width: 1100px) {
   .shops {
     grid-template-columns: repeat(9, 1fr);
+  }
+  .hero-split {
+    grid-template-columns: minmax(26rem, 1fr) minmax(24rem, 1fr);
+    gap: 2.4rem;
+  }
+  .hero-visual,
+  .hero-photo {
+    min-height: 34rem;
   }
 }

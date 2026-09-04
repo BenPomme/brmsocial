@@ -447,7 +447,7 @@ function homePage(locale, copy, config, depth) {
           <a class="btn btn-ghost" href="${href(locale, "simulator", depth)}">${esc(t(copy, "home.cta_sim"))}</a>
         </div>
       </div>
-      <img class="hero-photo" src="${asset(depth, "illustrations/hero.jpg")}" alt="">
+      <figure class="hero-visual"><img class="hero-photo" src="${asset(depth, "illustrations/hero.jpg")}" alt=""></figure>
     </div>
   </section>
   <section class="section" id="productos">

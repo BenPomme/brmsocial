@@ -103,7 +103,7 @@ Fuentes
 BabyRock Social y BabyRock Direct
 
 ## home.products_lead
-BabyRock Social está disponible hoy. BabyRock Direct gestionará su propio WhatsApp for Business para aumentar sus ingresos. Próximamente.
+BabyRock Social está disponible hoy. BabyRock Direct le ayuda a gestionar su propio WhatsApp for Business y a aumentar sus ingresos. Próximamente.
 
 ## product.social_name
 BabyRock Social
@@ -129,9 +129,7 @@ BabyRock Direct
 Próximamente
 
 ## product.direct_body
-El número que ven sus clientes sigue siendo el suyo. Un cliente escribe «una mesa el sábado a las 21 h». Si tenemos el dato, respondemos. Si no, avisamos al comercio y usted responde en la misma aplicación de siempre.
-
-Primero: reservas, recordatorio, y después de una visita conocida, una petición de reseña Google en el mismo hilo. No enviamos mensajes a desconocidos.
+Le ayudamos a gestionar su propio WhatsApp for Business. Tome el control de la relación con sus clientes: que reserven y hagan pedidos, envíe recordatorios si no aparecen, pida reseñas y aumente sus ingresos.
 
 ## product.direct_cta
 Avíseme cuando esté listo
@@ -143,7 +141,7 @@ Hola Rosalia, me interesa BabyRock Direct cuando esté listo.
 BabyRock Social y BabyRock Direct
 
 ## products.lead
-BabyRock Social responde a sus reseñas de Google. BabyRock Direct llevará el WhatsApp de su negocio.
+BabyRock Social responde a sus reseñas de Google. BabyRock Direct le ayuda a gestionar su propio WhatsApp for Business y a aumentar sus ingresos.
 
 ## home.for_whom_title
 Si los clientes le encuentran en Google, este servicio es para usted

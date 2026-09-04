@@ -103,7 +103,7 @@ Fonts
 BabyRock Social i BabyRock Direct
 
 ## home.products_lead
-BabyRock Social és disponible avui. BabyRock Direct gestionarà el vostre WhatsApp for Business per augmentar els ingressos. Pròximament.
+BabyRock Social és disponible avui. BabyRock Direct us ajuda a operar el vostre WhatsApp for Business i a augmentar els ingressos. Pròximament.
 
 ## product.social_name
 BabyRock Social
@@ -129,9 +129,7 @@ BabyRock Direct
 Pròximament
 
 ## product.direct_body
-El número que veuen els vostres clients continua sent el vostre. Un client escriu «una taula dissabte a les 21 h». Si tenim la dada, responem. Si no, avisem el comerç i vosaltres responeu a la mateixa aplicació de sempre.
-
-Primer ús: reserves, recordatori, i després d’una visita coneguda, una petició de ressenya Google al mateix fil. No enviem missatges a desconeguts.
+Us ajudem a operar el vostre WhatsApp for Business. Preneu el control de la relació amb els clients, que reservin, facin comandes, envieu recordatoris si no es presenten, demaneu ressenyes i augmenteu els ingressos.
 
 ## product.direct_cta
 Aviseu-me quan estigui a punt
@@ -143,7 +141,7 @@ Hola Rosalia, m’interessa BabyRock Direct quan estigui a punt.
 BabyRock Social i BabyRock Direct
 
 ## products.lead
-BabyRock Social respon a les vostres ressenyes de Google. BabyRock Direct portarà el WhatsApp del vostre negoci.
+BabyRock Social respon a les vostres ressenyes de Google. BabyRock Direct us ajuda a operar el vostre WhatsApp for Business i a augmentar els ingressos.
 
 ## home.for_whom_title
 Si els clients us troben a Google, aquest servei és per a vosaltres
