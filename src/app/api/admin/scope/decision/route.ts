@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 import { isResponse, requireRole } from "@/lib/api-guard";
 import { applyScopeChange, rejectScopeChange } from "@/lib/agents/scope";
-import { enqueueAndRun } from "@/lib/jobs";
+import { firstScan } from "@/lib/first-scan";
 
-export const maxDuration = 60;
+export const maxDuration = 300;
 
 export async function POST(req: Request) {
   const session = await requireRole(["admin"]);
@@ -17,6 +17,6 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true, status: "rejected" });
   }
   const applied = await applyScopeChange(body.id, session.email);
-  const scout = await enqueueAndRun("scout", { source: "scope_apply", changeId: body.id });
-  return NextResponse.json({ ok: true, status: "applied", applied, scout });
+  const scan = await firstScan({ actor: session.email });
+  return NextResponse.json({ ok: true, status: "applied", applied, scan });
 }

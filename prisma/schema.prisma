@@ -59,6 +59,7 @@ model Client {
   operator                  User?    @relation("OperatorClients", fields: [operatorId], references: [id])
   toneNotes                 String?  @map("tone_notes")
   publishLive               Boolean  @default(false) @map("publish_live")
+  ratingCount               Int?     @map("rating_count")
   createdAt                 DateTime @default(now()) @map("created_at")
 
   loginUsers User[]              @relation("ClientLogin")
@@ -66,6 +67,8 @@ model Client {
   actions    Action[]
   messages   MessageWhatsapp[]
   lead       Lead?
+  ficheSnapshots FicheSnapshot[]
+  inboxThreads InboxThread[]
 
   @@map("clients")
 }
@@ -79,6 +82,17 @@ model ScopeCity {
 
   @@unique([name, country])
   @@map("scope_cities")
+}
+
+model ScopeScan {
+  id            String   @id @default(uuid())
+  areaName      String   @map("area_name")
+  country       String
+  categorySlug  String   @map("category_slug")
+  scannedAt     DateTime @default(now()) @map("scanned_at")
+  actor         String
+  @@unique([areaName, country, categorySlug])
+  @@map("scope_scans")
 }
 
 model ScopeCategory {
@@ -117,6 +131,7 @@ model Avis {
   body             String
   reviewedAt       DateTime? @map("reviewed_at")
   status           String
+  vanishedAt       DateTime? @map("vanished_at")
   createdAt        DateTime  @default(now()) @map("created_at")
 
   reponses Reponse[]
@@ -177,6 +192,29 @@ model MessageWhatsapp {
   @@map("messages_whatsapp")
 }
 
+model FicheSnapshot {
+  id                  String   @id @default(uuid())
+  clientId            String   @map("client_id")
+  client              Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  takenAt             DateTime @default(now()) @map("taken_at")
+  source              String
+  name                String?
+  phone               String?
+  address             String?
+  hoursText           String?  @map("hours_text")
+  businessStatus      String?  @map("business_status")
+  rating              Float?
+  ratingCount         Int?     @map("rating_count")
+  reviewIds           Json?    @map("review_ids")
+  calls               Int?
+  directionRequests   Int?     @map("direction_requests")
+  suggestedEdits      Json?    @map("suggested_edits")
+  raw                 Json?
+
+  @@index([clientId, takenAt])
+  @@map("fiche_snapshots")
+}
+
 model Job {
   id        String    @id @default(uuid())
   kind      String
@@ -211,6 +249,9 @@ model Lead {
   userRatingCount  Int?      @map("user_rating_count")
   channelPlan      String    @default("skip") @map("channel_plan")
   status           String    @default("new")
+  source           String    @default("scout")
+  contactSource    String?   @map("contact_source")
+  contactActor     String?   @map("contact_actor")
   lastTouchAt      DateTime? @map("last_touch_at")
   clientId         String?   @unique @map("client_id")
   client           Client?   @relation(fields: [clientId], references: [id], onDelete: SetNull)
@@ -245,9 +286,15 @@ model InboxThread {
   counterparty  String
   subject       String?
   status        String   @default("open")
+  firstName     String?  @map("first_name")
+  preferredLang String?  @map("preferred_lang")
+  phase         String   @default("outreach")
+  onboardingStep String? @map("onboarding_step")
+  lastInboundAt DateTime? @map("last_inbound_at")
   leadId        String?  @map("lead_id")
   lead          Lead?    @relation(fields: [leadId], references: [id], onDelete: SetNull)
   clientId      String?  @map("client_id")
+  client        Client?  @relation(fields: [clientId], references: [id], onDelete: SetNull)
   lastMessageAt DateTime @default(now()) @map("last_message_at")
   createdAt     DateTime @default(now()) @map("created_at")
 

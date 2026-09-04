@@ -2,12 +2,13 @@ import { prisma } from "./db";
 import { emailTrust } from "./site-contacts";
 
 export async function loadScopeState() {
-  const [cities, categories, changes] = await Promise.all([
+  const [cities, categories, changes, scans] = await Promise.all([
     prisma.scopeCity.findMany({ orderBy: [{ country: "asc" }, { name: "asc" }] }),
     prisma.scopeCategory.findMany({ orderBy: { label: "asc" } }),
     prisma.scopeChange.findMany({ orderBy: { createdAt: "desc" }, take: 40 }),
+    prisma.scopeScan.findMany({ orderBy: { scannedAt: "desc" } }),
   ]);
-  return { cities, categories, changes };
+  return { cities, categories, changes, scans };
 }
 
 export async function listPlacesInActiveScope() {

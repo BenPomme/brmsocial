@@ -1,10 +1,10 @@
 import { NextResponse } from "next/server";
 import { isResponse, requireRole } from "@/lib/api-guard";
 import { toggleCategory, toggleCity } from "@/lib/agents/scope";
-import { enqueueAndRun } from "@/lib/jobs";
+import { firstScan } from "@/lib/first-scan";
 import { prisma } from "@/lib/db";
 
-export const maxDuration = 60;
+export const maxDuration = 300;
 
 export async function POST(req: Request) {
   const session = await requireRole(["admin"]);
@@ -42,13 +42,13 @@ export async function POST(req: Request) {
     });
   }
 
-  let scout = null;
+  let scan = null;
   if (body.active) {
-    scout = await enqueueAndRun("scout", {
-      source: "toggle",
+    scan = await firstScan({
+      actor: session.email,
       cityId: body.kind === "city" ? body.id : undefined,
       categoryId: body.kind === "category" ? body.id : undefined,
     });
   }
-  return NextResponse.json({ ok: true, scout });
+  return NextResponse.json({ ok: true, scan });
 }

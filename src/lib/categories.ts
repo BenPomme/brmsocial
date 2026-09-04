@@ -108,3 +108,74 @@ export const CITY_ALIASES: Record<string, { name: string; country: "ES" | "FR" }
 export function cityFromWord(word: string): { name: string; country: "ES" | "FR" } | null {
   return CITY_ALIASES[fold(word)] ?? null;
 }
+
+const SCOPE_STOP = new Set([
+  "active",
+  "ouvre",
+  "ouvrir",
+  "on",
+  "off",
+  "coupe",
+  "couper",
+  "desactive",
+  "disable",
+  "categorie",
+  "category",
+  "ville",
+  "city",
+  "et",
+  "and",
+  "the",
+  "les",
+  "la",
+  "le",
+  "de",
+  "du",
+  "en",
+  "in",
+  "pour",
+  "for",
+]);
+
+function titleCaseName(s: string) {
+  return s
+    .split(/\s+/)
+    .filter(Boolean)
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(" ");
+}
+
+/** Named cities/areas from a Scope chat, including names not in CITY_ALIASES (Rubí). */
+export function citiesFromScopeTokens(
+  tokens: string[],
+  countryHint: "ES" | "FR" | null,
+): { name: string; country: "ES" | "FR" }[] {
+  const found: { name: string; country: "ES" | "FR" }[] = [];
+  const seen = new Set<string>();
+  const used = new Set<number>();
+  const country = countryHint ?? "ES";
+
+  for (let i = 0; i < tokens.length; i++) {
+    if (used.has(i)) continue;
+    const two = i + 1 < tokens.length ? `${tokens[i]} ${tokens[i + 1]}` : "";
+    const hit = (two && cityFromWord(two)) || cityFromWord(tokens[i]);
+    if (hit) {
+      const key = `${hit.name}|${hit.country}`;
+      if (!seen.has(key)) {
+        seen.add(key);
+        found.push({ name: hit.name, country: countryHint ?? hit.country });
+      }
+      used.add(i);
+      if (two && cityFromWord(two)) used.add(i + 1);
+    }
+  }
+
+  if (found.length > 0) return found;
+
+  const leftover = tokens.filter(
+    (t, i) => !used.has(i) && !SCOPE_STOP.has(fold(t)) && !categoryFromWord(t) && t.length > 2,
+  );
+  if (leftover.length === 0) return [];
+  const name = titleCaseName(leftover.join(" "));
+  return [{ name, country }];
+}

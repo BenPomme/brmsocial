@@ -54,6 +54,14 @@ type Job = {
   result: unknown;
   createdAt: string;
 };
+type Scan = {
+  id: string;
+  areaName: string;
+  country: string;
+  categorySlug: string;
+  scannedAt: string;
+  actor: string;
+};
 type PaidClient = {
   id: string;
   name: string;
@@ -84,7 +92,8 @@ export default function AdminPage() {
   const [changes, setChanges] = useState<Change[]>([]);
   const [places, setPlaces] = useState<Place[]>([]);
   const [jobs, setJobs] = useState<Job[]>([]);
-  const [message, setMessage] = useState("active Barcelone, catégorie restaurant");
+  const [scans, setScans] = useState<Scan[]>([]);
+  const [message, setMessage] = useState("active Rubi, category restaurant");
   const [busy, setBusy] = useState<string | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
 
@@ -106,6 +115,7 @@ export default function AdminPage() {
     setCities(scope.cities ?? []);
     setCategories(scope.categories ?? []);
     setChanges(scope.changes ?? []);
+    setScans(scope.scans ?? []);
     setPlaces(pl.clients ?? []);
     setJobs(jb.jobs ?? []);
   }, []);
@@ -148,11 +158,13 @@ export default function AdminPage() {
       return;
     }
     if (decision === "apply") {
-      const err = data.scout?.error || data.scout?.result?.errors?.join("; ");
+      const waves = data.scan?.waves as Array<{ area?: string; skipped?: boolean; places?: number; error?: string }> | undefined;
+      const skipped = waves?.filter((w) => w.skipped).length ?? 0;
+      const ran = waves?.filter((w) => !w.skipped) ?? [];
       setNotice(
-        err
-          ? `Appliqué, scout: ${err}`
-          : `Appliqué. Scout: ${data.scout?.result?.places ?? "?"} fiches, ${data.scout?.result?.newAvis ?? "?"} avis.`,
+        data.scan?.reason
+          ? String(data.scan.reason)
+          : `Scope saved. First scan: ${ran.map((w) => `${w.area} (${w.places ?? 0})`).join(", ") || "none"}; already in Past scans: ${skipped}.`,
       );
     }
     await refresh();
@@ -172,15 +184,20 @@ export default function AdminPage() {
     await refresh();
   }
 
-  async function rescout() {
+  async function rescout(force?: { cityId?: string; categoryId?: string }) {
     setBusy("scout");
-    const res = await fetch("/api/admin/scout", { method: "POST" });
+    const res = await fetch("/api/admin/scout", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(force ? { force: true, ...force } : {}),
+    });
     const data = await res.json();
     setBusy(null);
+    const waves = data.scan?.waves as Array<{ skipped?: boolean; area?: string }> | undefined;
     setNotice(
-      data.scout?.error
-        ? String(data.scout.error)
-        : `Scout: ${data.scout?.result?.places ?? "?"} fiches, ${data.scout?.result?.newAvis ?? "?"} avis.`,
+      data.scan?.reason
+        ? String(data.scan.reason)
+        : `Scan: ${waves?.filter((w) => !w.skipped).length ?? 0} new, ${waves?.filter((w) => w.skipped).length ?? 0} already in Past scans.`,
     );
     await refresh();
   }
@@ -273,7 +290,7 @@ export default function AdminPage() {
                         onClick={() => decide(c.id, "apply")}
                         className="rounded-lg bg-moss text-white px-3 py-1.5 text-xs"
                       >
-                        {busy === c.id ? "Scout Places…" : "Appliquer"}
+                        {busy === c.id ? "First scan…" : "Add to scope"}
                       </button>
                       <button
                         disabled={busy === c.id}
@@ -295,11 +312,11 @@ export default function AdminPage() {
                 <h2 className="font-display text-2xl">Villes</h2>
                 <div className="flex gap-3">
                   <button
-                    onClick={rescout}
+                    onClick={() => rescout()}
                     disabled={busy === "scout"}
                     className="text-xs underline decoration-line"
                   >
-                    {busy === "scout" ? "Scout…" : "Relancer scout"}
+                    {busy === "scout" ? "Scan…" : "First scan"}
                   </button>
                   <button
                     onClick={reinspect}
@@ -323,6 +340,31 @@ export default function AdminPage() {
                       className={`px-2 py-1 rounded-full text-xs ${c.active ? "bg-moss text-white" : "bg-sand text-muted"}`}
                     >
                       {c.active ? "on" : "off"}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-white/70 border border-line rounded-2xl p-5 shadow-card">
+              <h2 className="font-display text-2xl mb-3">Past scans</h2>
+              {scans.length === 0 && <p className="text-sm text-muted">None yet. Add to scope runs a first scan once.</p>}
+              <ul className="space-y-2">
+                {scans.map((s) => (
+                  <li key={s.id} className="flex items-center justify-between text-sm gap-2">
+                    <span>
+                      {s.areaName} × {s.categorySlug}{" "}
+                      <span className="text-muted">{new Date(s.scannedAt).toLocaleString()}</span>
+                    </span>
+                    <button
+                      className="text-xs underline"
+                      disabled={busy === "scout"}
+                      onClick={() => {
+                        const city = cities.find((c) => c.name === s.areaName && c.country === s.country);
+                        const cat = categories.find((c) => c.slug === s.categorySlug);
+                        if (city && cat) rescout({ cityId: city.id, categoryId: cat.id });
+                      }}
+                    >
+                      Scan again
                     </button>
                   </li>
                 ))}

@@ -2,7 +2,7 @@ import { prisma } from "../db";
 import {
   categoryBySlug,
   categoryFromWord,
-  cityFromWord,
+  citiesFromScopeTokens,
   fold,
   type CategoryDef,
 } from "../categories";
@@ -64,7 +64,12 @@ function parseWithRegex(message: string): ScopeProposal {
   }
 
   const tokens = folded.split(/[^a-zàâçéèêëîïôùûüÿœñ0-9]+/i).filter(Boolean);
-  if (tokens.some((t) => AMBIGUOUS.has(t)) && !tokens.some((t) => cityFromWord(t))) {
+  const countryHint: "ES" | "FR" | null = /\b(france|français|francais)\b/i.test(raw)
+    ? "FR"
+    : /\b(espagne|spain|españa|espanol|español)\b/i.test(raw)
+      ? "ES"
+      : null;
+  if (tokens.some((t) => AMBIGUOUS.has(t)) && citiesFromScopeTokens(tokens, countryHint).length === 0) {
     return {
       clarification:
         "Trop vague (« le sud », une région). Donne des villes nommées, par ex. Barcelone, Valence, Girona.",
@@ -76,33 +81,21 @@ function parseWithRegex(message: string): ScopeProposal {
   const wantsOff = /\b(off|coupe|couper|desactive|désactive|ferme|fermer|disable|sauf|pas|without|excepto)\b/i.test(
     raw,
   );
-  const countryHint: "ES" | "FR" | null = /\b(france|français|francais)\b/i.test(raw)
-    ? "FR"
-    : /\b(espagne|spain|españa|espanol|español)\b/i.test(raw)
-      ? "ES"
-      : null;
 
   const cities: ScopeDiffItemCity[] = [];
   const categories: ScopeDiffItemCategory[] = [];
-  const seenCity = new Set<string>();
   const seenCat = new Set<string>();
+  const cityActive = wantsOff && !/active|ouvre/i.test(raw) ? false : true;
+  for (const city of citiesFromScopeTokens(tokens, countryHint)) {
+    cities.push({
+      op: "upsert",
+      name: city.name,
+      country: city.country,
+      active: cityActive,
+    });
+  }
 
   for (const tok of tokens) {
-    const city = cityFromWord(tok);
-    if (city && !seenCity.has(`${city.name}|${city.country}`)) {
-      seenCity.add(`${city.name}|${city.country}`);
-      const tokenOff = new RegExp(
-        `(?:coupe|off|désactive|desactive|ferme)\\s+[^.]{0,20}${tok}|${tok}\\s*(?:off|out)`,
-        "i",
-      );
-      const active = tokenOff.test(raw) ? false : !wantsOff || /active|ouvre|on\b/i.test(raw);
-      cities.push({
-        op: "upsert",
-        name: city.name,
-        country: countryHint ?? city.country,
-        active: wantsOff && !/active|ouvre/i.test(raw) ? false : active,
-      });
-    }
     const cat = categoryFromWord(tok);
     if (cat && !seenCat.has(cat.slug)) {
       seenCat.add(cat.slug);

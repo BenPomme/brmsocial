@@ -3,6 +3,7 @@ import { envChecklist } from "../env";
 import { placeDetails, searchText, type PlaceHit } from "../places";
 import { detectLang } from "../language";
 import { draftMany } from "./draft";
+import { channelPlanFor, findSiteContacts } from "../site-contacts";
 
 const COUNTRY_LANG: Record<string, string> = { ES: "es", FR: "fr" };
 
@@ -13,6 +14,7 @@ export async function runScout(
     maxPlaces?: number;
     maxDetails?: number;
     skipDraft?: boolean;
+    skipExisting?: boolean;
   } = {},
 ) {
   const limits = envChecklist();
@@ -40,6 +42,18 @@ export async function runScout(
       reason: "no active city × category in scope_*",
       cities: cities.map((c) => c.name),
       categories: categories.map((c) => c.slug),
+      places: 0,
+      newAvis: 0,
+      drafts: 0,
+      detailsUsed: 0,
+      errors: [] as string[],
+      sample: [] as Array<{
+        placeId: string;
+        name: string;
+        city: string;
+        category: string;
+        reviews: number;
+      }>,
     };
   }
 
@@ -76,6 +90,11 @@ export async function runScout(
 
       for (const hit of hits) {
         if (detailsUsed >= maxDetails) break;
+
+        const already = await prisma.lead.findUnique({
+          where: { placeId: hit.id },
+          select: { id: true, websiteUri: true, mapsPhone: true, inspectAt: true },
+        });
 
         const lead = await prisma.lead.upsert({
           where: { placeId: hit.id },
@@ -144,10 +163,54 @@ export async function runScout(
           });
         }
 
+        if (
+          payload.skipExisting !== false &&
+          (already?.websiteUri || already?.mapsPhone || already?.inspectAt)
+        ) {
+          placeSummaries.push({
+            placeId: hit.id,
+            name: hit.name,
+            city: city.name,
+            category: category.slug,
+            reviews: 0,
+          });
+          continue;
+        }
+
         let imported = 0;
         try {
           const details = await placeDetails(hit.id);
           detailsUsed += 1;
+          const websiteUri = details.websiteUri ?? hit.websiteUri ?? lead.websiteUri;
+          const mapsPhone = details.internationalPhone ?? details.nationalPhone ?? hit.internationalPhone ?? hit.nationalPhone ?? null;
+          const contactPatch: {
+            websiteUri?: string;
+            email?: string;
+            outreachTo?: string;
+            channelPlan?: string;
+            mapsPhone?: string;
+            waSite?: string;
+          } = {};
+          if (websiteUri) contactPatch.websiteUri = websiteUri;
+          if (mapsPhone) contactPatch.mapsPhone = mapsPhone.replace(/\s+/g, "");
+          if (websiteUri) {
+            try {
+              const found = await findSiteContacts(websiteUri);
+              const email = found.emails[0] ?? null;
+              const wa = found.whatsapp[0] ?? null;
+              if (email) {
+                contactPatch.email = email;
+                contactPatch.outreachTo = email;
+              }
+              if (wa) contactPatch.waSite = wa;
+              contactPatch.channelPlan = channelPlanFor(email, wa);
+            } catch (e) {
+              errors.push(`contacts ${hit.name}: ${e instanceof Error ? e.message : String(e)}`);
+            }
+          }
+          if (Object.keys(contactPatch).length) {
+            await prisma.lead.update({ where: { id: lead.id }, data: contactPatch });
+          }
           for (const review of details.reviews) {
             if (newAvisIds.length >= maxAvis) break;
             const existing = await prisma.avis.findUnique({

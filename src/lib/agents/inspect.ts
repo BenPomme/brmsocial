@@ -115,6 +115,7 @@ export async function runInspect(
     where: {
       ...(payload.leadIds?.length ? { id: { in: payload.leadIds } } : {}),
       ...(payload.city ? { city: payload.city } : {}),
+      inspectAt: null,
     },
     orderBy: { createdAt: "desc" },
     take: maxLeads,

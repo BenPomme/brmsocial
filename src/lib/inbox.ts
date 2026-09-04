@@ -1,24 +1,9 @@
+import { classifyInbound, type InboundKind } from "./classify-inbound";
 import { prisma } from "./db";
+import { extractSpokenName, personFirstName } from "./language";
 
-export type InboundKind = "ok" | "stop" | "phone" | "text";
-
-export function classifyInbound(body: string): InboundKind {
-  const t = body.replace(/\s+/g, " ").trim();
-  if (!t) return "text";
-  if (/\b(baja|stop|unsubscribe|no me interesa|no,?\s*gracias|no gracias)\b/i.test(t)) return "stop";
-  if (
-    /\b(pago|pagar|bizum|stripe|tarjeta|enlace|link|env[ií]a(?:\s*lo|\s*me)?|m[aá]nda(?:\s*me|\s*lo)?)\b/i.test(
-      t,
-    ) ||
-    /\b(do it|send it|send the link)\b/i.test(t)
-  ) {
-    return "ok";
-  }
-  if (/^\s*(ok|vale|de acuerdo|sí|si|yes)\b/i.test(t)) return "ok";
-  const digits = t.replace(/[^\d+]/g, "");
-  if (/^\+?\d{9,15}$/.test(digits) && digits.replace(/\D/g, "").length >= 9) return "phone";
-  return "text";
-}
+export type { InboundKind };
+export { classifyInbound };
 
 export async function ingestInbound(opts: {
   channel: "email" | "whatsapp";
@@ -28,21 +13,72 @@ export async function ingestInbound(opts: {
   providerId: string;
   payload?: unknown;
   direction?: "in" | "out";
+  profileName?: string | null;
+  city?: string | null;
+  skipDraft?: boolean;
 }) {
   const counterparty = opts.counterparty.trim().toLowerCase();
   const direction = opts.direction ?? "in";
   const kind = classifyInbound(opts.body);
   const status = kind === "stop" ? "stop" : kind === "ok" ? "ok" : "needs_human";
+  const spoken = direction === "in" ? extractSpokenName(opts.body) : "";
+  const fromProfile = direction === "in" ? personFirstName(opts.profileName ?? "") : "";
+  const digits = counterparty.replace(/\D/g, "");
+  const tail = digits.length >= 9 ? digits.slice(-9) : "";
 
-  const lead = await prisma.lead.findFirst({
+  const paidHit = await prisma.client.findFirst({
     where: {
-      OR: [
-        { email: { equals: counterparty, mode: "insensitive" } },
-        { outreachTo: { equals: counterparty, mode: "insensitive" } },
-        { waSite: { contains: counterparty.replace(/\D/g, "") } },
+      AND: [
+        {
+          OR: [
+            { status: { in: ["paid", "essai"] } },
+            { stripeCustomerId: { not: null } },
+          ],
+        },
+        {
+          OR: [
+            { emailPublic: { equals: counterparty, mode: "insensitive" } },
+            { billingEmail: { equals: counterparty, mode: "insensitive" } },
+            ...(tail
+              ? [{ whatsappOwner: { contains: tail } }, { whatsappSite: { contains: tail } }]
+              : []),
+          ],
+        },
       ],
     },
+    select: { id: true },
   });
+
+  let lead = paidHit
+    ? await prisma.lead.findFirst({ where: { clientId: paidHit.id } })
+    : await prisma.lead.findFirst({
+        where: {
+          OR: [
+            { email: { equals: counterparty, mode: "insensitive" } },
+            { outreachTo: { equals: counterparty, mode: "insensitive" } },
+            ...(tail
+              ? [{ waSite: { contains: tail } }, { mapsPhone: { contains: tail } }]
+              : []),
+          ],
+        },
+      });
+
+  if (!paidHit && !lead && direction === "in") {
+    lead = await prisma.lead.create({
+      data: {
+        placeId: `inbound:${opts.channel}:${counterparty}`.slice(0, 180),
+        name: (opts.profileName || counterparty).slice(0, 120),
+        city: "inbound",
+        country: "ES",
+        source: "inbound",
+        status: "new",
+        channelPlan: opts.channel === "email" ? "email" : "wa_only",
+        email: opts.channel === "email" ? counterparty : null,
+        outreachTo: opts.channel === "email" ? counterparty : null,
+        waSite: opts.channel === "whatsapp" ? counterparty : null,
+      },
+    });
+  }
 
   const existing = await prisma.inboxMessage.findUnique({
     where: { providerId: opts.providerId },
@@ -57,16 +93,27 @@ export async function ingestInbound(opts: {
       counterparty,
       subject: opts.subject ?? null,
       status,
+      firstName: spoken || fromProfile || null,
       leadId: lead?.id ?? null,
       lastMessageAt: new Date(),
+      lastInboundAt: direction === "in" ? new Date() : undefined,
     },
     update: {
       lastMessageAt: new Date(),
-      ...(direction === "in" ? { status } : {}),
+      ...(direction === "in" ? { status, lastInboundAt: new Date() } : {}),
+      ...(spoken ? { firstName: spoken } : {}),
       leadId: lead?.id ?? undefined,
       subject: opts.subject ?? undefined,
     },
   });
+
+  if (!thread.firstName && fromProfile) {
+    await prisma.inboxThread.update({
+      where: { id: thread.id },
+      data: { firstName: fromProfile },
+    });
+    thread.firstName = fromProfile;
+  }
 
   const message = await prisma.inboxMessage.create({
     data: {
@@ -78,7 +125,7 @@ export async function ingestInbound(opts: {
     },
   });
 
-  if (createdInboundShouldDraft(opts.channel, direction)) {
+  if (!opts.skipDraft && createdInboundShouldDraft(opts.channel, direction)) {
     try {
       const { proposeAndMaybeSend } = await import("./rosalia-reply");
       await proposeAndMaybeSend(thread.id);
