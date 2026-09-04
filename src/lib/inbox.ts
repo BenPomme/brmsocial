@@ -14,7 +14,6 @@ export async function ingestInbound(opts: {
   payload?: unknown;
   direction?: "in" | "out";
   profileName?: string | null;
-  city?: string | null;
   skipDraft?: boolean;
 }) {
   const counterparty = opts.counterparty.trim().toLowerCase();

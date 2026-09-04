@@ -34,6 +34,7 @@ Le worker se connecte à **ce** compte, pas au Gmail du resto.
 - `wa_out` : BSP WhatsApp
 - `outreach_mail` : envoi SMTP babyrock.ai
 - `scout` : plus tard
+- `fiche_watch` : snapshot fiche (Places ; GBP Insights plus tard). Diff → ping. Pas d’écriture d’heures par l’opérateur.
 
 Idempotence : un `google_review_id` n’est drafté qu’une fois sauf `re-draft` explicite.
 

@@ -86,11 +86,13 @@ Reste :
 
 ## Réponses Rosalia (démarchage)
 
+Un fil, une Rosalia : démarchage, paiement confirmé (Stripe), onboarding gestor, jour normal. Les euros viennent de `quoteFor()` (`docs/agents/catalog.md`). Photos / notes de voix : elle dit qu’elle ne les lit pas encore.
+
 Règle coût (`07-modeles-couts.md`) : pas de LLM si un script suffit.
 
 | Message du prospect | Réponse | Modèle |
 |---|---|---|
-| OK / vale / sí | Script : prochaines étapes (gestionnaire + 89 €) | aucun |
+| OK / vale / sí | Script : prochaines étapes (gestionnaire + prix du catalogue) | aucun |
 | STOP / baja | Script : on arrête | aucun |
 | Un numéro | Script : on continue ici | aucun |
 | FAQ (prix, gestionnaire, paiement) | Brouillon court, vous | Grok cheap (`XAI_FAST_MODEL`, cap tokens) |

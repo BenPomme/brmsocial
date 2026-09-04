@@ -21,7 +21,20 @@ UUID en PK. Timestamps `timestamptz`.
 - category_id (FK scope_categories)
 - operator_id nullable
 - tone_notes (texte libre du titulaire : tutoiement, etc.)
+- rating, rating_count (dernière lecture Places/GBP, pas un chiffre inventé)
 - created_at
+
+## fiche_snapshots
+
+Une photo de la fiche Google, pas un graphe.
+
+- id, client_id, taken_at, source (`places`|`gbp`)
+- name, phone, address, hours_text, business_status
+- rating, rating_count
+- review_ids jsonb (liste complète **ou** null = on ne sait pas, donc pas d’avis disparu)
+- calls, direction_requests (null = inconnu, on n’écrit pas la ligne)
+- suggested_edits jsonb (null = inconnu)
+- raw jsonb
 
 ## users
 
@@ -47,6 +60,7 @@ UUID en PK. Timestamps `timestamptz`.
 - stars (1–5), lang, author_public_name
 - body, reviewed_at
 - status (`nouveau`|`brouillon`|`attente_client`|`pret`|`publie`|`bloque`)
+- vanished_at (avis disparu de la fiche ; on ne le republie pas)
 
 ## reponses
 
@@ -61,7 +75,7 @@ UUID en PK. Timestamps `timestamptz`.
 ## actions
 
 - id, client_id, avis_id nullable
-- type (`draft`|`edit`|`ping_wa`|`owner_ok`|`publish`|`publish_fail`|`block`|`invite_ok`|`fiche_morte`|`billing`)
+- type (`draft`|`edit`|`ping_wa`|`owner_ok`|`publish`|`publish_fail`|`block`|`invite_ok`|`fiche_morte`|`billing`|`fiche_change`|`avis_vanished`|`holiday_hours`|`suggested_edit`)
 - actor, payload jsonb, result (`ok`|`fail`), error_text
 - created_at
 
@@ -73,7 +87,7 @@ UUID en PK. Timestamps `timestamptz`.
 
 ## jobs
 
-- id, kind (`draft`|`publish`|`wa_out`|`outreach_mail`|`scout`)
+- id, kind (`draft`|`publish`|`wa_out`|`outreach_mail`|`scout`|`fiche_watch`)
 - payload jsonb, status (`queued`|`run`|`done`|`fail`)
 - attempts, run_after, locked_at
 

@@ -79,9 +79,13 @@ Ouvre [http://localhost:3000](http://localhost:3000) (ou [http://localhost:3001]
 
 ## 3. Marche des trois rôles
 
-1. **Admin.** « active Barcelone, catégorie restaurant ». Lis le diff. **Appliquer**. Tu dois voir des commerces Maps réels dans le tableau. Tu peux aussi couper une ville / une catégorie avec les interrupteurs.
-2. **Opérateur.** File d’avis avec de vrais textes. Sur un 4–5★ : coche les 5 cases, **Publier** (ou Éditer puis Publier). La ligne passe `publie`, le log dit dry-run. Sur un 1–3★, pas de Publier tant que ce n’est pas `pret`.
-3. **Client.** Fil simulé (pas Meta). Topo du jour + ping 1–3★. **OK** ou colle un texte. Ça écrit dans `messages_whatsapp` (`direction=sim` / `in`) et passe l’avis en `pret`. La publication reste dry-run.
+Sans fiche Google à toi : le seed crée **Cala Demo**, un faux commerce (`publish_live=false`). Publier n’écrit jamais sur Maps.
+
+1. **Opérateur** (`ops@babyrock.local`). File : 5★ Marta → 5 cases → Publier. La ligne passe `publie`, le log dit dry-run. 2★ Pau : pas de Publier tant que ce n’est pas `pret`.
+2. **Client** (`client@babyrock.local`). Fil simulé (pas Meta). Ping 2★ → **OK** ou un texte. L’avis passe `pret`. Toujours dry-run.
+3. **Admin** (optionnel, Places). « active Sant Cugat, catégorie restaurant ». **Appliquer**. Scout tire de vraies fiches Maps pour le démarchage, pas pour publier.
+
+Si tu veux un brouillon modèle plutôt que le template : `XAI_API_KEY` dans `.env`, puis relancer le worker `draft` sur l’avis. Pas obligatoire pour la démo clics.
 
 WhatsApp / SMS ne quittent pas la machine. Un mail Zoho de **test** peut partir de Rosalia vers l’allowlist seulement (`scripts/zoho-test-send.ts`). Pas de resto tant que la liste n’est pas élargie. Banner `OUTBOUND_ENABLED=false` pour SMTP / WA / SMS.
 

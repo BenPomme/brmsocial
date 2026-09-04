@@ -2,6 +2,7 @@
 
 import { FormEvent, useCallback, useEffect, useState } from "react";
 import { AppHeader, OutboundBanner, StatusBadge } from "@/components/Chrome";
+import { quoteFor } from "@/lib/catalog";
 
 type City = { id: string; name: string; country: string; active: boolean; source: string };
 type Category = {
@@ -403,8 +404,8 @@ export default function AdminPage() {
             </a>
           </div>
           <p className="text-sm text-muted mb-4">
-            Catalogue TTC : 99 € / mes, 799 € / año. Sant Cugat : 1er mois 0 € + rattrapage 3 mois,
-            puis 99 €. Factura HT + IVA 21 %. Pas Billing 0,7 %.
+            Catalogue TTC : {quoteFor({}).monthLabel} / mes, {quoteFor({}).yearLabel} / año.{" "}
+            {quoteFor({ city: "Sant Cugat del Vallès" }).offerLines.es} Factura HT + IVA 21 %. Pas Billing 0,7 %.
           </p>
           {paid.length === 0 ? (
             <p className="text-sm text-muted">Aucun paiement encore. La simu vendredi = un 4242 sur /pay.</p>

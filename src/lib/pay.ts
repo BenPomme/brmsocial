@@ -264,6 +264,14 @@ export async function fulfillCheckoutSession(session: Stripe.Checkout.Session) {
     livemode: session.livemode,
   });
 
+  try {
+    const { linkThreadToClient, emitRosaliaEvent } = await import("./rosalia-reply");
+    await linkThreadToClient(client.id);
+    await emitRosaliaEvent({ clientId: client.id, event: { type: "payment_confirmed", via: "stripe" } });
+  } catch (e) {
+    console.warn("rosalia payment_confirmed", e);
+  }
+
   return { ok: true as const, clientId: client.id, already: false as const, invoice, mailed };
 }
 
@@ -413,6 +421,14 @@ export async function createTrialSantCugat(opts: BillingInput) {
       },
     },
   });
+  try {
+    const { linkThreadToClient, emitRosaliaEvent } = await import("./rosalia-reply");
+    await linkThreadToClient(updated.id);
+    await emitRosaliaEvent({ clientId: updated.id, event: { type: "payment_confirmed", via: "trial" } });
+  } catch (e) {
+    console.warn("rosalia trial_started", e);
+  }
+
   return {
     clientId: updated.id,
     trialEndsAt,

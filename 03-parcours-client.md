@@ -50,7 +50,11 @@ Agent confirme une ligne.
 
 ## 9. Lundi
 
-Agent : bloc semaine depuis la base. Humain : personne.
+Agent `fiche_watch` + `notify` : bloc semaine depuis la base **et** la fiche Google. Lignes seulement si on a le chiffre : note et volume (delta), avis disparus, appels et demandes d’itinéraire, propositions de modification Google encore ouvertes. Humain : personne.
+
+## 9b. Bouclier fiche / festifs
+
+Agent : si heures, nom, téléphone, adresse ou ouvert/fermé changent → WhatsApp le jour même. Si un festif local tombe sur un jour où la fiche dit ouvert → WhatsApp : répondez CERRADO (on patche par API) ou changez-le dans Google. L’opérateur ne touche pas aux heures.
 
 ## 10. Fiche morte
 
@@ -65,7 +69,11 @@ Agent : prélèvement, message J, relance, pause publication J+7 sans paiement.
 ## 12. Résiliation
 
 Agent : accusé, stop publi, rappel retirer le gestionnaire.
-Règle unique à figer (voir `12-decisions-ouvertes.md`) : fin de période payée.
+Fin de période déjà payée. Les réponses publiées restent.
+
+## BabyRock Direct — pas encore
+
+Inscription, Fil commerce, rappel et demande d’avis : autre produit. Voir `18-roadmap-produit.md`. Ce parcours-ci est Social seulement.
 
 ## Ce que le client ne voit jamais
 

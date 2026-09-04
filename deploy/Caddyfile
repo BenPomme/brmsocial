@@ -1,0 +1,11 @@
+{
+  email rosalia@babyrock.ai
+}
+
+# Cloudflare orange-cloud terminates visitor TLS. Origin uses Caddy's internal CA
+# because Let's Encrypt HTTP-01 never reaches this box while the names are proxied.
+app.babyrock.ai, pay.babyrock.ai {
+  tls internal
+  encode gzip
+  reverse_proxy app:3000
+}

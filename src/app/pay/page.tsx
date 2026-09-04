@@ -2,6 +2,7 @@
 
 import { FormEvent, Suspense, useState } from "react";
 import { useSearchParams } from "next/navigation";
+import { quoteFor } from "@/lib/catalog";
 
 const DEMO = {
   name: "Cala Sant Cugat",
@@ -30,7 +31,9 @@ function PayForm() {
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
   const canceled = params.get("canceled") === "1";
-  const santCugat = /sant\s*cugat/i.test(billingCity);
+  const wa = params.get("wa") ?? "";
+  const quote = quoteFor({ city: billingCity });
+  const santCugat = Boolean(quote.offer);
   const trial = plan === "trial_santcugat";
 
   function fillDemo() {
@@ -61,6 +64,7 @@ function PayForm() {
       billingCity,
       billingCountry,
       city: billingCity,
+      whatsapp: wa || undefined,
     };
     if (trial) {
       const res = await fetch("/api/pay/trial", {
@@ -94,11 +98,12 @@ function PayForm() {
   return (
     <main className="min-h-screen flex items-center justify-center px-4 py-12">
       <div className="w-full max-w-lg">
-        <p className="font-display text-4xl mb-2">Babyrock</p>
+        <p className="font-display text-4xl mb-2">BabyRock Social</p>
         <p className="text-muted mb-4">
-          Precios <strong>IVA incluido</strong>. Mes: <strong>99 €</strong>. Año: <strong>799 €</strong>.
-          En la factura sale la base + el IVA 21 %, para deducir. Sant Cugat del Vallès: primer mes
-          gratis y ponemos al día las reseñas de los 3 meses anteriores.
+          Respuestas a reseñas de Google. Precios <strong>IVA incluido</strong>. Mes:{" "}
+          <strong>{quote.monthLabel}</strong>. Año: <strong>{quote.yearLabel}</strong>. En la factura sale la base + el IVA 21 %,
+          para deducir. {quote.offerLines.es || quote.cityHintLines.es} BabyRock Direct (WhatsApp del
+          comercio) no se vende aquí.
         </p>
         <p className="text-xs uppercase tracking-[0.18em] text-muted mb-4">Simulación · claves test</p>
         {canceled && (
@@ -198,10 +203,12 @@ function PayForm() {
               onChange={(e) => setPlan(e.target.value)}
             >
               {santCugat || trial ? (
-                <option value="trial_santcugat">Sant Cugat — 1.er mes gratis, luego 99 €</option>
+                <option value="trial_santcugat">
+                  Sant Cugat — 1.er mes gratis, luego {quote.monthLabel}
+                </option>
               ) : null}
-              <option value="month">Mes a mes — 99 € IVA incl.</option>
-              <option value="year">Doce meses — 799 € IVA incl.</option>
+              <option value="month">Mes a mes — {quote.monthLabel} IVA incl.</option>
+              <option value="year">Doce meses — {quote.yearLabel} IVA incl.</option>
             </select>
           </label>
           {error && <p className="text-sm text-accent">{error}</p>}

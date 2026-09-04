@@ -34,7 +34,7 @@ export async function POST(req: Request) {
             messages?: WaMessage[];
             statuses?: unknown[];
             errors?: unknown[];
-            contacts?: Array<{ wa_id?: string }>;
+            contacts?: Array<{ wa_id?: string; profile?: { name?: string } }>;
           };
         }>;
       }>;
@@ -43,7 +43,13 @@ export async function POST(req: Request) {
     const messages = changes.flatMap((c) => c.value?.messages ?? []);
     const statuses = changes.flatMap((c) => c.value?.statuses ?? []);
     const errors = changes.flatMap((c) => c.value?.errors ?? []);
-    const waIds = changes.flatMap((c) => c.value?.contacts?.map((x) => x.wa_id) ?? []);
+    const contacts = changes.flatMap((c) => c.value?.contacts ?? []);
+    const waIds = contacts.map((x) => x.wa_id).filter(Boolean) as string[];
+    const profileByWa = new Map(
+      contacts
+        .filter((c) => c.wa_id && c.profile?.name)
+        .map((c) => [c.wa_id!.replace(/\D/g, ""), c.profile!.name!]),
+    );
     console.log("whatsapp webhook POST", {
       object: body.object,
       fields: changes.map((c) => c.field),
@@ -59,13 +65,16 @@ export async function POST(req: Request) {
         console.warn("whatsapp webhook skip", { id: m?.id, keys: m ? Object.keys(m) : [] });
         continue;
       }
+      const mediaType = m.type && m.type !== "text" ? m.type : "text";
       const text = m.type === "text" ? m.text?.body ?? "" : `(${m.type ?? "message"})`;
+      const profileName = profileByWa.get(from.replace(/\D/g, "")) ?? contacts[0]?.profile?.name ?? null;
       await ingestInbound({
         channel: "whatsapp",
         counterparty: from,
         body: text || "(vide)",
         providerId: `wa-${m.id}`,
-        payload: m,
+        payload: { message: m, profileName, mediaType },
+        profileName,
       });
     }
   } catch (e) {

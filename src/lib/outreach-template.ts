@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
+import { quoteFor } from "./catalog";
 
 export type OutreachTemplate = {
   id: string;
@@ -67,8 +68,10 @@ export function fillOutreach(
     stars: string | number;
     excerpt: string;
     whatsapp?: string;
+    city?: string | null;
   },
 ) {
+  const quote = quoteFor({ city: vars.city });
   const map: Record<string, string> = {
     restaurant: vars.restaurant,
     author: vars.author,
@@ -76,6 +79,8 @@ export function fillOutreach(
     stars: String(vars.stars),
     excerpt: vars.excerpt,
     whatsapp: vars.whatsapp ?? "",
+    price_month: quote.monthLabel,
+    offer_line: quote.offer ? quote.offerLines.es : "",
   };
   const apply = (s: string) => s.replace(/\{\{\s*(\w+)\s*\}\}/g, (_, k) => map[k] ?? "");
   return {

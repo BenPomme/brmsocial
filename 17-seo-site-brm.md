@@ -19,6 +19,7 @@ Une URL = une intention. Pas 50 villes × services.
 | Intention | URL (ES, les autres langues suivent) |
 |---|---|
 | Marque | `/es/` |
+| Produits | `/es/servicios/` (Social live, Direct coming soon) |
 | Comment ça marche | `/es/como-funciona/` |
 | Prix / s’abonner | `/es/suscribirse/` |
 | Preuve | `/es/investigacion/` |
@@ -26,6 +27,7 @@ Une URL = une intention. Pas 50 villes × services.
 | Qui | `/es/nosotros/` |
 | Compte / après vente | `/es/cuenta/` (noindex si c’est un login) |
 | Légal | privacidad, condiciones |
+| Guías | `/es/guias/` y 5 artículos (responder, pedir sin filtrar, QR, cuándo, volumen) |
 
 Plus tard, **une** page argent par couple réel, seulement si le scope admin l’a ouvert :
 

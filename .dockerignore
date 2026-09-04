@@ -1,0 +1,14 @@
+node_modules
+.next
+.git
+.factory-logs
+.scratch
+docs
+site
+sessions
+.env
+*.md
+research
+scripts
+**/*.test.ts
+.scratch

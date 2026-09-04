@@ -23,7 +23,7 @@ Cada respuesta la publica una persona de nuestro equipo. Usamos inteligencia art
 - Para las reseñas de 4 o 5 estrellas, redactamos y publicamos directamente la respuesta.
 - Para las reseñas de 1, 2 o 3 estrellas, primero le enviamos una propuesta por WhatsApp, SMS o correo electrónico. Solo tiene que responder «OK» o cambiar algunas palabras, y nosotros la publicamos.
 
-El servicio cuesta 89 € al mes.
+El servicio cuesta {{price_month}} al mes. {{offer_line}}
 
 Para empezar, solo tiene que darnos acceso a la ficha de Google de su restaurante y elegir dónde quiere recibir nuestros mensajes. Le ayudamos con la puesta en marcha y después nos ocupamos del resto.
 

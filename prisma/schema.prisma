@@ -291,6 +291,7 @@ model InboxThread {
   phase         String   @default("outreach")
   onboardingStep String? @map("onboarding_step")
   lastInboundAt DateTime? @map("last_inbound_at")
+  city          String?
   leadId        String?  @map("lead_id")
   lead          Lead?    @relation(fields: [leadId], references: [id], onDelete: SetNull)
   clientId      String?  @map("client_id")

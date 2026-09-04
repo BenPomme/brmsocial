@@ -126,6 +126,23 @@ export async function draftOneAvis(avisId: string, opts?: { forceTemplate?: bool
       body: avis.body,
       draftText: text,
     });
+    try {
+      const { emitRosaliaEvent } = await import("../rosalia-reply");
+      await emitRosaliaEvent({
+        clientId: avis.clientId,
+        event: {
+          type: "low_star",
+          avisId: avis.id,
+          stars: avis.stars,
+          author: avis.authorPublicName,
+          lang,
+          body: avis.body,
+          draft: text,
+        },
+      });
+    } catch (e) {
+      console.warn("rosalia low_star", e);
+    }
   }
 
   return { avisId: avis.id, model, status: low ? "attente_client" : "brouillon" };

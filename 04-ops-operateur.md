@@ -58,3 +58,7 @@ Négocier le prix.
 Ouvrir wp-admin.
 Utiliser son WhatsApp perso.
 Télécharger une session Google sur son PC.
+
+## BabyRock Direct — pas staffé
+
+Pas d’inbox Babyrock pour le WhatsApp des clients du commerce. L’appli WhatsApp du titulaire reste le filet. L’opérateur Social ne répond pas « c’est où le parking ».

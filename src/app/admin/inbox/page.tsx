@@ -8,8 +8,10 @@ type Thread = {
   id: string;
   channel: string;
   counterparty: string;
+  firstName?: string | null;
   subject: string | null;
   status: string;
+  phase?: string | null;
   lastMessageAt: string;
   lead: { id: string; name: string; city: string | null } | null;
   messages: Msg[];
@@ -23,6 +25,9 @@ export default function AdminInboxPage() {
   const [notice, setNotice] = useState<string | null>(null);
   const [simFrom, setSimFrom] = useState("");
   const [simBody, setSimBody] = useState("OK");
+  const [simType, setSimType] = useState("text");
+  const [simEvent, setSimEvent] = useState("");
+  const [simCity, setSimCity] = useState("");
   const [draftEdit, setDraftEdit] = useState("");
 
   const refresh = useCallback(async () => {
@@ -63,7 +68,14 @@ export default function AdminInboxPage() {
     const res = await fetch("/api/admin/inbox/sim", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ channel: "whatsapp", from: simFrom, body: simBody }),
+      body: JSON.stringify({
+        channel: "whatsapp",
+        from: simFrom,
+        body: simBody,
+        type: simType,
+        event: simEvent || undefined,
+        city: simCity || undefined,
+      }),
     });
     const data = await res.json();
     setBusy(null);
@@ -145,6 +157,41 @@ export default function AdminInboxPage() {
               onChange={(e) => setSimBody(e.target.value)}
             />
           </label>
+          <label className="flex flex-col gap-1">
+            <span className="text-xs text-muted">Type</span>
+            <select
+              className="rounded-lg border border-line bg-paper px-3 py-2"
+              value={simType}
+              onChange={(e) => setSimType(e.target.value)}
+            >
+              <option value="text">texte</option>
+              <option value="image">image</option>
+              <option value="audio">audio</option>
+            </select>
+          </label>
+          <label className="flex flex-col gap-1">
+            <span className="text-xs text-muted">Ville</span>
+            <input
+              className="rounded-lg border border-line bg-paper px-3 py-2 w-40"
+              placeholder="Sant Cugat…"
+              value={simCity}
+              onChange={(e) => setSimCity(e.target.value)}
+            />
+          </label>
+          <label className="flex flex-col gap-1">
+            <span className="text-xs text-muted">Événement</span>
+            <select
+              className="rounded-lg border border-line bg-paper px-3 py-2"
+              value={simEvent}
+              onChange={(e) => setSimEvent(e.target.value)}
+            >
+              <option value="">(message)</option>
+              <option value="payment_confirmed">paiement Stripe</option>
+              <option value="trial_started">essai Sant Cugat</option>
+              <option value="manager_connected">gestor accepté</option>
+              <option value="low_star">avis 1–3★</option>
+            </select>
+          </label>
           <button disabled={busy === "sim"} className="rounded-lg border border-line px-3 py-2">
             Simuler
           </button>
@@ -164,8 +211,12 @@ export default function AdminInboxPage() {
                   <div className="flex items-center gap-2 text-xs">
                     <StatusBadge status={t.channel} />
                     <StatusBadge status={t.status} />
+                    {t.phase ? <StatusBadge status={t.phase} /> : null}
                   </div>
-                  <div className="font-medium text-sm mt-1">{t.lead?.name ?? t.counterparty}</div>
+                  <div className="font-medium text-sm mt-1">
+                    {t.firstName ? `${t.firstName} · ` : ""}
+                    {t.lead?.name ?? t.counterparty}
+                  </div>
                   <div className="text-xs text-muted">{t.subject ?? t.counterparty}</div>
                 </button>
               </li>
@@ -175,7 +226,10 @@ export default function AdminInboxPage() {
             {!open && <p className="text-sm text-muted">Choisis une conversation.</p>}
             {open && (
               <>
-                <h2 className="font-display text-2xl">{open.lead?.name ?? open.counterparty}</h2>
+                <h2 className="font-display text-2xl">
+                  {open.firstName ? `${open.firstName} · ` : ""}
+                  {open.lead?.name ?? open.counterparty}
+                </h2>
                 <p className="text-xs text-muted mb-4">
                   {open.channel} · {open.counterparty}
                   {open.lead?.city ? ` · ${open.lead.city}` : ""}

@@ -7,7 +7,7 @@
 import { readFileSync } from "fs";
 import { resolve } from "path";
 import Stripe from "stripe";
-import { SKUS, splitTtc, type Sku } from "../src/lib/skus";
+import { liveSkus, splitTtc, type Sku } from "../src/lib/skus";
 
 for (const line of readFileSync(resolve(process.cwd(), ".env"), "utf8").split("\n")) {
   const t = line.trim();
@@ -35,9 +35,9 @@ async function ensureProduct() {
     return found;
   }
   const created = await stripe.products.create({
-    name: "Babyrock Social",
+    name: "BabyRock Social",
     description: "Respuestas a reseñas de Google para comercios.",
-    metadata: { catalog: "babyrock" },
+    metadata: { catalog: "babyrock", product_id: "social" },
   });
   console.log("product created", created.id);
   return created;
@@ -76,7 +76,7 @@ async function ensurePrice(productId: string, sku: Sku) {
 
 async function main() {
   const product = await ensureProduct();
-  for (const sku of Object.values(SKUS)) {
+  for (const sku of liveSkus()) {
     await ensurePrice(product.id, sku);
   }
   console.log("done. Checkout still splits HT+IVA on the session; these Prices are the catalogue TTC.");

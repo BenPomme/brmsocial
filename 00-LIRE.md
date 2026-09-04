@@ -1,6 +1,6 @@
 # Babyrock — dossier de construction
 
-Produit : **Babyrock Social**. Abo mensuel réponses aux avis Google (WhatsApp resto en v2).
+Produit vendu : **BabyRock Social** (réponses aux avis Google). **BabyRock Direct** (WhatsApp du commerce) = coming soon, pas vendu.
 Villes et types de commerces : réglages admin, pas du code. Seed démo seulement.
 Produit v2 : WhatsApp (FAQ + créneaux Calendar), après que v1 tourne.
 
@@ -26,7 +26,9 @@ Lien entre les deux, à brancher :
 | Fichier | Contenu |
 |---|---|
 | `00-LIRE.md` | Index, outil de code, ce que la prochaine session doit faire |
+| `CONTEXT.md` | Glossaire : Titulaire, Social, Direct, Fil Babyrock, Fil commerce |
 | `01-produit.md` | Offre, prix, ce qu’on ne vend pas |
+| `18-roadmap-produit.md` | Ordre Social → Direct, pas de dates |
 | `02-marche-legal.md` | Cible villes, LSSI, RGPD |
 | `03-parcours-client.md` | Du premier mail au jour normal, qui fait quoi |
 | `04-ops-operateur.md` | Écran VA, checklist, rôles |
@@ -35,7 +37,7 @@ Lien entre les deux, à brancher :
 | `07-modeles-couts.md` | Quel modèle pour quelle tâche, plafonds |
 | `08-demarchage.md` | Scout / mail / un WhatsApp |
 | `09-publication-google.md` | Invitation gestionnaire, bouton Publier |
-| `10-whatsapp-service.md` | Canal client + produit B plus tard |
+| `10-whatsapp-service.md` | Fil Babyrock (Social). Direct n’est pas dans ce fichier |
 | `11-ordre-de-build.md` | Semaines 1–8, critères de passage |
 | `12-decisions-ouvertes.md` | Points à figer avant de coder plus loin |
 | `13-interfaces.md` | Opérateur / admin / client + agent Scope |
@@ -43,6 +45,7 @@ Lien entre les deux, à brancher :
 | `15-prototype.md` | Proto 3 interfaces (s’il est dans ce clone) |
 | `16-plan-affaires.md` | Plan d’affaires |
 | `17-seo-site-brm.md` | SEO / indexation de www.babyrock.ai |
+| `docs/agents/catalog.md` | Ajouter un SKU / changer un prix / offre : un module, tous les touchpoints |
 
 ## Deadline : vendredi 4 sept. 2026 — démo au partenaire
 
@@ -58,7 +61,7 @@ Checkout `/pay`, clés test, factura NIF. Catalogue **TTC** : 99 €/mes, 799 �
 
 Bloc principal = facture B2B. Un resto doit pouvoir **mettre la factura sur la société et récupérer la TVA**. Aujourd’hui `/pay` ne collecte que nom + e-mail : insuffisant.
 
-1. **Identité fiscale sur `/pay` et `clients`** (voir `05-donnees.md`) : razón social, NIF/CIF ou n° TVA UE, adresse fiscale (ligne, CP, ville, pays), e-mail de facturation. Pays ES → IVA 21 % sur 89 HT (107,69 TTC) jusqu’à ce que le comptable fige autoliquidation FR. Ne pas allumer Stripe Tax (0,5 %) demain.
+1. **Identité fiscale sur `/pay` et `clients`** (voir `05-donnees.md`) : razón social, NIF/CIF ou n° TVA UE, adresse fiscale (ligne, CP, ville, pays), e-mail de facturation. Pays ES → IVA 21 % sur 99 TTC (81,82 HT). Ne pas allumer Stripe Tax (0,5 %) demain.
 2. **Facture Stripe PDF** : Customer + `tax_id` + adresse, `invoice_creation` sur le Checkout **one-off** (toujours pas Billing). Après 4242, le PDF a le nom légal et le NIF. Admin : voir / renvoyer la facture.
 3. **Lien de paiement par WhatsApp** : Rosalia envoie l’URL Checkout (ou `/pay` prérempli) via Cloud API, **allowlist seulement** (toi + partenaire si son n° est dans Meta To). Pas un resto. Réutiliser `whatsapp-send.ts`.
 4. **Script démo écrit** (ordre des clics, comptes proto, ce qu’on ne montre pas : KYC, 555, Billing).

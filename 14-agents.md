@@ -10,6 +10,7 @@ Un « agent » = un worker avec un `job.kind`, éventuellement un appel modèle.
 | `notify` | Messager client | **Parle au resto déjà client** (pas à Google). Envoie l’avis 1–3★ + le brouillon ; topo du jour ; lundi ; fiche morte ; facture. Relance 24 h si silence sur un 1–3★. | Le resto répond OK ou un texte (`inbox`) |
 | `inbox` | Inbox | Lit les réponses du resto (OK, texte, FAQ). Passe l’avis 1–3★ en `pret` si OK / texte. | Opérateur si hors script |
 | `publish` | Publieur | Écrit la réponse **sur Google** (API GBP ; Playwright = secours) | **4–5★ : clic humain** (interrupteur pour auto plus tard). **1–3★ : clic humain après `pret`** |
+| `fiche_watch` | Veille fiche | Snapshot de la fiche (Places, GBP si token). Diff heures/nom/téléphone/adresse/statut → ping jour même. Récap lundi : note+volume, avis disparus, appels/itinéraire, propositions Google **seulement si l’API a un chiffre**. Festifs : ping CERRADO. **N’invente pas.** | Titulaire : CERRADO ou il change Google. Pas l’opérateur. |
 
 ### 1–3★ : qui fait quoi
 
@@ -57,6 +58,8 @@ Mémoire d’essais : Postgres d’abord. Goldfish / Elephant : optionnel plus t
 - Head of Data qui applique ses recos tout seul
 - Un id = Scout + Publier + Scope
 - TripAdvisor / TheFork / iMessage en v1
+- Inventer un chiffre d’appels / d’itinéraire / d’avis disparus si l’API est vide
+- Patcher les heures à la main (opérateur). Soit API après CERRADO, soit le titulaire dans Google.
 - Sessions Google clients sur une machine partagée
 
 ## Ajout d’un agent

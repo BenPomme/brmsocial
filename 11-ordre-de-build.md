@@ -48,6 +48,7 @@ Critère : Publier depuis l’UI apparaît sur Maps. Deux clients, zéro mélang
 
 - BSP + numéro
 - Pings 1–3★, topo si activité, lundi
+- Veille fiche : bouclier (heures/nom/tel/adresse/statut), récap note+volume, avis disparus / appels / itinéraire / propositions Google **si l’API les donne**, festifs CERRADO. Jamais inventer. Pas de competitor spy, NAP, attributs, Local Post.
 - Webhook inbound OK / texte libre
 
 Critère : un 2★ fictif envoie le ping ; OK publie ; silence 24 h ne publie pas.
@@ -79,4 +80,4 @@ Critère : 10 fiches test ou amies sans toi dans Slack/WhatsApp prod.
 
 ## Interdit tant que le socle n’est pas vert
 
-Instinct, Elephant, produit 119 €, Heavy, usine à pages ville×service, CrowdReply.
+Instinct, Elephant, BabyRock Direct en production, produit 119 €, Heavy, usine à pages ville×service, CrowdReply.

@@ -16,7 +16,7 @@ App : `http://localhost:3001`. Site : `https://www.babyrock.ai`.
 
 ## 1. Offre (2 min)
 
-Ouvrir www.babyrock.ai (ES). 89 €/mois. Bouton WhatsApp du header = encore **mail** tant que pas de numéro ES (pas le 555).
+Ouvrir www.babyrock.ai (ES). BabyRock Social 99 € TTC/mois. Bouton WhatsApp du header = encore **mail** tant que pas de numéro ES (pas le 555).
 
 ## 2. Prospect → Rosalia (4 min)
 
@@ -39,8 +39,15 @@ Lots : un mail Rosalia **composé** à l’écran. **Pas d’envoi resto.**
 
 ## 5. Produit : on répond aux avis (5 min)
 
-Opérateur → File avis. Un **5★** → Publier (dry-run, log « pas Google »).  
-Client → ping **2★** → OK → avis `pret`. Toujours pas Google live.
+Pas besoin d’une fiche Google à nous. Seed : **Cala Demo** (faux commerce).
+
+```bash
+npx prisma db seed
+```
+
+Opérateur (`ops@babyrock.local`) → File → Cala Demo **5★** → 5 cases → Publier. Log « dry-run, pas envoyé à Google ».  
+Client (`client@babyrock.local`) → ping **2★** → OK → avis `pret`.  
+Opérateur Publier le 2★. Toujours pas Google live.
 
 ## 6. Close (1 min)
 

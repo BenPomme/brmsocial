@@ -183,6 +183,7 @@ export async function runCarrier(
       stars: sample.stars ?? "",
       excerpt: (sample.excerpt ?? "").trim(),
       whatsapp: process.env.BABYROCK_WHATSAPP_DISPLAY?.trim() || "el WhatsApp de Babyrock (se lo confirmamos al responder)",
+      city: lead.city,
     });
 
     await prisma.lead.update({

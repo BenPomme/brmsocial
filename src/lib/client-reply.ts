@@ -1,4 +1,5 @@
 import { prisma } from "./db";
+import { isCerradoIntent } from "./fiche/recap";
 
 export async function handleClientReply(opts: {
   clientId: string;
@@ -18,6 +19,38 @@ export async function handleClientReply(opts: {
       providerMsgId: `sim:in:${opts.clientId}:${Date.now()}`,
     },
   });
+
+  if (isCerradoIntent(text)) {
+    const pending = await prisma.action.findMany({
+      where: { clientId: opts.clientId, type: "holiday_hours" },
+      orderBy: { createdAt: "desc" },
+      take: 10,
+    });
+    const hit = pending.find((a) => (a.payload as { status?: string }).status === "pending");
+    if (hit) {
+      const payload = hit.payload as { date?: string; name?: string };
+      await prisma.action.create({
+        data: {
+          clientId: opts.clientId,
+          type: "holiday_hours",
+          actor: opts.actor,
+          payload: { date: payload.date, name: payload.name, status: "owner_cerrado" },
+          result: "ok",
+        },
+      });
+      await prisma.messageWhatsapp.create({
+        data: {
+          clientId: opts.clientId,
+          direction: "sim",
+          body:
+            "CERRADO recibido. Lo aplicaremos en Google cuando la API de escritura esté activa. " +
+            "Mientras tanto, cámbielo usted en su perfil de empresa. Nosotros no tocamos el horario a mano.",
+          providerMsgId: `sim:cerrado:${opts.clientId}:${payload.date ?? Date.now()}`,
+        },
+      });
+      return { ok: true, mode: "cerrado", date: payload.date ?? null };
+    }
+  }
 
   let avis = opts.avisId
     ? await prisma.avis.findUnique({

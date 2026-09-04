@@ -6,6 +6,7 @@ import { runCarrier } from "./agents/carrier";
 import { syncZohoInbox } from "./zoho-inbox";
 import { draftMany } from "./agents/draft";
 import { publishAvis, type Checklist } from "./agents/publish";
+import { runFicheWatch } from "./agents/fiche-watch";
 import type { Prisma } from "@prisma/client";
 
 export async function enqueueJob(kind: string, payload: Prisma.InputJsonValue) {
@@ -60,6 +61,11 @@ export async function runJob(jobId: string) {
         avisId: String(payload.avisId),
         actor: String(payload.actor ?? "operator"),
         checklist: payload.checklist as Checklist,
+      })) as unknown as Prisma.InputJsonValue;
+    } else if (job.kind === "fiche_watch") {
+      result = (await runFicheWatch({
+        clientId: String(payload.clientId),
+        weekly: payload.weekly === true,
       })) as unknown as Prisma.InputJsonValue;
     } else if (job.kind === "scope") {
       result = { note: "scope is interactive, not a worker" };

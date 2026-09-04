@@ -9,7 +9,7 @@ Une verticale absente de `scope_categories` n’est pas prospectée.
 Ordre de grandeur (contexte, pas une contrainte logicielle) : une grande ville ES peut avoir des milliers de commerces avec fiche Google. Taux e-mail froid utile observé ailleurs : 0,5–2 %.
 Taux e-mail froid utile : 0,5–2 %.
 Objectif interne churn : < 8 % / mois après le 3e mois.
-Demande d’avis après visite : dans l’offre de base dès que le flux réponses tient (sinon le churn mange le MRR).
+Demande d’avis après visite : BabyRock Direct, pas BabyRock Social. Social vend les réponses. Direct, plus tard, demande l’avis après une visite connue sur le Fil commerce.
 
 ## Marge
 
