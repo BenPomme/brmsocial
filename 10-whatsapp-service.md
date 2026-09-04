@@ -1,8 +1,10 @@
-# WhatsApp — P0
+# WhatsApp — Fil Babyrock (Social)
 
-Un seul numéro Business, affichage **Babyrock Social**. Pas le WhatsApp perso de Benjamin.
+Ceci est le canal **BabyRock Social ↔ titulaire**. Pas BabyRock Direct.
 
-Deux usages, deux files dans le code. Ne pas les mélanger.
+Un seul numéro Business Babyrock, affichage **Babyrock Social**. Pas le WhatsApp perso de Benjamin. Pas le numéro du local.
+
+Deux usages **sur ce numéro**, deux files dans le code. Ne pas les mélanger. Direct (Fil commerce, numéro du local) n’a pas de code ici.
 
 ## A. Client déjà signé
 
@@ -63,7 +65,8 @@ Fait :
 
 - Appli Meta **Babyrock Social** (App ID `1032575959608719`), Business ID `1048266287813014`.
 - Use case : **Connect with customers through WhatsApp** seulement (pas Become a Partner).
-- Numéro **test Meta** `+1 555 653 1464` (Phone number ID `1208872582320300`, WABA `1761169211880501`). Pas le numéro client. Ne pas le mettre dans les mails resto.
+- Numéro **test Meta** `+1 555 653 1464` (Phone number ID `1208872582320300`, WABA test `1761169211880501`). Ne plus l’utiliser en public.
+- Numéro **prod** `+44 7716 092830` (Phone number ID `1259600337246892`, WABA `1063584452740962`, nom affiché `Rosalia - Babyrock`). Webhook usine `https://app.babyrock.ai/api/webhooks/whatsapp`.
 - `hello_world` reçu sur le téléphone perso de Benjamin (allowlist test, 5 destinataires max).
 - Route proto `GET/POST /api/webhooks/whatsapp` → `inbox_threads` / `inbox_messages`.
 - WABA abonnée à l’appli Babyrock Social (`POST .../subscribed_apps` = success).
@@ -75,11 +78,11 @@ Le toggle UI `messages` = Unsubscribe peut mentir. Source de vérité : `GET /{W
 
 Reste :
 
-- Ne pas mettre le 555 dans les mails resto **ni sur le site public**.
-- WABA production toujours bloqué `#2593030`. Rester sur le numéro test en interne.
-- `WHATSAPP_APP_SECRET` encore vide : pas de signature `X-Hub-Signature-256`. Avant expo publique.
-- Tunnel Cloudflare local : meurt avec la session. En prod, URL fixe sur **brmsocialbackend**.
-- **Site** (`brmsocial`) : bouton WhatsApp actif `wa.me` vers le numéro de prod, pas le 555. Branche le clic vers le même WABA que l’usine.
+- Ne pas remettre le 555 dans les mails resto **ni sur le site public**.
+- WABA prod live. Display name `Rosalia - Babyrock` encore `PENDING_REVIEW`. Paiement Meta (erreur 141006) à ajouter, sinon pas de conversations initiées par nous (templates). Les réponses dans la fenêtre 24 h peuvent passer.
+- `WHATSAPP_APP_SECRET` encore vide : pas de signature `X-Hub-Signature-256`.
+- Webhook usine fixe : `https://app.babyrock.ai/api/webhooks/whatsapp`. Dans le dashboard app, coller cette URL (plus le tunnel `trycloudflare`).
+- **Site** (`brmsocial`) : `wa.me/447716092830`.
 
 ## Réponses Rosalia (démarchage)
 

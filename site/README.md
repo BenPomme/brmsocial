@@ -27,7 +27,7 @@ npx --yes serve docs
 
 ## WhatsApp number
 
-`content/config.json` → `whatsapp` is digits only, country code, no `+`. Header, footer and the green floating button on every page open `wa.me` to Rosalia (no form). Until the Spanish production number is live, this is the Meta test number; only allowlisted phones can actually message it.
+`content/config.json` → `whatsapp` is digits only, country code, no `+`. Header, footer and the green floating button on every page open `wa.me` to Rosalia (no form). Production number is the UK Cloud API line, not the Meta 555 test number.
 
 ## Portraits
 
