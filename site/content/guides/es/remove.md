@@ -11,13 +11,21 @@ Por qué importa
 Google dice que no se mete en un conflicto entre un negocio y un cliente. Una reseña solo cae si rompe las normas: spam, interacciones falsas, incentivos, conflicto de interés o contenido prohibido. Estar en desacuerdo con la nota no basta.
 
 ## body
-Empiece por leer la reseña dos veces. Si describe una visita real, aunque sea injusta, no la van a quitar. Responda una vez, en público, y vuelva al trabajo. El siguiente desconocido lee su tono más que la queja.
+Usted no puede borrar la reseña de un cliente en su ficha. Solo quien la escribió, o Google tras una denuncia, puede quitarla. Si el texto describe una visita real, aunque sea injusta, denunciarla no servirá. Responda una vez, en público, y vuelva al trabajo.
 
-Si parece falsa o incumple las normas, puede denunciarla. Abra su perfil de empresa de Google, vaya a Leer reseñas, pulse el icono de denunciar junto a la reseña, elija un motivo (spam, groserías, conflicto de interés) y envíelo. La herramienta de gestión de reseñas de Google hace lo mismo y le deja ver el estado: pendiente, sin infracción, o elevado.
+## ¿Se puede eliminar una reseña de Google que usted escribió?
+
+Sí, si es suya. Abra Google Maps, con la cuenta que la publicó, vaya a Tus contribuciones, Reseñas, pulse los tres puntos y elija Eliminar reseña. Ese es el camino del cliente. No es una herramienta del comercio para las reseñas de otros.
+
+## Cómo denunciar una reseña falsa de Google
+
+Si parece falsa, o incumple las normas, denúnciela. Abra su perfil de empresa de Google, vaya a Leer reseñas, pulse el icono de denunciar junto a la reseña, elija un motivo (spam, groserías, conflicto de interés) y envíelo. La herramienta de gestión de reseñas de Google hace lo mismo y le deja ver el estado: pendiente, sin infracción, o elevado.
 
 La espera suele ser de varios días. Si la mantienen, tiene una apelación en esa misma herramienta. Rellene el formulario con la norma, no con lo enfadado que está.
 
-Mientras espera, no arme una pelea en la respuesta. No mencione que la ha denunciado. Una discusión pública confirma que hay un conflicto real, y por eso fallan muchas bajas.
+## Qué no hacer mientras espera
+
+No arme una pelea en la respuesta. No mencione que la ha denunciado. Una discusión pública confirma que hay un conflicto real, y por eso fallan muchas bajas.
 
 Qué suele valer: una reseña pagada, escrita por quien no vino, puesta por un competidor, o que usa odio, spam o datos personales. Qué no: un 1 estrella de una mesa real un sábado malo.
 

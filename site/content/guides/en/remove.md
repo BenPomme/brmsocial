@@ -11,13 +11,21 @@ Why it matters
 Google says it does not step into a conflict between a business and a customer. A review comes down only if it breaks the rules: spam, fake engagement, incentives, conflict of interest, or prohibited content. Disagreeing with the score is not enough.
 
 ## body
-Start by reading the review twice. If it describes a real visit, even unfairly, you will not get it taken down. Reply once, in public, then go back to work. The next stranger reads your tone more than they read the complaint.
+You cannot delete a customer’s Google review from your listing. Only the person who wrote it, or Google after a report, can take it down. If the text describes a real visit, even unfairly, reporting it will not work. Reply once, in public, then go back to work.
 
-If it looks fake or it breaks the rules, you can report it. Open your Google Business Profile, go to Read reviews, tap the report icon next to the review, pick a reason (spam, profanity, conflict of interest) and send it. Google’s Reviews Management Tool is the same job with a status you can check: pending, no violation, or escalated.
+## Can you remove a Google review you wrote?
+
+Yes, if it is yours. Open Google Maps, signed in with the account that posted it, go to Your contributions, Reviews, tap the three dots, and choose Delete review. That is the customer path. It is not a tool the shop has for other people’s reviews.
+
+## How to report a fake Google review
+
+If it looks false, or it breaks the rules, report it. Open your Google Business Profile, go to Read reviews, tap the report icon next to the review, pick a reason (spam, profanity, conflict of interest) and send it. Google’s Reviews Management Tool is the same job with a status you can check: pending, no violation, or escalated.
 
 Typical wait is several days. If they keep it up, you get one appeal through that same tool. Fill the form with the policy, not with how angry you are.
 
-While you wait, do not pick a fight in the reply. Do not mention that you have reported it. A public argument confirms that this is a real dispute, which is one reason Google keeps the review up.
+## What not to do while you wait
+
+Do not pick a fight in the reply. Do not mention that you have reported it. A public argument confirms that this is a real dispute, which is one reason Google keeps the review up.
 
 What usually qualifies: a review that was paid for, written by someone who never visited, posted from a competitor, or that uses hate, spam, or personal data. What does not: a 1-star from a real table on a bad Saturday.
 

@@ -2,7 +2,7 @@
 Com verificar el perfil d’empresa de Google
 
 ## dek
-Si no hi ha botó de Respondre a les ressenyes, el més probable és que la fitxa no estigui verificada, o que hagi iniciat sessió amb un altre compte de Google. Verificar és com pren la titularitat del perfil i comença a contestar.
+Si no hi ha botó de Respondre a les ressenyes, el més probable és que la fitxa no estigui verificada, o que hagi iniciat sessió amb un altre compte de Google. Verificar és com pren la titularitat del perfil d’empresa de Google (encara es cerca com Google My Business) i comença a contestar.
 
 ## impact_label
 Per què importa
@@ -13,13 +13,21 @@ Google no li deixa editar horari, fotos ni respostes fins que el perfil està ve
 ## body
 Cerqui a Google el nom del negoci i la ciutat, amb la sessió iniciada. Si la fitxa existeix i diu Reclamar aquest negoci, reclami-la. Si no existeix, afegeixi-la. Després premi Verificar. Google tria el mètode. No es canvia per gust.
 
-Les opcions habituals són una trucada o un SMS al telèfon del negoci, un correu, una videotrucada en directe des del local, o una postal amb un codi. El vídeo sol ser el més ràpid quan l’ofereixen: es posa a la porta, ensenya el rètol, el carrer i alguna cosa que només tindria el titular (caixa, claus, cuina). La postal pot tardar fins a dues setmanes. No canviï el nom ni l’adreça mentre el sobre és de camí, o el codi deixa de valer.
+## Com se sap si la fitxa està verificada?
+
+Està verificada quan pot editar la fitxa i hi ha un botó Respondre sota les ressenyes. Si continua sortint Verificar, Google no va acabar. Un Gmail del personal no basta si el perfil viu en un altre inici de sessió.
+
+## Telèfon, vídeo o postal
+
+Les opcions habituals són una trucada o un SMS al telèfon del negoci, un correu, una videotrucada en directe des del local, o una postal amb un codi. El vídeo sol ser el més ràpid quan l’ofereixen: es posa a la porta, ensenya el rètol, el carrer i alguna cosa que només tindria el titular (caixa, claus, cuina). Si ofereixen vídeo, faci-lo servir. La postal pot tardar fins a dues setmanes. No canviï el nom ni l’adreça mentre el sobre és de camí, o el codi deixa de valer.
 
 Després d’enviar la prova, Google pot tardar fins a cinc dies laborables. De vegades és immediat si el lloc web ja és a Search Console.
 
-Si el botó Respondre continua sense sortir: comprovi que és al mateix compte de Google que és titular de la fitxa. Un Gmail del personal no basta si el perfil viu en un altre inici de sessió. Demani al titular que l’afegeixi com a gestor, no com a segon propietari, a Configuració del perfil, Persones i accés.
+## I si continua sense botó Respondre?
 
-Si torna a aparèixer Verificar quan vostè creia que ja estava, Google no va acabar. Provi el mètode següent que mostrin. No creï una segona fitxa per «començar de zero». Els duplicats fan més mal del que estalvien.
+Comprovi que és al mateix compte de Google que és titular de la fitxa. Demani al titular que l’afegeixi com a gestor, no com a segon propietari, a Configuració del perfil, Persones i accés.
+
+Si torna a aparèixer Verificar quan vostè creia que ja estava, provi el mètode següent que mostrin. No creï una segona fitxa per «començar de zero». Els duplicats fan més mal del que estalvien.
 
 Quan estigui verificat, ja pot respondre. Allà comencen a servir la resta de guies d’aquest lloc.
 

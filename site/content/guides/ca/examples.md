@@ -13,9 +13,15 @@ Google diu als negocis que una resposta útil mostra que està atent. El client 
 ## body
 Escrigui en l’idioma de la ressenya. Anomeni una cosa que hagin dit de veritat. Vagi curt. Google continua revisant cada resposta abans de publicar-la.
 
-Un 5 estrelles, després d’un plat o un servei amb nom:
+## Exemples de resposta a ressenyes de 5 estrelles
+
+Després d’un plat o un servei amb nom:
 
 «Gràcies, Marta. M’alegra que el tall aguantés la setmana. Direm a l’Ana que ha preguntat per ella.»
+
+Si van deixar estrelles i cap text, vagi curt. No inventi un plat que no van esmentar.
+
+## Respostes a 4 estrelles i ressenyes mixtes
 
 Un 4 estrelles que parla de l’espera:
 
@@ -25,13 +31,19 @@ Un 3 estrelles mixt:
 
 «Gràcies per escriure-ho. Té raó: el cafè va arribar tard. La nota del pastís ajuda. Si torna, pregunti a la barra i l’atendrem.»
 
+## Exemples de resposta a ressenyes negatives de Google
+
 Un 1 o 2 estrelles, quan encara li falten els fets:
 
 «Gràcies per dir-nos-ho. Vull entendre què va passar amb el compte. Escrigui’ns al número del tiquet, o passi i pregunti per mi. Ho miro avui.»
 
-Què deixar fora: defensar el personal en públic, una afirmació mèdica, una sobremesa de regal que no ha acordat, i la frase «si li ha agradat, actualitzi la ressenya». Demanar en públic que canviïn la nota queda malament i s’acosta a les normes de Google sobre incentius.
+Per a la seqüència (esperar, anomenar el problema, treure-ho de la fitxa), faci servir la [guia sobre com respondre ressenyes negatives de Google]([[negative]]).
 
-Si no pot escriure avui, escrigui demà. Una fitxa buida és pitjor que una resposta amb un dia de retard. Desi’n tres en una nota del telèfon i canviï els noms i el fet cada vegada.
+## Què deixar fora
+
+Defensar el personal en públic, una afirmació mèdica, una sobremesa de regal que no ha acordat, i la frase «si li ha agradat, actualitzi la ressenya». Demanar en públic que canviïn la nota queda malament i s’acosta a les normes de Google sobre incentius.
+
+Si no pot escriure avui, escrigui demà. Una fitxa buida és pitjor que una resposta amb un dia de retard. Desi’n tres d’aquestes en una nota del telèfon i canviï els noms i el fet cada vegada.
 
 ## sources
 - [Google: gestionar i respondre ressenyes](https://support.google.com/business/answer/3474050)

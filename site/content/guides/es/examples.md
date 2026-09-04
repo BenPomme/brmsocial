@@ -13,9 +13,15 @@ Google dice a los negocios que una respuesta útil muestra que está atento. El 
 ## body
 Escriba en el idioma de la reseña. Nombre una cosa que hayan dicho de verdad. Vaya corto. Google sigue revisando cada respuesta antes de publicarla.
 
-Un 5 estrellas, después de un plato o un servicio con nombre:
+## Ejemplos de respuesta a reseñas de 5 estrellas
+
+Después de un plato o un servicio con nombre:
 
 «Gracias, Marta. Me alegra que el corte aguantara la semana. Le diremos a Ana que ha preguntado por ella.»
+
+Si dejaron estrellas y ningún texto, vaya corto. No invente un plato que no mencionaron.
+
+## Respuestas a 4 estrellas y reseñas mixtas
 
 Un 4 estrellas que habla de la espera:
 
@@ -25,11 +31,17 @@ Un 3 estrellas mixto:
 
 «Gracias por escribirlo. Tiene razón: el café llegó tarde. La nota del pastel ayuda. Si vuelve, pregunte en la barra y le atendemos.»
 
+## Ejemplos de respuesta a reseñas negativas de Google
+
 Un 1 o 2 estrellas, cuando aún le faltan los hechos:
 
 «Gracias por decírnoslo. Quiero entender qué pasó con la cuenta. Escríbanos al número del ticket, o pásese y pregunte por mí. Lo miro hoy.»
 
-Qué dejar fuera: defender al personal en público, una afirmación médica, un postre de regalo que no ha acordado, y la frase «si le ha gustado, actualice la reseña». Pedir en público que cambien la nota queda mal y se acerca a las normas de Google sobre incentivos.
+Para la secuencia (esperar, nombrar el problema, sacarlo de la ficha), use la [guía sobre cómo responder reseñas negativas de Google]([[negative]]).
+
+## Qué dejar fuera
+
+Defender al personal en público, una afirmación médica, un postre de regalo que no ha acordado, y la frase «si le ha gustado, actualice la reseña». Pedir en público que cambien la nota queda mal y se acerca a las normas de Google sobre incentivos.
 
 Si no puede escribir hoy, escriba mañana. Una ficha vacía es peor que una respuesta con un día de retraso. Guarde tres de estas en una nota del teléfono y cambie los nombres y el hecho cada vez.
 

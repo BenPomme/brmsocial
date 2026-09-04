@@ -11,13 +11,23 @@ Why it matters
 Google’s own help says replies show that you value feedback, and that more genuine reviews can help a listing stand out. Independent research on restaurants found that ratings move revenue for small places more than for chains. None of that is a guarantee that ten new stars will lift you into the local pack tomorrow.
 
 ## body
-When someone searches “bakery near me”, Google has to pick a handful of listings. The usual ingredients are: the category you chose, the distance, whether the profile is complete, and whether the page looks alive. Reviews sit in that last bucket. A 4.6 with two hundred recent notes reads differently from a 5.0 with six notes from 2019.
+Yes, Google reviews help local SEO and Maps more than they help a classic blue-link result. When someone searches “bakery near me”, Google has to pick a handful of listings. The usual ingredients are the category you chose, the distance, whether the profile is complete, and whether the page looks alive. Reviews sit in that last bucket.
 
-What you control: reply to what is already there. Ask every customer the same way, with a QR on the ticket, no prize. Keep the hours, the phone, and the photos true. Pick the most specific category Google offers (hair salon, not store).
+## Do Google reviews affect SEO or only Maps?
 
-What you do not control: who writes, and how Google weighs each signal this month. Stuffing the business name with “best plumber Barcelona” is against the rules and can get the profile suspended.
+They affect the Maps pack and the local listing first. A 4.6 with two hundred recent notes reads differently from a 5.0 with six notes from 2019. That can change who gets the click. It is not the same as ranking a blog post on google.com.
 
-If you want the numbers we use for revenue, they live on the research page, not here. This habit is simpler. A listing that is verified, complete, answered, and fed with genuine recent reviews is easier to trust. Trust is what local search is for.
+Do more Google reviews help SEO? Recency and a real mix of scores help the listing look current. Stuffing the business name with “best plumber Barcelona” is against the rules and can get the profile suspended.
+
+## Does responding to Google reviews help SEO?
+
+It helps the next customer, and Google says a reply shows you are paying attention. That is why you answer what is already there. It is not a secret ranking cheat.
+
+## What you control this week
+
+Reply to what is already there. Ask every customer the same way, with a QR on the ticket, no prize. Keep the hours, the phone, and the photos true. Pick the most specific category Google offers (hair salon, not store).
+
+If you want the revenue ranges, they live on the [research page]([[page:research]]), not here. A listing that is verified, complete, answered, and fed with genuine recent reviews is easier to trust. Trust is what local search is for.
 
 Do the weekly work. Then look at the listing the way a new customer would, on your phone, standing outside a competitor. That is the test.
 

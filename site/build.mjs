@@ -113,6 +113,30 @@ function paras(s) {
     .join("\n");
 }
 
+function inlineLinks(locale, s) {
+  return esc(s)
+    .replaceAll("\n", "<br>")
+    .replace(/\[([^\]]+)\]\(\[\[page:([a-z]+)\]\]\)/g, (_, label, page) => `<a href="${esc(href(locale, page, 3))}">${label}</a>`)
+    .replace(/\[([^\]]+)\]\(\[\[([a-z]+)\]\]\)/g, (_, label, id) => `<a href="${esc(guideHref(locale, id, 3))}">${label}</a>`)
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => `<a href="${esc(url)}" rel="noopener" target="_blank">${label}</a>`);
+}
+
+function guideBody(locale, s) {
+  return String(s || "")
+    .split(/\n\s*\n/)
+    .filter(Boolean)
+    .map((p) => {
+      const lines = p.split("\n");
+      const hm = lines[0].match(/^##\s+(.+)$/);
+      if (hm) {
+        const rest = lines.slice(1).join("\n").trim();
+        return `<h2>${esc(hm[1])}</h2>${rest ? `<p>${inlineLinks(locale, rest)}</p>` : ""}`;
+      }
+      return `<p>${inlineLinks(locale, p)}</p>`;
+    })
+    .join("\n");
+}
+
 function t(copy, key) {
   return copy[key] ?? "";
 }
@@ -756,7 +780,7 @@ function guideArticlePage(locale, copy, config, depth, id) {
       <p class="tiny">${esc(gcopy.impact_label)}</p>
       ${paras(gcopy.impact)}
     </aside>
-    ${paras(gcopy.body)}
+    ${guideBody(locale, gcopy.body)}
     <h2>${esc(t(copy, "guides.sources"))}</h2>
     ${sourceList(gcopy.sources)}
     <p class="cta-row" style="margin-top:1.5rem">
