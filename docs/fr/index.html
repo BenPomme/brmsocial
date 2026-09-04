@@ -92,7 +92,7 @@
         <div class="cta-row">
           <a class="btn btn-wa" href="https://wa.me/447716092830?text=Bonjour%20Rosalia%2C%20je%20voudrais%20en%20savoir%20plus%20sur%20BabyRock%20Social." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> WhatsApp</a>
           <a class="btn btn-coral" href="../fr/s-abonner/">Que l’on s’occupe de mes avis</a>
-          <a class="btn btn-ghost" href="../fr/simulateur/">Calculez l’impact attendu pour vous</a>
+          <a class="btn btn-ghost" href="../fr/simulateur/">Voir ce que vous pourriez gagner</a>
         </div>
       </div>
       <figure class="hero-visual"><img class="hero-photo" src="../assets/illustrations/hero.jpg" alt=""></figure>
@@ -131,20 +131,48 @@
       <div class="shops"><figure class="photo-card"><img src="../assets/illustrations/shop-restaurant.jpg" alt="" loading="lazy"><figcaption>Restaurant</figcaption></figure><figure class="photo-card"><img src="../assets/illustrations/shop-bakery.jpg" alt="" loading="lazy"><figcaption>Boulangerie</figcaption></figure><figure class="photo-card"><img src="../assets/illustrations/shop-salon.jpg" alt="" loading="lazy"><figcaption>Salon</figcaption></figure><figure class="photo-card"><img src="../assets/illustrations/shop-florist.jpg" alt="" loading="lazy"><figcaption>Fleuriste</figcaption></figure><figure class="photo-card"><img src="../assets/illustrations/shop-cafe.jpg" alt="" loading="lazy"><figcaption>Café</figcaption></figure><figure class="photo-card"><img src="../assets/illustrations/shop-workshop.jpg" alt="" loading="lazy"><figcaption>Atelier</figcaption></figure><figure class="photo-card"><img src="../assets/illustrations/shop-clinic.jpg" alt="" loading="lazy"><figcaption>Clinique</figcaption></figure><figure class="photo-card"><img src="../assets/illustrations/shop-physio.jpg" alt="" loading="lazy"><figcaption>Kinésithérapie</figcaption></figure><figure class="photo-card"><img src="../assets/illustrations/shop-club.jpg" alt="" loading="lazy"><figcaption>Club</figcaption></figure></div>
     </div>
   </section>
-  <section class="section section-alt">
-    <div class="wrap"><form class="sim-card" data-sim>
-    <h2>Ce que des réponses régulières peuvent valoir</h2>
-    <p>Lorsque les commerces répondent avec constance, les notes s’améliorent. D’après les travaux de Harvard Business School, vous pourriez attendre au moins 10 % de chiffre d’affaires en plus par an.</p>
+  <section class="section section-alt" id="sim">
+    <div class="wrap"><form class="sim-card sim-card-home" data-sim>
+    <h2>Si vous payez, combien gagnez-vous en plus ?</h2>
+    <p>Extra annuel. Bas et haut, d’après les études que nous utilisons. Pas une promesse.</p>
     <label for="rev">Chiffre d’affaires mensuel, en euros</label>
     <input id="rev" name="revenue" inputmode="numeric" placeholder="25000" value="25000">
-    <input type="hidden" name="reply" value="0.1">
-    <div class="sim-result" data-compact-result>
-      <span>Jusqu’à, après 99 € / mois</span>
-      <strong data-compact-amount>-</strong>
+    <label for="kind">Type de commerce</label>
+    <select id="kind" name="kind"><option value="restaurant" selected>Restaurant</option><option value="cafe">Café</option><option value="bakery">Boulangerie</option><option value="salon">Salon</option><option value="florist">Fleuriste</option><option value="workshop">Atelier</option><option value="clinic">Clinique</option><option value="physio">Kinésithérapie</option><option value="club">Club</option></select>
+    <fieldset class="sim-products">
+    <legend>Que voulez-vous ?</legend>
+    <div class="sim-product-row">
+      <label class="sim-product">
+        <input type="radio" name="product" value="social" checked>
+        <span><strong>BabyRock Social</strong><em>Réponses aux avis Google</em></span>
+      </label><label class="sim-product">
+        <input type="radio" name="product" value="direct">
+        <span><strong>BabyRock Direct</strong><em>WhatsApp for Business</em></span>
+      </label><label class="sim-product">
+        <input type="radio" name="product" value="both">
+        <span><strong>Les deux ensemble</strong><em>Avis + WhatsApp</em></span>
+      </label>
     </div>
-  </form>
-      <p style="margin-top:1rem"><a href="../fr/simulateur/">Voir le calcul et comparer les formules</a></p>
+  </fieldset>
+    <div class="sim-outcomes">
+    <div class="sim-out sim-out-low">
+      <p class="tiny">Extra annuel, bas</p>
+      <p class="big" data-sim-low>-</p>
+      <p class="tiny"><span data-sim-low-pct></span> de votre année</p>
     </div>
+    <div class="sim-out sim-out-high">
+      <p class="tiny">Extra annuel, haut</p>
+      <p class="big" data-sim-high>-</p>
+      <p class="tiny"><span data-sim-high-pct></span> de votre année</p>
+    </div>
+  </div>
+  <p class="tiny sim-note">Extra brut. BabyRock Social à partir de 799 € par an.</p>
+    <p class="sim-links">
+      <a href="../fr/recherche/">D’où viennent ces chiffres</a>
+      ·
+      <a href="../fr/simulateur/">Ouvrir le simulateur complet</a>
+    </p>
+  </form></div>
   </section>
   <section class="section">
     <div class="wrap value-grid">
@@ -224,7 +252,7 @@
   <a class="wa-fab" href="https://wa.me/447716092830?text=Bonjour%20Rosalia%2C%20je%20voudrais%20en%20savoir%20plus%20sur%20BabyRock%20Social." target="_blank" rel="noopener" aria-label="WhatsApp Rosalia">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
-  <script>window.BR_CONFIG = {"company":"BabyRock","product":"BabyRock Social","domain":"www.babyrock.ai","email":"rosalia@babyrock.ai","whatsapp":"447716092830","factory":"https://github.com/BenPomme/brmsocialbackend","reviewsManager":"reviews@babyrock.ai","city":"Sant Cugat del Vallès","legalName":"","vatId":"","priceMonth":99,"priceYear":799,"priceYearFull":1188,"yearDiscountPct":33,"currency":"EUR","vatNote":"IVA included in Spain.","gaId":"G-252L7M2L2P","trustCount":500,"formula":{"lucaMid":0.07,"lucaLow":0.05,"lucaHigh":0.09,"starLiftIfSilent":0.12,"conversionIfSilent":0,"defaultRating":4.2,"defaultReplyRate":0.1}};</script>
+  <script>window.BR_CONFIG = {"company":"BabyRock","product":"BabyRock Social","domain":"www.babyrock.ai","email":"rosalia@babyrock.ai","whatsapp":"447716092830","factory":"https://github.com/BenPomme/brmsocialbackend","reviewsManager":"reviews@babyrock.ai","city":"Sant Cugat del Vallès","legalName":"","vatId":"","priceMonth":99,"priceYear":799,"priceYearFull":1188,"yearDiscountPct":33,"currency":"EUR","vatNote":"IVA included in Spain.","gaId":"G-252L7M2L2P","trustCount":500,"formula":{"lucaMid":0.07,"lucaLow":0.05,"lucaHigh":0.09,"starLiftIfSilent":0.12,"conversionIfSilent":0,"defaultRating":4.2,"defaultReplyRate":0.1},"impact":{"overlap":0.85,"social":{"restaurant":[0.07,0.09],"cafe":[0.06,0.08],"bakery":[0.05,0.07],"salon":[0.08,0.12],"florist":[0.08,0.12],"workshop":[0.08,0.12],"clinic":[0.09,0.14],"physio":[0.09,0.14],"club":[0.06,0.09]},"direct":{"restaurant":[0.04,0.1],"cafe":[0.03,0.06],"bakery":[0.04,0.09],"salon":[0.07,0.12],"florist":[0.06,0.12],"workshop":[0.06,0.11],"clinic":[0.08,0.12],"physio":[0.08,0.12],"club":[0.05,0.1]}}};</script>
   <script src="../js/site.js"></script>
 </body>
 </html>

@@ -85,7 +85,7 @@ BabyRock Social prépare une réponse à chaque nouvel avis sur votre fiche d’
 Pour les avis 1, 2 et 3 étoiles, nous vous envoyons d’abord le brouillon sur WhatsApp. Vous l’approuvez ou vous nous dites quoi changer. Vous restez aux commandes, et vous ne passez pas la soirée à écrire des réponses.
 
 ## home.cta_sim
-Calculez l’impact attendu pour vous
+Voir ce que vous pourriez gagner
 
 ## home.cta_sub
 Que l’on s’occupe de mes avis
@@ -177,10 +177,10 @@ Kinésithérapie
 Club
 
 ## home.sim_title
-Ce que des réponses régulières peuvent valoir
+Si vous payez, combien gagnez-vous en plus ?
 
 ## home.sim_lead
-Lorsque les commerces répondent avec constance, les notes s’améliorent. D’après les travaux de Harvard Business School, vous pourriez attendre au moins 10 % de chiffre d’affaires en plus par an.
+Extra annuel. Bas et haut, d’après les études que nous utilisons. Pas une promesse.
 
 ## home.sim_label
 Chiffre d’affaires mensuel, en euros
@@ -189,13 +189,13 @@ Chiffre d’affaires mensuel, en euros
 25000
 
 ## home.sim_result_before
-Jusqu’à, après 99 € / mois
+Extra annuel, bas
 
 ## home.sim_result_after
-€ estimés par mois après l’abonnement
+Extra annuel, haut
 
 ## home.sim_link
-Voir le calcul et comparer les formules
+Ouvrir le simulateur complet
 
 ## home.value_time_title
 Retrouvez vos soirées
@@ -291,22 +291,16 @@ Vous gérez aussi le WhatsApp de mon commerce ?
 Pas encore. Ce sera BabyRock Direct : vos clients écrivent à votre numéro, pas au nôtre. Le WhatsApp que vous utilisez avec nous aujourd’hui est seulement le fil avec BabyRock Social, pour les avis délicats et le récapitulatif hebdomadaire.
 
 ## sim.headline
-Impact attendu sur votre chiffre d’affaires
+Si vous payez, combien gagnez-vous en plus ?
 
 ## sim.lead
-Indiquez votre chiffre d’affaires mensuel.
-
-## sim.range_label
-Jusqu’à
+Trois questions. Extra annuel, bas et haut. Si vous payez, voici l’extra que nous estimons.
 
 ## sim.revenue
-Chiffre d’affaires mensuel du commerce, en euros
+Chiffre d’affaires mensuel, en euros
 
 ## sim.kind
-Type de commerce (facultatif)
-
-## sim.kind_any
-Commerce local
+Type de commerce
 
 ## sim.kind_restaurant
 Restaurant
@@ -335,68 +329,38 @@ Kinésithérapie
 ## sim.kind_club
 Club
 
-## sim.rating
-Note Google actuelle (facultatif)
+## sim.product
+Que voulez-vous ?
 
-## sim.reply
-À quelle fréquence répondez-vous aujourd’hui ?
+## sim.product_both
+Les deux ensemble
 
-## sim.reply_never
-Peu ou jamais
+## sim.product_social_sub
+Réponses aux avis Google
 
-## sim.reply_some
-À certains avis
+## sim.product_direct_sub
+WhatsApp for Business
 
-## sim.reply_most
-À la plupart
+## sim.product_both_sub
+Avis + WhatsApp
 
-## sim.reply_all
-À tous, déjà
+## sim.low_label
+Extra annuel, bas
 
-## sim.expected_label
-Estimation fondée sur la recherche
+## sim.high_label
+Extra annuel, haut
 
-## sim.expected_explain
-Pour un commerce qui répond peu aujourd’hui, l’estimation centrale est 0,84 % du chiffre d’affaires mensuel. Elle applique l’amélioration observée de 0,12 étoile au milieu de la fourchette de Harvard (5–9 % par étoile entière). Si vous répondez déjà à une partie ou à la plupart, l’estimation baisse dans la même proportion.
+## sim.pct_of_year
+de votre année
 
-## sim.fullstar_label
-Fourchette publiée
-
-## sim.fullstar_explain
-L’estimation basse utilise 0,12 × 5 % du chiffre d’affaires. La haute utilise 0,12 × 9 %. Cela donne une fourchette de 0,6–1,08 % du chiffre d’affaires mensuel, avant l’abonnement.
-
-## sim.after_month
-Après 99 €/mois
-
-## sim.after_year
-Après 799 € par an, soit 33 % de moins
-
-## sim.per_month
-par mois
-
-## sim.per_year
-par an
-
-## sim.roi_month
-Retour estimé après l’abonnement mensuel
-
-## sim.roi_year
-Retour estimé après l’abonnement annuel
-
-## sim.time_line
-L’estimation n’inclut pas le temps que vous récupérez en n’écrivant plus vous-même les réponses de routine.
-
-## sim.already_replying
-Vous répondez déjà à presque tous les avis. Dans ce cas BabyRock Social, c’est surtout le temps et la constance, pas une hausse extra parce que vous commencez à répondre.
+## sim.note
+Extra brut. BabyRock Social à partir de 799 € par an.
 
 ## sim.cta
 Que l’on s’occupe de mes avis
 
 ## sim.research_link
-Voir les études derrière l’estimation
-
-## sim.calculate
-Calculer l’impact attendu
+D’où viennent ces chiffres
 
 ## how.headline
 Comment commencer
@@ -435,45 +399,41 @@ L’IA nous donne un premier brouillon pour suivre le volume. Une personne déci
 La même conversation WhatsApp sert à demander un changement de texte, expliquer ce qui s’est passé, demander une facture, mettre en pause ou résilier.
 
 ## research.headline
-La recherche derrière l’estimation d’impact
+Comment nous estimons l’extra
 
 ## research.lead
-Nous utilisons des résultats publiés pour une estimation centrale pratique : autour de 0,84 % du chiffre d’affaires mensuel pour un commerce qui passe de répondre peu à répondre toujours. Voici d’où vient ce chiffre.
+Le simulateur montre l’extra annuel comme une part de ce que vous faites déjà. Le bas est le milieu de la fourchette publiée. Le haut est le plafond de cette fourchette. Cliniques, kinés et salons sont au-dessus des restaurants. C’est une estimation, pas un contrat.
 
 ## research.luca_title
-Harvard Business School : Michael Luca, 2011/2016
+BabyRock Social : avis et notes
 
 ## research.luca
-« Reviews, Reputation, and Revenue: The Case of Yelp.com » a étudié des restaurants indépendants à Seattle. Une hausse d’une étoile de la note affichée sur Yelp a produit 5 à 9 % de chiffre d’affaires en plus. Dans l’estimation centrale, nous utilisons le milieu, 7 % par étoile entière.
+Harvard Business School (Michael Luca) a trouvé qu’une étoile de plus sur Yelp produisait 5 à 9 % de chiffre d’affaires en plus pour les restaurants indépendants. Le milieu est 7 %. Pour les restaurants nous prenons 7 % en bas et 9 % en haut.
+
+Un nouveau patient, une première coupe, un bouquet livré ou un atelier ne se goûtent pas avant. Cette fiche vend plus. Donc clinique et kiné : 9 à 14 %. Salon, atelier et fleuriste : 8 à 12 %. Café et boulangerie un peu sous le restaurant.
 
 ## research.womply_title
-Marketing Science : Davide Proserpio et Georgios Zervas, 2017
+Ce que les réponses font aux étoiles
 
 ## research.womply
-« Online Reputation Management: Estimating the Impact of Management Responses on Consumer Reviews » a examiné des dizaines de milliers d’avis et de réponses d’hôtels sur TripAdvisor. Quand les hôtels ont commencé à répondre, ils ont reçu 12 % d’avis en plus et leur note a augmenté en moyenne de 0,12 étoile. C’est cette amélioration de 0,12 étoile que nous utilisons.
+Proserpio et Zervas (Marketing Science, 2017) ont vu que lorsque les hôtels ont commencé à répondre, ils ont reçu 12 % d’avis en plus et 0,12 étoile de plus en moyenne. C’est pourquoi nous répondons. Ce n’est pas le pourcentage du simulateur. Le simulateur utilise les fourchettes de chiffre d’affaires ci-dessus.
 
-## research.bright_title
-Conseils Google Business Profile
+## research.direct_title
+BabyRock Direct : absences, réservations, commandes
 
-## research.bright
-Google recommande de répondre aux avis pour montrer que l’avis du client compte. Google dit aussi que les avis positifs et les réponses utiles peuvent aider à se distinguer, et que davantage d’avis et de notes positives peuvent soutenir le référencement local. C’est pourquoi nous répondons même si la personne qui a écrit ne revient jamais : le client suivant peut voir la réponse.
+## research.direct
+OpenTable et les opérateurs situent les no-shows restaurants entre 10 et 20 % des réservations. Une baisse de 30 % sur un no-show de 20 % récupère 6 % des ventes qui passent par réservation. En santé le point de départ est plus haut : Hasvold et Wootton (29 études) trouvent une médiane de 23 % de rendez-vous manqués, et les rappels en coupent environ un tiers. Un essai randomisé en kiné a fait passer le non-présent de 16 % à 11 %. Une chaise vide ne se remplit pas avec un walk-in. Donc Direct est plus fort en clinique, kiné et salon que dans un restaurant qui a encore du passage.
+
+Au-dessus des no-shows récupérés, nous ajoutons WhatsApp comme canal de réservation et de commande. Les deux ensemble, c’est Social plus 85 % de Direct, pour ne pas compter deux fois la demande d’avis après la visite.
 
 ## research.formula_title
-Comment nous calculons l’impact attendu
+Les pourcentages que nous utilisons
 
 ## research.formula
-Indiquez le chiffre d’affaires mensuel R.
-
-Estimation basse = R × 0,12 × 5 % = R × 0,6 %.
-
-Estimation centrale = R × 0,12 × 7 % = R × 0,84 %.
-
-Estimation haute = R × 0,12 × 9 % = R × 1,08 %.
-
-Nous retranchons ensuite 99 € pour la formule mensuelle, ou 799 € ÷ 12 pour l’annuelle. Si vous répondez déjà à une partie ou à la plupart, le calculateur réduit l’estimation parce qu’une partie du travail est déjà faite.
+Extra annuel = chiffre d’affaires mensuel × 12 × le pourcentage de votre type et produit. Chiffres bruts. BabyRock Social à partir de 799 € par an.
 
 ## research.what_we_use
-Le chiffre que nous utilisons est 0,84 % du chiffre d’affaires mensuel avant l’abonnement. C’est une moyenne des études ci-dessus. Votre commerce peut atterrir plus haut ou plus bas. Le temps que vous récupérez est en plus, et il n’est pas dans ce pourcentage.
+Votre commerce peut sortir de la fourchette. Nous préférons un chiffre commercial clair, avec les sources à côté, qu’une formule à 0,84 % que personne ne sent.
 
 ## about.headline
 Une personne est responsable de chaque réponse

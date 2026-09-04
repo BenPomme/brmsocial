@@ -1,14 +1,7 @@
 (function () {
   const cfg = window.BR_CONFIG || {};
   const copy = window.BR_COPY || {};
-  const F = cfg.formula || {
-    lucaMid: 0.07,
-    lucaLow: 0.05,
-    lucaHigh: 0.09,
-    starLiftIfSilent: 0.12,
-    conversionIfSilent: 0.02,
-    defaultReplyRate: 0.1,
-  };
+  const IMPACT = cfg.impact || {};
 
   const menuBtn = document.querySelector("[data-menu]");
   const mobileNav = document.querySelector("[data-mobile-nav]");
@@ -68,72 +61,102 @@
     return (n < 0 ? "−" : "") + formatted + " €";
   }
 
-  function compute(revenue, replyRate) {
-    const R = Number(revenue) || 0;
-    const gap = Math.max(0, Math.min(1, 1 - replyRate));
-    const lift = (F.starLiftIfSilent || 0.12) * gap;
-    const expected = R * lift * (F.lucaMid || 0.07);
-    const rangeLow = R * lift * (F.lucaLow || 0.05);
-    const rangeHigh = R * lift * (F.lucaHigh || 0.09);
+  function formatPct(x) {
+    const p = Math.round(x * 1000) / 10;
+    const s = Number.isInteger(p) ? String(p) : p.toFixed(1);
+    return s + "%";
+  }
+
+  function parseRevenue(raw) {
+    const n = Number(String(raw || "").replace(/[^\d.]/g, ""));
+    return Number.isFinite(n) ? n : 0;
+  }
+
+  function picked(form, name, fallback) {
+    const checked = form.querySelector("[name='" + name + "']:checked");
+    if (checked) return checked.value;
+    const el = form.querySelector("[name='" + name + "']");
+    if (el && el.value) return el.value;
+    return fallback;
+  }
+
+  function ratesFor(kind, product) {
+    const socialMap = IMPACT.social || {};
+    const directMap = IMPACT.direct || {};
+    const k = socialMap[kind] ? kind : "restaurant";
+    const social = socialMap[k] || [0.07, 0.09];
+    const direct = directMap[k] || [0.04, 0.1];
+    const o = IMPACT.overlap == null ? 0.85 : IMPACT.overlap;
+    if (product === "direct") return { low: direct[0], high: direct[1] };
+    if (product === "both") return { low: social[0] + o * direct[0], high: social[1] + o * direct[1] };
+    return { low: social[0], high: social[1] };
+  }
+
+  function compute(revenue, kind, product) {
+    const monthly = parseRevenue(revenue);
+    const yearly = monthly * 12;
+    const rates = ratesFor(kind, product);
     return {
-      R,
-      gap,
-      expected,
-      fullLow: rangeLow,
-      fullHigh: rangeHigh,
-      netMonthExpected: expected - cfg.priceMonth,
-      netYearExpected: expected * 12 - cfg.priceYear,
-      netMonthFullLow: rangeLow - cfg.priceMonth,
-      netMonthFullHigh: rangeHigh - cfg.priceMonth,
-      netYearFullLow: rangeLow * 12 - cfg.priceYear,
-      netYearFullHigh: rangeHigh * 12 - cfg.priceYear,
+      monthly: monthly,
+      yearly: yearly,
+      lowPct: rates.low,
+      highPct: rates.high,
+      lowEur: yearly * rates.low,
+      highEur: yearly * rates.high,
     };
   }
 
-  function fillCompact(el, result) {
-    const strong = el.querySelector("[data-compact-amount]");
-    if (!strong) return;
-    if (!result.R) {
-      strong.textContent = "-";
-      return;
-    }
-    strong.textContent = money(result.netMonthFullHigh);
-  }
-
-  function fillFull(root, result) {
+  function fillSim(form, result) {
     const set = function (sel, val) {
-      const n = root.querySelector(sel);
-      if (n) n.textContent = val;
+      form.querySelectorAll(sel).forEach(function (n) {
+        n.textContent = val;
+      });
     };
-    if (!result.R) {
-      set("[data-full-high]", "-");
-      set("[data-full-month]", "-");
-      set("[data-full-year]", "-");
+    if (!result.monthly) {
+      set("[data-sim-low]", "-");
+      set("[data-sim-high]", "-");
+      set("[data-sim-low-pct]", "");
+      set("[data-sim-high-pct]", "");
       return;
     }
-    set("[data-full-high]", money(result.fullHigh));
-    set("[data-full-month]", money(result.netMonthFullHigh));
-    set("[data-full-year]", money(result.netYearFullHigh));
+    set("[data-sim-low]", money(result.lowEur));
+    set("[data-sim-high]", money(result.highEur));
+    set("[data-sim-low-pct]", formatPct(result.lowPct));
+    set("[data-sim-high-pct]", formatPct(result.highPct));
   }
 
   function bindSim(form) {
     const run = function () {
-      const revenue = form.querySelector("[name=revenue]").value;
-      const reply = Number(form.querySelector("[name=reply]").value);
-      const result = compute(revenue, reply);
-      const compact = form.querySelector("[data-compact-result]");
-      if (compact) fillCompact(compact, result);
-      fillFull(form, result);
+      const revenueEl = form.querySelector("[name=revenue]");
+      const revenue = revenueEl ? revenueEl.value : "";
+      const kind = picked(form, "kind", "restaurant");
+      const product = picked(form, "product", "social");
+      fillSim(form, compute(revenue, kind, product));
       try {
         sessionStorage.setItem("br-revenue", String(revenue || ""));
+        sessionStorage.setItem("br-kind", kind);
+        sessionStorage.setItem("br-product", product);
       } catch (e) {}
     };
     form.addEventListener("input", run);
     form.addEventListener("change", run);
     try {
-      const saved = sessionStorage.getItem("br-revenue");
-      if (saved && form.querySelector("[name=revenue]") && !form.querySelector("[name=revenue]").value) {
-        form.querySelector("[name=revenue]").value = saved;
+      const savedRev = sessionStorage.getItem("br-revenue");
+      const rev = form.querySelector("[name=revenue]");
+      if (savedRev && rev && (rev.value === "" || rev.value === rev.getAttribute("placeholder"))) {
+        rev.value = savedRev;
+      }
+      const savedKind = sessionStorage.getItem("br-kind");
+      if (savedKind) {
+        const radio = form.querySelector("[name=kind][value='" + savedKind + "']");
+        const select = form.querySelector("select[name=kind]");
+        if (radio) radio.checked = true;
+        else if (select) select.value = savedKind;
+      }
+      const savedProduct = sessionStorage.getItem("br-product");
+      if (savedProduct) {
+        const radio = form.querySelector("[name=product][value='" + savedProduct + "']");
+        if (radio) radio.checked = true;
       }
     } catch (e) {}
     run();

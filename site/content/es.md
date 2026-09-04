@@ -85,7 +85,7 @@ BabyRock Social prepara una respuesta a cada reseña nueva de su ficha de empres
 En las reseñas de 1, 2 y 3 estrellas, le enviamos primero el borrador por WhatsApp. Usted lo aprueba o nos dice qué cambiar. Sigue al mando, y no pasa la noche escribiendo respuestas.
 
 ## home.cta_sim
-Calcule el impacto esperado para usted
+Vea lo que podría ganar
 
 ## home.cta_sub
 Que se ocupen de mis reseñas
@@ -177,10 +177,10 @@ Fisioterapia
 Club
 
 ## home.sim_title
-Lo que pueden valer las respuestas constantes
+Si paga, ¿cuánto más gana?
 
 ## home.sim_lead
-Cuando los negocios responden con constancia, las notas mejoran. Según el trabajo de Harvard Business School, podría esperar al menos un 10 % más de ingresos al año.
+Ingresos extra al año. Baja y alta, de los estudios que usamos. No es una promesa.
 
 ## home.sim_label
 Facturación mensual, en euros
@@ -189,13 +189,13 @@ Facturación mensual, en euros
 25000
 
 ## home.sim_result_before
-Hasta, después de 99 € al mes
+Extra al año, baja
 
 ## home.sim_result_after
-€ estimados al mes después de la suscripción
+Extra al año, alta
 
 ## home.sim_link
-Ver el cálculo y comparar planes
+Abrir el simulador completo
 
 ## home.value_time_title
 Recupere las noches
@@ -291,22 +291,16 @@ Escriba BAJA o «quiero parar» a Rosalia por WhatsApp. Confirmamos, seguimos ha
 Todavía no. Eso será BabyRock Direct: sus clientes escriben a su número, no al nuestro. El WhatsApp que usa con nosotros hoy es solo el hilo con BabyRock Social, para las reseñas delicadas y el recapitulativo semanal.
 
 ## sim.headline
-Impacto esperado en su facturación
+Si paga, ¿cuánto más gana?
 
 ## sim.lead
-Introduzca la facturación mensual.
-
-## sim.range_label
-Hasta
+Tres preguntas. Ingresos extra al año, baja y alta. Si paga, esto es el extra que estimamos.
 
 ## sim.revenue
-Facturación mensual del negocio, en euros
+Facturación mensual, en euros
 
 ## sim.kind
-Tipo de negocio (opcional)
-
-## sim.kind_any
-Comercio local
+Tipo de negocio
 
 ## sim.kind_restaurant
 Restaurante
@@ -335,68 +329,38 @@ Fisioterapia
 ## sim.kind_club
 Club
 
-## sim.rating
-Nota actual en Google (opcional)
+## sim.product
+¿Qué quiere?
 
-## sim.reply
-¿Con qué frecuencia responde hoy?
+## sim.product_both
+Los dos juntos
 
-## sim.reply_never
-Poco o nunca
+## sim.product_social_sub
+Respuestas a reseñas Google
 
-## sim.reply_some
-A algunas reseñas
+## sim.product_direct_sub
+WhatsApp for Business
 
-## sim.reply_most
-A la mayoría
+## sim.product_both_sub
+Reseñas + WhatsApp
 
-## sim.reply_all
-A todas, ya
+## sim.low_label
+Extra al año, baja
 
-## sim.expected_label
-Estimación basada en la investigación
+## sim.high_label
+Extra al año, alta
 
-## sim.expected_explain
-Para un negocio que hoy responde poco, la estimación central es el 0,84 % de la facturación mensual. Aplica la mejora observada de 0,12 estrellas al punto medio del rango de Harvard (5–9 % por estrella entera). Si usted ya responde a una parte o a la mayoría, la estimación baja en la misma proporción.
+## sim.pct_of_year
+de su año
 
-## sim.fullstar_label
-Rango publicado
-
-## sim.fullstar_explain
-La estimación baja usa 0,12 × 5 % de la facturación. La alta usa 0,12 × 9 %. Eso da un rango del 0,6–1,08 % de la facturación mensual, antes de la suscripción.
-
-## sim.after_month
-Después de 99 €/mes
-
-## sim.after_year
-Después de 799 € al año, un 33 % menos
-
-## sim.per_month
-al mes
-
-## sim.per_year
-al año
-
-## sim.roi_month
-Retorno estimado después de la suscripción mensual
-
-## sim.roi_year
-Retorno estimado después de la suscripción anual
-
-## sim.time_line
-La estimación no incluye el tiempo que recupera al no escribir usted las respuestas rutinarias.
-
-## sim.already_replying
-Usted ya responde casi a todas las reseñas. En ese caso BabyRock Social es sobre todo tiempo y constancia, no un aumento extra por empezar a responder.
+## sim.note
+Ingresos extra brutos. BabyRock Social desde 799 € al año.
 
 ## sim.cta
 Que se ocupen de mis reseñas
 
 ## sim.research_link
-Ver los estudios detrás de la estimación
-
-## sim.calculate
-Calcular el impacto esperado
+De dónde salen estos números
 
 ## how.headline
 Cómo empezar
@@ -435,45 +399,41 @@ La IA nos da un primer borrador para seguir el ritmo. Una persona decide qué de
 La misma conversación de WhatsApp sirve para pedir un cambio de texto, explicar lo que pasó, pedir una factura, pausar o cancelar.
 
 ## research.headline
-La investigación detrás de la estimación de impacto
+Cómo estimamos los ingresos extra
 
 ## research.lead
-Usamos hallazgos publicados para una estimación central práctica: alrededor del 0,84 % de la facturación mensual para un negocio que pasa de responder poco a responder siempre. Aquí está de dónde sale ese número.
+El simulador muestra el extra anual como un porcentaje de lo que ya factura. La baja es el medio del rango publicado. La alta es el techo de ese rango. Clínicas, fisios y peluquerías quedan por encima de los restaurantes. Es una estimación, no un contrato.
 
 ## research.luca_title
-Harvard Business School: Michael Luca, 2011/2016
+BabyRock Social: reseñas y notas
 
 ## research.luca
-«Reviews, Reputation, and Revenue: The Case of Yelp.com» estudió restaurantes independientes en Seattle. Un aumento de una estrella en la nota mostrada en Yelp produjo un 5–9 % más de ingresos. En la estimación central usamos el punto medio, 7 % por estrella entera.
+Harvard Business School (Michael Luca) encontró que una estrella más en Yelp produjo un 5 a 9 % más de ingresos en restaurantes independientes. El punto medio es el 7 %. Para restaurantes usamos 7 % de baja y 9 % de alta.
+
+Un paciente nuevo, un primer corte, un ramo a domicilio o un taller no se prueban antes. Esa ficha vende más. Por eso clínica y fisio van del 9 al 14 %, y peluquería, taller y floristería del 8 al 12 %. Café y panadería, un poco por debajo del restaurante.
 
 ## research.womply_title
-Marketing Science: Davide Proserpio y Georgios Zervas, 2017
+Lo que hacen las respuestas a las estrellas
 
 ## research.womply
-«Online Reputation Management: Estimating the Impact of Management Responses on Consumer Reviews» examinó decenas de miles de reseñas y respuestas de hoteles en TripAdvisor. Cuando los hoteles empezaron a responder, recibieron un 12 % más de reseñas y su nota subió de media 0,12 estrellas. Esa mejora de 0,12 estrellas es la que usamos.
+Proserpio y Zervas (Marketing Science, 2017) vieron que cuando los hoteles empezaron a contestar recibieron un 12 % más de reseñas y 0,12 estrellas más de media. Por eso contestamos. No es el porcentaje del simulador. El simulador usa los rangos de ingresos de arriba.
 
-## research.bright_title
-Orientación de Google Business Profile
+## research.direct_title
+BabyRock Direct: ausencias, reservas, pedidos
 
-## research.bright
-Google recomienda responder a las reseñas para mostrar que la opinión del cliente importa. También dice que las reseñas positivas y las respuestas útiles pueden ayudar a distinguirse, y que más reseñas y notas positivas pueden apoyar el posicionamiento local. Por eso respondemos aunque quien escribió no vuelva: el siguiente cliente puede ver la respuesta.
+## research.direct
+OpenTable y los operadores sitúan las ausencias en restaurantes entre el 10 y el 20 % de las reservas. Un recorte del 30 % sobre un 20 % de ausencias recupera el 6 % de las ventas que van por reserva. En salud el punto de partida es más alto: Hasvold y Wootton (29 estudios) hallaron una mediana del 23 % de citas fallidas, y los recordatorios recortan cerca de un tercio. Un RCT de fisioterapia bajó el no acudir del 16 % al 11 %. Una silla vacía no se llena con un walk-in. Por eso Direct es mayor en clínica, fisio y peluquería que en un restaurante que aún tiene gente de paso.
+
+Encima de las ausencias recuperadas sumamos WhatsApp como canal de reserva y de pedido. Los dos juntos son Social más el 85 % de Direct, para no contar dos veces la petición de reseña después de la visita.
 
 ## research.formula_title
-Cómo calculamos el impacto esperado
+Los porcentajes que usamos
 
 ## research.formula
-Introduzca la facturación mensual R.
-
-Estimación baja = R × 0,12 × 5 % = R × 0,6 %.
-
-Estimación central = R × 0,12 × 7 % = R × 0,84 %.
-
-Estimación alta = R × 0,12 × 9 % = R × 1,08 %.
-
-Luego restamos 99 € para el plan mensual, o 799 € ÷ 12 para el anual. Si usted ya responde a una parte o a la mayoría, la calculadora reduce la estimación porque una parte del trabajo ya se hace.
+Extra anual = facturación mensual × 12 × el porcentaje de su tipo y producto. Cifras brutas. BabyRock Social desde 799 € al año.
 
 ## research.what_we_use
-La cifra que usamos es el 0,84 % de la facturación mensual antes de la suscripción. Es una media de los estudios de arriba. Su comercio puede quedar por encima o por debajo. El tiempo que recupera es extra, y no entra en ese porcentaje.
+Su comercio puede quedar fuera del rango. Preferimos un número comercial claro, con las fuentes al lado, que una fórmula del 0,84 % que nadie siente.
 
 ## about.headline
 Una persona es responsable de cada respuesta

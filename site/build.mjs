@@ -418,17 +418,68 @@ function productCards(locale, copy, config, depth) {
   </div>`;
 }
 
-function compactSim(copy) {
-  return `<form class="sim-card" data-sim>
+const KIND_ORDER = ["restaurant", "cafe", "bakery", "salon", "florist", "workshop", "clinic", "physio", "club"];
+
+function pctLabel(n) {
+  const x = Math.round(n * 1000) / 10;
+  return Number.isInteger(x) ? String(x) : x.toFixed(1);
+}
+
+function simProducts(copy) {
+  const items = [
+    ["social", "product.social_name", "sim.product_social_sub"],
+    ["direct", "product.direct_name", "sim.product_direct_sub"],
+    ["both", "sim.product_both", "sim.product_both_sub"],
+  ];
+  return `<fieldset class="sim-products">
+    <legend>${esc(t(copy, "sim.product"))}</legend>
+    <div class="sim-product-row">
+      ${items
+        .map(
+          ([value, nameKey, subKey], i) => `<label class="sim-product">
+        <input type="radio" name="product" value="${value}"${i === 0 ? " checked" : ""}>
+        <span><strong>${esc(t(copy, nameKey))}</strong><em>${esc(t(copy, subKey))}</em></span>
+      </label>`
+        )
+        .join("")}
+    </div>
+  </fieldset>`;
+}
+
+function simOutcomes(copy) {
+  return `<div class="sim-outcomes">
+    <div class="sim-out sim-out-low">
+      <p class="tiny">${esc(t(copy, "sim.low_label"))}</p>
+      <p class="big" data-sim-low>-</p>
+      <p class="tiny"><span data-sim-low-pct></span> ${esc(t(copy, "sim.pct_of_year"))}</p>
+    </div>
+    <div class="sim-out sim-out-high">
+      <p class="tiny">${esc(t(copy, "sim.high_label"))}</p>
+      <p class="big" data-sim-high>-</p>
+      <p class="tiny"><span data-sim-high-pct></span> ${esc(t(copy, "sim.pct_of_year"))}</p>
+    </div>
+  </div>
+  <p class="tiny sim-note">${esc(t(copy, "sim.note"))}</p>`;
+}
+
+function compactSim(locale, copy, depth) {
+  const kinds = KIND_ORDER.map(
+    (k) => `<option value="${k}"${k === "restaurant" ? " selected" : ""}>${esc(t(copy, "sim.kind_" + k))}</option>`
+  ).join("");
+  return `<form class="sim-card sim-card-home" data-sim>
     <h2>${esc(t(copy, "home.sim_title"))}</h2>
     ${paras(t(copy, "home.sim_lead"))}
     <label for="rev">${esc(t(copy, "home.sim_label"))}</label>
     <input id="rev" name="revenue" inputmode="numeric" placeholder="${esc(t(copy, "home.sim_placeholder"))}" value="${esc(t(copy, "home.sim_placeholder"))}">
-    <input type="hidden" name="reply" value="0.1">
-    <div class="sim-result" data-compact-result>
-      <span>${esc(t(copy, "home.sim_result_before"))}</span>
-      <strong data-compact-amount>-</strong>
-    </div>
+    <label for="kind">${esc(t(copy, "sim.kind"))}</label>
+    <select id="kind" name="kind">${kinds}</select>
+    ${simProducts(copy)}
+    ${simOutcomes(copy)}
+    <p class="sim-links">
+      <a href="${href(locale, "research", depth)}">${esc(t(copy, "sim.research_link"))}</a>
+      ·
+      <a href="${href(locale, "simulator", depth)}">${esc(t(copy, "home.sim_link"))}</a>
+    </p>
   </form>`;
 }
 
@@ -465,10 +516,8 @@ function homePage(locale, copy, config, depth) {
       <div class="shops">${shops(copy, depth)}</div>
     </div>
   </section>
-  <section class="section section-alt">
-    <div class="wrap">${compactSim(copy)}
-      <p style="margin-top:1rem"><a href="${href(locale, "simulator", depth)}">${esc(t(copy, "home.sim_link"))}</a></p>
-    </div>
+  <section class="section section-alt" id="sim">
+    <div class="wrap">${compactSim(locale, copy, depth)}</div>
   </section>
   <section class="section">
     <div class="wrap value-grid">
@@ -518,53 +567,26 @@ function homePage(locale, copy, config, depth) {
 }
 
 function simulatorPage(locale, copy, depth) {
+  const chips = KIND_ORDER.map(
+    (k) => `<label class="sim-chip">
+      <input type="radio" name="kind" value="${k}"${k === "restaurant" ? " checked" : ""}>
+      <span>${esc(t(copy, "sim.kind_" + k))}</span>
+    </label>`
+  ).join("");
   return `
   <section class="wrap section">
     <h1>${esc(t(copy, "sim.headline"))}</h1>
     <div class="lead">${paras(t(copy, "sim.lead"))}</div>
-    <form class="sim-card" data-sim>
+    <form class="sim-card sim-card-full" data-sim>
       <label>${esc(t(copy, "sim.revenue"))}
         <input name="revenue" inputmode="numeric" placeholder="${esc(t(copy, "home.sim_placeholder"))}" value="${esc(t(copy, "home.sim_placeholder"))}">
       </label>
-      <div class="columns-2">
-        <label>${esc(t(copy, "sim.kind"))}
-          <select name="kind">
-            <option value="any">${esc(t(copy, "sim.kind_any"))}</option>
-            <option value="restaurant">${esc(t(copy, "sim.kind_restaurant"))}</option>
-            <option value="bakery">${esc(t(copy, "sim.kind_bakery"))}</option>
-            <option value="salon">${esc(t(copy, "sim.kind_salon"))}</option>
-            <option value="florist">${esc(t(copy, "sim.kind_florist"))}</option>
-            <option value="cafe">${esc(t(copy, "sim.kind_cafe"))}</option>
-            <option value="workshop">${esc(t(copy, "sim.kind_workshop"))}</option>
-            <option value="clinic">${esc(t(copy, "sim.kind_clinic"))}</option>
-            <option value="physio">${esc(t(copy, "sim.kind_physio"))}</option>
-            <option value="club">${esc(t(copy, "sim.kind_club"))}</option>
-          </select>
-        </label>
-        <label>${esc(t(copy, "sim.reply"))}
-          <select name="reply">
-            <option value="0.1">${esc(t(copy, "sim.reply_never"))}</option>
-            <option value="0.4">${esc(t(copy, "sim.reply_some"))}</option>
-            <option value="0.75">${esc(t(copy, "sim.reply_most"))}</option>
-            <option value="1">${esc(t(copy, "sim.reply_all"))}</option>
-          </select>
-        </label>
-      </div>
-      <div class="sim-hero">
-        <p class="sim-kicker">${esc(t(copy, "sim.range_label"))}</p>
-        <p class="sim-hero-num" data-full-high>-</p>
-        <p class="tiny">${esc(t(copy, "sim.per_month"))}</p>
-        <div class="sim-after">
-          <div>
-            <p class="tiny">${esc(t(copy, "sim.after_month"))}</p>
-            <p class="big" data-full-month>-</p>
-          </div>
-          <div>
-            <p class="tiny">${esc(t(copy, "sim.after_year"))}</p>
-            <p class="big" data-full-year>-</p>
-          </div>
-        </div>
-      </div>
+      <fieldset class="sim-kinds">
+        <legend>${esc(t(copy, "sim.kind"))}</legend>
+        <div class="sim-chip-row">${chips}</div>
+      </fieldset>
+      ${simProducts(copy)}
+      ${simOutcomes(copy)}
       <div class="cta-row">
         <a class="btn btn-coral" href="${href(locale, "subscribe", depth)}">${esc(t(copy, "sim.cta"))}</a>
         <a class="btn btn-ghost" href="${href(locale, "research", depth)}">${esc(t(copy, "sim.research_link"))}</a>
@@ -606,15 +628,41 @@ function howPage(copy, depth) {
   </section>`;
 }
 
-function researchPage(copy) {
+function impactTable(copy, config) {
+  const impact = config.impact || { social: {}, direct: {}, overlap: 0.85 };
+  const o = impact.overlap == null ? 0.85 : impact.overlap;
+  const rows = KIND_ORDER.map((k) => {
+    const social = impact.social[k] || [0, 0];
+    const direct = impact.direct[k] || [0, 0];
+    const bothLow = social[0] + o * direct[0];
+    const bothHigh = social[1] + o * direct[1];
+    return `<tr>
+      <th scope="row">${esc(t(copy, "sim.kind_" + k))}</th>
+      <td>${pctLabel(social[0])}–${pctLabel(social[1])}%</td>
+      <td>${pctLabel(direct[0])}–${pctLabel(direct[1])}%</td>
+      <td>${pctLabel(bothLow)}–${pctLabel(bothHigh)}%</td>
+    </tr>`;
+  }).join("");
+  return `<div class="table-wrap"><table class="impact-table">
+    <thead><tr>
+      <th></th>
+      <th>${esc(t(copy, "product.social_name"))}</th>
+      <th>${esc(t(copy, "product.direct_name"))}</th>
+      <th>${esc(t(copy, "sim.product_both"))}</th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table></div>`;
+}
+
+function researchPage(copy, config) {
   return `
   <section class="wrap section research prose">
     <h1>${esc(t(copy, "research.headline"))}</h1>
     <div class="lead">${paras(t(copy, "research.lead"))}</div>
     <article><h2>${esc(t(copy, "research.luca_title"))}</h2>${paras(t(copy, "research.luca"))}</article>
     <article><h2>${esc(t(copy, "research.womply_title"))}</h2>${paras(t(copy, "research.womply"))}</article>
-    <article><h2>${esc(t(copy, "research.bright_title"))}</h2>${paras(t(copy, "research.bright"))}</article>
-    <article><h2>${esc(t(copy, "research.formula_title"))}</h2>${paras(t(copy, "research.formula"))}</article>
+    <article><h2>${esc(t(copy, "research.direct_title"))}</h2>${paras(t(copy, "research.direct"))}</article>
+    <article><h2>${esc(t(copy, "research.formula_title"))}</h2>${paras(t(copy, "research.formula"))}${impactTable(copy, config)}</article>
     <article>${paras(t(copy, "research.what_we_use"))}</article>
   </section>`;
 }
@@ -836,7 +884,7 @@ for (const locale of Object.keys(LOCALES)) {
     guides: { depth: 2, body: guidesIndexPage(locale, copy, config, 2) },
     simulator: { depth: 2, body: simulatorPage(locale, copy, 2) },
     how: { depth: 2, body: howPage(copy, 2) },
-    research: { depth: 2, body: researchPage(copy) },
+    research: { depth: 2, body: researchPage(copy, config) },
     about: { depth: 2, body: aboutPage(copy, 2) },
     subscribe: { depth: 2, body: subscribePage(locale, copy, config, 2) },
     account: { depth: 2, body: accountPage(locale, copy, config, 2) },

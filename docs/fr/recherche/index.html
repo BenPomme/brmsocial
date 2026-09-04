@@ -82,17 +82,68 @@
   </header>
   <main id="main">
   <section class="wrap section research prose">
-    <h1>La recherche derrière l’estimation d’impact</h1>
-    <div class="lead"><p>Nous utilisons des résultats publiés pour une estimation centrale pratique : autour de 0,84 % du chiffre d’affaires mensuel pour un commerce qui passe de répondre peu à répondre toujours. Voici d’où vient ce chiffre.</p></div>
-    <article><h2>Harvard Business School : Michael Luca, 2011/2016</h2><p>« Reviews, Reputation, and Revenue: The Case of Yelp.com » a étudié des restaurants indépendants à Seattle. Une hausse d’une étoile de la note affichée sur Yelp a produit 5 à 9 % de chiffre d’affaires en plus. Dans l’estimation centrale, nous utilisons le milieu, 7 % par étoile entière.</p></article>
-    <article><h2>Marketing Science : Davide Proserpio et Georgios Zervas, 2017</h2><p>« Online Reputation Management: Estimating the Impact of Management Responses on Consumer Reviews » a examiné des dizaines de milliers d’avis et de réponses d’hôtels sur TripAdvisor. Quand les hôtels ont commencé à répondre, ils ont reçu 12 % d’avis en plus et leur note a augmenté en moyenne de 0,12 étoile. C’est cette amélioration de 0,12 étoile que nous utilisons.</p></article>
-    <article><h2>Conseils Google Business Profile</h2><p>Google recommande de répondre aux avis pour montrer que l’avis du client compte. Google dit aussi que les avis positifs et les réponses utiles peuvent aider à se distinguer, et que davantage d’avis et de notes positives peuvent soutenir le référencement local. C’est pourquoi nous répondons même si la personne qui a écrit ne revient jamais : le client suivant peut voir la réponse.</p></article>
-    <article><h2>Comment nous calculons l’impact attendu</h2><p>Indiquez le chiffre d’affaires mensuel R.</p>
-<p>Estimation basse = R × 0,12 × 5 % = R × 0,6 %.</p>
-<p>Estimation centrale = R × 0,12 × 7 % = R × 0,84 %.</p>
-<p>Estimation haute = R × 0,12 × 9 % = R × 1,08 %.</p>
-<p>Nous retranchons ensuite 99 € pour la formule mensuelle, ou 799 € ÷ 12 pour l’annuelle. Si vous répondez déjà à une partie ou à la plupart, le calculateur réduit l’estimation parce qu’une partie du travail est déjà faite.</p></article>
-    <article><p>Le chiffre que nous utilisons est 0,84 % du chiffre d’affaires mensuel avant l’abonnement. C’est une moyenne des études ci-dessus. Votre commerce peut atterrir plus haut ou plus bas. Le temps que vous récupérez est en plus, et il n’est pas dans ce pourcentage.</p></article>
+    <h1>Comment nous estimons l’extra</h1>
+    <div class="lead"><p>Le simulateur montre l’extra annuel comme une part de ce que vous faites déjà. Le bas est le milieu de la fourchette publiée. Le haut est le plafond de cette fourchette. Cliniques, kinés et salons sont au-dessus des restaurants. C’est une estimation, pas un contrat.</p></div>
+    <article><h2>BabyRock Social : avis et notes</h2><p>Harvard Business School (Michael Luca) a trouvé qu’une étoile de plus sur Yelp produisait 5 à 9 % de chiffre d’affaires en plus pour les restaurants indépendants. Le milieu est 7 %. Pour les restaurants nous prenons 7 % en bas et 9 % en haut.</p>
+<p>Un nouveau patient, une première coupe, un bouquet livré ou un atelier ne se goûtent pas avant. Cette fiche vend plus. Donc clinique et kiné : 9 à 14 %. Salon, atelier et fleuriste : 8 à 12 %. Café et boulangerie un peu sous le restaurant.</p></article>
+    <article><h2>Ce que les réponses font aux étoiles</h2><p>Proserpio et Zervas (Marketing Science, 2017) ont vu que lorsque les hôtels ont commencé à répondre, ils ont reçu 12 % d’avis en plus et 0,12 étoile de plus en moyenne. C’est pourquoi nous répondons. Ce n’est pas le pourcentage du simulateur. Le simulateur utilise les fourchettes de chiffre d’affaires ci-dessus.</p></article>
+    <article><h2>BabyRock Direct : absences, réservations, commandes</h2><p>OpenTable et les opérateurs situent les no-shows restaurants entre 10 et 20 % des réservations. Une baisse de 30 % sur un no-show de 20 % récupère 6 % des ventes qui passent par réservation. En santé le point de départ est plus haut : Hasvold et Wootton (29 études) trouvent une médiane de 23 % de rendez-vous manqués, et les rappels en coupent environ un tiers. Un essai randomisé en kiné a fait passer le non-présent de 16 % à 11 %. Une chaise vide ne se remplit pas avec un walk-in. Donc Direct est plus fort en clinique, kiné et salon que dans un restaurant qui a encore du passage.</p>
+<p>Au-dessus des no-shows récupérés, nous ajoutons WhatsApp comme canal de réservation et de commande. Les deux ensemble, c’est Social plus 85 % de Direct, pour ne pas compter deux fois la demande d’avis après la visite.</p></article>
+    <article><h2>Les pourcentages que nous utilisons</h2><p>Extra annuel = chiffre d’affaires mensuel × 12 × le pourcentage de votre type et produit. Chiffres bruts. BabyRock Social à partir de 799 € par an.</p><div class="table-wrap"><table class="impact-table">
+    <thead><tr>
+      <th></th>
+      <th>BabyRock Social</th>
+      <th>BabyRock Direct</th>
+      <th>Les deux ensemble</th>
+    </tr></thead>
+    <tbody><tr>
+      <th scope="row">Restaurant</th>
+      <td>7–9%</td>
+      <td>4–10%</td>
+      <td>10.4–17.5%</td>
+    </tr><tr>
+      <th scope="row">Café</th>
+      <td>6–8%</td>
+      <td>3–6%</td>
+      <td>8.5–13.1%</td>
+    </tr><tr>
+      <th scope="row">Boulangerie</th>
+      <td>5–7%</td>
+      <td>4–9%</td>
+      <td>8.4–14.7%</td>
+    </tr><tr>
+      <th scope="row">Salon</th>
+      <td>8–12%</td>
+      <td>7–12%</td>
+      <td>14–22.2%</td>
+    </tr><tr>
+      <th scope="row">Fleuriste</th>
+      <td>8–12%</td>
+      <td>6–12%</td>
+      <td>13.1–22.2%</td>
+    </tr><tr>
+      <th scope="row">Atelier</th>
+      <td>8–12%</td>
+      <td>6–11%</td>
+      <td>13.1–21.4%</td>
+    </tr><tr>
+      <th scope="row">Clinique</th>
+      <td>9–14%</td>
+      <td>8–12%</td>
+      <td>15.8–24.2%</td>
+    </tr><tr>
+      <th scope="row">Kinésithérapie</th>
+      <td>9–14%</td>
+      <td>8–12%</td>
+      <td>15.8–24.2%</td>
+    </tr><tr>
+      <th scope="row">Club</th>
+      <td>6–9%</td>
+      <td>5–10%</td>
+      <td>10.3–17.5%</td>
+    </tr></tbody>
+  </table></div></article>
+    <article><p>Votre commerce peut sortir de la fourchette. Nous préférons un chiffre commercial clair, avec les sources à côté, qu’une formule à 0,84 % que personne ne sent.</p></article>
   </section></main>
   <footer class="site-footer">
     <div class="wrap footer-grid">
@@ -131,7 +182,7 @@
   <a class="wa-fab" href="https://wa.me/447716092830?text=Bonjour%20Rosalia%2C%20je%20voudrais%20en%20savoir%20plus%20sur%20BabyRock%20Social." target="_blank" rel="noopener" aria-label="WhatsApp Rosalia">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
-  <script>window.BR_CONFIG = {"company":"BabyRock","product":"BabyRock Social","domain":"www.babyrock.ai","email":"rosalia@babyrock.ai","whatsapp":"447716092830","factory":"https://github.com/BenPomme/brmsocialbackend","reviewsManager":"reviews@babyrock.ai","city":"Sant Cugat del Vallès","legalName":"","vatId":"","priceMonth":99,"priceYear":799,"priceYearFull":1188,"yearDiscountPct":33,"currency":"EUR","vatNote":"IVA included in Spain.","gaId":"G-252L7M2L2P","trustCount":500,"formula":{"lucaMid":0.07,"lucaLow":0.05,"lucaHigh":0.09,"starLiftIfSilent":0.12,"conversionIfSilent":0,"defaultRating":4.2,"defaultReplyRate":0.1}};</script>
+  <script>window.BR_CONFIG = {"company":"BabyRock","product":"BabyRock Social","domain":"www.babyrock.ai","email":"rosalia@babyrock.ai","whatsapp":"447716092830","factory":"https://github.com/BenPomme/brmsocialbackend","reviewsManager":"reviews@babyrock.ai","city":"Sant Cugat del Vallès","legalName":"","vatId":"","priceMonth":99,"priceYear":799,"priceYearFull":1188,"yearDiscountPct":33,"currency":"EUR","vatNote":"IVA included in Spain.","gaId":"G-252L7M2L2P","trustCount":500,"formula":{"lucaMid":0.07,"lucaLow":0.05,"lucaHigh":0.09,"starLiftIfSilent":0.12,"conversionIfSilent":0,"defaultRating":4.2,"defaultReplyRate":0.1},"impact":{"overlap":0.85,"social":{"restaurant":[0.07,0.09],"cafe":[0.06,0.08],"bakery":[0.05,0.07],"salon":[0.08,0.12],"florist":[0.08,0.12],"workshop":[0.08,0.12],"clinic":[0.09,0.14],"physio":[0.09,0.14],"club":[0.06,0.09]},"direct":{"restaurant":[0.04,0.1],"cafe":[0.03,0.06],"bakery":[0.04,0.09],"salon":[0.07,0.12],"florist":[0.06,0.12],"workshop":[0.06,0.11],"clinic":[0.08,0.12],"physio":[0.08,0.12],"club":[0.05,0.1]}}};</script>
   <script src="../../js/site.js"></script>
 </body>
 </html>

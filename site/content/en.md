@@ -85,7 +85,7 @@ BabyRock Social prepares a reply to every new review on your Google Business Pro
 For 1, 2 and 3-star reviews, we send you the draft on WhatsApp first. You approve it or tell us what to change. You stay in control, and you do not spend the evening writing replies.
 
 ## home.cta_sim
-Calculate the expected impact for you
+See what you could make
 
 ## home.cta_sub
 Get my reviews handled
@@ -177,10 +177,10 @@ Physio
 Club
 
 ## home.sim_title
-What consistent replies could be worth
+If you pay, how much more do you make?
 
 ## home.sim_lead
-When businesses reply consistently, ratings improve. According to Harvard Business School work you could expect at least 10% more revenues per year.
+Yearly extra revenue. Low and high from the studies we use. Not a promise.
 
 ## home.sim_label
 Monthly revenue, in euros
@@ -189,13 +189,13 @@ Monthly revenue, in euros
 25000
 
 ## home.sim_result_before
-Up to, after €99/month
+Yearly extra, low
 
 ## home.sim_result_after
-€ estimated per month after the subscription
+Yearly extra, high
 
 ## home.sim_link
-See the calculation and compare plans
+Open the full simulator
 
 ## home.value_time_title
 Get your evenings back
@@ -291,22 +291,16 @@ Do you also run my shop’s WhatsApp?
 Not yet. That will be BabyRock Direct: your customers write to your number, not ours. The WhatsApp you use with us today is only the thread with BabyRock Social, for sensitive reviews and the weekly recap.
 
 ## sim.headline
-Expected impact on your revenue
+If you pay, how much more do you make?
 
 ## sim.lead
-Enter your monthly revenue.
-
-## sim.range_label
-Up to
+Three questions. Yearly extra revenue, low and high. If you pay, this is the extra we estimate you make.
 
 ## sim.revenue
-Monthly revenue of the business, in euros
+Monthly revenue, in euros
 
 ## sim.kind
-Kind of business (optional)
-
-## sim.kind_any
-Local business
+Type of business
 
 ## sim.kind_restaurant
 Restaurant
@@ -335,68 +329,38 @@ Physio
 ## sim.kind_club
 Club
 
-## sim.rating
-Current Google rating (optional)
+## sim.product
+What do you want?
 
-## sim.reply
-How often do you reply today?
+## sim.product_both
+Both combined
 
-## sim.reply_never
-Rarely or never
+## sim.product_social_sub
+Google review replies
 
-## sim.reply_some
-To some reviews
+## sim.product_direct_sub
+WhatsApp for Business
 
-## sim.reply_most
-To most reviews
+## sim.product_both_sub
+Reviews + WhatsApp
 
-## sim.reply_all
-To every review already
+## sim.low_label
+Yearly extra, low
 
-## sim.expected_label
-Research-based estimate
+## sim.high_label
+Yearly extra, high
 
-## sim.expected_explain
-For a business that rarely replies today, the central estimate is 0.84% of monthly revenue. That applies the observed 0.12-star improvement to the midpoint of Harvard’s 5–9% revenue range for a full star. If you already answer some or most reviews, the estimate reduces proportionally.
+## sim.pct_of_year
+of your year
 
-## sim.fullstar_label
-Published range
-
-## sim.fullstar_explain
-The lower estimate uses 0.12 × 5% of revenue. The upper estimate uses 0.12 × 9%. That produces a range of 0.6–1.08% of monthly revenue before the subscription.
-
-## sim.after_month
-After €99/month
-
-## sim.after_year
-After €799 a year, which is 33% less
-
-## sim.per_month
-per month
-
-## sim.per_year
-per year
-
-## sim.roi_month
-Estimated return after the monthly subscription
-
-## sim.roi_year
-Estimated return after the annual subscription
-
-## sim.time_line
-The estimate does not include the time you get back by not writing the routine replies yourself.
-
-## sim.already_replying
-You already answer almost every review. In that case BabyRock Social is mainly about time and consistency, not about an extra lift from starting to reply.
+## sim.note
+Gross extra revenue. BabyRock Social from 799 € a year.
 
 ## sim.cta
 Get my reviews handled
 
 ## sim.research_link
-See the studies behind the estimate
-
-## sim.calculate
-Calculate the expected impact
+How we get these numbers
 
 ## how.headline
 How to start
@@ -435,45 +399,41 @@ AI gives us a first draft so we can keep up with volume. A person decides what t
 The same WhatsApp conversation is where you can request a wording change, explain what happened, ask for an invoice, pause the service or cancel.
 
 ## research.headline
-The research behind our expected-impact estimate
+How we estimate the extra revenue
 
 ## research.lead
-We use published findings to build a practical central estimate: around 0.84% of monthly revenue for a business moving from rarely replying to replying consistently. Here is exactly where that number comes from.
+The simulator shows yearly extra revenue as a share of what you already make. Low is the middle of the named range. High is the top of that range. Clinics, physios and salons sit above restaurants. This is an estimate, not a contract.
 
 ## research.luca_title
-Harvard Business School: Michael Luca, 2011/2016
+BabyRock Social: reviews and ratings
 
 ## research.luca
-“Reviews, Reputation, and Revenue: The Case of Yelp.com” studied independent restaurants in Seattle. A one-star increase in the displayed Yelp rating produced a 5–9% increase in revenue. We use the midpoint, 7% per full star, in our central estimate.
+Harvard Business School (Michael Luca) found that a one-star increase on Yelp produced 5 to 9% more revenue for independent restaurants. The midpoint is 7%. We use 7% as the low and 9% as the high for restaurants.
+
+A first-time patient, a new stylist, a florist sending a gift, or a garage cannot be tasted in advance. Those listings do more of the selling. So clinic and physio sit at 9 to 14%, salon, workshop and florist at 8 to 12%. Café and bakery sit a little below restaurants.
 
 ## research.womply_title
-Marketing Science: Davide Proserpio and Georgios Zervas, 2017
+What replies do to the stars
 
 ## research.womply
-“Online Reputation Management: Estimating the Impact of Management Responses on Consumer Reviews” examined tens of thousands of hotel reviews and responses on TripAdvisor. When hotels began responding, they received 12% more reviews and their ratings increased by an average of 0.12 stars. We use that 0.12-star improvement in our estimate.
+Proserpio and Zervas (Marketing Science, 2017) found that when hotels started answering reviews they received 12% more reviews and 0.12 more stars on average. That is why we answer. It is not the percentage we put in the calculator. The calculator uses the revenue ranges above.
 
-## research.bright_title
-Google Business Profile guidance
+## research.direct_title
+BabyRock Direct: no-shows, bookings, orders
 
-## research.bright
-Google recommends replying to reviews to show customers that their feedback matters. Google also says positive reviews and helpful replies can help a business stand out, while more reviews and positive ratings can support local ranking. That is why we reply even when the original reviewer may never come back: the next customer can see the answer.
+## research.direct
+OpenTable and operators put restaurant no-shows at 10 to 20% of reservations. A 30% cut on a 20% no-show rate recovers 6% of reservation-driven sales. Healthcare starts higher: Hasvold and Wootton (29 studies) found a median missed-appointment rate of 23%, with reminders cutting about a third. A physio RCT cut non-attendance from 16% to 11%. An empty chair does not take a walk-in. So Direct is larger for clinic, physio and salon than for a restaurant that still has walk-ins.
+
+On top of recovered no-shows we add WhatsApp as a booking and order channel. Combined is Social plus 85% of Direct, so the post-visit review ask is not counted twice.
 
 ## research.formula_title
-How we calculate the expected impact
+The percentages we use
 
 ## research.formula
-Enter monthly revenue R.
-
-Lower research estimate = R × 0.12 × 5% = R × 0.6%.
-
-Central research estimate = R × 0.12 × 7% = R × 0.84%.
-
-Upper research estimate = R × 0.12 × 9% = R × 1.08%.
-
-We then subtract €99 for the monthly plan, or €799 ÷ 12 for the annual plan. If you already answer some or most reviews, the calculator reduces the estimate because part of the work is already being done.
+Yearly extra = monthly revenue × 12 × the percentage for your type and product. Figures are gross. BabyRock Social starts at 799 € a year.
 
 ## research.what_we_use
-The figure we use is 0.84% of monthly revenue before the subscription. That is an average from the studies above. Your shop can land higher or lower. The time you get back is extra, and it is not in that percentage.
+Your shop can land outside the range. We would rather show a clear commercial number with the sources next to it than a 0.84% formula nobody can feel.
 
 ## about.headline
 A person is responsible for every reply

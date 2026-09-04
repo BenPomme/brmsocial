@@ -85,7 +85,7 @@ BabyRock Social prepara una resposta a cada ressenya nova de la vostra fitxa d�
 A les ressenyes d’1, 2 i 3 estrelles, us enviem primer l’esborrany per WhatsApp. L’aproveu o ens dieu què canviar. Continueu al capdavant, i no passeu el vespre escrivint respostes.
 
 ## home.cta_sim
-Calculeu l’impacte esperat per a vosaltres
+Vegeu el que podríeu guanyar
 
 ## home.cta_sub
 Que s’ocupin de les meves ressenyes
@@ -177,10 +177,10 @@ Fisioteràpia
 Club
 
 ## home.sim_title
-El que poden valer les respostes constants
+Si pagueu, quant més ganeu?
 
 ## home.sim_lead
-Quan els negocis responen amb constància, les notes milloren. Segons el treball de Harvard Business School, podríeu esperar almenys un 10 % més d’ingressos a l’any.
+Ingressos extra a l’any. Baixa i alta, dels estudis que fem servir. No és una promesa.
 
 ## home.sim_label
 Facturació mensual, en euros
@@ -189,13 +189,13 @@ Facturació mensual, en euros
 25000
 
 ## home.sim_result_before
-Fins a, després de 99 € al mes
+Extra a l’any, baixa
 
 ## home.sim_result_after
-€ estimats al mes després de la subscripció
+Extra a l’any, alta
 
 ## home.sim_link
-Veure el càlcul i comparar plans
+Obrir el simulador complet
 
 ## home.value_time_title
 Recupereu els vespres
@@ -291,22 +291,16 @@ També porteu el WhatsApp del meu comerç?
 Encara no. Això serà BabyRock Direct: els vostres clients escriuen al vostre número, no al nostre. El WhatsApp que feu servir amb nosaltres avui és només el fil amb BabyRock Social, per a les ressenyes delicades i el recapitulatiu setmanal.
 
 ## sim.headline
-Impacte esperat en la vostra facturació
+Si pagueu, quant més ganeu?
 
 ## sim.lead
-Introduïu la facturació mensual.
-
-## sim.range_label
-Fins a
+Tres preguntes. Ingressos extra a l’any, baixa i alta. Si pagueu, això és l’extra que estimem.
 
 ## sim.revenue
-Facturació mensual del negoci, en euros
+Facturació mensual, en euros
 
 ## sim.kind
-Tipus de negoci (opcional)
-
-## sim.kind_any
-Comerç local
+Tipus de negoci
 
 ## sim.kind_restaurant
 Restaurant
@@ -335,68 +329,38 @@ Fisioteràpia
 ## sim.kind_club
 Club
 
-## sim.rating
-Nota actual a Google (opcional)
+## sim.product
+Què voleu?
 
-## sim.reply
-Amb quina freqüència hi responeu avui?
+## sim.product_both
+Tots dos junts
 
-## sim.reply_never
-Poc o mai
+## sim.product_social_sub
+Respostes a ressenyes Google
 
-## sim.reply_some
-A algunes ressenyes
+## sim.product_direct_sub
+WhatsApp for Business
 
-## sim.reply_most
-A la majoria
+## sim.product_both_sub
+Ressenyes + WhatsApp
 
-## sim.reply_all
-A totes, ja
+## sim.low_label
+Extra a l’any, baixa
 
-## sim.expected_label
-Estimació basada en la recerca
+## sim.high_label
+Extra a l’any, alta
 
-## sim.expected_explain
-Per a un negoci que avui respon poc, l’estimació central és el 0,84 % de la facturació mensual. Aplica la millora observada de 0,12 estrelles al punt mitjà del rang de Harvard (5–9 % per estrella sencera). Si ja responeu a una part o a la majoria, l’estimació baixa en la mateixa proporció.
+## sim.pct_of_year
+del vostre any
 
-## sim.fullstar_label
-Rang publicat
-
-## sim.fullstar_explain
-L’estimació baixa fa servir 0,12 × 5 % de la facturació. L’alta fa servir 0,12 × 9 %. Això dóna un rang del 0,6–1,08 % de la facturació mensual, abans de la subscripció.
-
-## sim.after_month
-Després de 99 €/mes
-
-## sim.after_year
-Després de 799 € a l’any, un 33 % menys
-
-## sim.per_month
-al mes
-
-## sim.per_year
-a l’any
-
-## sim.roi_month
-Retorn estimat després de la subscripció mensual
-
-## sim.roi_year
-Retorn estimat després de la subscripció anual
-
-## sim.time_line
-L’estimació no inclou el temps que recupereu en no escriure vosaltres les respostes rutinàries.
-
-## sim.already_replying
-Ja responeu gairebé a totes les ressenyes. En aquest cas BabyRock Social és sobretot temps i constància, no un augment extra per començar a respondre.
+## sim.note
+Ingressos extra bruts. BabyRock Social des de 799 € a l’any.
 
 ## sim.cta
 Que s’ocupin de les meves ressenyes
 
 ## sim.research_link
-Veure els estudis darrere de l’estimació
-
-## sim.calculate
-Calcular l’impacte esperat
+D’on surten aquests números
 
 ## how.headline
 Com començar
@@ -435,45 +399,41 @@ La IA ens dóna un primer esborrany per seguir el ritme. Una persona decideix qu
 La mateixa conversa de WhatsApp serveix per demanar un canvi de text, explicar el que va passar, demanar una factura, pausar o cancel·lar.
 
 ## research.headline
-La recerca darrere de l’estimació d’impacte
+Com estimem els ingressos extra
 
 ## research.lead
-Fem servir resultats publicats per a una estimació central pràctica: al voltant del 0,84 % de la facturació mensual per a un negoci que passa de respondre poc a respondre sempre. Aquí és d’on surt aquest número.
+El simulador mostra l’extra anual com un percentatge del que ja factureu. La baixa és el mig del rang publicat. L’alta és el sostre d’aquest rang. Clíniques, fisios i perruqueries queden per sobre dels restaurants. És una estimació, no un contracte.
 
 ## research.luca_title
-Harvard Business School: Michael Luca, 2011/2016
+BabyRock Social: ressenyes i notes
 
 ## research.luca
-«Reviews, Reputation, and Revenue: The Case of Yelp.com» va estudiar restaurants independents a Seattle. Un augment d’una estrella en la nota mostrada a Yelp va produir un 5–9 % més d’ingressos. En l’estimació central fem servir el punt mitjà, 7 % per estrella sencera.
+Harvard Business School (Michael Luca) va trobar que una estrella més a Yelp va produir un 5 a 9 % més d’ingressos en restaurants independents. El punt mitjà és el 7 %. Per a restaurants fem servir 7 % de baixa i 9 % d’alta.
+
+Un pacient nou, un primer tall, un ram a domicili o un taller no es proven abans. Aquesta fitxa ven més. Per això clínica i fisio van del 9 al 14 %, i perruqueria, taller i floristeria del 8 al 12 %. Cafè i forn, una mica per sota del restaurant.
 
 ## research.womply_title
-Marketing Science: Davide Proserpio i Georgios Zervas, 2017
+El que fan les respostes a les estrelles
 
 ## research.womply
-«Online Reputation Management: Estimating the Impact of Management Responses on Consumer Reviews» va examinar desenes de milers de ressenyes i respostes d’hotels a TripAdvisor. Quan els hotels van començar a respondre, van rebre un 12 % més de ressenyes i la nota va pujar de mitjana 0,12 estrelles. Aquesta millora de 0,12 estrelles és la que fem servir.
+Proserpio i Zervas (Marketing Science, 2017) van veure que quan els hotels van començar a contestar van rebre un 12 % més de ressenyes i 0,12 estrelles més de mitjana. Per això contestem. No és el percentatge del simulador. El simulador fa servir els rangs d’ingressos de dalt.
 
-## research.bright_title
-Orientació de Google Business Profile
+## research.direct_title
+BabyRock Direct: absències, reserves, comandes
 
-## research.bright
-Google recomana respondre a les ressenyes per mostrar que l’opinió del client importa. També diu que les ressenyes positives i les respostes útils poden ajudar a distingir-se, i que més ressenyes i notes positives poden donar suport al posicionament local. Per això responem encara que qui va escriure no torni: el client següent pot veure la resposta.
+## research.direct
+OpenTable i els operadors situen les absències als restaurants entre el 10 i el 20 % de les reserves. Un tall del 30 % sobre un 20 % d’absències recupera el 6 % de les vendes que van per reserva. En salut el punt de partida és més alt: Hasvold i Wootton (29 estudis) van trobar una mediana del 23 % de cites fallides, i els recordatoris en tallen prop d’un terç. Un RCT de fisioteràpia va baixar el no presentar-se del 16 % a l’11 %. Una cadira buida no s’omple amb un walk-in. Per això Direct és més gran a clínica, fisio i perruqueria que en un restaurant que encara té gent de pas.
+
+Damunt de les absències recuperades sumem WhatsApp com a canal de reserva i de comanda. Tots dos junts són Social més el 85 % de Direct, per no comptar dues vegades la petició de ressenya després de la visita.
 
 ## research.formula_title
-Com calculem l’impacte esperat
+Els percentatges que fem servir
 
 ## research.formula
-Introduïu la facturació mensual R.
-
-Estimació baixa = R × 0,12 × 5 % = R × 0,6 %.
-
-Estimació central = R × 0,12 × 7 % = R × 0,84 %.
-
-Estimació alta = R × 0,12 × 9 % = R × 1,08 %.
-
-Després restem 99 € per al pla mensual, o 799 € ÷ 12 per a l’anual. Si ja responeu a una part o a la majoria, la calculadora redueix l’estimació perquè una part de la feina ja es fa.
+Extra anual = facturació mensual × 12 × el percentatge del vostre tipus i producte. Xifres brutes. BabyRock Social des de 799 € a l’any.
 
 ## research.what_we_use
-La xifra que fem servir és el 0,84 % de la facturació mensual abans de la subscripció. És una mitjana dels estudis de dalt. El vostre comerç pot quedar per sobre o per sota. El temps que recupereu és extra, i no entra en aquest percentatge.
+El vostre comerç pot quedar fora del rang. Preferim un número comercial clar, amb les fonts al costat, que una fórmula del 0,84 % que ningú no sent.
 
 ## about.headline
 Una persona és responsable de cada resposta

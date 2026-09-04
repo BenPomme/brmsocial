@@ -377,6 +377,138 @@ h3 {
   padding: 1.35rem;
   box-shadow: 0 18px 50px rgba(22, 20, 18, 0.06);
 }
+.sim-card-full {
+  padding: 1.6rem 1.5rem 1.7rem;
+}
+.sim-card fieldset {
+  border: 0;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+.sim-card legend {
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 0.55rem;
+  padding: 0;
+}
+.sim-chip-row,
+.sim-product-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.sim-chip,
+.sim-product {
+  cursor: pointer;
+  margin: 0;
+}
+.sim-chip input,
+.sim-product input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 1px;
+  height: 1px;
+}
+.sim-chip span,
+.sim-product span {
+  display: block;
+  border: 1.5px solid var(--line);
+  background: #fff;
+  border-radius: 1rem;
+  padding: 0.65rem 0.9rem;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+.sim-product span {
+  min-width: 9.5rem;
+  padding: 0.85rem 1rem;
+}
+.sim-product em {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+.sim-chip:has(input:checked) span,
+.sim-product:has(input:checked) span {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.sim-chip:has(input:checked) em,
+.sim-product:has(input:checked) em {
+  color: rgba(255, 255, 255, 0.86);
+}
+.sim-chip:focus-within span,
+.sim-product:focus-within span {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+.sim-outcomes {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 0.35rem;
+}
+.sim-out {
+  border-radius: 1.25rem;
+  padding: 1.15rem 1.2rem 1.2rem;
+}
+.sim-out .tiny {
+  margin: 0;
+}
+.sim-out .big {
+  margin: 0.25rem 0 0.15rem;
+  font-size: clamp(1.85rem, 5vw, 2.7rem);
+}
+.sim-out-low {
+  background: color-mix(in srgb, var(--paper) 55%, #fff);
+  border: 1px solid var(--line);
+}
+.sim-out-high {
+  background: var(--accent);
+  color: #fff;
+}
+.sim-out-high .tiny {
+  color: rgba(255, 255, 255, 0.82);
+}
+.sim-out-high .big {
+  color: #fff;
+}
+.sim-note {
+  margin: 0.85rem 0 0;
+}
+.sim-links {
+  margin: 1rem 0 0;
+  font-size: 0.95rem;
+}
+.sim-links a {
+  text-underline-offset: 0.15em;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0 1.4rem;
+}
+.impact-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.impact-table th,
+.impact-table td {
+  text-align: left;
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+.impact-table thead th {
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
 label {
   display: block;
   font-size: 0.88rem;
@@ -913,8 +1045,16 @@ textarea {
   .guide-grid,
   .columns-2,
   .sim-cols,
+  .sim-outcomes,
   .team-grid {
     grid-template-columns: 1fr 1fr;
+  }
+  .sim-product-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .sim-product span {
+    min-width: 0;
   }
   .human {
     flex-direction: row;

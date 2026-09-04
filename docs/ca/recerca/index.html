@@ -82,17 +82,68 @@
   </header>
   <main id="main">
   <section class="wrap section research prose">
-    <h1>La recerca darrere de l’estimació d’impacte</h1>
-    <div class="lead"><p>Fem servir resultats publicats per a una estimació central pràctica: al voltant del 0,84 % de la facturació mensual per a un negoci que passa de respondre poc a respondre sempre. Aquí és d’on surt aquest número.</p></div>
-    <article><h2>Harvard Business School: Michael Luca, 2011/2016</h2><p>«Reviews, Reputation, and Revenue: The Case of Yelp.com» va estudiar restaurants independents a Seattle. Un augment d’una estrella en la nota mostrada a Yelp va produir un 5–9 % més d’ingressos. En l’estimació central fem servir el punt mitjà, 7 % per estrella sencera.</p></article>
-    <article><h2>Marketing Science: Davide Proserpio i Georgios Zervas, 2017</h2><p>«Online Reputation Management: Estimating the Impact of Management Responses on Consumer Reviews» va examinar desenes de milers de ressenyes i respostes d’hotels a TripAdvisor. Quan els hotels van començar a respondre, van rebre un 12 % més de ressenyes i la nota va pujar de mitjana 0,12 estrelles. Aquesta millora de 0,12 estrelles és la que fem servir.</p></article>
-    <article><h2>Orientació de Google Business Profile</h2><p>Google recomana respondre a les ressenyes per mostrar que l’opinió del client importa. També diu que les ressenyes positives i les respostes útils poden ajudar a distingir-se, i que més ressenyes i notes positives poden donar suport al posicionament local. Per això responem encara que qui va escriure no torni: el client següent pot veure la resposta.</p></article>
-    <article><h2>Com calculem l’impacte esperat</h2><p>Introduïu la facturació mensual R.</p>
-<p>Estimació baixa = R × 0,12 × 5 % = R × 0,6 %.</p>
-<p>Estimació central = R × 0,12 × 7 % = R × 0,84 %.</p>
-<p>Estimació alta = R × 0,12 × 9 % = R × 1,08 %.</p>
-<p>Després restem 99 € per al pla mensual, o 799 € ÷ 12 per a l’anual. Si ja responeu a una part o a la majoria, la calculadora redueix l’estimació perquè una part de la feina ja es fa.</p></article>
-    <article><p>La xifra que fem servir és el 0,84 % de la facturació mensual abans de la subscripció. És una mitjana dels estudis de dalt. El vostre comerç pot quedar per sobre o per sota. El temps que recupereu és extra, i no entra en aquest percentatge.</p></article>
+    <h1>Com estimem els ingressos extra</h1>
+    <div class="lead"><p>El simulador mostra l’extra anual com un percentatge del que ja factureu. La baixa és el mig del rang publicat. L’alta és el sostre d’aquest rang. Clíniques, fisios i perruqueries queden per sobre dels restaurants. És una estimació, no un contracte.</p></div>
+    <article><h2>BabyRock Social: ressenyes i notes</h2><p>Harvard Business School (Michael Luca) va trobar que una estrella més a Yelp va produir un 5 a 9 % més d’ingressos en restaurants independents. El punt mitjà és el 7 %. Per a restaurants fem servir 7 % de baixa i 9 % d’alta.</p>
+<p>Un pacient nou, un primer tall, un ram a domicili o un taller no es proven abans. Aquesta fitxa ven més. Per això clínica i fisio van del 9 al 14 %, i perruqueria, taller i floristeria del 8 al 12 %. Cafè i forn, una mica per sota del restaurant.</p></article>
+    <article><h2>El que fan les respostes a les estrelles</h2><p>Proserpio i Zervas (Marketing Science, 2017) van veure que quan els hotels van començar a contestar van rebre un 12 % més de ressenyes i 0,12 estrelles més de mitjana. Per això contestem. No és el percentatge del simulador. El simulador fa servir els rangs d’ingressos de dalt.</p></article>
+    <article><h2>BabyRock Direct: absències, reserves, comandes</h2><p>OpenTable i els operadors situen les absències als restaurants entre el 10 i el 20 % de les reserves. Un tall del 30 % sobre un 20 % d’absències recupera el 6 % de les vendes que van per reserva. En salut el punt de partida és més alt: Hasvold i Wootton (29 estudis) van trobar una mediana del 23 % de cites fallides, i els recordatoris en tallen prop d’un terç. Un RCT de fisioteràpia va baixar el no presentar-se del 16 % a l’11 %. Una cadira buida no s’omple amb un walk-in. Per això Direct és més gran a clínica, fisio i perruqueria que en un restaurant que encara té gent de pas.</p>
+<p>Damunt de les absències recuperades sumem WhatsApp com a canal de reserva i de comanda. Tots dos junts són Social més el 85 % de Direct, per no comptar dues vegades la petició de ressenya després de la visita.</p></article>
+    <article><h2>Els percentatges que fem servir</h2><p>Extra anual = facturació mensual × 12 × el percentatge del vostre tipus i producte. Xifres brutes. BabyRock Social des de 799 € a l’any.</p><div class="table-wrap"><table class="impact-table">
+    <thead><tr>
+      <th></th>
+      <th>BabyRock Social</th>
+      <th>BabyRock Direct</th>
+      <th>Tots dos junts</th>
+    </tr></thead>
+    <tbody><tr>
+      <th scope="row">Restaurant</th>
+      <td>7–9%</td>
+      <td>4–10%</td>
+      <td>10.4–17.5%</td>
+    </tr><tr>
+      <th scope="row">Cafè</th>
+      <td>6–8%</td>
+      <td>3–6%</td>
+      <td>8.5–13.1%</td>
+    </tr><tr>
+      <th scope="row">Forn</th>
+      <td>5–7%</td>
+      <td>4–9%</td>
+      <td>8.4–14.7%</td>
+    </tr><tr>
+      <th scope="row">Perruqueria</th>
+      <td>8–12%</td>
+      <td>7–12%</td>
+      <td>14–22.2%</td>
+    </tr><tr>
+      <th scope="row">Floristeria</th>
+      <td>8–12%</td>
+      <td>6–12%</td>
+      <td>13.1–22.2%</td>
+    </tr><tr>
+      <th scope="row">Taller</th>
+      <td>8–12%</td>
+      <td>6–11%</td>
+      <td>13.1–21.4%</td>
+    </tr><tr>
+      <th scope="row">Clínica</th>
+      <td>9–14%</td>
+      <td>8–12%</td>
+      <td>15.8–24.2%</td>
+    </tr><tr>
+      <th scope="row">Fisioteràpia</th>
+      <td>9–14%</td>
+      <td>8–12%</td>
+      <td>15.8–24.2%</td>
+    </tr><tr>
+      <th scope="row">Club</th>
+      <td>6–9%</td>
+      <td>5–10%</td>
+      <td>10.3–17.5%</td>
+    </tr></tbody>
+  </table></div></article>
+    <article><p>El vostre comerç pot quedar fora del rang. Preferim un número comercial clar, amb les fonts al costat, que una fórmula del 0,84 % que ningú no sent.</p></article>
   </section></main>
   <footer class="site-footer">
     <div class="wrap footer-grid">
@@ -131,7 +182,7 @@
   <a class="wa-fab" href="https://wa.me/447716092830?text=Hola%20Rosalia%2C%20vull%20saber%20m%C3%A9s%20de%20BabyRock%20Social." target="_blank" rel="noopener" aria-label="WhatsApp Rosalia">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
-  <script>window.BR_CONFIG = {"company":"BabyRock","product":"BabyRock Social","domain":"www.babyrock.ai","email":"rosalia@babyrock.ai","whatsapp":"447716092830","factory":"https://github.com/BenPomme/brmsocialbackend","reviewsManager":"reviews@babyrock.ai","city":"Sant Cugat del Vallès","legalName":"","vatId":"","priceMonth":99,"priceYear":799,"priceYearFull":1188,"yearDiscountPct":33,"currency":"EUR","vatNote":"IVA included in Spain.","gaId":"G-252L7M2L2P","trustCount":500,"formula":{"lucaMid":0.07,"lucaLow":0.05,"lucaHigh":0.09,"starLiftIfSilent":0.12,"conversionIfSilent":0,"defaultRating":4.2,"defaultReplyRate":0.1}};</script>
+  <script>window.BR_CONFIG = {"company":"BabyRock","product":"BabyRock Social","domain":"www.babyrock.ai","email":"rosalia@babyrock.ai","whatsapp":"447716092830","factory":"https://github.com/BenPomme/brmsocialbackend","reviewsManager":"reviews@babyrock.ai","city":"Sant Cugat del Vallès","legalName":"","vatId":"","priceMonth":99,"priceYear":799,"priceYearFull":1188,"yearDiscountPct":33,"currency":"EUR","vatNote":"IVA included in Spain.","gaId":"G-252L7M2L2P","trustCount":500,"formula":{"lucaMid":0.07,"lucaLow":0.05,"lucaHigh":0.09,"starLiftIfSilent":0.12,"conversionIfSilent":0,"defaultRating":4.2,"defaultReplyRate":0.1},"impact":{"overlap":0.85,"social":{"restaurant":[0.07,0.09],"cafe":[0.06,0.08],"bakery":[0.05,0.07],"salon":[0.08,0.12],"florist":[0.08,0.12],"workshop":[0.08,0.12],"clinic":[0.09,0.14],"physio":[0.09,0.14],"club":[0.06,0.09]},"direct":{"restaurant":[0.04,0.1],"cafe":[0.03,0.06],"bakery":[0.04,0.09],"salon":[0.07,0.12],"florist":[0.06,0.12],"workshop":[0.06,0.11],"clinic":[0.08,0.12],"physio":[0.08,0.12],"club":[0.05,0.1]}}};</script>
   <script src="../../js/site.js"></script>
 </body>
 </html>
