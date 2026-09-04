@@ -23,8 +23,8 @@ En la mayoría de comercios funciona un par simple: una frase tranquila al pagar
 
 ## sources
 - [Encuesta local de reseñas BrightLocal 2025](https://www.brightlocal.com/research/local-consumer-review-survey-2025/)
-- [Google — enlace o QR de reseña](https://support.google.com/business/answer/16816815)
-- [Google — cómo se pueden pedir reseñas](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google: enlace o QR de reseña](https://support.google.com/business/answer/16816815)
+- [Google: cómo se pueden pedir reseñas](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill
 Hola Rosalia, he leído la guía sobre cuándo pedir una reseña.

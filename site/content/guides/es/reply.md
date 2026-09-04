@@ -24,8 +24,8 @@ Si una reseña incumple las normas de Google, márquela en el perfil. No arme un
 Hágalo con un ritmo fijo para que no dependa de la memoria: cada día si hay muchas, unas veces por semana si hay pocas. Lo importante es que nada se quede dos semanas sin respuesta.
 
 ## sources
-- [Google — gestionar y responder reseñas](https://support.google.com/business/answer/3474050)
-- [Proserpio y Zervas, Marketing Science 2017 — notas cuando los hoteles empiezan a responder](https://doi.org/10.1287/mksc.2017.1043)
+- [Google: gestionar y responder reseñas](https://support.google.com/business/answer/3474050)
+- [Proserpio y Zervas, Marketing Science 2017: notas cuando los hoteles empiezan a responder](https://doi.org/10.1287/mksc.2017.1043)
 - [Normas de Google para las contribuciones](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill

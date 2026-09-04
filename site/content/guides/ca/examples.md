@@ -34,8 +34,8 @@ Què deixar fora: defensar el personal en públic, una afirmació mèdica, una s
 Si no pot escriure avui, escrigui demà. Una fitxa buida és pitjor que una resposta amb un dia de retard. Desi’n tres en una nota del telèfon i canviï els noms i el fet cada vegada.
 
 ## sources
-- [Google — gestionar i respondre ressenyes](https://support.google.com/business/answer/3474050)
-- [Google — consells per a les respostes](https://support.google.com/business/answer/3474122)
+- [Google: gestionar i respondre ressenyes](https://support.google.com/business/answer/3474050)
+- [Google: consells per a les respostes](https://support.google.com/business/answer/3474122)
 - [Normes de Google per a les contribucions](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill

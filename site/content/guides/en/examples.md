@@ -34,8 +34,8 @@ What to leave out: a defence of the staff in public, a medical claim, a free des
 If you cannot write today, write tomorrow. An empty listing is worse than a reply that is one day late. Save three of these in a note on your phone, then change the names and the fact every time.
 
 ## sources
-- [Google — manage and reply to reviews](https://support.google.com/business/answer/3474050)
-- [Google — tips for review replies](https://support.google.com/business/answer/3474122)
+- [Google: manage and reply to reviews](https://support.google.com/business/answer/3474050)
+- [Google: tips for review replies](https://support.google.com/business/answer/3474122)
 - [Google’s policies for user contributions](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill

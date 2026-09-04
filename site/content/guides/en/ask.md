@@ -11,7 +11,7 @@ Why it matters
 Google will remove reviews that were bought, gambled, or steered. A listing that only ever collects 5-star traffic also looks odd to the next customer. Fair asking raises volume. Volume is what makes the listing look alive.
 
 ## body
-The legal, simple version is one sentence and one link, used with everyone.
+The version that stays inside the rules is one sentence and one link, used with everyone.
 
 Google lets you create a review link and a QR code from your Business Profile, on a computer. You can put that code on the receipt, on a card at the counter, or at the end of a thank-you message you already send. The customer opens Google and writes if they want to.
 
@@ -24,9 +24,9 @@ If the visit went badly, that person may still go to Google. You can take the co
 Use the same wording on a quiet Tuesday and on Saturday night. “If you have a moment, here is our Google page” is enough. “If you enjoyed it, leave us a 5” is not.
 
 ## sources
-- [Google — fake reviews, incentives and selective asking](https://support.google.com/contributionpolicy/answer/7400114)
-- [Google — create a review link or QR code](https://support.google.com/business/answer/16816815)
-- [Proserpio and Zervas — more reviews when the business replies](https://doi.org/10.1287/mksc.2017.1043)
+- [Google: fake reviews, incentives and selective asking](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google: create a review link or QR code](https://support.google.com/business/answer/16816815)
+- [Proserpio and Zervas: more reviews when the business replies](https://doi.org/10.1287/mksc.2017.1043)
 
 ## wa_prefill
 Hi Rosalia, I read the guide on asking for reviews without breaking the rules.

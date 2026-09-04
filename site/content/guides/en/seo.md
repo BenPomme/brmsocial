@@ -22,9 +22,9 @@ If you want the numbers we use for revenue, they live on the research page, not 
 Do the weekly work. Then look at the listing the way a new customer would, on your phone, standing outside a competitor. That is the test.
 
 ## sources
-- [Google — manage customer reviews](https://support.google.com/business/answer/3474050)
-- [Google — tips to get more reviews](https://support.google.com/business/answer/3474122)
-- [Luca, Harvard Business School — ratings and independent restaurants](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
+- [Google: manage customer reviews](https://support.google.com/business/answer/3474050)
+- [Google: tips to get more reviews](https://support.google.com/business/answer/3474122)
+- [Luca, Harvard Business School: ratings and independent restaurants](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
 
 ## wa_prefill
 Hi Rosalia, I read the guide on whether Google reviews help SEO.

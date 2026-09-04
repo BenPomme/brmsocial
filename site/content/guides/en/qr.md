@@ -22,9 +22,9 @@ You do not need WhatsApp for this. Paper does not store a phone number. Use the 
 If you already send a thank-you by email or message after a booking, you may add the same link there. That is Google’s own list: receipts, thank-you emails, the end of a chat, a printed code in the shop.
 
 ## sources
-- [Google — create a review link or QR code](https://support.google.com/business/answer/16816815)
-- [Google — no incentives, no selective asks](https://support.google.com/contributionpolicy/answer/7400114)
-- [Google — tips to get more reviews](https://support.google.com/business/answer/3474122)
+- [Google: create a review link or QR code](https://support.google.com/business/answer/16816815)
+- [Google: no incentives, no selective asks](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google: tips to get more reviews](https://support.google.com/business/answer/3474122)
 
 ## wa_prefill
 Hi Rosalia, I read the Google review QR guide.

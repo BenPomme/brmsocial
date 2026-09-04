@@ -23,8 +23,8 @@ A simple pairing works in most shops: one quiet sentence at payment, and the QR 
 
 ## sources
 - [BrightLocal Local Consumer Review Survey 2025](https://www.brightlocal.com/research/local-consumer-review-survey-2025/)
-- [Google — review link or QR](https://support.google.com/business/answer/16816815)
-- [Google — how reviews may be requested](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google: review link or QR](https://support.google.com/business/answer/16816815)
+- [Google: how reviews may be requested](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill
 Hi Rosalia, I read the guide on when to ask for a review.

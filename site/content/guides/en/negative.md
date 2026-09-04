@@ -26,9 +26,9 @@ If the review is fake, report it, and still keep the public line short and civil
 Reply within a day if you can. Google notifies the reviewer. They can edit their text after they read you. Some do. That is not the goal. The goal is that the next stranger sees a business that answers.
 
 ## sources
-- [Google — manage and reply to reviews](https://support.google.com/business/answer/3474050)
-- [Google — report inappropriate reviews](https://support.google.com/business/answer/4596773)
-- [Google — prohibited content and fake engagement](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google: manage and reply to reviews](https://support.google.com/business/answer/3474050)
+- [Google: report inappropriate reviews](https://support.google.com/business/answer/4596773)
+- [Google: prohibited content and fake engagement](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill
 Hi Rosalia, I read the guide on how to respond to negative Google reviews.

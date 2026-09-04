@@ -24,8 +24,8 @@ If a review breaks Google’s rules, flag it in the profile. Do not pick a publi
 Do this on a fixed rhythm so it does not depend on memory: once a day if volume is high, a few times a week if it is not. The point is that nothing sits unanswered for a fortnight.
 
 ## sources
-- [Google — manage and reply to reviews](https://support.google.com/business/answer/3474050)
-- [Proserpio and Zervas, Marketing Science 2017 — ratings when hotels start responding](https://doi.org/10.1287/mksc.2017.1043)
+- [Google: manage and reply to reviews](https://support.google.com/business/answer/3474050)
+- [Proserpio and Zervas, Marketing Science 2017: ratings when hotels start responding](https://doi.org/10.1287/mksc.2017.1043)
 - [Google’s policies for user contributions](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill

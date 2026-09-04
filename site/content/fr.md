@@ -2,7 +2,7 @@
 Réponses aux avis Google pour les petits commerces | BabyRock Social
 
 ## meta.description
-Des réponses soignées aux avis Google de votre commerce. L’IA nous aide à être efficaces ; une personne relit et publie chaque réponse. À partir de 99 € par mois.
+Nous répondons à chaque avis Google de votre fiche. Une personne vérifie le texte et le publie. À partir de 99 € par mois, TTC.
 
 ## nav.simulator
 Calculateur d’impact
@@ -37,11 +37,14 @@ Fermer
 ## nav.whatsapp
 WhatsApp
 
+## nav.skip
+Passer
+
 ## wa.prefill
-Bonjour Rosalia, je voudrais en savoir plus sur Babyrock Social.
+Bonjour Rosalia, je voudrais en savoir plus sur BabyRock Social.
 
 ## footer.tagline
-BabyRock Social gère les réponses aux avis Google des petits commerces. L’IA nous aide à aller vite ; une personne relit et publie chaque réponse. Parlez à l’équipe sur WhatsApp.
+BabyRock Social répond aux avis Google de votre fiche. Une personne de l’équipe vérifie chaque réponse et la publie. Vous nous parlez sur WhatsApp.
 
 ## footer.privacy
 Confidentialité
@@ -77,9 +80,9 @@ Déjà {n} commerces nous font confiance pour leurs avis
 Ne laissez plus aucun avis Google sans réponse.
 
 ## home.lead
-BabyRock Social prépare, relit et publie une réponse attentive à chaque nouvel avis sur votre fiche d’établissement Google. L’IA nous aide à rédiger efficacement. Une personne vérifie le ton, la pertinence et la qualité avant publication.
+BabyRock Social prépare une réponse à chaque nouvel avis sur votre fiche d’établissement Google. Une personne de l’équipe vérifie la qualité et l’authenticité, puis la publie.
 
-Pour les avis 1, 2 et 3 étoiles, nous vous envoyons d’abord la proposition sur WhatsApp. Vous l’approuvez ou vous nous dites quoi changer. Vous restez aux commandes, sans passer vos soirées à écrire des réponses. Vous pouvez vous concentrer sur le commerce.
+Pour les avis 1, 2 et 3 étoiles, nous vous envoyons d’abord le brouillon sur WhatsApp. Vous l’approuvez ou vous nous dites quoi changer. Vous restez aux commandes, et vous ne passez pas la soirée à écrire des réponses.
 
 ## home.cta_sim
 Calculez l’impact attendu pour vous
@@ -91,16 +94,16 @@ Que l’on s’occupe de mes avis
 Guides pour vos avis Google
 
 ## guides.lead
-Des habitudes concrètes pour le commerce cette semaine : comment répondre, comment demander, et comment rester dans les règles de Google. Elles marchent si vous le faites vous-même. Les sources sont en bas de chaque texte.
+Des habitudes pour le commerce cette semaine : comment répondre, comment demander, et comment rester dans les règles de Google. Vous pouvez le faire sans nous. Les sources sont en bas de chaque texte.
 
 ## guides.sources
 Sources
 
 ## home.products_title
-Deux produits, deux métiers distincts
+BabyRock Social et BabyRock Direct
 
 ## home.products_lead
-Vous pouvez prendre BabyRock Social aujourd’hui : les réponses à vos avis Google. BabyRock Direct, le WhatsApp de votre commerce, vient ensuite. Pas d’autre application.
+BabyRock Social est disponible aujourd’hui. BabyRock Direct gérera votre propre WhatsApp for Business pour augmenter vos revenus. Bientôt.
 
 ## product.social_name
 BabyRock Social
@@ -109,7 +112,7 @@ BabyRock Social
 Disponible maintenant
 
 ## product.social_body
-Quelqu’un laisse un avis sur votre fiche Google. Nous préparons une réponse dans la langue de l’avis. Les avis 4 et 5 étoiles partent après une relecture de notre côté. Les avis 1, 2 et 3 étoiles, vous les voyez sur WhatsApp. Vous dites oui, ou vous changez le texte. Ensuite seulement la réponse est publiée.
+Quelqu’un laisse un avis sur votre fiche Google. Nous préparons une réponse dans la langue de l’avis. Nous relisons les avis 4 et 5 étoiles, puis nous les publions. Les avis 1, 2 et 3 étoiles, vous les voyez sur WhatsApp. Vous dites oui, ou vous changez le texte. Ensuite seulement la réponse est publiée.
 
 Vous n’envoyez pas votre mot de passe Google. Vous ajoutez une adresse BabyRock en gestionnaire de la fiche.
 
@@ -140,13 +143,13 @@ Bonjour Rosalia, je suis intéressé par BabyRock Direct quand ce sera prêt.
 BabyRock Social et BabyRock Direct
 
 ## products.lead
-Social répond aux avis Google. Direct fait tourner le WhatsApp de votre commerce. Aujourd’hui on ne vend que Social. Direct est là pour que vous voyiez la suite, pas pour le payer.
+BabyRock Social répond à vos avis Google. BabyRock Direct fera tourner le WhatsApp de votre commerce.
 
 ## home.for_whom_title
 Si les clients vous trouvent sur Google, ce service est pour vous
 
 ## home.for_whom_lead
-Nous avons commencé par les restaurants, où un avis sans réponse peut décider de la table suivante. C’est vrai aussi pour n’importe quel commerce local indépendant. Nous répondons dans la langue du client dans la journée, y compris en espagnol, catalan, français et anglais, et nous veillons à ce que chaque texte sonne comme votre maison.
+Nous avons commencé par les restaurants, où un avis sans réponse peut décider de la table suivante. C’est vrai aussi pour n’importe quel commerce local indépendant. Nous répondons dans la langue du client dans la journée, y compris en espagnol, catalan, français et anglais, et nous vérifions que la réponse sonne comme votre maison, pas comme un modèle.
 
 ## home.shop_restaurant
 Restaurant
@@ -176,10 +179,10 @@ Kinésithérapie
 Club
 
 ## home.sim_title
-Ce que des réponses régulières peuvent valoir pour votre commerce
+Ce que des réponses régulières peuvent valoir
 
 ## home.sim_lead
-La recherche a observé que les commerces qui commencent à répondre avec constance peuvent voir leur note s’améliorer. Combiné à l’étude de Harvard Business School sur les notes et le chiffre d’affaires, cela donne un impact attendu, fondé sur la recherche, d’environ 0,84 % du chiffre d’affaires mensuel, pour un commerce qui répond peu aujourd’hui.
+Lorsque les commerces répondent avec constance, les notes s’améliorent. D’après les travaux de Harvard Business School, vous pourriez attendre au moins 10 % de chiffre d’affaires en plus par an.
 
 ## home.sim_label
 Chiffre d’affaires mensuel, en euros
@@ -212,19 +215,19 @@ Les réponses sont publiques. Les clients futurs voient que vous répondez.
 La constance peut renforcer votre réputation en ligne
 
 ## home.value_rating
-La recherche a trouvé une hausse de 0,12 étoile lorsque les commerces ont commencé à répondre. Le calculateur s’appuie là-dessus, avec le travail de Harvard sur les notes et le chiffre d’affaires.
+La recherche montre que répondre aux avis augmentera vos revenus
 
 ## home.human_title
-L’IA nous rend plus rapides. Les personnes protègent la qualité.
+Nous utilisons de vraies personnes pour prendre soin de votre commerce.
 
 ## home.human
-Nous utilisons l’IA pour être plus efficaces. Elle nous aide à garder le prix et à préparer des premiers brouillons dans la langue de l’avis. Puis une personne de l’équipe vérifie les faits dont nous disposons, le ton, la pertinence et la formulation, corrige si besoin, et publie la réponse finale. Rien n’est publié tout seul.
+Nous utilisons l’IA pour rédiger plus vite et pour ne rien laisser passer. Puis une personne de l’équipe vérifie toujours les faits dont nous disposons, le ton et la formulation, corrige si besoin, et publie la réponse. Rien n’est publié tout seul.
 
 ## home.whatsapp_line
-Il faut expliquer ce qui s’est passé, changer le texte ou poser une question ? Parlez à Rosalia et à l’équipe sur WhatsApp. Pas besoin d’une autre application ni d’un autre site. Nous sommes avec vous, dans la poche.
+S’il faut expliquer ce qui s’est passé, changer le texte ou poser une question, écrivez à Rosalia sur WhatsApp. Vous avez déjà l’application. Pas besoin d’un autre identifiant.
 
 ## home.price_title
-BabyRock Social — les formules
+BabyRock Social : les formules
 
 ## home.price_month_name
 Mois par mois
@@ -236,7 +239,7 @@ Mois par mois
 Douze mois
 
 ## home.price_year_detail
-799 € pour l’année, TTC : 33 % de moins que de payer mois par mois.
+799 € pour l’année, TTC, 33 % de moins que de payer mois par mois.
 
 ## home.price_year_save
 Économisez 389 €
@@ -251,13 +254,13 @@ Questions que nous posent les patrons
 Avez-vous besoin du mot de passe Google ?
 
 ## home.faq_1_a
-Non. Vous invitez reviews@babyrock.ai comme gestionnaire de votre fiche d’établissement Google. Le mot de passe reste chez vous, et vous pouvez nous retirer l’accès quand vous voulez. C’est un clic.
+Non. Vous invitez reviews@babyrock.ai comme gestionnaire de votre fiche d’établissement Google. Le mot de passe reste chez vous, et vous pouvez nous retirer l’accès quand vous voulez. C’est un clic dans les paramètres de la fiche d’établissement Google.
 
 ## home.faq_2_q
 Que se passe-t-il avec un avis 1, 2 ou 3 étoiles ?
 
 ## home.faq_2_a
-Nous préparons et relisons une réponse, puis nous vous l’envoyons sur WhatsApp pour approbation. Répondez OK ou dites-nous quoi changer. Une personne de l’équipe l’envoie seulement après votre accord. Google relit les réponses avant qu’elles apparaissent en public, donc le moment final de publication est contrôlé par Google.
+Nous préparons une réponse et une personne la relit, puis nous vous l’envoyons sur WhatsApp pour approbation. Répondez OK, ou dites-nous quoi changer. Nous l’envoyons seulement après votre accord. Google relit ensuite la réponse avant qu’elle apparaisse en public, donc le dernier délai est le leur.
 
 ## home.faq_3_q
 Est-ce seulement pour les restaurants ?
@@ -275,7 +278,7 @@ Nous répondons dans la langue de l’avis, y compris l’espagnol, le catalan, 
 Peut-on parler à une personne s’il y a un problème ?
 
 ## home.faq_5_a
-Oui. Vous parlez directement à Rosalia ou à la personne qui tient la conversation sur WhatsApp — le même canal que pour les avis délicats.
+Oui. Vous parlez directement à Rosalia ou à la personne qui tient la conversation sur WhatsApp, le même canal que pour les avis délicats.
 
 ## home.faq_6_q
 Comment résilier ?
@@ -287,7 +290,7 @@ Comment résilier ?
 Vous gérez aussi le WhatsApp de mon commerce ?
 
 ## home.faq_7_a
-Pas encore. C’est BabyRock Direct, un autre produit, plus tard : le numéro de vos clients, pas le nôtre. Aujourd’hui le WhatsApp que nous utilisons est le fil entre vous et BabyRock Social, pour les avis délicats et le récap.
+Pas encore. Ce sera BabyRock Direct : vos clients écrivent à votre numéro, pas au nôtre. Le WhatsApp que vous utilisez avec nous aujourd’hui est seulement le fil avec BabyRock Social, pour les avis délicats et le récapitulatif hebdomadaire.
 
 ## sim.headline
 Impact attendu sur votre chiffre d’affaires
@@ -368,7 +371,7 @@ L’estimation basse utilise 0,12 × 5 % du chiffre d’affaires. La haute utili
 Après 99 €/mois
 
 ## sim.after_year
-Après 799 €/an — 33 % de moins
+Après 799 € par an, soit 33 % de moins
 
 ## sim.per_month
 par mois
@@ -383,10 +386,10 @@ Retour estimé après l’abonnement mensuel
 Retour estimé après l’abonnement annuel
 
 ## sim.time_line
-L’estimation n’inclut pas la valeur du temps que vous récupérez en n’ayant plus à écrire une autre réponse Google de routine.
+L’estimation n’inclut pas le temps que vous récupérez en n’écrivant plus vous-même les réponses de routine.
 
 ## sim.already_replying
-Vous répondez déjà à presque tous les avis. Dans ce cas, la raison la plus solide d’utiliser BabyRock Social est le temps et la constance que vous gagnez. Pas une hausse attendue du fait de commencer à répondre.
+Vous répondez déjà à presque tous les avis. Dans ce cas BabyRock Social, c’est surtout le temps et la constance, pas une hausse extra parce que vous commencez à répondre.
 
 ## sim.cta
 Que l’on s’occupe de mes avis
@@ -398,10 +401,10 @@ Voir les études derrière l’estimation
 Calculer l’impact attendu
 
 ## how.headline
-Premiers pas avec BabyRock
+Comment commencer
 
 ## how.lead
-Pas d’autre tableau de bord. Pas d’application à installer. Pas de mot de passe Google. Écrivez à Rosalia sur WhatsApp, choisissez la formule, ajoutez-nous comme gestionnaire de votre fiche d’établissement Google, et nous nous en occupons.
+Il n’y a pas d’autre tableau de bord, pas d’application en plus, et nous ne demandons jamais votre mot de passe Google. Écrivez à Rosalia sur WhatsApp, choisissez une formule, ajoutez-nous comme gestionnaire de votre fiche d’établissement Google, et nous nous en occupons.
 
 ## how.step1_title
 1. Parlez-nous de votre commerce
@@ -428,7 +431,7 @@ L’IA nous aide à rédiger. Une personne vérifie ensuite le ton, la pertinenc
 Si un avis parle d’un problème, d’un désaccord ou d’un détail que vous seul pouvez confirmer, nous vous écrivons. Vous recevez aussi un court récapitulatif hebdomadaire. Quand votre attention n’est pas nécessaire, nous vous laissons tenir le commerce.
 
 ## how.ai_box
-L’IA est le point de départ et nous permet de ne pas décrocher. Une personne tranche, vérifie la qualité et publie à la main la réponse finale. Rien n’est publié tout seul.
+L’IA nous donne un premier brouillon pour suivre le volume. Une personne décide quoi dire, vérifie, et publie la réponse. Rien n’est publié tout seul.
 
 ## how.whatsapp
 La même conversation WhatsApp sert à demander un changement de texte, expliquer ce qui s’est passé, demander une facture, mettre en pause ou résilier.
@@ -440,13 +443,13 @@ La recherche derrière l’estimation d’impact
 Nous utilisons des résultats publiés pour une estimation centrale pratique : autour de 0,84 % du chiffre d’affaires mensuel pour un commerce qui passe de répondre peu à répondre toujours. Voici d’où vient ce chiffre.
 
 ## research.luca_title
-Harvard Business School — Michael Luca, 2011/2016
+Harvard Business School : Michael Luca, 2011/2016
 
 ## research.luca
-« Reviews, Reputation, and Revenue: The Case of Yelp.com » a étudié des restaurants indépendants à Seattle. Une hausse d’une étoile de la note affichée sur Yelp a produit 5 à 9 % de chiffre d’affaires en plus. Dans l’estimation centrale, nous utilisons le milieu : 7 % par étoile entière.
+« Reviews, Reputation, and Revenue: The Case of Yelp.com » a étudié des restaurants indépendants à Seattle. Une hausse d’une étoile de la note affichée sur Yelp a produit 5 à 9 % de chiffre d’affaires en plus. Dans l’estimation centrale, nous utilisons le milieu, 7 % par étoile entière.
 
 ## research.womply_title
-Marketing Science — Davide Proserpio et Georgios Zervas, 2017
+Marketing Science : Davide Proserpio et Georgios Zervas, 2017
 
 ## research.womply
 « Online Reputation Management: Estimating the Impact of Management Responses on Consumer Reviews » a examiné des dizaines de milliers d’avis et de réponses d’hôtels sur TripAdvisor. Quand les hôtels ont commencé à répondre, ils ont reçu 12 % d’avis en plus et leur note a augmenté en moyenne de 0,12 étoile. C’est cette amélioration de 0,12 étoile que nous utilisons.
@@ -455,7 +458,7 @@ Marketing Science — Davide Proserpio et Georgios Zervas, 2017
 Conseils Google Business Profile
 
 ## research.bright
-Google recommande de répondre aux avis pour montrer que l’avis du client compte. Google dit aussi que les avis positifs et les réponses utiles peuvent aider à se distinguer, et que davantage d’avis et de notes positives peuvent soutenir le référencement local. C’est pourquoi des réponses régulières et soignées comptent au-delà de la personne qui a écrit l’avis.
+Google recommande de répondre aux avis pour montrer que l’avis du client compte. Google dit aussi que les avis positifs et les réponses utiles peuvent aider à se distinguer, et que davantage d’avis et de notes positives peuvent soutenir le référencement local. C’est pourquoi nous répondons même si la personne qui a écrit ne revient jamais : le client suivant peut voir la réponse.
 
 ## research.formula_title
 Comment nous calculons l’impact attendu
@@ -472,34 +475,34 @@ Estimation haute = R × 0,12 × 9 % = R × 1,08 %.
 Nous retranchons ensuite 99 € pour la formule mensuelle, ou 799 € ÷ 12 pour l’annuelle. Si vous répondez déjà à une partie ou à la plupart, le calculateur réduit l’estimation parce qu’une partie du travail est déjà faite.
 
 ## research.what_we_use
-L’estimation centrale est le chiffre que nous utiliserions pour juger le service : 0,84 % du chiffre d’affaires mensuel avant l’abonnement, plus la valeur du temps du patron. La recherche décrit des moyennes ; le résultat d’un commerce donné peut être plus haut ou plus bas.
+Le chiffre que nous utilisons est 0,84 % du chiffre d’affaires mensuel avant l’abonnement. C’est une moyenne des études ci-dessus. Votre commerce peut atterrir plus haut ou plus bas. Le temps que vous récupérez est en plus, et il n’est pas dans ce pourcentage.
 
 ## about.headline
-Des personnes sont responsables de chaque réponse
+Une personne est responsable de chaque réponse
 
 ## about.lead
 BabyRock Social est à Sant Cugat del Vallès, en Espagne. Rosalia est votre contact principal, et une personne de l’équipe répond de la qualité et de la publication de chaque texte.
 
 ## about.rosalia_role
-Rosalia — votre contact direct
+Rosalia, votre contact direct
 
 ## about.rosalia
 Rosalia vous aide à démarrer, répond à vos questions et vous envoie les réponses délicates pour approbation. Si un avis 2 étoiles a besoin de contexte, une facture doit être renvoyée ou vous voulez résilier, cela se fait dans la même conversation WhatsApp.
 
 ## about.ben_role
-Benjamin Pommeraud — fondateur
+Benjamin Pommeraud, fondateur
 
 ## about.ben
 Benjamin a créé BabyRock Social pour que les commerces indépendants aient la constance d’un service géré, sans un autre outil à apprendre. Avant l’IA, les logiciels oubliaient les petits et se concentraient sur les gros comptes. Aujourd’hui, l’IA permet aux petits commerces d’offrir la même qualité de service en ligne. Chez BabyRock, l’IA rend le travail efficace ; les personnes apportent le jugement, le contrôle qualité et la responsabilité.
 
 ## about.human_title
-Les humains d’abord, l’IA ensuite, toujours
+Une personne publie. L’IA ne fait que le brouillon.
 
 ## about.human
-Nous utilisons l’IA pour la qualité, la constance et l’échelle. Elle nous aide à préparer un premier brouillon et à travailler dans plusieurs langues. Mais nous savons que nos clients sont des personnes qui tiennent des commerces pour des personnes. Et que la confiance compte. C’est pourquoi des personnes relisent le ton, la pertinence et la qualité, font les corrections, et publient la réponse finale. L’IA ne publie jamais une réponse toute seule.
+Nous utilisons l’IA pour préparer un premier brouillon et pour travailler dans plusieurs langues. Vos clients sont des personnes, et vous aussi, donc une personne de l’équipe vérifie le ton, la pertinence et la qualité, corrige si besoin, et publie. L’IA ne publie jamais une réponse toute seule.
 
 ## about.whatsapp
-Nous ne voulons pas que vous installiez encore une application. Vous devez pouvoir nous écrire comme vous le feriez naturellement. Vous parlez directement à Rosalia ou à la personne qui tient la conversation sur WhatsApp.
+Nous ne vous demandons pas d’installer une autre application. Vous écrivez à Rosalia, ou à la personne qui tient la conversation, sur WhatsApp.
 
 ## sub.headline
 Que chaque nouvel avis Google soit traité, à partir de 99 € par mois.
@@ -511,7 +514,7 @@ Envoyez-nous le nom du commerce et la fiche Google. Rosalia répondra aux questi
 99 €/mois, TTC
 
 ## sub.year
-799 €/an, TTC — économisez 33 %
+799 € par an, TTC. C’est 33 % de moins.
 
 ## sub.form_name
 Nom du commerce
@@ -535,10 +538,10 @@ Chiffre d’affaires mensuel, si vous avez utilisé le calculateur (facultatif)
 Formule souhaitée
 
 ## sub.plan_month
-Mois par mois — 99 €
+Mois par mois, 99 €
 
 ## sub.plan_year
-Douze mois — 799 €
+Douze mois, 799 €
 
 ## sub.cta_wa
 Commencer sur WhatsApp
@@ -547,7 +550,7 @@ Commencer sur WhatsApp
 Écrire à Rosalia
 
 ## sub.after
-Après le paiement, vous invitez reviews@babyrock.ai comme gestionnaire de votre fiche d’établissement Google. Nous commençons alors par les avis sans réponse. Si vous bloquez à cette étape, écrivez-nous sur WhatsApp.
+Après le paiement, vous invitez reviews@babyrock.ai comme gestionnaire de votre fiche d’établissement Google. Nous commençons alors par les avis sans réponse. Si vous bloquez en ajoutant le gestionnaire, écrivez-nous sur WhatsApp.
 
 ## account.headline
 Le service, les factures et l’accès
@@ -600,7 +603,7 @@ Nous utilisons des outils d’IA pour aider à préparer des brouillons. Une per
 Conditions
 
 ## terms.body
-BabyRock Social gère les réponses d’une fiche d’établissement Google à 99 € par mois TTC, ou 799 € pour douze mois TTC. En vous abonnant et en nous invitant comme gestionnaire, vous nous autorisez à rédiger, relire, envoyer, modifier et, si nécessaire, supprimer des réponses sur cette fiche. L’IA peut aider au premier brouillon ; une personne vérifie et envoie chaque réponse. Les réponses aux avis 4 et 5 étoiles peuvent être envoyées avec cette autorisation continue. Celles des avis 1, 2 et 3 étoiles sont envoyées seulement après que vous les avez approuvées ou modifiées sur WhatsApp. Google relit les réponses et contrôle le moment final de publication.
+BabyRock Social gère les réponses d’une fiche d’établissement Google à 99 € par mois TTC, ou 799 € pour douze mois TTC. En vous abonnant et en nous invitant comme gestionnaire, vous nous autorisez à rédiger, relire, envoyer, modifier et, si nécessaire, supprimer des réponses sur cette fiche. L’IA peut aider au premier brouillon ; une personne vérifie et envoie chaque réponse. Les réponses aux avis 4 et 5 étoiles peuvent être envoyées avec cette autorisation continue. Celles des avis 1, 2 et 3 étoiles sont envoyées seulement après que vous les avez approuvées ou modifiées sur WhatsApp. Google relit chaque réponse et contrôle le moment où elle apparaît en public.
 
 Vous pouvez résilier à la fin de la période payée en écrivant à Rosalia. Quand le service s’arrête, nous retirons notre accès gestionnaire. Nous pouvons suspendre le service si un paiement échoue. Le droit espagnol et les tribunaux de Barcelone s’appliquent, sauf règle impérative de consommation contraire.
 

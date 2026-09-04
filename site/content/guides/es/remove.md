@@ -8,7 +8,7 @@ La mayoría de las reseñas sinceras de Google no se pueden borrar, ni siquiera 
 Por qué importa
 
 ## impact
-Google dice que no se mete en un conflicto entre un negocio y un cliente. Una reseña solo cae si rompe las normas: spam, engagement falso, incentivos, conflicto de interés o contenido prohibido. Estar en desacuerdo con la nota no basta.
+Google dice que no se mete en un conflicto entre un negocio y un cliente. Una reseña solo cae si rompe las normas: spam, interacciones falsas, incentivos, conflicto de interés o contenido prohibido. Estar en desacuerdo con la nota no basta.
 
 ## body
 Empiece por leer la reseña dos veces. Si describe una visita real, aunque sea injusta, no la van a quitar. Responda una vez, en público, y vuelva al trabajo. El siguiente desconocido lee su tono más que la queja.
@@ -24,9 +24,9 @@ Qué suele valer: una reseña pagada, escrita por quien no vino, puesta por un c
 Si el listado está bajo un chantaje (pague o publicamos 1 estrellas), Google tiene un camino aparte. Úselo. Luego siga pidiendo a todos, con el mismo QR, para que una línea falsa no sea la única palabra reciente en la ficha.
 
 ## sources
-- [Google — denunciar reseñas inadecuadas](https://support.google.com/business/answer/4596773)
-- [Google — contenido prohibido y restringido](https://support.google.com/contributionpolicy/answer/7400114)
-- [Google — gestionar reseñas de clientes](https://support.google.com/business/answer/3474050)
+- [Google: denunciar reseñas inadecuadas](https://support.google.com/business/answer/4596773)
+- [Google: contenido prohibido y restringido](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google: gestionar reseñas de clientes](https://support.google.com/business/answer/3474050)
 
 ## wa_prefill
 Hola Rosalia, he leído la guía sobre cómo eliminar una reseña de Google.

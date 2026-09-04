@@ -22,9 +22,9 @@ Si vous voulez les chiffres que nous utilisons pour le chiffre d’affaires, ils
 Faites le travail de la semaine. Puis regardez la fiche comme un nouveau client, sur le téléphone, devant un concurrent. C’est le test.
 
 ## sources
-- [Google — gérer les avis clients](https://support.google.com/business/answer/3474050)
-- [Google — conseils pour obtenir plus d’avis](https://support.google.com/business/answer/3474122)
-- [Luca, Harvard Business School — notes et restaurants indépendants](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
+- [Google: gérer les avis clients](https://support.google.com/business/answer/3474050)
+- [Google: conseils pour obtenir plus d’avis](https://support.google.com/business/answer/3474122)
+- [Luca, Harvard Business School: notes et restaurants indépendants](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
 
 ## wa_prefill
 Bonjour Rosalia, j’ai lu le guide sur les avis Google et le référencement.

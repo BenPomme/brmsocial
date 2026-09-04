@@ -23,8 +23,8 @@ A la majoria de comerços funciona un parell simple: una frase tranquil·la en p
 
 ## sources
 - [Enquesta local de ressenyes BrightLocal 2025](https://www.brightlocal.com/research/local-consumer-review-survey-2025/)
-- [Google — enllaç o QR de ressenya](https://support.google.com/business/answer/16816815)
-- [Google — com es poden demanar ressenyes](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google: enllaç o QR de ressenya](https://support.google.com/business/answer/16816815)
+- [Google: com es poden demanar ressenyes](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill
 Hola Rosalia, he llegit la guia sobre quan demanar una ressenya.

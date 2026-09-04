@@ -60,7 +60,7 @@
   });
 
   function money(n) {
-    if (!isFinite(n)) return "—";
+    if (!isFinite(n)) return "-";
     const abs = Math.abs(n);
     const formatted = new Intl.NumberFormat(document.documentElement.lang || "es", {
       maximumFractionDigits: 0,
@@ -94,7 +94,7 @@
     const strong = el.querySelector("[data-compact-amount]");
     if (!strong) return;
     if (!result.R) {
-      strong.textContent = "—";
+      strong.textContent = "-";
       return;
     }
     strong.textContent = money(result.netMonthFullHigh);
@@ -106,9 +106,9 @@
       if (n) n.textContent = val;
     };
     if (!result.R) {
-      set("[data-full-high]", "—");
-      set("[data-full-month]", "—");
-      set("[data-full-year]", "—");
+      set("[data-full-high]", "-");
+      set("[data-full-month]", "-");
+      set("[data-full-year]", "-");
       return;
     }
     set("[data-full-high]", money(result.fullHigh));

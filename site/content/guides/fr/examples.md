@@ -34,8 +34,8 @@ Un 1 ou 2 étoiles, quand les faits manquent encore :
 Si vous ne pouvez pas écrire aujourd’hui, écrivez demain. Une fiche vide est pire qu’une réponse en retard d’un jour. Gardez trois de ces textes dans une note du téléphone, puis changez les noms et le fait à chaque fois.
 
 ## sources
-- [Google — gérer et répondre aux avis](https://support.google.com/business/answer/3474050)
-- [Google — conseils pour les réponses](https://support.google.com/business/answer/3474122)
+- [Google: gérer et répondre aux avis](https://support.google.com/business/answer/3474050)
+- [Google: conseils pour les réponses](https://support.google.com/business/answer/3474122)
 - [Règles de Google sur les contributions](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill

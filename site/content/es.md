@@ -2,7 +2,7 @@
 Respuestas a reseñas de Google para pequeños comercios | BabyRock Social
 
 ## meta.description
-Respuestas cuidadosas a las reseñas de Google de su negocio. La IA nos ayuda a ser eficientes; una persona revisa y publica cada respuesta. Desde 99 € al mes.
+Respondemos a cada reseña de Google de su ficha. Una persona comprueba el texto y lo publica. Desde 99 € al mes, IVA incluido.
 
 ## nav.simulator
 Calculadora de impacto
@@ -37,11 +37,14 @@ Cerrar
 ## nav.whatsapp
 WhatsApp
 
+## nav.skip
+Saltar
+
 ## wa.prefill
-Hola Rosalia, quiero saber más de Babyrock Social.
+Hola Rosalia, quiero saber más de BabyRock Social.
 
 ## footer.tagline
-BabyRock Social gestiona las respuestas a las reseñas de Google de los pequeños comercios. La IA nos ayuda a ir rápido; una persona revisa y publica cada respuesta. Hable con el equipo por WhatsApp.
+BabyRock Social responde a las reseñas de Google de su ficha. Una persona del equipo comprueba cada respuesta y la publica. Habla con nosotros por WhatsApp.
 
 ## footer.privacy
 Privacidad
@@ -77,9 +80,9 @@ Ya {n} negocios confían en nosotros para sus reseñas
 No deje ninguna reseña de Google sin respuesta.
 
 ## home.lead
-BabyRock Social prepara, revisa y publica una respuesta atenta a cada reseña nueva de su ficha de empresa de Google. La IA nos ayuda a redactar con eficiencia. Una persona revisa el tono, la pertinencia y la calidad antes de publicar.
+BabyRock Social prepara una respuesta a cada reseña nueva de su ficha de empresa de Google. Una persona del equipo comprueba la calidad y la autenticidad, y después la publica.
 
-En las reseñas de 1, 2 y 3 estrellas, le enviamos primero la propuesta por WhatsApp. Usted la aprueba o nos dice qué cambiar. Sigue al mando, sin pasar las noches escribiendo respuestas. Puede centrarse en llevar el negocio.
+En las reseñas de 1, 2 y 3 estrellas, le enviamos primero el borrador por WhatsApp. Usted lo aprueba o nos dice qué cambiar. Sigue al mando, y no pasa la noche escribiendo respuestas.
 
 ## home.cta_sim
 Calcule el impacto esperado para usted
@@ -91,16 +94,16 @@ Que se ocupen de mis reseñas
 Guías para sus reseñas de Google
 
 ## guides.lead
-Hábitos prácticos para el comercio esta semana: cómo responder, cómo pedir y cómo quedarse dentro de las normas de Google. Valen si lo hace usted. Las fuentes están al final de cada pieza.
+Hábitos para el comercio esta semana: cómo responder, cómo pedir y cómo quedarse dentro de las normas de Google. Puede hacerlo sin nosotros. Las fuentes están al final de cada pieza.
 
 ## guides.sources
 Fuentes
 
 ## home.products_title
-Dos productos, dos trabajos distintos
+BabyRock Social y BabyRock Direct
 
 ## home.products_lead
-Hoy puede contratar BabyRock Social: las respuestas a sus reseñas de Google. BabyRock Direct, el WhatsApp de su comercio, llegará después. No hace falta otra aplicación.
+BabyRock Social está disponible hoy. BabyRock Direct gestionará su propio WhatsApp for Business para aumentar sus ingresos. Próximamente.
 
 ## product.social_name
 BabyRock Social
@@ -109,7 +112,7 @@ BabyRock Social
 Disponible ahora
 
 ## product.social_body
-Alguien deja una reseña en su ficha de Google. Preparamos una respuesta en el idioma de la reseña. Las de 4 y 5 estrellas salen después de una relectura nuestra. Las de 1, 2 y 3 estrellas las ve usted por WhatsApp. Dice que sí, o cambia el texto. Solo entonces se publica.
+Alguien deja una reseña en su ficha de Google. Preparamos una respuesta en el idioma de la reseña. Releemos las de 4 y 5 estrellas, y después las publicamos. Las de 1, 2 y 3 estrellas las ve usted por WhatsApp. Dice que sí, o cambia el texto. Solo entonces se publica.
 
 No nos da la contraseña de Google. Añade una dirección BabyRock como gestor de la ficha.
 
@@ -131,7 +134,7 @@ El número que ven sus clientes sigue siendo el suyo. Un cliente escribe «una m
 Primero: reservas, recordatorio, y después de una visita conocida, una petición de reseña Google en el mismo hilo. No enviamos mensajes a desconocidos.
 
 ## product.direct_cta
-Avisadme cuando esté listo
+Avíseme cuando esté listo
 
 ## product.direct_prefill
 Hola Rosalia, me interesa BabyRock Direct cuando esté listo.
@@ -140,13 +143,13 @@ Hola Rosalia, me interesa BabyRock Direct cuando esté listo.
 BabyRock Social y BabyRock Direct
 
 ## products.lead
-Social responde a las reseñas de Google. Direct lleva el WhatsApp de su comercio. Hoy solo se contrata Social. Direct se muestra para que sepa lo que viene, no para pagarlo.
+BabyRock Social responde a sus reseñas de Google. BabyRock Direct llevará el WhatsApp de su negocio.
 
 ## home.for_whom_title
 Si los clientes le encuentran en Google, este servicio es para usted
 
 ## home.for_whom_lead
-Empezamos por los restaurantes, donde una reseña sin respuesta puede decidir la mesa siguiente. Lo mismo vale para cualquier comercio local independiente. Respondemos en el idioma del cliente en un día, también en castellano, catalán, francés e inglés, y cuidamos que cada texto suene a su negocio.
+Empezamos por los restaurantes, donde una reseña sin respuesta puede decidir la mesa siguiente. Lo mismo vale para cualquier comercio local independiente. Respondemos en el idioma del cliente en un día, también en castellano, catalán, francés e inglés, y comprobamos que la respuesta suene a su comercio, no a una plantilla.
 
 ## home.shop_restaurant
 Restaurante
@@ -176,10 +179,10 @@ Fisioterapia
 Club
 
 ## home.sim_title
-Lo que pueden valer las respuestas constantes para su negocio
+Lo que pueden valer las respuestas constantes
 
 ## home.sim_lead
-La investigación ha visto que los negocios que empiezan a responder con constancia pueden mejorar su nota. Junto con el estudio de Harvard Business School sobre notas e ingresos, eso da un impacto esperado, basado en la investigación, de alrededor del 0,84 % de la facturación mensual, para un negocio que hoy responde poco.
+Cuando los negocios responden con constancia, las notas mejoran. Según el trabajo de Harvard Business School, podría esperar al menos un 10 % más de ingresos al año.
 
 ## home.sim_label
 Facturación mensual, en euros
@@ -212,19 +215,19 @@ Las respuestas son públicas. Los clientes futuros ven que usted responde.
 La constancia puede reforzar su reputación online
 
 ## home.value_rating
-La investigación encontró una subida de 0,12 estrellas cuando los negocios empezaron a responder. La calculadora usa eso, junto con el trabajo de Harvard sobre notas e ingresos.
+La investigación muestra que responder a las reseñas aumentará sus ingresos
 
 ## home.human_title
-La IA nos hace más rápidos. Las personas protegen la calidad.
+Usamos personas de verdad para cuidar su negocio.
 
 ## home.human
-Usamos la IA para ser más eficientes. Nos ayuda a mantener el precio y a preparar primeros borradores en el idioma de la reseña. Luego una persona del equipo comprueba los hechos que tenemos, el tono, la pertinencia y la redacción, corrige si hace falta, y publica la respuesta final. Nada se publica solo.
+Usamos la IA para redactar más rápido y para no dejar ningún cabo suelto. Después una persona del equipo comprueba siempre los hechos que tenemos, el tono y la redacción, corrige si hace falta, y publica la respuesta. Nada se publica solo.
 
 ## home.whatsapp_line
-¿Hay que explicar lo que pasó, cambiar el texto o hacer una pregunta? Hable con Rosalia y el equipo por WhatsApp. No hace falta otra aplicación ni entrar en una web. Estamos con usted, en el bolsillo.
+Si hay que explicar lo que pasó, cambiar el texto o hacer una pregunta, escriba a Rosalia por WhatsApp. Ya tiene la aplicación. No hace falta otro inicio de sesión.
 
 ## home.price_title
-BabyRock Social — las fórmulas
+BabyRock Social: las fórmulas
 
 ## home.price_month_name
 Mes a mes
@@ -236,7 +239,7 @@ Mes a mes
 Doce meses
 
 ## home.price_year_detail
-799 € al año, IVA incluido: un 33 % menos que pagar mes a mes.
+799 € al año, IVA incluido, un 33 % menos que pagar mes a mes.
 
 ## home.price_year_save
 Ahorre 389 €
@@ -251,13 +254,13 @@ Preguntas que nos hacen los dueños
 ¿Necesitan la contraseña de Google?
 
 ## home.faq_1_a
-No. Usted invita a reviews@babyrock.ai como gestor de su ficha de empresa de Google. La contraseña se queda en su poder, y puede quitarnos el acceso cuando quiera. Es un clic.
+No. Usted invita a reviews@babyrock.ai como gestor de su ficha de empresa de Google. La contraseña se queda en su poder, y puede quitarnos el acceso cuando quiera. Es un clic en los ajustes de la ficha de empresa de Google.
 
 ## home.faq_2_q
 ¿Qué pasa con una reseña de 1, 2 o 3 estrellas?
 
 ## home.faq_2_a
-Preparamos y revisamos una respuesta, y se la enviamos por WhatsApp para que la apruebe. Conteste OK o díganos qué cambiar. Una persona del equipo la envía solo después de su visto bueno. Google revisa las respuestas antes de que se vean en público, así que el momento final de publicación lo controla Google.
+Preparamos una respuesta y una persona la revisa, y se la enviamos por WhatsApp para que la apruebe. Conteste OK, o díganos qué cambiar. La enviamos solo después de su visto bueno. Google revisa después la respuesta antes de que se vea en público, así que el último retraso es suyo.
 
 ## home.faq_3_q
 ¿Es solo para restaurantes?
@@ -275,7 +278,7 @@ Respondemos en el idioma de la reseña, también en castellano, catalán, franc�
 ¿Podemos hablar con una persona si algo va mal?
 
 ## home.faq_5_a
-Sí. Habla directamente con Rosalia o con quien cubra la conversación en WhatsApp: el mismo canal que usamos para las reseñas delicadas.
+Sí. Habla directamente con Rosalia o con quien cubra la conversación en WhatsApp, el mismo canal que usamos para las reseñas delicadas.
 
 ## home.faq_6_q
 ¿Cómo se cancela?
@@ -287,7 +290,7 @@ Escriba BAJA o «quiero parar» a Rosalia por WhatsApp. Confirmamos, seguimos ha
 ¿También llevan el WhatsApp de mi comercio?
 
 ## home.faq_7_a
-Todavía no. Eso es BabyRock Direct, otro producto, que llegará más adelante: el número de sus clientes, no el nuestro. Hoy el WhatsApp que usamos es el hilo entre usted y BabyRock Social, para las reseñas delicadas y el recap.
+Todavía no. Eso será BabyRock Direct: sus clientes escriben a su número, no al nuestro. El WhatsApp que usa con nosotros hoy es solo el hilo con BabyRock Social, para las reseñas delicadas y el recapitulativo semanal.
 
 ## sim.headline
 Impacto esperado en su facturación
@@ -368,7 +371,7 @@ La estimación baja usa 0,12 × 5 % de la facturación. La alta usa 0,12 × 9 %.
 Después de 99 €/mes
 
 ## sim.after_year
-Después de 799 €/año — un 33 % menos
+Después de 799 € al año, un 33 % menos
 
 ## sim.per_month
 al mes
@@ -383,10 +386,10 @@ Retorno estimado después de la suscripción mensual
 Retorno estimado después de la suscripción anual
 
 ## sim.time_line
-La estimación no incluye el valor del tiempo que recupera al no tener que escribir otra respuesta rutinaria en Google.
+La estimación no incluye el tiempo que recupera al no escribir usted las respuestas rutinarias.
 
 ## sim.already_replying
-Usted ya responde casi a todas las reseñas. En ese caso, la razón más fuerte para usar BabyRock Social es el tiempo y la constancia que gana. No un aumento esperado por empezar a responder.
+Usted ya responde casi a todas las reseñas. En ese caso BabyRock Social es sobre todo tiempo y constancia, no un aumento extra por empezar a responder.
 
 ## sim.cta
 Que se ocupen de mis reseñas
@@ -398,10 +401,10 @@ Ver los estudios detrás de la estimación
 Calcular el impacto esperado
 
 ## how.headline
-Primeros pasos con BabyRock
+Cómo empezar
 
 ## how.lead
-Sin otro panel. Sin aplicación que instalar. Sin contraseña de Google. Escriba a Rosalia por WhatsApp, elija el plan, añádanos como gestor de su ficha de empresa de Google, y nos ocupamos.
+No hay otro panel, no hay otra aplicación, y nunca pedimos su contraseña de Google. Escriba a Rosalia por WhatsApp, elija un plan, añádanos como gestor de su ficha de empresa de Google, y nos ocupamos.
 
 ## how.step1_title
 1. Cuéntenos su negocio
@@ -428,7 +431,7 @@ La IA nos ayuda a redactar. Luego una persona revisa el tono, la pertinencia y l
 Si una reseña habla de un problema, un desacuerdo o un detalle que solo usted puede confirmar, le escribimos. También recibe un recapitulativo semanal corto. Cuando no hace falta su atención, le dejamos llevar el negocio.
 
 ## how.ai_box
-La IA es el punto de partida y nos permite no perder el hilo. Una persona decide, comprueba la calidad y publica a mano la respuesta final. Nada se publica solo.
+La IA nos da un primer borrador para seguir el ritmo. Una persona decide qué decir, lo comprueba y publica la respuesta. Nada se publica solo.
 
 ## how.whatsapp
 La misma conversación de WhatsApp sirve para pedir un cambio de texto, explicar lo que pasó, pedir una factura, pausar o cancelar.
@@ -440,13 +443,13 @@ La investigación detrás de la estimación de impacto
 Usamos hallazgos publicados para una estimación central práctica: alrededor del 0,84 % de la facturación mensual para un negocio que pasa de responder poco a responder siempre. Aquí está de dónde sale ese número.
 
 ## research.luca_title
-Harvard Business School — Michael Luca, 2011/2016
+Harvard Business School: Michael Luca, 2011/2016
 
 ## research.luca
-«Reviews, Reputation, and Revenue: The Case of Yelp.com» estudió restaurantes independientes en Seattle. Un aumento de una estrella en la nota mostrada en Yelp produjo un 5–9 % más de ingresos. En la estimación central usamos el punto medio: 7 % por estrella entera.
+«Reviews, Reputation, and Revenue: The Case of Yelp.com» estudió restaurantes independientes en Seattle. Un aumento de una estrella en la nota mostrada en Yelp produjo un 5–9 % más de ingresos. En la estimación central usamos el punto medio, 7 % por estrella entera.
 
 ## research.womply_title
-Marketing Science — Davide Proserpio y Georgios Zervas, 2017
+Marketing Science: Davide Proserpio y Georgios Zervas, 2017
 
 ## research.womply
 «Online Reputation Management: Estimating the Impact of Management Responses on Consumer Reviews» examinó decenas de miles de reseñas y respuestas de hoteles en TripAdvisor. Cuando los hoteles empezaron a responder, recibieron un 12 % más de reseñas y su nota subió de media 0,12 estrellas. Esa mejora de 0,12 estrellas es la que usamos.
@@ -455,7 +458,7 @@ Marketing Science — Davide Proserpio y Georgios Zervas, 2017
 Orientación de Google Business Profile
 
 ## research.bright
-Google recomienda responder a las reseñas para mostrar que la opinión del cliente importa. También dice que las reseñas positivas y las respuestas útiles pueden ayudar a distinguirse, y que más reseñas y notas positivas pueden apoyar el posicionamiento local. Por eso las respuestas constantes y atentas importan más allá de quien escribió la reseña.
+Google recomienda responder a las reseñas para mostrar que la opinión del cliente importa. También dice que las reseñas positivas y las respuestas útiles pueden ayudar a distinguirse, y que más reseñas y notas positivas pueden apoyar el posicionamiento local. Por eso respondemos aunque quien escribió no vuelva: el siguiente cliente puede ver la respuesta.
 
 ## research.formula_title
 Cómo calculamos el impacto esperado
@@ -472,34 +475,34 @@ Estimación alta = R × 0,12 × 9 % = R × 1,08 %.
 Luego restamos 99 € para el plan mensual, o 799 € ÷ 12 para el anual. Si usted ya responde a una parte o a la mayoría, la calculadora reduce la estimación porque una parte del trabajo ya se hace.
 
 ## research.what_we_use
-La estimación central es la cifra que usaríamos para valorar el servicio: 0,84 % de la facturación mensual antes de la suscripción, más el valor del tiempo del dueño. La investigación describe medias; el resultado de un negocio concreto puede ser más alto o más bajo.
+La cifra que usamos es el 0,84 % de la facturación mensual antes de la suscripción. Es una media de los estudios de arriba. Su comercio puede quedar por encima o por debajo. El tiempo que recupera es extra, y no entra en ese porcentaje.
 
 ## about.headline
-Hay personas responsables de cada respuesta
+Una persona es responsable de cada respuesta
 
 ## about.lead
 BabyRock Social está en Sant Cugat del Vallès, España. Rosalia es su contacto principal, y una persona del equipo responde de la calidad y de la publicación de cada texto.
 
 ## about.rosalia_role
-Rosalia — su contacto directo
+Rosalia, su contacto directo
 
 ## about.rosalia
 Rosalia le ayuda a empezar, responde a las preguntas y le envía las respuestas delicadas para que las apruebe. Si una reseña de 2 estrellas necesita contexto, hay que reenviar una factura o quiere cancelar, se hace en la misma conversación de WhatsApp.
 
 ## about.ben_role
-Benjamin Pommeraud — fundador
+Benjamin Pommeraud, fundador
 
 ## about.ben
 Benjamin creó BabyRock Social para que los negocios independientes tengan la constancia de un servicio gestionado, sin otra herramienta que aprender. Antes de la IA, el software se olvidaba de los pequeños y se centraba en las cuentas grandes. Ahora la IA permite a los pequeños comercios dar la misma calidad de servicio online. En BabyRock, la IA hace el trabajo eficiente; las personas aportan el criterio, el control de calidad y la responsabilidad.
 
 ## about.human_title
-Las personas primero, la IA después, siempre
+Una persona publica. La IA solo redacta.
 
 ## about.human
-Usamos la IA para la calidad, la constancia y la escala. Nos ayuda a preparar un primer borrador y a trabajar en varios idiomas. Pero sabemos que nuestros clientes son personas que llevan negocios para personas. Y que la confianza importa. Por eso usamos personas de verdad para comprobar el tono, la pertinencia y la calidad, hacer los cambios y publicar la respuesta final. La IA no publica nunca una respuesta por sí sola.
+Usamos la IA para preparar un primer borrador y para trabajar en varios idiomas. Sus clientes son personas, y usted también, así que una persona del equipo comprueba el tono, la pertinencia y la calidad, corrige si hace falta, y publica. La IA no publica nunca una respuesta por sí sola.
 
 ## about.whatsapp
-No queremos que instale otra aplicación. Tiene que poder escribirnos como lo haría de forma natural. Habla directamente con Rosalia o con quien cubra la conversación en WhatsApp.
+No le pedimos que instale otra aplicación. Escribe a Rosalia, o a quien cubra la conversación, por WhatsApp.
 
 ## sub.headline
 Que cada reseña nueva de Google quede atendida, desde 99 € al mes.
@@ -511,7 +514,7 @@ Envíenos el nombre del negocio y la ficha de Google. Rosalia responderá a las 
 99 €/mes, IVA incluido
 
 ## sub.year
-799 €/año, IVA incluido — ahorre un 33 %
+799 € al año, IVA incluido. Eso es un 33 % menos.
 
 ## sub.form_name
 Nombre del negocio
@@ -535,10 +538,10 @@ Facturación mensual, si usó la calculadora (opcional)
 Plan preferido
 
 ## sub.plan_month
-Mes a mes — 99 €
+Mes a mes, 99 €
 
 ## sub.plan_year
-Doce meses — 799 €
+Doce meses, 799 €
 
 ## sub.cta_wa
 Empezar por WhatsApp
@@ -547,7 +550,7 @@ Empezar por WhatsApp
 Escribir a Rosalia
 
 ## sub.after
-Después del pago, invita a reviews@babyrock.ai como gestor de su ficha de empresa de Google. Entonces empezamos con las reseñas sin respuesta. Si se atasca en este paso, escríbanos por WhatsApp.
+Después del pago, invita a reviews@babyrock.ai como gestor de su ficha de empresa de Google. Entonces empezamos con las reseñas sin respuesta. Si se atasca al añadir el gestor, escríbanos por WhatsApp.
 
 ## account.headline
 El servicio, las facturas y el acceso
@@ -600,7 +603,7 @@ Usamos herramientas de IA para ayudar a preparar borradores. Una persona revisa 
 Condiciones
 
 ## terms.body
-BabyRock Social gestiona las respuestas de una ficha de empresa de Google a 99 € al mes IVA incluido, o 799 € por doce meses IVA incluido. Al suscribirse e invitarnos como gestor, nos autoriza a redactar, revisar, enviar, editar y, si hace falta, borrar respuestas en esa ficha. La IA puede ayudar con el primer borrador; una persona comprueba y envía cada respuesta. Las respuestas a reseñas de 4 y 5 estrellas pueden enviarse con esta autorización continua. Las de 1, 2 y 3 estrellas se envían solo después de que usted las apruebe o las cambie por WhatsApp. Google revisa las respuestas y controla el momento final de publicación.
+BabyRock Social gestiona las respuestas de una ficha de empresa de Google a 99 € al mes IVA incluido, o 799 € por doce meses IVA incluido. Al suscribirse e invitarnos como gestor, nos autoriza a redactar, revisar, enviar, editar y, si hace falta, borrar respuestas en esa ficha. La IA puede ayudar con el primer borrador; una persona comprueba y envía cada respuesta. Las respuestas a reseñas de 4 y 5 estrellas pueden enviarse con esta autorización continua. Las de 1, 2 y 3 estrellas se envían solo después de que usted las apruebe o las cambie por WhatsApp. Google revisa cada respuesta y controla cuándo se ve en público.
 
 Puede cancelar al final del periodo pagado escribiendo a Rosalia. Cuando termina el servicio, quitamos nuestro acceso de gestor. Podemos pausar el servicio si un pago falla. Se aplica la ley española y los juzgados de Barcelona, salvo norma imperativa de consumo en otro sentido.
 

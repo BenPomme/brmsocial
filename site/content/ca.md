@@ -2,7 +2,7 @@
 Respostes a ressenyes de Google per a petits comerços | BabyRock Social
 
 ## meta.description
-Respostes cuidades a les ressenyes de Google del vostre negoci. La IA ens ajuda a ser eficients; una persona revisa i publica cada resposta. Des de 99 € al mes.
+Responem a cada ressenya de Google de la vostra fitxa. Una persona comprova el text i el publica. Des de 99 € al mes, IVA inclòs.
 
 ## nav.simulator
 Calculadora d’impacte
@@ -37,11 +37,14 @@ Tancar
 ## nav.whatsapp
 WhatsApp
 
+## nav.skip
+Omet
+
 ## wa.prefill
-Hola Rosalia, vull saber més de Babyrock Social.
+Hola Rosalia, vull saber més de BabyRock Social.
 
 ## footer.tagline
-BabyRock Social gestiona les respostes a les ressenyes de Google dels petits comerços. La IA ens ajuda a anar de pressa; una persona revisa i publica cada resposta. Parleu amb l’equip per WhatsApp.
+BabyRock Social respon a les ressenyes de Google de la vostra fitxa. Una persona de l’equip comprova cada resposta i la publica. Parleu amb nosaltres per WhatsApp.
 
 ## footer.privacy
 Privadesa
@@ -77,9 +80,9 @@ Ja {n} negocis confien en nosaltres per a les seves ressenyes
 No deixeu cap ressenya de Google sense resposta.
 
 ## home.lead
-BabyRock Social prepara, revisa i publica una resposta atenta a cada ressenya nova de la vostra fitxa d’empresa de Google. La IA ens ajuda a redactar amb eficiència. Una persona revisa el to, la pertinència i la qualitat abans de publicar.
+BabyRock Social prepara una resposta a cada ressenya nova de la vostra fitxa d’empresa de Google. Una persona de l’equip comprova la qualitat i l’autenticitat, i després la publica.
 
-A les ressenyes d’1, 2 i 3 estrelles, us enviem primer la proposta per WhatsApp. L’aproveu o ens dieu què canviar. Continueu al capdavant, sense passar les nits escrivint respostes. Us podeu centrar a portar el negoci.
+A les ressenyes d’1, 2 i 3 estrelles, us enviem primer l’esborrany per WhatsApp. L’aproveu o ens dieu què canviar. Continueu al capdavant, i no passeu el vespre escrivint respostes.
 
 ## home.cta_sim
 Calculeu l’impacte esperat per a vosaltres
@@ -88,19 +91,19 @@ Calculeu l’impacte esperat per a vosaltres
 Que s’ocupin de les meves ressenyes
 
 ## guides.headline
-Guies per a les seves ressenyes de Google
+Guies per a les vostres ressenyes de Google
 
 ## guides.lead
-Hàbits pràctics per al comerç aquesta setmana: com respondre, com demanar i com quedar-se dins de les normes de Google. Valen si ho fa vostè. Les fonts són al final de cada peça.
+Hàbits per al comerç aquesta setmana: com respondre, com demanar i com quedar-se dins de les normes de Google. Ho podeu fer sense nosaltres. Les fonts són al final de cada peça.
 
 ## guides.sources
 Fonts
 
 ## home.products_title
-Dos productes, dues feines distintes
+BabyRock Social i BabyRock Direct
 
 ## home.products_lead
-Avui podeu contractar BabyRock Social: les respostes a les ressenyes de Google. BabyRock Direct, el WhatsApp del vostre comerç, arribarà després. No cal cap altra aplicació.
+BabyRock Social és disponible avui. BabyRock Direct gestionarà el vostre WhatsApp for Business per augmentar els ingressos. Pròximament.
 
 ## product.social_name
 BabyRock Social
@@ -109,7 +112,7 @@ BabyRock Social
 Disponible ara
 
 ## product.social_body
-Algú deixa una ressenya a la vostra fitxa de Google. Preparem una resposta en la llengua de la ressenya. Les de 4 i 5 estrelles surten després d’una relectura nostra. Les d’1, 2 i 3 estrelles les veieu per WhatsApp. Digueu que sí, o canvieu el text. Només aleshores es publica.
+Algú deixa una ressenya a la vostra fitxa de Google. Preparem una resposta en la llengua de la ressenya. Rellegim les de 4 i 5 estrelles, i després les publiquem. Les d’1, 2 i 3 estrelles les veieu per WhatsApp. Digueu que sí, o canvieu el text. Només aleshores es publica.
 
 No ens doneu la contrasenya de Google. Afegiu una adreça BabyRock com a gestor de la fitxa.
 
@@ -140,13 +143,13 @@ Hola Rosalia, m’interessa BabyRock Direct quan estigui a punt.
 BabyRock Social i BabyRock Direct
 
 ## products.lead
-Social respon a les ressenyes de Google. Direct porta el WhatsApp del vostre comerç. Avui només es contracta Social. Direct es mostra perquè sapigueu què ve, no per pagar-lo.
+BabyRock Social respon a les vostres ressenyes de Google. BabyRock Direct portarà el WhatsApp del vostre negoci.
 
 ## home.for_whom_title
 Si els clients us troben a Google, aquest servei és per a vosaltres
 
 ## home.for_whom_lead
-Vam començar pels restaurants, on una ressenya sense resposta pot decidir la taula següent. El mateix val per a qualsevol comerç local independent. Responem en la llengua del client en un dia, també en castellà, català, francès i anglès, i cuidem que cada text soni al vostre negoci.
+Vam començar pels restaurants, on una ressenya sense resposta pot decidir la taula següent. El mateix val per a qualsevol comerç local independent. Responem en la llengua del client en un dia, també en castellà, català, francès i anglès, i comprovem que la resposta soni al vostre comerç, no a una plantilla.
 
 ## home.shop_restaurant
 Restaurant
@@ -176,10 +179,10 @@ Fisioteràpia
 Club
 
 ## home.sim_title
-El que poden valer les respostes constants per al vostre negoci
+El que poden valer les respostes constants
 
 ## home.sim_lead
-La recerca ha vist que els negocis que comencen a respondre amb constància poden millorar la nota. Juntament amb l’estudi de Harvard Business School sobre notes i ingressos, això dóna un impacte esperat, basat en la recerca, d’al voltant del 0,84 % de la facturació mensual, per a un negoci que avui respon poc.
+Quan els negocis responen amb constància, les notes milloren. Segons el treball de Harvard Business School, podríeu esperar almenys un 10 % més d’ingressos a l’any.
 
 ## home.sim_label
 Facturació mensual, en euros
@@ -212,19 +215,19 @@ Les respostes són públiques. Els clients futurs veuen que hi responeu.
 La constància pot reforçar la vostra reputació en línia
 
 ## home.value_rating
-La recerca va trobar una pujada de 0,12 estrelles quan els negocis van començar a respondre. La calculadora fa servir això, amb el treball de Harvard sobre notes i ingressos.
+La recerca mostra que respondre a les ressenyes farà pujar la facturació
 
 ## home.human_title
-La IA ens fa més ràpids. Les persones protegeixen la qualitat.
+Fem servir persones de veritat per cuidar el vostre negoci.
 
 ## home.human
-Fem servir la IA per ser més eficients. Ens ajuda a mantenir el preu i a preparar primers esborranys en la llengua de la ressenya. Després una persona de l’equip comprova els fets que tenim, el to, la pertinència i la redacció, corregeix si cal, i publica la resposta final. Res no es publica sol.
+Fem servir la IA per redactar més de pressa i per no deixar caps solts. Després una persona de l’equip comprova sempre els fets que tenim, el to i la redacció, corregeix si cal, i publica la resposta. Res no es publica sol.
 
 ## home.whatsapp_line
-Cal explicar el que va passar, canviar el text o fer una pregunta? Parleu amb la Rosalia i l’equip per WhatsApp. No cal una altra aplicació ni entrar en un web. Som amb vosaltres, a la butxaca.
+Si cal explicar el que va passar, canviar el text o fer una pregunta, escriviu a la Rosalia per WhatsApp. Ja teniu l’aplicació. No cal un altre inici de sessió.
 
 ## home.price_title
-BabyRock Social — les fórmules
+BabyRock Social: les fórmules
 
 ## home.price_month_name
 Mes a mes
@@ -236,7 +239,7 @@ Mes a mes
 Dotze mesos
 
 ## home.price_year_detail
-799 € a l’any, IVA inclòs: un 33 % menys que pagar mes a mes.
+799 € a l’any, IVA inclòs, un 33 % menys que pagar mes a mes.
 
 ## home.price_year_save
 Estalvieu 389 €
@@ -251,13 +254,13 @@ Preguntes que ens fan els propietaris
 Necessiteu la contrasenya de Google?
 
 ## home.faq_1_a
-No. Inviteu reviews@babyrock.ai com a gestor de la vostra fitxa d’empresa de Google. La contrasenya es queda en el vostre poder, i ens podeu treure l’accés quan vulgueu. És un clic.
+No. Inviteu reviews@babyrock.ai com a gestor de la vostra fitxa d’empresa de Google. La contrasenya es queda en el vostre poder, i ens podeu treure l’accés quan vulgueu. És un clic a la configuració de la fitxa d’empresa de Google.
 
 ## home.faq_2_q
 Què passa amb una ressenya d’1, 2 o 3 estrelles?
 
 ## home.faq_2_a
-Preparem i revisem una resposta, i us l’enviem per WhatsApp perquè l’aproveu. Contesteu OK o digueu-nos què canviar. Una persona de l’equip l’envia només després del vostre vistiplau. Google revisa les respostes abans que es vegin en públic, així que el moment final de publicació el controla Google.
+Preparem una resposta i una persona la revisa, i us l’enviem per WhatsApp perquè l’aproveu. Contesteu OK, o digueu-nos què canviar. L’enviem només després del vostre vistiplau. Google revisa després la resposta abans que es vegi en públic, així que l’últim retard és seu.
 
 ## home.faq_3_q
 És només per a restaurants?
@@ -275,7 +278,7 @@ Responem en la llengua de la ressenya, també en castellà, català, francès i 
 Podem parlar amb una persona si alguna cosa va malament?
 
 ## home.faq_5_a
-Sí. Parleu directament amb la Rosalia o amb qui cobreixi la conversa a WhatsApp: el mateix canal que fem servir per a les ressenyes delicades.
+Sí. Parleu directament amb la Rosalia o amb qui cobreixi la conversa a WhatsApp, el mateix canal que fem servir per a les ressenyes delicades.
 
 ## home.faq_6_q
 Com es cancel·la?
@@ -287,13 +290,13 @@ Escriviu BAJA o «vull parar» a la Rosalia per WhatsApp. Confirmem, continuem f
 També porteu el WhatsApp del meu comerç?
 
 ## home.faq_7_a
-Encara no. Això és BabyRock Direct, un altre producte, més endavant: el número dels vostres clients, no el nostre. Avui el WhatsApp que fem servir és el fil entre vosaltres i BabyRock Social, per a les ressenyes delicades i el recap.
+Encara no. Això serà BabyRock Direct: els vostres clients escriuen al vostre número, no al nostre. El WhatsApp que feu servir amb nosaltres avui és només el fil amb BabyRock Social, per a les ressenyes delicades i el recapitulatiu setmanal.
 
 ## sim.headline
-Impacte esperat en la seva facturació
+Impacte esperat en la vostra facturació
 
 ## sim.lead
-Introdueixi la facturació mensual.
+Introduïu la facturació mensual.
 
 ## sim.range_label
 Fins a
@@ -368,7 +371,7 @@ L’estimació baixa fa servir 0,12 × 5 % de la facturació. L’alta fa servir
 Després de 99 €/mes
 
 ## sim.after_year
-Després de 799 €/any — un 33 % menys
+Després de 799 € a l’any, un 33 % menys
 
 ## sim.per_month
 al mes
@@ -383,10 +386,10 @@ Retorn estimat després de la subscripció mensual
 Retorn estimat després de la subscripció anual
 
 ## sim.time_line
-L’estimació no inclou el valor del temps que recupereu en no haver d’escriure cap altra resposta rutinària a Google.
+L’estimació no inclou el temps que recupereu en no escriure vosaltres les respostes rutinàries.
 
 ## sim.already_replying
-Ja responeu gairebé a totes les ressenyes. En aquest cas, la raó més forta per fer servir BabyRock Social és el temps i la constància que ganyeu. No un augment esperat per començar a respondre.
+Ja responeu gairebé a totes les ressenyes. En aquest cas BabyRock Social és sobretot temps i constància, no un augment extra per començar a respondre.
 
 ## sim.cta
 Que s’ocupin de les meves ressenyes
@@ -398,10 +401,10 @@ Veure els estudis darrere de l’estimació
 Calcular l’impacte esperat
 
 ## how.headline
-Primers passos amb BabyRock
+Com començar
 
 ## how.lead
-Sense un altre tauler. Sense aplicació per instal·lar. Sense contrasenya de Google. Escriviu a la Rosalia per WhatsApp, trieu el pla, afegiu-nos com a gestor de la fitxa d’empresa de Google, i ens n’ocupem.
+No hi ha un altre tauler, no hi ha una altra aplicació, i mai no demanem la contrasenya de Google. Escriviu a la Rosalia per WhatsApp, trieu un pla, afegiu-nos com a gestor de la fitxa d’empresa de Google, i ens n’ocupem.
 
 ## how.step1_title
 1. Expliqueu-nos el negoci
@@ -428,7 +431,7 @@ La IA ens ajuda a redactar. Després una persona revisa el to, la pertinència i
 Si una ressenya parla d’un problema, un desacord o un detall que només vosaltres podeu confirmar, us escrivim. També rebeu un recapitulatiu setmanal curt. Quan no cal la vostra atenció, us deixem portar el negoci.
 
 ## how.ai_box
-La IA és el punt de partida i ens permet no perdre el fil. Una persona decideix, comprova la qualitat i publica a mà la resposta final. Res no es publica sol.
+La IA ens dóna un primer esborrany per seguir el ritme. Una persona decideix què dir, ho comprova i publica la resposta. Res no es publica sol.
 
 ## how.whatsapp
 La mateixa conversa de WhatsApp serveix per demanar un canvi de text, explicar el que va passar, demanar una factura, pausar o cancel·lar.
@@ -440,13 +443,13 @@ La recerca darrere de l’estimació d’impacte
 Fem servir resultats publicats per a una estimació central pràctica: al voltant del 0,84 % de la facturació mensual per a un negoci que passa de respondre poc a respondre sempre. Aquí és d’on surt aquest número.
 
 ## research.luca_title
-Harvard Business School — Michael Luca, 2011/2016
+Harvard Business School: Michael Luca, 2011/2016
 
 ## research.luca
-«Reviews, Reputation, and Revenue: The Case of Yelp.com» va estudiar restaurants independents a Seattle. Un augment d’una estrella en la nota mostrada a Yelp va produir un 5–9 % més d’ingressos. En l’estimació central fem servir el punt mitjà: 7 % per estrella sencera.
+«Reviews, Reputation, and Revenue: The Case of Yelp.com» va estudiar restaurants independents a Seattle. Un augment d’una estrella en la nota mostrada a Yelp va produir un 5–9 % més d’ingressos. En l’estimació central fem servir el punt mitjà, 7 % per estrella sencera.
 
 ## research.womply_title
-Marketing Science — Davide Proserpio i Georgios Zervas, 2017
+Marketing Science: Davide Proserpio i Georgios Zervas, 2017
 
 ## research.womply
 «Online Reputation Management: Estimating the Impact of Management Responses on Consumer Reviews» va examinar desenes de milers de ressenyes i respostes d’hotels a TripAdvisor. Quan els hotels van començar a respondre, van rebre un 12 % més de ressenyes i la nota va pujar de mitjana 0,12 estrelles. Aquesta millora de 0,12 estrelles és la que fem servir.
@@ -455,7 +458,7 @@ Marketing Science — Davide Proserpio i Georgios Zervas, 2017
 Orientació de Google Business Profile
 
 ## research.bright
-Google recomana respondre a les ressenyes per mostrar que l’opinió del client importa. També diu que les ressenyes positives i les respostes útils poden ajudar a distingir-se, i que més ressenyes i notes positives poden donar suport al posicionament local. Per això les respostes constants i atentes importen més enllà de qui va escriure la ressenya.
+Google recomana respondre a les ressenyes per mostrar que l’opinió del client importa. També diu que les ressenyes positives i les respostes útils poden ajudar a distingir-se, i que més ressenyes i notes positives poden donar suport al posicionament local. Per això responem encara que qui va escriure no torni: el client següent pot veure la resposta.
 
 ## research.formula_title
 Com calculem l’impacte esperat
@@ -472,34 +475,34 @@ Estimació alta = R × 0,12 × 9 % = R × 1,08 %.
 Després restem 99 € per al pla mensual, o 799 € ÷ 12 per a l’anual. Si ja responeu a una part o a la majoria, la calculadora redueix l’estimació perquè una part de la feina ja es fa.
 
 ## research.what_we_use
-L’estimació central és la xifra que faríem servir per valorar el servei: 0,84 % de la facturació mensual abans de la subscripció, més el valor del temps del propietari. La recerca descriu mitjanes; el resultat d’un negoci concret pot ser més alt o més baix.
+La xifra que fem servir és el 0,84 % de la facturació mensual abans de la subscripció. És una mitjana dels estudis de dalt. El vostre comerç pot quedar per sobre o per sota. El temps que recupereu és extra, i no entra en aquest percentatge.
 
 ## about.headline
-Hi ha persones responsables de cada resposta
+Una persona és responsable de cada resposta
 
 ## about.lead
 BabyRock Social és a Sant Cugat del Vallès, Espanya. La Rosalia és el vostre contacte principal, i una persona de l’equip respon de la qualitat i de la publicació de cada text.
 
 ## about.rosalia_role
-Rosalia — el vostre contacte directe
+Rosalia, el vostre contacte directe
 
 ## about.rosalia
 La Rosalia us ajuda a començar, respon les preguntes i us envia les respostes delicades perquè les aproveu. Si una ressenya de 2 estrelles necessita context, cal reenviar una factura o voleu cancel·lar, es fa a la mateixa conversa de WhatsApp.
 
 ## about.ben_role
-Benjamin Pommeraud — fundador
+Benjamin Pommeraud, fundador
 
 ## about.ben
 Benjamin va crear BabyRock Social perquè els negocis independents tinguin la constància d’un servei gestionat, sense una altra eina per aprendre. Abans de la IA, el programari s’oblidava dels petits i es centrava en els comptes grans. Ara la IA permet als petits comerços donar la mateixa qualitat de servei en línia. A BabyRock, la IA fa la feina eficient; les persones aporten el criteri, el control de qualitat i la responsabilitat.
 
 ## about.human_title
-Les persones primer, la IA després, sempre
+Una persona publica. La IA només redacta.
 
 ## about.human
-Fem servir la IA per a la qualitat, la constància i l’escala. Ens ajuda a preparar un primer esborrany i a treballar en diverses llengües. Però sabem que els nostres clients són persones que porten negocis per a persones. I que la confiança importa. Per això fem servir persones de veritat per comprovar el to, la pertinència i la qualitat, fer els canvis i publicar la resposta final. La IA no publica mai una resposta tota sola.
+Fem servir la IA per preparar un primer esborrany i per treballar en diverses llengües. Els vostres clients són persones, i vosaltres també, així que una persona de l’equip comprova el to, la pertinència i la qualitat, corregeix si cal, i publica. La IA no publica mai una resposta tota sola.
 
 ## about.whatsapp
-No volem que instal·leu una altra aplicació. Heu de poder escriure’ns com ho faríeu de forma natural. Parleu directament amb la Rosalia o amb qui cobreixi la conversa a WhatsApp.
+No us demanem que instal·leu una altra aplicació. Escriviu a la Rosalia, o a qui cobreixi la conversa, per WhatsApp.
 
 ## sub.headline
 Que cada ressenya nova de Google quedi atesa, des de 99 € al mes.
@@ -511,7 +514,7 @@ Envieu-nos el nom del negoci i la fitxa de Google. La Rosalia respondrà les pre
 99 €/mes, IVA inclòs
 
 ## sub.year
-799 €/any, IVA inclòs — estalvieu un 33 %
+799 € a l’any, IVA inclòs. Això és un 33 % menys.
 
 ## sub.form_name
 Nom del negoci
@@ -535,10 +538,10 @@ Facturació mensual, si heu fet servir la calculadora (opcional)
 Pla preferit
 
 ## sub.plan_month
-Mes a mes — 99 €
+Mes a mes, 99 €
 
 ## sub.plan_year
-Dotze mesos — 799 €
+Dotze mesos, 799 €
 
 ## sub.cta_wa
 Començar per WhatsApp
@@ -547,7 +550,7 @@ Començar per WhatsApp
 Escriure a la Rosalia
 
 ## sub.after
-Després del pagament, inviteu reviews@babyrock.ai com a gestor de la fitxa d’empresa de Google. Aleshores comencem amb les ressenyes sense resposta. Si us encalleu en aquest pas, escriviu-nos per WhatsApp.
+Després del pagament, inviteu reviews@babyrock.ai com a gestor de la fitxa d’empresa de Google. Aleshores comencem amb les ressenyes sense resposta. Si us encalleu en afegir el gestor, escriviu-nos per WhatsApp.
 
 ## account.headline
 El servei, les factures i l’accés
@@ -600,7 +603,7 @@ Fem servir eines d’IA per ajudar a preparar esborranys. Una persona revisa i, 
 Condicions
 
 ## terms.body
-BabyRock Social gestiona les respostes d’una fitxa d’empresa de Google a 99 € al mes IVA inclòs, o 799 € per dotze mesos IVA inclòs. En subscriure-us i convidar-nos com a gestor, ens autoritzeu a redactar, revisar, enviar, editar i, si cal, esborrar respostes en aquesta fitxa. La IA pot ajudar amb el primer esborrany; una persona comprova i envia cada resposta. Les respostes a ressenyes de 4 i 5 estrelles es poden enviar amb aquesta autorització contínua. Les d’1, 2 i 3 estrelles s’envien només després que les aproveu o les canvieu per WhatsApp. Google revisa les respostes i controla el moment final de publicació.
+BabyRock Social gestiona les respostes d’una fitxa d’empresa de Google a 99 € al mes IVA inclòs, o 799 € per dotze mesos IVA inclòs. En subscriure-us i convidar-nos com a gestor, ens autoritzeu a redactar, revisar, enviar, editar i, si cal, esborrar respostes en aquesta fitxa. La IA pot ajudar amb el primer esborrany; una persona comprova i envia cada resposta. Les respostes a ressenyes de 4 i 5 estrelles es poden enviar amb aquesta autorització contínua. Les d’1, 2 i 3 estrelles s’envien només després que les aproveu o les canvieu per WhatsApp. Google revisa cada resposta i controla quan es veu en públic.
 
 Podeu cancel·lar al final del període pagat escrivint a la Rosalia. Quan s’acaba el servei, treiem el nostre accés de gestor. Podem pausar el servei si un pagament falla. S’aplica la llei espanyola i els jutjats de Barcelona, llevat de norma imperativa de consum en un altre sentit.
 

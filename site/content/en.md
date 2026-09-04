@@ -1,8 +1,8 @@
 ## meta.title
-Google Review Response Service For Small Businesses | BabyRock Social
+Google review replies for small businesses | BabyRock Social
 
 ## meta.description
-Thoughtful Google review replies for small businesses. AI helps us work efficiently; a human checks and publishes every response. From €99/month.
+We reply to every Google review on your listing. A person checks the wording and publishes it. From €99 a month, including VAT.
 
 ## nav.simulator
 Impact calculator
@@ -37,11 +37,14 @@ Close
 ## nav.whatsapp
 WhatsApp
 
+## nav.skip
+Skip
+
 ## wa.prefill
-Hi Rosalia, I want to know more about Babyrock Social.
+Hi Rosalia, I want to know more about BabyRock Social.
 
 ## footer.tagline
-BabyRock Social manages Google review replies for small businesses. AI helps us work quickly; a human checks and publishes every response. Talk directly with our team on WhatsApp.
+BabyRock Social replies to the Google reviews on your listing. A person on our team checks each reply and publishes it. You talk to us on WhatsApp.
 
 ## footer.privacy
 Privacy
@@ -77,9 +80,9 @@ Already {n} businesses trust us with their reviews
 Never leave another Google review unanswered.
 
 ## home.lead
-BabyRock Social prepares, checks and publishes a thoughtful reply to every new review on your Google Business Profile. AI helps us draft efficiently. A person reviews every response for tone, relevance and quality before publishing it.
+BabyRock Social prepares a reply to every new review on your Google Business Profile. A person on our team checks for quality and authenticity, then publishes it.
 
-For 1, 2 and 3-star reviews, we send you the proposed reply on WhatsApp first. You approve it or tell us what to change. You stay in control without spending your evenings writing replies. You can focus on just running your business.
+For 1, 2 and 3-star reviews, we send you the draft on WhatsApp first. You approve it or tell us what to change. You stay in control, and you do not spend the evening writing replies.
 
 ## home.cta_sim
 Calculate the expected impact for you
@@ -91,16 +94,16 @@ Get my reviews handled
 Guides for your Google reviews
 
 ## guides.lead
-Practical habits you can use in the shop this week: how to reply, how to ask, and how to stay inside Google’s rules. They work if you do it yourself. The sources are at the bottom of each piece.
+Habits you can use in the shop this week: how to reply, how to ask, and how to stay inside Google’s rules. You can do this without us. The sources are at the bottom of each piece.
 
 ## guides.sources
 Sources
 
 ## home.products_title
-Two products, two different jobs
+BabyRock Social and BabyRock Direct
 
 ## home.products_lead
-You can buy BabyRock Social today: replies to your Google reviews. BabyRock Direct, the WhatsApp of your shop, comes later. You do not need another app.
+BabyRock Social is available today. BabyRock Direct will manage your own WhatsApp for Business to increase your revenues. Coming soon.
 
 ## product.social_name
 BabyRock Social
@@ -109,7 +112,7 @@ BabyRock Social
 Available now
 
 ## product.social_body
-Someone leaves a review on your Google listing. We prepare a reply in the language of the review. 4 and 5-star replies go out after we proofread them. 1, 2 and 3-star reviews come to you on WhatsApp. You say yes, or you change the text. Only then is the reply published.
+Someone leaves a review on your Google listing. We prepare a reply in the language of the review. We proofread 4 and 5-star replies, then we publish them. 1, 2 and 3-star reviews come to you on WhatsApp. You say yes, or you change the text. Only then is the reply published.
 
 You do not send us your Google password. You add a BabyRock address as a manager of the listing.
 
@@ -140,13 +143,13 @@ Hi Rosalia, I am interested in BabyRock Direct when it is ready.
 BabyRock Social and BabyRock Direct
 
 ## products.lead
-Social replies to Google reviews. Direct runs your shop’s WhatsApp. Today you can only buy Social. Direct is here so you can see what is coming, not so you can pay for it.
+BabyRock Social replies to your Google reviews. BabyRock Direct will run your business' WhatsApp.
 
 ## home.for_whom_title
 If customers find you on Google, this service is for you
 
 ## home.for_whom_lead
-We started with restaurants, where one unanswered review can influence the next table booking. The same is true for any independent local business. We reply in the customer’s language within a day, including Spanish, Catalan, French and English, and make sure every response sounds authentic to your business.
+We started with restaurants, where one unanswered review can influence the next table booking. The same is true for any independent local business. We reply in the customer’s language within a day, including Spanish, Catalan, French and English, and we check that the reply sounds like your shop, not like a template.
 
 ## home.shop_restaurant
 Restaurant
@@ -176,10 +179,10 @@ Physio
 Club
 
 ## home.sim_title
-What consistent review replies could be worth to your business
+What consistent replies could be worth
 
 ## home.sim_lead
-Research has found that businesses which start replying consistently can see an improvement in ratings. Combined with Harvard Business School research on ratings and revenue, that gives a research-based expected impact of about 0.84% of monthly revenue, for a business that currently replies rarely.
+When businesses reply consistently, ratings improve. According to Harvard Business School work you could expect at least 10% more revenues per year.
 
 ## home.sim_label
 Monthly revenue, in euros
@@ -212,19 +215,19 @@ Replies are public. Future customers can see that you answer.
 Consistency can strengthen your online reputation
 
 ## home.value_rating
-Research found a 0.12-star lift when businesses started responding. The calculator uses that, with Harvard’s work on ratings and revenue.
+Research shows that responding to reviews will increase your revenues
 
 ## home.human_title
-AI makes us faster. Real people protect the quality.
+We use real humans to take care of your business.
 
 ## home.human
-We use AI to make us more efficient. AI helps us keep our prices low, while preparing first drafts efficiently and work in the language of the review. Then a person from our team checks the facts available to us, the tone, relevance and wording, edits where needed, and publishes the final reply. Nothing is posted automatically.
+We use AI to draft faster and to make sure we don't drop the ball. Then a person on our team always checks the facts we have, the tone and the wording, edits if needed, and publishes the reply. Nothing is posted automatically.
 
 ## home.whatsapp_line
-Need to explain what happened, change the wording or ask a question? Talk directly with Rosalia and our team on WhatsApp. No need to download an app or go to a website. We are with you, in your pocket.
+If you need to explain what happened, change the wording, or ask a question, write to Rosalia on WhatsApp. You already have the app. You do not need a new login.
 
 ## home.price_title
-BabyRock Social — the plans
+BabyRock Social: the plans
 
 ## home.price_month_name
 Month to month
@@ -236,7 +239,7 @@ Month to month
 Twelve months
 
 ## home.price_year_detail
-€799 for the year, including VAT—33% less than paying month to month.
+€799 for the year, including VAT, 33% less than paying month to month.
 
 ## home.price_year_save
 Save €389
@@ -251,13 +254,13 @@ Questions business owners ask us
 Do you need our Google password?
 
 ## home.faq_1_a
-No. You invite reviews@babyrock.ai as a manager of your Google Business Profile. Your password stays private, and you can remove our access whenever you want. It is a one click process.
+No. You invite reviews@babyrock.ai as a manager of your Google Business Profile. Your password stays private, and you can remove our access whenever you want. It takes one click in the Google Business Profile settings.
 
 ## home.faq_2_q
 What happens with a 1, 2 or 3-star review?
 
 ## home.faq_2_a
-We prepare and quality-check a reply, then send it to you on WhatsApp for approval. Reply OK or tell us what to change. A person on our team submits it only after your approval. Google reviews replies before they appear publicly, so final publication timing is controlled by Google.
+We prepare a reply and a person checks it, then we send it to you on WhatsApp for approval. Reply OK, or tell us what to change. We submit it only after you approve. Google then reviews the reply before it goes public, so the last delay is theirs.
 
 ## home.faq_3_q
 Is this only for restaurants?
@@ -275,7 +278,7 @@ We reply in the language of the review, including Spanish, Catalan, French and E
 Can we reach a real person if something is wrong?
 
 ## home.faq_5_a
-Yes. You speak directly with Rosalia or the team member covering the conversation on WhatsApp—the same channel we use for sensitive reviews.
+Yes. You speak directly with Rosalia or the team member covering the conversation on WhatsApp, the same channel we use for sensitive reviews.
 
 ## home.faq_6_q
 How do we cancel?
@@ -287,7 +290,7 @@ Write BAJA or “please stop” to Rosalia on WhatsApp. We confirm your request,
 Do you also run my shop’s WhatsApp?
 
 ## home.faq_7_a
-Not yet. That is BabyRock Direct, a different product, coming later: your customers’ number, not ours. Today the WhatsApp we use is the thread between you and BabyRock Social, for sensitive reviews and the recap.
+Not yet. That will be BabyRock Direct: your customers write to your number, not ours. The WhatsApp you use with us today is only the thread with BabyRock Social, for sensitive reviews and the weekly recap.
 
 ## sim.headline
 Expected impact on your revenue
@@ -368,7 +371,7 @@ The lower estimate uses 0.12 × 5% of revenue. The upper estimate uses 0.12 × 9
 After €99/month
 
 ## sim.after_year
-After €799/year—33% less
+After €799 a year, which is 33% less
 
 ## sim.per_month
 per month
@@ -383,10 +386,10 @@ Estimated return after the monthly subscription
 Estimated return after the annual subscription
 
 ## sim.time_line
-The estimate does not include the value of the time you get back by never having to write another routine Google reply.
+The estimate does not include the time you get back by not writing the routine replies yourself.
 
 ## sim.already_replying
-You already answer almost every review. In that case, the strongest reason to use BabyRock Social is the time and consistency you gain. Not an expected increase from beginning to reply.
+You already answer almost every review. In that case BabyRock Social is mainly about time and consistency, not about an extra lift from starting to reply.
 
 ## sim.cta
 Get my reviews handled
@@ -398,10 +401,10 @@ See the studies behind the estimate
 Calculate the expected impact
 
 ## how.headline
-Getting Started with BabyRock
+How to start
 
 ## how.lead
-No new dashboard. No app to install. No Google password to share. Write to Rosalia on WhatsApp, choose your plan, add us as a manager of your Google Business Profile, and we take it from there.
+There is no new dashboard, no extra app, and we never ask for your Google password. Write to Rosalia on WhatsApp, choose a plan, add us as a manager of your Google Business Profile, and we take it from there.
 
 ## how.step1_title
 1. Tell us about your business
@@ -410,7 +413,7 @@ No new dashboard. No app to install. No Google password to share. Write to Rosal
 Send Rosalia your business name and Google listing by WhatsApp or email. Choose €99 month to month or €799 for twelve months. She answers your questions and sends a secure payment link.
 
 ## how.step2_title
-2. Add us as a manager—not an owner
+2. Add us as a manager, not as an owner
 
 ## how.step2
 Invite reviews@babyrock.ai as a manager of your Google Business Profile. We never ask for your owner password. You stay in control and can remove our access whenever you want.
@@ -428,7 +431,7 @@ AI helps us draft efficiently. A person then checks the reply for tone, relevanc
 If a review mentions a problem, dispute or detail only you can confirm, we message you. You also receive a short weekly recap. When nothing needs your attention, we let you run your business.
 
 ## how.ai_box
-AI is the starting point and allows us to stay on top of things. A person makes the judgment call, checks the quality and manually publishes the final reply. Nothing goes live automatically.
+AI gives us a first draft so we can keep up with volume. A person decides what to say, checks it, and publishes the reply. Nothing goes live automatically.
 
 ## how.whatsapp
 The same WhatsApp conversation is where you can request a wording change, explain what happened, ask for an invoice, pause the service or cancel.
@@ -440,13 +443,13 @@ The research behind our expected-impact estimate
 We use published findings to build a practical central estimate: around 0.84% of monthly revenue for a business moving from rarely replying to replying consistently. Here is exactly where that number comes from.
 
 ## research.luca_title
-Harvard Business School — Michael Luca, 2011/2016
+Harvard Business School: Michael Luca, 2011/2016
 
 ## research.luca
-“Reviews, Reputation, and Revenue: The Case of Yelp.com” studied independent restaurants in Seattle. A one-star increase in the displayed Yelp rating produced a 5–9% increase in revenue. We use the midpoint—7% per full star—in our central estimate.
+“Reviews, Reputation, and Revenue: The Case of Yelp.com” studied independent restaurants in Seattle. A one-star increase in the displayed Yelp rating produced a 5–9% increase in revenue. We use the midpoint, 7% per full star, in our central estimate.
 
 ## research.womply_title
-Marketing Science — Davide Proserpio and Georgios Zervas, 2017
+Marketing Science: Davide Proserpio and Georgios Zervas, 2017
 
 ## research.womply
 “Online Reputation Management: Estimating the Impact of Management Responses on Consumer Reviews” examined tens of thousands of hotel reviews and responses on TripAdvisor. When hotels began responding, they received 12% more reviews and their ratings increased by an average of 0.12 stars. We use that 0.12-star improvement in our estimate.
@@ -455,7 +458,7 @@ Marketing Science — Davide Proserpio and Georgios Zervas, 2017
 Google Business Profile guidance
 
 ## research.bright
-Google recommends replying to reviews to show customers that their feedback matters. Google also says positive reviews and helpful replies can help a business stand out, while more reviews and positive ratings can support local ranking. That is why consistent, thoughtful replies matter beyond the person who wrote the original review.
+Google recommends replying to reviews to show customers that their feedback matters. Google also says positive reviews and helpful replies can help a business stand out, while more reviews and positive ratings can support local ranking. That is why we reply even when the original reviewer may never come back: the next customer can see the answer.
 
 ## research.formula_title
 How we calculate the expected impact
@@ -472,34 +475,34 @@ Upper research estimate = R × 0.12 × 9% = R × 1.08%.
 We then subtract €99 for the monthly plan, or €799 ÷ 12 for the annual plan. If you already answer some or most reviews, the calculator reduces the estimate because part of the work is already being done.
 
 ## research.what_we_use
-The central estimate is the figure we would use to evaluate the service: 0.84% of monthly revenue before the subscription, plus the value of the owner time saved. Research describes averages, so the result for an individual business can be higher or lower.
+The figure we use is 0.84% of monthly revenue before the subscription. That is an average from the studies above. Your shop can land higher or lower. The time you get back is extra, and it is not in that percentage.
 
 ## about.headline
-People are accountable for every reply
+A person is responsible for every reply
 
 ## about.lead
-BabyRock Social is based in Sant Cugat del Valles, Spain. Rosalia is your main point of contact, and a person on our team is responsible for the quality and publication of every response.
+BabyRock Social is based in Sant Cugat del Vallès, Spain. Rosalia is your main point of contact, and a person on our team is responsible for the quality and publication of every response.
 
 ## about.rosalia_role
-Rosalia - your direct contact
+Rosalia, your direct contact
 
 ## about.rosalia
 Rosalia helps you start, answers your questions and sends sensitive replies for your approval. If a 2-star review needs context, an invoice needs resending or you want to cancel, you can handle it in the same WhatsApp conversation.
 
 ## about.ben_role
-Benjamin Pommeraud — founder
+Benjamin Pommeraud, founder
 
 ## about.ben
 Benjamin created BabyRock Social to give independent businesses the consistency of a managed service without another tool to learn. Before AI, small businesses were forgotten by software companies that were focusing on big accounts. Now, AI is enabling small businesses to provide the same quality of service online. At BabyRock, AI makes the work efficient; people provide the judgment, quality control and accountability.
 
 ## about.human_title
-Humans first, AI second, always
+A person publishes. AI only drafts.
 
 ## about.human
-We use AI for quality, consistency and scale. AI helps us prepare a first draft and work efficiently across languages. But we know our customers are humans running businesses for humans. And that trust matters. So we use real people to check the tone, relevance and quality, make any edits, and publish the final response. AI never posts a reply by itself.
+We use AI to prepare a first draft and to work across languages. Your customers are people, and so are you, so a person on our team checks the tone, the relevance and the quality, edits if needed, and publishes. AI never posts a reply on its own.
 
 ## about.whatsapp
-We don't want to have you install yet another app. You need to be able to reach out the us naturally. You talk directly with Rosalia or the team member covering the conversation on WhatsApp.
+We do not ask you to install another app. You write to Rosalia, or to whoever is covering the conversation, on WhatsApp.
 
 ## sub.headline
 Get every new Google review handled from €99 a month.
@@ -511,7 +514,7 @@ Send us your business name and Google listing. Rosalia will answer your question
 €99/month, including VAT
 
 ## sub.year
-€799/year, including VAT—save 33%
+€799 a year, including VAT. That is 33% less.
 
 ## sub.form_name
 Business name
@@ -535,10 +538,10 @@ Monthly revenue, if you used the calculator (optional)
 Preferred plan
 
 ## sub.plan_month
-Month to month—€99
+Month to month, €99
 
 ## sub.plan_year
-Twelve months—€799
+Twelve months, €799
 
 ## sub.cta_wa
 Start on WhatsApp
@@ -547,7 +550,7 @@ Start on WhatsApp
 Email Rosalia
 
 ## sub.after
-After payment, you invite reviews@babyrock.ai as a manager of your Google Business Profile. We then begin with your unanswered reviews. If you are struggling in this phase, ping us on WhatsApp.
+After payment, you invite reviews@babyrock.ai as a manager of your Google Business Profile. We then begin with your unanswered reviews. If you get stuck adding the manager, write to us on WhatsApp.
 
 ## account.headline
 Your service, invoices and account access
@@ -583,7 +586,7 @@ Write BAJA or “please stop” to Rosalia on WhatsApp. We confirm your request,
 Your Google Business Profile access
 
 ## account.listing
-You invited reviews@babyrock.ai as a manager—not an owner. We remove our access when the service ends. You can also remove us at any time: open your Google Business Profile, go to Business Profile settings → People and access, select reviews@babyrock.ai and choose Remove person.
+You invited reviews@babyrock.ai as a manager, not as an owner. We remove our access when the service ends. You can also remove us at any time: open your Google Business Profile, go to Business Profile settings → People and access, select reviews@babyrock.ai and choose Remove person.
 
 ## account.cta_cancel
 Message Rosalia to cancel
@@ -600,7 +603,7 @@ We use AI tools to help prepare reply drafts. A person reviews and, where needed
 Terms
 
 ## terms.body
-BabyRock Social manages replies for one Google Business Profile at €99 per month including VAT, or €799 for twelve months including VAT. By subscribing and inviting BabyRock Social as a manager, you authorize us to draft, review, submit, edit and, when necessary, delete replies on that profile. AI may assist with the first draft; a person checks and submits every reply. Replies to 4 and 5-star reviews may be submitted under this ongoing authorization. Replies to 1, 2 and 3-star reviews are submitted only after you approve or revise them on WhatsApp. Google reviews replies and controls final publication timing.
+BabyRock Social manages replies for one Google Business Profile at €99 per month including VAT, or €799 for twelve months including VAT. By subscribing and inviting BabyRock Social as a manager, you authorize us to draft, review, submit, edit and, when necessary, delete replies on that profile. AI may assist with the first draft; a person checks and submits every reply. Replies to 4 and 5-star reviews may be submitted under this ongoing authorization. Replies to 1, 2 and 3-star reviews are submitted only after you approve or revise them on WhatsApp. Google reviews each reply and controls when it goes public.
 
 You can cancel at the end of the paid period by writing to Rosalia. When the service ends, we remove our manager access. We may pause the service if a payment fails. Spanish law and the courts of Barcelona apply, unless a mandatory consumer rule says otherwise.
 

@@ -24,8 +24,8 @@ Si un avis enfreint les règles de Google, signalez-le dans la fiche. Ne partez 
 Faites-le à un rythme fixe, pour que cela ne dépende pas de la mémoire : chaque jour s’il y en a beaucoup, quelques fois par semaine s’il y en a peu. L’essentiel est que rien ne reste deux semaines sans réponse.
 
 ## sources
-- [Google — gérer et répondre aux avis](https://support.google.com/business/answer/3474050)
-- [Proserpio et Zervas, Marketing Science 2017 — notes quand les hôtels commencent à répondre](https://doi.org/10.1287/mksc.2017.1043)
+- [Google: gérer et répondre aux avis](https://support.google.com/business/answer/3474050)
+- [Proserpio et Zervas, Marketing Science 2017: notes quand les hôtels commencent à répondre](https://doi.org/10.1287/mksc.2017.1043)
 - [Règles de Google sur les contributions](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill

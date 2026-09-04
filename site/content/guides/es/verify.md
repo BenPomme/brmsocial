@@ -24,10 +24,10 @@ Si vuelve a aparecer Verificar cuando usted creía que ya estaba, Google no term
 Cuando esté verificado, ya puede responder. Ahí empiezan a servir el resto de guías de este sitio.
 
 ## sources
-- [Google — verificar el negocio](https://support.google.com/business/answer/7107242)
-- [Google — añadir o reclamar un perfil](https://support.google.com/business/answer/2911778)
-- [Google — añadir titulares y gestores](https://support.google.com/business/answer/3403100)
-- [Google — gestionar y responder reseñas](https://support.google.com/business/answer/3474050)
+- [Google: verificar el negocio](https://support.google.com/business/answer/7107242)
+- [Google: añadir o reclamar un perfil](https://support.google.com/business/answer/2911778)
+- [Google: añadir titulares y gestores](https://support.google.com/business/answer/3403100)
+- [Google: gestionar y responder reseñas](https://support.google.com/business/answer/3474050)
 
 ## wa_prefill
 Hola Rosalia, he leído la guía sobre cómo verificar Google Business Profile.

@@ -22,9 +22,9 @@ Vous n’avez pas besoin de WhatsApp pour cela. Le papier ne stocke pas de numé
 Si vous envoyez déjà un remerciement par e-mail ou message après une réservation, vous pouvez y ajouter le même lien. C’est la liste de Google : tickets, e-mails de remerciement, fin d’un chat, code imprimé dans le local.
 
 ## sources
-- [Google — créer un lien ou un QR d’avis](https://support.google.com/business/answer/16816815)
-- [Google — pas d’incitations, pas de demandes sélectives](https://support.google.com/contributionpolicy/answer/7400114)
-- [Google — conseils pour obtenir plus d’avis](https://support.google.com/business/answer/3474122)
+- [Google: créer un lien ou un QR d’avis](https://support.google.com/business/answer/16816815)
+- [Google: pas d’incitations, pas de demandes sélectives](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google: conseils pour obtenir plus d’avis](https://support.google.com/business/answer/3474122)
 
 ## wa_prefill
 Bonjour Rosalia, j’ai lu le guide du QR code d’avis Google.

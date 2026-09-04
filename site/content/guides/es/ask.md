@@ -11,7 +11,7 @@ Por qué importa
 Google quita las reseñas compradas, amañadas o dirigidas. Una ficha que solo recoge tráfico de 5 estrellas también resulta rara al siguiente cliente. Pedir con equidad sube el volumen. El volumen es lo que hace que la ficha parezca viva.
 
 ## body
-La versión legal y simple es una frase y un enlace, iguales para todos.
+La versión que se queda dentro de las normas es una frase y un enlace, iguales para todos.
 
 Google le deja crear un enlace de reseña y un código QR desde el perfil de empresa, en un ordenador. Puede poner ese código en el ticket, en una tarjeta del mostrador o al final de un mensaje de agradecimiento que ya envíe. El cliente abre Google y escribe si quiere.
 
@@ -24,9 +24,9 @@ Si la visita fue mal, esa persona igual puede ir a Google. Puede recoger la quej
 Use el mismo texto un martes flojo y un sábado por la noche. «Si tiene un momento, aquí está nuestra página de Google» basta. «Si le ha gustado, déjenos un 5» no.
 
 ## sources
-- [Google — reseñas falsas, incentivos y peticiones selectivas](https://support.google.com/contributionpolicy/answer/7400114)
-- [Google — crear un enlace o un QR de reseña](https://support.google.com/business/answer/16816815)
-- [Proserpio y Zervas — más reseñas cuando el negocio responde](https://doi.org/10.1287/mksc.2017.1043)
+- [Google: reseñas falsas, incentivos y peticiones selectivas](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google: crear un enlace o un QR de reseña](https://support.google.com/business/answer/16816815)
+- [Proserpio y Zervas: más reseñas cuando el negocio responde](https://doi.org/10.1287/mksc.2017.1043)
 
 ## wa_prefill
 Hola Rosalia, he leído la guía sobre pedir reseñas sin romper las normas.

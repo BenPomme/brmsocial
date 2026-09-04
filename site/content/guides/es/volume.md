@@ -8,7 +8,7 @@ Una ficha con decenas de reseñas recientes y un 4,5 suele convencer más que un
 Por qué importa
 
 ## impact
-La media de estrellas se mueve despacio. El recuento, y la fecha de la última reseña, se ven en un segundo. Los independientes viven de eso más que las cadenas. Un estudio de proveedor sobre millones de reseñas de Google (SOCi) encontró que las fichas con más reseñas también convertían a más de quienes las veían. Tómelo como una correlación, no como un contrato.
+La media de estrellas se mueve despacio. El recuento, y la fecha de la última reseña, se ven en un segundo. Los independientes viven de eso más que las cadenas. Un estudio de proveedor sobre millones de reseñas de Google (SOCi) encontró que las fichas con más reseñas también convertían a más de quienes las veían. Eso es una correlación de un estudio de proveedor, no una promesa para su comercio.
 
 ## body
 Usted no elige quién escribe. Sí elige si la ficha parece actual.
@@ -22,9 +22,9 @@ Una sola reseña de 2 estrellas del mes pasado, sola como único texto reciente,
 Mire su ficha como la miraría un cliente nuevo: fecha de la última reseña, última respuesta, mezcla de notas. Si la última palabra pública es del año pasado, ese es el trabajo de esta semana.
 
 ## sources
-- [SOCi — volumen de reseñas y conversión de la ficha](https://www.soci.ai/blog/google-review-response-study/)
-- [Luca, Harvard Business School — independientes y notas](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
-- [Proserpio y Zervas — más reseñas cuando hay respuestas](https://doi.org/10.1287/mksc.2017.1043)
+- [SOCi: volumen de reseñas y conversión de la ficha](https://www.soci.ai/blog/google-review-response-study/)
+- [Luca, Harvard Business School: independientes y notas](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
+- [Proserpio y Zervas: más reseñas cuando hay respuestas](https://doi.org/10.1287/mksc.2017.1043)
 
 ## wa_prefill
 Hola Rosalia, he leído la guía sobre por qué cuenta el número de reseñas.

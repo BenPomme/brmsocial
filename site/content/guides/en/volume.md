@@ -8,7 +8,7 @@ A listing with dozens of recent reviews and a 4.5 often persuades more than a 4.
 Why it matters
 
 ## impact
-The star average moves slowly. The count, and the date of the last review, are visible in a second. Independents live on that more than chains do. A vendor study on millions of Google reviews (SOCi) found that listings with more reviews also converted more of the people who saw them. Treat that as a correlation, not a contract.
+The star average moves slowly. The count, and the date of the last review, are visible in a second. Independents live on that more than chains do. A vendor study on millions of Google reviews (SOCi) found that listings with more reviews also converted more of the people who saw them. That is a correlation from a vendor study, not a promise for your shop.
 
 ## body
 You do not choose who writes. You do choose whether the listing looks current.
@@ -22,9 +22,9 @@ A single 2-star from last month, sitting alone as the only recent text, does mor
 Look at your listing the way a new customer would: last review date, last reply, mix of scores. If the last public word is from last year, that is the job for this week.
 
 ## sources
-- [SOCi — review volume and listing conversion](https://www.soci.ai/blog/google-review-response-study/)
-- [Luca, Harvard Business School — independents and ratings](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
-- [Proserpio and Zervas — more reviews when there are replies](https://doi.org/10.1287/mksc.2017.1043)
+- [SOCi: review volume and listing conversion](https://www.soci.ai/blog/google-review-response-study/)
+- [Luca, Harvard Business School: independents and ratings](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
+- [Proserpio and Zervas: more reviews when there are replies](https://doi.org/10.1287/mksc.2017.1043)
 
 ## wa_prefill
 Hi Rosalia, I read the guide on why review count matters.

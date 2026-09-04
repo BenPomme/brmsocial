@@ -23,8 +23,8 @@ Dans la plupart des commerces, un duo simple marche : une phrase calme au paieme
 
 ## sources
 - [Enquête locale d’avis BrightLocal 2025](https://www.brightlocal.com/research/local-consumer-review-survey-2025/)
-- [Google — lien ou QR d’avis](https://support.google.com/business/answer/16816815)
-- [Google — comment on peut demander des avis](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google: lien ou QR d’avis](https://support.google.com/business/answer/16816815)
+- [Google: comment on peut demander des avis](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill
 Bonjour Rosalia, j’ai lu le guide sur le moment de demander un avis.

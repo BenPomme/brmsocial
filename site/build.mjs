@@ -322,7 +322,7 @@ ${hreflangLinks(page, hreflangAbs)}
   ${gaSnippet(config)}
 </head>
 <body>
-  <a class="skip" href="#main">Skip</a>
+  <a class="skip" href="#main">${esc(t(copy, "nav.skip") || "Skip")}</a>
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="logo" href="${href(locale, "home", depth)}">BabyRock</a>
@@ -427,7 +427,7 @@ function compactSim(copy) {
     <input type="hidden" name="reply" value="0.1">
     <div class="sim-result" data-compact-result>
       <span>${esc(t(copy, "home.sim_result_before"))}</span>
-      <strong data-compact-amount>—</strong>
+      <strong data-compact-amount>-</strong>
     </div>
   </form>`;
 }
@@ -552,16 +552,16 @@ function simulatorPage(locale, copy, depth) {
       </div>
       <div class="sim-hero">
         <p class="sim-kicker">${esc(t(copy, "sim.range_label"))}</p>
-        <p class="sim-hero-num" data-full-high>—</p>
+        <p class="sim-hero-num" data-full-high>-</p>
         <p class="tiny">${esc(t(copy, "sim.per_month"))}</p>
         <div class="sim-after">
           <div>
             <p class="tiny">${esc(t(copy, "sim.after_month"))}</p>
-            <p class="big" data-full-month>—</p>
+            <p class="big" data-full-month>-</p>
           </div>
           <div>
             <p class="tiny">${esc(t(copy, "sim.after_year"))}</p>
-            <p class="big" data-full-year>—</p>
+            <p class="big" data-full-year>-</p>
           </div>
         </div>
       </div>
@@ -732,7 +732,7 @@ function subscribePage(locale, copy, config, depth) {
   <section class="wrap section">
     <h1>${esc(t(copy, "sub.headline"))}</h1>
     <div class="lead">${paras(t(copy, "sub.lead"))}</div>
-    <p class="note">${esc(t(copy, "product.social_name"))} — ${esc(t(copy, "product.social_status"))}. ${esc(t(copy, "product.direct_name"))}: ${esc(t(copy, "product.direct_status"))}.</p>
+    <p class="note">${esc(t(copy, "product.social_name"))}: ${esc(t(copy, "product.social_status"))}. ${esc(t(copy, "product.direct_name"))}: ${esc(t(copy, "product.direct_status"))}.</p>
     <div class="price-grid">
       <article class="price-card"><h3>${esc(t(copy, "home.price_month_name"))}</h3><p class="amount">${esc(config.priceMonth)} €</p><p>${esc(t(copy, "sub.month"))}</p></article>
       <article class="price-card featured"><h3>${esc(t(copy, "home.price_year_name"))}</h3><p class="amount">${esc(config.priceYear)} €</p><p>${esc(t(copy, "sub.year"))}</p></article>

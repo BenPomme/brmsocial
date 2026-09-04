@@ -24,10 +24,10 @@ Si torna a aparèixer Verificar quan vostè creia que ja estava, Google no va ac
 Quan estigui verificat, ja pot respondre. Allà comencen a servir la resta de guies d’aquest lloc.
 
 ## sources
-- [Google — verificar el negoci](https://support.google.com/business/answer/7107242)
-- [Google — afegir o reclamar un perfil](https://support.google.com/business/answer/2911778)
-- [Google — afegir titulars i gestors](https://support.google.com/business/answer/3403100)
-- [Google — gestionar i respondre ressenyes](https://support.google.com/business/answer/3474050)
+- [Google: verificar el negoci](https://support.google.com/business/answer/7107242)
+- [Google: afegir o reclamar un perfil](https://support.google.com/business/answer/2911778)
+- [Google: afegir titulars i gestors](https://support.google.com/business/answer/3403100)
+- [Google: gestionar i respondre ressenyes](https://support.google.com/business/answer/3474050)
 
 ## wa_prefill
 Hola Rosalia, he llegit la guia sobre com verificar el perfil d’empresa de Google.

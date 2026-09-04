@@ -26,9 +26,9 @@ Si la reseña es falsa, denúnciela, y aun así deje la línea pública corta y 
 Responda en un día si puede. Google avisa a quien escribió. Todavía pueden editar el texto después de leerle. Algunos lo hacen. Ese no es el objetivo. El objetivo es que el siguiente desconocido vea un negocio que contesta.
 
 ## sources
-- [Google — gestionar y responder reseñas](https://support.google.com/business/answer/3474050)
-- [Google — denunciar reseñas inadecuadas](https://support.google.com/business/answer/4596773)
-- [Google — contenido prohibido y engagement falso](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google: gestionar y responder reseñas](https://support.google.com/business/answer/3474050)
+- [Google: denunciar reseñas inadecuadas](https://support.google.com/business/answer/4596773)
+- [Google: contenido prohibido e interacciones falsas](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill
 Hola Rosalia, he leído la guía sobre cómo responder reseñas negativas de Google.

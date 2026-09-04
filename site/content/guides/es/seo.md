@@ -22,9 +22,9 @@ Si quiere los números que usamos para la facturación, están en la página de 
 Haga el trabajo de la semana. Luego mire la ficha como la miraría un cliente nuevo, en el teléfono, delante de un competidor. Esa es la prueba.
 
 ## sources
-- [Google — gestionar reseñas de clientes](https://support.google.com/business/answer/3474050)
-- [Google — consejos para conseguir más reseñas](https://support.google.com/business/answer/3474122)
-- [Luca, Harvard Business School — notas y restaurantes independientes](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
+- [Google: gestionar reseñas de clientes](https://support.google.com/business/answer/3474050)
+- [Google: consejos para conseguir más reseñas](https://support.google.com/business/answer/3474122)
+- [Luca, Harvard Business School: notas y restaurantes independientes](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
 
 ## wa_prefill
 Hola Rosalia, he leído la guía sobre si las reseñas de Google ayudan al posicionamiento.

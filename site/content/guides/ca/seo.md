@@ -22,9 +22,9 @@ Si vol els números que fem servir per a la facturació, són a la pàgina de re
 Faci la feina de la setmana. Després miri la fitxa com la miraria un client nou, al telèfon, davant d’un competidor. Aquesta és la prova.
 
 ## sources
-- [Google — gestionar ressenyes de clients](https://support.google.com/business/answer/3474050)
-- [Google — consells per aconseguir més ressenyes](https://support.google.com/business/answer/3474122)
-- [Luca, Harvard Business School — notes i restaurants independents](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
+- [Google: gestionar ressenyes de clients](https://support.google.com/business/answer/3474050)
+- [Google: consells per aconseguir més ressenyes](https://support.google.com/business/answer/3474122)
+- [Luca, Harvard Business School: notes i restaurants independents](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)
 
 ## wa_prefill
 Hola Rosalia, he llegit la guia sobre si les ressenyes de Google ajuden al posicionament.

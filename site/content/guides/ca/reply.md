@@ -24,8 +24,8 @@ Si una ressenya incompleix les normes de Google, marqui-la al perfil. No munti u
 Faci-ho amb un ritme fix perquè no depengui de la memòria: cada dia si n’hi ha moltes, uns quants cops per setmana si n’hi ha poques. L’important és que res no es quedi dues setmanes sense resposta.
 
 ## sources
-- [Google — gestionar i respondre ressenyes](https://support.google.com/business/answer/3474050)
-- [Proserpio i Zervas, Marketing Science 2017 — notes quan els hotels comencen a respondre](https://doi.org/10.1287/mksc.2017.1043)
+- [Google: gestionar i respondre ressenyes](https://support.google.com/business/answer/3474050)
+- [Proserpio i Zervas, Marketing Science 2017: notes quan els hotels comencen a respondre](https://doi.org/10.1287/mksc.2017.1043)
 - [Normes de Google per a les contribucions](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill

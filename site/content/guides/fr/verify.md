@@ -24,10 +24,10 @@ Si Vérifier réapparaît alors que vous pensiez avoir fini, Google n’a pas te
 Une fois vérifié, vous pouvez répondre. C’est là que les autres guides de ce site commencent à servir.
 
 ## sources
-- [Google — vérifier votre établissement](https://support.google.com/business/answer/7107242)
-- [Google — ajouter ou revendiquer une fiche](https://support.google.com/business/answer/2911778)
-- [Google — ajouter des titulaires et des gestionnaires](https://support.google.com/business/answer/3403100)
-- [Google — gérer et répondre aux avis](https://support.google.com/business/answer/3474050)
+- [Google: vérifier votre établissement](https://support.google.com/business/answer/7107242)
+- [Google: ajouter ou revendiquer une fiche](https://support.google.com/business/answer/2911778)
+- [Google: ajouter des titulaires et des gestionnaires](https://support.google.com/business/answer/3403100)
+- [Google: gérer et répondre aux avis](https://support.google.com/business/answer/3474050)
 
 ## wa_prefill
 Bonjour Rosalia, j’ai lu le guide pour vérifier une fiche d’établissement Google.

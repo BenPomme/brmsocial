@@ -26,9 +26,9 @@ Si l’avis est faux, signalez-le, et gardez quand même la ligne publique court
 Répondez dans la journée si vous pouvez. Google prévient la personne. Elle peut encore modifier son texte après vous avoir lu. Certaines le font. Ce n’est pas le but. Le but, c’est que le prochain inconnu voie un commerce qui répond.
 
 ## sources
-- [Google — gérer et répondre aux avis](https://support.google.com/business/answer/3474050)
-- [Google — signaler des avis inappropriés](https://support.google.com/business/answer/4596773)
-- [Google — contenu interdit et faux engagement](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google: gérer et répondre aux avis](https://support.google.com/business/answer/3474050)
+- [Google: signaler des avis inappropriés](https://support.google.com/business/answer/4596773)
+- [Google: contenu interdit et faux engagement](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill
 Bonjour Rosalia, j’ai lu le guide pour répondre aux avis négatifs Google.

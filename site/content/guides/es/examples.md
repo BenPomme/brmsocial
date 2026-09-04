@@ -34,8 +34,8 @@ Qué dejar fuera: defender al personal en público, una afirmación médica, un 
 Si no puede escribir hoy, escriba mañana. Una ficha vacía es peor que una respuesta con un día de retraso. Guarde tres de estas en una nota del teléfono y cambie los nombres y el hecho cada vez.
 
 ## sources
-- [Google — gestionar y responder reseñas](https://support.google.com/business/answer/3474050)
-- [Google — consejos para las respuestas](https://support.google.com/business/answer/3474122)
+- [Google: gestionar y responder reseñas](https://support.google.com/business/answer/3474050)
+- [Google: consejos para las respuestas](https://support.google.com/business/answer/3474122)
 - [Normas de Google para las contribuciones](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill

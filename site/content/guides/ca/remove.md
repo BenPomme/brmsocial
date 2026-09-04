@@ -8,7 +8,7 @@ La majoria de ressenyes sinceres de Google no es poden esborrar, ni tan sols les
 Per què importa
 
 ## impact
-Google diu que no es fica en un conflicte entre un negoci i un client. Una ressenya només cau si trenca les normes: brossa, engagement fals, incentius, conflicte d’interès o contingut prohibit. Estar en desacord amb la nota no basta.
+Google diu que no es fica en un conflicte entre un negoci i un client. Una ressenya només cau si trenca les normes: brossa, interaccions falses, incentius, conflicte d’interès o contingut prohibit. Estar en desacord amb la nota no basta.
 
 ## body
 Comenci per llegir la ressenya dues vegades. Si descriu una visita real, encara que sigui injusta, no la treuran. Respongui una vegada, en públic, i torni a la feina. El desconegut següent llegeix el seu to més que la queixa.
@@ -24,9 +24,9 @@ Què sol valer: una ressenya pagada, escrita per qui no va venir, posada per un 
 Si la fitxa està sota un xantatge (pagui o publiquem 1 estrelles), Google té un camí a part. Faci-lo servir. Després continuï demanant a tothom, amb el mateix QR, perquè una línia falsa no sigui l’única paraula recent a la fitxa.
 
 ## sources
-- [Google — denunciar ressenyes inadequades](https://support.google.com/business/answer/4596773)
-- [Google — contingut prohibit i restringit](https://support.google.com/contributionpolicy/answer/7400114)
-- [Google — gestionar ressenyes de clients](https://support.google.com/business/answer/3474050)
+- [Google: denunciar ressenyes inadequades](https://support.google.com/business/answer/4596773)
+- [Google: contingut prohibit i restringit](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google: gestionar ressenyes de clients](https://support.google.com/business/answer/3474050)
 
 ## wa_prefill
 Hola Rosalia, he llegit la guia sobre com eliminar una ressenya de Google.

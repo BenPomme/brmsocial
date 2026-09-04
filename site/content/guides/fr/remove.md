@@ -24,9 +24,9 @@ Ce qui passe souvent : un avis payé, écrit par quelqu’un qui n’est jamais 
 Si la fiche est sous un chantage (payez ou on poste des 1 étoiles), Google a un chemin à part. Prenez-le. Ensuite continuez à demander à tout le monde, avec le même QR, pour qu’une ligne fausse ne soit pas le seul mot récent sur la page.
 
 ## sources
-- [Google — signaler des avis inappropriés](https://support.google.com/business/answer/4596773)
-- [Google — contenu interdit et restreint](https://support.google.com/contributionpolicy/answer/7400114)
-- [Google — gérer les avis clients](https://support.google.com/business/answer/3474050)
+- [Google: signaler des avis inappropriés](https://support.google.com/business/answer/4596773)
+- [Google: contenu interdit et restreint](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google: gérer les avis clients](https://support.google.com/business/answer/3474050)
 
 ## wa_prefill
 Bonjour Rosalia, j’ai lu le guide pour supprimer un avis Google.

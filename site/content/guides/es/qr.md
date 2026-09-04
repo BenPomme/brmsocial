@@ -22,9 +22,9 @@ No necesita WhatsApp para esto. El papel no guarda un número de teléfono. Use 
 Si ya envía un agradecimiento por correo o mensaje después de una reserva, puede añadir el mismo enlace. Es la lista de Google: tickets, correos de gracias, el final de un chat, un código impreso en el local.
 
 ## sources
-- [Google — crear un enlace o un QR de reseña](https://support.google.com/business/answer/16816815)
-- [Google — sin incentivos ni peticiones selectivas](https://support.google.com/contributionpolicy/answer/7400114)
-- [Google — consejos para conseguir más reseñas](https://support.google.com/business/answer/3474122)
+- [Google: crear un enlace o un QR de reseña](https://support.google.com/business/answer/16816815)
+- [Google: sin incentivos ni peticiones selectivas](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google: consejos para conseguir más reseñas](https://support.google.com/business/answer/3474122)
 
 ## wa_prefill
 Hola Rosalia, he leído la guía del código QR de reseñas de Google.

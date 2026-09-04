@@ -24,10 +24,10 @@ If Get verified appears again after you thought you were done, Google did not fi
 Once you are verified, you can reply. That is the moment the other guides on this site start to work.
 
 ## sources
-- [Google — verify your business](https://support.google.com/business/answer/7107242)
-- [Google — add or claim a Business Profile](https://support.google.com/business/answer/2911778)
-- [Google — add owners and managers](https://support.google.com/business/answer/3403100)
-- [Google — manage and reply to reviews](https://support.google.com/business/answer/3474050)
+- [Google: verify your business](https://support.google.com/business/answer/7107242)
+- [Google: add or claim a Business Profile](https://support.google.com/business/answer/2911778)
+- [Google: add owners and managers](https://support.google.com/business/answer/3403100)
+- [Google: manage and reply to reviews](https://support.google.com/business/answer/3474050)
 
 ## wa_prefill
 Hi Rosalia, I read the guide on how to verify a Google Business Profile.

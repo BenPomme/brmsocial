@@ -26,9 +26,9 @@ Si la ressenya és falsa, denunciï-la, i tot i així deixi la línia pública c
 Respongui en un dia si pot. Google avisa qui va escriure. Encara poden editar el text després de llegir-lo. Alguns ho fan. Aquest no és l’objectiu. L’objectiu és que el desconegut següent vegi un negoci que contesta.
 
 ## sources
-- [Google — gestionar i respondre ressenyes](https://support.google.com/business/answer/3474050)
-- [Google — denunciar ressenyes inadequades](https://support.google.com/business/answer/4596773)
-- [Google — contingut prohibit i engagement fals](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google: gestionar i respondre ressenyes](https://support.google.com/business/answer/3474050)
+- [Google: denunciar ressenyes inadequades](https://support.google.com/business/answer/4596773)
+- [Google: contingut prohibit i interaccions falses](https://support.google.com/contributionpolicy/answer/7400114)
 
 ## wa_prefill
 Hola Rosalia, he llegit la guia sobre com respondre ressenyes negatives de Google.
