@@ -399,6 +399,12 @@ export function onboardCopyId(step: OnboardingStep) {
   return ONBOARD_IDS[step];
 }
 
+export const SCRIPT_IDS = Object.keys(COPY);
+
+export function hasScript(id: string) {
+  return Boolean(COPY[id]);
+}
+
 function withName(s: string, name?: string | null) {
   const n = (name ?? "").trim();
   return s.replace(/\{\{NAME_COMMA\}\}/g, n ? `, ${n}` : "").replace(/\{\{NAME\}\}/g, n ? ` ${n}` : "");

@@ -163,6 +163,49 @@ function base(
   };
 }
 
+const STEP_BY_SCRIPT: Record<string, OnboardingStep> = {
+  onboard_maps: "maps",
+  onboard_people: "people",
+  onboard_email: "email",
+  onboard_role: "role",
+  onboard_wait: "wait_google",
+  onboard_premature: "wait_google",
+};
+
+/** Apply a canned script id chosen by the LLM router. */
+export function decisionFromScript(id: string, input: DecideInput): RosaliaDecision {
+  const text = inboundText(input.event);
+  const city = resolveQuoteCity({ city: input.city, inbound: text });
+  const quote = quoteFor({ city, inbound: text });
+  const lastOut = input.outboundBodies.at(-1) ?? null;
+  const lang = detectConvoLang(text || lastOut || "", lastOut, input.preferredLang);
+  let phase: ThreadPhase = input.phase;
+  let step = input.onboardingStep;
+  if (STEP_BY_SCRIPT[id]) {
+    phase = "onboarding";
+    step = STEP_BY_SCRIPT[id];
+  } else if (id === "stop" || id === "baja_active") {
+    phase = "stopped";
+  } else if (id === "in_business") {
+    phase = "active";
+    step = "done";
+  } else if (id === "pay" || id === "ok" || id === "interest" || id === "hello") {
+    if (phase === "outreach") phase = "awaiting_pay";
+  }
+  const human = id === "fallback" || id === "human";
+  const scriptId = human ? "fallback" : id;
+  return base(input, quote, lang, {
+    kind: human ? "text" : "ok",
+    source: human ? "off_script" : "template",
+    faqId: scriptId,
+    body: fill(scriptId, lang, input, quote),
+    status: id === "stop" || id === "baja_active" ? "stop" : human ? "needs_human" : "ok",
+    phase,
+    onboardingStep: step,
+    applyClientReply: id === "baja_active" ? "baja" : id === "cerrado" ? "cerrado" : null,
+  });
+}
+
 function onboardingStart(
   input: DecideInput,
   quote: ReturnType<typeof quoteFor>,
@@ -216,6 +259,19 @@ function continueOnboarding(
       status: "ok",
       phase: "onboarding",
       onboardingStep: "wait_google",
+      applyClientReply: null,
+    });
+  }
+  const advanced = step !== (input.onboardingStep ?? "maps");
+  if (!advanced && !mentionsInviteSent(text) && !wantsManagerHow(text, input.outboundBodies.at(-1))) {
+    return base(input, quote, lang, {
+      kind: "text",
+      source: "off_script",
+      faqId: "onboard_llm",
+      body: fill(onboardCopyId(step), lang, input, quote),
+      status: "needs_human",
+      phase: "onboarding",
+      onboardingStep: step,
       applyClientReply: null,
     });
   }

@@ -1,14 +1,17 @@
 import "server-only";
 import { handleClientReply } from "./client-reply";
 import { ingestInbound } from "./inbox";
-import { resolveQuoteCity } from "./catalog";
+import { quoteFor, resolveQuoteCity } from "./catalog";
 import { isSantCugat } from "./offers";
 import { prisma } from "./db";
 import { extractSpokenName, personFirstName } from "./language";
 import { xaiFastModel, xaiText } from "./xai";
 import { isWhatsappAllowlisted, sendWhatsappText } from "./whatsapp-send";
 import { isAllowlisted, sendZohoMail } from "./zoho-mail";
-import { decideRosalia, shouldSendNow } from "./rosalia/decide";
+import { classifyInbound } from "./classify-inbound";
+import { hasScript } from "./rosalia/copy";
+import { decideRosalia, decisionFromScript, shouldSendNow } from "./rosalia/decide";
+import { isRoutable, parseRoute, routePrompt } from "./rosalia/route";
 import type { ConvoLang, RosaliaEvent, ThreadPhase, OnboardingStep } from "./rosalia/types";
 
 export { wantsPayLink } from "./rosalia/decide";
@@ -92,19 +95,6 @@ function draftId(threadId: string) {
   return `draft-${threadId}`;
 }
 
-function lockPayUrls(text: string, url: string) {
-  return text.replace(/https?:\/\/[^\s)]+/gi, (u) => (/pay|pago|checkout|stripe/i.test(u) ? url : u));
-}
-
-function tooSimilar(a: string, b: string) {
-  const na = a.replace(/\s+/g, " ").trim().toLowerCase();
-  const nb = b.replace(/\s+/g, " ").trim().toLowerCase();
-  if (!na || !nb) return false;
-  if (na === nb) return true;
-  const head = na.slice(0, 70);
-  return head.length >= 40 && nb.includes(head);
-}
-
 async function loadThread(threadId: string) {
   return prisma.inboxThread.findUnique({
     where: { id: threadId },
@@ -158,7 +148,7 @@ export async function proposeRosaliaReply(threadId: string, eventOverride?: Rosa
     : false;
 
   const link = payUrl({ wa: thread.counterparty, city });
-  let decided = decideRosalia({
+  const decideOpts = {
     event,
     outboundBodies: allOutbound,
     firstName,
@@ -171,53 +161,52 @@ export async function proposeRosaliaReply(threadId: string, eventOverride?: Rosa
     lastInboundAt: lastInbound,
     payUrl: link,
     pendingLowStar: pendingLow,
-  });
+  };
+  const hard =
+    event.type !== "inbound_text" ||
+    classifyInbound(event.text) === "stop" ||
+    process.env.ROSALIA_LLM === "false";
 
-  let replySource: "template" | "llm" | "off_script" = decided.source;
-  let body = decided.body;
+  let decided = hard ? decideRosalia(decideOpts) : null;
+  let replySource: "template" | "llm" | "off_script" = decided?.source ?? "off_script";
 
-  if (
-    decided.source === "off_script" &&
-    decided.phase === "outreach" &&
-    event.type === "inbound_text" &&
-    process.env.ROSALIA_LLM !== "false"
-  ) {
-    const inboundBody = event.text;
+  if (!hard && event.type === "inbound_text") {
     const session = sessionSlice(thread.messages);
     const historyLines = session
       .filter((m) => m.direction !== "draft")
       .slice(-8)
       .map((m) => `${m.direction === "in" ? "ellos" : "rosalia"}: ${m.body}`);
-    const facts = [
-      `Identity = this WhatsApp number ${thread.counterparty}. Same person forever.`,
-      firstName ? `First name: ${firstName}. Use it.` : `First name: unknown. Do not invent one.`,
-      `Price TTC: ${decided.quote.monthLabel}/month, ${decided.quote.yearLabel}/year.`,
-      decided.quote.offer ? `Offer: ${decided.quote.offerLines.es}` : `No local free month unless they are in Sant Cugat.`,
-      `Coming soon: ${decided.quote.comingSoon.map((p) => p.name).join(", ") || "none"}. Do not sell them.`,
-      `Payment link already sent: ${allOutbound.some((b) => b.includes("/pay"))}`,
-      `Language: ${decided.lang}`,
-    ].join("\n");
     try {
       const raw = await xaiText(
-        `You are Rosalia, Babyrock Social (Sant Cugat). WhatsApp B2B, 1–4 short sentences (max 400 characters).
-Reply ONLY in ${{ es: "español (usted)", ca: "català (vostè)", en: "English", fr: "français (vous)" }[decided.lang]}.
-Product only: we reply to Google reviews, ${decided.quote.monthLabel}/month. 4–5★: a person publishes. 1–3★: owner validates on WhatsApp. Manager: ${decided.quote.managerEmail}, no password.
-FORBIDDEN to sell Instagram, SEO, ads, or BabyRock Direct (coming soon).
-NEVER invent a URL. The only payment link is ${link}.
-JSON only: {"on_product":boolean,"reply":"..."}.`,
-        `${facts}\nShop: ${thread.lead?.name ?? "(unknown)"}\nHistory:\n${historyLines.join("\n") || "(empty)"}\n\nNew question:\n${inboundBody}`,
-        { model: xaiFastModel(), maxTokens: 280, temperature: 0.2, reasoning: "none" },
+        routePrompt({
+          lang: rememberedLang ?? "es",
+          phase: asPhase(thread.phase),
+          step: asStep(thread.onboardingStep),
+          monthLabel: quoteFor({ city, inbound: event.text }).monthLabel,
+          managerEmail: quoteFor({ city, inbound: event.text }).managerEmail,
+        }),
+        `History:\n${historyLines.join("\n") || "(empty)"}\n\nInbound:\n${event.text}`,
+        { model: xaiFastModel(), maxTokens: 80, temperature: 0, reasoning: "none" },
       );
-      const parsed = parseProductDraft(raw ?? "");
-      if (parsed?.onProduct && parsed.reply && !allOutbound.some((b) => tooSimilar(parsed.reply, b))) {
-        body = lockPayUrls(parsed.reply, link).slice(0, 700);
+      const parsed = parseRoute(raw ?? "");
+      const route = parsed?.route ?? "";
+      if (route === "human" || !isRoutable(route) || !hasScript(route)) {
+        decided = decisionFromScript("fallback", decideOpts);
+        replySource = "off_script";
+      } else {
+        decided = decisionFromScript(route, decideOpts);
         replySource = "llm";
-        decided = { ...decided, source: "template", faqId: "llm_product", body, status: "ok" };
       }
     } catch (e) {
-      console.warn("rosalia product draft", e);
+      console.warn("rosalia route", e);
     }
   }
+
+  if (!decided) {
+    decided = decideRosalia(decideOpts);
+    replySource = decided.source;
+  }
+  const body = decided.body;
 
   const existing = await prisma.inboxMessage.findUnique({ where: { providerId: draftId(thread.id) } });
   const draft = existing
@@ -433,23 +422,4 @@ export async function markManagerConnected(clientId: string) {
     data: { managerInviteStatus: "accepted", status: nextStatus },
   });
   return emitRosaliaEvent({ clientId, event: { type: "manager_connected" } });
-}
-
-function parseProductDraft(raw: string): { onProduct: boolean; reply: string } | null {
-  const cleaned = raw.replace(/^```(?:json)?/i, "").replace(/```$/i, "").trim();
-  const start = cleaned.indexOf("{");
-  const end = cleaned.lastIndexOf("}");
-  if (start >= 0 && end > start) {
-    try {
-      const parsed = JSON.parse(cleaned.slice(start, end + 1)) as { on_product?: boolean; reply?: string };
-      const reply = String(parsed.reply ?? "").trim();
-      if (reply) return { onProduct: Boolean(parsed.on_product ?? true), reply: reply.slice(0, 700) };
-    } catch {
-      /* model often returns text */
-    }
-  }
-  if (cleaned.length >= 8 && !cleaned.startsWith("{")) {
-    return { onProduct: true, reply: cleaned.slice(0, 700) };
-  }
-  return null;
 }

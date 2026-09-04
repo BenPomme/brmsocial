@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { decideRosalia, shouldSendNow, wantsPayLink } from "./decide";
+import { decideRosalia, decisionFromScript, shouldSendNow, wantsPayLink } from "./decide";
+import { parseRoute } from "./route";
 import type { DecideInput, RosaliaDecision, RosaliaEvent, ThreadPhase, OnboardingStep, ConvoLang } from "./types";
 
 const PAY = "https://app.babyrock.ai/pay";
@@ -363,6 +364,20 @@ test("us-initiated payment ping is held without a 24h window", () => {
 test("I paid is not treated as send me the pay link", () => {
   assert.equal(wantsPayLink("ya pagué"), false);
   assert.equal(wantsPayLink("manda el enlace"), true);
+});
+
+test("LLM route JSON picks a script id", () => {
+  assert.deepEqual(parseRoute('{"route":"onboard_email"}'), { route: "onboard_email" });
+  assert.equal(parseRoute("nope"), null);
+});
+
+test("decisionFromScript applies onboard_email and stays in English", () => {
+  const d = decisionFromScript("onboard_email", seed({ preferredLang: "en", phase: "onboarding", onboardingStep: "people" }));
+  assert.equal(d.faqId, "onboard_email");
+  assert.equal(d.phase, "onboarding");
+  assert.equal(d.onboardingStep, "email");
+  assert.equal(d.lang, "en");
+  assert.match(d.body, /reviews@babyrock\.ai/);
 });
 
 test("manager_connected is the in-business trigger", () => {
